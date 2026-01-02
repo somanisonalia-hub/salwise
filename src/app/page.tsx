@@ -48,13 +48,13 @@ export default function HomePage() {
               {/* Mobile-optimized CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-sm mx-auto px-4">
                 <Link
-                  href={content.hero.cta.primary.href}
+                  href={`/en${content.hero.cta.primary.href}`}
                   className="w-full bg-yellow-400 hover:bg-yellow-300 text-black px-4 py-3 rounded-lg font-bold text-sm transition-all transform active:scale-95 shadow-lg"
                 >
                   {content.hero.cta.primary.text}
                 </Link>
                 <Link
-                  href={content.hero.cta.secondary.href}
+                  href={`/en${content.hero.cta.secondary.href}`}
                   className="w-full border-2 border-white text-white hover:bg-white hover:text-blue-600 px-4 py-3 rounded-lg font-bold text-sm transition-all active:scale-95"
                 >
                   {content.hero.cta.secondary.text}
@@ -76,7 +76,7 @@ export default function HomePage() {
               {content.quickAccess.links.map((link, index) => (
                 <Link
                   key={index}
-                  href={link.href}
+                  href={`/en${link.href}`}
                   className="flex flex-col items-center p-2 rounded-lg hover:bg-gray-50 active:bg-gray-100 touch-manipulation min-w-[60px]"
                 >
                   <span className="text-lg">{link.icon}</span>
@@ -95,7 +95,7 @@ export default function HomePage() {
             {content.calculators.items.map((calc, index) => (
               <Link
                 key={index}
-                href={calc.href}
+                href={`/en${calc.href}`}
                 className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
               >
                 <div className="text-center">
@@ -114,7 +114,7 @@ export default function HomePage() {
             <h2 className="text-lg font-bold text-gray-900 mb-4 text-center">Calculator Categories</h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <Link
-                href="/country"
+                href="/en/country"
                 className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
               >
                 <div className="flex items-center gap-3">
@@ -126,7 +126,7 @@ export default function HomePage() {
                 </div>
               </Link>
               <Link
-                href="/industry"
+                href="/en/industry"
                 className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
               >
                 <div className="flex items-center gap-3">
@@ -138,7 +138,7 @@ export default function HomePage() {
                 </div>
               </Link>
               <Link
-                href="/guides"
+                href="/en/guides"
                 className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
               >
                 <div className="flex items-center gap-3">
@@ -163,7 +163,7 @@ export default function HomePage() {
               {content.countries.items.map((country, index) => (
                 <Link
                   key={index}
-                  href={country.href}
+                  href={`/en${country.href}`}
                   className="bg-white rounded-lg shadow-sm p-3 text-center hover:shadow-md active:shadow-lg transition-all active:scale-95 touch-manipulation border border-gray-100"
                 >
                   <div className="text-2xl mb-1">{country.flag}</div>
@@ -230,7 +230,7 @@ export default function HomePage() {
               {content.guides.items.map((guide, index) => (
                 <Link
                   key={index}
-                  href={guide.href}
+                  href={`/en${guide.href}`}
                   className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
                 >
                   <h3 className="text-sm font-bold text-gray-900 mb-2">{guide.title}</h3>
@@ -256,7 +256,7 @@ export default function HomePage() {
             {content.mobileNav.links.map((link, index) => (
               <Link
                 key={index}
-                href={link.href}
+                href={`/en${link.href}`}
                 className="flex flex-col items-center p-2 rounded-lg hover:bg-gray-50 active:bg-gray-100 touch-manipulation"
               >
                 <span className="text-lg">{link.icon}</span>

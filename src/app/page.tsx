@@ -177,16 +177,16 @@ function HomePageContent() {
               </div>
 
               {/* Mobile-optimized CTA buttons */}
-              <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-sm mx-auto px-4">
+              <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto px-4">
                 <Link
                   href={`/en${content.hero.cta.primary.href}`}
-                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black px-4 py-3 rounded-lg font-bold text-sm transition-all transform active:scale-95 shadow-lg"
+                  className="w-full bg-yellow-400 hover:bg-yellow-300 text-black px-4 py-3 rounded-lg font-bold text-sm transition-all transform active:scale-95 shadow-lg text-center"
                 >
                   {content.hero.cta.primary.text}
                 </Link>
                 <Link
                   href={`/en${content.hero.cta.secondary.href}`}
-                  className="w-full border-2 border-white text-white hover:bg-white hover:text-blue-600 px-4 py-3 rounded-lg font-bold text-sm transition-all active:scale-95"
+                  className="w-full border-2 border-white text-white hover:bg-white hover:text-blue-600 px-4 py-3 rounded-lg font-bold text-sm transition-all active:scale-95 text-center"
                 >
                   {content.hero.cta.secondary.text}
                 </Link>

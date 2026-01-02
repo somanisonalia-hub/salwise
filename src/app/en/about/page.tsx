@@ -1,18 +1,35 @@
 'use client';
 
 import Link from 'next/link';
-import Head from 'next/head';
+import { useEffect } from 'react';
 import content from '../../../locales/en/about.json';
 
 export default function AboutPage() {
+  useEffect(() => {
+    document.title = content.metaTitle;
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', content.metaDescription);
+    } else {
+      const newMeta = document.createElement('meta');
+      newMeta.name = 'description';
+      newMeta.content = content.metaDescription;
+      document.head.appendChild(newMeta);
+    }
+
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) {
+      canonical.setAttribute('href', content.canonical);
+    } else {
+      const newCanonical = document.createElement('link');
+      newCanonical.rel = 'canonical';
+      newCanonical.href = content.canonical;
+      document.head.appendChild(newCanonical);
+    }
+  }, []);
+
   return (
     <>
-      <Head>
-        <title>{content.metaTitle}</title>
-        <meta name="description" content={content.metaDescription} />
-        <meta name="keywords" content={content.keywords} />
-        <link rel="canonical" href={content.canonical} />
-      </Head>
 
       <div className="min-h-screen bg-gray-50">
         {/* Hero Section */}

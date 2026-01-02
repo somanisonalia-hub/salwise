@@ -1,26 +1,28 @@
 {
-  "slug": "salary-after-tax-ireland",
+  "slug": "ireland-salary-calculator",
   "type": "calculator",
-  "h1": "Salary After Tax Calculator – Ireland Net Pay Estimator",
-  "metaTitle": "Salary After Tax Calculator Ireland – Calculate Net Pay",
-  "metaDescription": "Use our Ireland salary after tax calculator to estimate your take-home pay. Includes Income Tax, USC, PRSI, and other deductions. Quick and free.",
-  "primaryKeyword": "salary after tax calculator Ireland",
+  "h1": "Ireland Salary Calculator 2026 – Take Home Pay After Tax",
+  "metaTitle": "Ireland Salary Calculator 2026 – Take Home Pay After Tax",
+  "metaDescription": "Calculate your take-home pay in Ireland for 2026. Includes PAYE, USC, PRSI, pension, bonus and deductions. Free & accurate.",
+  "primaryKeyword": "ireland salary calculator",
   "longTailKeywords": [
-    "Ireland net salary calculator",
-    "take home pay calculator Ireland",
-    "calculate salary after tax Ireland",
-    "gross to net salary Ireland",
-    "payroll calculator Ireland",
-    "Irish income tax calculator",
-    "salary calculator ROI"
+    "ireland salary calculator",
+    "take home pay ireland",
+    "salary after tax ireland",
+    "net salary ireland",
+    "irish paycheck calculator",
+    "ireland tax calculator",
+    "payslip calculator ireland",
+    "ireland income tax calculator",
+    "ireland payroll calculator"
   ],
   "related": [
     "gross-to-net-salary",
     "take-home-pay-calculator",
     "net-to-gross-salary",
-    "salary-calculator-ireland"
+    "ireland-salary-calculator"
   ],
-  "dataRef": "salaryAfterTaxIreland",
+  "dataRef": "irelandSalaryCalculator",
   "intro": "Understanding your salary after tax in Ireland is crucial for accurate financial planning. This calculator estimates your take-home pay by accounting for Irish Income Tax, Universal Social Charge (USC), Pay Related Social Insurance (PRSI), and other common deductions. Whether you're an employee, contractor, or freelancer working in Ireland, this tool provides localized calculations to help you understand your actual net income and make informed financial decisions.",
   "ui": {
     "calculatorHeading": "Calculate Your Results",

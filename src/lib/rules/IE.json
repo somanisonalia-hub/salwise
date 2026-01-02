@@ -1,0 +1,24 @@
+{
+  "country": "IE",
+  "currency": "EUR",
+  "year": 2026,
+  "incomeTax": {
+    "bands": [
+      { "upTo": 42000, "rate": 0.20 },
+      { "above": 42000, "rate": 0.40 }
+    ]
+  },
+  "usc": {
+    "enabled": true,
+    "bands": [
+      { "upTo": 12012, "rate": 0.005 },
+      { "upTo": 25760, "rate": 0.02 },
+      { "upTo": 70044, "rate": 0.04 },
+      { "above": 70044, "rate": 0.08 }
+    ]
+  },
+  "prsi": {
+    "enabled": true,
+    "rate": 0.04
+  }
+}

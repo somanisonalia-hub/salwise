@@ -75,7 +75,7 @@
         "icon": "🇺🇸",
         "text": "US Tax Calculator",
         "description": "Federal & state taxes",
-        "href": "/salary-calculator-usa",
+        "href": "/usa-salary-calculator",
         "popular": false
       },
       {
@@ -234,32 +234,32 @@
       {
         "name": "USA",
         "flag": "🇺🇸",
-        "href": "/salary-after-tax-usa"
+        "href": "/usa-salary-calculator"
       },
       {
         "name": "UK",
         "flag": "🇬🇧",
-        "href": "/salary-after-tax-uk"
+        "href": "/uk-salary-calculator"
       },
       {
         "name": "Canada",
         "flag": "🇨🇦",
-        "href": "/salary-calculator-canada"
+        "href": "/canada-salary-calculator"
       },
       {
         "name": "Australia",
         "flag": "🇦🇺",
-        "href": "/salary-calculator-australia"
+        "href": "/australia-salary-calculator"
       },
       {
         "name": "Ireland",
         "flag": "🇮🇪",
-        "href": "/salary-after-tax-ireland"
+        "href": "/ireland-salary-calculator"
       },
       {
         "name": "India",
         "flag": "🇮🇳",
-        "href": "/salary-calculator-india"
+        "href": "/india-salary-calculator"
       }
     ]
   },
@@ -413,7 +413,7 @@
       {
         "icon": "🇺🇸",
         "text": "USA",
-        "href": "/salary-after-tax-usa"
+        "href": "/usa-salary-calculator"
       },
       {
         "icon": "📖",
@@ -479,7 +479,7 @@
               "@type": "SoftwareApplication",
               "position": 3,
               "name": "USA Salary Calculator",
-              "url": "https://salarywise.io/en/salary-calculator-usa"
+              "url": "https://salarywise.io/en/usa-salary-calculator"
             }
           ]
         }

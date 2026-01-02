@@ -197,10 +197,10 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-lg font-semibold mb-4">By Region & Industry</h3>
               <ul className="space-y-2">
-                <li><Link href={`/${locale}/salary-after-tax-usa`} className="text-gray-300 hover:text-white transition-colors">🇺🇸 USA</Link></li>
-                <li><Link href={`/${locale}/salary-after-tax-uk`} className="text-gray-300 hover:text-white transition-colors">🇬🇧 UK</Link></li>
-                <li><Link href={`/${locale}/salary-calculator-canada`} className="text-gray-300 hover:text-white transition-colors">🇨🇦 Canada</Link></li>
-                <li><Link href={`/${locale}/salary-calculator-australia`} className="text-gray-300 hover:text-white transition-colors">🇦🇺 Australia</Link></li>
+                <li><Link href={`/${locale}/usa-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇺🇸 USA</Link></li>
+                <li><Link href={`/${locale}/uk-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇬🇧 UK</Link></li>
+                <li><Link href={`/${locale}/canada-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇨🇦 Canada</Link></li>
+                <li><Link href={`/${locale}/australia-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇦🇺 Australia</Link></li>
                 <li><Link href={`/${locale}/salary-calculator-it-tech`} className="text-gray-300 hover:text-white transition-colors">💻 IT & Tech</Link></li>
               </ul>
             </div>

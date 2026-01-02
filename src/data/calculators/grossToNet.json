@@ -117,7 +117,7 @@
     "totalPreTaxDeductions": "retirementContribution + (healthInsurance * 12) + otherDeductions",
     "taxableIncome": "Math.max(0, annualGross - totalPreTaxDeductions)",
     "federalTax": "country === 'US' ? calculateFederalTax2025(taxableIncome, filingStatus) : calculateCountryTax(taxableIncome, country)",
-    "stateTax": "(country === 'US' || country === 'CA') ? calculateStateTax2024(annualGross, state) : 0",
+    "stateTax": "(country === 'US' || country === 'CA') ? calculateStateTax2025(annualGross, state) : 0",
     "socialSecurity": "country === 'US' ? Math.min(annualGross * 0.062, 168600 * 0.062) : 0",
     "medicare": "country === 'US' ? annualGross * 0.0145 + (annualGross > 200000 ? (annualGross - 200000) * 0.009 : 0) : 0",
     "payrollTax": "socialSecurity + medicare",

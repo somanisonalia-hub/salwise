@@ -115,7 +115,7 @@
     "totalDeductions": "standardDeduction + dependentDeduction + additionalDeductions + retirementContribution + (healthInsurance * 12)",
     "taxableIncome": "Math.max(0, grossSalary - totalDeductions)",
     "federalTax": "calculateFederalTax2025(taxableIncome, filingStatus)",
-    "stateTax": "calculateStateTax2024(grossSalary, state)",
+    "stateTax": "calculateStateTax2025(grossSalary, state)",
     "socialSecurity": "Math.min(grossSalary * 0.062, 168600 * 0.062)",
     "medicare": "grossSalary * 0.0145 + (grossSalary > 200000 ? (grossSalary - 200000) * 0.009 : 0)",
     "ficaTax": "socialSecurity + medicare",

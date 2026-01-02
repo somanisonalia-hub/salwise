@@ -143,15 +143,16 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
 
   // Initialize inputs with defaults synchronously
   const initialInputs = calculatorData && calculatorData.inputs ?
-    calculatorData.inputs.reduce((acc: any, input: any) => {
+    calculatorData.inputs.reduce((acc: Record<string, number | string | boolean>, input: any) => {
       if (input.id && input.default !== undefined) {
         acc[input.id] = input.default;
       }
       return acc;
     }, {}) : {};
 
-  const [inputs, setInputs] = useState<Record<string, number | string>>(initialInputs);
+  const [inputs, setInputs] = useState<Record<string, number | string | boolean>>(initialInputs);
   const [results, setResults] = useState<Record<string, number>>({});
+  const [showAdvanced, setShowAdvanced] = useState(false);
 
   // Auto-calculate when inputs change
   useEffect(() => {
@@ -186,7 +187,7 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
     }
   }, [inputs, calculatorData]);
 
-  const handleInputChange = (id: string, value: string) => {
+  const handleInputChange = (id: string, value: string | boolean) => {
     setInputs(prev => ({ ...prev, [id]: value }));
   };
 
@@ -238,17 +239,19 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
               <div className="bg-white border border-gray-200 p-6 mb-6">
                 <h2 className="text-xl font-bold text-gray-900 mb-4">{pageData.ui?.calculatorHeading || "Calculate Your Results"}</h2>
 
-                <div className="space-y-4 mb-6">
-                  {calculatorData.inputs.map((input: any) => (
-                    <div key={input.id}>
-                      <label className="block text-sm font-medium text-gray-700 mb-1">
+                {/* Basic Inputs - Compact Grid Layout */}
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-6">
+                  {calculatorData.inputs.filter((input: any) => !input.advanced).map((input: any) => (
+                    <div key={input.id} className="space-y-1">
+                      <label className="block text-sm font-medium text-gray-700">
                         {input.label}
+                        {input.unit && <span className="text-xs text-gray-500 ml-1">({input.unit})</span>}
                       </label>
                       {input.type === 'select' ? (
                         <select
-                          value={inputs[input.id] || input.default || ''}
+                          value={inputs[input.id]?.toString() || input.default?.toString() || ''}
                           onChange={(e) => handleInputChange(input.id, e.target.value)}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md"
+                          className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
                         >
                           {input.options && input.options.map((option: any) => (
                             <option key={option.value} value={option.value}>
@@ -259,53 +262,197 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
                       ) : (
                         <input
                           type="number"
-                          value={inputs[input.id] || ''}
+                          value={inputs[input.id]?.toString() || ''}
                           onChange={(e) => handleInputChange(input.id, e.target.value)}
-                          className="w-full px-3 py-2 border border-gray-300 rounded-md"
-                          placeholder={`Enter ${input.label.toLowerCase()}`}
+                          className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                          placeholder={input.placeholder || input.default?.toString() || '0'}
+                          min={input.min}
+                          max={input.max}
                         />
                       )}
                     </div>
                   ))}
                 </div>
 
-                <button
-                  onClick={calculate}
-                  className="w-full bg-blue-600 text-white py-2 px-4 rounded-md hover:bg-blue-700"
-                >
-                  {pageData.ui?.calculateButton || "Calculate"}
-                </button>
+                {/* Advanced Options - Collapsible */}
+                {calculatorData.inputs.some((input: any) => input.advanced) && (
+                  <div className="border-t border-gray-200 pt-4">
+                    <button
+                      onClick={() => setShowAdvanced(!showAdvanced)}
+                      className="flex items-center text-sm font-medium text-gray-700 hover:text-blue-600 transition-colors"
+                    >
+                      <svg
+                        className={`w-4 h-4 mr-2 transition-transform ${showAdvanced ? 'rotate-90' : ''}`}
+                        fill="none"
+                        stroke="currentColor"
+                        viewBox="0 0 24 24"
+                      >
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                      </svg>
+                      Advanced Options
+                    </button>
 
-                  <div className="mt-6 p-4 bg-gray-50 rounded-md">
-                    <h3 className="text-lg font-semibold text-gray-900 mb-3">{pageData.ui?.resultsHeading || "Results"}</h3>
-                  {Object.keys(results).length > 0 ? Object.entries(results).map(([key, value]) => {
-                      const formattedValue = typeof value === 'number' && !isNaN(value) ? value.toFixed(2) : String(value);
-                      const label = calculatorData.outputLabels?.[key] || key.replace(/([A-Z])/g, ' $1').trim();
-                      const unit = calculatorData.outputUnits?.[key] || '';
+                    {showAdvanced && (
+                      <div className="mt-4 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                        {calculatorData.inputs.filter((input: any) => input.advanced).map((input: any) => (
+                          <div key={input.id} className="space-y-1">
+                            <label className="block text-sm font-medium text-gray-600">
+                              {input.label}
+                              {input.unit && <span className="text-xs text-gray-500 ml-1">({input.unit})</span>}
+                            </label>
+                            {input.type === 'boolean' ? (
+                              <label className="flex items-center space-x-2">
+                                <input
+                                  type="checkbox"
+                                  checked={inputs[input.id] || input.default || false}
+                                  onChange={(e) => handleInputChange(input.id, e.target.checked)}
+                                  className="rounded border-gray-300 text-blue-600 focus:ring-blue-500"
+                                />
+                                <span className="text-sm text-gray-700">{input.description || 'Enable'}</span>
+                              </label>
+                            ) : input.type === 'select' ? (
+                              <select
+                                value={inputs[input.id]?.toString() || input.default?.toString() || ''}
+                                onChange={(e) => handleInputChange(input.id, e.target.value)}
+                                className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                              >
+                                {input.options && input.options.map((option: any) => (
+                                  <option key={option.value} value={option.value}>
+                                    {option.label}
+                                  </option>
+                                ))}
+                              </select>
+                            ) : (
+                              <input
+                                type="number"
+                                value={inputs[input.id]?.toString() || ''}
+                                onChange={(e) => handleInputChange(input.id, e.target.value)}
+                                className="w-full px-2 py-1.5 text-sm border border-gray-300 rounded-md focus:ring-1 focus:ring-blue-500 focus:border-blue-500"
+                                placeholder={input.placeholder || input.default?.toString() || '0'}
+                                min={input.min}
+                                max={input.max}
+                              />
+                            )}
+                          </div>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                )}
 
+                {/* Calculate Button */}
+                <div className="mt-6">
+                  <button
+                    onClick={calculate}
+                    className="w-full bg-blue-600 text-white py-3 px-4 rounded-md hover:bg-blue-700 font-medium transition-colors"
+                  >
+                    {pageData.ui?.calculateButton || "Calculate"}
+                  </button>
+                </div>
 
-                      // Handle unit formatting: $/hour should become $XX.XX/hour, /hour should become XX.XX/hour, % should become XX.XX%
-                      let displayValue;
-                      if (unit === '$/hour') {
-                        displayValue = `$${formattedValue}/hour`;
-                      } else if (unit === '/hour') {
-                        displayValue = `${formattedValue}/hour`;
-                      } else if (unit === '%') {
-                        displayValue = `${formattedValue}%`;
-                      } else if (unit) {
-                        displayValue = `${unit}${formattedValue}`;
-                      } else {
-                        displayValue = formattedValue;
-                      }
+                {/* Streamlined Results Section */}
+                <div className="mt-6">
 
-                      return (
-                        <div key={key} className="flex justify-between py-1">
-                          <span className="text-gray-700">{label}:</span>
-                          <span className="font-semibold text-gray-900">{displayValue}</span>
-                        </div>
-                      );
-                    }                  ) : (
-                    <div className="text-gray-500">{pageData.ui?.noResultsText || "No results calculated yet"}</div>
+                  {Object.keys(results).length > 0 ? (
+                    <div className="bg-white rounded-lg border border-gray-200 overflow-hidden">
+                      {/* Header */}
+                      <div className="px-6 py-4 border-b border-gray-200">
+                        <h3 className="text-lg font-semibold text-gray-900">Salary Breakdown</h3>
+                      </div>
+
+                      {/* Results List - Compact Table Style */}
+                      <div className="divide-y divide-gray-100">
+                        {Object.entries(results).map(([key, value]) => {
+                          const formattedValue = typeof value === 'number' && !isNaN(value) ? value.toFixed(2) : String(value);
+                          const label = calculatorData.outputLabels?.[key] || key.replace(/([A-Z])/g, ' $1').trim().replace(/^\w/, c => c.toUpperCase());
+                          const unit = calculatorData.outputUnits?.[key] || '';
+
+                          let displayValue;
+                          if (unit === '$/hour') {
+                            displayValue = `$${formattedValue}/hour`;
+                          } else if (unit === '/hour') {
+                            displayValue = `${formattedValue}/hour`;
+                          } else if (unit === '%') {
+                            displayValue = `${formattedValue}%`;
+                          } else if (unit) {
+                            displayValue = `${unit}${formattedValue}`;
+                          } else {
+                            displayValue = formattedValue;
+                          }
+
+                          // Determine styling based on result type
+                          let bgColor = 'bg-white';
+                          let textColor = 'text-gray-900';
+                          let borderColor = 'border-gray-100';
+                          let icon = null;
+                          let isHighlighted = false;
+
+                          if (key.includes('net') || key.includes('takeHome')) {
+                            bgColor = 'bg-green-50';
+                            textColor = 'text-green-800';
+                            borderColor = 'border-green-200';
+                            icon = (
+                              <svg className="w-4 h-4 text-green-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            );
+                          } else if (key.includes('tax') || key.includes('Tax') || key === 'usc' || key === 'prsi') {
+                            bgColor = 'bg-red-50';
+                            textColor = 'text-red-800';
+                            borderColor = 'border-red-200';
+                            icon = (
+                              <svg className="w-4 h-4 text-red-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 12l3-3 3 3 4-4M8 21l4-4 4 4M3 4h18M4 4h16v12a1 1 0 01-1 1H5a1 1 0 01-1-1V4z" />
+                              </svg>
+                            );
+                          } else if (key.includes('pension') || key.includes('deduction') || key.includes('Deductions')) {
+                            bgColor = 'bg-orange-50';
+                            textColor = 'text-orange-800';
+                            borderColor = 'border-orange-200';
+                            icon = (
+                              <svg className="w-4 h-4 text-orange-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1" />
+                              </svg>
+                            );
+                          } else if (key.toLowerCase().includes('monthly') || key.toLowerCase().includes('weekly') || key.toLowerCase().includes('biweekly') || key.toLowerCase().includes('hourly')) {
+                            // Highlight frequency-based results
+                            bgColor = 'bg-blue-50';
+                            textColor = 'text-blue-800';
+                            borderColor = 'border-blue-300';
+                            isHighlighted = true;
+                            icon = (
+                              <svg className="w-4 h-4 text-blue-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                              </svg>
+                            );
+                          }
+
+                          return (
+                            <div key={key} className={`${isHighlighted ? 'bg-gradient-to-r from-blue-50 to-blue-100 border-blue-300' : bgColor} px-6 py-3 border-l-4 ${borderColor} hover:bg-opacity-80 transition-colors ${isHighlighted ? 'shadow-sm' : ''}`}>
+                              <div className="flex items-center justify-between">
+                                <div className="flex items-center flex-1 min-w-0">
+                                  {icon}
+                                  <span className={`text-sm ${isHighlighted ? 'font-semibold' : 'font-medium'} ${isHighlighted ? 'text-blue-900' : 'text-gray-700'} truncate`}>
+                                    {label}
+                                  </span>
+                                </div>
+                                <div className={`text-sm ${isHighlighted ? 'font-bold text-lg' : 'font-semibold'} ${textColor} ml-4 flex-shrink-0`}>
+                                  {displayValue}
+                                </div>
+                              </div>
+                            </div>
+                          );
+                        })}
+                      </div>
+                    </div>
+                  ) : (
+                    <div className="bg-gray-50 rounded-lg p-8 text-center border border-gray-200">
+                      <svg className="mx-auto h-16 w-16 text-gray-400 mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z" />
+                      </svg>
+                      <h3 className="text-lg font-medium text-gray-900 mb-2">{pageData.ui?.noResultsText || "No results calculated yet"}</h3>
+                      <p className="text-gray-600">Enter your salary details above and click Calculate to see your take-home pay breakdown.</p>
+                    </div>
                   )}
                 </div>
               </div>

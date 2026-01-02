@@ -34,6 +34,7 @@ import overtimePayData from '../data/calculators/overtimePay.json';
 import salaryAfterTaxUSAData from '../data/calculators/salaryAfterTaxUSA.json';
 import salaryAfterTaxUKData from '../data/calculators/salaryAfterTaxUK.json';
 import salaryAfterTaxIrelandData from '../data/calculators/salaryAfterTaxIreland.json';
+import irelandSalaryCalculatorData from '../data/calculators/irelandSalaryCalculator.json';
 import salaryCalculatorCanadaData from '../data/calculators/salaryCalculatorCanada.json';
 import salaryCalculatorAustraliaData from '../data/calculators/salaryCalculatorAustralia.json';
 import salaryCalculatorGermanyData from '../data/calculators/salaryCalculatorGermany.json';
@@ -83,6 +84,7 @@ const calculatorsData: Calculator[] = [
   salaryAfterTaxUSAData,
   salaryAfterTaxUKData,
   salaryAfterTaxIrelandData,
+  irelandSalaryCalculatorData,
   salaryCalculatorCanadaData,
   salaryCalculatorAustraliaData,
   salaryCalculatorGermanyData,
@@ -452,25 +454,27 @@ function calculateCanadaProvincialTax(taxableIncome: number, province: string): 
 
 // Ireland Universal Social Charge (USC) Calculation (2025)
 function calculateIrelandUSC(annualGross: number): number {
-  // 2025 USC rates and thresholds
-  const threshold1 = 12012; // 0.5% from €0 to €12,012
+  // 2026 USC rates and thresholds - updated for new calculator
+  const threshold1 = 12012; // 0.5% up to €12,012
   const threshold2 = 25760; // 2% from €12,013 to €25,760
-  const threshold3 = 70044; // 4.5% from €25,761 to €70,044
-  const threshold4 = 100000; // 8% from €70,045 to €100,000
-  // 8% above €100,000
+  const threshold3 = 70044; // 4% from €25,761 to €70,044
+  // 8% above €70,044
 
   let usc = 0;
 
   if (annualGross <= threshold1) {
-    usc = 0;
+    usc = annualGross * 0.005;
   } else if (annualGross <= threshold2) {
-    usc = (annualGross - threshold1) * 0.005;
+    usc = (threshold1 * 0.005) + ((annualGross - threshold1) * 0.02);
   } else if (annualGross <= threshold3) {
-    usc = ((threshold2 - threshold1) * 0.005) + ((annualGross - threshold2) * 0.02);
-  } else if (annualGross <= threshold4) {
-    usc = ((threshold2 - threshold1) * 0.005) + ((threshold3 - threshold2) * 0.02) + ((annualGross - threshold3) * 0.045);
+    usc = (threshold1 * 0.005) +
+          ((threshold2 - threshold1) * 0.02) +
+          ((annualGross - threshold2) * 0.04);
   } else {
-    usc = ((threshold2 - threshold1) * 0.005) + ((threshold3 - threshold2) * 0.02) + ((threshold4 - threshold3) * 0.045) + ((annualGross - threshold4) * 0.08);
+    usc = (threshold1 * 0.005) +
+          ((threshold2 - threshold1) * 0.02) +
+          ((threshold3 - threshold2) * 0.04) +
+          ((annualGross - threshold3) * 0.08);
   }
 
   return usc;
@@ -690,6 +694,27 @@ function calculateCountryTax(annualGross: number, country: string): number {
   }
 }
 
+// Ireland Salary Calculator specific functions
+function calculateIrelandPAYE(grossIncome: number): number {
+  const entryRateLimit = 42000; // 20% rate up to €42,000
+  const middleRateLimit = 70044; // 40% rate from €42,001 to €70,044
+  // 48% rate above €70,044
+
+  let incomeTax = 0;
+
+  if (grossIncome <= entryRateLimit) {
+    incomeTax = grossIncome * 0.20;
+  } else if (grossIncome <= middleRateLimit) {
+    incomeTax = (entryRateLimit * 0.20) + ((grossIncome - entryRateLimit) * 0.40);
+  } else {
+    incomeTax = (entryRateLimit * 0.20) +
+                ((middleRateLimit - entryRateLimit) * 0.40) +
+                ((grossIncome - middleRateLimit) * 0.48);
+  }
+
+  return incomeTax;
+}
+
 // Safe evaluation of mathematical expressions
 function safeEval(expression: string, variables: Record<string, number | string>): number {
   try {
@@ -704,6 +729,7 @@ function safeEval(expression: string, variables: Record<string, number | string>
       calculateUKNI2025,
       calculateIrelandIncomeTax,
       calculateIrelandUSC,
+      calculateIrelandPAYE,
       calculateAustraliaIncomeTax,
       calculateAustraliaMedicareLevy,
       calculateSpainIncomeTax,
@@ -743,7 +769,7 @@ function safeEval(expression: string, variables: Record<string, number | string>
 // Calculate results for a given calculator
 export function calculateResults(
   calculatorId: string,
-  inputValues: Record<string, number | string>
+  inputValues: Record<string, number | string | boolean>
 ): Record<string, number> {
   const calculator = calculatorsData.find(calc => calc.id === calculatorId);
 
@@ -759,6 +785,9 @@ export function calculateResults(
   Object.entries(inputValues).forEach(([key, value]) => {
     if (typeof value === 'number') {
       allVariables[key] = value;
+    } else if (typeof value === 'boolean') {
+      // Convert booleans to numbers (1 for true, 0 for false)
+      allVariables[key] = value ? 1 : 0;
     } else if (typeof value === 'string' && !isNaN(Number(value))) {
       // Convert numeric strings to numbers
       allVariables[key] = parseFloat(value) || 0;

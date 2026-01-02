@@ -61,7 +61,11 @@
     "weeklySalary": "annualSalary / weeksPerYear"
   },
   "outputLabels": {
-    "annualSalary": "Annual Salary",
+    "totalHours": "Total Hours Per Year",
+    "overtimeTotal": "Total Overtime Hours Per Year",
+    "regularSalary": "Regular Annual Salary",
+    "overtimeSalary": "Overtime Annual Salary",
+    "annualSalary": "Total Annual Salary",
     "monthlySalary": "Monthly Salary",
     "weeklySalary": "Weekly Salary"
   },

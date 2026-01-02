@@ -41,31 +41,6 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // Country calculator redirects
-      {
-        source: '/salary-calculator-usa',
-        destination: '/en/salary-calculator-usa',
-        permanent: true,
-      },
-      {
-        source: '/salary-calculator-uk',
-        destination: '/en/salary-calculator-uk',
-        permanent: true,
-      },
-      {
-        source: '/salary-calculator-ireland',
-        destination: '/en/salary-calculator-ireland',
-        permanent: true,
-      },
-      {
-        source: '/salary-calculator-canada',
-        destination: '/en/salary-calculator-canada',
-        permanent: true,
-      },
-      {
-        source: '/salary-calculator-australia',
-        destination: '/en/salary-calculator-australia',
-        permanent: true,
-      },
       // Industry calculator redirects
       {
         source: '/salary-calculator-it-tech',

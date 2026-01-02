@@ -23,10 +23,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "SalaryWise.io - Free Salary Calculators",
-  description: "Calculate your salary, hourly wage, gross to net pay, and more with our free salary calculators. Compare salaries by country and industry.",
   other: {
-    'theme-color': '#3B82F6',
     'google-site-verification': '43vJJoR_yHx5bfRFM23A_Sz1OV1ZXbYoGFwcfUB3Z7c',
   },
 };

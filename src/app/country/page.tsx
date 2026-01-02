@@ -20,7 +20,7 @@ export default function CountryPageFocused() {
       code: 'US',
       name: 'United States',
       flag: '🇺🇸',
-      slug: 'country/usa',
+      slug: 'usa-salary-calculator',
       currency: 'USD',
       taxRate: '~25%',
       description: 'Federal income tax, state taxes, FICA',
@@ -31,7 +31,7 @@ export default function CountryPageFocused() {
       code: 'GB',
       name: 'United Kingdom',
       flag: '🇬🇧',
-      slug: 'country/uk',
+      slug: 'uk-salary-calculator',
       currency: 'GBP',
       taxRate: '~32%',
       description: 'PAYE tax, National Insurance',
@@ -42,7 +42,7 @@ export default function CountryPageFocused() {
       code: 'CA',
       name: 'Canada',
       flag: '🇨🇦',
-      slug: 'country/canada',
+      slug: 'canada-salary-calculator',
       currency: 'CAD',
       taxRate: '~26%',
       description: 'Federal & provincial taxes, CPP, EI',
@@ -53,7 +53,7 @@ export default function CountryPageFocused() {
       code: 'AU',
       name: 'Australia',
       flag: '🇦🇺',
-      slug: 'country/australia',
+      slug: 'australia-salary-calculator',
       currency: 'AUD',
       taxRate: '~30%',
       description: 'Income tax, superannuation',
@@ -64,7 +64,7 @@ export default function CountryPageFocused() {
       code: 'IE',
       name: 'Ireland',
       flag: '🇮🇪',
-      slug: 'country/ireland',
+      slug: 'ireland-salary-calculator',
       currency: 'EUR',
       taxRate: '~27%',
       description: 'Income tax, USC, PRSI',
@@ -75,7 +75,7 @@ export default function CountryPageFocused() {
       code: 'IN',
       name: 'India',
       flag: '🇮🇳',
-      slug: 'country/india',
+      slug: 'india-salary-calculator',
       currency: 'INR',
       taxRate: '~22%',
       description: 'Income tax slabs, cess',
@@ -110,7 +110,7 @@ export default function CountryPageFocused() {
                 <p className="text-gray-600 mt-1">Localized tax calculations for 15+ countries</p>
               </div>
               <Link
-                href="/"
+                href="/en"
                 className="text-blue-600 hover:text-blue-800 font-medium"
               >
                 ← Back to Home
@@ -278,7 +278,7 @@ export default function CountryPageFocused() {
           {/* Quick Access */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-6">
             <Link
-              href="/salary-calculator"
+              href="/en/salary-calculator"
               className="bg-white p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all text-center"
             >
               <div className="text-2xl mb-2">💰</div>
@@ -286,7 +286,7 @@ export default function CountryPageFocused() {
             </Link>
 
             <Link
-              href="/gross-to-net"
+              href="/en/gross-to-net-salary"
               className="bg-white p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all text-center"
             >
               <div className="text-2xl mb-2">📊</div>
@@ -294,7 +294,7 @@ export default function CountryPageFocused() {
             </Link>
 
             <Link
-              href="/guides/gross-vs-net"
+              href="/en/guides"
               className="bg-white p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all text-center"
             >
               <div className="text-2xl mb-2">📚</div>
@@ -341,15 +341,15 @@ export default function CountryPageFocused() {
         {/* Mobile Bottom Navigation */}
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2 z-20 md:hidden">
           <div className="flex justify-around">
-            <Link href="/" className="flex flex-col items-center p-2">
+            <Link href="/en" className="flex flex-col items-center p-2">
               <span className="text-lg">🏠</span>
               <span className="text-xs font-medium mt-1">Home</span>
             </Link>
-            <Link href="/gross-to-net" className="flex flex-col items-center p-2">
+            <Link href="/en/gross-to-net-salary" className="flex flex-col items-center p-2">
               <span className="text-lg">📊</span>
               <span className="text-xs font-medium mt-1">Tax Calc</span>
             </Link>
-            <Link href="/salary-calculator" className="flex flex-col items-center p-2">
+            <Link href="/en/salary-calculator" className="flex flex-col items-center p-2">
               <span className="text-lg">💰</span>
               <span className="text-xs font-medium mt-1">Salary</span>
             </Link>

@@ -5,7 +5,7 @@ export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://salarywise.io';
-  const lastModified = new Date('2026-01-02');
+  const lastModified = new Date('2026-01-04');
 
   // Static pages - English locale URLs
   const staticPages = [
@@ -93,12 +93,42 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.6,
     },
+    {
+      url: `${baseUrl}/en/salary-after-tax-calculator`,
+      lastModified,
+      changeFrequency: 'weekly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/annual-raise-calculator`,
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/en/salary-comparison-calculator`,
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.7,
+    },
+    {
+      url: `${baseUrl}/en/take-home-vs-cost-of-living-calculator`,
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/en/overtime-bonus-tax-calculator`,
+      lastModified,
+      changeFrequency: 'monthly' as const,
+      priority: 0.6,
+    },
   ];
 
   // Country pages - All country calculators
   const countries = ['usa', 'uk', 'ireland', 'canada', 'australia', 'germany', 'france', 'spain', 'india', 'singapore', 'netherlands', 'sweden', 'switzerland', 'new-zealand', 'south-africa'];
   const countryPages = countries.map(country => ({
-    url: `${baseUrl}/en/salary-calculator-${country}`,
+    url: `${baseUrl}/en/${country}-salary-calculator`,
     lastModified,
     changeFrequency: 'monthly' as const,
     priority: 0.6,

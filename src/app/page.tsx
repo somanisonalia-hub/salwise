@@ -1,8 +1,36 @@
+'use client';
+
 import Link from 'next/link';
 import Head from 'next/head';
+import { useState, useMemo } from 'react';
 import content from '../locales/en/page.json';
 
-export default function HomePage() {
+// Search-enabled homepage component
+function HomePageContent() {
+  const [searchQuery, setSearchQuery] = useState('');
+
+  // Create searchable index of all calculators
+  const searchableItems = useMemo(() => {
+    const allItems = [
+      ...content.calculators.items.map(item => ({ ...item, category: 'calculator' })),
+      ...content.countries.items.map(item => ({ ...item, category: 'country', title: item.name, description: `Calculate salary after tax in ${item.name}` })),
+      ...content.guides.items.map(item => ({ ...item, category: 'guide' })),
+    ];
+    return allItems;
+  }, []);
+
+  // Filter items based on search query
+  const filteredItems = useMemo(() => {
+    if (!searchQuery.trim()) return null; // Show all when no search
+
+    const query = searchQuery.toLowerCase();
+    return searchableItems.filter(item =>
+      item.title.toLowerCase().includes(query) ||
+      item.description.toLowerCase().includes(query)
+    );
+  }, [searchQuery, searchableItems]);
+
+  return (
   // Compact structured data for SEO
   const structuredData = {
     "@context": "https://schema.org",
@@ -44,6 +72,39 @@ export default function HomePage() {
               <p className="text-sm sm:text-base md:text-lg mb-6 max-w-2xl mx-auto text-blue-100 leading-relaxed px-2">
                 {content.hero.description}
               </p>
+
+              {/* Search Field */}
+              <div className="max-w-md mx-auto px-4 mb-6">
+                <div className="relative">
+                  <input
+                    type="text"
+                    placeholder="🔍 Search calculators, countries, guides..."
+                    value={searchQuery}
+                    onChange={(e) => setSearchQuery(e.target.value)}
+                    className="w-full px-4 py-3 pl-12 text-gray-900 bg-white border border-gray-300 rounded-lg focus:ring-2 focus:ring-yellow-400 focus:border-transparent shadow-sm"
+                  />
+                  <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                    <svg className="w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                  </div>
+                  {searchQuery && (
+                    <button
+                      onClick={() => setSearchQuery('')}
+                      className="absolute inset-y-0 right-0 pr-3 flex items-center text-gray-400 hover:text-gray-600"
+                    >
+                      <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                      </svg>
+                    </button>
+                  )}
+                </div>
+                {searchQuery && (
+                  <p className="text-xs text-blue-200 mt-2 text-center">
+                    {filteredItems?.length || 0} results found
+                  </p>
+                )}
+              </div>
 
               {/* Mobile-optimized CTA buttons */}
               <div className="flex flex-col sm:flex-row gap-3 justify-center max-w-sm mx-auto px-4">
@@ -87,25 +148,44 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Compact Calculator Grid - Performance optimized */}
+        {/* Dynamic Content Grid - Calculators or Search Results */}
         <div className="max-w-6xl mx-auto px-4 py-6">
-          <h2 className="text-xl font-bold text-gray-900 mb-4 text-center">{content.calculators.title}</h2>
+          <h2 className="text-xl font-bold text-gray-900 mb-4 text-center">
+            {searchQuery ? `Search Results for "${searchQuery}"` : content.calculators.title}
+          </h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {content.calculators.items.map((calc, index) => (
+            {(filteredItems || content.calculators.items).map((item, index) => (
               <Link
                 key={index}
-                href={`/en${calc.href}`}
+                href={`/en${item.href}`}
                 className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
               >
                 <div className="text-center">
-                  <div className="text-2xl mb-2">{calc.icon}</div>
-                  <h3 className="text-sm font-bold text-gray-900 mb-1">{calc.title}</h3>
-                  <p className="text-xs text-gray-600 leading-tight">{calc.description}</p>
+                  <div className="text-2xl mb-2">{item.icon}</div>
+                  <h3 className="text-sm font-bold text-gray-900 mb-1">{item.title}</h3>
+                  <p className="text-xs text-gray-600 leading-tight">{item.description}</p>
+                  {searchQuery && (
+                    <span className="inline-block mt-2 px-2 py-1 text-xs bg-blue-100 text-blue-600 rounded-full">
+                      {item.category}
+                    </span>
+                  )}
                 </div>
               </Link>
             ))}
           </div>
+
+          {searchQuery && filteredItems?.length === 0 && (
+            <div className="text-center py-8">
+              <p className="text-gray-500 mb-4">No results found for "{searchQuery}"</p>
+              <button
+                onClick={() => setSearchQuery('')}
+                className="text-blue-600 hover:text-blue-800 underline"
+              >
+                Clear search
+              </button>
+            </div>
+          )}
         </div>
 
         {/* Calculator Categories - New section */}
@@ -309,4 +389,9 @@ export default function HomePage() {
       </div>
     </>
   );
+}
+
+// Server component wrapper for SEO compatibility
+export default function HomePage() {
+  return <HomePageContent />;
 }

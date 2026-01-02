@@ -108,6 +108,51 @@ export default function HomePage() {
           </div>
         </div>
 
+        {/* Calculator Categories - New section */}
+        <div className="bg-gray-50 px-4 py-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-lg font-bold text-gray-900 mb-4 text-center">Calculator Categories</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              <Link
+                href="/en/country"
+                className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="text-2xl">🌍</div>
+                  <div>
+                    <h3 className="text-sm font-bold text-gray-900">Country Calculators</h3>
+                    <p className="text-xs text-gray-600">15 countries with localized tax rules</p>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                href="/en/industry"
+                className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="text-2xl">💼</div>
+                  <div>
+                    <h3 className="text-sm font-bold text-gray-900">Industry Calculators</h3>
+                    <p className="text-xs text-gray-600">10 job-specific salary calculators</p>
+                  </div>
+                </div>
+              </Link>
+              <Link
+                href="/en/guides"
+                className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="text-2xl">📚</div>
+                  <div>
+                    <h3 className="text-sm font-bold text-gray-900">Educational Guides</h3>
+                    <p className="text-xs text-gray-600">Learn salary concepts & negotiation</p>
+                  </div>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+
         {/* Compact Country Section */}
         <div className="bg-gray-50 px-4 py-6">
           <div className="max-w-6xl mx-auto">

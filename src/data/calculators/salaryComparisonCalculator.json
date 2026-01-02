@@ -33,3 +33,4 @@
     "percentageDifference": "salary1 > 0 ? ((salary2 - salary1) / salary1) * 100 : 0"
   }
 }
+

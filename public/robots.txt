@@ -15,3 +15,4 @@ Allow: /guides/
 
 # Sitemap
 Sitemap: https://salarywise.io/sitemap.xml
+

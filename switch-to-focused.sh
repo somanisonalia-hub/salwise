@@ -29,3 +29,4 @@ echo "  • Target-focused content"
 echo ""
 echo "🚀 Run 'npm run dev' to see the optimized pages!"
 echo "📱 Test on mobile for the best experience!"
+

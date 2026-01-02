@@ -54,3 +54,4 @@ if (grossToNetCalc) {
 }
 
 console.log('\n✅ Data architecture validation complete!');
+

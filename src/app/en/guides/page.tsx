@@ -18,7 +18,7 @@ export default function GuidesPageFocused() {
     {
       id: 'gross-vs-net',
       title: 'Gross vs Net Salary Guide',
-      slug: 'guides/gross-vs-net',
+      slug: 'understanding-gross-vs-net-salary',
       description: 'Understand the critical difference between gross salary and net take-home pay with detailed examples and calculations.',
       icon: '📊',
       readTime: '5 min read',
@@ -29,7 +29,7 @@ export default function GuidesPageFocused() {
     {
       id: 'calculate-take-home',
       title: 'How to Calculate Take-Home Pay',
-      slug: 'guides/how-to-calculate-take-home',
+      slug: 'how-to-calculate-take-home-pay',
       description: 'Step-by-step guide to calculating your take-home pay after taxes, deductions, and withholdings.',
       icon: '🧮',
       readTime: '7 min read',
@@ -40,13 +40,35 @@ export default function GuidesPageFocused() {
     {
       id: 'salary-negotiation',
       title: 'Salary Negotiation Strategies',
-      slug: 'guides/salary-negotiation',
+      slug: 'salary-negotiation-tips',
       description: 'Proven techniques to negotiate your salary effectively and get the compensation you deserve.',
       icon: '💪',
       readTime: '8 min read',
       category: 'Career',
       popular: true,
       color: 'from-purple-500 to-purple-600'
+    },
+    {
+      id: 'taxes-explained',
+      title: 'Taxes Explained by Country',
+      slug: 'taxes-explained-by-country',
+      description: 'Comprehensive guide to tax systems and requirements across different countries.',
+      icon: '🌍',
+      readTime: '10 min read',
+      category: 'Tax Basics',
+      popular: true,
+      color: 'from-orange-500 to-orange-600'
+    },
+    {
+      id: 'salary-trends',
+      title: 'Salary Trends 2026 (Global)',
+      slug: 'salary-trends-2026-global',
+      description: 'Latest global salary trends, forecasts, and insights for 2026 and beyond.',
+      icon: '📈',
+      readTime: '6 min read',
+      category: 'Career',
+      popular: true,
+      color: 'from-indigo-500 to-indigo-600'
     }
   ];
 
@@ -54,7 +76,7 @@ export default function GuidesPageFocused() {
     {
       name: 'Tax Basics',
       description: 'Understanding taxes and deductions',
-      guides: 1,
+      guides: 2,
       icon: '💰'
     },
     {
@@ -66,7 +88,7 @@ export default function GuidesPageFocused() {
     {
       name: 'Career',
       description: 'Salary negotiation and career planning',
-      guides: 1,
+      guides: 2,
       icon: '📈'
     }
   ];
@@ -76,16 +98,16 @@ export default function GuidesPageFocused() {
       title: 'New to Salary Calculations',
       description: 'Start with the fundamentals',
       steps: [
-        { name: 'Gross vs Net Salary', slug: 'guides/gross-vs-net' },
-        { name: 'Calculate Take-Home Pay', slug: 'guides/how-to-calculate-take-home' }
+        { name: 'Gross vs Net Salary', slug: 'understanding-gross-vs-net-salary' },
+        { name: 'Calculate Take-Home Pay', slug: 'how-to-calculate-take-home-pay' }
       ]
     },
     {
       title: 'Career Advancement',
       description: 'Maximize your earning potential',
       steps: [
-        { name: 'Salary Negotiation', slug: 'guides/salary-negotiation' },
-        { name: 'Gross vs Net Salary', slug: 'guides/gross-vs-net' }
+        { name: 'Salary Negotiation', slug: 'salary-negotiation-tips' },
+        { name: 'Salary Trends 2026', slug: 'salary-trends-2026-global' }
       ]
     }
   ];
@@ -136,7 +158,7 @@ export default function GuidesPageFocused() {
 
             <div className="grid grid-cols-1 md:grid-cols-4 gap-4 text-center">
               <div className="bg-blue-50 p-4 rounded">
-                <div className="text-2xl font-bold text-blue-600">3</div>
+                <div className="text-2xl font-bold text-blue-600">5</div>
                 <div className="text-sm text-blue-800">Expert Guides</div>
               </div>
               <div className="bg-green-50 p-4 rounded">
@@ -161,10 +183,10 @@ export default function GuidesPageFocused() {
               Featured Guides
             </h3>
 
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
               {guides.map((guide) => (
                 <article key={guide.id} className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all">
-                  <Link href={`/${guide.slug}`} className="block">
+                  <Link href={`/en/${guide.slug}`} className="block">
                     <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${guide.color} flex items-center justify-center mb-4`}>
                       <div className="text-2xl">{guide.icon}</div>
                     </div>
@@ -219,7 +241,7 @@ export default function GuidesPageFocused() {
                     {path.steps.map((step, stepIndex) => (
                       <Link
                         key={stepIndex}
-                        href={`/${step.slug}`}
+                        href={`/en/${step.slug}`}
                         className="flex items-center gap-3 text-white hover:text-blue-200 transition-colors"
                       >
                         <div className="w-6 h-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-xs font-bold">

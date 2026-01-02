@@ -62,6 +62,11 @@ export default function IndustriesPage() {
                         {industry.slug === 'healthcare' && '🏥'}
                         {industry.slug === 'finance' && '💰'}
                         {industry.slug === 'engineering' && '⚙️'}
+                        {industry.slug === 'teacher' && '👨‍🏫'}
+                        {industry.slug === 'retail' && '🛍️'}
+                        {industry.slug === 'construction' && '🏗️'}
+                        {industry.slug === 'legal' && '⚖️'}
+                        {industry.slug === 'marketing-sales' && '📈'}
                       </div>
                     </div>
                     <div className="flex-1">
@@ -133,3 +138,4 @@ export default function IndustriesPage() {
     </>
   );
 }
+

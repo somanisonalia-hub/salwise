@@ -180,3 +180,4 @@ npm run start
 *Last updated: January 2026*
 
 For questions about performance optimizations, check the [Next.js documentation](https://nextjs.org/docs) or create an issue in the repository.
+

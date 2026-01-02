@@ -13,7 +13,7 @@ interface PageProps {
 // Supported locales
 const supportedLocales = ['en', 'es', 'fr'];
 
-// All available page slugs - Phase 1 (35 pages)
+// All available page slugs - Phase 1 (45 pages)
 const availablePages = [
   // Core Calculator Pages (10)
   'salary-calculator',
@@ -26,7 +26,7 @@ const availablePages = [
   'salary-after-tax-calculator',
   'annual-raise-calculator',
   'salary-comparison-calculator',
-  // Industry-Specific Calculators
+  // Industry-Specific Calculators (10)
   'salary-calculator-it-tech',
   'salary-calculator-healthcare',
   'salary-calculator-engineering',
@@ -37,7 +37,7 @@ const availablePages = [
   'salary-calculator-legal',
   'salary-calculator-marketing-sales',
   'salary-calculator-startup-entrepreneur',
-  // Financial & Planning Calculators
+  // Financial & Planning Calculators (8)
   'loan-emi-calculator',
   'salary-vs-expenses-calculator',
   'take-home-vs-cost-of-living-calculator',
@@ -46,7 +46,7 @@ const availablePages = [
   'salary-vs-freelance-income-calculator',
   'savings-from-salary-calculator',
   'retirement-contribution-calculator',
-  // Educational Guides
+  // Educational Guides (5)
   'how-to-calculate-take-home-pay',
   'understanding-gross-vs-net-salary',
   'salary-negotiation-tips',
@@ -58,9 +58,6 @@ const availablePages = [
   'salary-after-tax-ireland',
   'salary-calculator-usa',
   'salary-calculator-uk',
-  'salary-calculator-canada',
-  'salary-calculator-australia',
-  'salary-calculator-ireland',
   'salary-calculator-canada',
   'salary-calculator-australia',
   'salary-calculator-germany',

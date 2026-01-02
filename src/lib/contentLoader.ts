@@ -18,3 +18,4 @@ export async function loadPageContent(locale: string, pageType: string, slug?: s
   const path = slug ? `${pageType}/${slug}` : pageType;
   return loadContent(locale, path);
 }
+

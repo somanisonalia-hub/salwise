@@ -10,7 +10,7 @@
       },
       "secondary": {
         "text": "📊 Gross to Net",
-        "href": "/gross-to-net"
+        "href": "/gross-to-net-salary"
       }
     },
     "trustIndicators": "✓ Free ✓ No Sign-up ✓ Accurate ✓ Mobile Friendly"
@@ -26,17 +26,17 @@
       {
         "icon": "📊",
         "text": "Gross→Net",
-        "href": "/gross-to-net"
+        "href": "/gross-to-net-salary"
       },
       {
         "icon": "🇺🇸",
         "text": "USA",
-        "href": "/country/usa"
+        "href": "/salary-after-tax-usa"
       },
       {
         "icon": "📖",
         "text": "Guides",
-        "href": "/guides/gross-vs-net"
+        "href": "/understanding-gross-vs-net-salary"
       }
     ]
   },
@@ -53,19 +53,43 @@
         "title": "Gross to Net",
         "description": "Find your take-home pay",
         "icon": "📊",
-        "href": "/gross-to-net"
+        "href": "/gross-to-net-salary"
       },
       {
         "title": "Take-Home Pay",
         "description": "Calculate net paycheck",
         "icon": "💵",
-        "href": "/take-home-pay"
+        "href": "/take-home-pay-calculator"
       },
       {
         "title": "Hourly to Salary",
         "description": "Compare hourly vs salary",
         "icon": "⏰",
-        "href": "/hourly-to-salary"
+        "href": "/hourly-to-salary-calculator"
+      },
+      {
+        "title": "Bonus Calculator",
+        "description": "Calculate bonus impact on salary",
+        "icon": "🎁",
+        "href": "/bonus-calculator"
+      },
+      {
+        "title": "Overtime Pay",
+        "description": "Calculate overtime earnings",
+        "icon": "⏱️",
+        "href": "/overtime-pay-calculator"
+      },
+      {
+        "title": "Loan EMI",
+        "description": "Calculate monthly loan payments",
+        "icon": "🏠",
+        "href": "/loan-emi-calculator"
+      },
+      {
+        "title": "Salary vs Expenses",
+        "description": "Compare income vs spending",
+        "icon": "📈",
+        "href": "/salary-vs-expenses-calculator"
       }
     ]
   },
@@ -76,32 +100,32 @@
       {
         "name": "USA",
         "flag": "🇺🇸",
-        "href": "/country/usa"
+        "href": "/salary-after-tax-usa"
       },
       {
         "name": "UK",
         "flag": "🇬🇧",
-        "href": "/country/uk"
+        "href": "/salary-after-tax-uk"
       },
       {
         "name": "Canada",
         "flag": "🇨🇦",
-        "href": "/country/canada"
+        "href": "/salary-calculator-canada"
       },
       {
         "name": "Australia",
         "flag": "🇦🇺",
-        "href": "/country/australia"
+        "href": "/salary-calculator-australia"
       },
       {
         "name": "Ireland",
         "flag": "🇮🇪",
-        "href": "/country/ireland"
+        "href": "/salary-after-tax-ireland"
       },
       {
         "name": "India",
         "flag": "🇮🇳",
-        "href": "/country/india"
+        "href": "/salary-calculator-india"
       }
     ]
   },
@@ -131,17 +155,17 @@
       {
         "title": "Gross vs Net Salary",
         "description": "Learn the difference and why it matters for financial planning.",
-        "href": "/guides/gross-vs-net"
+        "href": "/understanding-gross-vs-net-salary"
       },
       {
         "title": "Calculate Take-Home Pay",
         "description": "Step-by-step guide to calculating your net income.",
-        "href": "/guides/how-to-calculate-take-home"
+        "href": "/how-to-calculate-take-home-pay"
       },
       {
         "title": "Salary Negotiation",
         "description": "Tips for negotiating better compensation.",
-        "href": "/guides/salary-negotiation"
+        "href": "/salary-negotiation-tips"
       }
     ]
   },
@@ -158,17 +182,17 @@
       {
         "icon": "📊",
         "text": "Gross→Net",
-        "href": "/gross-to-net"
+        "href": "/gross-to-net-salary"
       },
       {
         "icon": "🇺🇸",
         "text": "USA",
-        "href": "/country/usa"
+        "href": "/salary-after-tax-usa"
       },
       {
         "icon": "📖",
         "text": "Guides",
-        "href": "/guides/gross-vs-net"
+        "href": "/understanding-gross-vs-net-salary"
       }
     ]
   },
@@ -178,3 +202,4 @@
     "keywords": "salary calculator, gross to net, take home pay, hourly to salary, pay calculator"
   }
 }
+

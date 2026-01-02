@@ -22,7 +22,7 @@
       "averageSalary": "$85,000 - $150,000",
       "growth": "High demand, 13% growth projected",
       "keySkills": ["Programming", "Cloud computing", "AI/ML"],
-      "href": "/en/industry/it"
+      "href": "/en/salary-calculator-it-tech"
     },
     {
       "name": "Healthcare",
@@ -31,7 +31,7 @@
       "averageSalary": "$60,000 - $200,000",
       "growth": "Strong demand, 16% growth projected",
       "keySkills": ["Medical knowledge", "Patient care", "Specialized training"],
-      "href": "/en/industry/healthcare"
+      "href": "/en/salary-calculator-healthcare"
     },
     {
       "name": "Finance & Banking",
@@ -40,7 +40,7 @@
       "averageSalary": "$70,000 - $180,000",
       "growth": "Stable demand, 7% growth projected",
       "keySkills": ["Financial analysis", "Risk management", "Regulatory compliance"],
-      "href": "/en/industry/finance"
+      "href": "/en/salary-calculator-finance-banking"
     },
     {
       "name": "Engineering",
@@ -49,7 +49,52 @@
       "averageSalary": "$75,000 - $130,000",
       "growth": "Moderate demand, 6% growth projected",
       "keySkills": ["Technical expertise", "Problem solving", "Project management"],
-      "href": "/en/industry/engineering"
+      "href": "/en/salary-calculator-engineering"
+    },
+    {
+      "name": "Teacher & Education",
+      "slug": "teacher",
+      "description": "Educators, professors, school administrators, and education professionals",
+      "averageSalary": "$45,000 - $90,000",
+      "growth": "Stable demand, 5% growth projected",
+      "keySkills": ["Teaching methods", "Curriculum development", "Student assessment"],
+      "href": "/en/salary-calculator-teacher"
+    },
+    {
+      "name": "Retail & Sales",
+      "slug": "retail",
+      "description": "Retail management, sales representatives, and customer service roles",
+      "averageSalary": "$35,000 - $80,000",
+      "growth": "Moderate demand, 4% growth projected",
+      "keySkills": ["Customer service", "Sales techniques", "Inventory management"],
+      "href": "/en/salary-calculator-retail"
+    },
+    {
+      "name": "Construction",
+      "slug": "construction",
+      "description": "Construction workers, project managers, architects, and building trades",
+      "averageSalary": "$50,000 - $100,000",
+      "growth": "Strong demand, 8% growth projected",
+      "keySkills": ["Safety protocols", "Project management", "Technical skills"],
+      "href": "/en/salary-calculator-construction"
+    },
+    {
+      "name": "Legal",
+      "slug": "legal",
+      "description": "Lawyers, paralegals, legal assistants, and legal professionals",
+      "averageSalary": "$60,000 - $150,000",
+      "growth": "Moderate demand, 6% growth projected",
+      "keySkills": ["Legal research", "Case management", "Regulatory compliance"],
+      "href": "/en/salary-calculator-legal"
+    },
+    {
+      "name": "Marketing & Sales",
+      "slug": "marketing-sales",
+      "description": "Marketing specialists, sales managers, and advertising professionals",
+      "averageSalary": "$50,000 - $120,000",
+      "growth": "High demand, 10% growth projected",
+      "keySkills": ["Digital marketing", "Sales strategy", "Market research"],
+      "href": "/en/salary-calculator-marketing-sales"
     }
   ],
 
@@ -112,3 +157,4 @@
     "description": "Explore salary information by industry and career sector"
   }
 }
+

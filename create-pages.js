@@ -70,3 +70,4 @@ function processDirectory(basePath, currentPath = '', depth = 0) {
 // Process all directories
 processDirectory('./src/app');
 console.log('All page files created successfully!');
+

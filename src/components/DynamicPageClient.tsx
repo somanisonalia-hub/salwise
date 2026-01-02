@@ -19,7 +19,7 @@ interface PageData {
   related?: string[];
   tips?: string[];
   faqs?: any[];
-  intro?: string;
+  intro?: string | { paragraph1: string; paragraph2: string };
   howItWorks?: string;
   whatIsGrossVsNet?: string;
   howGrossConvertsToNet?: string;
@@ -218,9 +218,18 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
             <h1 className="text-3xl font-bold text-gray-900 mb-4">{pageData.h1}</h1>
 
             <div className="bg-white border border-gray-200 p-6 mb-6">
-              <p className="text-gray-700 leading-relaxed">
-                {pageData.intro || getIntroContent()}
-              </p>
+              {pageData.intro ? (
+                typeof pageData.intro === 'string' ? (
+                  <p className="text-gray-700 leading-relaxed">{pageData.intro}</p>
+                ) : (
+                  <div className="text-gray-700 leading-relaxed space-y-4">
+                    <p>{pageData.intro.paragraph1}</p>
+                    <p>{pageData.intro.paragraph2}</p>
+                  </div>
+                )
+              ) : (
+                <p className="text-gray-700 leading-relaxed">{getIntroContent()}</p>
+              )}
             </div>
 
 

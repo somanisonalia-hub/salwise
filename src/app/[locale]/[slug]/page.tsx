@@ -234,13 +234,14 @@ export default async function LocalizedPage({ params }: PageProps) {
     return <DynamicPageClient pageData={pageData} calculatorData={undefined} />;
   } catch (error) {
     console.error('Error loading page data:', error);
+    const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';
     return (
       <div className="min-h-screen bg-gray-50 flex items-center justify-center">
         <div className="text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Error Loading Page</h1>
           <p className="text-gray-600 mb-8">The page data could not be loaded.</p>
           <p className="text-sm text-gray-500 mt-4">Slug: {slug}, Locale: {locale}</p>
-          <p className="text-sm text-red-500 mt-2">Error: {error.message}</p>
+          <p className="text-sm text-red-500 mt-2">Error: {errorMessage}</p>
         </div>
       </div>
     );

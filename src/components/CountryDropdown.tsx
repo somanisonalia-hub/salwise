@@ -17,7 +17,7 @@ const countries: Country[] = [
     code: 'US',
     name: 'United States',
     flag: '🇺🇸',
-    slug: 'country/usa',
+    slug: 'salary-after-tax-usa',
     currency: 'USD',
     description: 'Federal & state income tax calculations'
   },
@@ -25,7 +25,7 @@ const countries: Country[] = [
     code: 'GB',
     name: 'United Kingdom',
     flag: '🇬🇧',
-    slug: 'country/uk',
+    slug: 'salary-after-tax-uk',
     currency: 'GBP',
     description: 'PAYE tax & National Insurance'
   },
@@ -33,7 +33,7 @@ const countries: Country[] = [
     code: 'CA',
     name: 'Canada',
     flag: '🇨🇦',
-    slug: 'country/canada',
+    slug: 'salary-calculator-canada',
     currency: 'CAD',
     description: 'Federal & provincial tax calculations'
   },
@@ -41,7 +41,7 @@ const countries: Country[] = [
     code: 'AU',
     name: 'Australia',
     flag: '🇦🇺',
-    slug: 'country/australia',
+    slug: 'salary-calculator-australia',
     currency: 'AUD',
     description: 'Income tax & superannuation'
   },
@@ -49,7 +49,7 @@ const countries: Country[] = [
     code: 'IE',
     name: 'Ireland',
     flag: '🇮🇪',
-    slug: 'country/ireland',
+    slug: 'salary-after-tax-ireland',
     currency: 'EUR',
     description: 'Income tax & USC calculations'
   },
@@ -57,7 +57,7 @@ const countries: Country[] = [
     code: 'IN',
     name: 'India',
     flag: '🇮🇳',
-    slug: 'country/india',
+    slug: 'salary-calculator-india',
     currency: 'INR',
     description: 'Indian income tax slabs'
   }

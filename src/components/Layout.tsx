@@ -67,30 +67,30 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">By Country</h3>
               <ul className="space-y-2">
-                <li><Link href={`/${locale}/country/usa`} className="text-gray-600 hover:text-blue-600">USA</Link></li>
-                <li><Link href={`/${locale}/country/uk`} className="text-gray-600 hover:text-blue-600">UK</Link></li>
-                <li><Link href={`/${locale}/country/canada`} className="text-gray-600 hover:text-blue-600">Canada</Link></li>
-                <li><Link href={`/${locale}/country/australia`} className="text-gray-600 hover:text-blue-600">Australia</Link></li>
+                <li><Link href={`/${locale}/salary-after-tax-usa`} className="text-gray-600 hover:text-blue-600">USA</Link></li>
+                <li><Link href={`/${locale}/salary-after-tax-uk`} className="text-gray-600 hover:text-blue-600">UK</Link></li>
+                <li><Link href={`/${locale}/salary-calculator-canada`} className="text-gray-600 hover:text-blue-600">Canada</Link></li>
+                <li><Link href={`/${locale}/salary-calculator-australia`} className="text-gray-600 hover:text-blue-600">Australia</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">By Industry</h3>
               <ul className="space-y-2">
-                <li><Link href={`/${locale}/industry/it`} className="text-gray-600 hover:text-blue-600">IT & Tech</Link></li>
-                <li><Link href={`/${locale}/industry/healthcare`} className="text-gray-600 hover:text-blue-600">Healthcare</Link></li>
-                <li><Link href={`/${locale}/industry/finance`} className="text-gray-600 hover:text-blue-600">Finance</Link></li>
-                <li><Link href={`/${locale}/industry/engineering`} className="text-gray-600 hover:text-blue-600">Engineering</Link></li>
+                <li><Link href={`/${locale}/salary-calculator-it-tech`} className="text-gray-600 hover:text-blue-600">IT & Tech</Link></li>
+                <li><Link href={`/${locale}/salary-calculator-healthcare`} className="text-gray-600 hover:text-blue-600">Healthcare</Link></li>
+                <li><Link href={`/${locale}/salary-calculator-finance-banking`} className="text-gray-600 hover:text-blue-600">Finance</Link></li>
+                <li><Link href={`/${locale}/salary-calculator-engineering`} className="text-gray-600 hover:text-blue-600">Engineering</Link></li>
               </ul>
             </div>
 
             <div>
               <h3 className="text-lg font-semibold text-gray-900 mb-4">Guides</h3>
               <ul className="space-y-2">
-                <li><Link href={`/${locale}/guides/gross-vs-net`} className="text-gray-600 hover:text-blue-600">Gross vs Net</Link></li>
-                <li><Link href={`/${locale}/guides/salary-negotiation`} className="text-gray-600 hover:text-blue-600">Salary Negotiation</Link></li>
-                <li><Link href={`/${locale}/guides/taxes-explained-by-country`} className="text-gray-600 hover:text-blue-600">Taxes by Country</Link></li>
-                <li><Link href={`/${locale}/guides/salary-trends-2026`} className="text-gray-600 hover:text-blue-600">2026 Trends</Link></li>
+                <li><Link href={`/${locale}/understanding-gross-vs-net-salary`} className="text-gray-600 hover:text-blue-600">Gross vs Net</Link></li>
+                <li><Link href={`/${locale}/salary-negotiation-tips`} className="text-gray-600 hover:text-blue-600">Salary Negotiation</Link></li>
+                <li><Link href={`/${locale}/taxes-explained-by-country`} className="text-gray-600 hover:text-blue-600">Taxes by Country</Link></li>
+                <li><Link href={`/${locale}/salary-trends-2026-global`} className="text-gray-600 hover:text-blue-600">2026 Trends</Link></li>
               </ul>
             </div>
           </div>

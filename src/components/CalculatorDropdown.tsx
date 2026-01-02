@@ -24,7 +24,7 @@ const calculators: Calculator[] = [
   {
     id: 'gross-net',
     name: 'Gross to Net Calculator',
-    slug: 'gross-to-net',
+    slug: 'gross-to-net-salary',
     description: 'Find your take-home pay',
     icon: '📊',
     category: 'Basic'
@@ -32,7 +32,7 @@ const calculators: Calculator[] = [
   {
     id: 'take-home',
     name: 'Take-Home Pay Calculator',
-    slug: 'take-home-pay',
+    slug: 'take-home-pay-calculator',
     description: 'Calculate your net paycheck',
     icon: '💵',
     category: 'Basic'
@@ -40,7 +40,7 @@ const calculators: Calculator[] = [
   {
     id: 'hourly-salary',
     name: 'Hourly to Salary Calculator',
-    slug: 'hourly-to-salary',
+    slug: 'hourly-to-salary-calculator',
     description: 'Convert hourly wage to salary',
     icon: '⏰',
     category: 'Basic'
@@ -164,7 +164,7 @@ export default function CalculatorDropdown() {
             {/* Footer */}
             <div className="px-4 py-3 border-t border-gray-100 bg-gray-50 rounded-b-xl">
               <Link
-                href="/guides/gross-vs-net"
+                href="/understanding-gross-vs-net-salary"
                 onClick={() => setIsOpen(false)}
                 className="block text-center text-blue-600 hover:text-blue-800 font-medium"
               >

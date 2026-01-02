@@ -321,52 +321,6 @@ function HomePageContent() {
           </div>
         </div>
 
-        {/* Compact Footer */}
-        <footer className="bg-white border-t border-gray-200 mt-16">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-            <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Salary Calculators</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/en/salary-calculator/" className="text-gray-600 hover:text-blue-600">Salary Calculator</Link></li>
-                  <li><Link href="/en/hourly-to-salary-calculator/" className="text-gray-600 hover:text-blue-600">Hourly to Salary</Link></li>
-                  <li><Link href="/en/gross-to-net-salary/" className="text-gray-600 hover:text-blue-600">Gross to Net</Link></li>
-                  <li><Link href="/en/take-home-pay-calculator/" className="text-gray-600 hover:text-blue-600">Take Home Pay</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">By Country</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/en/salary-after-tax-usa/" className="text-gray-600 hover:text-blue-600">USA</Link></li>
-                  <li><Link href="/en/salary-after-tax-uk/" className="text-gray-600 hover:text-blue-600">UK</Link></li>
-                  <li><Link href="/en/salary-calculator-canada/" className="text-gray-600 hover:text-blue-600">Canada</Link></li>
-                  <li><Link href="/en/salary-calculator-australia/" className="text-gray-600 hover:text-blue-600">Australia</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">By Industry</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/en/salary-calculator-it-tech/" className="text-gray-600 hover:text-blue-600">IT & Tech</Link></li>
-                  <li><Link href="/en/salary-calculator-healthcare/" className="text-gray-600 hover:text-blue-600">Healthcare</Link></li>
-                  <li><Link href="/en/salary-calculator-finance-banking/" className="text-gray-600 hover:text-blue-600">Finance</Link></li>
-                  <li><Link href="/en/salary-calculator-engineering/" className="text-gray-600 hover:text-blue-600">Engineering</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-4">Guides</h3>
-                <ul className="space-y-2">
-                  <li><Link href="/en/understanding-gross-vs-net-salary/" className="text-gray-600 hover:text-blue-600">Gross vs Net</Link></li>
-                  <li><Link href="/en/salary-negotiation-tips/" className="text-gray-600 hover:text-blue-600">Salary Negotiation</Link></li>
-                  <li><Link href="/en/taxes-explained-by-country/" className="text-gray-600 hover:text-blue-600">Taxes by Country</Link></li>
-                  <li><Link href="/en/salary-trends-2026-global/" className="text-gray-600 hover:text-blue-600">2026 Trends</Link></li>
-                </ul>
-              </div>
-            </div>
-            <div className="border-t border-gray-200 mt-8 pt-8 text-center">
-              <p className="text-gray-600">© 2024 SalaryWise.io. Free salary calculators for everyone.</p>
-            </div>
-          </div>
-        </footer>
 
         {/* Mobile Bottom Navigation - Optimized for performance */}
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2 z-20 md:hidden shadow-lg">

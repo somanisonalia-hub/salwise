@@ -1,27 +1,45 @@
-import { findPageBySlug } from '../../../lib/pageGenerator';
+import { promises as fs } from 'fs';
+import path from 'path';
 import DynamicPageClient from '../../../components/DynamicPageClient';
 
 export async function generateMetadata() {
-  const page = findPageBySlug('country/australia');
+  try {
+    const filePath = path.join(process.cwd(), 'src', 'locales', 'en', 'country', 'australia.json');
+    const fileContent = await fs.readFile(filePath, 'utf8');
+    const pageData = JSON.parse(fileContent);
 
-  if (!page) {
     return {
-      title: 'Page Not Found',
+      title: pageData.metaTitle,
+      description: pageData.metaDescription,
+      keywords: [pageData.primaryKeyword, ...pageData.longTailKeywords].join(', '),
+      openGraph: {
+        title: pageData.metaTitle,
+        description: pageData.metaDescription,
+        type: 'website',
+      },
+    };
+  } catch (error) {
+    return {
+      title: 'Australia Salary Calculator - SalaryWise.io',
     };
   }
-
-  return {
-    title: page.metaTitle,
-    description: page.metaDescription,
-    keywords: [page.primaryKeyword, ...page.longTailKeywords].join(', '),
-    openGraph: {
-      title: page.metaTitle,
-      description: page.metaDescription,
-      type: 'website',
-    },
-  };
 }
 
-export default function Page() {
-  return <DynamicPageClient slug="country/australia" />
+export default async function Page() {
+  try {
+    const filePath = path.join(process.cwd(), 'src', 'locales', 'en', 'country', 'australia.json');
+    const fileContent = await fs.readFile(filePath, 'utf8');
+    const pageData = JSON.parse(fileContent);
+
+    return <DynamicPageClient pageData={pageData} />
+  } catch (error) {
+    return (
+      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
+        <div className="text-center">
+          <h1 className="text-4xl font-bold text-gray-900 mb-4">Page Not Found</h1>
+          <p className="text-gray-600 mb-8">The requested page could not be loaded.</p>
+        </div>
+      </div>
+    );
+  }
 }

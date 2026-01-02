@@ -1,5 +1,8 @@
 import { MetadataRoute } from 'next';
 
+// Required for static export compatibility
+export const dynamic = 'force-static';
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://salarywise.io';
   const lastModified = new Date('2026-01-02');

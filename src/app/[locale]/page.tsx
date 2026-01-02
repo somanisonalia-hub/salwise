@@ -171,7 +171,7 @@ export default async function HomePage({ params }: PageProps) {
         <div className="bg-white border-b border-gray-200 shadow-sm">
           <div className="max-w-6xl mx-auto px-4 py-2">
             <div className="flex justify-around sm:justify-center sm:gap-6">
-              {content.quickAccess.links.map((link, index) => (
+              {content.quickAccess.links.map((link: { href: string; icon: string; text: string }, index: number) => (
                 <Link
                   key={index}
                   href={`/${locale}${link.href}`}
@@ -190,7 +190,7 @@ export default async function HomePage({ params }: PageProps) {
           <h2 className="text-xl font-bold text-gray-900 mb-4 text-center">{content.calculators.title}</h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {content.calculators.items.map((calc, index) => (
+            {content.calculators.items.map((calc: { href: string; icon: string; title: string; description: string }, index: number) => (
               <Link
                 key={index}
                 href={`/${locale}${calc.href}`}
@@ -213,7 +213,7 @@ export default async function HomePage({ params }: PageProps) {
             <p className="text-sm text-gray-600 text-center mb-4">Localized tax calculations</p>
 
             <div className="grid grid-cols-3 sm:grid-cols-3 lg:grid-cols-6 gap-2">
-              {countries.map((country) => (
+              {countries.map((country: { name: string; slug: string; flag: string }) => (
                 <Link
                   key={country.slug}
                   href={`/${locale}/${country.slug}`}

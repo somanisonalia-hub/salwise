@@ -212,9 +212,9 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
 
       {/* Main Layout with Sidebar */}
       <div className="max-w-7xl mx-auto px-4 py-8">
-        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div className="max-w-4xl mx-auto">
           {/* Main Content Column */}
-          <div className="lg:col-span-2">
+          <div>
             <h1 className="text-3xl font-bold text-gray-900 mb-4">{pageData.h1}</h1>
 
             <div className="bg-white border border-gray-200 p-6 mb-6">
@@ -233,12 +233,12 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
             </div>
 
 
-            {true && (
+            {calculatorData && calculatorData.inputs && calculatorData.inputs.length > 0 && (
               <div className="bg-white border border-gray-200 p-6 mb-6">
                 <h2 className="text-xl font-bold text-gray-900 mb-4">{pageData.ui?.calculatorHeading || "Calculate Your Results"}</h2>
 
                 <div className="space-y-4 mb-6">
-                  {calculatorData?.inputs?.map((input: any) => (
+                  {calculatorData.inputs.map((input: any) => (
                     <div key={input.id}>
                       <label className="block text-sm font-medium text-gray-700 mb-1">
                         {input.label}
@@ -1510,54 +1510,93 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
               </div>
             )}
 
-            {/* CTA Section */}
-            <div className="bg-blue-600 text-white rounded-lg shadow-sm p-6">
-              <h2 className="text-xl font-bold mb-2">Ready to Calculate More?</h2>
-              <p className="mb-4">Explore our other salary calculators to understand your full compensation package.</p>
-              <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <a
-                  href="/gross-to-net-salary"
-                  className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
-                >
-                  Gross to Net Calculator
-                </a>
-                <a
-                  href="/take-home-pay-calculator"
-                  className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
-                >
-                  Take-Home Pay Calculator
-                </a>
-              </div>
-            </div>
-          </div>
+            {/* Related Calculators Section */}
+            <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-8">
+              <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Explore Our Salary Tools</h2>
+              <p className="text-gray-600 mb-8 text-center">Discover comprehensive salary calculators and educational guides to understand your compensation better.</p>
 
-          {/* Sidebar Column */}
-          <div className="lg:col-span-1">
-            <div className="sticky top-8">
-              <div className="bg-white border border-gray-200 p-6">
-                <h2 className="text-xl font-bold text-gray-900 mb-4">Related Calculators</h2>
-                <div className="space-y-3">
-                  {pageData.related && pageData.related.slice(0, 4).map((relatedSlug: string, index: number) => (
-                    <a
-                      key={index}
-                      href={`/${relatedSlug}`}
-                      className="block p-4 border border-gray-200 rounded-lg hover:border-blue-300 hover:shadow-md transition-all"
-                    >
-                      <h3 className="font-semibold text-gray-900 capitalize">
-                        {relatedSlug.replace(/-/g, ' ')}
-                      </h3>
-                      <p className="text-sm text-gray-600 mt-1">
-                        Calculate {relatedSlug.replace(/-/g, ' ').toLowerCase()}
-                      </p>
-                      <span className="text-blue-600 text-sm font-medium mt-2 inline-block">
-                        Calculate →
-                      </span>
-                    </a>
-                  ))}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {/* Main Tools */}
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                    🧮 Main Tools
+                  </h3>
+                  <div className="space-y-2">
+                    <a href="/en/salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Salary Calculator</a>
+                    <a href="/en/gross-to-net-salary" className="block text-blue-600 hover:text-blue-800 text-sm">Gross to Net Calculator</a>
+                    <a href="/en/take-home-pay-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Take-Home Pay Calculator</a>
+                    <a href="/en/hourly-to-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Hourly to Salary Calculator</a>
+                  </div>
+                </div>
+
+                {/* Learn About Salary */}
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                    📚 Learn About Salary
+                  </h3>
+                  <div className="space-y-2">
+                    <a href="/en/understanding-gross-vs-net-salary" className="block text-blue-600 hover:text-blue-800 text-sm">Gross vs Net Salary</a>
+                    <a href="/en/salary-negotiation-tips" className="block text-blue-600 hover:text-blue-800 text-sm">Salary Negotiation Tips</a>
+                    <a href="/en/how-to-calculate-take-home-pay" className="block text-blue-600 hover:text-blue-800 text-sm">How to Calculate Take-Home Pay</a>
+                    <a href="/en/taxes-explained-by-country" className="block text-blue-600 hover:text-blue-800 text-sm">Taxes Explained by Country</a>
+                  </div>
+                </div>
+
+                {/* By Country */}
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                    🌍 By Country
+                  </h3>
+                  <div className="space-y-2">
+                    <a href="/en/salary-calculator-usa" className="block text-blue-600 hover:text-blue-800 text-sm">USA Salary Calculator</a>
+                    <a href="/en/salary-calculator-uk" className="block text-blue-600 hover:text-blue-800 text-sm">UK Salary Calculator</a>
+                    <a href="/en/salary-calculator-canada" className="block text-blue-600 hover:text-blue-800 text-sm">Canada Salary Calculator</a>
+                    <a href="/en/salary-calculator-australia" className="block text-blue-600 hover:text-blue-800 text-sm">Australia Salary Calculator</a>
+                  </div>
+                </div>
+
+                {/* By Industry */}
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                    🏢 By Industry
+                  </h3>
+                  <div className="space-y-2">
+                    <a href="/en/salary-calculator-it-tech" className="block text-blue-600 hover:text-blue-800 text-sm">IT/Tech Salary Calculator</a>
+                    <a href="/en/salary-calculator-healthcare" className="block text-blue-600 hover:text-blue-800 text-sm">Healthcare Salary Calculator</a>
+                    <a href="/en/salary-calculator-engineering" className="block text-blue-600 hover:text-blue-800 text-sm">Engineering Salary Calculator</a>
+                    <a href="/en/salary-calculator-finance-banking" className="block text-blue-600 hover:text-blue-800 text-sm">Finance/Banking Calculator</a>
+                  </div>
+                </div>
+
+                {/* Financial Planning */}
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                    📊 Financial Planning
+                  </h3>
+                  <div className="space-y-2">
+                    <a href="/en/annual-raise-promotion-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Raise Calculator</a>
+                    <a href="/en/salary-vs-expenses-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Salary vs Expenses Calculator</a>
+                    <a href="/en/savings-from-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Savings Calculator</a>
+                    <a href="/en/retirement-contribution-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Retirement Calculator</a>
+                  </div>
+                </div>
+
+                {/* Tax & Benefits */}
+                <div className="bg-gray-50 p-6 rounded-lg">
+                  <h3 className="text-lg font-bold text-gray-900 mb-4 flex items-center">
+                    💰 Tax & Benefits
+                  </h3>
+                  <div className="space-y-2">
+                    <a href="/en/bonus-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Bonus Calculator</a>
+                    <a href="/en/overtime-pay-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Overtime Calculator</a>
+                    <a href="/en/loan-emi-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Loan EMI Calculator</a>
+                    <a href="/en/salary-vs-freelance-income-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Freelance Income Calculator</a>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>

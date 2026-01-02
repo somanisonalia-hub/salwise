@@ -1,0 +1,86 @@
+{
+  "slug": "contact",
+  "type": "page",
+  "h1": "Contact Us - SalaryWise.io",
+  "metaTitle": "Contact SalaryWise.io - Get in Touch",
+  "metaDescription": "Contact SalaryWise.io for questions about our salary calculators, suggestions, or support. We're here to help with your salary calculation needs.",
+  "primaryKeyword": "contact salarywise",
+  "longTailKeywords": [
+    "contact salarywise.io",
+    "salary calculator support",
+    "calculator feedback",
+    "salary tool questions"
+  ],
+  "related": [
+    "faq",
+    "about",
+    "salary-calculator"
+  ],
+  "title": "Contact Us - SalaryWise.io",
+  "description": "Get in touch with our team",
+  "keywords": "contact, support, feedback, salary calculator help",
+  "canonical": "https://salarywise.io/en/contact",
+
+  "intro": {
+    "paragraph1": "Have questions about our salary calculators? Need help with a specific calculation? Want to suggest a new feature? We'd love to hear from you!",
+    "paragraph2": "While we don't offer direct customer support, you can reach out through the channels below for general inquiries and feedback."
+  },
+
+  "contactMethods": [
+    {
+      "icon": "📧",
+      "title": "Email",
+      "description": "General inquiries and feedback",
+      "contact": "hello@salarywise.io",
+      "availability": "Response within 2-3 business days"
+    },
+    {
+      "icon": "🐛",
+      "title": "Bug Reports",
+      "description": "Found an issue with our calculators?",
+      "contact": "GitHub Issues",
+      "availability": "Check our repository for known issues"
+    },
+    {
+      "icon": "💡",
+      "title": "Feature Requests",
+      "description": "Suggest new calculators or improvements",
+      "contact": "GitHub Discussions",
+      "availability": "Community-driven feature requests"
+    }
+  ],
+
+  "faqPreview": [
+    {
+      "question": "Are the calculations accurate?",
+      "answer": "Yes, we use official tax rates and formulas. However, tax laws change frequently, so always consult a professional for important financial decisions."
+    },
+    {
+      "question": "Can I use this for tax filing?",
+      "answer": "Our calculators provide estimates only. For official tax calculations, please consult a qualified tax professional or use official government tools."
+    },
+    {
+      "question": "Do you store my data?",
+      "answer": "No, all calculations are performed in your browser. We don't store any personal or financial information."
+    }
+  ],
+
+  "disclaimer": "Please note that SalaryWise.io provides general information and estimation tools only. Our calculators are not a substitute for professional financial or tax advice. Always consult with qualified professionals for important financial decisions.",
+
+  "social": {
+    "title": "Stay Connected",
+    "description": "Follow us for updates on new calculators and salary trends",
+    "platforms": [
+      {
+        "name": "Twitter",
+        "handle": "@SalaryWiseIO",
+        "description": "Latest updates and tips"
+      },
+      {
+        "name": "LinkedIn",
+        "handle": "SalaryWise.io",
+        "description": "Professional networking"
+      }
+    ]
+  }
+}

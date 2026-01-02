@@ -154,7 +154,7 @@ export default function IndustryPageFocused() {
               </div>
               <div className="bg-green-50 p-4 rounded">
                 <div className="text-2xl font-bold text-green-600">Updated</div>
-                <div className="text-sm text-green-800">2024 Data</div>
+                <div className="text-sm text-green-800">2026 Data</div>
               </div>
               <div className="bg-purple-50 p-4 rounded">
                 <div className="text-2xl font-bold text-purple-600">Industry</div>

@@ -272,7 +272,7 @@ export default function HomeBestOptimized() {
         <footer className="bg-gray-900 text-white px-4 py-4">
           <div className="max-w-6xl mx-auto text-center">
             <p className="text-gray-400 text-xs">
-              © 2024 SalaryWise.io - Free salary calculators for everyone.
+              © 2026 SalaryWise.io - Free salary calculators for everyone.
             </p>
           </div>
         </footer>

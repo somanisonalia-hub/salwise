@@ -32,7 +32,7 @@ export default function USAFocused() {
     <>
       <Head>
         <title>USA Salary Calculator | US Take-Home Pay Calculator | SalaryWise.io</title>
-        <meta name="description" content="Calculate take-home pay in the USA. Includes federal income tax, state taxes, Social Security, Medicare. Free US salary calculator with accurate 2024 tax rates." />
+        <meta name="description" content="Calculate take-home pay in the USA. Includes federal income tax, state taxes, Social Security, Medicare. Free US salary calculator with accurate 2026 tax rates." />
         <meta name="keywords" content="USA salary calculator, US take home pay, federal tax calculator, state income tax, US payroll calculator" />
         <link rel="canonical" href="https://salarywise.io/country/usa" />
         <script
@@ -112,7 +112,7 @@ export default function USAFocused() {
                 <div className="flex items-center gap-2">
                   <input type="checkbox" id="standardDeduction" defaultChecked className="rounded" />
                   <label htmlFor="standardDeduction" className="text-sm text-gray-700">
-                    Use 2024 Standard Deduction ($14,600 single)
+                    Use 2026 Standard Deduction ($14,600 single)
                   </label>
                 </div>
 
@@ -187,9 +187,9 @@ export default function USAFocused() {
             </div>
           </div>
 
-          {/* Federal Tax Brackets 2024 */}
+          {/* Federal Tax Brackets 2026 */}
           <div className="mt-6 bg-white rounded-lg border border-gray-200 p-6">
-            <h3 className="text-lg font-bold text-gray-900 mb-4">2024 US Federal Tax Brackets (Single Filer)</h3>
+            <h3 className="text-lg font-bold text-gray-900 mb-4">2026 US Federal Tax Brackets (Single Filer)</h3>
             <div className="overflow-x-auto">
               <table className="w-full text-sm">
                 <thead>

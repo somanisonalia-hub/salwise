@@ -57,13 +57,13 @@
 
   "cpp": {
     "title": "Canada Pension Plan (CPP)",
-    "employeeRate": "5.95% on earnings $3,500 - $66,600 (2024 maximum)",
+    "employeeRate": "5.95% on earnings $3,500 - $66,600 (2026 maximum)",
     "employerRate": "5.95% (matched by employer)"
   },
 
   "ei": {
     "title": "Employment Insurance (EI)",
-    "employeeRate": "1.63% on earnings up to $61,500 (2024 maximum)",
+    "employeeRate": "1.63% on earnings up to $61,500 (2026 maximum)",
     "employerRate": "2.33% (additional employer contribution)"
   },
 

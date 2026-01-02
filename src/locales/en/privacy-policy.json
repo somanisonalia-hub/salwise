@@ -1,0 +1,83 @@
+{
+  "slug": "privacy-policy",
+  "type": "page",
+  "h1": "Privacy Policy - SalaryWise.io",
+  "metaTitle": "Privacy Policy - SalaryWise.io Salary Calculators",
+  "metaDescription": "Read our privacy policy to understand how SalaryWise.io handles your data. We respect your privacy and don't store personal information.",
+  "primaryKeyword": "privacy policy salarywise",
+  "longTailKeywords": [
+    "salarywise.io privacy policy",
+    "salary calculator privacy",
+    "data privacy policy",
+    "financial calculator privacy"
+  ],
+  "related": [
+    "about",
+    "contact",
+    "terms-of-service"
+  ],
+  "title": "Privacy Policy - SalaryWise.io",
+  "description": "How we protect your privacy",
+  "keywords": "privacy policy, data protection, salary calculator privacy",
+  "canonical": "https://salarywise.io/en/privacy-policy",
+
+  "lastUpdated": "January 2, 2025",
+
+  "sections": [
+    {
+      "heading": "Information We Collect",
+      "content": "SalaryWise.io does not collect, store, or transmit any personal information. All salary calculations are performed entirely in your web browser using JavaScript. No data is sent to our servers or third-party services."
+    },
+    {
+      "heading": "How Calculations Work",
+      "content": "Our calculators run locally in your browser. When you enter salary information, all processing happens on your device. We use mathematical formulas based on publicly available tax rates and do not require internet connectivity for basic calculations."
+    },
+    {
+      "heading": "Cookies and Tracking",
+      "content": "We do not use cookies, tracking pixels, or any form of user tracking. Our website does not collect analytics data, usage statistics, or any information about your browsing behavior."
+    },
+    {
+      "heading": "Third-Party Services",
+      "content": "We use Google Fonts for typography and Cloudflare for content delivery. These services may collect anonymous usage data according to their respective privacy policies. We do not share any user data with third parties."
+    },
+    {
+      "heading": "Data Security",
+      "content": "Since no user data is stored on our servers, there is no risk of data breaches or unauthorized access. Your financial information remains entirely on your device and under your control."
+    },
+    {
+      "heading": "Children's Privacy",
+      "content": "Our services are not directed at children under 13. We do not knowingly collect personal information from children. If you are under 13, please do not use our calculators or contact us."
+    },
+    {
+      "heading": "Changes to This Policy",
+      "content": "We may update this privacy policy occasionally. Any changes will be posted on this page with an updated revision date. Your continued use of our services constitutes acceptance of the updated policy."
+    },
+    {
+      "heading": "Contact Us",
+      "content": "If you have any questions about this privacy policy or our data practices, please contact us through the contact page on our website."
+    }
+  ],
+
+  "keyPoints": [
+    {
+      "icon": "🔒",
+      "title": "No Data Storage",
+      "description": "We don't store any personal or financial information"
+    },
+    {
+      "icon": "💻",
+      "title": "Local Processing",
+      "description": "All calculations happen in your browser"
+    },
+    {
+      "icon": "🚫",
+      "title": "No Cookies",
+      "description": "We don't use tracking cookies or analytics"
+    },
+    {
+      "icon": "🛡️",
+      "title": "Privacy First",
+      "description": "Your financial data stays private and secure"
+    }
+  ]
+}

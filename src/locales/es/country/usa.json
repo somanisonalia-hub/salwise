@@ -27,7 +27,7 @@
     "title": "Calculate Your USA Salary After Taxes",
     "description": "Get accurate take-home pay calculations for US salaries. Our calculator includes federal income tax, state taxes, FICA contributions, and standard deductions.",
     "features": [
-      "Federal income tax calculations (2024 brackets)",
+      "Federal income tax calculations (2026 brackets)",
       "State-specific tax rates",
       "FICA taxes (Social Security + Medicare)",
       "Standard deduction calculations"
@@ -48,7 +48,7 @@
     },
     {
       "question": "How often are tax rates updated?",
-      "answer": "We update calculations annually based on the latest IRS tax brackets and rates. Current calculations use 2024 tax information."
+      "answer": "We update calculations annually based on the latest IRS tax brackets and rates. Current calculations use 2026 tax information."
     }
   ]
 }

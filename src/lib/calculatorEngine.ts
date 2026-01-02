@@ -56,6 +56,9 @@ import salaryCalculatorConstructionData from '../data/calculators/salaryCalculat
 import salaryCalculatorLegalData from '../data/calculators/salaryCalculatorLegal.json';
 import salaryCalculatorMarketingSalesData from '../data/calculators/salaryCalculatorMarketingSales.json';
 import salaryCalculatorStartupEntrepreneurData from '../data/calculators/salaryCalculatorStartupEntrepreneur.json';
+import usaSalaryData from '../data/calculators/usaSalary.json';
+import ukSalaryData from '../data/calculators/ukSalary.json';
+import irelandSalaryData from '../data/calculators/irelandSalary.json';
 import loanEmiCalculatorData from '../data/calculators/loanEmiCalculator.json';
 import salaryVsExpensesCalculatorData from '../data/calculators/salaryVsExpensesCalculator.json';
 import takeHomeVsCostOfLivingCalculatorData from '../data/calculators/takeHomeVsCostOfLivingCalculator.json';
@@ -74,6 +77,9 @@ const calculatorsData: Calculator[] = [
   hourlyToSalaryData,
   bonusCalculatorData,
   overtimePayData,
+  usaSalaryData,
+  ukSalaryData,
+  irelandSalaryData,
   salaryAfterTaxUSAData,
   salaryAfterTaxUKData,
   salaryAfterTaxIrelandData,

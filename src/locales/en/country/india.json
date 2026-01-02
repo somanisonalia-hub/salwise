@@ -33,7 +33,7 @@
   },
 
   "incomeTax": {
-    "title": "Indian Income Tax Rates 2024 (New Tax Regime)",
+    "title": "Indian Income Tax Rates 2026 (New Tax Regime)",
     "brackets": [
       {"range": "₹0 - ₹3,00,000", "rate": "0%"},
       {"range": "₹3,00,001 - ₹7,00,000", "rate": "5%"},

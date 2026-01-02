@@ -1,0 +1,207 @@
+{
+  "slug": "salary-guide",
+  "type": "page",
+  "h1": "Salary Guide 2025 - Understanding Compensation & Negotiation",
+  "metaTitle": "Salary Guide 2025 - Compensation Trends and Negotiation Tips",
+  "metaDescription": "Comprehensive salary guide for 2025. Learn about compensation trends, salary negotiation strategies, benefits packages, and how to maximize your earning potential.",
+  "primaryKeyword": "salary guide 2025",
+  "longTailKeywords": [
+    "salary guide 2025",
+    "salary negotiation guide",
+    "compensation trends 2025",
+    "how to negotiate salary",
+    "salary increase tips"
+  ],
+  "related": [
+    "salary-negotiation-tips",
+    "understanding-gross-vs-net-salary",
+    "salary-calculator"
+  ],
+  "title": "Salary Guide 2025 - Understanding Compensation & Negotiation",
+  "description": "Your comprehensive guide to salaries and compensation",
+  "keywords": "salary guide, salary negotiation, compensation trends, salary increase",
+  "canonical": "https://salarywise.io/en/salary-guide",
+
+  "intro": {
+    "paragraph1": "Understanding your salary and compensation is crucial for financial planning and career advancement. This comprehensive guide covers everything from salary negotiation strategies to compensation trends and benefits optimization.",
+    "paragraph2": "Whether you're entering the job market, seeking a raise, or negotiating a job offer, this guide provides practical advice to help you maximize your earning potential."
+  },
+
+  "salaryComponents": [
+    {
+      "component": "Base Salary",
+      "description": "The fixed annual or hourly wage you receive",
+      "importance": "Makes up 70-80% of total compensation",
+      "negotiationTip": "Always negotiate base pay first before discussing bonuses"
+    },
+    {
+      "component": "Performance Bonus",
+      "description": "Variable pay based on individual or company performance",
+      "importance": "Can add 10-30% to total compensation",
+      "negotiationTip": "Get bonus structure in writing with clear metrics"
+    },
+    {
+      "component": "Stock Options/RSUs",
+      "description": "Equity compensation in the form of company shares",
+      "importance": "High potential value, especially in tech/growth companies",
+      "negotiationTip": "Understand vesting schedule and tax implications"
+    },
+    {
+      "component": "Benefits Package",
+      "description": "Health insurance, retirement contributions, paid time off",
+      "importance": "Significant value, often 20-40% of total compensation",
+      "negotiationTip": "Compare benefit values across offers carefully"
+    }
+  ],
+
+  "negotiationStrategies": [
+    {
+      "strategy": "Research Market Rates",
+      "description": "Use salary data from reliable sources to understand your market value",
+      "tools": "SalaryWise.io calculators, Glassdoor, Levels.fyi, LinkedIn Salary",
+      "timing": "Before applying and during interviews"
+    },
+    {
+      "strategy": "Delay Salary Discussion",
+      "description": "Focus on role fit and enthusiasm before discussing compensation",
+      "benefit": "Prevents lowball offers and shows genuine interest",
+      "timing": "Early interview stages"
+    },
+    {
+      "strategy": "Provide Salary Range",
+      "description": "Give a range instead of a specific number to maintain flexibility",
+      "example": "\"I'm targeting $80,000-$90,000 based on my research\"",
+      "benefit": "Shows preparation while allowing negotiation room"
+    },
+    {
+      "strategy": "Consider Total Package",
+      "description": "Look beyond base salary to bonuses, benefits, and growth potential",
+      "calculation": "Calculate total compensation value using our tools",
+      "benefit": "May reveal better offers than base salary suggests"
+    }
+  ],
+
+  "salaryTrends2025": [
+    {
+      "trend": "Remote Work Premium",
+      "description": "Companies paying 5-15% more for remote positions",
+      "reason": "Broader talent pool and reduced office costs",
+      "advice": "Highlight remote work preferences in negotiations"
+    },
+    {
+      "trend": "Skills-Based Pay",
+      "description": "Compensation based on specific skills rather than job titles",
+      "industries": "Tech, healthcare, finance",
+      "advice": "Document and showcase specialized skills"
+    },
+    {
+      "trend": "Inflation Adjustments",
+      "description": "Raises accounting for cost-of-living increases",
+      "impact": "3-5% additional increases beyond merit raises",
+      "advice": "Factor inflation into salary expectations"
+    },
+    {
+      "trend": "DEI Salary Transparency",
+      "description": "More companies publishing salary ranges in job postings",
+      "benefit": "Reduces negotiation gaps and promotes fairness",
+      "advice": "Research posted ranges before applying"
+    }
+  ],
+
+  "industryInsights": [
+    {
+      "industry": "Technology",
+      "growth": "8-12% annual raises",
+      "key": "Stock compensation, remote work options",
+      "negotiation": "Focus on equity and flexible arrangements"
+    },
+    {
+      "industry": "Healthcare",
+      "growth": "4-6% annual raises",
+      "key": "Shift differentials, overtime pay",
+      "negotiation": "Emphasize specialized certifications"
+    },
+    {
+      "industry": "Finance",
+      "growth": "5-8% annual raises",
+      "key": "Performance bonuses, profit sharing",
+      "negotiation": "Highlight quantitative achievements"
+    },
+    {
+      "industry": "Education",
+      "growth": "3-5% annual raises",
+      "key": "Summer pay, professional development",
+      "negotiation": "Focus on experience and student outcomes"
+    }
+  ],
+
+  "commonMistakes": [
+    {
+      "mistake": "Accepting First Offer",
+      "consequence": "Leaving money on the table",
+      "fix": "Always negotiate, even if you're happy with the offer"
+    },
+    {
+      "mistake": "Focusing Only on Base Pay",
+      "consequence": "Missing valuable benefits and bonuses",
+      "fix": "Calculate total compensation package value"
+    },
+    {
+      "mistake": "Revealing Current Salary Too Early",
+      "consequence": "Anchoring negotiations to your current pay",
+      "fix": "Deflect questions about current salary until later stages"
+    },
+    {
+      "mistake": "Not Having a BATNA",
+      "consequence": "Weak negotiating position",
+      "fix": "Know your alternatives and walk-away point"
+    }
+  ],
+
+  "timing": {
+    "title": "When to Ask for a Raise",
+    "scenarios": [
+      {
+        "scenario": "Annual Review",
+        "timing": "Standard time for merit increases",
+        "preparation": "Prepare performance achievements 2-3 months in advance"
+      },
+      {
+        "scenario": "Taking on New Responsibilities",
+        "timing": "When workload or scope increases significantly",
+        "preparation": "Document additional duties and their impact"
+      },
+      {
+        "scenario": "Market Rate Changes",
+        "timing": "When industry salaries increase substantially",
+        "preparation": "Gather current market data for your role"
+      },
+      {
+        "scenario": "Promotion",
+        "timing": "Before or immediately after promotion",
+        "preparation": "Research promotion salary ranges beforehand"
+      }
+    ]
+  },
+
+  "calculators": {
+    "title": "Tools to Help Your Salary Planning",
+    "tools": [
+      {
+        "name": "Salary Calculator",
+        "description": "Calculate take-home pay and tax obligations",
+        "href": "/salary-calculator"
+      },
+      {
+        "name": "Raise Calculator",
+        "description": "Plan your salary increase and negotiate effectively",
+        "href": "/annual-raise-promotion-calculator"
+      },
+      {
+        "name": "Cost of Living Calculator",
+        "description": "Compare salaries across locations",
+        "href": "/take-home-vs-cost-of-living-calculator"
+      }
+    ]
+  }
+}

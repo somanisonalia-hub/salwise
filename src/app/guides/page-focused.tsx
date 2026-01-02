@@ -255,7 +255,7 @@ export default function GuidesPageFocused() {
                     <span className="text-blue-600 text-sm font-bold">✓</span>
                   </div>
                   <div>
-                    <div className="font-semibold text-gray-900">2024 Updated</div>
+                    <div className="font-semibold text-gray-900">2026 Updated</div>
                     <div className="text-gray-600 text-sm">Latest tax laws, rates, and financial information</div>
                   </div>
                 </div>

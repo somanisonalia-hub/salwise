@@ -58,6 +58,7 @@ const availablePages = [
   'salary-after-tax-ireland',
   'salary-calculator-usa',
   'salary-calculator-uk',
+  'salary-calculator-ireland',
   'salary-calculator-canada',
   'salary-calculator-australia',
   'salary-calculator-germany',

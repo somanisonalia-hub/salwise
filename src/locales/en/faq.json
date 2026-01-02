@@ -1,0 +1,117 @@
+{
+  "slug": "faq",
+  "type": "page",
+  "h1": "Frequently Asked Questions - SalaryWise.io",
+  "metaTitle": "FAQ - Frequently Asked Questions About Salary Calculators",
+  "metaDescription": "Get answers to common questions about salary calculations, tax rates, take-home pay, and using our free salary calculators. Comprehensive FAQ guide.",
+  "primaryKeyword": "salary calculator faq",
+  "longTailKeywords": [
+    "salary calculator frequently asked questions",
+    "how to calculate take home pay",
+    "salary tax calculator questions",
+    "gross vs net salary faq"
+  ],
+  "related": [
+    "how-to-calculate-take-home-pay",
+    "understanding-gross-vs-net-salary",
+    "contact"
+  ],
+  "title": "Frequently Asked Questions - SalaryWise.io",
+  "description": "Answers to common questions about salary calculations",
+  "keywords": "faq, salary calculator questions, take home pay, tax questions",
+  "canonical": "https://salarywise.io/en/faq",
+
+  "categories": [
+    {
+      "name": "General Questions",
+      "faqs": [
+        {
+          "question": "What is SalaryWise.io?",
+          "answer": "SalaryWise.io is a free online platform that provides comprehensive salary calculators and financial planning tools. We help you understand your take-home pay, tax obligations, and salary comparisons across multiple countries."
+        },
+        {
+          "question": "Are the calculators free to use?",
+          "answer": "Yes, all our calculators are completely free to use. No registration, no fees, no hidden costs. Simply enter your information and get instant results."
+        },
+        {
+          "question": "Do I need to create an account?",
+          "answer": "No, you don't need to create an account or provide any personal information. All calculations are performed instantly in your web browser."
+        },
+        {
+          "question": "Is my data secure and private?",
+          "answer": "Absolutely. We don't store any personal or financial information. All calculations happen locally in your browser, so your data never leaves your device."
+        }
+      ]
+    },
+    {
+      "name": "Calculator Accuracy",
+      "faqs": [
+        {
+          "question": "How accurate are the calculations?",
+          "answer": "Our calculators use the latest available tax rates and formulas from official government sources. However, tax laws change frequently, and individual circumstances may vary. For precise calculations, consult a tax professional."
+        },
+        {
+          "question": "Why might my actual take-home pay differ?",
+          "answer": "Actual take-home pay can differ due to additional deductions (health insurance, retirement contributions, garnishments), local tax variations, or changes in tax laws. Our calculators provide estimates based on standard formulas."
+        },
+        {
+          "question": "Are the tax rates up to date?",
+          "answer": "We strive to keep our tax rates current with the latest available information. However, tax rates can change, and we recommend verifying with official government sources for the most current rates."
+        },
+        {
+          "question": "Can I use this for tax filing?",
+          "answer": "Our calculators provide general estimates only and should not be used for official tax filing or financial planning. Always consult qualified tax professionals for important financial decisions."
+        }
+      ]
+    },
+    {
+      "name": "Technical Questions",
+      "faqs": [
+        {
+          "question": "Do the calculators work offline?",
+          "answer": "Most basic calculations work offline once the page is loaded. However, some advanced features may require an internet connection for additional resources."
+        },
+        {
+          "question": "What browsers are supported?",
+          "answer": "Our calculators work on all modern browsers including Chrome, Firefox, Safari, and Edge. For the best experience, use the latest version of your browser."
+        },
+        {
+          "question": "Why isn't my calculation working?",
+          "answer": "Make sure you've entered valid numbers and selected the correct country/region. If you continue having issues, try refreshing the page or clearing your browser cache."
+        },
+        {
+          "question": "Can I save or print my results?",
+          "answer": "Yes, you can print the results page or take a screenshot. Results are displayed instantly and can be viewed multiple times during your session."
+        }
+      ]
+    },
+    {
+      "name": "Country & Tax Questions",
+      "faqs": [
+        {
+          "question": "Which countries are supported?",
+          "answer": "We support salary calculations for 15+ countries including the USA, UK, Canada, Australia, Germany, France, and many more. Check our country-specific calculators for your location."
+        },
+        {
+          "question": "What tax systems are included?",
+          "answer": "Our calculators include income tax, social security contributions, and other standard deductions based on each country's tax system. We cover progressive tax brackets and various deduction types."
+        },
+        {
+          "question": "Do you include local taxes?",
+          "answer": "We include federal/national taxes and major deductions. Local or state taxes may vary significantly and might not be included in all calculations. Check with local authorities for precise rates."
+        },
+        {
+          "question": "What about expat taxes?",
+          "answer": "Our calculators focus on standard resident tax rates. If you're an expatriate, tax treaties, foreign income exclusions, or special rules may apply. Consult a tax professional for expatriate situations."
+        }
+      ]
+    }
+  ],
+
+  "contactPrompt": {
+    "title": "Still have questions?",
+    "description": "Can't find the answer you're looking for? Get in touch with us!",
+    "cta": "Contact Us",
+    "href": "/contact"
+  }
+}

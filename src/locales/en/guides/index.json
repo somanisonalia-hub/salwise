@@ -22,7 +22,7 @@
         {
           "title": "Salary Negotiation Tips",
           "description": "Master the art of negotiating job offers and raises",
-          "href": "/en/guides/salary-negotiation",
+          "href": "/en/salary-negotiation-tips",
           "readTime": "8 min read"
         }
       ]
@@ -34,13 +34,13 @@
         {
           "title": "Gross vs Net Salary",
           "description": "The complete guide to understanding take-home pay",
-          "href": "/en/guides/gross-vs-net",
+          "href": "/en/understanding-gross-vs-net-salary",
           "readTime": "6 min read"
         },
         {
           "title": "How to Calculate Take-Home Pay",
           "description": "Step-by-step guide to net salary calculation",
-          "href": "/en/guides/how-to-calculate-take-home",
+          "href": "/en/how-to-calculate-take-home-pay",
           "readTime": "10 min read"
         }
       ]
@@ -52,7 +52,7 @@
         {
           "title": "Career Advancement Strategies",
           "description": "Tips for getting promoted and increasing your salary",
-          "href": "/en/guides/career-advancement",
+          "href": "/en/salary-guide",
           "readTime": "12 min read"
         }
       ]
@@ -65,21 +65,21 @@
       {
         "title": "Gross vs Net Salary Guide",
         "description": "Learn the difference between gross and net pay",
-        "href": "/en/guides/gross-vs-net",
+        "href": "/en/understanding-gross-vs-net-salary",
         "readTime": "6 min read",
         "views": "25K+ views"
       },
       {
         "title": "Salary Negotiation Strategies",
         "description": "Get proven tips for negotiating higher pay",
-        "href": "/en/guides/salary-negotiation",
+        "href": "/en/salary-negotiation-tips",
         "readTime": "8 min read",
         "views": "18K+ views"
       },
       {
         "title": "Take-Home Pay Calculator Guide",
         "description": "Complete guide to calculating net salary",
-        "href": "/en/guides/how-to-calculate-take-home",
+        "href": "/en/how-to-calculate-take-home-pay",
         "readTime": "10 min read",
         "views": "15K+ views"
       }

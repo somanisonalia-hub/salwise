@@ -97,7 +97,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
 
           <div className="border-t border-gray-200 mt-8 pt-8 text-center">
             <p className="text-gray-600">
-              © 2024 SalaryWise.io. Free salary calculators for everyone.
+              © 2026 SalaryWise.io. Free salary calculators for everyone.
             </p>
           </div>
         </div>

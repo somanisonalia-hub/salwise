@@ -20,7 +20,7 @@
       "code": "US",
       "flag": "🇺🇸",
       "description": "Federal income tax, state taxes, Social Security, Medicare",
-      "href": "/en/country/usa",
+      "href": "/en/salary-calculator-usa",
       "taxRate": "Federal: 10-37%, State: 0-13.3%"
     },
     {
@@ -28,7 +28,7 @@
       "code": "GB",
       "flag": "🇬🇧",
       "description": "Income tax, National Insurance, student loan repayments",
-      "href": "/en/country/uk",
+      "href": "/en/salary-calculator-uk",
       "taxRate": "Income tax: 0-45%, NI: 8-12%"
     },
     {
@@ -36,7 +36,7 @@
       "code": "CA",
       "flag": "🇨🇦",
       "description": "Federal and provincial income tax, CPP, EI contributions",
-      "href": "/en/country/canada",
+      "href": "/en/salary-calculator-canada",
       "taxRate": "Federal: 15-29%, Provincial: 5-20.5%"
     },
     {
@@ -44,7 +44,7 @@
       "code": "AU",
       "flag": "🇦🇺",
       "description": "Income tax, superannuation guarantee, Medicare levy",
-      "href": "/en/country/australia",
+      "href": "/en/salary-calculator-australia",
       "taxRate": "Income tax: 0-45%, Super: 10%"
     },
     {
@@ -52,7 +52,7 @@
       "code": "IE",
       "flag": "🇮🇪",
       "description": "Income tax, Universal Social Charge, PRSI contributions",
-      "href": "/en/country/ireland",
+      "href": "/en/salary-calculator-ireland",
       "taxRate": "Income tax: 0-40%, USC: 0.5-8%"
     },
     {
@@ -60,7 +60,7 @@
       "code": "IN",
       "flag": "🇮🇳",
       "description": "Income tax, professional tax, provident fund contributions",
-      "href": "/en/country/india",
+      "href": "/en/salary-calculator-india",
       "taxRate": "Income tax: 0-30%, PF: 12%"
     }
   ],

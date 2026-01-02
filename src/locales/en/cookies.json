@@ -1,0 +1,155 @@
+{
+  "slug": "cookies",
+  "type": "page",
+  "h1": "Cookie Policy - SalaryWise.io",
+  "metaTitle": "Cookie Policy - How We Use Cookies on SalaryWise.io",
+  "metaDescription": "Learn about how SalaryWise.io uses cookies to enhance your experience. Understand our cookie policy, manage your preferences, and control your privacy settings.",
+  "primaryKeyword": "cookie policy salarywise",
+  "longTailKeywords": [
+    "salarywise.io cookie policy",
+    "salary calculator cookies",
+    "cookie settings",
+    "manage cookies"
+  ],
+  "related": [
+    "privacy-policy",
+    "terms-of-service",
+    "about"
+  ],
+  "title": "Cookie Policy - SalaryWise.io",
+  "description": "How we use cookies and your privacy choices",
+  "keywords": "cookies, privacy, cookie policy, cookie settings",
+  "canonical": "https://salarywise.io/en/cookies",
+
+  "lastUpdated": "January 2, 2025",
+
+  "intro": {
+    "paragraph1": "This Cookie Policy explains how SalaryWise.io uses cookies and similar technologies to enhance your browsing experience, analyze site traffic, and personalize content.",
+    "paragraph2": "By using our website, you consent to the use of cookies in accordance with this policy."
+  },
+
+  "whatAreCookies": {
+    "title": "What Are Cookies?",
+    "content": "Cookies are small text files that are stored on your device when you visit our website. They help us remember your preferences, improve site functionality, and provide you with a better user experience. Cookies can be categorized as essential, analytics, functional, and marketing cookies."
+  },
+
+  "cookieTypes": [
+    {
+      "type": "Essential Cookies",
+      "description": "Required for basic website functionality",
+      "purpose": "These cookies are necessary for the website to function properly. They enable core features like page navigation, secure access to account areas, and remembering your cookie preferences.",
+      "duration": "Session or persistent (varies)",
+      "required": true,
+      "examples": [
+        "Session management",
+        "Security features",
+        "Load balancing"
+      ]
+    },
+    {
+      "type": "Analytics Cookies",
+      "description": "Help us understand how visitors use our site",
+      "purpose": "These cookies collect information about how you use our website, which pages you visit, and if you encounter any errors. This helps us improve our website's performance and user experience.",
+      "duration": "Up to 2 years",
+      "required": false,
+      "examples": [
+        "Page view tracking",
+        "Traffic source analysis",
+        "Error monitoring"
+      ]
+    },
+    {
+      "type": "Functional Cookies",
+      "description": "Enhance your browsing experience",
+      "purpose": "These cookies remember your preferences and settings to provide enhanced features and personalized content. They may also help us remember your language preference or calculator settings.",
+      "duration": "Up to 1 year",
+      "required": false,
+      "examples": [
+        "Language preferences",
+        "Calculator settings",
+        "Form data preservation"
+      ]
+    },
+    {
+      "type": "Marketing Cookies",
+      "description": "Used for advertising and retargeting",
+      "purpose": "These cookies are used to deliver relevant advertisements and track the effectiveness of our marketing campaigns. They may be set by third-party advertising networks.",
+      "duration": "Up to 1 year",
+      "required": false,
+      "examples": [
+        "Ad targeting",
+        "Campaign measurement",
+        "Retargeting"
+      ]
+    }
+  ],
+
+  "thirdPartyCookies": {
+    "title": "Third-Party Cookies",
+    "description": "We may use third-party services that set their own cookies",
+    "services": [
+      {
+        "name": "Google Analytics",
+        "purpose": "Website analytics and performance monitoring",
+        "policy": "Google Analytics Privacy Policy",
+        "optOut": "Google Analytics Opt-out"
+      },
+      {
+        "name": "Cloudflare",
+        "purpose": "Content delivery and security",
+        "policy": "Cloudflare Privacy Policy",
+        "optOut": "Cloudflare Cookie Policy"
+      },
+      {
+        "name": "Google Fonts",
+        "purpose": "Web font delivery",
+        "policy": "Google Fonts Privacy Policy",
+        "optOut": "Google Privacy Settings"
+      }
+    ]
+  },
+
+  "cookieManagement": {
+    "title": "Managing Your Cookie Preferences",
+    "methods": [
+      {
+        "method": "Browser Settings",
+        "description": "Most web browsers allow you to control cookies through their settings. You can usually find these settings in the 'Options' or 'Preferences' menu.",
+        "steps": [
+          "Open your browser settings",
+          "Find the privacy or security section",
+          "Look for cookie settings",
+          "Choose to block or delete cookies"
+        ]
+      },
+      {
+        "method": "Cookie Consent Banner",
+        "description": "When you first visit our site, you'll see a cookie consent banner where you can accept or reject non-essential cookies.",
+        "availability": "Available on first visit"
+      },
+      {
+        "method": "Opt-out Links",
+        "description": "For specific third-party services, you can use their opt-out mechanisms listed in the Third-Party Cookies section.",
+        "availability": "Service-specific"
+      }
+    ],
+    "note": "Please note that disabling certain cookies may affect the functionality of our website and limit your user experience."
+  },
+
+  "dataRetention": {
+    "title": "Cookie Data Retention",
+    "content": "Different types of cookies have different lifespans. Session cookies are deleted when you close your browser, while persistent cookies remain until they expire or are deleted. We regularly review and update our cookie practices to ensure compliance with privacy regulations."
+  },
+
+  "updates": {
+    "title": "Updates to This Policy",
+    "content": "We may update this Cookie Policy from time to time to reflect changes in our practices or legal requirements. Any changes will be posted on this page with an updated revision date. We encourage you to review this policy periodically."
+  },
+
+  "contact": {
+    "title": "Questions About Cookies?",
+    "content": "If you have any questions about our use of cookies or this policy, please contact us.",
+    "email": "privacy@salarywise.io",
+    "link": "/contact"
+  }
+}

@@ -1,0 +1,99 @@
+{
+  "slug": "about",
+  "type": "page",
+  "h1": "About SalaryWise.io - Free Salary Calculators",
+  "metaTitle": "About SalaryWise.io - Free Salary Calculator Tools",
+  "metaDescription": "Learn about SalaryWise.io, your trusted source for free salary calculators. Calculate take-home pay, tax savings, and salary comparisons across 15+ countries.",
+  "primaryKeyword": "about salarywise",
+  "longTailKeywords": [
+    "about salarywise.io",
+    "salary calculator website",
+    "free salary tools",
+    "take home pay calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net-salary",
+    "understanding-gross-vs-net-salary"
+  ],
+  "title": "About SalaryWise.io - Free Salary Calculators",
+  "description": "Your trusted source for accurate salary calculations",
+  "keywords": "salary calculator, take home pay, tax calculator, salary tools",
+  "canonical": "https://salarywise.io/en/about",
+
+  "intro": {
+    "paragraph1": "SalaryWise.io is your comprehensive online platform for salary calculations and financial planning. We provide free, accurate tools to help you understand your take-home pay, tax obligations, and salary comparisons across multiple countries.",
+    "paragraph2": "Our mission is to make salary calculations transparent and accessible to everyone, from job seekers to financial professionals."
+  },
+
+  "sections": [
+    {
+      "heading": "What We Offer",
+      "content": "SalaryWise.io provides a complete suite of salary calculation tools including gross-to-net pay calculators, hourly wage converters, bonus calculators, and country-specific tax calculators. All our tools are free to use and require no registration."
+    },
+    {
+      "heading": "Our Accuracy",
+      "content": "We use the latest tax rates and regulations from official government sources to ensure our calculations are as accurate as possible. Our tools are regularly updated to reflect changes in tax laws and financial regulations."
+    },
+    {
+      "heading": "Global Coverage",
+      "content": "With support for 15+ countries including the USA, UK, Canada, Australia, Germany, France, and many more, SalaryWise.io helps professionals worldwide understand their salary in any location."
+    },
+    {
+      "heading": "Privacy & Security",
+      "content": "We respect your privacy and don't store any personal information. All calculations are performed client-side in your browser, ensuring your financial data remains private and secure."
+    }
+  ],
+
+  "stats": [
+    {
+      "number": "45+",
+      "label": "Calculator Tools",
+      "description": "Comprehensive salary calculation tools"
+    },
+    {
+      "number": "15+",
+      "label": "Countries Supported",
+      "description": "Localized tax calculations worldwide"
+    },
+    {
+      "number": "100%",
+      "label": "Free to Use",
+      "description": "No registration or fees required"
+    },
+    {
+      "number": "2024",
+      "label": "Latest Tax Data",
+      "description": "Updated with current tax rates"
+    }
+  ],
+
+  "features": [
+    {
+      "icon": "🧮",
+      "title": "Accurate Calculations",
+      "description": "Based on official tax rates and regulations"
+    },
+    {
+      "icon": "🌍",
+      "title": "Global Support",
+      "description": "15+ countries with localized tax rules"
+    },
+    {
+      "icon": "🔒",
+      "title": "Privacy First",
+      "description": "Client-side calculations, no data stored"
+    },
+    {
+      "icon": "⚡",
+      "title": "Fast & Free",
+      "description": "Instant results, no registration required"
+    }
+  ],
+
+  "cta": {
+    "text": "Try Our Calculators",
+    "href": "/salary-calculator",
+    "description": "Start calculating your salary today"
+  }
+}

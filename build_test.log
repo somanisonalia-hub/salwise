@@ -1,0 +1,1418 @@
+
+> salarywise@0.1.0 build
+> next build
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/asomani16/Repository/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/asomani16/Repository/salarywise/package-lock.json
+
+▲ Next.js 16.1.1 (Turbopack)
+- Experiments (use with caution):
+  ✓ optimizeCss
+  ✓ scrollRestoration
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 989.7ms
+  Running TypeScript ...
+  Collecting page data using 13 workers ...
+  Generating static pages using 13 workers (0/221) ...
+LocalizedPage called with locale: en slug: salary-vs-freelance-income-calculator
+LocalizedPage called with locale: es slug: salary-calculator-netherlands
+LocalizedPage called with locale: fr slug: salary-calculator-marketing-sales
+Failed to load page data for salary-calculator-netherlands: Error: Cannot find module '../../../locales/es/salary-calculator-netherlands.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-netherlands
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-marketing-sales: Error: Cannot find module '../../../locales/fr/salary-calculator-marketing-sales.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-marketing-sales
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: salary-calculator-south-africa
+LocalizedPage called with locale: es slug: take-home-vs-cost-of-living-calculator
+Failed to load page data for salary-calculator-netherlands: Error: Cannot find module '../../../locales/es/salary-calculator-netherlands.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-marketing-sales: Error: Cannot find module '../../../locales/fr/salary-calculator-marketing-sales.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for take-home-vs-cost-of-living-calculator: Error: Cannot find module '../../../locales/es/take-home-vs-cost-of-living-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-calculator-spain
+Error loading page data: Error: Page data not found for: take-home-vs-cost-of-living-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-spain: Error: Cannot find module '../../../locales/fr/salary-calculator-spain.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for take-home-vs-cost-of-living-calculator: Error: Cannot find module '../../../locales/es/take-home-vs-cost-of-living-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-spain
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-spain: Error: Cannot find module '../../../locales/fr/salary-calculator-spain.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator
+LocalizedPage called with locale: en slug: annual-raise-promotion-calculator
+LocalizedPage called with locale: fr slug: salary-calculator-startup-entrepreneur
+Failed to load page data for salary-calculator-startup-entrepreneur: Error: Cannot find module '../../../locales/fr/salary-calculator-startup-entrepreneur.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-startup-entrepreneur
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: overtime-bonus-tax-calculator
+Failed to load page data for salary-calculator-startup-entrepreneur: Error: Cannot find module '../../../locales/fr/salary-calculator-startup-entrepreneur.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-vs-expenses-calculator
+Failed to load page data for salary-vs-expenses-calculator: Error: Cannot find module '../../../locales/es/salary-vs-expenses-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-vs-expenses-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-vs-expenses-calculator: Error: Cannot find module '../../../locales/es/salary-vs-expenses-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: loan-emi-calculator
+Failed to load page data for loan-emi-calculator: Error: Cannot find module '../../../locales/fr/loan-emi-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: gross-to-net-salary
+Error loading page data: Error: Page data not found for: loan-emi-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: savings-from-salary-calculator
+Failed to load page data for loan-emi-calculator: Error: Cannot find module '../../../locales/fr/loan-emi-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: annual-raise-promotion-calculator
+Failed to load page data for annual-raise-promotion-calculator: Error: Cannot find module '../../../locales/es/annual-raise-promotion-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: annual-raise-promotion-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for annual-raise-promotion-calculator: Error: Cannot find module '../../../locales/es/annual-raise-promotion-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: take-home-pay-calculator
+LocalizedPage called with locale: fr slug: salary-calculator-india
+LocalizedPage called with locale: en slug: salary-calculator-new-zealand
+Failed to load page data for salary-calculator-india: Error: Cannot find module '../../../locales/fr/salary-calculator-india.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-india
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-india: Error: Cannot find module '../../../locales/fr/salary-calculator-india.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: hourly-to-salary-calculator
+LocalizedPage called with locale: fr slug: overtime-bonus-tax-calculator
+LocalizedPage called with locale: es slug: salary-calculator-sweden
+Failed to load page data for overtime-bonus-tax-calculator: Error: Cannot find module '../../../locales/fr/overtime-bonus-tax-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: overtime-bonus-tax-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-sweden: Error: Cannot find module '../../../locales/es/salary-calculator-sweden.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-sweden
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: understanding-gross-vs-net-salary
+Failed to load page data for overtime-bonus-tax-calculator: Error: Cannot find module '../../../locales/fr/overtime-bonus-tax-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-sweden: Error: Cannot find module '../../../locales/es/salary-calculator-sweden.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: loan-emi-calculator
+LocalizedPage called with locale: fr slug: take-home-vs-cost-of-living-calculator
+Failed to load page data for loan-emi-calculator: Error: Cannot find module '../../../locales/es/loan-emi-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: loan-emi-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for loan-emi-calculator: Error: Cannot find module '../../../locales/es/loan-emi-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for take-home-vs-cost-of-living-calculator: Error: Cannot find module '../../../locales/fr/take-home-vs-cost-of-living-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: take-home-vs-cost-of-living-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: how-to-calculate-take-home-pay
+Failed to load page data for take-home-vs-cost-of-living-calculator: Error: Cannot find module '../../../locales/fr/take-home-vs-cost-of-living-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-switzerland
+LocalizedPage called with locale: fr slug: salary-calculator-singapore
+Failed to load page data for salary-calculator-switzerland: Error: Cannot find module '../../../locales/es/salary-calculator-switzerland.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-switzerland
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-switzerland: Error: Cannot find module '../../../locales/es/salary-calculator-switzerland.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-singapore: Error: Cannot find module '../../../locales/fr/salary-calculator-singapore.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-singapore
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-singapore: Error: Cannot find module '../../../locales/fr/salary-calculator-singapore.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: retirement-contribution-calculator
+LocalizedPage called with locale: es slug: salary-calculator-new-zealand
+LocalizedPage called with locale: fr slug: salary-vs-expenses-calculator
+LocalizedPage called with locale: fr slug: salary-calculator-netherlands
+Failed to load page data for salary-vs-expenses-calculator: Error: Cannot find module '../../../locales/fr/salary-vs-expenses-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-vs-expenses-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-netherlands: Error: Cannot find module '../../../locales/fr/salary-calculator-netherlands.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-netherlands
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-new-zealand: Error: Cannot find module '../../../locales/es/salary-calculator-new-zealand.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-vs-expenses-calculator: Error: Cannot find module '../../../locales/fr/salary-vs-expenses-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-netherlands: Error: Cannot find module '../../../locales/fr/salary-calculator-netherlands.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-new-zealand
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: es slug: overtime-bonus-tax-calculator
+Failed to load page data for overtime-bonus-tax-calculator: Error: Cannot find module '../../../locales/es/overtime-bonus-tax-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: overtime-bonus-tax-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-new-zealand: Error: Cannot find module '../../../locales/es/salary-calculator-new-zealand.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for overtime-bonus-tax-calculator: Error: Cannot find module '../../../locales/es/overtime-bonus-tax-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-calculator-legal
+Failed to load page data for salary-calculator-legal: Error: Cannot find module '../../../locales/fr/salary-calculator-legal.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-legal
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-legal: Error: Cannot find module '../../../locales/fr/salary-calculator-legal.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: retirement-contribution-calculator
+Failed to load page data for retirement-contribution-calculator: Error: Cannot find module '../../../locales/es/retirement-contribution-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: retirement-contribution-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: es slug: salary-calculator-south-africa
+LocalizedPage called with locale: fr slug: annual-raise-promotion-calculator
+Failed to load page data for retirement-contribution-calculator: Error: Cannot find module '../../../locales/es/retirement-contribution-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for annual-raise-promotion-calculator: Error: Cannot find module '../../../locales/fr/annual-raise-promotion-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: annual-raise-promotion-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: es slug: salary-calculator
+LocalizedPage called with locale: en slug: net-to-gross-salary
+Failed to load page data for salary-calculator-south-africa: Error: Cannot find module '../../../locales/es/salary-calculator-south-africa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for annual-raise-promotion-calculator: Error: Cannot find module '../../../locales/fr/annual-raise-promotion-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-south-africa
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: fr slug: salary-calculator-sweden
+Failed to load page data for salary-calculator-south-africa: Error: Cannot find module '../../../locales/es/salary-calculator-south-africa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-sweden: Error: Cannot find module '../../../locales/fr/salary-calculator-sweden.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-sweden
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-sweden: Error: Cannot find module '../../../locales/fr/salary-calculator-sweden.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-vs-freelance-income-calculator
+Failed to load page data for salary-vs-freelance-income-calculator: Error: Cannot find module '../../../locales/es/salary-vs-freelance-income-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-vs-freelance-income-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: bonus-calculator
+Failed to load page data for salary-vs-freelance-income-calculator: Error: Cannot find module '../../../locales/es/salary-vs-freelance-income-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-negotiation-tips
+LocalizedPage called with locale: es slug: country
+LocalizedPage called with locale: es slug: savings-from-salary-calculator
+Failed to load page data for savings-from-salary-calculator: Error: Cannot find module '../../../locales/es/savings-from-salary-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: savings-from-salary-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: fr slug: salary-calculator-switzerland
+Failed to load page data for country: Error: Cannot find module '../../../locales/es/country.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-switzerland: Error: Cannot find module '../../../locales/fr/salary-calculator-switzerland.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-switzerland
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-switzerland: Error: Cannot find module '../../../locales/fr/salary-calculator-switzerland.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for savings-from-salary-calculator: Error: Cannot find module '../../../locales/es/savings-from-salary-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: industry
+LocalizedPage called with locale: fr slug: salary-calculator-new-zealand
+Failed to load page data for salary-calculator-new-zealand: Error: Cannot find module '../../../locales/fr/salary-calculator-new-zealand.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-new-zealand
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-new-zealand: Error: Cannot find module '../../../locales/fr/salary-calculator-new-zealand.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for industry: Error: Cannot find module '../../../locales/es/industry.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: gross-to-net-salary
+LocalizedPage called with locale: es slug: guides
+LocalizedPage called with locale: fr slug: salary-calculator-south-africa
+Failed to load page data for salary-calculator-south-africa: Error: Cannot find module '../../../locales/fr/salary-calculator-south-africa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-south-africa
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for guides: Error: Cannot find module '../../../locales/es/guides.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-south-africa: Error: Cannot find module '../../../locales/fr/salary-calculator-south-africa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for gross-to-net-salary: Error: Cannot find module '../../../locales/es/gross-to-net-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: gross-to-net-salary
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for gross-to-net-salary: Error: Cannot find module '../../../locales/es/gross-to-net-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: net-to-gross-salary
+Failed to load page data for net-to-gross-salary: Error: Cannot find module '../../../locales/es/net-to-gross-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: net-to-gross-salary
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for net-to-gross-salary: Error: Cannot find module '../../../locales/es/net-to-gross-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-vs-freelance-income-calculator
+Failed to load page data for salary-vs-freelance-income-calculator: Error: Cannot find module '../../../locales/fr/salary-vs-freelance-income-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-vs-freelance-income-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-vs-freelance-income-calculator: Error: Cannot find module '../../../locales/fr/salary-vs-freelance-income-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: savings-from-salary-calculator
+Failed to load page data for savings-from-salary-calculator: Error: Cannot find module '../../../locales/fr/savings-from-salary-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: savings-from-salary-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for savings-from-salary-calculator: Error: Cannot find module '../../../locales/fr/savings-from-salary-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: retirement-contribution-calculator
+Failed to load page data for retirement-contribution-calculator: Error: Cannot find module '../../../locales/fr/retirement-contribution-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: retirement-contribution-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for retirement-contribution-calculator: Error: Cannot find module '../../../locales/fr/retirement-contribution-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: how-to-calculate-take-home-pay
+Failed to load page data for how-to-calculate-take-home-pay: Error: Cannot find module '../../../locales/fr/how-to-calculate-take-home-pay.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: how-to-calculate-take-home-pay
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for how-to-calculate-take-home-pay: Error: Cannot find module '../../../locales/fr/how-to-calculate-take-home-pay.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: understanding-gross-vs-net-salary
+Failed to load page data for understanding-gross-vs-net-salary: Error: Cannot find module '../../../locales/fr/understanding-gross-vs-net-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: understanding-gross-vs-net-salary
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for understanding-gross-vs-net-salary: Error: Cannot find module '../../../locales/fr/understanding-gross-vs-net-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+  Generating static pages using 13 workers (55/221) 
+LocalizedPage called with locale: fr slug: salary-negotiation-tips
+Failed to load page data for salary-negotiation-tips: Error: Cannot find module '../../../locales/fr/salary-negotiation-tips.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-negotiation-tips
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-negotiation-tips: Error: Cannot find module '../../../locales/fr/salary-negotiation-tips.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: overtime-pay-calculator
+LocalizedPage called with locale: es slug: how-to-calculate-take-home-pay
+LocalizedPage called with locale: fr slug: salary-calculator
+LocalizedPage called with locale: fr slug: industry
+Failed to load page data for how-to-calculate-take-home-pay: Error: Cannot find module '../../../locales/es/how-to-calculate-take-home-pay.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: how-to-calculate-take-home-pay
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: fr slug: salary-trends-2026-global
+Failed to load page data for industry: Error: Cannot find module '../../../locales/fr/industry.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-trends-2026-global: Error: Cannot find module '../../../locales/fr/salary-trends-2026-global.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-trends-2026-global
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-trends-2026-global: Error: Cannot find module '../../../locales/fr/salary-trends-2026-global.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for taxes-explained-by-country: Error: Cannot find module '../../../locales/fr/taxes-explained-by-country.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: taxes-explained-by-country
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for taxes-explained-by-country: Error: Cannot find module '../../../locales/fr/taxes-explained-by-country.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for how-to-calculate-take-home-pay: Error: Cannot find module '../../../locales/es/how-to-calculate-take-home-pay.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-after-tax-calculator
+LocalizedPage called with locale: en slug: annual-raise-calculator
+LocalizedPage called with locale: fr slug: taxes-explained-by-country
+LocalizedPage called with locale: fr slug: country
+LocalizedPage called with locale: es slug: understanding-gross-vs-net-salary
+Failed to load page data for understanding-gross-vs-net-salary: Error: Cannot find module '../../../locales/es/understanding-gross-vs-net-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: understanding-gross-vs-net-salary
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for country: Error: Cannot find module '../../../locales/fr/country.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-comparison-calculator
+LocalizedPage called with locale: fr slug: net-to-gross-salary
+Failed to load page data for net-to-gross-salary: Error: Cannot find module '../../../locales/fr/net-to-gross-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: net-to-gross-salary
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for net-to-gross-salary: Error: Cannot find module '../../../locales/fr/net-to-gross-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for understanding-gross-vs-net-salary: Error: Cannot find module '../../../locales/es/understanding-gross-vs-net-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: guides
+Failed to load page data for guides: Error: Cannot find module '../../../locales/fr/guides.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-healthcare
+LocalizedPage called with locale: en slug: taxes-explained-by-country
+LocalizedPage called with locale: es slug: take-home-pay-calculator
+Failed to load page data for take-home-pay-calculator: Error: Cannot find module '../../../locales/es/take-home-pay-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: take-home-pay-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: es slug: salary-negotiation-tips
+LocalizedPage called with locale: es slug: taxes-explained-by-country
+LocalizedPage called with locale: fr slug: gross-to-net-salary
+LocalizedPage called with locale: fr slug: take-home-pay-calculator
+Failed to load page data for take-home-pay-calculator: Error: Cannot find module '../../../locales/es/take-home-pay-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for hourly-to-salary-calculator: Error: Cannot find module '../../../locales/es/hourly-to-salary-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: hourly-to-salary-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for hourly-to-salary-calculator: Error: Cannot find module '../../../locales/es/hourly-to-salary-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-negotiation-tips: Error: Cannot find module '../../../locales/es/salary-negotiation-tips.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-negotiation-tips
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-negotiation-tips: Error: Cannot find module '../../../locales/es/salary-negotiation-tips.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for taxes-explained-by-country: Error: Cannot find module '../../../locales/es/taxes-explained-by-country.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: taxes-explained-by-country
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for gross-to-net-salary: Error: Cannot find module '../../../locales/fr/gross-to-net-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: gross-to-net-salary
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for gross-to-net-salary: Error: Cannot find module '../../../locales/fr/gross-to-net-salary.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for take-home-pay-calculator: Error: Cannot find module '../../../locales/fr/take-home-pay-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: take-home-pay-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: salary-trends-2026-global
+LocalizedPage called with locale: en slug: salary-after-tax-usa
+LocalizedPage called with locale: es slug: hourly-to-salary-calculator
+LocalizedPage called with locale: es slug: bonus-calculator
+LocalizedPage called with locale: en slug: salary-calculator-engineering
+LocalizedPage called with locale: es slug: overtime-pay-calculator
+Failed to load page data for overtime-pay-calculator: Error: Cannot find module '../../../locales/es/overtime-pay-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: overtime-pay-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for overtime-pay-calculator: Error: Cannot find module '../../../locales/es/overtime-pay-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-after-tax-calculator: Error: Cannot find module '../../../locales/es/salary-after-tax-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-after-tax-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-after-tax-calculator: Error: Cannot find module '../../../locales/es/salary-after-tax-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for annual-raise-calculator: Error: Cannot find module '../../../locales/es/annual-raise-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: annual-raise-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for annual-raise-calculator: Error: Cannot find module '../../../locales/es/annual-raise-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for take-home-pay-calculator: Error: Cannot find module '../../../locales/fr/take-home-pay-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-after-tax-uk
+LocalizedPage called with locale: en slug: salary-calculator-teacher
+LocalizedPage called with locale: es slug: salary-after-tax-calculator
+LocalizedPage called with locale: es slug: annual-raise-calculator
+LocalizedPage called with locale: fr slug: bonus-calculator
+Failed to load page data for taxes-explained-by-country: Error: Cannot find module '../../../locales/es/taxes-explained-by-country.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-comparison-calculator
+Failed to load page data for salary-comparison-calculator: Error: Cannot find module '../../../locales/es/salary-comparison-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-comparison-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: fr slug: hourly-to-salary-calculator
+Failed to load page data for hourly-to-salary-calculator: Error: Cannot find module '../../../locales/fr/hourly-to-salary-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: hourly-to-salary-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for hourly-to-salary-calculator: Error: Cannot find module '../../../locales/fr/hourly-to-salary-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-trends-2026-global
+Failed to load page data for salary-trends-2026-global: Error: Cannot find module '../../../locales/es/salary-trends-2026-global.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-trends-2026-global
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-trends-2026-global: Error: Cannot find module '../../../locales/es/salary-trends-2026-global.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: overtime-pay-calculator
+Failed to load page data for overtime-pay-calculator: Error: Cannot find module '../../../locales/fr/overtime-pay-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: overtime-pay-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for overtime-pay-calculator: Error: Cannot find module '../../../locales/fr/overtime-pay-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-after-tax-calculator: Error: Cannot find module '../../../locales/fr/salary-after-tax-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-after-tax-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-after-tax-calculator: Error: Cannot find module '../../../locales/fr/salary-after-tax-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-after-tax-usa
+Failed to load page data for salary-after-tax-usa: Error: Cannot find module '../../../locales/es/salary-after-tax-usa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-after-tax-usa
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-after-tax-usa: Error: Cannot find module '../../../locales/es/salary-after-tax-usa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-after-tax-ireland
+LocalizedPage called with locale: en slug: salary-calculator-usa
+LocalizedPage called with locale: fr slug: salary-after-tax-calculator
+Failed to load page data for salary-comparison-calculator: Error: Cannot find module '../../../locales/es/salary-comparison-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-it-tech
+LocalizedPage called with locale: en slug: salary-calculator-uk
+LocalizedPage called with locale: en slug: salary-calculator-canada
+LocalizedPage called with locale: es slug: salary-after-tax-uk
+Failed to load page data for salary-after-tax-uk: Error: Cannot find module '../../../locales/es/salary-after-tax-uk.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-after-tax-uk
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-after-tax-uk: Error: Cannot find module '../../../locales/es/salary-after-tax-uk.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-it-tech
+Failed to load page data for salary-calculator-it-tech: Error: Cannot find module '../../../locales/es/salary-calculator-it-tech.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-it-tech
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-it-tech: Error: Cannot find module '../../../locales/es/salary-calculator-it-tech.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-after-tax-ireland
+Failed to load page data for salary-after-tax-ireland: Error: Cannot find module '../../../locales/es/salary-after-tax-ireland.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-after-tax-ireland
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-after-tax-ireland: Error: Cannot find module '../../../locales/es/salary-after-tax-ireland.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-after-tax-usa
+Failed to load page data for salary-after-tax-usa: Error: Cannot find module '../../../locales/fr/salary-after-tax-usa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-after-tax-usa
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-after-tax-usa: Error: Cannot find module '../../../locales/fr/salary-after-tax-usa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-finance-banking
+LocalizedPage called with locale: fr slug: salary-after-tax-uk
+LocalizedPage called with locale: es slug: salary-calculator-healthcare
+Failed to load page data for salary-after-tax-uk: Error: Cannot find module '../../../locales/fr/salary-after-tax-uk.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-after-tax-uk
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-healthcare: Error: Cannot find module '../../../locales/es/salary-calculator-healthcare.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-healthcare
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-after-tax-uk: Error: Cannot find module '../../../locales/fr/salary-after-tax-uk.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-healthcare: Error: Cannot find module '../../../locales/es/salary-calculator-healthcare.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-construction
+LocalizedPage called with locale: fr slug: salary-after-tax-ireland
+Failed to load page data for salary-after-tax-ireland: Error: Cannot find module '../../../locales/fr/salary-after-tax-ireland.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-after-tax-ireland
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-after-tax-ireland: Error: Cannot find module '../../../locales/fr/salary-after-tax-ireland.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-retail
+LocalizedPage called with locale: fr slug: salary-calculator-usa
+LocalizedPage called with locale: es slug: salary-calculator-engineering
+Failed to load page data for salary-calculator-usa: Error: Cannot find module '../../../locales/fr/salary-calculator-usa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-usa
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-engineering: Error: Cannot find module '../../../locales/es/salary-calculator-engineering.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-engineering
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-usa: Error: Cannot find module '../../../locales/fr/salary-calculator-usa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-legal
+Failed to load page data for salary-calculator-engineering: Error: Cannot find module '../../../locales/es/salary-calculator-engineering.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-calculator-uk
+Failed to load page data for salary-calculator-uk: Error: Cannot find module '../../../locales/fr/salary-calculator-uk.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-uk
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-uk: Error: Cannot find module '../../../locales/fr/salary-calculator-uk.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: loan-emi-calculator
+LocalizedPage called with locale: fr slug: salary-calculator-canada
+Failed to load page data for salary-calculator-canada: Error: Cannot find module '../../../locales/fr/salary-calculator-canada.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-canada
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-canada: Error: Cannot find module '../../../locales/fr/salary-calculator-canada.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-vs-expenses-calculator
+LocalizedPage called with locale: fr slug: salary-calculator-germany
+LocalizedPage called with locale: en slug: salary-calculator-australia
+Failed to load page data for salary-calculator-germany: Error: Cannot find module '../../../locales/fr/salary-calculator-germany.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-germany
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-germany: Error: Cannot find module '../../../locales/fr/salary-calculator-germany.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-teacher
+Failed to load page data for salary-calculator-teacher: Error: Cannot find module '../../../locales/es/salary-calculator-teacher.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-teacher
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-teacher: Error: Cannot find module '../../../locales/es/salary-calculator-teacher.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+  Generating static pages using 13 workers (110/221) 
+LocalizedPage called with locale: es slug: salary-calculator-finance-banking
+Failed to load page data for salary-calculator-finance-banking: Error: Cannot find module '../../../locales/es/salary-calculator-finance-banking.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-finance-banking
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: salary-calculator-germany
+Failed to load page data for salary-calculator-finance-banking: Error: Cannot find module '../../../locales/es/salary-calculator-finance-banking.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-marketing-sales
+LocalizedPage called with locale: es slug: salary-calculator-retail
+Failed to load page data for salary-calculator-retail: Error: Cannot find module '../../../locales/es/salary-calculator-retail.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-retail
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-retail: Error: Cannot find module '../../../locales/es/salary-calculator-retail.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: annual-raise-calculator
+LocalizedPage called with locale: en slug: salary-calculator-france
+Failed to load page data for annual-raise-calculator: Error: Cannot find module '../../../locales/fr/annual-raise-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: annual-raise-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for annual-raise-calculator: Error: Cannot find module '../../../locales/fr/annual-raise-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-construction
+Failed to load page data for salary-calculator-construction: Error: Cannot find module '../../../locales/es/salary-calculator-construction.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-construction
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-construction: Error: Cannot find module '../../../locales/es/salary-calculator-construction.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-spain
+LocalizedPage called with locale: en slug: salary-calculator-startup-entrepreneur
+LocalizedPage called with locale: fr slug: salary-comparison-calculator
+Failed to load page data for salary-comparison-calculator: Error: Cannot find module '../../../locales/fr/salary-comparison-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-comparison-calculator
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-comparison-calculator: Error: Cannot find module '../../../locales/fr/salary-comparison-calculator.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-legal
+Failed to load page data for salary-calculator-legal: Error: Cannot find module '../../../locales/es/salary-calculator-legal.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-legal
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: salary-calculator-india
+Failed to load page data for salary-calculator-legal: Error: Cannot find module '../../../locales/es/salary-calculator-legal.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-calculator-healthcare
+LocalizedPage called with locale: es slug: salary-calculator-marketing-sales
+Failed to load page data for salary-calculator-marketing-sales: Error: Cannot find module '../../../locales/es/salary-calculator-marketing-sales.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-healthcare: Error: Cannot find module '../../../locales/fr/salary-calculator-healthcare.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-marketing-sales
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Error loading page data: Error: Page data not found for: salary-calculator-healthcare
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-marketing-sales: Error: Cannot find module '../../../locales/es/salary-calculator-marketing-sales.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-usa
+Failed to load page data for salary-calculator-healthcare: Error: Cannot find module '../../../locales/fr/salary-calculator-healthcare.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-usa: Error: Cannot find module '../../../locales/es/salary-calculator-usa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-usa
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-usa: Error: Cannot find module '../../../locales/es/salary-calculator-usa.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-uk
+Failed to load page data for salary-calculator-uk: Error: Cannot find module '../../../locales/es/salary-calculator-uk.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-uk
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-uk: Error: Cannot find module '../../../locales/es/salary-calculator-uk.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-singapore
+LocalizedPage called with locale: es slug: salary-calculator-canada
+Failed to load page data for salary-calculator-canada: Error: Cannot find module '../../../locales/es/salary-calculator-canada.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-canada
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-canada: Error: Cannot find module '../../../locales/es/salary-calculator-canada.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-australia
+Failed to load page data for salary-calculator-australia: Error: Cannot find module '../../../locales/es/salary-calculator-australia.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-australia
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-australia: Error: Cannot find module '../../../locales/es/salary-calculator-australia.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-germany
+Failed to load page data for salary-calculator-germany: Error: Cannot find module '../../../locales/es/salary-calculator-germany.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-germany
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-germany: Error: Cannot find module '../../../locales/es/salary-calculator-germany.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-france
+Failed to load page data for salary-calculator-france: Error: Cannot find module '../../../locales/es/salary-calculator-france.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-france
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: salary-calculator-netherlands
+Failed to load page data for salary-calculator-france: Error: Cannot find module '../../../locales/es/salary-calculator-france.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-sweden
+LocalizedPage called with locale: fr slug: salary-calculator-australia
+Failed to load page data for salary-calculator-australia: Error: Cannot find module '../../../locales/fr/salary-calculator-australia.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-australia
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: es slug: salary-calculator-spain
+Failed to load page data for salary-calculator-spain: Error: Cannot find module '../../../locales/es/salary-calculator-spain.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-spain
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-australia: Error: Cannot find module '../../../locales/fr/salary-calculator-australia.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-calculator-engineering
+Failed to load page data for salary-calculator-engineering: Error: Cannot find module '../../../locales/fr/salary-calculator-engineering.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-engineering
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-engineering: Error: Cannot find module '../../../locales/fr/salary-calculator-engineering.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+Failed to load page data for salary-calculator-spain: Error: Cannot find module '../../../locales/es/salary-calculator-spain.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-india
+Failed to load page data for salary-calculator-india: Error: Cannot find module '../../../locales/es/salary-calculator-india.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-india
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-india: Error: Cannot find module '../../../locales/es/salary-calculator-india.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-calculator-teacher
+Failed to load page data for salary-calculator-teacher: Error: Cannot find module '../../../locales/fr/salary-calculator-teacher.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-teacher
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-teacher: Error: Cannot find module '../../../locales/fr/salary-calculator-teacher.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-calculator-finance-banking
+Failed to load page data for salary-calculator-finance-banking: Error: Cannot find module '../../../locales/fr/salary-calculator-finance-banking.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-finance-banking
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-finance-banking: Error: Cannot find module '../../../locales/fr/salary-calculator-finance-banking.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-calculator-retail
+Failed to load page data for salary-calculator-retail: Error: Cannot find module '../../../locales/fr/salary-calculator-retail.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-retail
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-retail: Error: Cannot find module '../../../locales/fr/salary-calculator-retail.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-calculator-it-tech
+Failed to load page data for salary-calculator-it-tech: Error: Cannot find module '../../../locales/fr/salary-calculator-it-tech.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-it-tech
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-it-tech: Error: Cannot find module '../../../locales/fr/salary-calculator-it-tech.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-startup-entrepreneur
+Failed to load page data for salary-calculator-startup-entrepreneur: Error: Cannot find module '../../../locales/es/salary-calculator-startup-entrepreneur.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-startup-entrepreneur
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-startup-entrepreneur: Error: Cannot find module '../../../locales/es/salary-calculator-startup-entrepreneur.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+  Generating static pages using 13 workers (165/221) 
+LocalizedPage called with locale: fr slug: salary-calculator-france
+Failed to load page data for salary-calculator-france: Error: Cannot find module '../../../locales/fr/salary-calculator-france.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-france
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+LocalizedPage called with locale: en slug: take-home-vs-cost-of-living-calculator
+Failed to load page data for salary-calculator-france: Error: Cannot find module '../../../locales/fr/salary-calculator-france.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: es slug: salary-calculator-singapore
+Failed to load page data for salary-calculator-singapore: Error: Cannot find module '../../../locales/es/salary-calculator-singapore.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-singapore
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-singapore: Error: Cannot find module '../../../locales/es/salary-calculator-singapore.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: fr slug: salary-calculator-construction
+Failed to load page data for salary-calculator-construction: Error: Cannot find module '../../../locales/fr/salary-calculator-construction.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82810) {
+  code: 'MODULE_NOT_FOUND'
+}
+Error loading page data: Error: Page data not found for: salary-calculator-construction
+    at k (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:82915)
+Failed to load page data for salary-calculator-construction: Error: Cannot find module '../../../locales/fr/salary-calculator-construction.json'
+    at moduleContext (.next/server/chunks/ssr/[turbopack]_runtime.js:279:19)
+    at Module.j (.next/server/chunks/ssr/salarywise_src_f5a873bc._.js:1:52668) {
+  code: 'MODULE_NOT_FOUND'
+}
+LocalizedPage called with locale: en slug: salary-calculator-switzerland
+✓ Generating static pages using 13 workers (221/221) in 463.4ms
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ● /[locale]
+│ ├ /en
+│ ├ /es
+│ └ /fr
+├ ● /[locale]/[slug]
+│ ├ /en/salary-calculator
+│ ├ /en/gross-to-net-salary
+│ ├ /en/net-to-gross-salary
+│ └ [+156 more paths]
+├ ● /[locale]/guides/[guide]
+│ ├ /en/guides/how-to-calculate-take-home
+│ ├ /en/guides/gross-vs-net-salary
+│ ├ /en/guides/salary-negotiation-tips
+│ └ [+27 more paths]
+├ ○ /country
+├ ○ /country/australia
+├ ○ /country/canada
+├ ○ /country/india
+├ ○ /country/ireland
+├ ○ /country/uk
+├ ○ /country/usa
+├ ○ /dropdowns
+├ ○ /en
+├ ○ /en/about
+├ ○ /en/contact
+├ ○ /en/cookies
+├ ○ /en/country
+├ ○ /en/country/usa
+├ ○ /en/disclaimer
+├ ○ /en/faq
+├ ○ /en/guides
+├ ○ /en/guides/salary-trends-2026
+├ ○ /en/guides/taxes-explained-by-country
+├ ○ /en/how-salary-calculators-work
+├ ○ /en/industry
+├ ○ /en/industry/it
+├ ○ /en/privacy-policy
+├ ○ /en/salary-guide
+├ ○ /en/terms-of-service
+├ ○ /guides
+├ ○ /industry
+├ ○ /industry/finance
+├ ○ /industry/healthcare
+├ ○ /industry/it
+└ ○ /sitemap.xml
+
+
+○  (Static)  prerendered as static content
+●  (SSG)     prerendered as static HTML (uses generateStaticParams)
+

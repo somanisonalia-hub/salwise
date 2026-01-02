@@ -1,0 +1,95 @@
+{
+  "slug": "disclaimer",
+  "type": "page",
+  "h1": "Disclaimer - SalaryWise.io",
+  "metaTitle": "Disclaimer - Important Legal Notice for Salary Calculators",
+  "metaDescription": "Read our disclaimer for using SalaryWise.io salary calculators. Understand the limitations and important notices about our financial estimation tools.",
+  "primaryKeyword": "salary calculator disclaimer",
+  "longTailKeywords": [
+    "salarywise.io disclaimer",
+    "financial calculator disclaimer",
+    "salary calculator legal notice",
+    "tax calculator disclaimer"
+  ],
+  "related": [
+    "terms-of-service",
+    "privacy-policy",
+    "contact"
+  ],
+  "title": "Disclaimer - SalaryWise.io",
+  "description": "Important legal notices and limitations",
+  "keywords": "disclaimer, legal notice, salary calculator limitations, financial disclaimer",
+  "canonical": "https://salarywise.io/en/disclaimer",
+
+  "lastUpdated": "January 2, 2025",
+
+  "importantNotice": {
+    "icon": "⚠️",
+    "title": "Important Legal Notice",
+    "message": "SalaryWise.io provides general information and estimation tools only. Our calculators are not a substitute for professional financial or tax advice."
+  },
+
+  "sections": [
+    {
+      "heading": "Not Professional Advice",
+      "content": "The information provided by SalaryWise.io, including all calculators, tools, and content, is for general informational purposes only. It does not constitute professional financial, tax, legal, or accounting advice. You should not rely on this information as a substitute for professional advice."
+    },
+    {
+      "heading": "Estimation Tools Only",
+      "content": "Our salary calculators provide estimates and approximations based on available data and standard formulas. Actual results may vary significantly based on individual circumstances, additional deductions, local tax variations, and changes in laws or regulations."
+    },
+    {
+      "heading": "Tax Information Limitations",
+      "content": "Tax rates, rules, and regulations change frequently. Our calculators use the most recent available information, but we cannot guarantee accuracy for future periods or specific situations. Tax laws vary by jurisdiction and individual circumstances."
+    },
+    {
+      "heading": "No Warranty",
+      "content": "SalaryWise.io provides its services 'as is' without any warranties of any kind, either express or implied. We do not warrant that our calculators will be error-free, uninterrupted, or that any defects will be corrected."
+    },
+    {
+      "heading": "Limitation of Liability",
+      "content": "In no event shall SalaryWise.io, its owners, operators, or contributors be liable for any direct, indirect, incidental, special, or consequential damages arising out of or in connection with the use of our calculators or information."
+    },
+    {
+      "heading": "User Responsibility",
+      "content": "Users are solely responsible for verifying the accuracy of calculations and for any decisions made based on the results. Always consult qualified professionals for important financial, tax, or legal matters."
+    },
+    {
+      "heading": "Third-Party Links",
+      "content": "Our website may contain links to third-party websites. We are not responsible for the content, accuracy, or practices of these external sites. Links to third-party sites do not constitute endorsement."
+    },
+    {
+      "heading": "Data Privacy",
+      "content": "While we take privacy seriously, we cannot guarantee the security of information transmitted over the internet. Users should exercise caution when providing personal or financial information online."
+    }
+  ],
+
+  "professionalRecommendations": [
+    {
+      "profession": "Tax Professional",
+      "description": "For tax planning and filing",
+      "reason": "Tax laws are complex and change frequently"
+    },
+    {
+      "profession": "Financial Advisor",
+      "description": "For investment and retirement planning",
+      "reason": "Personal financial situations vary greatly"
+    },
+    {
+      "profession": "Legal Counsel",
+      "description": "For employment contracts and agreements",
+      "reason": "Legal matters require expert interpretation"
+    },
+    {
+      "profession": "Accountant",
+      "description": "For business financial planning",
+      "reason": "Complex financial calculations and compliance"
+    }
+  ],
+
+  "contactInfo": {
+    "title": "Questions or Concerns?",
+    "message": "If you have questions about this disclaimer or our services, please contact us.",
+    "email": "hello@salarywise.io"
+  }
+}

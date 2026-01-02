@@ -9,12 +9,32 @@ import content from '../locales/en/page.json';
 function HomePageContent() {
   const [searchQuery, setSearchQuery] = useState('');
 
+  // Compact structured data for SEO
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "SalaryWise.io",
+    "description": content.seo.description,
+    "url": "https://salarywise.io",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://salarywise.io/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  };
+
   // Create searchable index of all calculators
   const searchableItems = useMemo(() => {
     const allItems = [
       ...content.calculators.items.map(item => ({ ...item, category: 'calculator' })),
-      ...content.countries.items.map(item => ({ ...item, category: 'country', title: item.name, description: `Calculate salary after tax in ${item.name}` })),
-      ...content.guides.items.map(item => ({ ...item, category: 'guide' })),
+      ...content.countries.items.map(item => ({
+        ...item,
+        category: 'country',
+        title: item.name,
+        description: `Calculate salary after tax in ${item.name}`,
+        icon: item.flag // Use flag as icon for countries
+      })),
+      ...content.guides.items.map(item => ({ ...item, category: 'guide', icon: '📖' })), // Add default icon for guides
     ];
     return allItems;
   }, []);
@@ -29,21 +49,6 @@ function HomePageContent() {
       item.description.toLowerCase().includes(query)
     );
   }, [searchQuery, searchableItems]);
-
-  return (
-  // Compact structured data for SEO
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "SalaryWise.io",
-    "description": content.seo.description,
-    "url": "https://salarywise.io",
-    "potentialAction": {
-      "@type": "SearchAction",
-      "target": "https://salarywise.io/search?q={search_term_string}",
-      "query-input": "required name=search_term_string"
-    }
-  };
 
   return (
     <>
@@ -165,9 +170,9 @@ function HomePageContent() {
                   <div className="text-2xl mb-2">{item.icon}</div>
                   <h3 className="text-sm font-bold text-gray-900 mb-1">{item.title}</h3>
                   <p className="text-xs text-gray-600 leading-tight">{item.description}</p>
-                  {searchQuery && (
+                  {searchQuery && 'category' in item && (
                     <span className="inline-block mt-2 px-2 py-1 text-xs bg-blue-100 text-blue-600 rounded-full">
-                      {item.category}
+                      {(item as any).category}
                     </span>
                   )}
                 </div>

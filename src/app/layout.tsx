@@ -49,7 +49,7 @@ export default function RootLayout({
         />
       </head>
       <body
-        className={`${poppins.variable} ${inter.variable} ${jetbrainsMono.variable} font-sans antialiased`}
+        className={`${poppins.variable} ${inter.variable} font-sans antialiased`}
       >
         <Layout>{children}</Layout>
         <PerformanceMonitor />

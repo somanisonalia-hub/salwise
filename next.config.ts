@@ -10,74 +10,14 @@ const nextConfig: NextConfig = {
     unoptimized: true, // Required for static export
   },
 
+  // Turbopack configuration for Next.js 16
+  turbopack: {},
+
   // Experimental features for Next.js 16
   experimental: {
     optimizeCss: true,
     scrollRestoration: true,
   },
-
-  // Performance optimizations for static export
-  compiler: {
-    removeConsole: process.env.NODE_ENV === 'production',
-  },
-
-  // Webpack optimizations
-  webpack: (config: any, { buildId, dev, isServer, defaultLoaders, webpack }: any) => {
-    // Existing bundle analyzer config
-    if (process.env.ANALYZE === 'true' && dev) {
-      const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-      config.plugins.push(
-        new BundleAnalyzerPlugin({
-          analyzerMode: 'server',
-          openAnalyzer: true,
-        })
-      );
-    }
-
-    // Production optimizations
-    if (!dev && !isServer) {
-      // Enable webpack optimizations for client-side bundles
-      config.optimization = {
-        ...config.optimization,
-        splitChunks: {
-          chunks: 'all',
-          cacheGroups: {
-            framework: {
-              chunks: 'all',
-              name: 'framework',
-              test: /(?<!node_modules.*)[\\/]node_modules[\\/](react|react-dom|scheduler|prop-types|use-subscription)[\\/]/,
-              priority: 40,
-              enforce: true,
-            },
-            lib: {
-              test: /[\\/]node_modules[\\/]/,
-              name: 'lib',
-              priority: 30,
-              chunks: 'all',
-            },
-          },
-        },
-      };
-    }
-
-    return config;
-  },
-
-  // Bundle analyzer in development
-  ...(process.env.ANALYZE === 'true' && {
-    webpack: (config: any) => {
-      if (process.env.NODE_ENV === 'development') {
-        const { BundleAnalyzerPlugin } = require('webpack-bundle-analyzer');
-        config.plugins.push(
-          new BundleAnalyzerPlugin({
-            analyzerMode: 'server',
-            openAnalyzer: true,
-          })
-        );
-      }
-      return config;
-    },
-  }),
 
   // Headers for performance (disabled for static export)
   // async headers() {

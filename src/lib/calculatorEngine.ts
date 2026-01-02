@@ -195,11 +195,11 @@ export function getAllCalculators(): Calculator[] {
 // Get calculators by type/category
 export function getCalculatorsByType(type: 'global' | 'country'): Calculator[] {
   if (type === 'global') {
-    return calculatorsData.calculators.filter(calc =>
+    return calculatorsData.filter(calc =>
       !calc.id.includes('Salary') || calc.id === 'globalSalary'
     );
   }
-  return calculatorsData.calculators.filter(calc =>
+  return calculatorsData.filter(calc =>
     calc.id.includes('Salary') && calc.id !== 'globalSalary'
   );
 }

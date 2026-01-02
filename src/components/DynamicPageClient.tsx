@@ -15,7 +15,7 @@ interface PageData {
   metaTitle: string;
   metaDescription: string;
   primaryKeyword: string;
-  dataRef: string;
+  dataRef?: string;
   related?: string[];
   tips?: string[];
   faqs?: any[];

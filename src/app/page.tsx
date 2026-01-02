@@ -221,13 +221,13 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Compact Guides Section */}
-        <div className="bg-gray-50 px-4 py-6">
+        {/* Compact Guides Section - Defer loading for better LCP */}
+        <div className="bg-gray-50 px-4 py-6" style={{ contain: 'layout style paint' }}>
           <div className="max-w-6xl mx-auto">
             <h2 className="text-lg font-bold text-gray-900 mb-4 text-center">{content.guides.title}</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {content.guides.items.map((guide, index) => (
+              {content.guides.items.slice(0, 3).map((guide, index) => (
                 <Link
                   key={index}
                   href={`/en${guide.href}`}
@@ -288,10 +288,10 @@ export default function HomePage() {
           </div>
         </footer>
 
-        {/* Mobile Bottom Navigation */}
+        {/* Mobile Bottom Navigation - Optimized for performance */}
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2 z-20 md:hidden shadow-lg">
           <div className="flex justify-around max-w-sm mx-auto">
-            {content.mobileNav.links.map((link, index) => (
+            {content.mobileNav.links.slice(0, 4).map((link, index) => (
               <Link
                 key={index}
                 href={`/en${link.href}`}

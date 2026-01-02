@@ -3,35 +3,31 @@ import { Poppins, Inter, JetBrains_Mono } from "next/font/google";
 import { Layout, PerformanceMonitor } from "../components";
 import "./globals.css";
 
-// Optimize font loading with display swap and preloading
+// Optimize font loading with minimal weights for performance
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+  weight: ["300", "400", "500", "600", "700"],
   display: "swap",
-  preload: true,
+  preload: false, // Disable preload for better LCP
   fallback: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Arial", "sans-serif"],
 });
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
   display: "swap",
-  preload: true,
+  preload: false, // Disable preload for better LCP
   fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Arial", "sans-serif"],
-});
-
-const jetbrainsMono = JetBrains_Mono({
-  variable: "--font-jetbrains-mono",
-  subsets: ["latin"],
-  display: "swap",
-  preload: true,
-  fallback: ["SFMono-Regular", "Monaco", "Inconsolata", "Fira Code", "Droid Sans Mono", "Source Code Pro", "monospace"],
 });
 
 export const metadata: Metadata = {
   title: "SalaryWise.io - Free Salary Calculators",
   description: "Calculate your salary, hourly wage, gross to net pay, and more with our free salary calculators. Compare salaries by country and industry.",
+  other: {
+    'theme-color': '#3B82F6',
+  },
 };
 
 export default function RootLayout({
@@ -50,10 +46,6 @@ export default function RootLayout({
           rel="preconnect"
           href="https://fonts.gstatic.com"
           crossOrigin=""
-        />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..800&display=swap"
-          rel="stylesheet"
         />
       </head>
       <body

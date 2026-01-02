@@ -313,14 +313,6 @@ export default async function HomePage({ params }: PageProps) {
           </div>
         </div>
 
-        {/* Compact Footer */}
-        <footer className="bg-gray-900 text-white px-4 py-4">
-          <div className="max-w-6xl mx-auto text-center">
-            <p className="text-gray-400 text-xs">
-              © 2024 SalaryWise.io - Free salary calculators for everyone.
-            </p>
-          </div>
-        </footer>
 
         {/* Mobile Bottom Navigation */}
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2 z-20 md:hidden shadow-lg">

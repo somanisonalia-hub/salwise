@@ -148,7 +148,7 @@ export async function generateMetadata({ params }: PageProps) {
   } catch (error) {
     // Fallback to English if translation not available
     try {
-      const pageData = await import(`../../../locales/en/pages/${slug}.json`);
+      const pageData = await import(`../../../locales/en/${slug}.json`);
 
       return {
         title: pageData.metaTitle,

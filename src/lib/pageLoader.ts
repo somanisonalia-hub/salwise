@@ -24,6 +24,7 @@ export interface PageData {
     answer: string;
   }>;
   tips?: string[];
+  disclaimer?: string | { title: string; content: string };
   sections?: Array<{
     title: string;
     content: string;

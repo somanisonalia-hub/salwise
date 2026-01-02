@@ -9,7 +9,8 @@ export interface PageData {
   primaryKeyword: string;
   longTailKeywords: string[];
   related: string[];
-  dataRef: string;
+  dataRef?: string;
+  disclaimer?: string | { title: string; content: string };
 }
 
 export interface PagesData {
@@ -91,15 +92,15 @@ export function getSEOKeywords(pageSlug: string): string[] {
 // Get calculator configuration for a page
 export function getPageCalculator(pageSlug: string) {
   const page = findPageBySlug(pageSlug);
-  if (!page || page.type !== 'calculator') return null;
+  if (!page || page.type !== 'calculator' || !page.dataRef) return null;
 
   return getCalculator(page.dataRef);
 }
 
 // Get calculator defaults for a page
-export function getPageCalculatorDefaults(pageSlug: string): Record<string, number | string> {
+export function getPageCalculatorDefaults(pageSlug: string): Record<string, number | string | boolean> {
   const page = findPageBySlug(pageSlug);
-  if (!page || page.type !== 'calculator') return {};
+  if (!page || page.type !== 'calculator' || !page.dataRef) return {};
 
   return getCalculatorDefaults(page.dataRef);
 }
@@ -107,10 +108,10 @@ export function getPageCalculatorDefaults(pageSlug: string): Record<string, numb
 // Validate calculator inputs for a page
 export function validatePageCalculatorInputs(
   pageSlug: string,
-  values: Record<string, number | string>
+  values: Record<string, number | string | boolean>
 ) {
   const page = findPageBySlug(pageSlug);
-  if (!page || page.type !== 'calculator') {
+  if (!page || page.type !== 'calculator' || !page.dataRef) {
     return { isValid: false, errors: ['Page not found or not a calculator'] };
   }
 
@@ -132,10 +133,10 @@ export function getPageSEOData(pageSlug: string) {
 
 // Get all calculator pages with their configurations
 export function getCalculatorPagesWithConfig() {
-  return getCalculatorPages().map(page => ({
+  return getCalculatorPages().filter(page => page.dataRef).map(page => ({
     ...page,
-    calculator: getCalculator(page.dataRef),
-    defaults: getCalculatorDefaults(page.dataRef),
+    calculator: getCalculator(page.dataRef!),
+    defaults: getCalculatorDefaults(page.dataRef!),
   }));
 }
 

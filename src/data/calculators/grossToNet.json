@@ -1,71 +1,172 @@
 {
   "id": "grossToNet",
   "name": "Gross to Net Salary Calculator",
-  "description": "Convert gross salary to net take-home pay",
+  "description": "Convert gross salary to net take-home pay with detailed tax breakdown",
   "inputs": [
     {
-      "id": "grossSalary",
-      "label": "Gross Salary Amount",
-      "type": "number",
-      "default": 60000,
-      "unit": "$",
-      "placeholder": "60000",
-      "required": true,
-      "min": 0,
-      "description": "Your gross salary before deductions"
-    },
-    {
-      "id": "payFrequency",
-      "label": "Pay Frequency",
+      "id": "country",
+      "label": "Country",
       "type": "select",
-      "default": "yearly",
+      "default": "US",
       "options": [
-        {"value": "monthly", "label": "Monthly"},
-        {"value": "yearly", "label": "Yearly"}
+        {"value": "US", "label": "🇺🇸 United States"},
+        {"value": "UK", "label": "🇬🇧 United Kingdom"},
+        {"value": "CA", "label": "🇨🇦 Canada"},
+        {"value": "AU", "label": "🇦🇺 Australia"},
+        {"value": "DE", "label": "🇩🇪 Germany"},
+        {"value": "FR", "label": "🇫🇷 France"},
+        {"value": "IN", "label": "🇮🇳 India"},
+        {"value": "JP", "label": "🇯🇵 Japan"},
+        {"value": "SG", "label": "🇸🇬 Singapore"}
       ],
       "required": true,
-      "description": "How often you get paid"
+      "description": "Select your country for accurate tax calculations"
     },
     {
-      "id": "taxRate",
-      "label": "Estimated Tax Rate",
+      "id": "grossSalary",
+      "label": "Annual Gross Salary",
       "type": "number",
-      "default": 25,
-      "unit": "%",
-      "placeholder": "25",
+      "default": 75000,
+      "unit": "",
+      "placeholder": "75000",
       "required": true,
       "min": 0,
-      "max": 50,
-      "description": "Your estimated total tax rate"
+      "description": "Your annual gross salary before any deductions"
     },
     {
-      "id": "additionalDeductions",
-      "label": "Additional Deductions",
+      "id": "state",
+      "label": "State/Province (US/Canada)",
+      "type": "select",
+      "default": "CA",
+      "options": [
+        {"value": "CA", "label": "California (13.3%)"},
+        {"value": "TX", "label": "Texas (0%)"},
+        {"value": "FL", "label": "Florida (0%)"},
+        {"value": "NY", "label": "New York (8.82%)"},
+        {"value": "IL", "label": "Illinois (4.95%)"},
+        {"value": "ON", "label": "Ontario (5.05%)"},
+        {"value": "BC", "label": "British Columbia (5.06%)"},
+        {"value": "QC", "label": "Quebec (4.95%)"}
+      ],
+      "required": false,
+      "description": "Select your state/province for regional tax calculations",
+      "conditional": "country === 'US' || country === 'CA'"
+    },
+    {
+      "id": "filingStatus",
+      "label": "Filing Status (US)",
+      "type": "select",
+      "default": "single",
+      "options": [
+        {"value": "single", "label": "Single"},
+        {"value": "married_joint", "label": "Married Filing Jointly"},
+        {"value": "head_household", "label": "Head of Household"}
+      ],
+      "required": false,
+      "description": "Your tax filing status",
+      "conditional": "country === 'US'"
+    },
+    {
+      "id": "dependents",
+      "label": "Number of Dependents",
       "type": "number",
       "default": 0,
-      "unit": "$",
+      "unit": "people",
       "placeholder": "0",
       "required": false,
       "min": 0,
-      "description": "Other deductions like insurance or retirement"
+      "max": 10,
+      "description": "Children and dependents claimed on taxes"
+    },
+    {
+      "id": "retirementContribution",
+      "label": "Annual Retirement Contribution",
+      "type": "number",
+      "default": 0,
+      "unit": "",
+      "placeholder": "3000",
+      "required": false,
+      "min": 0,
+      "description": "Pre-tax retirement contributions (401k, IRA, pension, etc.)"
+    },
+    {
+      "id": "healthInsurance",
+      "label": "Monthly Health Insurance",
+      "type": "number",
+      "default": 0,
+      "unit": "",
+      "placeholder": "400",
+      "required": false,
+      "min": 0,
+      "description": "Employer-sponsored health insurance premium (pre-tax)"
+    },
+    {
+      "id": "otherDeductions",
+      "label": "Other Pre-Tax Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other pre-tax deductions (commuter benefits, FSA, etc.)"
     }
   ],
   "formula": {
-    "annualGross": "payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
-    "estimatedTax": "annualGross * (taxRate / 100)",
-    "totalDeductions": "estimatedTax + additionalDeductions",
-    "netSalary": "annualGross - totalDeductions",
-    "monthlyNet": "netSalary / 12",
-    "takeHomePercent": "(netSalary / annualGross) * 100"
+    "annualGross": "grossSalary",
+    "totalPreTaxDeductions": "retirementContribution + (healthInsurance * 12) + otherDeductions",
+    "taxableIncome": "Math.max(0, annualGross - totalPreTaxDeductions)",
+    "federalTax": "country === 'US' ? calculateFederalTax2025(taxableIncome, filingStatus) : calculateCountryTax(taxableIncome, country)",
+    "stateTax": "(country === 'US' || country === 'CA') ? calculateStateTax2024(annualGross, state) : 0",
+    "socialSecurity": "country === 'US' ? Math.min(annualGross * 0.062, 168600 * 0.062) : 0",
+    "medicare": "country === 'US' ? annualGross * 0.0145 + (annualGross > 200000 ? (annualGross - 200000) * 0.009 : 0) : 0",
+    "payrollTax": "socialSecurity + medicare",
+    "totalTax": "federalTax + stateTax + payrollTax",
+    "annualNet": "annualGross - totalTax",
+    "monthlyNet": "annualNet / 12",
+    "biweeklyNet": "annualNet / 26",
+    "weeklyNet": "annualNet / 52",
+    "effectiveTaxRate": "annualGross > 0 ? (totalTax / annualGross) * 100 : 0",
+    "takeHomePercentage": "annualGross > 0 ? (annualNet / annualGross) * 100 : 0",
+    "taxBurden": "totalTax + totalPreTaxDeductions",
+    "totalDeductionsPercentage": "annualGross > 0 ? (taxBurden / annualGross) * 100 : 0"
   },
   "outputLabels": {
-    "estimatedTax": "Estimated Tax",
-    "totalDeductions": "Total Deductions",
-    "netSalary": "Net Take-Home Salary"
+    "annualGross": "Annual Gross Salary",
+    "totalPreTaxDeductions": "Pre-Tax Deductions",
+    "taxableIncome": "Taxable Income",
+    "federalTax": "Federal/Country Tax",
+    "stateTax": "State/Provincial Tax",
+    "socialSecurity": "Social Security",
+    "medicare": "Medicare",
+    "payrollTax": "Total Payroll Taxes",
+    "totalTax": "Total Taxes",
+    "annualNet": "Annual Take-Home Pay",
+    "monthlyNet": "Monthly Take-Home Pay",
+    "biweeklyNet": "Biweekly Take-Home Pay",
+    "weeklyNet": "Weekly Take-Home Pay",
+    "effectiveTaxRate": "Effective Tax Rate",
+    "takeHomePercentage": "Take-Home Percentage",
+    "taxBurden": "Total Deductions",
+    "totalDeductionsPercentage": "Total Deductions Percentage"
   },
   "outputUnits": {
-    "estimatedTax": "$",
-    "totalDeductions": "$",
-    "netSalary": "$"
+    "annualGross": "",
+    "totalPreTaxDeductions": "",
+    "taxableIncome": "",
+    "federalTax": "",
+    "stateTax": "",
+    "socialSecurity": "",
+    "medicare": "",
+    "payrollTax": "",
+    "totalTax": "",
+    "annualNet": "",
+    "monthlyNet": "",
+    "biweeklyNet": "",
+    "weeklyNet": "",
+    "effectiveTaxRate": "%",
+    "takeHomePercentage": "%",
+    "taxBurden": "",
+    "totalDeductionsPercentage": "%"
   }
 }

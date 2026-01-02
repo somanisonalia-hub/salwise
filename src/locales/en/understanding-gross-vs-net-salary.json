@@ -60,6 +60,123 @@
     "Use gross salary for retirement planning calculations",
     "Review your payslip regularly to understand all deductions",
     "Factor in benefits that may reduce your taxable income"
-  ]
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "@id": "https://salarywise.io/en/understanding-gross-vs-net-salary",
+        "headline": "Gross vs Net Salary: Complete Guide to Take-Home Pay",
+        "description": "Learn the critical difference between gross salary and net take-home pay with examples, calculations, and country-specific insights.",
+        "url": "https://salarywise.io/en/understanding-gross-vs-net-salary",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://salarywise.io",
+          "url": "https://salarywise.io",
+          "name": "SalaryWise.io"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://salarywise.io"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Guides",
+              "item": "https://salarywise.io/en/guides"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Gross vs Net Salary",
+              "item": "https://salarywise.io/en/understanding-gross-vs-net-salary"
+            }
+          ]
+        },
+        "author": {
+          "@type": "Organization",
+          "name": "SalaryWise.io",
+          "url": "https://salarywise.io"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "SalaryWise.io",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://salarywise.io/images/logo.png",
+            "width": 200,
+            "height": 60
+          }
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-01-01",
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://salarywise.io/en/understanding-gross-vs-net-salary"
+        },
+        "articleSection": "Tax Basics",
+        "keywords": ["gross salary", "net salary", "take-home pay", "salary deductions", "tax basics", "payroll"],
+        "wordCount": 850,
+        "timeRequired": "PT5M",
+        "image": {
+          "@type": "ImageObject",
+          "url": "https://salarywise.io/images/gross-vs-net-guide.jpg",
+          "width": 1200,
+          "height": 630,
+          "caption": "Understanding the difference between gross and net salary"
+        },
+        "mentions": [
+          {
+            "@type": "GovernmentOrganization",
+            "name": "Internal Revenue Service (IRS)",
+            "url": "https://www.irs.gov/taxtopics/tc551",
+            "description": "IRS information on gross vs net pay"
+          },
+          {
+            "@type": "GovernmentOrganization",
+            "name": "HM Revenue & Customs (HMRC)",
+            "url": "https://www.gov.uk/calculate-your-take-home-pay",
+            "description": "HMRC take-home pay calculator and guidance"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the difference between gross and net salary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gross salary is your total earnings before any deductions. Net salary (take-home pay) is what you receive after taxes, insurance, and other deductions."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What deductions affect net salary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common deductions include income tax, Social Security/Medicare, health insurance, retirement contributions, and sometimes union dues or garnishments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do benefits affect my net pay?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Some benefits like pre-tax health insurance or retirement contributions reduce your taxable income, potentially increasing your take-home pay."
+            }
+          }
+        ]
+      }
+    ]
+  }
 }
 

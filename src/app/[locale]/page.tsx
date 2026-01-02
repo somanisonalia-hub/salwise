@@ -190,7 +190,7 @@ export default async function HomePage({ params }: PageProps) {
           <h2 className="text-xl font-bold text-gray-900 mb-4 text-center">{content.calculators.title}</h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {content.calculators.items.map((calc: { href: string; icon: string; title: string; description: string }, index: number) => (
+            {content.calculators.categories.flatMap((category: any) => category.items).map((calc: { href: string; icon: string; title: string; description: string }, index: number) => (
               <Link
                 key={index}
                 href={`/${locale}${calc.href}`}

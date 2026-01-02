@@ -1,23 +1,105 @@
 {
   "id": "franceSalary",
   "name": "France Salary Calculator",
-  "description": "Calculate take-home pay in France",
+  "description": "Calculate take-home pay in France with income tax and social contributions",
   "inputs": [
     {
       "id": "grossSalary",
       "label": "Gross Annual Salary",
       "type": "number",
-      "default": 35000,
-      "unit": "€"
+      "default": 40000,
+      "unit": "€",
+      "placeholder": "40000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary before tax"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "monthly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "maritalStatus",
+      "label": "Marital Status",
+      "type": "select",
+      "default": "single",
+      "options": [
+        {"value": "single", "label": "Single"},
+        {"value": "married", "label": "Married"},
+        {"value": "divorced", "label": "Divorced/Separated"}
+      ],
+      "required": true,
+      "description": "Affects tax calculations"
+    },
+    {
+      "id": "dependents",
+      "label": "Number of Dependents",
+      "type": "number",
+      "default": 0,
+      "unit": "",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "max": 10,
+      "description": "Number of children or dependents"
+    },
+    {
+      "id": "pensionContribution",
+      "label": "Pension Contribution",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Annual pension contribution (pre-tax)"
     }
   ],
   "formula": {
-    "incomeTax": "grossSalary * 0.20",
-    "socialSecurity": "grossSalary * 0.22",
-    "unemploymentInsurance": "grossSalary * 0.025",
-    "totalDeductions": "incomeTax + socialSecurity + unemploymentInsurance",
-    "netSalary": "grossSalary - totalDeductions",
-    "takeHomeMonthly": "netSalary / 12"
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross - pensionContribution",
+    "incomeTax": "calculateFranceIncomeTax(taxableIncome, maritalStatus, dependents)",
+    "socialSecurity": "annualGross * 0.22",
+    "unemploymentInsurance": "annualGross * 0.025",
+    "healthInsurance": "annualGross * 0.07",
+    "totalDeductions": "incomeTax + socialSecurity + unemploymentInsurance + healthInsurance + pensionContribution",
+    "netAnnualSalary": "annualGross - totalDeductions",
+    "netMonthlySalary": "netAnnualSalary / 12",
+    "takeHomePercentage": "(netAnnualSalary / annualGross) * 100",
+    "totalTaxPercentage": "((incomeTax + socialSecurity + unemploymentInsurance + healthInsurance) / annualGross) * 100"
+  },
+  "outputLabels": {
+    "annualGross": "Annual Gross Salary",
+    "incomeTax": "Income Tax (IR)",
+    "socialSecurity": "Social Security",
+    "unemploymentInsurance": "Unemployment Insurance",
+    "healthInsurance": "Health Insurance (CSG/CRDS)",
+    "totalDeductions": "Total Deductions",
+    "netAnnualSalary": "Net Take-Home Pay (Annual)",
+    "netMonthlySalary": "Net Take-Home Pay (Monthly)",
+    "takeHomePercentage": "Take-Home Percentage",
+    "totalTaxPercentage": "Total Contribution Rate"
+  },
+  "outputUnits": {
+    "annualGross": "€",
+    "incomeTax": "€",
+    "socialSecurity": "€",
+    "unemploymentInsurance": "€",
+    "healthInsurance": "€",
+    "totalDeductions": "€",
+    "netAnnualSalary": "€",
+    "netMonthlySalary": "€",
+    "takeHomePercentage": "%",
+    "totalTaxPercentage": "%"
   }
 }
 

@@ -7,12 +7,12 @@
       "id": "grossSalary",
       "label": "Annual Gross Salary",
       "type": "number",
-      "default": 65000,
+      "default": 75000,
       "unit": "$",
-      "placeholder": "65000",
+      "placeholder": "75000",
       "required": true,
       "min": 0,
-      "description": "Your annual salary before taxes"
+      "description": "Your annual salary before taxes and deductions"
     },
     {
       "id": "state",
@@ -25,13 +25,28 @@
         {"value": "NV", "label": "Nevada (0% tax)"},
         {"value": "WA", "label": "Washington (0% tax)"},
         {"value": "TN", "label": "Tennessee (0% tax)"},
+        {"value": "SD", "label": "South Dakota (0% tax)"},
+        {"value": "WY", "label": "Wyoming (0% tax)"},
+        {"value": "AK", "label": "Alaska (0% tax)"},
         {"value": "CA", "label": "California (13.3%)"},
         {"value": "NY", "label": "New York (8.82%)"},
         {"value": "IL", "label": "Illinois (4.95%)"},
-        {"value": "GA", "label": "Georgia (5.75%)"}
+        {"value": "GA", "label": "Georgia (5.75%)"},
+        {"value": "PA", "label": "Pennsylvania (3.07%)"},
+        {"value": "NJ", "label": "New Jersey (5.525%)"},
+        {"value": "MA", "label": "Massachusetts (5.0%)"},
+        {"value": "VA", "label": "Virginia (5.75%)"},
+        {"value": "MD", "label": "Maryland (4.75%)"},
+        {"value": "CT", "label": "Connecticut (5.5%)"},
+        {"value": "MN", "label": "Minnesota (5.35%)"},
+        {"value": "CO", "label": "Colorado (4.55%)"},
+        {"value": "AZ", "label": "Arizona (2.59%)"},
+        {"value": "OR", "label": "Oregon (4.75%)"},
+        {"value": "MI", "label": "Michigan (4.25%)"},
+        {"value": "NC", "label": "North Carolina (4.99%)"}
       ],
       "required": true,
-      "description": "Select your state for accurate tax calculations"
+      "description": "Select your state for accurate state income tax calculations"
     },
     {
       "id": "filingStatus",
@@ -42,41 +57,95 @@
         {"value": "single", "label": "Single"},
         {"value": "married_joint", "label": "Married Filing Jointly"},
         {"value": "married_separate", "label": "Married Filing Separately"},
-        {"value": "head_household", "label": "Head of Household"}
+        {"value": "head_household", "label": "Head of Household"},
+        {"value": "widow", "label": "Qualifying Widow(er)"}
       ],
       "required": true,
-      "description": "Your tax filing status affects federal tax brackets"
+      "description": "Your tax filing status affects federal tax brackets and standard deduction"
+    },
+    {
+      "id": "dependents",
+      "label": "Number of Dependents",
+      "type": "number",
+      "default": 0,
+      "unit": "people",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "max": 10,
+      "description": "Children and other dependents claimed on your tax return"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Additional itemized deductions beyond standard deduction (mortgage interest, charitable donations, etc.)"
+    },
+    {
+      "id": "retirementContribution",
+      "label": "Annual Retirement Contribution",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Pre-tax retirement contributions (401k, IRA, etc.)"
+    },
+    {
+      "id": "healthInsurance",
+      "label": "Monthly Health Insurance",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Employer-sponsored health insurance premiums (pre-tax)"
     }
   ],
   "formula": {
-    "standardDeduction": "filingStatus === 'single' ? 13850 : filingStatus === 'married_joint' ? 27700 : filingStatus === 'head_household' ? 20800 : 13850",
-    "taxableIncome": "grossSalary - standardDeduction",
-    "federalTax": "calculateFederalTax(taxableIncome, filingStatus)",
-    "stateTax": "calculateStateTax(grossSalary, state)",
-    "ficaTax": "grossSalary * 0.0765",
+    "standardDeduction": "filingStatus === 'single' ? 13850 : filingStatus === 'married_joint' ? 27700 : filingStatus === 'married_separate' ? 13850 : filingStatus === 'head_household' ? 20800 : filingStatus === 'widow' ? 27700 : 13850",
+    "dependentDeduction": "dependents * 4050",
+    "totalDeductions": "standardDeduction + dependentDeduction + additionalDeductions + retirementContribution + (healthInsurance * 12)",
+    "taxableIncome": "Math.max(0, grossSalary - totalDeductions)",
+    "federalTax": "calculateFederalTax2025(taxableIncome, filingStatus)",
+    "stateTax": "calculateStateTax2024(grossSalary, state)",
+    "socialSecurity": "Math.min(grossSalary * 0.062, 168600 * 0.062)",
+    "medicare": "grossSalary * 0.0145 + (grossSalary > 200000 ? (grossSalary - 200000) * 0.009 : 0)",
+    "ficaTax": "socialSecurity + medicare",
     "totalTax": "federalTax + stateTax + ficaTax",
     "netSalary": "grossSalary - totalTax",
-    "effectiveTaxRate": "(totalTax / grossSalary) * 100"
+    "takeHomeMonthly": "netSalary / 12",
+    "effectiveTaxRate": "grossSalary > 0 ? (totalTax / grossSalary) * 100 : 0",
+    "takeHomePercentage": "grossSalary > 0 ? (netSalary / grossSalary) * 100 : 0"
   },
   "outputLabels": {
-    "standardDeduction": "Standard Deduction",
-    "taxableIncome": "Taxable Income",
+    "grossSalary": "Annual Gross Salary",
     "federalTax": "Federal Income Tax",
     "stateTax": "State Income Tax",
-    "ficaTax": "FICA Taxes",
+    "ficaTax": "FICA Taxes (SS + Medicare)",
     "totalTax": "Total Taxes",
-    "netSalary": "Net Take-Home Pay",
-    "effectiveTaxRate": "Effective Tax Rate"
+    "netSalary": "Annual Take-Home Pay",
+    "takeHomeMonthly": "Monthly Take-Home Pay",
+    "effectiveTaxRate": "Effective Tax Rate",
+    "takeHomePercentage": "Take-Home Percentage"
   },
   "outputUnits": {
-    "standardDeduction": "$",
-    "taxableIncome": "$",
+    "grossSalary": "$",
     "federalTax": "$",
     "stateTax": "$",
     "ficaTax": "$",
     "totalTax": "$",
     "netSalary": "$",
-    "effectiveTaxRate": "%"
+    "takeHomeMonthly": "$",
+    "effectiveTaxRate": "%",
+    "takeHomePercentage": "%"
   }
 }
 

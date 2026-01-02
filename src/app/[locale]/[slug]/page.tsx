@@ -99,31 +99,46 @@ export async function generateMetadata({ params }: PageProps) {
   try {
     let pageData;
 
-    // Load page data based on slug type
+    // Load page data based on slug type - always fall back to English
+    let filePath = '';
+    if (slug.startsWith('country/')) {
+      const country = slug.split('/')[1];
+      filePath = `../../../locales/${locale}/country/${country}.json`;
+    } else if (slug.startsWith('industry/')) {
+      const industry = slug.split('/')[1];
+      filePath = `../../../locales/${locale}/industry/${industry}.json`;
+    } else if (slug.startsWith('guides/')) {
+      const guide = slug.split('/')[1];
+      filePath = `../../../locales/${locale}/guides/${guide}.json`;
+    } else {
+      filePath = `../../../locales/${locale}/${slug}.json`;
+    }
+
     try {
-      if (slug.startsWith('country/')) {
-        // Country pages: src/locales/${locale}/country/${country}.json
-        const country = slug.split('/')[1];
-        pageData = require(`../../../locales/${locale}/country/${country}.json`);
-      } else if (slug.startsWith('industry/')) {
-        // Industry pages: src/locales/${locale}/industry/${industry}.json
-        const industry = slug.split('/')[1];
-        pageData = require(`../../../locales/${locale}/industry/${industry}.json`);
-      } else if (slug.startsWith('guides/')) {
-        // Guide pages: src/locales/${locale}/guides/${guide}.json
-        const guide = slug.split('/')[1];
-        pageData = require(`../../../locales/${locale}/guides/${guide}.json`);
-      } else {
-        // Basic calculator pages: src/locales/${locale}/${slug}.json
-        pageData = require(`../../../locales/${locale}/${slug}.json`);
-      }
+      pageData = require(filePath);
     } catch (fileError) {
-      console.error(`Failed to load page data for ${slug}:`, fileError);
-      // Fallback metadata
-      return {
-        title: 'Salary Calculator',
-        description: 'Free salary calculators and financial tools',
-      };
+      // Try English fallback
+      try {
+        if (slug.startsWith('country/')) {
+          const country = slug.split('/')[1];
+          pageData = require(`../../../locales/en/country/${country}.json`);
+        } else if (slug.startsWith('industry/')) {
+          const industry = slug.split('/')[1];
+          pageData = require(`../../../locales/en/industry/${industry}.json`);
+        } else if (slug.startsWith('guides/')) {
+          const guide = slug.split('/')[1];
+          pageData = require(`../../../locales/en/guides/${guide}.json`);
+        } else {
+          pageData = require(`../../../locales/en/${slug}.json`);
+        }
+      } catch (englishError) {
+        console.error(`Failed to load page data for ${slug} in both ${locale} and English:`, englishError);
+        // Fallback metadata
+        return {
+          title: 'Salary Calculator',
+          description: 'Free salary calculators and financial tools',
+        };
+      }
     }
 
     pageData = pageData.default || pageData;
@@ -206,27 +221,42 @@ export default async function LocalizedPage({ params }: PageProps) {
   try {
     let pageData;
 
-    // Load page data using require (works with static export)
+    // Load page data using require (works with static export) - always fall back to English
+    let filePath = '';
+    if (slug.startsWith('country/')) {
+      const country = slug.split('/')[1];
+      filePath = `../../../locales/${locale}/country/${country}.json`;
+    } else if (slug.startsWith('industry/')) {
+      const industry = slug.split('/')[1];
+      filePath = `../../../locales/${locale}/industry/${industry}.json`;
+    } else if (slug.startsWith('guides/')) {
+      const guide = slug.split('/')[1];
+      filePath = `../../../locales/${locale}/guides/${guide}.json`;
+    } else {
+      filePath = `../../../locales/${locale}/${slug}.json`;
+    }
+
     try {
-      if (slug.startsWith('country/')) {
-        // Country pages: src/locales/${locale}/country/${country}.json
-        const country = slug.split('/')[1];
-        pageData = require(`../../../locales/${locale}/country/${country}.json`);
-      } else if (slug.startsWith('industry/')) {
-        // Industry pages: src/locales/${locale}/industry/${industry}.json
-        const industry = slug.split('/')[1];
-        pageData = require(`../../../locales/${locale}/industry/${industry}.json`);
-      } else if (slug.startsWith('guides/')) {
-        // Guide pages: src/locales/${locale}/guides/${guide}.json
-        const guide = slug.split('/')[1];
-        pageData = require(`../../../locales/${locale}/guides/${guide}.json`);
-      } else {
-        // Basic calculator pages: src/locales/${locale}/${slug}.json
-        pageData = require(`../../../locales/${locale}/${slug}.json`);
-      }
+      pageData = require(filePath);
     } catch (fileError) {
-      console.error(`Failed to load page data for ${slug}:`, fileError);
-      throw new Error(`Page data not found for: ${slug}`);
+      // Try English fallback
+      try {
+        if (slug.startsWith('country/')) {
+          const country = slug.split('/')[1];
+          pageData = require(`../../../locales/en/country/${country}.json`);
+        } else if (slug.startsWith('industry/')) {
+          const industry = slug.split('/')[1];
+          pageData = require(`../../../locales/en/industry/${industry}.json`);
+        } else if (slug.startsWith('guides/')) {
+          const guide = slug.split('/')[1];
+          pageData = require(`../../../locales/en/guides/${guide}.json`);
+        } else {
+          pageData = require(`../../../locales/en/${slug}.json`);
+        }
+      } catch (englishError) {
+        console.error(`Failed to load page data for ${slug} in both ${locale} and English:`, englishError);
+        throw new Error(`Page data not found for: ${slug}`);
+      }
     }
 
     pageData = pageData.default || pageData;
@@ -247,7 +277,7 @@ export default async function LocalizedPage({ params }: PageProps) {
         </div>
       </div>
     );
-  }
+}
 }
 
 // Directory Components

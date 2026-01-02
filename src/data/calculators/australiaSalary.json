@@ -1,23 +1,106 @@
 {
   "id": "australiaSalary",
   "name": "Australia Salary Calculator",
-  "description": "Calculate take-home pay in Australia",
+  "description": "Calculate take-home pay in Australia with income tax, Medicare levy, and superannuation",
   "inputs": [
     {
       "id": "grossSalary",
       "label": "Gross Annual Salary",
       "type": "number",
-      "default": 65000,
-      "unit": "AUD"
+      "default": 70000,
+      "unit": "AUD",
+      "placeholder": "70000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary before tax"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "fortnightly", "label": "Fortnightly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "superannuation",
+      "label": "Superannuation Rate",
+      "type": "select",
+      "default": "9.5",
+      "options": [
+        {"value": "9.5", "label": "9.5% (Default)"},
+        {"value": "10", "label": "10%"},
+        {"value": "11", "label": "11%"},
+        {"value": "12", "label": "12%"},
+        {"value": "15", "label": "15% (High earners)"}
+      ],
+      "required": true,
+      "description": "Mandatory superannuation guarantee rate"
+    },
+    {
+      "id": "additionalSuper",
+      "label": "Additional Superannuation",
+      "type": "number",
+      "default": 0,
+      "unit": "AUD",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Salary sacrificed into additional superannuation"
+    },
+    {
+      "id": "otherDeductions",
+      "label": "Other Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "AUD",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions (HELP debt, professional fees, etc.)"
     }
   ],
   "formula": {
-    "medicareLevy": "grossSalary * 0.02",
-    "incomeTax": "grossSalary < 18200 ? 0 : grossSalary < 45000 ? (grossSalary - 18200) * 0.19 : grossSalary < 120000 ? 5092 + (grossSalary - 45000) * 0.325 : 29467 + (grossSalary - 120000) * 0.37",
-    "superannuation": "grossSalary * 0.10",
-    "totalDeductions": "incomeTax + medicareLevy + superannuation",
-    "netSalary": "grossSalary - totalDeductions",
-    "takeHomeMonthly": "netSalary / 12"
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'fortnightly' ? grossSalary * 26 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "superannuationRate": "parseFloat(superannuation) / 100",
+    "mandatorySuper": "annualGross * superannuationRate",
+    "totalSuperannuation": "mandatorySuper + additionalSuper",
+    "taxableIncome": "annualGross - additionalSuper",
+    "incomeTax": "calculateAustraliaIncomeTax(taxableIncome)",
+    "medicareLevy": "calculateAustraliaMedicareLevy(annualGross)",
+    "totalDeductions": "incomeTax + medicareLevy + totalSuperannuation + otherDeductions",
+    "netAnnualSalary": "annualGross - totalDeductions",
+    "netMonthlySalary": "netAnnualSalary / 12",
+    "takeHomePercentage": "(netAnnualSalary / annualGross) * 100",
+    "totalTaxPercentage": "((incomeTax + medicareLevy) / annualGross) * 100"
+  },
+  "outputLabels": {
+    "annualGross": "Annual Gross Salary",
+    "incomeTax": "Income Tax",
+    "medicareLevy": "Medicare Levy",
+    "totalSuperannuation": "Superannuation",
+    "totalDeductions": "Total Deductions",
+    "netAnnualSalary": "Net Take-Home Pay (Annual)",
+    "netMonthlySalary": "Net Take-Home Pay (Monthly)",
+    "takeHomePercentage": "Take-Home Percentage",
+    "totalTaxPercentage": "Total Tax Rate"
+  },
+  "outputUnits": {
+    "annualGross": "AUD",
+    "incomeTax": "AUD",
+    "medicareLevy": "AUD",
+    "totalSuperannuation": "AUD",
+    "totalDeductions": "AUD",
+    "netAnnualSalary": "AUD",
+    "netMonthlySalary": "AUD",
+    "takeHomePercentage": "%",
+    "totalTaxPercentage": "%"
   }
 }
 

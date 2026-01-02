@@ -1,82 +1,192 @@
 {
   "id": "salaryCalculatorITTech",
   "name": "IT / Tech Salary Calculator",
-  "description": "Calculate net salary for IT and tech professionals",
+  "description": "Comprehensive salary calculator for IT and tech professionals with equity, benefits, and location adjustments",
   "inputs": [
-    {
-      "id": "grossSalary",
-      "label": "Gross Salary",
-      "type": "number",
-      "default": 80000,
-      "unit": "$",
-      "placeholder": "80000",
-      "required": true,
-      "min": 0,
-      "description": "Your annual gross salary"
-    },
-    {
-      "id": "payFrequency",
-      "label": "Pay Frequency",
-      "type": "select",
-      "default": "yearly",
-      "options": [
-        {"value": "weekly", "label": "Weekly"},
-        {"value": "monthly", "label": "Monthly"},
-        {"value": "yearly", "label": "Yearly"}
-      ],
-      "required": true,
-      "description": "How often you get paid"
-    },
     {
       "id": "country",
       "label": "Country",
       "type": "select",
       "default": "US",
       "options": [
-        {"value": "US", "label": "United States"},
-        {"value": "UK", "label": "United Kingdom"},
-        {"value": "Canada", "label": "Canada"},
-        {"value": "Australia", "label": "Australia"},
-        {"value": "Germany", "label": "Germany"},
-        {"value": "India", "label": "India"}
+        {"value": "US", "label": "🇺🇸 United States"},
+        {"value": "UK", "label": "🇬🇧 United Kingdom"},
+        {"value": "CA", "label": "🇨🇦 Canada"},
+        {"value": "AU", "label": "🇦🇺 Australia"},
+        {"value": "DE", "label": "🇩🇪 Germany"},
+        {"value": "FR", "label": "🇫🇷 France"},
+        {"value": "IN", "label": "🇮🇳 India"},
+        {"value": "SG", "label": "🇸🇬 Singapore"},
+        {"value": "NL", "label": "🇳🇱 Netherlands"}
       ],
       "required": true,
-      "description": "Select your country for localized calculations"
+      "description": "Select your country for accurate tax and cost of living calculations"
     },
     {
-      "id": "additionalDeductions",
-      "label": "Additional Deductions",
+      "id": "baseSalary",
+      "label": "Annual Base Salary",
       "type": "number",
-      "default": 0,
-      "unit": "$",
-      "placeholder": "0",
+      "default": 100000,
+      "unit": "",
+      "placeholder": "100000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual base salary before bonuses and equity"
+    },
+    {
+      "id": "experienceLevel",
+      "label": "Experience Level",
+      "type": "select",
+      "default": "mid",
+      "options": [
+        {"value": "junior", "label": "Junior (0-3 years)"},
+        {"value": "mid", "label": "Mid-Level (3-5 years)"},
+        {"value": "senior", "label": "Senior (5-8 years)"},
+        {"value": "lead", "label": "Lead/Principal (8+ years)"},
+        {"value": "staff", "label": "Staff/Architect (10+ years)"}
+      ],
+      "required": true,
+      "description": "Your experience level affects bonus and equity expectations"
+    },
+    {
+      "id": "roleType",
+      "label": "Role Type",
+      "type": "select",
+      "default": "software-engineer",
+      "options": [
+        {"value": "software-engineer", "label": "Software Engineer"},
+        {"value": "frontend-dev", "label": "Frontend Developer"},
+        {"value": "backend-dev", "label": "Backend Developer"},
+        {"value": "fullstack-dev", "label": "Full-Stack Developer"},
+        {"value": "data-scientist", "label": "Data Scientist"},
+        {"value": "data-engineer", "label": "Data Engineer"},
+        {"value": "devops-engineer", "label": "DevOps Engineer"},
+        {"value": "product-manager", "label": "Product Manager"},
+        {"value": "engineering-manager", "label": "Engineering Manager"},
+        {"value": "cto", "label": "CTO/Tech Lead"}
+      ],
+      "required": true,
+      "description": "Your specific role affects compensation structure"
+    },
+    {
+      "id": "annualBonus",
+      "label": "Expected Annual Bonus",
+      "type": "number",
+      "default": 15000,
+      "unit": "",
+      "placeholder": "15000",
       "required": false,
       "min": 0,
-      "description": "Other deductions like retirement, insurance, etc."
+      "description": "Expected annual performance bonus"
+    },
+    {
+      "id": "equityValue",
+      "label": "Annual Equity/RSU Value",
+      "type": "number",
+      "default": 25000,
+      "unit": "",
+      "placeholder": "25000",
+      "required": false,
+      "min": 0,
+      "description": "Estimated annual value of stock options or RSUs"
+    },
+    {
+      "id": "benefitsValue",
+      "label": "Annual Benefits Package",
+      "type": "number",
+      "default": 12000,
+      "unit": "",
+      "placeholder": "12000",
+      "required": false,
+      "min": 0,
+      "description": "Health insurance, retirement match, paid time off value"
+    },
+    {
+      "id": "remoteWorkStipend",
+      "label": "Monthly Remote Work Stipend",
+      "type": "number",
+      "default": 100,
+      "unit": "",
+      "placeholder": "100",
+      "required": false,
+      "min": 0,
+      "description": "Monthly stipend for remote work setup"
+    },
+    {
+      "id": "professionalDevelopment",
+      "label": "Annual Learning Budget",
+      "type": "number",
+      "default": 2000,
+      "unit": "",
+      "placeholder": "2000",
+      "required": false,
+      "min": 0,
+      "description": "Conference, certification, and training budget"
     }
   ],
   "formula": {
-    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
-    "taxableIncome": "annualGross",
-    "incomeTax": "country === 'US' ? (taxableIncome <= 11000 ? 0 : taxableIncome <= 44725 ? (taxableIncome - 11000) * 0.12 : taxableIncome <= 95375 ? 3360 + (taxableIncome - 44725) * 0.22 : taxableIncome <= 182100 ? 11089 + (taxableIncome - 95375) * 0.24 : taxableIncome <= 231250 ? 25746 + (taxableIncome - 182100) * 0.32 : taxableIncome <= 578125 ? 44223 + (taxableIncome - 231250) * 0.35 : 110818 + (taxableIncome - 578125) * 0.37) : country === 'UK' ? (taxableIncome <= 12570 ? 0 : taxableIncome <= 50270 ? (taxableIncome - 12570) * 0.20 : taxableIncome <= 125140 ? 7540 + (taxableIncome - 50270) * 0.40 : 42970 + (taxableIncome - 125140) * 0.45) : country === 'India' ? (taxableIncome <= 250000 ? 0 : taxableIncome <= 500000 ? (taxableIncome - 250000) * 0.05 : taxableIncome <= 1000000 ? 12500 + (taxableIncome - 500000) * 0.20 : 112500 + (taxableIncome - 1000000) * 0.30) : country === 'Canada' ? (taxableIncome <= 142292 ? taxableIncome * 0.15 : taxableIncome <= 170751 ? 21344 + (taxableIncome - 142292) * 0.205 : taxableIncome <= 209952 ? 27922 + (taxableIncome - 170751) * 0.26 : taxableIncome <= 314928 ? 46366 + (taxableIncome - 209952) * 0.29 : 77314 + (taxableIncome - 314928) * 0.33) : country === 'Australia' ? (taxableIncome <= 18200 ? 0 : taxableIncome <= 45000 ? (taxableIncome - 18200) * 0.19 : taxableIncome <= 120000 ? 5092 + (taxableIncome - 45000) * 0.325 : taxableIncome <= 180000 ? 29467 + (taxableIncome - 120000) * 0.37 : 51667 + (taxableIncome - 180000) * 0.45) : country === 'Germany' ? taxableIncome * 0.42 : 0",
-    "socialContributions": "country === 'US' ? annualGross * 0.0765 : country === 'UK' ? annualGross * 0.08 : country === 'Canada' ? annualGross * 0.0495 : country === 'Australia' ? annualGross * 0.02 : country === 'Germany' ? annualGross * 0.20 : country === 'India' ? 0 : 0",
-    "totalDeductions": "incomeTax + socialContributions + additionalDeductions",
-    "netSalary": "annualGross - totalDeductions",
-    "monthlyNet": "netSalary / 12"
+    "baseSalary": "baseSalary",
+    "bonusAmount": "annualBonus",
+    "equityValue": "equityValue",
+    "benefitsValue": "benefitsValue",
+    "remoteStipend": "remoteWorkStipend * 12",
+    "learningBudget": "professionalDevelopment",
+    "totalCashCompensation": "baseSalary + bonusAmount + remoteStipend + learningBudget",
+    "totalCompensation": "totalCashCompensation + equityValue + benefitsValue",
+    "taxableIncome": "totalCashCompensation",
+    "estimatedTax": "calculateCountryTax(totalCashCompensation, country)",
+    "socialContributions": "country === 'US' ? totalCashCompensation * 0.0765 : country === 'UK' ? totalCashCompensation * 0.08 : country === 'CA' ? totalCashCompensation * 0.0495 : country === 'AU' ? totalCashCompensation * 0.02 : country === 'DE' ? totalCashCompensation * 0.20 : country === 'FR' ? totalCashCompensation * 0.22 : country === 'IN' ? 0 : country === 'SG' ? 0 : country === 'NL' ? totalCashCompensation * 0.08 : 0",
+    "totalDeductions": "estimatedTax + socialContributions",
+    "annualNetCash": "totalCashCompensation - totalDeductions",
+    "monthlyNetCash": "annualNetCash / 12",
+    "annualTotalValue": "annualNetCash + equityValue + benefitsValue",
+    "monthlyTotalValue": "annualTotalValue / 12",
+    "cashPercentage": "totalCompensation > 0 ? (totalCashCompensation / totalCompensation) * 100 : 0",
+    "equityPercentage": "totalCompensation > 0 ? (equityValue / totalCompensation) * 100 : 0",
+    "benefitsPercentage": "totalCompensation > 0 ? (benefitsValue / totalCompensation) * 100 : 0",
+    "effectiveTaxRate": "totalCashCompensation > 0 ? (totalDeductions / totalCashCompensation) * 100 : 0"
   },
   "outputLabels": {
-    "incomeTax": "Income Tax",
-    "socialContributions": "Social Contributions",
+    "baseSalary": "Base Salary",
+    "bonusAmount": "Annual Bonus",
+    "equityValue": "Equity/RSUs Value",
+    "benefitsValue": "Benefits Package",
+    "remoteStipend": "Remote Work Stipend",
+    "learningBudget": "Learning & Development",
+    "totalCashCompensation": "Total Cash Compensation",
+    "totalCompensation": "Total Annual Compensation",
+    "estimatedTax": "Estimated Taxes",
+    "socialContributions": "Social Security/Insurance",
     "totalDeductions": "Total Deductions",
-    "netSalary": "Net / Take-Home Salary (Annual)",
-    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+    "annualNetCash": "Annual Net Cash Income",
+    "monthlyNetCash": "Monthly Net Cash Income",
+    "annualTotalValue": "Annual Total Value",
+    "monthlyTotalValue": "Monthly Total Value",
+    "cashPercentage": "Cash as % of Total Comp",
+    "equityPercentage": "Equity as % of Total Comp",
+    "benefitsPercentage": "Benefits as % of Total Comp",
+    "effectiveTaxRate": "Effective Tax Rate"
   },
   "outputUnits": {
-    "incomeTax": "$",
-    "socialContributions": "$",
-    "totalDeductions": "$",
-    "netSalary": "$",
-    "monthlyNet": "$"
+    "baseSalary": "",
+    "bonusAmount": "",
+    "equityValue": "",
+    "benefitsValue": "",
+    "remoteStipend": "",
+    "learningBudget": "",
+    "totalCashCompensation": "",
+    "totalCompensation": "",
+    "estimatedTax": "",
+    "socialContributions": "",
+    "totalDeductions": "",
+    "annualNetCash": "",
+    "monthlyNetCash": "",
+    "annualTotalValue": "",
+    "monthlyTotalValue": "",
+    "cashPercentage": "%",
+    "equityPercentage": "%",
+    "benefitsPercentage": "%",
+    "effectiveTaxRate": "%"
   }
 }
 

@@ -1,23 +1,93 @@
 {
   "id": "spainSalary",
   "name": "Spain Salary Calculator",
-  "description": "Calculate take-home pay in Spain",
+  "description": "Calculate take-home pay in Spain with income tax and social security",
   "inputs": [
     {
       "id": "grossSalary",
       "label": "Gross Annual Salary",
       "type": "number",
-      "default": 25000,
-      "unit": "€"
+      "default": 30000,
+      "unit": "€",
+      "placeholder": "30000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary before tax"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "monthly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "biweekly", "label": "Biweekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "region",
+      "label": "Autonomous Community",
+      "type": "select",
+      "default": "Madrid",
+      "options": [
+        {"value": "Madrid", "label": "Madrid"},
+        {"value": "Catalonia", "label": "Catalonia"},
+        {"value": "Andalusia", "label": "Andalusia"},
+        {"value": "Valencia", "label": "Valencia"},
+        {"value": "Basque Country", "label": "Basque Country"}
+      ],
+      "required": true,
+      "description": "Affects regional tax rates"
+    },
+    {
+      "id": "pensionContribution",
+      "label": "Pension Contribution",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Annual pension contribution (pre-tax)"
     }
   ],
   "formula": {
-    "incomeTax": "grossSalary * 0.24",
-    "socialSecurity": "grossSalary * 0.063",
-    "unemploymentInsurance": "grossSalary * 0.016",
-    "totalDeductions": "incomeTax + socialSecurity + unemploymentInsurance",
-    "netSalary": "grossSalary - totalDeductions",
-    "takeHomeMonthly": "netSalary / 12"
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'biweekly' ? grossSalary * 26 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross - pensionContribution",
+    "incomeTax": "calculateSpainIncomeTax(taxableIncome)",
+    "socialSecurity": "annualGross * 0.063",
+    "unemploymentInsurance": "annualGross * 0.016",
+    "totalDeductions": "incomeTax + socialSecurity + unemploymentInsurance + pensionContribution",
+    "netAnnualSalary": "annualGross - totalDeductions",
+    "netMonthlySalary": "netAnnualSalary / 12",
+    "takeHomePercentage": "(netAnnualSalary / annualGross) * 100",
+    "totalTaxPercentage": "((incomeTax + socialSecurity + unemploymentInsurance) / annualGross) * 100"
+  },
+  "outputLabels": {
+    "annualGross": "Annual Gross Salary",
+    "incomeTax": "Income Tax (IRPF)",
+    "socialSecurity": "Social Security",
+    "unemploymentInsurance": "Unemployment Insurance",
+    "totalDeductions": "Total Deductions",
+    "netAnnualSalary": "Net Take-Home Pay (Annual)",
+    "netMonthlySalary": "Net Take-Home Pay (Monthly)",
+    "takeHomePercentage": "Take-Home Percentage",
+    "totalTaxPercentage": "Total Tax Rate"
+  },
+  "outputUnits": {
+    "annualGross": "€",
+    "incomeTax": "€",
+    "socialSecurity": "€",
+    "unemploymentInsurance": "€",
+    "totalDeductions": "€",
+    "netAnnualSalary": "€",
+    "netMonthlySalary": "€",
+    "takeHomePercentage": "%",
+    "totalTaxPercentage": "%"
   }
 }
 

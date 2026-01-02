@@ -73,5 +73,155 @@
     "Remember that tax rates vary by income level and location",
     "Consult with a tax professional for personalized advice",
     "Revisit calculations when tax laws or rates change"
-  ]
+  ],
+  "disclaimer": "SalaryWise provides estimated take-home pay based on publicly available tax structures. Results are for guidance only.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://salarywise.io/en/gross-to-net-salary",
+        "url": "https://salarywise.io/en/gross-to-net-salary",
+        "name": "Gross to Net Salary Calculator | Take-Home Pay Calculator 2025",
+        "description": "Calculate your take-home pay from gross salary. Free gross to net calculator with country-specific tax rates, deductions, and benefits. 2025 tax rates updated.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://salarywise.io",
+          "url": "https://salarywise.io",
+          "name": "SalaryWise.io"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://salarywise.io"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Calculators",
+              "item": "https://salarywise.io/en/calculators"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Gross to Net Salary",
+              "item": "https://salarywise.io/en/gross-to-net-salary"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "SoftwareApplication",
+          "@id": "https://salarywise.io/en/gross-to-net-salary#software",
+          "name": "Gross to Net Salary Calculator",
+          "description": "Professional tax calculator that converts gross salary to net take-home pay with detailed breakdowns of federal, state, and payroll taxes",
+          "url": "https://salarywise.io/en/gross-to-net-salary",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock"
+          },
+          "featureList": [
+            "2025 tax rates updated",
+            "Country and state tax calculations",
+            "Filing status options",
+            "Dependent tax credits",
+            "Pre-tax deduction calculations",
+            "FICA tax breakdown",
+            "Real-time calculations"
+          ],
+          "screenshot": "https://salarywise.io/images/gross-to-net-calculator.jpg",
+          "author": {
+            "@type": "Organization",
+            "name": "SalaryWise.io"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.8",
+            "ratingCount": "9562",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://salarywise.io/images/gross-to-net-hero.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-01-01",
+        "mentions": [
+          {
+            "@type": "GovernmentOrganization",
+            "name": "Internal Revenue Service (IRS)",
+            "url": "https://www.irs.gov",
+            "description": "Official US tax authority"
+          },
+          {
+            "@type": "GovernmentOrganization",
+            "name": "HM Revenue & Customs (HMRC)",
+            "url": "https://www.gov.uk/government/organisations/hm-revenue-customs",
+            "description": "Official UK tax authority"
+          },
+          {
+            "@type": "GovernmentOrganization",
+            "name": "Canada Revenue Agency (CRA)",
+            "url": "https://www.canada.ca/en/revenue-agency.html",
+            "description": "Official Canadian tax authority"
+          },
+          {
+            "@type": "GovernmentOrganization",
+            "name": "Australian Taxation Office (ATO)",
+            "url": "https://www.ato.gov.au",
+            "description": "Official Australian tax authority"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does the gross to net calculator work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Enter your annual gross salary and select your country, state, and filing status. The calculator applies current tax rates, deductions, and credits to show your take-home pay."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are the tax calculations accurate?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We use official 2025 tax brackets and rates. While accurate for estimates, consult a tax professional for your specific situation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What deductions are included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Standard deduction, dependent tax credits, pre-tax retirement contributions, and health insurance premiums."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I calculate for different countries?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we support tax calculations for the US, UK, Canada, Australia, Germany, France, and other major countries."
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

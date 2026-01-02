@@ -1,31 +1,115 @@
 {
   "id": "canadaSalary",
   "name": "Canada Salary Calculator",
-  "description": "Calculate take-home pay in Canada",
+  "description": "Calculate take-home pay in Canada with federal and provincial taxes, CPP, and EI",
   "inputs": [
     {
       "id": "grossSalary",
       "label": "Gross Annual Salary",
       "type": "number",
-      "default": 50000,
-      "unit": "CAD"
+      "default": 55000,
+      "unit": "CAD",
+      "placeholder": "55000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary before tax"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "biweekly", "label": "Biweekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
     },
     {
       "id": "province",
-      "label": "Province",
-      "type": "text",
+      "label": "Province/Territory",
+      "type": "select",
       "default": "Ontario",
-      "unit": ""
+      "options": [
+        {"value": "Alberta", "label": "Alberta"},
+        {"value": "British Columbia", "label": "British Columbia"},
+        {"value": "Manitoba", "label": "Manitoba"},
+        {"value": "New Brunswick", "label": "New Brunswick"},
+        {"value": "Newfoundland", "label": "Newfoundland & Labrador"},
+        {"value": "Northwest Territories", "label": "Northwest Territories"},
+        {"value": "Nova Scotia", "label": "Nova Scotia"},
+        {"value": "Nunavut", "label": "Nunavut"},
+        {"value": "Ontario", "label": "Ontario"},
+        {"value": "Prince Edward Island", "label": "Prince Edward Island"},
+        {"value": "Quebec", "label": "Quebec"},
+        {"value": "Saskatchewan", "label": "Saskatchewan"},
+        {"value": "Yukon", "label": "Yukon"}
+      ],
+      "required": true,
+      "description": "Select your province or territory"
+    },
+    {
+      "id": "rrspContribution",
+      "label": "RRSP Contribution",
+      "type": "number",
+      "default": 0,
+      "unit": "CAD",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Annual RRSP retirement contribution (pre-tax)"
+    },
+    {
+      "id": "otherDeductions",
+      "label": "Other Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "CAD",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions (union dues, professional fees, etc.)"
     }
   ],
   "formula": {
-    "federalTax": "grossSalary * 0.15",
-    "provincialTax": "grossSalary * 0.05",
-    "cpp": "grossSalary * 0.0495",
-    "ei": "grossSalary * 0.0163",
-    "totalDeductions": "federalTax + provincialTax + cpp + ei",
-    "netSalary": "grossSalary - totalDeductions",
-    "takeHomeMonthly": "netSalary / 12"
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'biweekly' ? grossSalary * 26 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross - rrspContribution",
+    "federalTax": "calculateCanadaFederalTax(taxableIncome)",
+    "provincialTax": "calculateCanadaProvincialTax(taxableIncome, province)",
+    "cpp": "Math.min(Math.max(annualGross - 3500, 0) * 0.0495, 14256.94)",
+    "ei": "Math.min(annualGross * 0.0163, 1045.12)",
+    "totalDeductions": "federalTax + provincialTax + cpp + ei + rrspContribution + otherDeductions",
+    "netAnnualSalary": "annualGross - totalDeductions",
+    "netMonthlySalary": "netAnnualSalary / 12",
+    "takeHomePercentage": "(netAnnualSalary / annualGross) * 100",
+    "totalTaxPercentage": "((federalTax + provincialTax + cpp + ei) / annualGross) * 100"
+  },
+  "outputLabels": {
+    "annualGross": "Annual Gross Salary",
+    "federalTax": "Federal Income Tax",
+    "provincialTax": "Provincial Income Tax",
+    "cpp": "Canada Pension Plan (CPP)",
+    "ei": "Employment Insurance (EI)",
+    "totalDeductions": "Total Deductions",
+    "netAnnualSalary": "Net Take-Home Pay (Annual)",
+    "netMonthlySalary": "Net Take-Home Pay (Monthly)",
+    "takeHomePercentage": "Take-Home Percentage",
+    "totalTaxPercentage": "Total Tax Rate"
+  },
+  "outputUnits": {
+    "annualGross": "CAD",
+    "federalTax": "CAD",
+    "provincialTax": "CAD",
+    "cpp": "CAD",
+    "ei": "CAD",
+    "totalDeductions": "CAD",
+    "netAnnualSalary": "CAD",
+    "netMonthlySalary": "CAD",
+    "takeHomePercentage": "%",
+    "totalTaxPercentage": "%"
   }
 }
 

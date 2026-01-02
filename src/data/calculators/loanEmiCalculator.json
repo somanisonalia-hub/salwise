@@ -1,15 +1,47 @@
 {
   "id": "loanEmiCalculator",
-  "name": "Loan / EMI Calculator",
-  "description": "Calculate monthly EMI, total interest, and repayment plans for loans",
+  "name": "Loan EMI Calculator",
+  "description": "Comprehensive loan calculator with EMI, amortization, prepayments, and comparison tools",
   "inputs": [
+    {
+      "id": "loanType",
+      "label": "Loan Type",
+      "type": "select",
+      "default": "home",
+      "options": [
+        {"value": "home", "label": "🏠 Home Loan/Mortgage"},
+        {"value": "car", "label": "🚗 Auto/Car Loan"},
+        {"value": "personal", "label": "💳 Personal Loan"},
+        {"value": "student", "label": "🎓 Student Loan"},
+        {"value": "business", "label": "💼 Business Loan"},
+        {"value": "credit", "label": "💳 Credit Card Debt"}
+      ],
+      "required": true,
+      "description": "Type of loan affects default rates and terms"
+    },
+    {
+      "id": "country",
+      "label": "Country/Currency",
+      "type": "select",
+      "default": "US",
+      "options": [
+        {"value": "US", "label": "🇺🇸 United States ($)"},
+        {"value": "UK", "label": "🇬🇧 United Kingdom (£)"},
+        {"value": "CA", "label": "🇨🇦 Canada (CAD)"},
+        {"value": "AU", "label": "🇦🇺 Australia (AUD)"},
+        {"value": "IN", "label": "🇮🇳 India (₹)"},
+        {"value": "EU", "label": "🇪🇺 Europe (€)"}
+      ],
+      "required": true,
+      "description": "Country affects currency and default rates"
+    },
     {
       "id": "loanAmount",
       "label": "Loan Amount",
       "type": "number",
-      "default": 500000,
-      "unit": "$",
-      "placeholder": "500000",
+      "default": 300000,
+      "unit": "",
+      "placeholder": "300000",
       "required": true,
       "min": 0,
       "description": "Total loan amount you want to borrow"
@@ -18,58 +50,140 @@
       "id": "interestRate",
       "label": "Interest Rate",
       "type": "number",
-      "default": 8,
+      "default": 6.5,
       "unit": "%",
-      "placeholder": "8",
+      "placeholder": "6.5",
       "required": true,
       "min": 0,
       "max": 50,
-      "step": 0.1,
+      "step": 0.01,
       "description": "Annual interest rate for the loan"
     },
     {
-      "id": "loanTenure",
-      "label": "Loan Tenure",
+      "id": "loanTenureYears",
+      "label": "Loan Term",
       "type": "number",
-      "default": 20,
+      "default": 30,
       "unit": "years",
-      "placeholder": "20",
+      "placeholder": "30",
       "required": true,
       "min": 1,
       "max": 50,
       "description": "Loan repayment period in years"
     },
     {
+      "id": "repaymentType",
+      "label": "Repayment Type",
+      "type": "select",
+      "default": "principal_interest",
+      "options": [
+        {"value": "principal_interest", "label": "Principal + Interest (Standard)"},
+        {"value": "interest_only", "label": "Interest Only"},
+        {"value": "balloon", "label": "Balloon Payment"},
+        {"value": "graduated", "label": "Graduated Payment"}
+      ],
+      "required": true,
+      "description": "How payments are structured"
+    },
+    {
+      "id": "downPayment",
+      "label": "Down Payment",
+      "type": "number",
+      "default": 60000,
+      "unit": "",
+      "placeholder": "60000",
+      "required": false,
+      "min": 0,
+      "description": "Initial payment reduces loan amount"
+    },
+    {
       "id": "processingFees",
-      "label": "Processing Fees (Optional)",
+      "label": "Processing/Origination Fees",
+      "type": "number",
+      "default": 3000,
+      "unit": "",
+      "placeholder": "3000",
+      "required": false,
+      "min": 0,
+      "description": "One-time loan processing and origination fees"
+    },
+    {
+      "id": "monthlyExtraPayment",
+      "label": "Monthly Extra Payment",
       "type": "number",
       "default": 0,
-      "unit": "$",
+      "unit": "",
       "placeholder": "0",
       "required": false,
       "min": 0,
-      "description": "Any one-time processing or administrative fees"
+      "description": "Additional amount paid monthly to reduce principal"
+    },
+    {
+      "id": "annualPrepayment",
+      "label": "Annual Prepayment",
+      "type": "number",
+      "default": 0,
+      "unit": "",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Additional lump sum payment made annually"
     }
   ],
   "formula": {
+    "actualLoanAmount": "loanAmount - downPayment",
     "monthlyInterestRate": "interestRate / 100 / 12",
-    "totalMonths": "loanTenure * 12",
-    "emi": "loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalMonths) / (Math.pow(1 + monthlyInterestRate, totalMonths) - 1)",
-    "totalPayment": "emi * totalMonths",
-    "totalInterest": "totalPayment - loanAmount",
-    "totalCost": "totalPayment + processingFees"
+    "totalMonths": "loanTenureYears * 12",
+    "standardEmi": "repaymentType === 'interest_only' ? actualLoanAmount * monthlyInterestRate : actualLoanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalMonths) / (Math.pow(1 + monthlyInterestRate, totalMonths) - 1)",
+    "monthlyEmi": "standardEmi + monthlyExtraPayment",
+    "totalScheduledPayments": "standardEmi * totalMonths",
+    "totalExtraPayments": "(monthlyExtraPayment * totalMonths) + annualPrepayment",
+    "totalPayments": "totalScheduledPayments + totalExtraPayments",
+    "totalInterest": "repaymentType === 'interest_only' ? actualLoanAmount * monthlyInterestRate * totalMonths : totalPayments - actualLoanAmount",
+    "totalFees": "processingFees",
+    "totalCost": "totalPayments + totalFees",
+    "actualMonths": "repaymentType === 'balloon' ? Math.min(totalMonths, 120) : totalMonths",
+    "balloonPayment": "repaymentType === 'balloon' ? actualLoanAmount - (standardEmi * (actualMonths - 1) / monthlyInterestRate * (1 - Math.pow(1 + monthlyInterestRate, -(actualMonths - 1)))) : 0",
+    "effectiveInterestRate": "interestRate",
+    "monthlyPrincipal": "repaymentType === 'interest_only' ? 0 : standardEmi - (actualLoanAmount * monthlyInterestRate)",
+    "yearsToPayOff": "repaymentType === 'interest_only' ? loanTenureYears : totalMonths / 12",
+    "totalSavings": "totalExtraPayments > 0 ? (standardEmi * totalMonths) - totalPayments + totalExtraPayments : 0"
   },
   "outputLabels": {
-    "emi": "Monthly EMI",
-    "totalInterest": "Total Interest Payable",
-    "totalPayment": "Total Amount Payable",
-    "totalCost": "Total Cost (including fees)"
+    "actualLoanAmount": "Actual Loan Amount (after down payment)",
+    "monthlyEmi": "Monthly Payment (EMI)",
+    "standardEmi": "Standard Monthly Payment",
+    "monthlyExtraPayment": "Extra Monthly Payment",
+    "annualPrepayment": "Annual Prepayment",
+    "totalScheduledPayments": "Total Scheduled Payments",
+    "totalExtraPayments": "Total Extra Payments",
+    "totalPayments": "Total Amount Paid",
+    "totalInterest": "Total Interest Paid",
+    "totalFees": "Processing Fees",
+    "totalCost": "Total Cost (Principal + Interest + Fees)",
+    "balloonPayment": "Balloon Payment (if applicable)",
+    "yearsToPayOff": "Years to Pay Off",
+    "monthlyPrincipal": "Monthly Principal Payment",
+    "effectiveInterestRate": "Effective Interest Rate",
+    "totalSavings": "Interest Saved with Extra Payments"
   },
   "outputUnits": {
-    "emi": "$",
-    "totalInterest": "$",
-    "totalPayment": "$",
-    "totalCost": "$"
+    "actualLoanAmount": "",
+    "monthlyEmi": "",
+    "standardEmi": "",
+    "monthlyExtraPayment": "",
+    "annualPrepayment": "",
+    "totalScheduledPayments": "",
+    "totalExtraPayments": "",
+    "totalPayments": "",
+    "totalInterest": "",
+    "totalFees": "",
+    "totalCost": "",
+    "balloonPayment": "",
+    "yearsToPayOff": "years",
+    "monthlyPrincipal": "",
+    "effectiveInterestRate": "%",
+    "totalSavings": ""
   }
 }
 

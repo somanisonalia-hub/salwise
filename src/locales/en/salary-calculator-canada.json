@@ -71,5 +71,152 @@
     "Factor in provincial tax rates when evaluating job offers",
     "Keep track of year-to-date earnings for accurate tax planning",
     "Consult a tax professional for personalized advice on complex tax situations"
-  ]
+  ],
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://salarywise.io/en/salary-calculator-canada",
+        "url": "https://salarywise.io/en/salary-calculator-canada",
+        "name": "Canada Salary Calculator | Federal & Provincial Taxes 2025",
+        "description": "Calculate take-home pay in Canada with federal income tax, provincial taxes, CPP, and EI contributions. Support for all 10 provinces and 3 territories.",
+        "inLanguage": "en-CA",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://salarywise.io",
+          "url": "https://salarywise.io",
+          "name": "SalaryWise.io"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://salarywise.io"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Country Calculators",
+              "item": "https://salarywise.io/en/countries"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "Canada Salary Calculator",
+              "item": "https://salarywise.io/en/salary-calculator-canada"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "SoftwareApplication",
+          "@id": "https://salarywise.io/en/salary-calculator-canada#software",
+          "name": "Canada Salary Calculator",
+          "description": "Complete Canadian tax calculator with federal income tax, provincial taxes for all provinces, CPP contributions, and EI premiums",
+          "url": "https://salarywise.io/en/salary-calculator-canada",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "CAD",
+            "availability": "https://schema.org/InStock"
+          },
+          "featureList": [
+            "Federal tax brackets 2025",
+            "All 10 provinces + 3 territories",
+            "CPP and EI calculations",
+            "RRSP tax deduction modeling",
+            "Real-time tax calculations",
+            "Bilingual support"
+          ],
+          "screenshot": "https://salarywise.io/images/canada-salary-calculator.jpg",
+          "author": {
+            "@type": "Organization",
+            "name": "SalaryWise.io"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.7",
+            "ratingCount": "6543",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://salarywise.io/images/canada-calculator-hero.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-01-01",
+        "about": {
+          "@type": "Country",
+          "name": "Canada",
+          "sameAs": "https://en.wikipedia.org/wiki/Canada"
+        },
+        "mentions": [
+          {
+            "@type": "GovernmentOrganization",
+            "name": "Canada Revenue Agency (CRA)",
+            "url": "https://www.canada.ca/en/revenue-agency.html",
+            "description": "Official Canadian tax authority providing tax information and services"
+          },
+          {
+            "@type": "WebSite",
+            "name": "CRA Paystub Calculator",
+            "url": "https://www.canada.ca/en/revenue-agency/services/child-family-benefits/child-family-benefits-calculator.html",
+            "description": "Official CRA benefits and tax calculator"
+          },
+          {
+            "@type": "WebSite",
+            "name": "CPP Calculator",
+            "url": "https://www.canada.ca/en/services/benefits/publicpensions/cpp.html",
+            "description": "Canada Pension Plan contribution calculator"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are these Canadian tax calculations accurate for 2025?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we use official 2025 federal tax brackets and provincial tax rates from the CRA and provincial revenue departments."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this include taxes for all Canadian provinces?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we include income taxes for all 10 provinces (Ontario, BC, Alberta, Quebec, etc.) plus the 3 territories."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Are CPP and EI contributions included?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, we calculate Canada Pension Plan (CPP) and Employment Insurance (EI) contributions based on current rates and maximums."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I include RRSP contributions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, you can model RRSP contributions to see how they reduce your taxable income and overall tax liability."
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

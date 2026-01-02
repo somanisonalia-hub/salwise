@@ -1,43 +1,65 @@
 {
   "id": "globalSalary",
   "name": "Salary Calculator (Global)",
-  "description": "Calculate gross salary, estimated tax, and take-home pay",
+  "description": "Calculate gross salary, estimated tax, and take-home pay with country-specific data",
   "inputs": [
+    {
+      "id": "country",
+      "label": "Country",
+      "type": "select",
+      "default": "US",
+      "options": [
+        {"value": "US", "label": "🇺🇸 United States ($)"},
+        {"value": "UK", "label": "🇬🇧 United Kingdom (£)"},
+        {"value": "CA", "label": "🇨🇦 Canada (CAD)"},
+        {"value": "AU", "label": "🇦🇺 Australia (AUD)"},
+        {"value": "DE", "label": "🇩🇪 Germany (€)"},
+        {"value": "FR", "label": "🇫🇷 France (€)"},
+        {"value": "IN", "label": "🇮🇳 India (₹)"},
+        {"value": "JP", "label": "🇯🇵 Japan (¥)"},
+        {"value": "SG", "label": "🇸🇬 Singapore (SGD)"},
+        {"value": "AE", "label": "🇦🇪 UAE (AED)"}
+      ],
+      "required": true,
+      "description": "Select your country for accurate currency and regional data"
+    },
+    {
+      "id": "salaryType",
+      "label": "Salary Type",
+      "type": "select",
+      "default": "gross",
+      "options": [
+        {"value": "gross", "label": "Gross Salary (before tax)"},
+        {"value": "net", "label": "Net Salary (take-home)"}
+      ],
+      "required": true,
+      "description": "Specify if this is your gross or net salary amount"
+    },
     {
       "id": "salaryAmount",
       "label": "Salary Amount",
       "type": "number",
-      "default": 50000,
-      "unit": "$",
-      "placeholder": "50000",
+      "default": 75000,
+      "unit": "",
+      "placeholder": "75000",
       "required": true,
       "min": 0,
-      "description": "Your base salary amount"
+      "description": "Your annual salary amount"
     },
     {
       "id": "payFrequency",
-      "label": "Pay Frequency",
+      "label": "How Are You Paid?",
       "type": "select",
-      "default": "yearly",
+      "default": "monthly",
       "options": [
-        {"value": "hourly", "label": "Hourly"},
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "biweekly", "label": "Every 2 Weeks"},
+        {"value": "semimonthly", "label": "Semi-Monthly (24x/year)"},
         {"value": "monthly", "label": "Monthly"},
-        {"value": "yearly", "label": "Yearly"}
+        {"value": "yearly", "label": "Annually"}
       ],
       "required": true,
-      "description": "How often you get paid"
-    },
-    {
-      "id": "taxRate",
-      "label": "Estimated Tax Rate (%)",
-      "type": "number",
-      "default": 25,
-      "unit": "%",
-      "placeholder": "25",
-      "required": false,
-      "min": 0,
-      "max": 50,
-      "description": "Approximate tax rate for estimation"
+      "description": "How often do you receive paychecks?"
     },
     {
       "id": "hoursPerWeek",
@@ -50,36 +72,171 @@
       "min": 1,
       "max": 80,
       "description": "Standard working hours per week"
+    },
+    {
+      "id": "includeOvertime",
+      "label": "Include Overtime Pay",
+      "type": "checkbox",
+      "default": false,
+      "description": "Calculate additional overtime earnings"
+    },
+    {
+      "id": "overtimeHours",
+      "label": "Overtime Hours per Week",
+      "type": "number",
+      "default": 0,
+      "unit": "hours",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "max": 40,
+      "description": "Additional hours worked per week",
+      "conditional": "includeOvertime"
+    },
+    {
+      "id": "overtimeRate",
+      "label": "Overtime Rate Multiplier",
+      "type": "select",
+      "default": "1.5",
+      "options": [
+        {"value": "1.5", "label": "1.5x (Standard)"},
+        {"value": "2.0", "label": "2.0x (Double Time)"},
+        {"value": "1.0", "label": "1.0x (No Overtime Premium)"}
+      ],
+      "required": false,
+      "description": "How much extra you earn for overtime hours",
+      "conditional": "includeOvertime"
+    },
+    {
+      "id": "annualBonus",
+      "label": "Annual Bonus/Commission",
+      "type": "number",
+      "default": 0,
+      "unit": "",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Expected annual bonus, commission, or performance pay"
+    },
+    {
+      "id": "benefitsValue",
+      "label": "Employer Benefits Value",
+      "type": "number",
+      "default": 0,
+      "unit": "",
+      "placeholder": "12000",
+      "required": false,
+      "min": 0,
+      "description": "Estimated annual value of health insurance, retirement match, etc."
+    },
+    {
+      "id": "paidTimeOff",
+      "label": "Paid Time Off (PTO) Days",
+      "type": "number",
+      "default": 15,
+      "unit": "days",
+      "placeholder": "15",
+      "required": false,
+      "min": 0,
+      "max": 365,
+      "description": "Annual paid vacation/sick days (used to calculate PTO value)"
+    },
+    {
+      "id": "retirementMatch",
+      "label": "Employer Retirement Match",
+      "type": "number",
+      "default": 0,
+      "unit": "",
+      "placeholder": "3000",
+      "required": false,
+      "min": 0,
+      "description": "Annual employer contribution to your retirement account"
+    },
+    {
+      "id": "workHoursPerWeek",
+      "label": "Work Hours Per Week",
+      "type": "number",
+      "default": 40,
+      "unit": "hours",
+      "placeholder": "40",
+      "required": false,
+      "min": 1,
+      "max": 80,
+      "description": "Standard working hours (affects overtime calculations)"
+    },
+    {
+      "id": "employmentType",
+      "label": "Employment Type",
+      "type": "select",
+      "default": "fulltime",
+      "options": [
+        {"value": "fulltime", "label": "Full-Time Employee"},
+        {"value": "parttime", "label": "Part-Time Employee"},
+        {"value": "contractor", "label": "Independent Contractor"},
+        {"value": "freelance", "label": "Freelancer"}
+      ],
+      "required": false,
+      "description": "Your employment classification (affects tax treatment)"
     }
   ],
   "formula": {
-    "annualGross": "payFrequency === 'hourly' ? salaryAmount * hoursPerWeek * 52 : payFrequency === 'monthly' ? salaryAmount * 12 : salaryAmount",
-    "monthlyGross": "annualGross / 12",
-    "weeklyGross": "annualGross / 52",
-    "hourlyGross": "annualGross / (hoursPerWeek * 52)",
-    "estimatedTax": "annualGross * (taxRate / 100)",
-    "annualNet": "annualGross - estimatedTax",
-    "monthlyNet": "annualNet / 12",
-    "weeklyNet": "annualNet / 52"
+    "annualGrossSalary": "salaryType === 'net' ? calculateGrossFromNet(salaryAmount, country) : salaryAmount",
+    "hourlyRate": "payFrequency === 'weekly' ? annualGrossSalary / 52 / workHoursPerWeek : payFrequency === 'biweekly' ? annualGrossSalary / 26 / workHoursPerWeek : payFrequency === 'semimonthly' ? annualGrossSalary / 24 / workHoursPerWeek : payFrequency === 'monthly' ? annualGrossSalary / 12 / workHoursPerWeek : annualGrossSalary / (workHoursPerWeek * 52)",
+    "overtimePay": "includeOvertime ? (hourlyRate * parseFloat(overtimeRate) * overtimeHours * 52) : 0",
+    "bonusPay": "annualBonus",
+    "benefitsValueTotal": "benefitsValue + retirementMatch",
+    "ptoValue": "paidTimeOff > 0 ? (annualGrossSalary / 260) * paidTimeOff : 0",
+    "totalCompensation": "annualGrossSalary + overtimePay + bonusPay + benefitsValueTotal + ptoValue",
+    "monthlyGross": "annualGrossSalary / 12",
+    "weeklyGross": "payFrequency === 'weekly' ? salaryAmount : annualGrossSalary / 52",
+    "biweeklyGross": "payFrequency === 'biweekly' ? salaryAmount : annualGrossSalary / 26",
+    "hourlyGross": "annualGrossSalary / (workHoursPerWeek * 52)",
+    "estimatedTax": "calculateCountryTax(annualGrossSalary, country)",
+    "annualNet": "annualGrossSalary - estimatedTax",
+    "monthlyNet": "payFrequency === 'monthly' ? (salaryType === 'net' ? salaryAmount : annualNet / 12) : annualNet / 12",
+    "weeklyNet": "payFrequency === 'weekly' ? (salaryType === 'net' ? salaryAmount : annualNet / 52) : annualNet / 52",
+    "biweeklyNet": "payFrequency === 'biweekly' ? (salaryType === 'net' ? salaryAmount : annualNet / 26) : annualNet / 26",
+    "effectiveTaxRate": "annualGrossSalary > 0 ? (estimatedTax / annualGrossSalary) * 100 : 0",
+    "benefitsPercentage": "totalCompensation > 0 ? (benefitsValueTotal / totalCompensation) * 100 : 0"
   },
   "outputLabels": {
-    "annualGross": "Annual Gross Salary",
-    "monthlyGross": "Monthly Gross Pay",
-    "weeklyGross": "Weekly Gross Pay",
+    "annualGrossSalary": "Annual Gross Salary",
+    "hourlyRate": "Hourly Rate",
+    "overtimePay": "Annual Overtime Pay",
+    "bonusPay": "Annual Bonus",
+    "benefitsValueTotal": "Annual Benefits Value",
+    "ptoValue": "Annual PTO Value",
+    "totalCompensation": "Total Annual Compensation",
+    "monthlyGross": "Monthly Gross Salary",
+    "weeklyGross": "Weekly Gross Salary",
+    "biweeklyGross": "Biweekly Gross Salary",
     "hourlyGross": "Hourly Gross Rate",
     "estimatedTax": "Estimated Annual Tax",
     "annualNet": "Annual Take-Home Pay",
     "monthlyNet": "Monthly Take-Home Pay",
-    "weeklyNet": "Weekly Take-Home Pay"
+    "weeklyNet": "Weekly Take-Home Pay",
+    "biweeklyNet": "Biweekly Take-Home Pay",
+    "effectiveTaxRate": "Effective Tax Rate",
+    "benefitsPercentage": "Benefits Percentage of Total Compensation"
   },
   "outputUnits": {
-    "annualGross": "$",
-    "monthlyGross": "$",
-    "weeklyGross": "$",
-    "hourlyGross": "$/hour",
-    "estimatedTax": "$",
-    "annualNet": "$",
-    "monthlyNet": "$",
-    "weeklyNet": "$"
+    "annualGrossSalary": "",
+    "hourlyRate": "/hour",
+    "overtimePay": "",
+    "bonusPay": "",
+    "benefitsValueTotal": "",
+    "ptoValue": "",
+    "totalCompensation": "",
+    "monthlyGross": "",
+    "weeklyGross": "",
+    "biweeklyGross": "",
+    "hourlyGross": "/hour",
+    "estimatedTax": "",
+    "annualNet": "",
+    "monthlyNet": "",
+    "weeklyNet": "",
+    "biweeklyNet": "",
+    "effectiveTaxRate": "%",
+    "benefitsPercentage": "%"
   }
 }

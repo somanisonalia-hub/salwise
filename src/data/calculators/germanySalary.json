@@ -1,24 +1,112 @@
 {
   "id": "germanySalary",
   "name": "Germany Salary Calculator",
-  "description": "Calculate take-home pay in Germany",
+  "description": "Calculate take-home pay in Germany with income tax and social contributions",
   "inputs": [
     {
       "id": "grossSalary",
       "label": "Gross Annual Salary",
       "type": "number",
-      "default": 45000,
-      "unit": "€"
+      "default": 50000,
+      "unit": "€",
+      "placeholder": "50000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary before tax"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "monthly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "taxClass",
+      "label": "Tax Class",
+      "type": "select",
+      "default": "1",
+      "options": [
+        {"value": "1", "label": "Class 1 (Single)"},
+        {"value": "2", "label": "Class 2 (Single parent)"},
+        {"value": "3", "label": "Class 3 (Married, higher earner)"},
+        {"value": "4", "label": "Class 4 (Married, both working)"},
+        {"value": "5", "label": "Class 5 (Married, lower earner)"},
+        {"value": "6", "label": "Class 6 (Multiple jobs)"}
+      ],
+      "required": true,
+      "description": "Your tax class affects tax withholding"
+    },
+    {
+      "id": "churchTax",
+      "label": "Church Tax",
+      "type": "boolean",
+      "default": false,
+      "required": false,
+      "description": "Do you pay church tax? (8-9% of income tax)"
+    },
+    {
+      "id": "pensionContribution",
+      "label": "Pension Insurance",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Additional pension contribution (pre-tax)"
     }
   ],
   "formula": {
-    "incomeTax": "grossSalary * 0.25",
-    "socialSecurity": "grossSalary * 0.20",
-    "healthInsurance": "grossSalary * 0.08",
-    "unemploymentInsurance": "grossSalary * 0.015",
-    "totalDeductions": "incomeTax + socialSecurity + healthInsurance + unemploymentInsurance",
-    "netSalary": "grossSalary - totalDeductions",
-    "takeHomeMonthly": "netSalary / 12"
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "incomeTax": "calculateGermanyIncomeTax(annualGross, taxClass)",
+    "solidarityTax": "incomeTax * 0.055",
+    "pensionInsurance": "(annualGross * 0.09375) + pensionContribution",
+    "healthInsurance": "annualGross * 0.0825",
+    "unemploymentInsurance": "annualGross * 0.015",
+    "nursingCareInsurance": "annualGross * 0.0175",
+    "churchTax": "churchTax ? (incomeTax + solidarityTax) * 0.09 : 0",
+    "totalDeductions": "incomeTax + solidarityTax + pensionInsurance + healthInsurance + unemploymentInsurance + nursingCareInsurance + churchTax",
+    "netAnnualSalary": "annualGross - totalDeductions",
+    "netMonthlySalary": "netAnnualSalary / 12",
+    "takeHomePercentage": "(netAnnualSalary / annualGross) * 100",
+    "totalTaxPercentage": "((incomeTax + solidarityTax + churchTax) / annualGross) * 100"
+  },
+  "outputLabels": {
+    "annualGross": "Annual Gross Salary",
+    "incomeTax": "Income Tax",
+    "solidarityTax": "Solidarity Surcharge",
+    "pensionInsurance": "Pension Insurance",
+    "healthInsurance": "Health Insurance",
+    "unemploymentInsurance": "Unemployment Insurance",
+    "nursingCareInsurance": "Nursing Care Insurance",
+    "churchTax": "Church Tax",
+    "totalDeductions": "Total Deductions",
+    "netAnnualSalary": "Net Take-Home Pay (Annual)",
+    "netMonthlySalary": "Net Take-Home Pay (Monthly)",
+    "takeHomePercentage": "Take-Home Percentage",
+    "totalTaxPercentage": "Total Tax Rate"
+  },
+  "outputUnits": {
+    "annualGross": "€",
+    "incomeTax": "€",
+    "solidarityTax": "€",
+    "pensionInsurance": "€",
+    "healthInsurance": "€",
+    "unemploymentInsurance": "€",
+    "nursingCareInsurance": "€",
+    "churchTax": "€",
+    "totalDeductions": "€",
+    "netAnnualSalary": "€",
+    "netMonthlySalary": "€",
+    "takeHomePercentage": "%",
+    "totalTaxPercentage": "%"
   }
 }
 

@@ -1,22 +1,87 @@
 {
   "id": "netherlandsSalary",
   "name": "Netherlands Salary Calculator",
-  "description": "Calculate take-home pay in the Netherlands",
+  "description": "Calculate take-home pay in the Netherlands with income tax and social contributions",
   "inputs": [
     {
       "id": "grossSalary",
       "label": "Gross Annual Salary",
       "type": "number",
-      "default": 40000,
-      "unit": "€"
+      "default": 45000,
+      "unit": "€",
+      "placeholder": "45000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary before tax"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "monthly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "4-weekly", "label": "4-weekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "maritalStatus",
+      "label": "Marital Status",
+      "type": "select",
+      "default": "single",
+      "options": [
+        {"value": "single", "label": "Single"},
+        {"value": "married", "label": "Married/Registered Partnership"}
+      ],
+      "required": true,
+      "description": "Affects tax calculations"
+    },
+    {
+      "id": "pensionContribution",
+      "label": "Pension Contribution",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Annual pension contribution (pre-tax)"
     }
   ],
   "formula": {
-    "incomeTax": "grossSalary * 0.25",
-    "socialSecurity": "grossSalary * 0.272",
-    "totalDeductions": "incomeTax + socialSecurity",
-    "netSalary": "grossSalary - totalDeductions",
-    "takeHomeMonthly": "netSalary / 12"
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === '4-weekly' ? grossSalary * 13 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross - pensionContribution",
+    "incomeTax": "calculateNetherlandsIncomeTax(taxableIncome, maritalStatus)",
+    "socialSecurity": "annualGross * 0.272",
+    "totalDeductions": "incomeTax + socialSecurity + pensionContribution",
+    "netAnnualSalary": "annualGross - totalDeductions",
+    "netMonthlySalary": "netAnnualSalary / 12",
+    "takeHomePercentage": "(netAnnualSalary / annualGross) * 100",
+    "totalTaxPercentage": "((incomeTax + socialSecurity) / annualGross) * 100"
+  },
+  "outputLabels": {
+    "annualGross": "Annual Gross Salary",
+    "incomeTax": "Income Tax",
+    "socialSecurity": "Social Security Contributions",
+    "totalDeductions": "Total Deductions",
+    "netAnnualSalary": "Net Take-Home Pay (Annual)",
+    "netMonthlySalary": "Net Take-Home Pay (Monthly)",
+    "takeHomePercentage": "Take-Home Percentage",
+    "totalTaxPercentage": "Total Tax Rate"
+  },
+  "outputUnits": {
+    "annualGross": "€",
+    "incomeTax": "€",
+    "socialSecurity": "€",
+    "totalDeductions": "€",
+    "netAnnualSalary": "€",
+    "netMonthlySalary": "€",
+    "takeHomePercentage": "%",
+    "totalTaxPercentage": "%"
   }
 }
 

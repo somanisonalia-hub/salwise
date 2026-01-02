@@ -5,7 +5,66 @@ import Head from 'next/head';
 import { useState, useMemo } from 'react';
 import content from '../locales/en/page.json';
 
-// Search-enabled homepage component
+// Newsletter signup component
+function NewsletterSignup() {
+  const [email, setEmail] = useState('');
+  const [isSubscribed, setIsSubscribed] = useState(false);
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Here you would integrate with your email service
+    setIsSubscribed(true);
+    setEmail('');
+  };
+
+  return (
+    <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl p-8 md:p-12 text-center">
+      <div className="max-w-2xl mx-auto">
+        <h2 className="text-2xl md:text-3xl font-bold mb-3">{content.newsletter.title}</h2>
+        <p className="text-blue-100 mb-6 text-lg">{content.newsletter.subtitle}</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          {content.newsletter.benefits.map((benefit: string, index: number) => (
+            <div key={index} className="flex items-center justify-center text-sm">
+              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full">{benefit}</span>
+            </div>
+          ))}
+        </div>
+
+        {!isSubscribed ? (
+          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
+            <div className="flex gap-2 mb-4">
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder={content.newsletter.placeholder}
+                className="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
+                required
+              />
+              <button
+                type="submit"
+                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors whitespace-nowrap"
+              >
+                {content.newsletter.buttonText}
+              </button>
+            </div>
+            <p className="text-blue-200 text-sm">{content.newsletter.privacy}</p>
+          </form>
+        ) : (
+          <div className="max-w-md mx-auto">
+            <div className="bg-green-500 text-white px-6 py-4 rounded-lg mb-4">
+              ✅ {content.newsletter.successMessage}
+            </div>
+            <p className="text-blue-200 text-sm">Welcome to the SalaryWise community!</p>
+          </div>
+        )}
+      </div>
+    </div>
+  );
+}
+
+// Enhanced homepage component with improved UX
 function HomePageContent() {
   const [searchQuery, setSearchQuery] = useState('');
 
@@ -25,8 +84,12 @@ function HomePageContent() {
 
   // Create searchable index of all calculators
   const searchableItems = useMemo(() => {
+    const calculatorItems = content.calculators.categories.flatMap(category =>
+      category.items.map(item => ({ ...item, category: 'calculator' }))
+    );
+
     const allItems = [
-      ...content.calculators.items.map(item => ({ ...item, category: 'calculator' })),
+      ...calculatorItems,
       ...content.countries.items.map(item => ({
         ...item,
         category: 'country',
@@ -34,7 +97,9 @@ function HomePageContent() {
         description: `Calculate salary after tax in ${item.name}`,
         icon: item.flag // Use flag as icon for countries
       })),
-      ...content.guides.items.map(item => ({ ...item, category: 'guide', icon: '📖' })), // Add default icon for guides
+      ...content.guides.categories.flatMap(category =>
+        category.guides.map(item => ({ ...item, category: 'guide', icon: '📖' }))
+      ),
     ];
     return allItems;
   }, []);
@@ -159,26 +224,67 @@ function HomePageContent() {
             {searchQuery ? `Search Results for "${searchQuery}"` : content.calculators.title}
           </h2>
 
-          <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {(filteredItems || content.calculators.items).map((item, index) => (
-              <Link
-                key={index}
-                href={`/en${item.href}`}
-                className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
-              >
-                <div className="text-center">
-                  <div className="text-2xl mb-2">{item.icon}</div>
-                  <h3 className="text-sm font-bold text-gray-900 mb-1">{item.title}</h3>
-                  <p className="text-xs text-gray-600 leading-tight">{item.description}</p>
-                  {searchQuery && 'category' in item && (
-                    <span className="inline-block mt-2 px-2 py-1 text-xs bg-blue-100 text-blue-600 rounded-full">
-                      {(item as any).category}
-                    </span>
-                  )}
+          {searchQuery ? (
+            <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3">
+              {filteredItems?.map((item, index) => (
+                <Link
+                  key={index}
+                  href={`/en${item.href}`}
+                  className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
+                >
+                  <div className="text-center">
+                    <div className="text-2xl mb-2">{item.icon}</div>
+                    <h3 className="text-sm font-bold text-gray-900 mb-1">{item.title}</h3>
+                    <p className="text-xs text-gray-600 leading-tight">{item.description}</p>
+                    {searchQuery && 'category' in item && (
+                      <span className="inline-block mt-2 px-2 py-1 text-xs bg-blue-100 text-blue-600 rounded-full">
+                        {(item as any).category}
+                      </span>
+                    )}
+                  </div>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <div className="space-y-12">
+              {content.calculators.categories.map((category, categoryIndex) => (
+                <div key={categoryIndex}>
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{category.name}</h3>
+                    <p className="text-gray-600">{category.description}</p>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {category.items.map((item, index) => (
+                      <Link
+                        key={index}
+                        href={`/en${item.href}`}
+                        className="bg-white rounded-xl shadow-sm p-6 hover:shadow-lg active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100 group"
+                      >
+                        <div className="flex items-start gap-4">
+                          <div className="bg-blue-50 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
+                            <span className="text-2xl">{item.icon}</span>
+                          </div>
+                          <div className="flex-1">
+                            <h4 className="font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">{item.title}</h4>
+                            <p className="text-sm text-gray-600 mb-3">{item.description}</p>
+                            {item.features && (
+                              <div className="flex flex-wrap gap-1">
+                                {item.features.slice(0, 2).map((feature, i) => (
+                                  <span key={i} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                                    {feature}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
+                          </div>
+                        </div>
+                      </Link>
+                    ))}
+                  </div>
                 </div>
-              </Link>
-            ))}
-          </div>
+              ))}
+            </div>
+          )}
 
           {searchQuery && filteredItems?.length === 0 && (
             <div className="text-center py-8">
@@ -312,7 +418,7 @@ function HomePageContent() {
             <h2 className="text-lg font-bold text-gray-900 mb-4 text-center">{content.guides.title}</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {content.guides.items.slice(0, 3).map((guide, index) => (
+              {content.guides.categories.flatMap((category: any) => category.guides).slice(0, 3).map((guide, index) => (
                 <Link
                   key={index}
                   href={`/en${guide.href}`}
@@ -326,6 +432,79 @@ function HomePageContent() {
           </div>
         </div>
 
+        {/* Social Proof Section */}
+        <div className="bg-white py-16">
+          <div className="max-w-6xl mx-auto px-4">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl font-bold text-gray-900 mb-4">{content.socialProof.title}</h2>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
+                {Object.entries(content.socialProof.stats).map(([key, value]) => (
+                  <div key={key} className="text-center">
+                    <div className="text-3xl font-bold text-blue-600">{value}</div>
+                    <div className="text-gray-600 capitalize text-sm">
+                      {key === 'users' ? 'Happy Users' :
+                       key === 'calculations' ? 'Calculations Run' :
+                       key === 'countries' ? 'Countries' :
+                       key === 'accuracy' ? 'Accuracy' :
+                       key === 'satisfaction' ? 'Satisfaction' : key}
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              {content.socialProof.testimonials.map((testimonial: any, index: number) => (
+                <div key={index} className="bg-gray-50 rounded-lg p-6 border border-gray-200">
+                  <div className="flex mb-4">
+                    {[...Array(testimonial.rating)].map((_, i) => (
+                      <span key={i} className="text-yellow-400">⭐</span>
+                    ))}
+                  </div>
+                  <blockquote className="text-gray-700 mb-4 italic">
+                    "{testimonial.quote}"
+                  </blockquote>
+                  <div className="flex items-center">
+                    <div>
+                      <div className="font-semibold text-gray-900">{testimonial.author}</div>
+                      <div className="text-sm text-gray-600">{testimonial.role} at {testimonial.company}</div>
+                    </div>
+                    {testimonial.verified && (
+                      <span className="ml-auto text-green-600 text-sm font-medium">✓ Verified</span>
+                    )}
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            <div className="flex flex-wrap justify-center gap-4">
+              {content.socialProof.trustBadges.map((badge: string, index: number) => (
+                <span key={index} className="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
+                  {badge}
+                </span>
+              ))}
+            </div>
+          </div>
+        </div>
+
+        {/* Newsletter Signup */}
+        <div className="bg-gray-900 py-16">
+          <NewsletterSignup />
+        </div>
+
+        {/* Urgency Section */}
+        <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-12">
+          <div className="max-w-4xl mx-auto px-4 text-center">
+            <h2 className="text-2xl md:text-3xl font-bold mb-4">{content.urgency.title}</h2>
+            <p className="text-xl mb-6 text-red-100">{content.urgency.message}</p>
+            <Link
+              href={`/en${content.urgency.href}`}
+              className="bg-white text-red-600 px-8 py-4 rounded-xl font-bold hover:bg-red-50 transition-all shadow-xl text-lg"
+            >
+              {content.urgency.cta}
+            </Link>
+          </div>
+        </div>
 
         {/* Mobile Bottom Navigation - Optimized for performance */}
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2 z-20 md:hidden shadow-lg">

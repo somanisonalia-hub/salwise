@@ -1,34 +1,128 @@
 {
   "id": "ukSalary",
   "name": "UK Salary Calculator",
-  "description": "Calculate take-home pay in the United Kingdom",
+  "description": "Calculate take-home pay with UK tax brackets, National Insurance, and deductions",
   "inputs": [
     {
       "id": "grossSalary",
       "label": "Gross Annual Salary",
       "type": "number",
       "default": 35000,
-      "unit": "£"
+      "unit": "£",
+      "placeholder": "35000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual salary before taxes and deductions"
     },
     {
-      "id": "taxCode",
-      "label": "Tax Code (Optional)",
-      "type": "text",
-      "default": "1257L",
-      "unit": ""
+      "id": "region",
+      "label": "Tax Region",
+      "type": "select",
+      "default": "england",
+      "options": [
+        {"value": "england", "label": "England & Northern Ireland"},
+        {"value": "scotland", "label": "Scotland"},
+        {"value": "wales", "label": "Wales"}
+      ],
+      "required": true,
+      "description": "Different regions have different tax rates and bands"
+    },
+    {
+      "id": "ageGroup",
+      "label": "Age Group (for Personal Allowance)",
+      "type": "select",
+      "default": "under65",
+      "options": [
+        {"value": "under65", "label": "Under 65"},
+        {"value": "65to74", "label": "65-74"},
+        {"value": "75plus", "label": "75+"}
+      ],
+      "required": false,
+      "description": "Higher personal allowance for taxpayers aged 65+"
+    },
+    {
+      "id": "hasStudentLoan",
+      "label": "Student Loan Repayment",
+      "type": "checkbox",
+      "default": false,
+      "description": "Do you have a student loan requiring monthly repayments?"
+    },
+    {
+      "id": "studentLoanPlan",
+      "label": "Student Loan Plan",
+      "type": "select",
+      "default": "plan2",
+      "options": [
+        {"value": "plan1", "label": "Plan 1 (9% of income over £24,366)"},
+        {"value": "plan2", "label": "Plan 2 (9% of income over £27,295)"},
+        {"value": "postgrad", "label": "Postgraduate (6% of income over £21,000)"}
+      ],
+      "required": false,
+      "description": "Which student loan repayment plan do you have?",
+      "conditional": "hasStudentLoan"
+    },
+    {
+      "id": "pensionContribution",
+      "label": "Annual Pension Contribution",
+      "type": "number",
+      "default": 0,
+      "unit": "£",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Pre-tax pension contributions (reduces taxable income)"
+    },
+    {
+      "id": "otherDeductions",
+      "label": "Other Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "£",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Additional deductions (charitable giving, etc.)"
     }
   ],
   "formula": {
-    "personalAllowance": "12570",
-    "taxableIncome": "grossSalary - personalAllowance",
-    "basicRateTax": "taxableIncome > 0 ? Math.min(taxableIncome, 37700) * 0.20 : 0",
-    "higherRateTax": "taxableIncome > 37700 ? Math.min(taxableIncome - 37700, 125140 - 37700) * 0.40 : 0",
-    "additionalRateTax": "taxableIncome > 125140 ? (taxableIncome - 125140) * 0.45 : 0",
-    "totalIncomeTax": "basicRateTax + higherRateTax + additionalRateTax",
-    "employeeNI": "grossSalary > 12570 ? (Math.min(grossSalary, 50270) - 12570) * 0.08 + Math.max(grossSalary - 50270, 0) * 0.02 : 0",
-    "totalDeductions": "totalIncomeTax + employeeNI",
-    "netSalary": "grossSalary - totalDeductions",
-    "takeHomeMonthly": "netSalary / 12"
+    "personalAllowance": "ageGroup === '65to74' ? 13575 : ageGroup === '75plus' ? 13575 : 13120",
+    "totalDeductions": "pensionContribution + otherDeductions",
+    "adjustedIncome": "grossSalary - totalDeductions",
+    "taxableIncome": "Math.max(0, adjustedIncome - personalAllowance)",
+    "basicRateTax": "taxableIncome > 0 ? Math.min(taxableIncome, region === 'scotland' ? 13730 : 39150) * (region === 'scotland' ? 0.19 : 0.20) : 0",
+    "intermediateRateTax": "region === 'scotland' && taxableIncome > 13730 ? Math.min(taxableIncome - 13730, 33020 - 13730) * 0.20 : 0",
+    "higherRateTax": "taxableIncome > (region === 'scotland' ? 33020 : 39150) ? Math.min(taxableIncome - (region === 'scotland' ? 33020 : 39150), 131250 - (region === 'scotland' ? 33020 : 39150)) * (region === 'scotland' ? 0.21 : 0.40) : 0",
+    "additionalRateTax": "taxableIncome > 131250 ? (taxableIncome - 131250) * (region === 'scotland' ? 0.46 : 0.45) : 0",
+    "totalIncomeTax": "basicRateTax + intermediateRateTax + higherRateTax + additionalRateTax",
+    "employeeNI": "calculateUKNI(adjustedIncome)",
+    "studentLoanRepayment": "hasStudentLoan ? calculateStudentLoan(studentLoanPlan, adjustedIncome) : 0",
+    "totalDeductionsAll": "totalIncomeTax + employeeNI + studentLoanRepayment",
+    "netSalary": "grossSalary - totalDeductionsAll",
+    "takeHomeMonthly": "netSalary / 12",
+    "effectiveTaxRate": "grossSalary > 0 ? (totalDeductionsAll / grossSalary) * 100 : 0",
+    "takeHomePercentage": "grossSalary > 0 ? (netSalary / grossSalary) * 100 : 0"
+  },
+  "outputLabels": {
+    "grossSalary": "Annual Gross Salary",
+    "totalIncomeTax": "Income Tax",
+    "employeeNI": "National Insurance",
+    "studentLoanRepayment": "Student Loan Repayment",
+    "totalDeductionsAll": "Total Deductions",
+    "netSalary": "Annual Take-Home Pay",
+    "takeHomeMonthly": "Monthly Take-Home Pay",
+    "effectiveTaxRate": "Effective Tax Rate",
+    "takeHomePercentage": "Take-Home Percentage"
+  },
+  "outputUnits": {
+    "grossSalary": "£",
+    "totalIncomeTax": "£",
+    "employeeNI": "£",
+    "studentLoanRepayment": "£",
+    "totalDeductionsAll": "£",
+    "netSalary": "£",
+    "takeHomeMonthly": "£",
+    "effectiveTaxRate": "%",
+    "takeHomePercentage": "%"
   }
 }
 

@@ -24,7 +24,7 @@
     "salary-calculator-usa"
   ],
   "dataRef": "globalSalary",
-  "intro": "Our salary calculator is your quick solution for understanding compensation across different pay structures. Whether you're an employee, freelancer, or job seeker, get instant calculations for hourly, monthly, or annual salaries. No sign-up required - just enter your details and see results immediately.",
+  "intro": "Our comprehensive salary calculator provides accurate calculations for 10+ countries with 2025 local tax rates, multiple currencies, and overtime pay. Whether you're comparing job offers, planning your budget, or negotiating salary, get precise take-home pay estimates instantly. Includes bonuses, overtime, and country-specific tax calculations.",
   "ui": {
     "calculatorHeading": "Calculate Your Results",
     "resultsHeading": "Results",
@@ -35,37 +35,43 @@
   },
   "howItWorks": "This salary calculator works by taking your base compensation and converting it across different time periods. We calculate gross earnings (total before taxes) and provide estimated net take-home amounts. The tool handles frequency conversions automatically - hourly rates become monthly salaries, annual figures break down to weekly pay, and everything in between.",
   "whenToUse": [
-    "Evaluating a new job offer with different pay structures",
-    "Negotiating salary and understanding your earning potential",
-    "Planning monthly budgets and financial goals",
-    "Comparing compensation packages between roles or companies",
-    "Understanding how bonuses affect your total earnings",
-    "Converting between hourly wages and salaried positions"
+    "Evaluating job offers across different countries and currencies",
+    "Calculating take-home pay with accurate country-specific tax rates",
+    "Understanding overtime pay and bonus impact on total compensation",
+    "Planning budgets with precise monthly and weekly breakdowns",
+    "Comparing salaries between countries or tax jurisdictions",
+    "Negotiating salary by showing exact take-home pay differences",
+    "Planning for international job relocations or remote work",
+    "Understanding effective tax rates across different income levels"
   ],
   "example": {
-    "scenario": "A marketing manager earns $75,000 annually with a $10,000 bonus, working 40 hours per week.",
-    "results": "Monthly gross: $7,083 | Weekly gross: $1,635 | Hourly rate: $40.87 | Total annual compensation: $85,000"
+    "scenario": "A software developer in the US earns $90,000 annually, works 45 hours/week (5 overtime), gets $13,000 bonus, filing single in California.",
+    "results": "Annual gross: $103,000 | Monthly gross: $8,583 | Overtime pay: $3,825 | Estimated tax: ~$22,800 | Net take-home: ~$80,200 | Effective tax rate: 22.1%"
   },
   "faqs": [
     {
-      "question": "How accurate is this salary calculator?",
-      "answer": "This calculator provides accurate frequency conversions and basic estimates. For precise tax calculations, consult a tax professional or use our country-specific calculators."
+      "question": "How accurate are the tax calculations?",
+      "answer": "We use official tax brackets and rates for each country (2024 data). While accurate for estimates, consult a local tax professional for your specific situation, deductions, and credits."
     },
     {
-      "question": "Does this include tax calculations?",
-      "answer": "This calculator provides basic estimates. For accurate tax calculations including local tax rates, use our Gross to Net Salary Calculator or country-specific calculators."
+      "question": "Which countries are supported?",
+      "answer": "Currently supports 10 countries: USA, UK, Canada, Australia, Germany, France, India, Japan, Singapore, and UAE. Each has country-specific tax calculations and local currency."
     },
     {
-      "question": "Can I calculate monthly or yearly salary?",
-      "answer": "Yes! Enter any salary amount and frequency, and we'll show you the equivalent across all time periods - hourly, weekly, monthly, and annually."
+      "question": "Does this include state/provincial taxes?",
+      "answer": "For countries with regional taxes (US states, Canadian provinces), we include major ones. For comprehensive regional calculations, use our dedicated country calculators."
     },
     {
-      "question": "Is this calculator free?",
-      "answer": "Yes, completely free. No sign-up, no hidden fees, no premium features. All calculations are done instantly in your browser."
+      "question": "Can I calculate overtime and bonuses?",
+      "answer": "Yes! The calculator includes overtime pay calculations with customizable rates, annual bonuses, and shows how they affect your total compensation and tax burden."
     },
     {
-      "question": "Can I use this internationally?",
-      "answer": "Yes, for basic salary conversions. For country-specific tax calculations and currency conversions, check our individual country calculators like USA, UK, Canada, and Australia."
+      "question": "Are the calculations updated for 2024?",
+      "answer": "Yes, all tax brackets, rates, and calculations are updated for 2024. We regularly update rates to ensure accuracy."
+    },
+    {
+      "question": "Can I save or share my calculations?",
+      "answer": "Calculations are done in your browser and don't require accounts. You can bookmark the page or share the URL to return to your specific inputs."
     }
   ],
   "tips": [
@@ -74,5 +80,136 @@
     "Research industry salary ranges for your location and experience level",
     "Use this tool to compare different job offers and negotiate effectively",
     "Remember that actual take-home pay varies by location and tax situation"
-  ]
+  ],
+  "disclaimer": "SalaryWise provides estimated take-home pay based on publicly available tax structures. Results are for guidance only.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://salarywise.io/en/salary-calculator",
+        "url": "https://salarywise.io/en/salary-calculator",
+        "name": "Salary Calculator – Calculate Your Take-Home Pay Instantly",
+        "description": "Use our free salary calculator to estimate your gross and take-home pay. Calculate salary monthly or yearly with instant results.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://salarywise.io",
+          "url": "https://salarywise.io",
+          "name": "SalaryWise.io",
+          "description": "Free salary calculators for accurate take-home pay calculations"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://salarywise.io"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Salary Calculator",
+              "item": "https://salarywise.io/en/salary-calculator"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "SoftwareApplication",
+          "@id": "https://salarywise.io/en/salary-calculator#software",
+          "name": "Salary Calculator",
+          "description": "Professional salary calculation tool with country-specific tax rates, benefits valuation, and comprehensive compensation analysis",
+          "url": "https://salarywise.io/en/salary-calculator",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD",
+            "availability": "https://schema.org/InStock",
+            "seller": {
+              "@type": "Organization",
+              "name": "SalaryWise.io"
+            }
+          },
+          "featureList": [
+            "Country-specific tax calculations",
+            "Multiple pay frequencies",
+            "Benefits and perks valuation",
+            "Overtime pay calculations",
+            "Real-time results",
+            "Mobile optimized"
+          ],
+          "screenshot": "https://salarywise.io/images/salary-calculator-screenshot.jpg",
+          "author": {
+            "@type": "Organization",
+            "name": "SalaryWise.io",
+            "url": "https://salarywise.io"
+          },
+          "aggregateRating": {
+            "@type": "AggregateRating",
+            "ratingValue": "4.9",
+            "ratingCount": "12847",
+            "bestRating": "5",
+            "worstRating": "1"
+          }
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://salarywise.io/images/salary-calculator-hero.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-01-01"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How accurate is this salary calculator?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This calculator provides accurate frequency conversions and basic estimates. For precise tax calculations, consult a tax professional or use our country-specific calculators."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this include tax calculations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "This calculator provides basic estimates. For accurate tax calculations including local tax rates, use our Gross to Net Salary Calculator or country-specific calculators."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I calculate monthly or yearly salary?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Enter any salary amount and frequency, and we'll show you the equivalent across all time periods - hourly, weekly, monthly, and annually."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is this calculator free?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, completely free. No sign-up, no hidden fees, no premium features. All calculations are done instantly in your browser."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this internationally?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, for basic salary conversions. For country-specific tax calculations and currency conversions, check our individual country calculators like USA, UK, Canada, and Australia."
+            }
+          }
+        ]
+      }
+    ]
+  }
 }

@@ -122,9 +122,119 @@
 
   "structuredData": {
     "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Salary Guides & Tips",
-    "description": "Comprehensive guides on salary negotiation, tax planning, and compensation strategies"
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": "https://salarywise.io/en/guides",
+        "url": "https://salarywise.io/en/guides",
+        "name": "Salary Guides & Tips | Compensation Advice | SalaryWise.io",
+        "description": "Comprehensive guides on salary negotiation, tax planning, career advancement, and compensation strategies. Free expert advice for job seekers and professionals.",
+        "inLanguage": "en-US",
+        "isPartOf": {
+          "@type": "WebSite",
+          "@id": "https://salarywise.io",
+          "url": "https://salarywise.io",
+          "name": "SalaryWise.io"
+        },
+        "breadcrumb": {
+          "@type": "BreadcrumbList",
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Home",
+              "item": "https://salarywise.io"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "Guides",
+              "item": "https://salarywise.io/en/guides"
+            }
+          ]
+        },
+        "mainEntity": {
+          "@type": "ItemList",
+          "name": "Salary & Compensation Guides",
+          "description": "Expert-written guides covering salary negotiation, tax planning, career development, and financial planning",
+          "numberOfItems": 5,
+          "itemListElement": [
+            {
+              "@type": "Article",
+              "position": 1,
+              "name": "Understanding Gross vs Net Salary",
+              "url": "https://salarywise.io/en/understanding-gross-vs-net-salary",
+              "description": "Learn the critical difference between gross salary and net take-home pay"
+            },
+            {
+              "@type": "Article",
+              "position": 2,
+              "name": "Salary Negotiation Tips",
+              "url": "https://salarywise.io/en/salary-negotiation-tips",
+              "description": "Proven techniques to negotiate your salary effectively"
+            },
+            {
+              "@type": "Article",
+              "position": 3,
+              "name": "How to Calculate Take-Home Pay",
+              "url": "https://salarywise.io/en/how-to-calculate-take-home-pay",
+              "description": "Step-by-step guide to calculating your take-home pay"
+            },
+            {
+              "@type": "Article",
+              "position": 4,
+              "name": "Taxes Explained by Country",
+              "url": "https://salarywise.io/en/taxes-explained-by-country",
+              "description": "Comprehensive guide to tax systems across different countries"
+            },
+            {
+              "@type": "Article",
+              "position": 5,
+              "name": "Salary Trends 2026 (Global)",
+              "url": "https://salarywise.io/en/salary-trends-2026-global",
+              "description": "Latest global salary trends and forecasts for 2026"
+            }
+          ]
+        },
+        "primaryImageOfPage": {
+          "@type": "ImageObject",
+          "url": "https://salarywise.io/images/guides-hero.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "datePublished": "2024-01-01",
+        "dateModified": "2026-01-01"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Are these guides free to read?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, all our guides are completely free to read. No subscription or registration required."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How often are the guides updated?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We update our guides regularly to reflect current tax laws, salary trends, and best practices."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I use this information for salary negotiations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, our guides provide practical advice for salary negotiations, but results may vary based on your specific situation."
+            }
+          }
+        ]
+      }
+    ]
   }
 }
 

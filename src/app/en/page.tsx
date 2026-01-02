@@ -92,7 +92,7 @@ export default function HomePage() {
           <h2 className="text-xl font-bold text-gray-900 mb-4 text-center">{content.calculators.title}</h2>
 
           <div className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-            {content.calculators.items.map((calc, index) => (
+            {content.calculators.categories.flatMap((category: any) => category.items).map((calc, index) => (
               <Link
                 key={index}
                 href={`/en${calc.href}`}
@@ -227,7 +227,7 @@ export default function HomePage() {
             <h2 className="text-lg font-bold text-gray-900 mb-4 text-center">{content.guides.title}</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {content.guides.items.map((guide, index) => (
+              {content.guides.categories.flatMap((category: any) => category.guides).map((guide, index) => (
                 <Link
                   key={index}
                   href={`/en${guide.href}`}

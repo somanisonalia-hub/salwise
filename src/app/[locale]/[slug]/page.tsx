@@ -203,31 +203,32 @@ export default async function LocalizedPage({ params }: PageProps) {
 
   // For calculator pages, load data and use the DynamicPageClient
   try {
-    // Load page data using fs with correct path resolution
-    const fs = require('fs');
-    const path = require('path');
-
     let pageData;
-    let filePath;
 
-    // Get the correct project root (go up from src/app/[locale]/[slug] to project root)
-    const projectRoot = path.resolve(process.cwd());
-
-    if (slug.startsWith('country/')) {
-      const country = slug.split('/')[1];
-      filePath = path.join(projectRoot, 'src', 'locales', locale, 'country', `${country}.json`);
-    } else {
-      filePath = path.join(projectRoot, 'src', 'locales', locale, `${slug}.json`);
+    // Load page data using require (works with static export)
+    try {
+      if (slug.startsWith('country/')) {
+        // Country pages: src/locales/${locale}/country/${country}.json
+        const country = slug.split('/')[1];
+        pageData = require(`../../../locales/${locale}/country/${country}.json`);
+      } else if (slug.startsWith('industry/')) {
+        // Industry pages: src/locales/${locale}/industry/${industry}.json
+        const industry = slug.split('/')[1];
+        pageData = require(`../../../locales/${locale}/industry/${industry}.json`);
+      } else if (slug.startsWith('guides/')) {
+        // Guide pages: src/locales/${locale}/guides/${guide}.json
+        const guide = slug.split('/')[1];
+        pageData = require(`../../../locales/${locale}/guides/${guide}.json`);
+      } else {
+        // Basic calculator pages: src/locales/${locale}/${slug}.json
+        pageData = require(`../../../locales/${locale}/${slug}.json`);
+      }
+    } catch (fileError) {
+      console.error(`Failed to load page data for ${slug}:`, fileError);
+      throw new Error(`Page data not found for: ${slug}`);
     }
 
-    console.log('Loading page data from:', filePath, 'exists:', fs.existsSync(filePath));
-
-    if (fs.existsSync(filePath)) {
-      const fileContent = fs.readFileSync(filePath, 'utf8');
-      pageData = JSON.parse(fileContent);
-    } else {
-      throw new Error(`Page data file not found: ${filePath}`);
-    }
+    pageData = pageData.default || pageData;
 
     // Calculator data will be loaded client-side using getCalculator
 

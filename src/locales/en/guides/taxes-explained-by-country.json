@@ -1,0 +1,297 @@
+{
+  "slug": "taxes-explained-by-country",
+  "type": "guide",
+  "h1": "Taxes Explained by Country",
+  "metaTitle": "Taxes Explained by Country | International Tax Guide | SalaryWise.io",
+  "metaDescription": "Comprehensive guide to tax systems around the world. Learn how income tax, social contributions, and deductions work in different countries.",
+  "primaryKeyword": "taxes explained by country",
+  "longTailKeywords": [
+    "international tax guide",
+    "taxes by country",
+    "income tax comparison",
+    "tax systems worldwide",
+    "global tax guide"
+  ],
+  "related": [
+    "gross-to-net",
+    "country/usa",
+    "country/uk"
+  ],
+  "title": "Taxes Explained by Country | International Tax Guide | SalaryWise.io",
+  "description": "Comprehensive guide to tax systems around the world. Learn how income tax, social contributions, and deductions work in different countries.",
+  "keywords": "international tax guide, taxes by country, income tax comparison, tax systems worldwide, global tax guide",
+  "canonical": "https://salarywise.io/en/guides/taxes-explained-by-country",
+
+  "header": {
+    "title": "Taxes Explained by Country",
+    "subtitle": "Understanding international tax systems"
+  },
+
+  "intro": {
+    "paragraph1": "Tax systems vary significantly around the world, reflecting different cultural, economic, and political priorities. Understanding how taxes work in different countries is essential for expatriates, international workers, and anyone interested in global financial planning.",
+    "paragraph2": "This guide explores major tax systems, comparing income tax rates, social contributions, deductions, and unique features of tax systems in different countries."
+  },
+
+  "taxPrinciples": {
+    "title": "Fundamental Tax Principles",
+    "principles": [
+      {
+        "principle": "Progressive Taxation",
+        "description": "Higher earners pay a larger percentage of their income in taxes",
+        "countries": "Most developed countries (US, UK, Germany, etc.)"
+      },
+      {
+        "principle": "Proportional Taxation",
+        "description": "Everyone pays the same percentage regardless of income",
+        "countries": "Some Eastern European countries, parts of tax systems"
+      },
+      {
+        "principle": "Territorial Taxation",
+        "description": "Only income earned within the country is taxed",
+        "countries": "US (citizen-based), most countries"
+      },
+      {
+        "principle": "Worldwide Taxation",
+        "description": "All income is taxed regardless of where earned",
+        "countries": "US (citizen-based), some others for residents"
+      }
+    ]
+  },
+
+  "countryComparisons": {
+    "title": "Tax Systems by Country",
+    "countries": [
+      {
+        "name": "United States",
+        "incomeTax": "Federal: 10-37%, State: 0-13.3%",
+        "socialSecurity": "12.4% (FICA: 7.65% employee)",
+        "uniqueFeatures": "Citizen-based taxation, state variations, no national sales tax",
+        "effectiveRate": "25-35% for middle class"
+      },
+      {
+        "name": "United Kingdom",
+        "incomeTax": "0-45% (including Scottish variations)",
+        "socialSecurity": "8-12% National Insurance",
+        "uniqueFeatures": "Scottish Parliament sets rates, student loan deductions",
+        "effectiveRate": "20-35% for middle class"
+      },
+      {
+        "name": "Germany",
+        "incomeTax": "14-45% (progressive brackets)",
+        "socialSecurity": "20% combined (pension, health, unemployment)",
+        "uniqueFeatures": "Solidarity surcharge, church tax option",
+        "effectiveRate": "30-40% for middle class"
+      },
+      {
+        "name": "France",
+        "incomeTax": "0-45% (income-based brackets)",
+        "socialSecurity": "22% combined contributions",
+        "uniqueFeatures": "Wealth tax, high social contributions",
+        "effectiveRate": "35-45% for middle class"
+      },
+      {
+        "name": "Japan",
+        "incomeTax": "5-45% (progressive)",
+        "socialSecurity": "15.4% combined",
+        "uniqueFeatures": "High effective rates, consumption tax",
+        "effectiveRate": "25-35% for middle class"
+      },
+      {
+        "name": "Singapore",
+        "incomeTax": "0-22% (territorial taxation)",
+        "socialSecurity": "20% CPF contributions",
+        "uniqueFeatures": "No capital gains tax, territorial system",
+        "effectiveRate": "15-25% for middle class"
+      },
+      {
+        "name": "Sweden",
+        "incomeTax": "0-57% (municipal + national)",
+        "socialSecurity": "7% payroll tax",
+        "uniqueFeatures": "High tax rates but extensive social services",
+        "effectiveRate": "45-55% for middle class"
+      },
+      {
+        "name": "United Arab Emirates",
+        "incomeTax": "0% for most residents",
+        "socialSecurity": "Limited social insurance",
+        "uniqueFeatures": "No personal income tax, corporate tax introduced 2023",
+        "effectiveRate": "0-5% for most expats"
+      }
+    ]
+  },
+
+  "socialContributions": {
+    "title": "Social Security & Pension Systems",
+    "systems": [
+      {
+        "type": "Payroll-Based",
+        "description": "Employee and employer contributions deducted from wages",
+        "countries": "US (FICA), Germany, France, Japan"
+      },
+      {
+        "type": "Provident Fund",
+        "description": "Mandatory savings accounts for retirement",
+        "countries": "Singapore (CPF), Malaysia, India (EPF)"
+      },
+      {
+        "type": "State Pension",
+        "description": "Government-funded universal pension systems",
+        "countries": "UK, Sweden, Norway, Canada (CPP)"
+      },
+      {
+        "type": "Mixed Systems",
+        "description": "Combination of state and private pension schemes",
+        "countries": "Australia (superannuation), Netherlands"
+      }
+    ]
+  },
+
+  "taxOptimization": {
+    "title": "Common Tax Optimization Strategies",
+    "strategies": [
+      {
+        "strategy": "Retirement Contributions",
+        "description": "Pre-tax contributions reduce taxable income",
+        "countries": "US (401k), UK (pension schemes), Germany (Riester)"
+      },
+      {
+        "strategy": "Home Ownership Benefits",
+        "description": "Mortgage interest deductions, property tax relief",
+        "countries": "US, Canada, UK (limited), Australia"
+      },
+      {
+        "strategy": "Education Savings",
+        "description": "Tax-advantaged education savings accounts",
+        "countries": "US (529 plans), Canada (RESP), UK (Child Trust Funds)"
+      },
+      {
+        "strategy": "Health Insurance Deductions",
+        "description": "Medical expense and insurance premium deductions",
+        "countries": "US (pre-tax premiums), Germany ( Krankenkasse)"
+      }
+    ]
+  },
+
+  "internationalAspects": {
+    "title": "International Tax Considerations",
+    "considerations": [
+      {
+        "aspect": "Double Taxation",
+        "description": "Tax treaties prevent being taxed twice on same income",
+        "importance": "Critical for cross-border workers"
+      },
+      {
+        "aspect": "Foreign Earned Income Exclusion",
+        "description": "US citizens can exclude foreign income up to limit",
+        "applicability": "US taxpayers working abroad"
+      },
+      {
+        "aspect": "Tax Residency",
+        "description": "183-day rule and other residency determinations",
+        "importance": "Determines tax obligations"
+      },
+      {
+        "aspect": "Withholding Taxes",
+        "description": "Taxes withheld at source on payments",
+        "types": "Dividends, interest, royalties"
+      }
+    ]
+  },
+
+  "changingResidence": {
+    "title": "Taxes When Moving Countries",
+    "considerations": [
+      {
+        "consideration": "Exit Taxes",
+        "description": "Taxes on unrealized gains when leaving country",
+        "countries": "France, Germany, some others"
+      },
+      {
+        "consideration": "Tax Residency Termination",
+        "description": "Final tax filings and departure procedures",
+        "importance": "Clean break from previous tax obligations"
+      },
+      {
+        "consideration": "Asset Transfers",
+        "description": "Tax implications of moving assets between countries",
+        "focus": "Inheritance, gifts, investment transfers"
+      },
+      {
+        "consideration": "Double Taxation Relief",
+        "description": "Credits or exemptions for taxes paid in other countries",
+        "implementation": "Through tax treaties"
+      }
+    ]
+  },
+
+  "futureTrends": {
+    "title": "Future Tax Trends",
+    "trends": [
+      {
+        "trend": "Digital Taxation",
+        "description": "Taxes on digital services and remote work income",
+        "impact": "Affects tech companies and digital nomads"
+      },
+      {
+        "trend": "Wealth Taxes",
+        "description": "Taxes on accumulated wealth, not just income",
+        "countries": "France, Spain, some US states considering"
+      },
+      {
+        "trend": "Carbon Taxes",
+        "description": "Environmental taxes on carbon emissions",
+        "countries": "Canada, Sweden, Switzerland leading"
+      },
+      {
+        "trend": "Global Minimum Tax",
+        "description": "OECD initiative for 15% minimum corporate tax rate",
+        "impact": "Affects multinational corporations"
+      }
+    ]
+  },
+
+  "resources": {
+    "title": "Tax Resources by Country",
+    "resources": [
+      {
+        "country": "United States",
+        "authority": "Internal Revenue Service (IRS)",
+        "website": "irs.gov",
+        "additional": "State revenue departments"
+      },
+      {
+        "country": "United Kingdom",
+        "authority": "HM Revenue & Customs (HMRC)",
+        "website": "hmrc.gov.uk",
+        "additional": "Gov.uk tax pages"
+      },
+      {
+        "country": "European Union",
+        "authority": "European Commission Taxation",
+        "website": "ec.europa.eu/taxation_customs",
+        "additional": "National tax authorities"
+      },
+      {
+        "country": "Canada",
+        "authority": "Canada Revenue Agency (CRA)",
+        "website": "cra-arc.gc.ca",
+        "additional": "Provincial revenue authorities"
+      }
+    ]
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Taxes Explained by Country",
+    "description": "Comprehensive guide to international tax systems, comparing tax rates and structures across different countries",
+    "author": {
+      "@type": "Organization",
+      "name": "SalaryWise.io"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SalaryWise.io"
+    }
+  }
+}

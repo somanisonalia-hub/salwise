@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-it-tech",
+  "type": "calculator",
+  "h1": "IT / Tech Salary Calculator – Net Pay Estimator",
+  "metaTitle": "IT / Tech Salary Calculator – Calculate Net Pay",
+  "metaDescription": "Use our IT / Tech salary calculator to estimate your take-home pay. Includes income tax, social contributions, and deductions. Quick and free.",
+  "primaryKeyword": "IT salary calculator",
+  "longTailKeywords": [
+    "tech salary calculator",
+    "software developer salary calculator",
+    "IT professional take-home pay calculator",
+    "gross to net salary tech jobs",
+    "net pay calculator software engineer",
+    "programmer salary calculator"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "salary-calculator-healthcare",
+    "salary-calculator-finance"
+  ],
+  "dataRef": "salaryCalculatorITTech",
+  "intro": "IT and tech professionals often have unique compensation structures that require specialized calculations to understand your true take-home pay. This calculator estimates your net salary by accounting for income tax and social contributions specific to tech roles. Whether you're a software developer, IT specialist, or tech professional, this tool provides accurate calculations to help you understand your actual earnings and make informed career decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howITTechSalariesAreCalculated": "IT and tech salaries typically include base pay plus potential bonuses, stock options, and other compensation. Gross salary is calculated based on market rates for specific tech roles. Standard deductions include federal/state income tax, Social Security and Medicare contributions, and optional deductions like retirement contributions, health insurance, and professional development funds. The result is your net salary - the actual amount you'll receive in your bank account after all deductions.",
+  "example": {
+    "scenario": "A software developer earning $80,000 annually in the United States with standard deductions.",
+    "results": "Gross salary: $80,000 | Income tax: $15,000 | Social contributions: $6,120 | Net salary: $58,880 | Monthly net: $4,907"
+  },
+  "whyUseAnITTechSalaryCalculator": [
+    "Compare job offers from different tech companies",
+    "Plan your budget and understand your actual take-home pay",
+    "Negotiate salary packages more effectively",
+    "Calculate the impact of bonuses and stock options",
+    "Understand how different locations affect your net pay",
+    "Make informed decisions about benefits and deductions"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include tax and social contributions for IT jobs?",
+      "answer": "Yes, it includes federal and state income tax, Social Security, Medicare, and other standard deductions applicable to IT and tech professionals."
+    },
+    {
+      "question": "Can I calculate salaries for different countries?",
+      "answer": "Yes, select your country to get localized calculations including taxes and social contributions specific to that location."
+    },
+    {
+      "question": "Is this accurate for all IT roles?",
+      "answer": "Yes, it works for all IT and tech roles including software developers, engineers, IT specialists, data scientists, and other tech professionals."
+    },
+    {
+      "question": "Can I include bonuses or stock options?",
+      "answer": "Yes, you can add bonuses and other compensation to the base salary for a complete net pay calculation."
+    },
+    {
+      "question": "Is this IT/Tech salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your offer letter carefully for all compensation components",
+    "Consider the total compensation package including benefits",
+    "Use industry salary surveys to validate calculations",
+    "Factor in cost of living when comparing offers",
+    "Consult with a tax professional for personalized advice",
+    "Keep track of year-to-date earnings for accurate tax planning"
+  ]
+}

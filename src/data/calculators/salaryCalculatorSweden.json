@@ -1,0 +1,66 @@
+{
+  "id": "salaryCalculatorSweden",
+  "name": "Salary Calculator (Sweden)",
+  "description": "Calculate net salary after Swedish income tax and social security contributions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 500000,
+      "unit": "SEK",
+      "placeholder": "500000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "SEK",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like private pension, insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "municipalTax": "(annualGross - 49000) * 0.29",
+    "nationalTax": "annualGross > 523300 ? (annualGross - 523300) * 0.20 : 0",
+    "incomeTax": "municipalTax + nationalTax",
+    "socialContributions": "annualGross * 0.07",
+    "totalDeductions": "incomeTax + socialContributions + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "socialContributions": "Social Security Contributions",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "SEK",
+    "socialContributions": "SEK",
+    "totalDeductions": "SEK",
+    "netSalary": "SEK",
+    "monthlyNet": "SEK"
+  }
+}

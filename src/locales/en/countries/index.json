@@ -1,0 +1,109 @@
+{
+  "title": "Country Salary Calculators | International Tax Calculators | SalaryWise.io",
+  "description": "Calculate take-home pay for different countries with localized tax rules. Compare salaries across the US, UK, Canada, Australia, and more.",
+  "keywords": "country salary calculator, international tax calculator, global salary comparison, localized tax rules",
+  "canonical": "https://salarywise.io/en/country",
+
+  "header": {
+    "title": "Country Salary Calculators",
+    "subtitle": "Calculate take-home pay with local tax rules"
+  },
+
+  "intro": {
+    "paragraph1": "Understanding your take-home pay varies significantly by country due to different tax systems, social contributions, and local regulations. Our country-specific calculators help you understand your net income anywhere in the world.",
+    "paragraph2": "Select your country below to get accurate salary calculations based on local tax laws and regulations."
+  },
+
+  "countries": [
+    {
+      "name": "United States",
+      "code": "US",
+      "flag": "🇺🇸",
+      "description": "Federal income tax, state taxes, Social Security, Medicare",
+      "href": "/en/country/usa",
+      "taxRate": "Federal: 10-37%, State: 0-13.3%"
+    },
+    {
+      "name": "United Kingdom",
+      "code": "GB",
+      "flag": "🇬🇧",
+      "description": "Income tax, National Insurance, student loan repayments",
+      "href": "/en/country/uk",
+      "taxRate": "Income tax: 0-45%, NI: 8-12%"
+    },
+    {
+      "name": "Canada",
+      "code": "CA",
+      "flag": "🇨🇦",
+      "description": "Federal and provincial income tax, CPP, EI contributions",
+      "href": "/en/country/canada",
+      "taxRate": "Federal: 15-29%, Provincial: 5-20.5%"
+    },
+    {
+      "name": "Australia",
+      "code": "AU",
+      "flag": "🇦🇺",
+      "description": "Income tax, superannuation guarantee, Medicare levy",
+      "href": "/en/country/australia",
+      "taxRate": "Income tax: 0-45%, Super: 10%"
+    },
+    {
+      "name": "Ireland",
+      "code": "IE",
+      "flag": "🇮🇪",
+      "description": "Income tax, Universal Social Charge, PRSI contributions",
+      "href": "/en/country/ireland",
+      "taxRate": "Income tax: 0-40%, USC: 0.5-8%"
+    },
+    {
+      "name": "India",
+      "code": "IN",
+      "flag": "🇮🇳",
+      "description": "Income tax, professional tax, provident fund contributions",
+      "href": "/en/country/india",
+      "taxRate": "Income tax: 0-30%, PF: 12%"
+    }
+  ],
+
+  "features": {
+    "title": "Why Use Country-Specific Calculators?",
+    "items": [
+      {
+        "title": "Accurate Local Calculations",
+        "description": "Tax rates and rules vary significantly by country and region",
+        "icon": "target"
+      },
+      {
+        "title": "Up-to-Date Tax Information",
+        "description": "Calculations based on current tax brackets and regulations",
+        "icon": "calendar"
+      },
+      {
+        "title": "Currency-Specific Results",
+        "description": "Results displayed in local currency with proper formatting",
+        "icon": "dollar"
+      },
+      {
+        "title": "Comprehensive Deductions",
+        "description": "Includes all mandatory contributions and local requirements",
+        "icon": "list"
+      }
+    ]
+  },
+
+  "cta": {
+    "title": "Don't See Your Country?",
+    "description": "We're constantly adding new countries. Contact us to request your country's calculator.",
+    "button": {
+      "text": "Request New Country",
+      "href": "/en"
+    }
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Country Salary Calculators",
+    "description": "Calculate take-home pay for different countries with localized tax rules"
+  }
+}

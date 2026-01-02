@@ -1,0 +1,75 @@
+{
+  "slug": "salary-after-tax-ireland",
+  "type": "calculator",
+  "h1": "Salary After Tax Calculator – Ireland Net Pay Estimator",
+  "metaTitle": "Salary After Tax Calculator Ireland – Calculate Net Pay",
+  "metaDescription": "Use our Ireland salary after tax calculator to estimate your take-home pay. Includes Income Tax, USC, PRSI, and other deductions. Quick and free.",
+  "primaryKeyword": "salary after tax calculator Ireland",
+  "longTailKeywords": [
+    "Ireland net salary calculator",
+    "take home pay calculator Ireland",
+    "calculate salary after tax Ireland",
+    "gross to net salary Ireland",
+    "payroll calculator Ireland",
+    "Irish income tax calculator",
+    "salary calculator ROI"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator-ireland"
+  ],
+  "dataRef": "salaryAfterTaxIreland",
+  "intro": "Understanding your salary after tax in Ireland is crucial for accurate financial planning. This calculator estimates your take-home pay by accounting for Irish Income Tax, Universal Social Charge (USC), Pay Related Social Insurance (PRSI), and other common deductions. Whether you're an employee, contractor, or freelancer working in Ireland, this tool provides localized calculations to help you understand your actual net income and make informed financial decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howSalaryAfterTaxWorksIreland": "Salary after tax in Ireland involves several key deductions from your gross pay. Income tax is calculated using progressive tax bands: Entry (20% on income up to €42,335), Middle (40% on income €42,336-€70,557), and Higher (48% on income over €70,557). Universal Social Charge (USC) is applied at varying rates from 0.5% to 8% depending on income level. Pay Related Social Insurance (PRSI) contributions are also deducted. Optional deductions like pension contributions and health insurance can further reduce your taxable income and increase your take-home pay.",
+  "example": {
+    "scenario": "An employee earning €50,000 annually in Ireland with standard deductions.",
+    "results": "Gross salary: €50,000 | Income tax: €9,000 | USC: €1,500 | PRSI: €2,000 | Net salary: €37,500 | Monthly net: €3,125"
+  },
+  "whyUseSalaryAfterTaxCalculator": [
+    "Accurate budgeting based on your actual take-home pay",
+    "Compare job offers using real net income figures",
+    "Plan for tax withholdings and avoid surprises",
+    "Make informed decisions about pre-tax deductions",
+    "Understand the impact of USC and PRSI on your salary",
+    "Prepare for year-end tax planning and refunds"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include USC and PRSI contributions?",
+      "answer": "Yes, it includes Irish Income Tax, Universal Social Charge (USC), Pay Related Social Insurance (PRSI), and other standard deductions."
+    },
+    {
+      "question": "Can I include pension and health insurance deductions?",
+      "answer": "Yes, you can add pension contributions and health insurance as deductions that reduce your taxable income."
+    },
+    {
+      "question": "Is this calculator accurate for all Irish regions?",
+      "answer": "Yes, it includes Ireland-wide tax rates and calculations that apply across the Republic of Ireland."
+    },
+    {
+      "question": "Can I calculate monthly take-home pay?",
+      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+    },
+    {
+      "question": "Is this Ireland salary after tax calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your P60 form annually to ensure proper tax credits",
+    "Consider salary sacrifice schemes for tax-efficient benefits",
+    "Use tax-advantaged pension schemes when possible",
+    "Keep track of year-to-date earnings for accurate tax planning",
+    "Consult a tax professional for personalized advice on complex tax situations"
+  ]
+}

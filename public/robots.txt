@@ -1,0 +1,17 @@
+User-agent: *
+Allow: /
+
+# Block access to sensitive areas
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/static/
+
+# Allow crawling of main content
+Allow: /salary-calculator
+Allow: /gross-to-net
+Allow: /country/
+Allow: /industry/
+Allow: /guides/
+
+# Sitemap
+Sitemap: https://salarywise.io/sitemap.xml

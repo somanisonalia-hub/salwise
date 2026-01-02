@@ -1,0 +1,76 @@
+{
+  "slug": "overtime-pay-calculator",
+  "type": "calculator",
+  "h1": "Overtime Pay Calculator – Calculate Extra Earnings",
+  "metaTitle": "Overtime Pay Calculator – Calculate Extra Salary from Overtime",
+  "metaDescription": "Use our free overtime pay calculator to see your extra earnings from overtime. Quickly calculate gross and net overtime pay.",
+  "primaryKeyword": "overtime pay calculator",
+  "longTailKeywords": [
+    "calculate overtime pay",
+    "overtime salary calculator",
+    "overtime calculator after tax",
+    "hourly overtime calculator",
+    "weekly overtime pay calculator",
+    "extra pay calculator",
+    "overtime net pay calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "hourly-to-salary-calculator",
+    "bonus-calculator",
+    "take-home-pay-calculator"
+  ],
+  "dataRef": "overtimePay",
+  "intro": "Overtime pay represents the extra compensation you earn for working beyond your standard hours. Whether you're a full-time employee, part-time worker, or freelancer putting in extra hours, calculating your overtime earnings is crucial for understanding your true income potential. This calculator helps you determine exactly how much extra pay you'll receive for overtime work, including the impact of different overtime multipliers and optional tax calculations.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howOvertimePayIsCalculated": "Overtime pay is calculated by multiplying your overtime hours by your regular hourly rate, then applying the overtime multiplier (typically 1.5x for time-and-a-half). For example, if you earn €20 per hour and work 10 overtime hours at 1.5x, your overtime pay would be €20 × 10 × 1.5 = €300. You can also apply an optional tax rate to see your net overtime earnings after deductions.",
+  "example": {
+    "scenario": "An employee earning €20 per hour works 10 overtime hours at 1.5x rate with 20% tax.",
+    "results": "Base hourly rate: €20 | Overtime hours: 10 | Overtime rate: 1.5x | Gross overtime pay: €300 | Tax (20%): €60 | Net overtime pay: €240"
+  },
+  "whenToUseOvertimeCalculator": [
+    "Planning extra work hours and estimating additional income",
+    "Evaluating contract opportunities that include overtime",
+    "Negotiating salary packages that involve overtime pay",
+    "Planning freelance projects with potential overtime hours",
+    "Understanding the financial impact of extra work time",
+    "Comparing different job opportunities with varying overtime potential"
+  ],
+  "faqs": [
+    {
+      "question": "How is overtime pay calculated?",
+      "answer": "Overtime pay is calculated by multiplying overtime hours by your regular hourly rate, then applying the overtime multiplier (usually 1.5x for time-and-a-half or 2x for double time)."
+    },
+    {
+      "question": "Does this overtime calculator include tax?",
+      "answer": "Yes, you can optionally include a tax rate to see your net overtime pay after tax deductions. The tax calculation is an estimate and should be verified with a tax professional."
+    },
+    {
+      "question": "Can I calculate daily or weekly overtime?",
+      "answer": "Yes! Simply enter the number of overtime hours worked. The calculator works for any timeframe - daily, weekly, monthly, or custom periods."
+    },
+    {
+      "question": "Does overtime affect my total salary?",
+      "answer": "Yes, overtime pay is added to your regular earnings and can significantly increase your total income. This calculator shows both the overtime amount and its impact on your overall compensation."
+    },
+    {
+      "question": "Is this overtime pay calculator free to use?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Check your local labor laws for overtime requirements and rates",
+    "Keep accurate records of all overtime hours worked",
+    "Understand how overtime affects your tax bracket",
+    "Consider the value of time off versus overtime pay",
+    "Use this tool to negotiate better overtime rates",
+    "Remember that overtime rates may vary by industry and location"
+  ]
+}

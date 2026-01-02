@@ -1,0 +1,288 @@
+{
+  "slug": "gross-vs-net-salary",
+  "type": "guide",
+  "h1": "Gross vs Net Salary Guide",
+  "metaTitle": "Gross vs Net Salary Guide | Understanding Take-Home Pay | SalaryWise.io",
+  "metaDescription": "Learn the difference between gross salary and net take-home pay. Understand taxes, deductions, and how to calculate your actual earnings. Free guide.",
+  "primaryKeyword": "gross vs net salary",
+  "longTailKeywords": [
+    "gross vs net salary",
+    "take home pay",
+    "salary guide",
+    "tax deductions",
+    "net income"
+  ],
+  "related": [
+    "gross-to-net",
+    "take-home-pay",
+    "guides/how-to-calculate-take-home"
+  ],
+  "title": "Gross vs Net Salary Guide | Understanding Take-Home Pay | SalaryWise.io",
+  "description": "Learn the difference between gross salary and net take-home pay. Understand taxes, deductions, and how to calculate your actual earnings. Free guide.",
+  "keywords": "gross vs net salary, take home pay, salary guide, tax deductions, net income",
+  "canonical": "https://salarywise.io/guides/gross-vs-net",
+
+  "header": {
+    "title": "Gross vs Net Salary Guide",
+    "subtitle": "Understanding your take-home pay"
+  },
+
+  "intro": {
+    "paragraph1": "When comparing job offers or budgeting your finances, it's crucial to understand the difference between gross salary and net salary. Many people get confused by these terms, but knowing the distinction can save you thousands of dollars in misunderstandings and poor financial decisions.",
+    "paragraph2": "In this comprehensive guide, we'll break down what gross vs net salary means, how to calculate your take-home pay, and why this knowledge matters for your financial planning."
+  },
+
+  "whatIsGrossSalary": {
+    "title": "What is Gross Salary?",
+    "definition": "Gross salary is your total compensation before any deductions. It's the base amount you earn from your employer before taxes, benefits, and other withholdings are subtracted.",
+    "examples": [
+      "Annual salary: $75,000",
+      "Monthly gross: $6,250",
+      "Bi-weekly gross: $2,884.62"
+    ],
+    "includes": [
+      "Base salary or wages",
+      "Overtime pay",
+      "Bonuses and commissions",
+      "Holiday pay",
+      "Some benefits (depending on employer)"
+    ]
+  },
+
+  "whatIsNetSalary": {
+    "title": "What is Net Salary?",
+    "definition": "Net salary, also called take-home pay, is the amount you actually receive in your paycheck after all deductions. This is the money you can spend or save.",
+    "examples": [
+      "Annual net: $58,125 (after ~22.5% taxes)",
+      "Monthly net: $4,843.75",
+      "Bi-weekly net: $2,235.58"
+    ],
+    "excludes": [
+      "Federal income tax",
+      "State income tax",
+      "Social Security tax (6.2%)",
+      "Medicare tax (1.45%)",
+      "Health insurance premiums",
+      "Retirement contributions",
+      "Other deductions"
+    ]
+  },
+
+  "keyDifferences": {
+    "title": "Key Differences Between Gross and Net Salary",
+    "comparison": [
+      {
+        "aspect": "Definition",
+        "gross": "Total compensation before deductions",
+        "net": "Amount received after deductions"
+      },
+      {
+        "aspect": "Taxes Included",
+        "gross": "No, pre-tax amount",
+        "net": "Yes, post-tax amount"
+      },
+      {
+        "aspect": "Benefits",
+        "gross": "May include some benefits",
+        "net": "Excludes most benefits"
+      },
+      {
+        "aspect": "Paycheck Amount",
+        "gross": "Not what you receive",
+        "net": "Actual deposited amount"
+      }
+    ]
+  },
+
+  "whyItMatters": {
+    "title": "Why Understanding Gross vs Net Matters",
+    "reasons": [
+      {
+        "title": "Job Offer Comparison",
+        "description": "Compare offers accurately by calculating actual take-home pay"
+      },
+      {
+        "title": "Budgeting",
+        "description": "Plan your finances based on real spending money"
+      },
+      {
+        "title": "Tax Planning",
+        "description": "Understand your tax burden and plan accordingly"
+      },
+      {
+        "title": "Negotiation",
+        "description": "Know your worth and negotiate better compensation"
+      }
+    ]
+  },
+
+  "howToCalculate": {
+    "title": "How to Calculate Net Salary from Gross",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Determine your gross salary",
+        "description": "Start with your annual, monthly, or hourly gross pay"
+      },
+      {
+        "step": "2",
+        "title": "Calculate federal income tax",
+        "description": "Use tax brackets and withholding tables (about 12-22%)"
+      },
+      {
+        "step": "3",
+        "title": "Add state income tax",
+        "description": "Varies by state (0-13.3% in the US)"
+      },
+      {
+        "step": "4",
+        "title": "Include FICA taxes",
+        "description": "Social Security (6.2%) + Medicare (1.45%) = 7.65%"
+      },
+      {
+        "step": "5",
+        "title": "Subtract other deductions",
+        "description": "Health insurance, retirement contributions, etc."
+      }
+    ],
+    "formula": "Net Salary = Gross Salary - (Federal Tax + State Tax + FICA + Other Deductions)"
+  },
+
+  "examples": {
+    "title": "Gross vs Net Salary Examples",
+    "scenarios": [
+      {
+        "title": "Software Engineer - California",
+        "gross": "$120,000",
+        "federalTax": "$18,000 (15%)",
+        "stateTax": "$13,200 (11%)",
+        "fica": "$9,180 (7.65%)",
+        "other": "$4,800 (health insurance)",
+        "net": "$74,820 (62.4% of gross)"
+      },
+      {
+        "title": "Teacher - Texas",
+        "gross": "$55,000",
+        "federalTax": "$6,050 (11%)",
+        "stateTax": "$0 (0%)",
+        "fica": "$4,208 (7.65%)",
+        "other": "$2,750 (health insurance)",
+        "net": "$41,992 (76.4% of gross)"
+      }
+    ]
+  },
+
+  "taxesByCountry": {
+    "title": "Taxes Vary by Country",
+    "countries": [
+      {
+        "name": "United States",
+        "effectiveRate": "22-28%",
+        "notes": "Federal + State + FICA taxes"
+      },
+      {
+        "name": "United Kingdom",
+        "effectiveRate": "20-40%",
+        "notes": "Income tax + National Insurance"
+      },
+      {
+        "name": "Canada",
+        "effectiveRate": "25-35%",
+        "notes": "Federal + Provincial taxes + CPP/EI"
+      },
+      {
+        "name": "Germany",
+        "effectiveRate": "30-40%",
+        "notes": "Income tax + Social contributions"
+      }
+    ]
+  },
+
+  "commonMistakes": {
+    "title": "Common Mistakes to Avoid",
+    "mistakes": [
+      {
+        "mistake": "Confusing gross with net pay",
+        "impact": "Overestimating take-home pay by 20-30%"
+      },
+      {
+        "mistake": "Forgetting state/local taxes",
+        "impact": "Underestimating tax burden"
+      },
+      {
+        "mistake": "Not including benefit costs",
+        "impact": "Misunderstanding total compensation"
+      },
+      {
+        "mistake": "Comparing pre-tax salaries only",
+        "impact": "Poor job offer evaluation"
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "What's the difference between gross and net salary?",
+        "answer": "Gross salary is your total compensation before any deductions. Net salary is your take-home pay after taxes and withholdings are subtracted."
+      },
+      {
+        "question": "Why is understanding gross vs net important?",
+        "answer": "Knowing both figures helps you compare job offers, budget accurately, and understand your true compensation value."
+      },
+      {
+        "question": "How much tax should I expect to pay?",
+        "answer": "Tax rates vary by country and income level. In the US, expect 20-30% total deductions. Use our salary calculator for precise estimates."
+      },
+      {
+        "question": "Does gross salary include benefits?",
+        "answer": "Gross salary typically includes base pay and some taxable benefits, but excludes most pre-tax deductions and employer contributions."
+      },
+      {
+        "question": "How often should I check my tax withholdings?",
+        "answer": "Review annually or when your income/situation changes. Major life events like marriage, children, or job changes warrant review."
+      }
+    ]
+  },
+
+  "conclusion": {
+    "title": "Take Control of Your Finances",
+    "content": "Understanding gross vs net salary is essential for making informed financial decisions. Don't let confusion about your compensation hold you back from achieving your financial goals.",
+    "cta": {
+      "text": "Calculate Your Take-Home Pay",
+      "href": "/en/salary-calculator"
+    }
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What's the difference between gross and net salary?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Gross salary is your total compensation before any deductions. Net salary is your take-home pay after taxes and withholdings are subtracted."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Why is understanding gross vs net important?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Knowing both figures helps you compare job offers, budget accurately, and understand your true compensation value."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much tax should I expect to pay?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Tax rates vary by country and income level. In the US, expect 20-30% total deductions. Use our salary calculator for precise estimates."
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "southAfricaSalary",
+  "name": "South Africa Salary Calculator",
+  "description": "Calculate take-home pay in South Africa",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 250000,
+      "unit": "ZAR"
+    }
+  ],
+  "formula": {
+    "incomeTax": "grossSalary < 237100 ? grossSalary * 0.18 : grossSalary < 370500 ? 42678 + (grossSalary - 237100) * 0.26 : grossSalary < 512800 ? 80262 + (grossSalary - 370500) * 0.31 : grossSalary < 673000 ? 121475 + (grossSalary - 512800) * 0.36 : grossSalary < 857900 ? 179147 + (grossSalary - 673000) * 0.39 : grossSalary < 1819000 ? 251258 + (grossSalary - 857900) * 0.41 : 644489 + (grossSalary - 1819000) * 0.45",
+    "uif": "grossSalary * 0.01",
+    "providentFund": "grossSalary * 0.075",
+    "totalDeductions": "incomeTax + uif + providentFund",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "slug": "salary-calculator-usa",
+  "type": "calculator",
+  "h1": "USA Salary Calculator",
+  "metaTitle": "USA Salary Calculator | Take-Home Pay in United States | SalaryWise.io",
+  "metaDescription": "Calculate your take-home pay in the United States. Free USA salary calculator with federal income tax, state taxes, Social Security, and Medicare.",
+  "primaryKeyword": "usa salary calculator",
+  "longTailKeywords": [
+    "salary calculator USA",
+    "take home pay USA",
+    "net salary USA",
+    "US paycheck calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net-salary",
+    "salary-calculator-uk"
+  ],
+  "dataRef": "usaSalary"
+}

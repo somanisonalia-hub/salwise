@@ -1,0 +1,30 @@
+{
+  "id": "canadaSalary",
+  "name": "Canada Salary Calculator",
+  "description": "Calculate take-home pay in Canada",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 50000,
+      "unit": "CAD"
+    },
+    {
+      "id": "province",
+      "label": "Province",
+      "type": "text",
+      "default": "Ontario",
+      "unit": ""
+    }
+  ],
+  "formula": {
+    "federalTax": "grossSalary * 0.15",
+    "provincialTax": "grossSalary * 0.05",
+    "cpp": "grossSalary * 0.0495",
+    "ei": "grossSalary * 0.0163",
+    "totalDeductions": "federalTax + provincialTax + cpp + ei",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

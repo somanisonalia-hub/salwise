@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-startup-entrepreneur",
+  "type": "calculator",
+  "h1": "Startup / Entrepreneur Salary Calculator – Net Pay Estimator",
+  "metaTitle": "Startup / Entrepreneur Salary Calculator – Calculate Net Pay",
+  "metaDescription": "Use our Startup / Entrepreneur salary calculator to estimate your take-home pay. Includes tax, business expenses, and deductions. Quick and free.",
+  "primaryKeyword": "entrepreneur salary calculator",
+  "longTailKeywords": [
+    "startup founder net pay calculator",
+    "small business owner salary calculator",
+    "self-employed take-home pay calculator",
+    "gross to net salary entrepreneur",
+    "net pay calculator startup owner",
+    "freelancer / founder salary calculator"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "salary-calculator-marketing-sales",
+    "salary-calculator-finance-banking"
+  ],
+  "dataRef": "salaryCalculatorStartupEntrepreneur",
+  "intro": "Startup founders and entrepreneurs often have complex income structures that require specialized calculations to understand your true take-home pay. This calculator estimates your net salary by accounting for income tax, business expenses, and social contributions specific to self-employed individuals. Whether you're a startup founder, small business owner, or freelancer, this tool provides accurate calculations to help you understand your actual earnings and make informed financial decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howStartupEntrepreneurSalariesAreCalculated": "Startup and entrepreneur salaries typically include gross revenue minus business expenses, then standard deductions. Gross revenue is calculated from business income, minus legitimate business expenses like office supplies, marketing, equipment, and software. Standard deductions include income tax, self-employment tax, and optional deductions like retirement contributions, health insurance, and professional liability insurance. The result is your net salary - the actual amount you'll receive in your bank account after all deductions.",
+  "example": {
+    "scenario": "A startup founder earning $120,000 in annual gross revenue with $20,000 in business expenses.",
+    "results": "Gross revenue: $120,000 | Business expenses: $20,000 | Taxable income: $100,000 | Income tax: $22,000 | Net take-home pay: $78,000 | Monthly net: $6,500"
+  },
+  "whyUseAStartupEntrepreneurSalaryCalculator": [
+    "Plan your personal and business budget accurately",
+    "Understand the tax impact on your take-home pay",
+    "Compare different income scenarios and business expense strategies",
+    "Optimize your take-home pay through expense management",
+    "Make informed decisions about salary vs. business reinvestment",
+    "Calculate the true cost of living as a business owner"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include taxes for entrepreneurs and self-employed?",
+      "answer": "Yes, it includes income tax, self-employment tax, and other deductions applicable to entrepreneurs, startup founders, and self-employed individuals."
+    },
+    {
+      "question": "Can I calculate net pay for different countries?",
+      "answer": "Yes, select your country to get localized calculations including taxes and social contributions specific to that location."
+    },
+    {
+      "question": "Is this accurate for small business owners?",
+      "answer": "Yes, it works for small business owners, startup founders, freelancers, and other self-employed individuals."
+    },
+    {
+      "question": "Can I include business expenses in the calculation?",
+      "answer": "Yes, you can deduct legitimate business expenses from your gross revenue to calculate your true taxable income."
+    },
+    {
+      "question": "Is this startup/entrepreneur salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Keep detailed records of all business expenses for tax deductions",
+    "Consider the timing of business expenses to optimize your tax situation",
+    "Use tax-advantaged accounts for both business and personal savings",
+    "Consult with both a tax professional and business advisor",
+    "Factor in quarterly estimated tax payments",
+    "Keep track of year-to-date earnings for accurate tax planning"
+  ]
+}

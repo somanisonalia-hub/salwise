@@ -1,0 +1,92 @@
+{
+  "it": {
+    "slug": "it",
+    "title": "IT Salary Calculator",
+    "metaTitle": "IT Salary Calculator – Tech Industry Pay Calculator",
+    "metaDescription": "Calculate salaries in the IT and technology industry. Compare developer, engineer, and tech salaries across countries.",
+    "averageSalary": 85000,
+    "roles": ["Software Developer", "Data Scientist", "DevOps Engineer", "Product Manager", "UX Designer"],
+    "growth": 0.12
+  },
+  "healthcare": {
+    "slug": "healthcare",
+    "title": "Healthcare Salary Calculator",
+    "metaTitle": "Healthcare Salary Calculator – Medical Professional Pay",
+    "metaDescription": "Calculate salaries in the healthcare industry. Compare doctor, nurse, and medical professional salaries.",
+    "averageSalary": 65000,
+    "roles": ["Registered Nurse", "Doctor", "Pharmacist", "Physical Therapist", "Medical Assistant"],
+    "growth": 0.08
+  },
+  "engineering": {
+    "slug": "engineering",
+    "title": "Engineering Salary Calculator",
+    "metaTitle": "Engineering Salary Calculator – Engineer Pay Calculator",
+    "metaDescription": "Calculate salaries in the engineering industry. Compare mechanical, electrical, and civil engineer salaries.",
+    "averageSalary": 78000,
+    "roles": ["Mechanical Engineer", "Electrical Engineer", "Civil Engineer", "Chemical Engineer", "Software Engineer"],
+    "growth": 0.10
+  },
+  "teacher": {
+    "slug": "teacher",
+    "title": "Teacher Salary Calculator",
+    "metaTitle": "Teacher Salary Calculator – Education Professional Pay",
+    "metaDescription": "Calculate salaries for teachers and education professionals. Compare school teacher and professor salaries.",
+    "averageSalary": 52000,
+    "roles": ["Elementary Teacher", "High School Teacher", "College Professor", "Special Education Teacher", "Principal"],
+    "growth": 0.05
+  },
+  "finance": {
+    "slug": "finance",
+    "title": "Finance Salary Calculator",
+    "metaTitle": "Finance Salary Calculator – Financial Services Pay",
+    "metaDescription": "Calculate salaries in the finance industry. Compare banker, analyst, and financial advisor salaries.",
+    "averageSalary": 72000,
+    "roles": ["Financial Analyst", "Investment Banker", "Accountant", "Financial Advisor", "Risk Analyst"],
+    "growth": 0.09
+  },
+  "retail": {
+    "slug": "retail",
+    "title": "Retail Salary Calculator",
+    "metaTitle": "Retail Salary Calculator – Retail Industry Pay",
+    "metaDescription": "Calculate salaries in the retail industry. Compare store manager, sales associate, and retail salaries.",
+    "averageSalary": 35000,
+    "roles": ["Store Manager", "Sales Associate", "Cashier", "Stock Clerk", "Customer Service Rep"],
+    "growth": 0.04
+  },
+  "construction": {
+    "slug": "construction",
+    "title": "Construction Salary Calculator",
+    "metaTitle": "Construction Salary Calculator – Construction Industry Pay",
+    "metaDescription": "Calculate salaries in the construction industry. Compare builder, electrician, and construction salaries.",
+    "averageSalary": 55000,
+    "roles": ["Construction Worker", "Electrician", "Plumber", "Carpenter", "Project Manager"],
+    "growth": 0.06
+  },
+  "legal": {
+    "slug": "legal",
+    "title": "Legal Salary Calculator",
+    "metaTitle": "Legal Salary Calculator – Law Industry Pay",
+    "metaDescription": "Calculate salaries in the legal industry. Compare lawyer, paralegal, and legal professional salaries.",
+    "averageSalary": 75000,
+    "roles": ["Lawyer", "Paralegal", "Legal Assistant", "Judge", "Legal Secretary"],
+    "growth": 0.07
+  },
+  "marketing": {
+    "slug": "marketing",
+    "title": "Marketing Salary Calculator",
+    "metaTitle": "Marketing Salary Calculator – Marketing Industry Pay",
+    "metaDescription": "Calculate salaries in the marketing industry. Compare marketing manager, specialist, and agency salaries.",
+    "averageSalary": 58000,
+    "roles": ["Marketing Manager", "Digital Marketing Specialist", "Content Creator", "SEO Specialist", "Brand Manager"],
+    "growth": 0.11
+  },
+  "startup": {
+    "slug": "startup",
+    "title": "Startup Salary Calculator",
+    "metaTitle": "Startup Salary Calculator – Startup Industry Pay",
+    "metaDescription": "Calculate salaries in the startup ecosystem. Compare founder, employee, and startup salaries.",
+    "averageSalary": 68000,
+    "roles": ["Founder", "CTO", "Product Manager", "Developer", "Growth Hacker"],
+    "growth": 0.15
+  }
+}

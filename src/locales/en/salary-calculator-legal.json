@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-legal",
+  "type": "calculator",
+  "h1": "Legal / Lawyer Salary Calculator – Net Pay Estimator",
+  "metaTitle": "Legal / Lawyer Salary Calculator – Calculate Net Pay",
+  "metaDescription": "Use our Legal / Lawyer salary calculator to estimate your take-home pay. Includes income tax, social contributions, and deductions. Quick and free.",
+  "primaryKeyword": "lawyer salary calculator",
+  "longTailKeywords": [
+    "attorney salary calculator",
+    "corporate lawyer net pay calculator",
+    "legal professional take-home pay calculator",
+    "gross to net salary law jobs",
+    "net pay calculator legal roles",
+    "barrister salary calculator"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "salary-calculator-finance-banking",
+    "salary-calculator-marketing-sales"
+  ],
+  "dataRef": "salaryCalculatorLegal",
+  "intro": "Legal professionals often have specialized compensation structures that require detailed calculations to understand your true take-home pay. This calculator estimates your net salary by accounting for income tax and social contributions specific to legal roles. Whether you're a corporate lawyer, attorney, barrister, or legal consultant, this tool provides accurate calculations to help you understand your actual earnings and make informed career decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howLegalSalariesAreCalculated": "Legal salaries typically include base pay plus potential bonuses, profit-sharing, and billable hours. Gross salary is calculated based on experience level, practice area, and firm size. Standard deductions include federal/state income tax, Social Security and Medicare contributions, and optional deductions like retirement contributions, bar association dues, and professional liability insurance. The result is your net salary - the actual amount you'll receive in your bank account after all deductions.",
+  "example": {
+    "scenario": "A corporate attorney earning $120,000 annually in the United States with standard deductions.",
+    "results": "Gross salary: $120,000 | Income tax: $30,000 | Social contributions: $9,260 | Net salary: $80,740 | Monthly net: $6,728"
+  },
+  "whyUseALegalLawyerSalaryCalculator": [
+    "Compare job offers from different law firms",
+    "Plan your budget and understand your actual take-home pay",
+    "Negotiate salary packages more effectively",
+    "Calculate the impact of bonuses and profit-sharing",
+    "Understand how different locations affect your net pay",
+    "Make informed decisions about benefits and deductions"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include tax and social contributions for legal jobs?",
+      "answer": "Yes, it includes federal and state income tax, Social Security, Medicare, and other standard deductions applicable to legal professionals."
+    },
+    {
+      "question": "Can I calculate salaries for different countries?",
+      "answer": "Yes, select your country to get localized calculations including taxes and social contributions specific to that location."
+    },
+    {
+      "question": "Is this accurate for all legal professions?",
+      "answer": "Yes, it works for all legal professions including lawyers, attorneys, barristers, paralegals, and legal consultants."
+    },
+    {
+      "question": "Can I include bonuses or profit-sharing?",
+      "answer": "Yes, you can add bonuses, profit-sharing, and other compensation to the base salary for a complete net pay calculation."
+    },
+    {
+      "question": "Is this legal/lawyer salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your employment contract carefully for all compensation components",
+    "Consider the total compensation package including benefits and bonuses",
+    "Use industry salary surveys to validate calculations",
+    "Factor in cost of living when comparing offers",
+    "Consult with a tax professional for personalized advice",
+    "Keep track of year-to-date earnings for accurate tax planning"
+  ]
+}

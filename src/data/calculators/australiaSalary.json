@@ -1,0 +1,22 @@
+{
+  "id": "australiaSalary",
+  "name": "Australia Salary Calculator",
+  "description": "Calculate take-home pay in Australia",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 65000,
+      "unit": "AUD"
+    }
+  ],
+  "formula": {
+    "medicareLevy": "grossSalary * 0.02",
+    "incomeTax": "grossSalary < 18200 ? 0 : grossSalary < 45000 ? (grossSalary - 18200) * 0.19 : grossSalary < 120000 ? 5092 + (grossSalary - 45000) * 0.325 : 29467 + (grossSalary - 120000) * 0.37",
+    "superannuation": "grossSalary * 0.10",
+    "totalDeductions": "incomeTax + medicareLevy + superannuation",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

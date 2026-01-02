@@ -1,0 +1,83 @@
+{
+  "id": "salaryAfterTaxIreland",
+  "name": "Salary After Tax Calculator (Ireland)",
+  "description": "Calculate net salary after Irish income tax, USC, and PRSI",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 50000,
+      "unit": "€",
+      "placeholder": "50000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like pension, health insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxCredits": "3300",
+    "entryRateLimit": "42335",
+    "middleRateLimit": "70557",
+    "taxableIncome": "annualGross",
+    "entryRateTax": "Math.min(taxableIncome, entryRateLimit) * 0.20",
+    "middleRateTax": "taxableIncome > entryRateLimit ? Math.min(taxableIncome - entryRateLimit, middleRateLimit - entryRateLimit) * 0.40 : 0",
+    "higherRateTax": "taxableIncome > middleRateLimit ? (taxableIncome - middleRateLimit) * 0.48 : 0",
+    "incomeTaxBeforeCredits": "entryRateTax + middleRateTax + higherRateTax",
+    "incomeTax": "Math.max(0, incomeTaxBeforeCredits - taxCredits)",
+    "uscThreshold1": "12012",
+    "uscThreshold2": "25760",
+    "uscThreshold3": "70044",
+    "uscThreshold4": "100000",
+    "uscRate1": "annualGross <= uscThreshold1 ? 0 : annualGross <= uscThreshold2 ? (annualGross - uscThreshold1) * 0.005 : 0",
+    "uscRate2": "annualGross > uscThreshold2 && annualGross <= uscThreshold3 ? (Math.min(annualGross, uscThreshold3) - uscThreshold2) * 0.02 : 0",
+    "uscRate3": "annualGross > uscThreshold3 && annualGross <= uscThreshold4 ? (Math.min(annualGross, uscThreshold4) - uscThreshold3) * 0.045 : 0",
+    "uscRate4": "annualGross > uscThreshold4 ? (annualGross - uscThreshold4) * 0.08 : 0",
+    "usc": "uscRate1 + uscRate2 + uscRate3 + uscRate4",
+    "prsi": "annualGross * 0.04",
+    "totalDeductions": "incomeTax + usc + prsi + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "usc": "Universal Social Charge (USC)",
+    "prsi": "Pay Related Social Insurance (PRSI)",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "€",
+    "usc": "€",
+    "prsi": "€",
+    "totalDeductions": "€",
+    "netSalary": "€",
+    "monthlyNet": "€"
+  }
+}

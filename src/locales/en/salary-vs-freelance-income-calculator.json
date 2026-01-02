@@ -1,0 +1,75 @@
+{
+  "slug": "salary-vs-freelance-income-calculator",
+  "type": "calculator",
+  "h1": "Salary vs Freelance Income Calculator – Compare Your Earnings",
+  "metaTitle": "Salary vs Freelance Income Calculator – Compare Earnings",
+  "metaDescription": "Use our Salary vs Freelance Income calculator to compare traditional salary with freelance income. Includes taxes and net pay. Quick and free.",
+  "primaryKeyword": "salary vs freelance income calculator",
+  "longTailKeywords": [
+    "freelance vs full-time salary comparison",
+    "self-employed income calculator",
+    "net pay freelancer vs employee",
+    "salary comparison for freelancers",
+    "freelance tax impact calculator",
+    "contractor vs employee salary calculator"
+  ],
+  "related": [
+    "salary-vs-expenses-calculator",
+    "take-home-pay-calculator",
+    "annual-raise-promotion-calculator",
+    "salary-comparison-calculator"
+  ],
+  "dataRef": "salaryVsFreelanceIncomeCalculator",
+  "intro": "Making the decision to go freelance or remain an employee involves careful financial planning. This calculator helps you compare traditional salaried employment with freelance or self-employed income by factoring in different tax treatments, business expenses, and contribution requirements. Whether you're considering a career transition or just curious about the financial implications, this tool provides clear insights into which option might be more profitable for your situation.",
+  "ui": {
+    "calculatorHeading": "Compare Salary vs Freelance Income",
+    "resultsHeading": "Income Comparison Results",
+    "calculateButton": "Compare Incomes",
+    "scenarioLabel": "Your Income Comparison:",
+    "resultsLabel": "Analysis:",
+    "noResultsText": "Enter your salary and freelance income details above to compare earnings"
+  },
+  "howSalaryVsFreelanceIncomeIsCalculated": "This calculator compares traditional employee compensation with freelance income by applying different tax treatments. For employees: gross salary minus income tax and standard deductions equals net take-home pay. For freelancers: gross revenue minus business expenses, then minus self-employment tax and income tax equals net income. The difference shows which option provides higher net earnings.",
+  "example": {
+    "scenario": "Comparing $60,000 employee salary with $70,000 freelance revenue including $10,000 business expenses.",
+    "results": "Employee Net Salary: $48,000 | Freelance Net Income: $52,000 | Difference: +$4,000 for freelancing"
+  },
+  "whyUseThisCalculator": [
+    "Compare freelancing vs full-time employment financially",
+    "Understand the tax implications of different income types",
+    "Plan career transitions with accurate financial projections",
+    "Evaluate if freelancing is more profitable for your situation",
+    "Make informed decisions about business expenses and deductions",
+    "Calculate the true value of switching to freelance work"
+  ],
+  "faqs": [
+    {
+      "question": "Can I include freelance business expenses?",
+      "answer": "Yes, you can deduct legitimate business expenses from freelance revenue before calculating taxes."
+    },
+    {
+      "question": "Does it consider taxes for both salary and freelance income?",
+      "answer": "Yes, it applies different tax treatments - employee income tax for salaried work and self-employment tax plus income tax for freelance work."
+    },
+    {
+      "question": "Can I calculate monthly and yearly income comparisons?",
+      "answer": "Yes, the calculator shows both annual and monthly breakdowns for easy comparison and budgeting."
+    },
+    {
+      "question": "Is this calculator suitable for self-employed contractors?",
+      "answer": "Yes, it works perfectly for contractors, consultants, and other self-employed individuals."
+    },
+    {
+      "question": "Is the salary vs freelance income calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Consider healthcare costs when comparing freelance vs employee income",
+    "Factor in retirement contributions and benefits differences",
+    "Track business expenses carefully for accurate freelance calculations",
+    "Consider seasonal income variations for freelancers",
+    "Account for additional administrative costs of freelancing",
+    "Evaluate work-life balance alongside financial considerations"
+  ]
+}

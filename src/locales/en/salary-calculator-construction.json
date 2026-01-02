@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-construction",
+  "type": "calculator",
+  "h1": "Construction Salary Calculator – Net Pay Estimator",
+  "metaTitle": "Construction Salary Calculator – Calculate Net Pay",
+  "metaDescription": "Use our Construction salary calculator to estimate your take-home pay. Includes income tax, social contributions, and deductions. Quick and free.",
+  "primaryKeyword": "construction salary calculator",
+  "longTailKeywords": [
+    "construction worker salary calculator",
+    "site manager net pay calculator",
+    "laborer take-home salary calculator",
+    "gross to net salary construction jobs",
+    "net pay calculator construction employee",
+    "building contractor salary calculator"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "salary-calculator-retail",
+    "salary-calculator-legal"
+  ],
+  "dataRef": "salaryCalculatorConstruction",
+  "intro": "Construction professionals often work with specialized compensation structures that require detailed calculations to understand your true take-home pay. This calculator estimates your net salary by accounting for income tax and social contributions specific to construction roles. Whether you're a site manager, laborer, contractor, or other construction worker, this tool provides accurate calculations to help you understand your actual earnings and make informed career decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howConstructionSalariesAreCalculated": "Construction salaries typically include base pay plus potential overtime, bonuses, and hazard pay. Gross salary is calculated based on hourly rates, union scales, or project-based pay for specific construction positions. Standard deductions include federal/state income tax, Social Security and Medicare contributions, and optional deductions like retirement contributions, health insurance, and professional liability insurance. The result is your net salary - the actual amount you'll receive in your bank account after all deductions.",
+  "example": {
+    "scenario": "A construction worker earning $55,000 annually in the United States with standard deductions.",
+    "results": "Gross salary: $55,000 | Income tax: $10,000 | Social contributions: $4,215 | Net salary: $40,785 | Monthly net: $3,399"
+  },
+  "whyUseAConstructionSalaryCalculator": [
+    "Compare job offers from different construction companies",
+    "Plan your budget and understand your actual take-home pay",
+    "Negotiate salary packages more effectively",
+    "Calculate the impact of overtime and bonuses",
+    "Understand how different locations affect your net pay",
+    "Make informed decisions about benefits and deductions"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include tax and social contributions for construction jobs?",
+      "answer": "Yes, it includes federal and state income tax, Social Security, Medicare, and other standard deductions applicable to construction professionals."
+    },
+    {
+      "question": "Can I calculate salaries for different countries?",
+      "answer": "Yes, select your country to get localized calculations including taxes and social contributions specific to that location."
+    },
+    {
+      "question": "Is this accurate for all construction roles?",
+      "answer": "Yes, it works for all construction roles including laborers, site managers, contractors, foremen, and other construction positions."
+    },
+    {
+      "question": "Can I include overtime or bonuses?",
+      "answer": "Yes, you can add overtime pay, bonuses, and hazard pay to the base salary for a complete net pay calculation."
+    },
+    {
+      "question": "Is this construction salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your union contract or employment agreement carefully for all compensation components",
+    "Consider the total compensation package including benefits and overtime rates",
+    "Use industry salary surveys to validate calculations",
+    "Factor in cost of living when comparing offers",
+    "Consult with a tax professional for personalized advice",
+    "Keep track of year-to-date earnings for accurate tax planning"
+  ]
+}

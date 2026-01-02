@@ -1,0 +1,64 @@
+{
+  "slug": "understanding-gross-vs-net-salary",
+  "type": "guide",
+  "h1": "Understanding Gross vs Net Salary – Your Complete Guide",
+  "metaTitle": "Understanding Gross vs Net Salary – Complete Guide",
+  "metaDescription": "Learn the difference between gross and net salary. Understand deductions and take-home pay with our beginner-friendly guide for accurate budgeting.",
+  "primaryKeyword": "gross vs net salary",
+  "longTailKeywords": [
+    "difference between gross and net salary",
+    "gross salary meaning",
+    "net salary calculation",
+    "understand deductions from salary",
+    "gross salary vs take-home pay"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "salary-after-tax-calculator"
+  ],
+  "intro": "Understanding the difference between gross and net salary is fundamental to effective financial planning and budgeting. Gross salary represents your total earnings before any deductions, while net salary is the amount you actually receive after taxes and other withholdings. This guide will help you understand these concepts clearly, so you can make informed decisions about your compensation, budget effectively, and plan for your financial future.",
+  "whatIsGrossSalary": "Gross salary is your total earnings before any deductions or withholdings. This includes your base salary, allowances, bonuses, overtime pay, commissions, and any other taxable income. For employees, gross salary is typically listed on your employment contract or offer letter. For freelancers and self-employed individuals, gross income refers to all revenue from services before deducting business expenses or taxes. Gross salary serves as the starting point for calculating your net (take-home) pay.",
+  "whatIsNetSalary": "Net salary, also known as take-home pay, is the amount you actually receive in your bank account after all deductions have been subtracted from your gross salary. This includes mandatory deductions like income tax and social security contributions, as well as voluntary deductions such as retirement contributions, health insurance premiums, and other benefits. Net salary is the real amount available for your day-to-day expenses, savings, and discretionary spending.",
+  "keyDeductionsFromSalary": [
+    "Income tax: Progressive tax rates based on your total income and tax bracket",
+    "Social security / national insurance: Mandatory contributions for retirement and other social benefits",
+    "Retirement contributions: Pre-tax or post-tax contributions to pension plans or 401k accounts",
+    "Health insurance: Premiums for medical coverage, which may be pre-tax or post-tax",
+    "Other deductions: Union dues, charitable donations, parking fees, or other voluntary withholdings"
+  ],
+  "example": {
+    "scenario": "A professional earning $50,000 annually in the United States.",
+    "calculation": "Gross salary: $50,000/year | Federal income tax (22%): $11,000 | Social Security (6.2%): $3,100 | Medicare (1.45%): $725 | Total taxes: $14,825 | Other deductions: $2,000 | Net salary: $33,175/year → $2,765/month"
+  },
+  "faqs": [
+    {
+      "question": "What is included in gross salary?",
+      "answer": "Gross salary includes your base pay, allowances, bonuses, overtime, commissions, and any other taxable compensation before deductions."
+    },
+    {
+      "question": "How is net salary calculated?",
+      "answer": "Net salary = Gross salary - Taxes - Mandatory contributions - Voluntary deductions. The exact calculation varies by country and individual circumstances."
+    },
+    {
+      "question": "Can net salary vary by country?",
+      "answer": "Yes, tax rates, mandatory contributions, and deduction rules vary significantly by country, leading to different net salary calculations."
+    },
+    {
+      "question": "Does gross salary include bonuses?",
+      "answer": "Yes, bonuses, overtime, and other supplemental compensation are typically included in gross salary and subject to the same tax treatment."
+    },
+    {
+      "question": "Is this gross vs net salary guide free?",
+      "answer": "Yes, this educational guide is completely free to help you understand the difference between gross and net salary for better financial planning."
+    }
+  ],
+  "tips": [
+    "Always compare job offers using net salary, not just gross figures",
+    "Understand your local tax brackets and how they affect your net pay",
+    "Consider the timing of bonuses and how they impact your tax situation",
+    "Use gross salary for retirement planning calculations",
+    "Review your payslip regularly to understand all deductions",
+    "Factor in benefits that may reduce your taxable income"
+  ]
+}

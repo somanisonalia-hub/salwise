@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-singapore",
+  "type": "calculator",
+  "h1": "Salary Calculator – Singapore Net Pay Estimator",
+  "metaTitle": "Salary Calculator Singapore – Calculate Net Pay",
+  "metaDescription": "Use our Singapore salary calculator to estimate your take-home pay. Includes income tax, CPF contributions, and other deductions. Quick and free.",
+  "primaryKeyword": "salary calculator Singapore",
+  "longTailKeywords": [
+    "Singapore salary calculator after tax",
+    "net pay calculator Singapore",
+    "take home salary Singapore",
+    "gross to net salary Singapore",
+    "payroll calculator Singapore",
+    "Singapore income tax calculator",
+    "salary calculator SG"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator-india"
+  ],
+  "dataRef": "salaryCalculatorSingapore",
+  "intro": "Understanding your salary after tax in Singapore is essential for accurate financial planning. This calculator estimates your take-home pay by accounting for Singapore income tax and Central Provident Fund (CPF) contributions. Whether you're an employee, contractor, or freelancer working in Singapore, this tool provides localized calculations to help you understand your actual net income and make informed financial decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howSalaryAfterTaxWorksSingapore": "Salary after tax in Singapore involves several mandatory deductions from your gross pay. Income tax is calculated using progressive tax rates based on your annual taxable income. Central Provident Fund (CPF) contributions are mandatory for Singapore citizens and permanent residents, with rates varying by age. Employees contribute a portion of their salary to CPF for retirement savings, housing, and healthcare. Optional deductions like additional insurance or savings plans can further reduce your taxable income. The result is your net salary - the actual amount you'll receive in your bank account.",
+  "example": {
+    "scenario": "An employee earning SGD $80,000 annually in Singapore (under 55 years old) with standard deductions.",
+    "results": "Gross salary: SGD $80,000 | Income tax: $7,000 | CPF: $15,200 | Net salary: $57,800 | Monthly net: $4,817"
+  },
+  "whyUseSalaryCalculatorSingapore": [
+    "Accurate budgeting based on your actual take-home pay",
+    "Compare job offers using real net income figures",
+    "Plan for tax withholdings and avoid surprises",
+    "Make informed decisions about CPF contribution rates",
+    "Understand the impact of income tax on your salary",
+    "Prepare for year-end tax planning and refunds"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include CPF contributions?",
+      "answer": "Yes, it includes Central Provident Fund contributions for Singapore citizens and permanent residents, with rates varying by age group."
+    },
+    {
+      "question": "Can I include insurance or other deductions?",
+      "answer": "Yes, you can add additional deductions like health insurance, life insurance, or other pre-tax benefits that reduce your taxable income."
+    },
+    {
+      "question": "Is this calculator accurate for all Singapore residents?",
+      "answer": "Yes, it includes calculations for all Singapore residents including citizens, permanent residents, and foreigners, with appropriate CPF rates."
+    },
+    {
+      "question": "Can I calculate monthly take-home pay?",
+      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+    },
+    {
+      "question": "Is this Singapore salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your IRAS tax assessment annually to ensure proper tax withholdings",
+    "Consider additional CPF voluntary contributions for retirement planning",
+    "Use tax-advantaged savings accounts when possible",
+    "Keep track of year-to-date earnings for accurate tax planning",
+    "Consult a tax advisor for personalized advice on complex tax situations"
+  ]
+}

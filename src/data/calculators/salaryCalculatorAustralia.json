@@ -1,0 +1,65 @@
+{
+  "id": "salaryCalculatorAustralia",
+  "name": "Salary Calculator (Australia)",
+  "description": "Calculate net salary after Australian income tax and Medicare levy",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 70000,
+      "unit": "AUD $",
+      "placeholder": "70000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "AUD $",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like superannuation, insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "incomeTax": "taxableIncome <= 18200 ? 0 : taxableIncome <= 45000 ? (taxableIncome - 18200) * 0.19 : taxableIncome <= 120000 ? 5092 + (taxableIncome - 45000) * 0.325 : taxableIncome <= 180000 ? 29467 + (taxableIncome - 120000) * 0.37 : 51667 + (taxableIncome - 180000) * 0.45",
+    "medicareLevy": "annualGross * 0.02",
+    "totalDeductions": "incomeTax + medicareLevy + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "medicareLevy": "Medicare Levy",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "AUD $",
+    "medicareLevy": "AUD $",
+    "totalDeductions": "AUD $",
+    "netSalary": "AUD $",
+    "monthlyNet": "AUD $"
+  }
+}

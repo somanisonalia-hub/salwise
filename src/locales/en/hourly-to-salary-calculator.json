@@ -1,0 +1,83 @@
+{
+  "slug": "hourly-to-salary-calculator",
+  "type": "calculator",
+  "h1": "Hourly to Salary Calculator – Convert Hourly Pay to Annual Income",
+  "metaTitle": "Hourly to Salary Calculator – Convert Hourly Pay to Salary",
+  "metaDescription": "Use our hourly to salary calculator to convert your hourly wage into annual and monthly income. Fast, simple, and free.",
+  "primaryKeyword": "hourly to salary calculator",
+  "longTailKeywords": [
+    "convert hourly wage to salary",
+    "hourly to annual salary",
+    "hourly rate to yearly salary",
+    "calculate salary from hourly wage",
+    "hourly to monthly salary",
+    "hourly pay calculator",
+    "how much is hourly pay yearly"
+  ],
+  "related": [
+    "salary-calculator",
+    "take-home-pay-calculator",
+    "overtime-pay-calculator",
+    "salary-calculator-canada"
+  ],
+  "dataRef": "hourlyToSalary",
+  "intro": "Converting hourly wages to annual salary is essential for comparing job offers, planning budgets, and understanding your true earning potential. This calculator helps you quickly convert your hourly rate into annual, monthly, and weekly income based on your working hours. Whether you're comparing part-time opportunities, evaluating contract work, or simply curious about your annual earnings, this tool provides clear, accurate calculations.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howHourlyConvertsToSalary": "Hourly pay converts to salary through a straightforward calculation: multiply your hourly rate by the number of hours you work per week, then multiply that by the number of weeks you work per year. For example, if you earn €20 per hour and work 40 hours per week for 52 weeks, your annual salary would be €20 × 40 × 52 = €41,600. This calculation provides a clear picture of your total compensation and makes it easy to compare different employment opportunities.",
+  "example": {
+    "scenario": "An employee earning €25 per hour, working 40 hours per week for 52 weeks per year.",
+    "results": "Hourly rate: €25 | Hours per week: 40 | Weeks per year: 52 | Annual salary: €52,000 | Monthly salary: €4,333 | Weekly salary: €1,000"
+  },
+  "factorsAffectingSalary": [
+    "Full-time vs part-time hours worked per week",
+    "Number of weeks worked annually (excluding unpaid leave)",
+    "Overtime hours at premium rates",
+    "Paid vacation and holiday time",
+    "Sick leave and other paid time off",
+    "Seasonal variations in working hours"
+  ],
+  "whenToUseHourlyToSalary": [
+    "Comparing job offers with different pay structures",
+    "Evaluating contract or freelance opportunities",
+    "Planning personal or household budgets",
+    "Understanding tax implications of different income levels",
+    "Negotiating salary based on hourly equivalent",
+    "Converting between part-time and full-time positions"
+  ],
+  "faqs": [
+    {
+      "question": "How many hours are considered full-time for salary conversion?",
+      "answer": "Full-time employment is typically 40 hours per week, which is the standard used in most salary calculations. However, you can adjust this based on your specific work situation."
+    },
+    {
+      "question": "Does this calculator include overtime pay?",
+      "answer": "Yes, you can include overtime hours separately. The calculator will show both regular and overtime pay calculations for a complete picture of your earnings."
+    },
+    {
+      "question": "How accurate is the hourly to salary conversion?",
+      "answer": "The calculation is mathematically precise based on the hours and rates you provide. Accuracy depends on entering correct information about your working hours and pay rate."
+    },
+    {
+      "question": "Can I calculate monthly salary from hourly wages?",
+      "answer": "Yes! The calculator provides annual, monthly, and weekly salary breakdowns, making it easy to understand your income at different time intervals."
+    },
+    {
+      "question": "Is this hourly to salary calculator free to use?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Use standard full-time hours (40/week) for most accurate comparisons",
+    "Include all paid hours including overtime when possible",
+    "Consider the number of working weeks per year (typically 52 minus vacation)",
+    "Use this tool to compare different job opportunities fairly",
+    "Remember that salaried positions may include benefits not reflected in hourly calculations"
+  ]
+}

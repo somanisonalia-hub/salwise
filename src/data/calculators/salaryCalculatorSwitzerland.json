@@ -1,0 +1,66 @@
+{
+  "id": "salaryCalculatorSwitzerland",
+  "name": "Salary Calculator (Switzerland)",
+  "description": "Calculate net salary after Swiss income tax and social security contributions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 100000,
+      "unit": "CHF",
+      "placeholder": "100000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "CHF",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like pension, insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "federalTax": "taxableIncome <= 13700 ? 0 : taxableIncome <= 22500 ? (taxableIncome - 13700) * 0.077 : taxableIncome <= 36400 ? 725 * 0.077 + (taxableIncome - 22500) * 0.088 : taxableIncome <= 85400 ? 725 * 0.077 + 1210 * 0.088 + (taxableIncome - 36400) * 0.11 : 725 * 0.077 + 1210 * 0.088 + 4900 * 0.11 + (taxableIncome - 85400) * 0.1297",
+    "cantonalTax": "taxableIncome <= 13700 ? 0 : taxableIncome <= 22500 ? (taxableIncome - 13700) * 0.077 : taxableIncome <= 36400 ? 725 * 0.077 + (taxableIncome - 22500) * 0.088 : taxableIncome <= 85400 ? 725 * 0.077 + 1210 * 0.088 + (taxableIncome - 36400) * 0.11 : 725 * 0.077 + 1210 * 0.088 + 4900 * 0.11 + (taxableIncome - 85400) * 0.1297",
+    "incomeTax": "federalTax + cantonalTax",
+    "socialContributions": "annualGross * 0.053",
+    "totalDeductions": "incomeTax + socialContributions + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "socialContributions": "Social Security Contributions",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "CHF",
+    "socialContributions": "CHF",
+    "totalDeductions": "CHF",
+    "netSalary": "CHF",
+    "monthlyNet": "CHF"
+  }
+}

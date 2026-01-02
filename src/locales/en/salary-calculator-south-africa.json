@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-south-africa",
+  "type": "calculator",
+  "h1": "Salary Calculator – South Africa Net Pay Estimator",
+  "metaTitle": "Salary Calculator South Africa – Calculate Net Pay",
+  "metaDescription": "Use our South Africa salary calculator to estimate your take-home pay. Includes income tax, UIF contributions, and other deductions. Quick and free.",
+  "primaryKeyword": "salary calculator South Africa",
+  "longTailKeywords": [
+    "South Africa salary calculator after tax",
+    "net pay calculator South Africa",
+    "take home salary South Africa",
+    "gross to net salary South Africa",
+    "payroll calculator South Africa",
+    "SA income tax calculator",
+    "salary calculator ZA"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator-new-zealand"
+  ],
+  "dataRef": "salaryCalculatorSouthAfrica",
+  "intro": "Understanding your salary after tax in South Africa is essential for accurate financial planning. This calculator estimates your take-home pay by accounting for South African income tax and Unemployment Insurance Fund (UIF) contributions. Whether you're an employee, contractor, or freelancer working in South Africa, this tool provides localized calculations to help you understand your actual net income and make informed financial decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howSalaryAfterTaxWorksSouthAfrica": "Salary after tax in South Africa involves several mandatory deductions from your gross pay. Income tax is calculated using progressive tax brackets based on your taxable income. The Unemployment Insurance Fund (UIF) is a mandatory contribution that provides benefits in case of unemployment. These contributions are shared between employees and employers, but the calculator shows the employee portion. Optional deductions like retirement annuity funds and medical aid can further reduce your taxable income and increase your take-home pay. The result is your net salary - the actual amount you'll receive in your bank account.",
+  "example": {
+    "scenario": "An employee earning ZAR 500,000 annually in Johannesburg with standard deductions.",
+    "results": "Gross salary: ZAR 500,000 | Income tax: ZAR 120,000 | UIF: ZAR 3,600 | Net salary: ZAR 376,400 | Monthly net: ZAR 31,367"
+  },
+  "whyUseSalaryCalculatorSouthAfrica": [
+    "Accurate budgeting based on your actual take-home pay",
+    "Compare job offers using real net income figures",
+    "Plan for tax withholdings and avoid surprises",
+    "Make informed decisions about pre-tax deductions",
+    "Understand the impact of UIF contributions on your salary",
+    "Prepare for year-end tax planning and refunds"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include UIF contributions?",
+      "answer": "Yes, it includes South African Unemployment Insurance Fund (UIF) contributions that provide unemployment benefits."
+    },
+    {
+      "question": "Can I include retirement fund or medical aid deductions?",
+      "answer": "Yes, you can add retirement annuity fund contributions and medical aid as deductions that reduce your taxable income."
+    },
+    {
+      "question": "Is this calculator accurate for all South African provinces?",
+      "answer": "Yes, it includes South Africa-wide tax rates and UIF contribution rates that apply across all provinces."
+    },
+    {
+      "question": "Can I calculate monthly take-home pay?",
+      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+    },
+    {
+      "question": "Is this South Africa salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your annual tax return (IT12) to ensure proper tax withholdings",
+    "Consider retirement annuity fund contributions for tax benefits",
+    "Use tax-advantaged savings accounts when possible",
+    "Keep track of year-to-date earnings for accurate tax planning",
+    "Consult a tax advisor for personalized advice on complex tax situations"
+  ]
+}

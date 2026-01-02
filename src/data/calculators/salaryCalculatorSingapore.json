@@ -1,0 +1,64 @@
+{
+  "id": "salaryCalculatorSingapore",
+  "name": "Salary Calculator (Singapore)",
+  "description": "Calculate net salary after Singapore income tax and CPF contributions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 80000,
+      "unit": "SGD $",
+      "placeholder": "80000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "SGD $",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "incomeTax": "taxableIncome <= 20000 ? 0 : taxableIncome <= 30000 ? (taxableIncome - 20000) * 0.02 : taxableIncome <= 40000 ? 200 + (taxableIncome - 30000) * 0.035 : taxableIncome <= 80000 ? 550 + (taxableIncome - 40000) * 0.07 : taxableIncome <= 120000 ? 3350 + (taxableIncome - 80000) * 0.115 : taxableIncome <= 160000 ? 9200 + (taxableIncome - 120000) * 0.15 : taxableIncome <= 200000 ? 15200 + (taxableIncome - 160000) * 0.18 : taxableIncome <= 240000 ? 21800 + (taxableIncome - 200000) * 0.19 : taxableIncome <= 280000 ? 31400 + (taxableIncome - 240000) * 0.195 : taxableIncome <= 320000 ? 39200 + (taxableIncome - 280000) * 0.20 : 47200 + (taxableIncome - 320000) * 0.22",
+    "cpfContribution": "annualGross <= 6000 ? annualGross * 0.05 : annualGross <= 30000 ? annualGross * 0.17 : annualGross * 0.20",
+    "totalDeductions": "incomeTax + cpfContribution + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "cpfContribution": "CPF Contributions",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "SGD $",
+    "cpfContribution": "SGD $",
+    "totalDeductions": "SGD $",
+    "netSalary": "SGD $",
+    "monthlyNet": "SGD $"
+  }
+}

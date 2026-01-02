@@ -1,0 +1,55 @@
+{
+  "slug": "hourly-to-salary",
+  "type": "calculator",
+  "h1": "Hourly to Salary Calculator",
+  "metaTitle": "Hourly to Salary Calculator | Wage to Annual Salary Converter | SalaryWise.io",
+  "metaDescription": "Convert hourly wages to annual salary. Compare hourly vs salaried positions, calculate overtime pay, and understand total compensation.",
+  "primaryKeyword": "hourly to salary calculator",
+  "longTailKeywords": [
+    "wage converter",
+    "annual salary",
+    "hourly vs salary",
+    "overtime calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "take-home-pay",
+    "overtime-pay"
+  ],
+  "dataRef": "hourlyToSalary",
+  "intro": {
+    "title": "Convert Hourly Wages to Annual Salary",
+    "description": "Easily convert your hourly wage to annual salary equivalent. Compare compensation between hourly and salaried positions.",
+    "features": [
+      "Annual salary calculations",
+      "Overtime pay estimates",
+      "Weekly vs bi-weekly options",
+      "Hourly vs salary comparisons"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How do I calculate annual salary from hourly wage?",
+      "answer": "Multiply your hourly rate by hours worked per week, then multiply by weeks worked per year. For example: $25 × 40 × 52 = $52,000 annual salary."
+    },
+    {
+      "question": "Is overtime included in the calculation?",
+      "answer": "You can choose to include overtime calculations. Overtime hours are paid at 1.5x your regular rate."
+    },
+    {
+      "question": "What's better: hourly or salaried?",
+      "answer": "It depends on your situation. Hourly positions offer overtime pay, while salaried positions typically include benefits and paid time off."
+    },
+    {
+      "question": "How does this affect taxes?",
+      "answer": "Both hourly and salaried income are taxed the same way. The main difference is in tax withholding and benefit calculations."
+    }
+  ],
+  "tips": [
+    "Consider total compensation, not just hourly rate",
+    "Factor in benefits and paid time off",
+    "Calculate overtime potential",
+    "Research industry salary ranges",
+    "Use for job offer comparisons"
+  ]
+}

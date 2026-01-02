@@ -1,0 +1,75 @@
+{
+  "slug": "bonus-calculator",
+  "type": "calculator",
+  "h1": "Bonus Calculator – Calculate Your Bonus After Tax",
+  "metaTitle": "Bonus Calculator – Calculate Your Net Bonus After Tax",
+  "metaDescription": "Use our free bonus calculator to see your take-home bonus after tax. Quick, accurate, and easy to use.",
+  "primaryKeyword": "bonus calculator",
+  "longTailKeywords": [
+    "annual bonus calculator",
+    "calculate bonus after tax",
+    "bonus pay calculator",
+    "bonus calculator net salary",
+    "performance bonus calculator",
+    "bonus income calculator",
+    "bonus calculator online"
+  ],
+  "related": [
+    "salary-calculator",
+    "take-home-pay-calculator",
+    "overtime-pay-calculator",
+    "salary-calculator-uk"
+  ],
+  "dataRef": "bonusCalculator",
+  "intro": "Calculating bonuses after tax can be tricky since bonuses are often taxed at higher rates than regular salary. This bonus calculator helps you determine your actual take-home bonus amount by accounting for income taxes, Social Security, Medicare, and other deductions. Perfect for employees, sales professionals, managers, and anyone receiving performance bonuses or commissions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howBonusesAreCalculated": "Bonus calculations start with your gross bonus amount and apply various tax deductions. First, federal income tax is calculated based on your tax bracket. Then, FICA taxes (Social Security and Medicare) are applied at the full rate. State income tax may also apply depending on your location. The result is your net bonus - the actual amount you'll receive in your paycheck or bank account.",
+  "example": {
+    "scenario": "An employee receives a €5,000 performance bonus with a 20% tax rate.",
+    "results": "Gross bonus: €5,000 | Estimated tax: €1,000 | Net bonus: €4,000 | Added to annual salary: €4,000"
+  },
+  "whyUseBonusCalculator": [
+    "Understand your true take-home bonus amount before taxes are withheld",
+    "Plan your spending and savings based on actual bonus income",
+    "Compare job offers that include different bonus structures",
+    "Negotiate better compensation packages with accurate net calculations",
+    "Make informed decisions about bonus deferral or investment options",
+    "Prepare for year-end tax planning and bracket management"
+  ],
+  "faqs": [
+    {
+      "question": "Is this bonus calculator accurate?",
+      "answer": "This calculator provides reliable estimates based on standard tax rates and deduction percentages. Actual amounts may vary based on your specific tax situation, location, and employer policies."
+    },
+    {
+      "question": "Does the bonus calculator include tax deductions?",
+      "answer": "Yes, it includes estimates for federal income tax, FICA taxes (Social Security and Medicare), and allows you to add state or local tax rates for more accurate calculations."
+    },
+    {
+      "question": "Can I calculate recurring bonuses?",
+      "answer": "Yes! You can calculate bonuses that occur monthly, quarterly, or annually by adjusting the bonus amount and frequency accordingly."
+    },
+    {
+      "question": "Can I combine bonus calculations with my regular salary?",
+      "answer": "This calculator focuses specifically on bonus amounts. For combined salary and bonus calculations, use our salary calculator and add the bonus amount separately."
+    },
+    {
+      "question": "Is this bonus calculator free to use?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser with no data stored on our servers."
+    }
+  ],
+  "tips": [
+    "Bonuses are often taxed at higher effective rates than regular salary",
+    "Consider the timing of bonuses for optimal tax planning",
+    "Some employers offer bonus deferral options to spread out taxation",
+    "Use tax-advantaged retirement accounts when possible",
+    "Consult with a tax professional for personalized bonus tax planning"
+  ]
+}

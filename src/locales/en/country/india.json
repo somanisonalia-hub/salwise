@@ -1,0 +1,114 @@
+{
+  "slug": "country/india",
+  "type": "guide",
+  "h1": "India Salary Calculator",
+  "metaTitle": "India Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "metaDescription": "Calculate take-home pay in India including income tax, professional tax, and provident fund contributions. Accurate Indian tax calculations.",
+  "primaryKeyword": "india salary calculator",
+  "longTailKeywords": [
+    "India salary calculator",
+    "indian tax calculator",
+    "take home pay India",
+    "PF calculator",
+    "professional tax"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net",
+    "country/australia"
+  ],
+  "title": "India Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "description": "Calculate take-home pay in India including income tax, professional tax, and provident fund contributions. Accurate Indian tax calculations.",
+  "keywords": "India salary calculator, indian tax calculator, take home pay India, PF calculator, professional tax",
+  "canonical": "https://salarywise.io/en/country/india",
+
+  "header": {
+    "title": "India Salary Calculator",
+    "subtitle": "Calculate your take-home pay with accurate Indian tax calculations"
+  },
+
+  "intro": {
+    "paragraph1": "Indian salary calculations include income tax under the new tax regime, professional tax (state-specific), and Employee Provident Fund (EPF) contributions. Tax rates vary by income level and tax regime chosen.",
+    "paragraph2": "Enter your gross salary and tax regime preference to get accurate calculations based on current Indian tax rates."
+  },
+
+  "incomeTax": {
+    "title": "Indian Income Tax Rates 2024 (New Tax Regime)",
+    "brackets": [
+      {"range": "₹0 - ₹3,00,000", "rate": "0%"},
+      {"range": "₹3,00,001 - ₹7,00,000", "rate": "5%"},
+      {"range": "₹7,00,001 - ₹10,00,000", "rate": "10%"},
+      {"range": "₹10,00,001 - ₹12,00,000", "rate": "15%"},
+      {"range": "₹12,00,001 - ₹15,00,000", "rate": "20%"},
+      {"range": "₹15,00,001+", "rate": "30%"}
+    ]
+  },
+
+  "oldRegime": {
+    "title": "Old Tax Regime (Still Available)",
+    "brackets": [
+      {"range": "₹0 - ₹2,50,000", "rate": "0%"},
+      {"range": "₹2,50,001 - ₹5,00,000", "rate": "5%"},
+      {"range": "₹5,00,001 - ₹10,00,000", "rate": "20%"},
+      {"range": "₹10,00,001+", "rate": "30%"}
+    ]
+  },
+
+  "epf": {
+    "title": "Employee Provident Fund (EPF)",
+    "employeeRate": "12% of basic salary + DA",
+    "employerRate": "12% (matched contribution)",
+    "note": "Voluntary Employee Pension Scheme (VEPS) is optional"
+  },
+
+  "professionalTax": {
+    "title": "Professional Tax",
+    "description": "State-specific tax on employment",
+    "examples": [
+      "Maharashtra: ₹2,400-₹4,200/year",
+      "Karnataka: ₹0-₹1,200/year",
+      "Tamil Nadu: ₹0-₹2,400/year"
+    ]
+  },
+
+  "examples": {
+    "title": "Indian Salary Calculation Examples",
+    "scenarios": [
+      {
+        "title": "Software Engineer - Bangalore (New Regime)",
+        "gross": "₹12,00,000",
+        "details": {
+          "incomeTax": "₹1,12,500 (9.4%)",
+          "epf": "₹1,44,000 (12%)",
+          "professionalTax": "₹1,200 (0.1%)",
+          "netPay": "₹9,42,300 (78.5% of gross)"
+        }
+      },
+      {
+        "title": "Manager - Mumbai (Old Regime)",
+        "gross": "₹8,00,000",
+        "details": {
+          "incomeTax": "₹92,500 (11.6%)",
+          "epf": "₹96,000 (12%)",
+          "professionalTax": "₹2,400 (0.3%)",
+          "netPay": "₹6,09,100 (76.1% of gross)"
+        }
+      }
+    ]
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "India Salary Calculator",
+    "url": "https://salarywise.io/en/country/india",
+    "applicationCategory": "Calculator",
+    "description": "Calculate take-home pay in India including income tax, professional tax, and EPF contributions",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "INR"
+    }
+  }
+}

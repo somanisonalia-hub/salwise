@@ -1,0 +1,33 @@
+{
+  "id": "ukSalary",
+  "name": "UK Salary Calculator",
+  "description": "Calculate take-home pay in the United Kingdom",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 35000,
+      "unit": "£"
+    },
+    {
+      "id": "taxCode",
+      "label": "Tax Code (Optional)",
+      "type": "text",
+      "default": "1257L",
+      "unit": ""
+    }
+  ],
+  "formula": {
+    "personalAllowance": "12570",
+    "taxableIncome": "grossSalary - personalAllowance",
+    "basicRateTax": "taxableIncome > 0 ? Math.min(taxableIncome, 37700) * 0.20 : 0",
+    "higherRateTax": "taxableIncome > 37700 ? Math.min(taxableIncome - 37700, 125140 - 37700) * 0.40 : 0",
+    "additionalRateTax": "taxableIncome > 125140 ? (taxableIncome - 125140) * 0.45 : 0",
+    "totalIncomeTax": "basicRateTax + higherRateTax + additionalRateTax",
+    "employeeNI": "grossSalary > 12570 ? (Math.min(grossSalary, 50270) - 12570) * 0.08 + Math.max(grossSalary - 50270, 0) * 0.02 : 0",
+    "totalDeductions": "totalIncomeTax + employeeNI",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

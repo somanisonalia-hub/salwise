@@ -1,0 +1,73 @@
+{
+  "id": "overtimePay",
+  "name": "Overtime Pay Calculator",
+  "description": "Calculate extra earnings from overtime work",
+  "inputs": [
+    {
+      "id": "hourlyRate",
+      "label": "Hourly Rate",
+      "type": "number",
+      "default": 20,
+      "unit": "$",
+      "placeholder": "20",
+      "required": true,
+      "min": 0,
+      "description": "Your regular hourly wage"
+    },
+    {
+      "id": "overtimeHours",
+      "label": "Overtime Hours Worked",
+      "type": "number",
+      "default": 10,
+      "unit": "hours",
+      "placeholder": "10",
+      "required": true,
+      "min": 0,
+      "description": "Number of overtime hours worked"
+    },
+    {
+      "id": "overtimeMultiplier",
+      "label": "Overtime Multiplier",
+      "type": "select",
+      "default": "1.5",
+      "options": [
+        {"value": "1.5", "label": "1.5x (Time and a Half)"},
+        {"value": "2.0", "label": "2.0x (Double Time)"},
+        {"value": "2.5", "label": "2.5x (Premium Rate)"}
+      ],
+      "required": true,
+      "description": "Multiplier applied to overtime hours"
+    },
+    {
+      "id": "taxRate",
+      "label": "Tax Rate (Optional)",
+      "type": "number",
+      "default": 0,
+      "unit": "%",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "max": 50,
+      "description": "Optional tax rate for net calculations"
+    }
+  ],
+  "formula": {
+    "overtimeRate": "hourlyRate * parseFloat(overtimeMultiplier)",
+    "totalOvertimePay": "overtimeHours * overtimeRate",
+    "taxAmount": "taxRate > 0 ? totalOvertimePay * (taxRate / 100) : 0",
+    "netOvertimePay": "totalOvertimePay - taxAmount",
+    "regularEquivalent": "totalOvertimePay / hourlyRate"
+  },
+  "outputLabels": {
+    "totalOvertimePay": "Total Overtime Pay",
+    "taxAmount": "Tax Amount (if applicable)",
+    "netOvertimePay": "Net Overtime Pay",
+    "regularEquivalent": "Regular Hours Equivalent"
+  },
+  "outputUnits": {
+    "totalOvertimePay": "$",
+    "taxAmount": "$",
+    "netOvertimePay": "$",
+    "regularEquivalent": "hours"
+  }
+}

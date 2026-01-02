@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-engineering",
+  "type": "calculator",
+  "h1": "Engineering Salary Calculator – Net Pay Estimator",
+  "metaTitle": "Engineering Salary Calculator – Calculate Net Pay",
+  "metaDescription": "Use our Engineering salary calculator to estimate your take-home pay. Includes income tax, social contributions, and deductions. Quick and free.",
+  "primaryKeyword": "engineering salary calculator",
+  "longTailKeywords": [
+    "mechanical engineer salary calculator",
+    "civil engineer net pay calculator",
+    "electrical engineer take-home pay calculator",
+    "engineering jobs gross to net salary",
+    "net pay calculator engineering roles",
+    "engineering professional salary calculator"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "salary-calculator-it-tech",
+    "salary-calculator-healthcare"
+  ],
+  "dataRef": "salaryCalculatorEngineering",
+  "intro": "Engineering professionals often have specialized compensation structures that require detailed calculations to understand your true take-home pay. This calculator estimates your net salary by accounting for income tax and social contributions specific to engineering roles. Whether you're a mechanical, civil, electrical, or software engineer, this tool provides accurate calculations to help you understand your actual earnings and make informed career decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howEngineeringSalariesAreCalculated": "Engineering salaries typically include base pay plus potential bonuses, overtime, and specialized certifications. Gross salary is calculated based on market rates for specific engineering disciplines. Standard deductions include federal/state income tax, Social Security and Medicare contributions, and optional deductions like retirement contributions, professional liability insurance, and continuing education funds. The result is your net salary - the actual amount you'll receive in your bank account after all deductions.",
+  "example": {
+    "scenario": "A mechanical engineer earning $75,000 annually in the United States with standard deductions.",
+    "results": "Gross salary: $75,000 | Income tax: $13,500 | Social contributions: $5,775 | Net salary: $55,725 | Monthly net: $4,644"
+  },
+  "whyUseAnEngineeringSalaryCalculator": [
+    "Compare job offers from different engineering firms",
+    "Plan your budget and understand your actual take-home pay",
+    "Negotiate salary packages more effectively",
+    "Calculate the impact of bonuses and certifications",
+    "Understand how different locations affect your net pay",
+    "Make informed decisions about benefits and deductions"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include tax and social contributions for engineering jobs?",
+      "answer": "Yes, it includes federal and state income tax, Social Security, Medicare, and other standard deductions applicable to engineering professionals."
+    },
+    {
+      "question": "Can I calculate salaries for different countries?",
+      "answer": "Yes, select your country to get localized calculations including taxes and social contributions specific to that location."
+    },
+    {
+      "question": "Is this accurate for all engineering disciplines?",
+      "answer": "Yes, it works for all engineering disciplines including mechanical, civil, electrical, chemical, software, and other engineering fields."
+    },
+    {
+      "question": "Can I include bonuses or overtime pay?",
+      "answer": "Yes, you can add bonuses, overtime pay, and certification stipends to the base salary for a complete net pay calculation."
+    },
+    {
+      "question": "Is this engineering salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your employment contract carefully for all compensation components",
+    "Consider the total compensation package including benefits and certifications",
+    "Use industry salary surveys to validate calculations",
+    "Factor in cost of living when comparing offers",
+    "Consult with a tax professional for personalized advice",
+    "Keep track of year-to-date earnings for accurate tax planning"
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "title": "Salary Guides & Tips | Compensation Advice | SalaryWise.io",
+  "description": "Comprehensive guides on salary negotiation, tax planning, career advancement, and compensation strategies. Free expert advice for job seekers and professionals.",
+  "keywords": "salary guide, compensation advice, salary negotiation tips, career advancement, pay advice",
+  "canonical": "https://salarywise.io/en/guides",
+
+  "header": {
+    "title": "Salary Guides & Tips",
+    "subtitle": "Expert advice for maximizing your compensation"
+  },
+
+  "intro": {
+    "paragraph1": "Understanding salary, taxes, and compensation is crucial for financial success. Our comprehensive guides cover everything from salary negotiation strategies to tax optimization techniques.",
+    "paragraph2": "Whether you're looking for a new job, negotiating a raise, or planning your career, our expert guides provide actionable advice to help you maximize your earning potential."
+  },
+
+  "categories": [
+    {
+      "name": "Salary Negotiation",
+      "description": "Learn proven strategies to negotiate higher pay and better benefits",
+      "guides": [
+        {
+          "title": "Salary Negotiation Tips",
+          "description": "Master the art of negotiating job offers and raises",
+          "href": "/en/guides/salary-negotiation",
+          "readTime": "8 min read"
+        }
+      ]
+    },
+    {
+      "name": "Tax & Finance",
+      "description": "Understand taxes, deductions, and financial planning",
+      "guides": [
+        {
+          "title": "Gross vs Net Salary",
+          "description": "The complete guide to understanding take-home pay",
+          "href": "/en/guides/gross-vs-net",
+          "readTime": "6 min read"
+        },
+        {
+          "title": "How to Calculate Take-Home Pay",
+          "description": "Step-by-step guide to net salary calculation",
+          "href": "/en/guides/how-to-calculate-take-home",
+          "readTime": "10 min read"
+        }
+      ]
+    },
+    {
+      "name": "Career Development",
+      "description": "Advance your career and increase your earning potential",
+      "guides": [
+        {
+          "title": "Career Advancement Strategies",
+          "description": "Tips for getting promoted and increasing your salary",
+          "href": "/en/guides/career-advancement",
+          "readTime": "12 min read"
+        }
+      ]
+    }
+  ],
+
+  "popularGuides": {
+    "title": "Most Popular Guides",
+    "guides": [
+      {
+        "title": "Gross vs Net Salary Guide",
+        "description": "Learn the difference between gross and net pay",
+        "href": "/en/guides/gross-vs-net",
+        "readTime": "6 min read",
+        "views": "25K+ views"
+      },
+      {
+        "title": "Salary Negotiation Strategies",
+        "description": "Get proven tips for negotiating higher pay",
+        "href": "/en/guides/salary-negotiation",
+        "readTime": "8 min read",
+        "views": "18K+ views"
+      },
+      {
+        "title": "Take-Home Pay Calculator Guide",
+        "description": "Complete guide to calculating net salary",
+        "href": "/en/guides/how-to-calculate-take-home",
+        "readTime": "10 min read",
+        "views": "15K+ views"
+      }
+    ]
+  },
+
+  "tools": {
+    "title": "Salary Planning Tools",
+    "description": "Free calculators and tools to help with salary planning",
+    "items": [
+      {
+        "title": "Salary Calculator",
+        "description": "Calculate annual, monthly, and hourly rates",
+        "href": "/en/salary-calculator",
+        "icon": "calculator"
+      },
+      {
+        "title": "Gross to Net Calculator",
+        "description": "Convert gross salary to net take-home pay",
+        "href": "/en/gross-to-net",
+        "icon": "convert"
+      },
+      {
+        "title": "Tax Calculator",
+        "description": "Estimate federal and state tax obligations",
+        "href": "/en/take-home-pay",
+        "icon": "tax"
+      }
+    ]
+  },
+
+  "newsletter": {
+    "title": "Stay Updated",
+    "description": "Get the latest salary trends, negotiation tips, and career advice delivered to your inbox.",
+    "button": {
+      "text": "Subscribe to Updates",
+      "href": "/en"
+    }
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Salary Guides & Tips",
+    "description": "Comprehensive guides on salary negotiation, tax planning, and compensation strategies"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "slug": "net-to-gross-salary",
+  "type": "calculator",
+  "h1": "Net to Gross Salary Calculator – Convert Take-Home Pay to Gross",
+  "metaTitle": "Net to Gross Salary Calculator – Convert Take-Home Pay to Gross",
+  "metaDescription": "Use our net to gross salary calculator to estimate the gross salary needed to get your desired take-home pay. Fast and simple.",
+  "primaryKeyword": "net to gross salary calculator",
+  "longTailKeywords": [
+    "net to gross salary",
+    "convert net salary to gross",
+    "calculate gross salary from net",
+    "net pay to gross pay",
+    "net to gross income calculator",
+    "gross salary before tax from net",
+    "reverse salary calculator"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "salary-calculator",
+    "salary-calculator-germany"
+  ],
+  "dataRef": "netToGross",
+  "intro": "When negotiating job offers or planning your finances, you often need to work backwards from your desired take-home pay to determine what gross salary you require. This net to gross calculator helps you estimate the gross salary needed to achieve your target net income after taxes and deductions. Whether you're comparing job offers, negotiating contracts, or converting freelance rates to employment terms, this reverse calculation gives you the complete salary picture.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "whatDoesNetToGrossMean": "Net to gross salary conversion is the reverse process of the more common gross to net calculation. While gross salary represents your total compensation before any deductions, net salary is what you actually receive after taxes and withholdings are subtracted. The net to gross calculation works backwards: starting from your desired net income and adding back the estimated taxes and deductions to determine what gross salary would be required to achieve that take-home amount. This is particularly useful when job offers are quoted as net amounts or when you need to compare different compensation packages on an apples-to-apples basis.",
+  "howNetConvertsToGross": "Our calculator starts with your desired net take-home pay and works backwards through the deduction process. We add back the estimated income tax based on the tax rate you provide, then include any additional deductions you've specified. The result is the gross salary you would need to earn to receive your target net amount. This reverse engineering approach gives you clarity on the true cost of achieving your desired take-home pay, making salary negotiations and financial planning much more precise.",
+  "example": {
+    "scenario": "An employee wants €3,000 monthly net take-home pay with 25% tax rate and €150 monthly deductions.",
+    "results": "Monthly net: €3,000 | Estimated tax: €950 | Total deductions: €1,100 | Required monthly gross: €4,100 | Required annual gross: €49,200"
+  },
+  "whenToUseNetToGross": [
+    "Evaluating job offers quoted as net salary amounts",
+    "Negotiating contracts where take-home pay is the key factor",
+    "Comparing different compensation packages fairly",
+    "Converting freelance or contract rates to equivalent employment salaries",
+    "Planning salary requirements based on desired spending power",
+    "Understanding the gross salary needed for specific net income goals"
+  ],
+  "faqs": [
+    {
+      "question": "Is net to gross salary calculation accurate?",
+      "answer": "This calculator provides reliable estimates based on the tax rate and deductions you input. Actual amounts may vary based on your specific tax situation and local regulations."
+    },
+    {
+      "question": "Does this calculator include tax and social security?",
+      "answer": "Yes, it includes income tax calculations based on your provided tax rate, and you can include additional deductions like social security, health insurance, or retirement contributions."
+    },
+    {
+      "question": "Can I calculate monthly gross salary from monthly net pay?",
+      "answer": "Absolutely! You can input either monthly or annual net amounts, and the calculator will show you the corresponding gross salary in both monthly and annual formats."
+    },
+    {
+      "question": "Is this calculator country-specific?",
+      "answer": "This calculator provides general estimates. For country-specific tax calculations, check our individual country calculators that account for local tax laws and social security systems."
+    },
+    {
+      "question": "Is this net to gross calculator free to use?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser with no data stored on our servers."
+    }
+  ],
+  "tips": [
+    "Use this calculator when job offers specify net salary amounts",
+    "Always verify calculations with a tax professional for accuracy",
+    "Consider all deductions when estimating required gross salary",
+    "Use the results as a starting point for salary negotiations",
+    "Compare multiple scenarios to understand salary trade-offs"
+  ]
+}

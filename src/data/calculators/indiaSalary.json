@@ -1,0 +1,28 @@
+{
+  "id": "indiaSalary",
+  "name": "India Salary Calculator",
+  "description": "Calculate take-home pay in India",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 600000,
+      "unit": "₹"
+    }
+  ],
+  "formula": {
+    "hra": "grossSalary * 0.40",
+    "conveyance": "19200",
+    "lta": "grossSalary * 0.083",
+    "standardDeduction": "50000",
+    "taxableIncome": "grossSalary - hra - conveyance - lta - standardDeduction",
+    "incomeTax": "taxableIncome > 1000000 ? 112500 + (taxableIncome - 1000000) * 0.30 : taxableIncome > 500000 ? 12500 + (taxableIncome - 500000) * 0.20 : taxableIncome > 250000 ? (taxableIncome - 250000) * 0.05 : 0",
+    "cess": "incomeTax * 0.04",
+    "providentFund": "grossSalary * 0.12",
+    "professionalTax": "grossSalary > 21000 ? 2352 : grossSalary > 12000 ? 1176 : 0",
+    "totalDeductions": "incomeTax + cess + providentFund + professionalTax",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-new-zealand",
+  "type": "calculator",
+  "h1": "Salary Calculator – New Zealand Net Pay Estimator",
+  "metaTitle": "Salary Calculator New Zealand – Calculate Net Pay",
+  "metaDescription": "Use our New Zealand salary calculator to estimate your take-home pay. Includes income tax, ACC levies, and other deductions. Quick and free.",
+  "primaryKeyword": "salary calculator New Zealand",
+  "longTailKeywords": [
+    "New Zealand salary calculator after tax",
+    "net pay calculator New Zealand",
+    "take home salary New Zealand",
+    "gross to net salary New Zealand",
+    "payroll calculator New Zealand",
+    "NZ income tax calculator",
+    "salary calculator NZ"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator-australia"
+  ],
+  "dataRef": "salaryCalculatorNewZealand",
+  "intro": "Understanding your salary after tax in New Zealand is essential for accurate financial planning. This calculator estimates your take-home pay by accounting for New Zealand income tax and ACC levies. Whether you're an employee, contractor, or freelancer working in New Zealand, this tool provides localized calculations to help you understand your actual net income and make informed financial decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howSalaryAfterTaxWorksNewZealand": "Salary after tax in New Zealand involves several mandatory deductions from your gross pay. Income tax is calculated using progressive tax brackets based on your taxable income. ACC (Accident Compensation Corporation) levies provide coverage for work-related injuries and illnesses. These levies are shared between employees and employers, but the calculator shows the employee portion. Optional deductions like KiwiSaver retirement savings can further reduce your taxable income and increase your take-home pay. The result is your net salary - the actual amount you'll receive in your bank account.",
+  "example": {
+    "scenario": "An employee earning NZD 70,000 annually in Auckland with standard deductions.",
+    "results": "Gross salary: NZD 70,000 | Income tax: NZD 14,000 | ACC levy: NZD 1,050 | Net salary: NZD 54,950 | Monthly net: NZD 4,579"
+  },
+  "whyUseSalaryCalculatorNewZealand": [
+    "Accurate budgeting based on your actual take-home pay",
+    "Compare job offers using real net income figures",
+    "Plan for tax withholdings and avoid surprises",
+    "Make informed decisions about pre-tax deductions",
+    "Understand the impact of ACC levies on your salary",
+    "Prepare for year-end tax planning and refunds"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include ACC levies?",
+      "answer": "Yes, it includes New Zealand ACC (Accident Compensation Corporation) levies for workplace injuries and illnesses."
+    },
+    {
+      "question": "Can I include KiwiSaver or other deductions?",
+      "answer": "Yes, you can add KiwiSaver retirement contributions and private insurance as deductions that reduce your taxable income."
+    },
+    {
+      "question": "Is this calculator accurate for all regions in NZ?",
+      "answer": "Yes, it includes New Zealand-wide tax rates and ACC levy rates that apply across all regions."
+    },
+    {
+      "question": "Can I calculate monthly take-home pay?",
+      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+    },
+    {
+      "question": "Is this New Zealand salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your annual tax return (IR3) to ensure proper tax withholdings",
+    "Consider KiwiSaver contributions for retirement savings and tax benefits",
+    "Use tax-advantaged savings accounts when possible",
+    "Keep track of year-to-date earnings for accurate tax planning",
+    "Consult a tax advisor for personalized advice on complex tax situations"
+  ]
+}

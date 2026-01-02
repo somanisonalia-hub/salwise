@@ -1,0 +1,180 @@
+{
+  "hero": {
+    "title": "Calculadora de Salario Gratis",
+    "subtitle": "Calcula Tu Salario Neto al Instante",
+    "description": "Calcula salario bruto a neto, horas trabajadas, bonos. Cálculos precisos de impuestos para 15+ países.",
+    "cta": {
+      "primary": {
+        "text": "🧮 Calcular Salario",
+        "href": "/salary-calculator"
+      },
+      "secondary": {
+        "text": "📊 Bruto a Neto",
+        "href": "/gross-to-net"
+      }
+    },
+    "trustIndicators": "✓ Gratis ✓ Sin Registro ✓ Preciso ✓ Móvil"
+  },
+  "quickAccess": {
+    "title": "Acceso Rápido",
+    "links": [
+      {
+        "icon": "🧮",
+        "text": "Calculadora",
+        "href": "/salary-calculator"
+      },
+      {
+        "icon": "📊",
+        "text": "Bruto→Neto",
+        "href": "/gross-to-net"
+      },
+      {
+        "icon": "🇺🇸",
+        "text": "EEUU",
+        "href": "/country/usa"
+      },
+      {
+        "icon": "📖",
+        "text": "Guías",
+        "href": "/guides/gross-vs-net"
+      }
+    ]
+  },
+  "calculators": {
+    "title": "Calculadoras Populares",
+    "items": [
+      {
+        "title": "Calculadora de Salario",
+        "description": "Convierte horas a salario anual",
+        "icon": "💰",
+        "href": "/salary-calculator"
+      },
+      {
+        "title": "Bruto a Neto",
+        "description": "Encuentra tu salario neto",
+        "icon": "📊",
+        "href": "/gross-to-net"
+      },
+      {
+        "title": "Salario Neto",
+        "description": "Calcula tu cheque de pago",
+        "icon": "💵",
+        "href": "/take-home-pay"
+      },
+      {
+        "title": "Horas a Salario",
+        "description": "Compara horas vs salario",
+        "icon": "⏰",
+        "href": "/hourly-to-salary"
+      }
+    ]
+  },
+  "countries": {
+    "title": "Calculadoras por País",
+    "description": "Cálculos de impuestos localizados",
+    "items": [
+      {
+        "name": "EEUU",
+        "flag": "🇺🇸",
+        "href": "/country/usa"
+      },
+      {
+        "name": "UK",
+        "flag": "🇬🇧",
+        "href": "/country/uk"
+      },
+      {
+        "name": "Canadá",
+        "flag": "🇨🇦",
+        "href": "/country/canada"
+      },
+      {
+        "name": "Australia",
+        "flag": "🇦🇺",
+        "href": "/country/australia"
+      },
+      {
+        "name": "Irlanda",
+        "flag": "🇮🇪",
+        "href": "/country/ireland"
+      },
+      {
+        "name": "India",
+        "flag": "🇮🇳",
+        "href": "/country/india"
+      }
+    ]
+  },
+  "features": {
+    "title": "¿Por Qué Elegir SalaryWise.io?",
+    "items": [
+      {
+        "title": "Cálculos Preciso",
+        "description": "Fórmulas precisas basadas en tasas de impuestos actuales y regulaciones.",
+        "icon": "check"
+      },
+      {
+        "title": "15+ Países",
+        "description": "Reglas fiscales localizadas y formato de moneda.",
+        "icon": "globe"
+      },
+      {
+        "title": "Rápido y Gratis",
+        "description": "Resultados instantáneos, sin registro requerido.",
+        "icon": "bolt"
+      }
+    ]
+  },
+  "guides": {
+    "title": "Guías de Salario",
+    "items": [
+      {
+        "title": "Salario Bruto vs Neto",
+        "description": "Aprende la diferencia y por qué importa para la planificación financiera.",
+        "href": "/guides/gross-vs-net"
+      },
+      {
+        "title": "Calcular Salario Neto",
+        "description": "Guía paso a paso para calcular tu ingreso neto.",
+        "href": "/guides/how-to-calculate-take-home"
+      },
+      {
+        "title": "Negociación Salarial",
+        "description": "Consejos para negociar mejor compensación.",
+        "href": "/guides/salary-negotiation"
+      }
+    ]
+  },
+  "footer": {
+    "text": "© 2024 SalaryWise.io - Calculadoras de salario gratis para todos."
+  },
+  "mobileNav": {
+    "links": [
+      {
+        "icon": "🧮",
+        "text": "Calculadora",
+        "href": "/salary-calculator"
+      },
+      {
+        "icon": "📊",
+        "text": "Bruto→Neto",
+        "href": "/gross-to-net"
+      },
+      {
+        "icon": "🇺🇸",
+        "text": "EEUU",
+        "href": "/country/usa"
+      },
+      {
+        "icon": "📖",
+        "text": "Guías",
+        "href": "/guides/gross-vs-net"
+      }
+    ]
+  },
+  "seo": {
+    "title": "Calculadora de Salario | Calculadoras Gratuitas de Impuestos | SalaryWise.io",
+    "description": "Calcula salario, horas trabajadas, salario bruto a neto, pago neto. Calculadoras gratis con cálculos precisos de impuestos para 15+ países.",
+    "keywords": "calculadora de salario, bruto a neto, pago neto, horas a salario, calculadora de pago"
+  }
+}

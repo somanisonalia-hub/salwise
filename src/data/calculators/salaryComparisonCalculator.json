@@ -1,0 +1,35 @@
+{
+  "id": "salaryComparisonCalculator",
+  "name": "Salary Comparison Calculator",
+  "description": "Compare multiple salary offers side by side",
+  "inputs": [
+    {
+      "id": "salary1",
+      "label": "Offer 1 - Annual Salary",
+      "type": "number",
+      "default": 50000,
+      "unit": "$"
+    },
+    {
+      "id": "salary2",
+      "label": "Offer 2 - Annual Salary",
+      "type": "number",
+      "default": 52000,
+      "unit": "$"
+    },
+    {
+      "id": "taxRate",
+      "label": "Tax Rate",
+      "type": "number",
+      "default": 25,
+      "unit": "%"
+    }
+  ],
+  "formula": {
+    "netSalary1": "salary1 * (1 - taxRate/100)",
+    "netSalary2": "salary2 * (1 - taxRate/100)",
+    "difference": "salary2 - salary1",
+    "netDifference": "netSalary2 - netSalary1",
+    "percentageDifference": "salary1 > 0 ? ((salary2 - salary1) / salary1) * 100 : 0"
+  }
+}

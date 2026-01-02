@@ -1,0 +1,20 @@
+{
+  "slug": "salary-after-tax-calculator",
+  "type": "calculator",
+  "h1": "Salary After Tax Calculator",
+  "metaTitle": "Salary After Tax Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "metaDescription": "Calculate your actual take-home pay after federal, state, and local taxes. Accurate salary after tax calculations for employees and job seekers.",
+  "primaryKeyword": "salary after tax calculator",
+  "longTailKeywords": [
+    "calculate salary after taxes",
+    "take home pay after tax",
+    "salary minus taxes calculator",
+    "net salary after deductions"
+  ],
+  "related": [
+    "take-home-pay-calculator",
+    "gross-to-net-salary",
+    "salary-calculator"
+  ],
+  "dataRef": "usaSalary"
+}

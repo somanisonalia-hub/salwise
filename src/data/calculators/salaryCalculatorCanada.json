@@ -1,0 +1,91 @@
+{
+  "id": "salaryCalculatorCanada",
+  "name": "Salary Calculator (Canada)",
+  "description": "Calculate net salary after Canadian federal and provincial taxes",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 60000,
+      "unit": "CAD $",
+      "placeholder": "60000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "province",
+      "label": "Province/Territory",
+      "type": "select",
+      "default": "ON",
+      "options": [
+        {"value": "AB", "label": "Alberta (10.0%)"},
+        {"value": "BC", "label": "British Columbia (5.06-20.5%)"},
+        {"value": "MB", "label": "Manitoba (1.9-19.7%)"},
+        {"value": "NB", "label": "New Brunswick (9.68-14.82%)"},
+        {"value": "NL", "label": "Newfoundland and Labrador (8.7-15.3%)"},
+        {"value": "NS", "label": "Nova Scotia (8.79-21.0%)"},
+        {"value": "NT", "label": "Northwest Territories (5.9-14.05%)"},
+        {"value": "NU", "label": "Nunavut (4.0-11.5%)"},
+        {"value": "ON", "label": "Ontario (5.05-13.16%)"},
+        {"value": "PE", "label": "Prince Edward Island (9.65-16.7%)"},
+        {"value": "QC", "label": "Quebec (15.0-25.75%)"},
+        {"value": "SK", "label": "Saskatchewan (10.5-14.7%)"},
+        {"value": "YT", "label": "Yukon (6.4-15.0%)"}
+      ],
+      "required": true,
+      "description": "Select your province or territory for accurate tax calculations"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "biweekly", "label": "Bi-weekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "CAD $",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like RRSP, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'biweekly' ? grossSalary * 26 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "federalTax": "annualGross <= 13140 ? annualGross * 0.15 : annualGross <= 51195 ? 1971 + (annualGross - 13140) * 0.205 : annualGross <= 104835 ? 8768 + (annualGross - 51195) * 0.26 : annualGross <= 165430 ? 24565 + (annualGross - 104835) * 0.29 : 64318 + (annualGross - 165430) * 0.33",
+    "provincialTax": "province === 'AB' ? annualGross * 0.10 : province === 'BC' ? (annualGross <= 24029 ? annualGross * 0.0506 : annualGross <= 48197 ? 1217 + (annualGross - 24029) * 0.077 : annualGross <= 72617 ? 3077 + (annualGross - 48197) * 0.105 : annualGross <= 98746 ? 7261 + (annualGross - 72617) * 0.1229 : annualGross <= 120694 ? 11014 + (annualGross - 98746) * 0.147 : annualGross <= 162831 ? 16192 + (annualGross - 120694) * 0.168 : 23413 + (annualGross - 162831) * 0.205) : province === 'MB' ? (annualGross <= 34431 ? annualGross * 0.019 : annualGross <= 74437 ? 654 + (annualGross - 34431) * 0.051 : annualGross <= 100000 ? 3203 + (annualGross - 74437) * 0.0975 : 6989 + (annualGross - 100000) * 0.174) : province === 'NB' ? (annualGross <= 46695 ? annualGross * 0.0968 : annualGross <= 93393 ? 4522 + (annualGross - 46695) * 0.1082 : annualGross <= 142534 ? 9665 + (annualGross - 93393) * 0.1185 : annualGross <= 205764 ? 16358 + (annualGross - 142534) * 0.1285 : 29567 + (annualGross - 205764) * 0.138) : province === 'NL' ? (annualGross <= 40718 ? annualGross * 0.087 : annualGross <= 81438 ? 3553 + (annualGross - 40718) * 0.116 : annualGross <= 134238 ? 8268 + (annualGross - 81438) * 0.128 : annualGross <= 187091 ? 16408 + (annualGross - 134238) * 0.133 : 23890 + (annualGross - 187091) * 0.153) : province === 'NS' ? (annualGross <= 29590 ? annualGross * 0.0879 : annualGross <= 59180 ? 2598 + (annualGross - 29590) * 0.1495 : annualGross <= 93000 ? 7042 + (annualGross - 59180) * 0.1667 : annualGross <= 150000 ? 13808 + (annualGross - 93000) * 0.175 : annualGross <= 210000 ? 25008 + (annualGross - 150000) * 0.21 : 41508 + (annualGross - 210000) * 0.21) : province === 'NT' ? (annualGross <= 155625 ? annualGross * 0.059 : annualGross <= 311250 ? 9188 + (annualGross - 155625) * 0.086 : annualGross <= 466875 ? 22513 + (annualGross - 311250) * 0.122 : 60063 + (annualGross - 466875) * 0.1405) : province === 'NU' ? (annualGross <= 53259 ? annualGross * 0.04 : annualGross <= 106518 ? 2130 + (annualGross - 53259) * 0.07 : annualGross <= 173205 ? 5865 + (annualGross - 106518) * 0.092 : 13811 + (annualGross - 173205) * 0.115) : province === 'ON' ? (annualGross <= 49231 ? annualGross * 0.0505 : annualGross <= 98463 ? 2487 + (annualGross - 49231) * 0.0915 : annualGross <= 150000 ? 7002 + (annualGross - 98463) * 0.1116 : annualGross <= 220000 ? 13678 + (annualGross - 150000) * 0.1216 : 23418 + (annualGross - 220000) * 0.1316) : province === 'PE' ? (annualGross <= 32656 ? annualGross * 0.0965 : annualGross <= 65313 ? 3151 + (annualGross - 32656) * 0.1138 : annualGross <= 105000 ? 6863 + (annualGross - 65313) * 0.129 : annualGross <= 140000 ? 13003 + (annualGross - 105000) * 0.144 : 18603 + (annualGross - 140000) * 0.167) : province === 'QC' ? (annualGross <= 57375 ? annualGross * 0.15 : annualGross <= 114750 ? 8606 + (annualGross - 57375) * 0.20 : annualGross <= 165430 ? 19946 + (annualGross - 114750) * 0.24 : 38786 + (annualGross - 165430) * 0.2575) : province === 'SK' ? (annualGross <= 52057 ? annualGross * 0.105 : annualGross <= 146238 ? 5466 + (annualGross - 52057) * 0.125 : 16266 + (annualGross - 146238) * 0.147) : province === 'YT' ? (annualGross <= 55867 ? annualGross * 0.064 : annualGross <= 111733 ? 3579 + (annualGross - 55867) * 0.09 : annualGross <= 167600 ? 8582 + (annualGross - 111733) * 0.109 : annualGross <= 235675 ? 15447 + (annualGross - 167600) * 0.128 : 25847 + (annualGross - 235675) * 0.15) : 0",
+    "cppEiTax": "annualGross <= 61000 ? annualGross * 0.0765 : 61000 * 0.0765 + (annualGross - 61000) * 0.0495",
+    "totalDeductions": "federalTax + provincialTax + cppEiTax + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "federalTax": "Federal Tax",
+    "provincialTax": "Provincial Tax",
+    "cppEiTax": "CPP/EI Contributions",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "federalTax": "CAD $",
+    "provincialTax": "CAD $",
+    "cppEiTax": "CAD $",
+    "totalDeductions": "CAD $",
+    "netSalary": "CAD $",
+    "monthlyNet": "CAD $"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "id": "salaryAfterTaxUK",
+  "name": "Salary After Tax Calculator (UK)",
+  "description": "Calculate net salary after UK income tax and National Insurance",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 40000,
+      "unit": "£",
+      "placeholder": "40000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "£",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like pension, student loan, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "personalAllowance": "12570",
+    "basicRateLimit": "50270",
+    "higherRateLimit": "150000",
+    "taxableIncome": "annualGross - personalAllowance",
+    "basicRateTax": "taxableIncome > 0 ? Math.min(taxableIncome, basicRateLimit - personalAllowance) * 0.20 : 0",
+    "higherRateTax": "taxableIncome > (basicRateLimit - personalAllowance) ? Math.min(taxableIncome - (basicRateLimit - personalAllowance), higherRateLimit - basicRateLimit) * 0.40 : 0",
+    "additionalRateTax": "taxableIncome > (higherRateLimit - personalAllowance) ? (taxableIncome - (higherRateLimit - personalAllowance)) * 0.45 : 0",
+    "incomeTax": "basicRateTax + higherRateTax + additionalRateTax",
+    "niPrimaryThreshold": "12570",
+    "niUpperEarningsLimit": "50270",
+    "niRate1": "(annualGross > niPrimaryThreshold && annualGross <= niUpperEarningsLimit) ? (annualGross - niPrimaryThreshold) * 0.08 : 0",
+    "niRate2": "annualGross > niUpperEarningsLimit ? (annualGross - niUpperEarningsLimit) * 0.02 : 0",
+    "nationalInsurance": "niRate1 + niRate2",
+    "totalDeductions": "incomeTax + nationalInsurance + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "nationalInsurance": "National Insurance",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "£",
+    "nationalInsurance": "£",
+    "totalDeductions": "£",
+    "netSalary": "£",
+    "monthlyNet": "£"
+  }
+}

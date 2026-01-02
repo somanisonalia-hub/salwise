@@ -1,0 +1,54 @@
+{
+  "slug": "salary-calculator",
+  "type": "calculator",
+  "h1": "Salary Calculator",
+  "metaTitle": "Salary Calculator – Calculate Your Salary Instantly",
+  "metaDescription": "Use our free salary calculator to quickly calculate your gross or net salary. Accurate and easy to use for hourly and salaried employees.",
+  "primaryKeyword": "salary calculator",
+  "longTailKeywords": [
+    "online salary calculator",
+    "calculate your salary",
+    "free salary calculator",
+    "annual salary calculator"
+  ],
+  "related": [
+    "gross-to-net",
+    "take-home-pay",
+    "hourly-to-salary"
+  ],
+  "dataRef": "globalSalary",
+  "intro": {
+    "title": "Calculate Your Salary Instantly",
+    "description": "Our free salary calculator helps you understand your earning potential. Whether you're comparing job offers, planning your budget, or negotiating compensation, get accurate calculations for hourly and salaried positions.",
+    "features": [
+      "Calculate annual, monthly, and hourly rates",
+      "Include bonuses and additional compensation",
+      "Compare different pay structures",
+      "Perfect for job offers and negotiations"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How do I calculate my annual salary?",
+      "answer": "Enter your hourly rate or monthly salary, and our calculator will show you the equivalent annual compensation. We factor in standard work hours and pay periods."
+    },
+    {
+      "question": "What's the difference between gross and net salary?",
+      "answer": "Gross salary is your total earnings before taxes and deductions. Net salary is what you actually take home after all withholdings. Use our Gross to Net calculator to see the difference."
+    },
+    {
+      "question": "How do bonuses affect my total compensation?",
+      "answer": "Bonuses add to your total earnings and are included in annual salary calculations. Some bonuses are taxed differently than regular salary."
+    },
+    {
+      "question": "Can I calculate overtime pay?",
+      "answer": "Our overtime calculator handles time-and-a-half calculations. For basic salary conversions, focus on your regular hourly rate here."
+    }
+  ],
+  "tips": [
+    "Consider your total compensation package, not just base salary",
+    "Factor in benefits like health insurance and retirement contributions",
+    "Research industry salary ranges for your location and experience",
+    "Use this calculator to compare different job offers effectively"
+  ]
+}

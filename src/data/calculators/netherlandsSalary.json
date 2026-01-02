@@ -1,0 +1,21 @@
+{
+  "id": "netherlandsSalary",
+  "name": "Netherlands Salary Calculator",
+  "description": "Calculate take-home pay in the Netherlands",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 40000,
+      "unit": "€"
+    }
+  ],
+  "formula": {
+    "incomeTax": "grossSalary * 0.25",
+    "socialSecurity": "grossSalary * 0.272",
+    "totalDeductions": "incomeTax + socialSecurity",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

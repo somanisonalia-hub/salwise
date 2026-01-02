@@ -1,0 +1,73 @@
+{
+  "id": "hourlyToSalary",
+  "name": "Hourly to Salary Calculator",
+  "description": "Convert hourly wage to annual and monthly salary",
+  "inputs": [
+    {
+      "id": "hourlyRate",
+      "label": "Hourly Rate",
+      "type": "number",
+      "default": 25,
+      "unit": "$",
+      "placeholder": "25",
+      "required": true,
+      "min": 0,
+      "description": "Your hourly wage"
+    },
+    {
+      "id": "hoursPerWeek",
+      "label": "Hours per Week",
+      "type": "number",
+      "default": 40,
+      "unit": "hours",
+      "placeholder": "40",
+      "required": true,
+      "min": 1,
+      "max": 80,
+      "description": "Hours worked per week"
+    },
+    {
+      "id": "weeksPerYear",
+      "label": "Weeks per Year",
+      "type": "number",
+      "default": 52,
+      "unit": "weeks",
+      "placeholder": "52",
+      "required": true,
+      "min": 48,
+      "max": 52,
+      "description": "Weeks worked per year"
+    },
+    {
+      "id": "overtimeHours",
+      "label": "Overtime Hours per Week",
+      "type": "number",
+      "default": 0,
+      "unit": "hours",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "max": 40,
+      "description": "Additional overtime hours per week (optional)"
+    }
+  ],
+  "formula": {
+    "totalHours": "hoursPerWeek * weeksPerYear",
+    "overtimeTotal": "overtimeHours * weeksPerYear",
+    "regularSalary": "hourlyRate * (hoursPerWeek - overtimeHours) * weeksPerYear",
+    "overtimeSalary": "overtimeHours > 0 ? overtimeHours * weeksPerYear * hourlyRate * 1.5 : 0",
+    "annualSalary": "regularSalary + overtimeSalary",
+    "monthlySalary": "annualSalary / 12",
+    "weeklySalary": "annualSalary / weeksPerYear"
+  },
+  "outputLabels": {
+    "annualSalary": "Annual Salary",
+    "monthlySalary": "Monthly Salary",
+    "weeklySalary": "Weekly Salary"
+  },
+  "outputUnits": {
+    "annualSalary": "$",
+    "monthlySalary": "$",
+    "weeklySalary": "$"
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "id": "salaryCalculatorIndia",
+  "name": "Salary Calculator (India)",
+  "description": "Calculate net salary after Indian income tax, professional tax, and PF",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 1000000,
+      "unit": "₹",
+      "placeholder": "1000000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "₹",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like health insurance, conveyance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "incomeTax": "taxableIncome <= 250000 ? 0 : taxableIncome <= 500000 ? (taxableIncome - 250000) * 0.05 : taxableIncome <= 1000000 ? 12500 + (taxableIncome - 500000) * 0.20 : 112500 + (taxableIncome - 1000000) * 0.30",
+    "providentFund": "annualGross * 0.12",
+    "professionalTax": "annualGross <= 21000 ? 0 : annualGross <= 30000 ? 135 : annualGross <= 45000 ? 315 : annualGross <= 60000 ? 690 : annualGross <= 120000 ? 1380 : 2070",
+    "totalDeductions": "incomeTax + providentFund + professionalTax + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "providentFund": "Provident Fund (Employee Contribution)",
+    "professionalTax": "Professional Tax",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "₹",
+    "providentFund": "₹",
+    "professionalTax": "₹",
+    "totalDeductions": "₹",
+    "netSalary": "₹",
+    "monthlyNet": "₹"
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "slug": "country/uk",
+  "type": "guide",
+  "h1": "UK Salary Calculator",
+  "metaTitle": "UK Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "metaDescription": "Calculate take-home pay in the UK including income tax, National Insurance, student loan repayments. Accurate UK tax calculations.",
+  "primaryKeyword": "uk salary calculator",
+  "longTailKeywords": [
+    "UK salary calculator",
+    "british tax calculator",
+    "take home pay UK",
+    "UK paycheck calculator",
+    "national insurance calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net",
+    "country/usa"
+  ],
+  "title": "UK Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "description": "Calculate take-home pay in the UK including income tax, National Insurance, student loan repayments, and other deductions. Accurate UK tax calculations.",
+  "keywords": "UK salary calculator, british tax calculator, take home pay UK, UK paycheck calculator, national insurance calculator",
+  "canonical": "https://salarywise.io/en/country/uk",
+
+  "header": {
+    "title": "UK Salary Calculator",
+    "subtitle": "Calculate your take-home pay with accurate UK tax calculations"
+  },
+
+  "intro": {
+    "paragraph1": "Understanding your take-home pay in the United Kingdom involves calculating income tax, National Insurance contributions, and other deductions. Our UK salary calculator provides accurate estimates based on current tax rates and your specific situation.",
+    "paragraph2": "Enter your gross salary, tax code, and other details to get a comprehensive breakdown of your net pay and tax obligations."
+  },
+
+  "incomeTax": {
+    "title": "UK Income Tax Brackets 2024/25",
+    "description": "UK income tax is progressive with different rates for different income levels.",
+    "brackets": [
+      {"range": "£0 - £12,570", "rate": "0% (Personal Allowance)"},
+      {"range": "£12,571 - £50,270", "rate": "20% (Basic rate)"},
+      {"range": "£50,271 - £125,140", "rate": "40% (Higher rate)"},
+      {"range": "£125,141+", "rate": "45% (Additional rate)"}
+    ]
+  },
+
+  "nationalInsurance": {
+    "title": "National Insurance Contributions",
+    "description": "National Insurance is a tax on earnings that funds state benefits.",
+    "rates": [
+      {"type": "Class 1 (Employee)", "rate": "8% on earnings £12,570-£50,270, 12% above"},
+      {"type": "Class 1 (Employer)", "rate": "13.8% on all earnings"},
+      {"type": "Class 2 (Self-employed)", "rate": "£3.45 per week (flat rate)"},
+      {"type": "Class 4 (Self-employed)", "rate": "9.73% on profits £12,570-£50,270, 2.73% above"}
+    ]
+  },
+
+  "deductions": {
+    "title": "Other Common Deductions",
+    "items": [
+      {
+        "title": "Student Loan Repayments",
+        "description": "Plan 1: 9% of earnings over £24,366, Plan 2: 9% of earnings over £27,295",
+        "note": "Automatic deductions for student loan borrowers"
+      },
+      {
+        "title": "Pension Contributions",
+        "description": "Auto-enrolment minimum 5% of salary (3% employee + 2% employer)",
+        "note": "Tax-relieved pension contributions"
+      },
+      {
+        "title": "Council Tax",
+        "description": "Local property tax paid to local council",
+        "examples": ["Band A: £1,000-£1,500/year", "Band H: £3,000-£4,000/year"]
+      },
+      {
+        "title": "Healthcare Costs",
+        "description": "Private health insurance or medical expenses",
+        "note": "Not typically deducted from salary"
+      }
+    ]
+  },
+
+  "examples": {
+    "title": "UK Salary Calculation Examples",
+    "scenarios": [
+      {
+        "title": "Software Developer - London",
+        "gross": "£60,000",
+        "details": {
+          "incomeTax": "£8,450 (14.1%)",
+          "nationalInsurance": "£4,628 (7.7%)",
+          "studentLoan": "£2,487 (4.1%) - Plan 2",
+          "pension": "£3,000 (5%)",
+          "netPay": "£41,435 (69.1% of gross)"
+        }
+      },
+      {
+        "title": "Teacher - Manchester",
+        "gross": "£35,000",
+        "details": {
+          "incomeTax": "£4,450 (12.7%)",
+          "nationalInsurance": "£2,764 (7.9%)",
+          "studentLoan": "£697 (2%) - Plan 2",
+          "pension": "£1,750 (5%)",
+          "netPay": "£25,339 (72.4% of gross)"
+        }
+      }
+    ]
+  },
+
+  "tools": {
+    "title": "UK Tax Calculators",
+    "calculators": [
+      {
+        "title": "Income Tax Calculator",
+        "description": "Calculate UK income tax by bracket",
+        "href": "/en/take-home-pay"
+      },
+      {
+        "title": "National Insurance Calculator",
+        "description": "Calculate NI contributions",
+        "href": "/en/gross-to-net"
+      },
+      {
+        "title": "Student Loan Calculator",
+        "description": "Calculate student loan repayments",
+        "href": "/en/salary-calculator"
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "UK Tax FAQ",
+    "questions": [
+      {
+        "question": "How is UK income tax calculated?",
+        "answer": "UK income tax is calculated on your taxable income after personal allowance. Tax is paid at different rates depending on your total income level."
+      },
+      {
+        "question": "What is National Insurance?",
+        "answer": "National Insurance is a tax that helps pay for state benefits and the NHS. Both employees and employers contribute."
+      },
+      {
+        "question": "Do I have to pay tax on my salary?",
+        "answer": "If your salary exceeds the personal allowance (£12,570 in 2024/25), you will pay income tax. National Insurance is paid on earnings over £12,570."
+      },
+      {
+        "question": "How do student loans affect my take-home pay?",
+        "answer": "Student loan repayments are deducted directly from your salary at 9% of earnings above the threshold (£24,366 for Plan 1, £27,295 for Plan 2)."
+      }
+    ]
+  },
+
+  "disclaimer": {
+    "title": "Important Disclaimer",
+    "content": "This calculator provides estimates based on current tax rates and general assumptions. Tax laws change frequently, and individual circumstances vary. Consult HMRC or a tax professional for personalized advice."
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "UK Salary Calculator",
+    "url": "https://salarywise.io/en/country/uk",
+    "applicationCategory": "Calculator",
+    "description": "Calculate take-home pay in the UK including income tax, National Insurance, and student loan repayments",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "GBP"
+    }
+  }
+}

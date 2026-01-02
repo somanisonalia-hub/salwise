@@ -1,0 +1,180 @@
+{
+  "hero": {
+    "title": "Free Salary Calculator",
+    "subtitle": "Calculate Your Take-Home Pay Instantly",
+    "description": "Calculate gross to net pay, hourly wages, bonuses. Accurate tax calculations for 15+ countries.",
+    "cta": {
+      "primary": {
+        "text": "🧮 Calculate Salary",
+        "href": "/salary-calculator"
+      },
+      "secondary": {
+        "text": "📊 Gross to Net",
+        "href": "/gross-to-net"
+      }
+    },
+    "trustIndicators": "✓ Free ✓ No Sign-up ✓ Accurate ✓ Mobile Friendly"
+  },
+  "quickAccess": {
+    "title": "Quick Access",
+    "links": [
+      {
+        "icon": "🧮",
+        "text": "Calculator",
+        "href": "/salary-calculator"
+      },
+      {
+        "icon": "📊",
+        "text": "Gross→Net",
+        "href": "/gross-to-net"
+      },
+      {
+        "icon": "🇺🇸",
+        "text": "USA",
+        "href": "/country/usa"
+      },
+      {
+        "icon": "📖",
+        "text": "Guides",
+        "href": "/guides/gross-vs-net"
+      }
+    ]
+  },
+  "calculators": {
+    "title": "Popular Calculators",
+    "items": [
+      {
+        "title": "Salary Calculator",
+        "description": "Convert hourly to annual salary",
+        "icon": "💰",
+        "href": "/salary-calculator"
+      },
+      {
+        "title": "Gross to Net",
+        "description": "Find your take-home pay",
+        "icon": "📊",
+        "href": "/gross-to-net"
+      },
+      {
+        "title": "Take-Home Pay",
+        "description": "Calculate net paycheck",
+        "icon": "💵",
+        "href": "/take-home-pay"
+      },
+      {
+        "title": "Hourly to Salary",
+        "description": "Compare hourly vs salary",
+        "icon": "⏰",
+        "href": "/hourly-to-salary"
+      }
+    ]
+  },
+  "countries": {
+    "title": "Country Calculators",
+    "description": "Localized tax calculations",
+    "items": [
+      {
+        "name": "USA",
+        "flag": "🇺🇸",
+        "href": "/country/usa"
+      },
+      {
+        "name": "UK",
+        "flag": "🇬🇧",
+        "href": "/country/uk"
+      },
+      {
+        "name": "Canada",
+        "flag": "🇨🇦",
+        "href": "/country/canada"
+      },
+      {
+        "name": "Australia",
+        "flag": "🇦🇺",
+        "href": "/country/australia"
+      },
+      {
+        "name": "Ireland",
+        "flag": "🇮🇪",
+        "href": "/country/ireland"
+      },
+      {
+        "name": "India",
+        "flag": "🇮🇳",
+        "href": "/country/india"
+      }
+    ]
+  },
+  "features": {
+    "title": "Why Choose SalaryWise.io?",
+    "items": [
+      {
+        "title": "Accurate Calculations",
+        "description": "Precise formulas based on current tax rates and regulations.",
+        "icon": "check"
+      },
+      {
+        "title": "15+ Countries",
+        "description": "Localized tax rules and currency formatting.",
+        "icon": "globe"
+      },
+      {
+        "title": "Fast & Free",
+        "description": "Instant results, no registration required.",
+        "icon": "bolt"
+      }
+    ]
+  },
+  "guides": {
+    "title": "Salary Guides",
+    "items": [
+      {
+        "title": "Gross vs Net Salary",
+        "description": "Learn the difference and why it matters for financial planning.",
+        "href": "/guides/gross-vs-net"
+      },
+      {
+        "title": "Calculate Take-Home Pay",
+        "description": "Step-by-step guide to calculating your net income.",
+        "href": "/guides/how-to-calculate-take-home"
+      },
+      {
+        "title": "Salary Negotiation",
+        "description": "Tips for negotiating better compensation.",
+        "href": "/guides/salary-negotiation"
+      }
+    ]
+  },
+  "footer": {
+    "text": "© 2024 SalaryWise.io - Free salary calculators for everyone."
+  },
+  "mobileNav": {
+    "links": [
+      {
+        "icon": "🧮",
+        "text": "Calculator",
+        "href": "/salary-calculator"
+      },
+      {
+        "icon": "📊",
+        "text": "Gross→Net",
+        "href": "/gross-to-net"
+      },
+      {
+        "icon": "🇺🇸",
+        "text": "USA",
+        "href": "/country/usa"
+      },
+      {
+        "icon": "📖",
+        "text": "Guides",
+        "href": "/guides/gross-vs-net"
+      }
+    ]
+  },
+  "seo": {
+    "title": "Salary Calculator | Free Gross to Net Pay Calculator | SalaryWise.io",
+    "description": "Calculate salary, hourly wage, gross to net pay, take-home pay. Free calculators with accurate tax calculations for 15+ countries.",
+    "keywords": "salary calculator, gross to net, take home pay, hourly to salary, pay calculator"
+  }
+}

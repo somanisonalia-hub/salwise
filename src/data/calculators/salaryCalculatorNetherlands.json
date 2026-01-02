@@ -1,0 +1,64 @@
+{
+  "id": "salaryCalculatorNetherlands",
+  "name": "Salary Calculator (Netherlands)",
+  "description": "Calculate net salary after Dutch income tax and social security contributions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 60000,
+      "unit": "€",
+      "placeholder": "60000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like private pension, insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "incomeTax": "taxableIncome <= 73031 ? (taxableIncome - 14447) * 0.3655 + 14447 * 0.3655 : (73031 - 14447) * 0.3655 + 14447 * 0.3655 + (taxableIncome - 73031) * 0.4965",
+    "socialContributions": "annualGross * 0.1775",
+    "totalDeductions": "incomeTax + socialContributions + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "socialContributions": "Social Security Contributions",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "€",
+    "socialContributions": "€",
+    "totalDeductions": "€",
+    "netSalary": "€",
+    "monthlyNet": "€"
+  }
+}

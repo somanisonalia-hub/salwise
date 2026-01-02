@@ -1,0 +1,72 @@
+{
+  "id": "takeHomePay",
+  "name": "Take-Home Pay Calculator",
+  "description": "Calculate your net salary after tax and deductions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 4000,
+      "unit": "$",
+      "placeholder": "4000",
+      "required": true,
+      "min": 0,
+      "description": "Your gross salary before deductions"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "monthly",
+      "options": [
+        {"value": "hourly", "label": "Hourly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "taxRate",
+      "label": "Tax Rate",
+      "type": "number",
+      "default": 25,
+      "unit": "%",
+      "placeholder": "25",
+      "required": true,
+      "min": 0,
+      "max": 50,
+      "description": "Estimated total tax rate (adjust as needed)"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 200,
+      "unit": "$",
+      "placeholder": "200",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like pension, insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'hourly' ? grossSalary * 40 * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "monthlyGross": "payFrequency === 'hourly' ? grossSalary * 40 * 4.333 : payFrequency === 'monthly' ? grossSalary : annualGross / 12",
+    "estimatedTax": "annualGross * (taxRate / 100)",
+    "totalDeductions": "estimatedTax + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Pay (Annual)",
+    "monthlyNet": "Net / Take-Home Pay (Monthly)"
+  },
+  "outputUnits": {
+    "totalDeductions": "$",
+    "netSalary": "$",
+    "monthlyNet": "$"
+  }
+}

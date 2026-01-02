@@ -1,0 +1,113 @@
+{
+  "id": "retirementContributionCalculator",
+  "name": "Retirement Contribution Calculator",
+  "description": "Estimate retirement savings based on contributions",
+  "inputs": [
+    {
+      "id": "currentAge",
+      "label": "Current Age",
+      "type": "number",
+      "default": 30,
+      "placeholder": "30",
+      "required": true,
+      "min": 18,
+      "max": 65,
+      "description": "Your current age"
+    },
+    {
+      "id": "retirementAge",
+      "label": "Retirement Age",
+      "type": "number",
+      "default": 65,
+      "placeholder": "65",
+      "required": true,
+      "min": 50,
+      "max": 75,
+      "description": "Age you plan to retire"
+    },
+    {
+      "id": "contributionType",
+      "label": "Contribution Type",
+      "type": "select",
+      "default": "monthly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "annual", "label": "Annual"}
+      ],
+      "required": true,
+      "description": "How often you make contributions"
+    },
+    {
+      "id": "contributionAmount",
+      "label": "Contribution Amount",
+      "type": "number",
+      "default": 500,
+      "unit": "$",
+      "placeholder": "500",
+      "required": true,
+      "min": 0,
+      "description": "Amount you contribute regularly"
+    },
+    {
+      "id": "expectedReturn",
+      "label": "Expected Annual Return",
+      "type": "number",
+      "default": 7,
+      "unit": "%",
+      "placeholder": "7",
+      "required": true,
+      "min": 0,
+      "max": 15,
+      "step": 0.1,
+      "description": "Expected annual investment return"
+    },
+    {
+      "id": "currentSavings",
+      "label": "Current Retirement Savings",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Any existing retirement savings"
+    },
+    {
+      "id": "country",
+      "label": "Country",
+      "type": "select",
+      "default": "US",
+      "options": [
+        {"value": "US", "label": "United States"},
+        {"value": "UK", "label": "United Kingdom"},
+        {"value": "Canada", "label": "Canada"},
+        {"value": "Australia", "label": "Australia"},
+        {"value": "Germany", "label": "Germany"},
+        {"value": "India", "label": "India"}
+      ],
+      "required": true,
+      "description": "Select your country for tax considerations"
+    }
+  ],
+  "formula": {
+    "yearsUntilRetirement": "retirementAge - currentAge",
+    "monthlyReturnRate": "expectedReturn / 100 / 12",
+    "totalMonths": "yearsUntilRetirement * 12",
+    "monthlyContribution": "contributionType === 'monthly' ? contributionAmount : contributionAmount / 12",
+    "totalContributions": "contributionType === 'monthly' ? monthlyContribution * totalMonths : contributionAmount * yearsUntilRetirement",
+    "futureValueContributions": "monthlyContribution * ((Math.pow(1 + monthlyReturnRate, totalMonths) - 1) / monthlyReturnRate)",
+    "futureValueCurrentSavings": "currentSavings * Math.pow(1 + (expectedReturn / 100), yearsUntilRetirement)",
+    "projectedRetirementSavings": "futureValueContributions + futureValueCurrentSavings",
+    "totalInvestmentGrowth": "projectedRetirementSavings - totalContributions - currentSavings"
+  },
+  "outputLabels": {
+    "totalContributions": "Total Contributions",
+    "totalInvestmentGrowth": "Investment Growth",
+    "projectedRetirementSavings": "Projected Retirement Savings"
+  },
+  "outputUnits": {
+    "totalContributions": "$",
+    "totalInvestmentGrowth": "$",
+    "projectedRetirementSavings": "$"
+  }
+}

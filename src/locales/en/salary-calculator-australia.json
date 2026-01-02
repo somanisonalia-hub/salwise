@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-australia",
+  "type": "calculator",
+  "h1": "Salary Calculator – Australia Net Pay Estimator",
+  "metaTitle": "Salary Calculator Australia – Calculate Net Pay",
+  "metaDescription": "Use our Australia salary calculator to estimate your take-home pay. Includes income tax, Medicare levy, and other deductions. Quick and free.",
+  "primaryKeyword": "salary calculator Australia",
+  "longTailKeywords": [
+    "Australia salary calculator after tax",
+    "net pay calculator Australia",
+    "take home salary Australia",
+    "gross to net salary Australia",
+    "payroll calculator Australia",
+    "Australian income tax calculator",
+    "salary calculator AU"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator-canada"
+  ],
+  "dataRef": "salaryCalculatorAustralia",
+  "intro": "Understanding your salary after tax in Australia is essential for accurate financial planning. This calculator estimates your take-home pay by accounting for Australian federal income tax and Medicare levy. Whether you're an employee, contractor, or freelancer working in Australia, this tool provides localized calculations to help you understand your actual net income and make informed financial decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howSalaryAfterTaxWorksAustralia": "Salary after tax in Australia involves deductions from your gross pay. Federal income tax is calculated using progressive tax brackets based on your taxable income. The Medicare levy is a 2% tax on most Australian taxpayers to fund Medicare healthcare. Optional deductions like superannuation (retirement savings) and private health insurance can further reduce your taxable income and increase your take-home pay. The result is your net salary - the actual amount you'll receive in your bank account.",
+  "example": {
+    "scenario": "An employee earning AUD $70,000 annually in Australia with standard deductions.",
+    "results": "Gross salary: AUD $70,000 | Income tax: $13,000 | Medicare levy: $1,400 | Net salary: $55,600 | Monthly net: $4,633"
+  },
+  "whyUseSalaryCalculatorAustralia": [
+    "Accurate budgeting based on your actual take-home pay",
+    "Compare job offers using real net income figures",
+    "Plan for tax withholdings and avoid surprises",
+    "Make informed decisions about pre-tax deductions",
+    "Understand the impact of Medicare levy on your salary",
+    "Prepare for year-end tax planning and refunds"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include the Medicare levy?",
+      "answer": "Yes, it includes the 2% Medicare levy that applies to most Australian taxpayers to fund Medicare healthcare."
+    },
+    {
+      "question": "Can I include superannuation or insurance deductions?",
+      "answer": "Yes, you can add superannuation contributions and private health insurance as deductions that reduce your taxable income."
+    },
+    {
+      "question": "Is this calculator accurate for all Australian states?",
+      "answer": "Yes, it includes Australia-wide tax rates and calculations that apply across all states and territories."
+    },
+    {
+      "question": "Can I calculate monthly take-home pay?",
+      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+    },
+    {
+      "question": "Is this Australia salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your PAYG payment summary annually to ensure proper tax withholdings",
+    "Consider salary sacrificing into superannuation for tax benefits",
+    "Use tax-advantaged accounts when possible",
+    "Keep track of year-to-date earnings for accurate tax planning",
+    "Consult a tax professional for personalized advice on complex tax situations"
+  ]
+}

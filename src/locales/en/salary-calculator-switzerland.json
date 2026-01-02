@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-switzerland",
+  "type": "calculator",
+  "h1": "Salary Calculator – Switzerland Net Pay Estimator",
+  "metaTitle": "Salary Calculator Switzerland – Calculate Net Pay",
+  "metaDescription": "Use our Switzerland salary calculator to estimate your take-home pay. Includes income tax, social security contributions, and other deductions. Quick and free.",
+  "primaryKeyword": "salary calculator Switzerland",
+  "longTailKeywords": [
+    "Switzerland salary calculator after tax",
+    "net pay calculator Switzerland",
+    "take home salary Switzerland",
+    "gross to net salary Switzerland",
+    "payroll calculator Switzerland",
+    "Swiss income tax calculator",
+    "salary calculator CH"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator-sweden"
+  ],
+  "dataRef": "salaryCalculatorSwitzerland",
+  "intro": "Understanding your salary after tax in Switzerland is essential for accurate financial planning. This calculator estimates your take-home pay by accounting for Swiss income tax and social security contributions. Whether you're an employee, contractor, or freelancer working in Switzerland, this tool provides localized calculations to help you understand your actual net income and make informed financial decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howSalaryAfterTaxWorksSwitzerland": "Salary after tax in Switzerland involves several mandatory deductions from your gross pay. Income tax is calculated at both federal and cantonal (regional) levels, with each canton having its own tax rates and brackets. Social security contributions include AHV (old age and survivors insurance), IV (disability insurance), and EO (unemployment insurance), which are mandatory for all employees. Optional deductions like additional pension contributions (pillar 3a) can further reduce your taxable income and increase your take-home pay. The result is your net salary - the actual amount you'll receive in your bank account.",
+  "example": {
+    "scenario": "An employee earning CHF 100,000 annually in Zurich with standard deductions.",
+    "results": "Gross salary: CHF 100,000 | Income tax: CHF 20,000 | Social contributions: CHF 8,000 | Net salary: CHF 72,000 | Monthly net: CHF 6,000"
+  },
+  "whyUseSalaryCalculatorSwitzerland": [
+    "Accurate budgeting based on your actual take-home pay",
+    "Compare job offers using real net income figures",
+    "Plan for tax withholdings and avoid surprises",
+    "Make informed decisions about pre-tax deductions",
+    "Understand the impact of social contributions on your salary",
+    "Prepare for year-end tax planning and refunds"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include social security contributions?",
+      "answer": "Yes, it includes Swiss social security contributions for AHV (old age and survivors insurance), IV (disability insurance), and EO (unemployment insurance)."
+    },
+    {
+      "question": "Can I include pension or insurance deductions?",
+      "answer": "Yes, you can add pension contributions (pillar 3a) and private insurance as deductions that reduce your taxable income."
+    },
+    {
+      "question": "Is this calculator accurate for all cantons?",
+      "answer": "Yes, it includes federal tax rates and canton-wide social contribution rates that apply across all Swiss cantons."
+    },
+    {
+      "question": "Can I calculate monthly take-home pay?",
+      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+    },
+    {
+      "question": "Is this Switzerland salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your annual tax return (Steuererklärung) to ensure proper tax withholdings",
+    "Consider pillar 3a pension contributions for tax benefits",
+    "Use tax-advantaged savings accounts when possible",
+    "Keep track of year-to-date earnings for accurate tax planning",
+    "Consult a tax advisor for personalized advice on complex tax situations"
+  ]
+}

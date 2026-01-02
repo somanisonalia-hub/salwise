@@ -1,0 +1,75 @@
+{
+  "slug": "take-home-vs-cost-of-living-calculator",
+  "type": "calculator",
+  "h1": "Take-Home Pay vs Cost of Living Calculator – Know Your Budget",
+  "metaTitle": "Take-Home vs Cost of Living Calculator – Compare Your Budget",
+  "metaDescription": "Use our Take-Home vs Cost of Living calculator to compare your net salary with city living expenses. Plan relocation, track savings, and manage finances.",
+  "primaryKeyword": "take-home vs cost of living calculator",
+  "longTailKeywords": [
+    "net salary vs expenses by city",
+    "salary vs cost of living comparison",
+    "take-home pay planner",
+    "living cost calculator by location",
+    "city cost of living vs salary",
+    "relocation salary calculator"
+  ],
+  "related": [
+    "salary-vs-expenses-calculator",
+    "salary-comparison-calculator",
+    "take-home-pay-calculator",
+    "salary-vs-freelance-income-calculator"
+  ],
+  "dataRef": "takeHomeVsCostOfLivingCalculator",
+  "intro": "Understanding how your take-home pay compares to local cost of living is essential for making informed financial decisions. This calculator helps you compare your net salary with living expenses in different cities and countries, enabling you to plan relocations, negotiate salaries, or simply understand your financial health in your current location. Whether you're considering a move or just want to track your spending, this tool provides clear insights into your disposable income and living costs.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Budget vs Cost of Living",
+    "resultsHeading": "Budget vs Cost of Living Analysis",
+    "calculateButton": "Calculate Budget",
+    "scenarioLabel": "Your Financial & Location Details:",
+    "resultsLabel": "Analysis:",
+    "noResultsText": "Enter your salary and cost of living details above to analyze your budget"
+  },
+  "howTakeHomeVsCostOfLivingIsCalculated": "This calculator compares your monthly take-home pay with the total cost of living in your selected location. First, it sums all living expenses including housing/rent, utilities, food/groceries, transportation, and other costs. Then it subtracts this total from your net salary to show your remaining disposable income. The percentage shows what portion of your income is consumed by living expenses, helping you understand your financial situation relative to local costs.",
+  "example": {
+    "scenario": "A professional earning $5,000 monthly take-home pay in Dublin with $3,800 monthly living expenses.",
+    "results": "Total Monthly Cost of Living: $3,800 | Remaining Disposable Income: $1,200 | Percentage of Salary Spent: 76%"
+  },
+  "whyUseThisCalculator": [
+    "Plan relocation or city moves with confidence",
+    "Compare salaries vs expenses in multiple cities",
+    "Identify if your current salary covers local living costs",
+    "Make informed decisions about job offers in different locations",
+    "Track your spending relative to local cost of living",
+    "Plan budgets for different family sizes and lifestyles"
+  ],
+  "faqs": [
+    {
+      "question": "Can I compare multiple cities with this calculator?",
+      "answer": "Yes, you can select different cities and countries to compare how your salary covers living expenses in various locations."
+    },
+    {
+      "question": "Does it include taxes in the calculation?",
+      "answer": "Use your net (take-home) salary after taxes. The calculator focuses on comparing your actual income with living expenses."
+    },
+    {
+      "question": "Can I adjust expenses for family size?",
+      "answer": "Yes, you can customize all expense categories to match your family size, lifestyle, and location-specific costs."
+    },
+    {
+      "question": "Is the take-home vs cost of living calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    },
+    {
+      "question": "Can it help plan relocation?",
+      "answer": "Yes, it helps you understand if your salary will cover living expenses in a new city or country before making the move."
+    }
+  ],
+  "tips": [
+    "Research local cost of living indexes for accurate city comparisons",
+    "Consider seasonal variations in living costs (heating in winter, air conditioning in summer)",
+    "Factor in one-time moving costs when planning relocation",
+    "Include emergency savings in your disposable income calculations",
+    "Compare cost of living across different family sizes",
+    "Use local salary surveys to understand market rates in new locations"
+  ]
+}

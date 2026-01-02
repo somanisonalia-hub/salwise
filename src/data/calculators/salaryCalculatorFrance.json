@@ -1,0 +1,70 @@
+{
+  "id": "salaryCalculatorFrance",
+  "name": "Salary Calculator (France)",
+  "description": "Calculate net salary after French income tax and social contributions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 50000,
+      "unit": "€",
+      "placeholder": "50000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like private pension, insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "incomeTax": "taxableIncome <= 10777 ? 0 : taxableIncome <= 27478 ? (taxableIncome - 10777) * 0.11 : taxableIncome <= 78570 ? 1838.89 + (taxableIncome - 27478) * 0.30 : taxableIncome <= 168994 ? 21937.29 + (taxableIncome - 78570) * 0.41 : 73923.69 + (taxableIncome - 168994) * 0.45",
+    "healthInsurance": "annualGross * 0.021",
+    "pensionContribution": "annualGross * 0.086",
+    "unemploymentInsurance": "annualGross * 0.024",
+    "csg": "annualGross * 0.092",
+    "crds": "annualGross * 0.005",
+    "totalSocialContributions": "healthInsurance + pensionContribution + unemploymentInsurance + csg + crds",
+    "totalDeductions": "incomeTax + totalSocialContributions + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "totalSocialContributions": "Social Contributions (CSG, CRDS, etc.)",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "€",
+    "totalSocialContributions": "€",
+    "totalDeductions": "€",
+    "netSalary": "€",
+    "monthlyNet": "€"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "germanySalary",
+  "name": "Germany Salary Calculator",
+  "description": "Calculate take-home pay in Germany",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 45000,
+      "unit": "€"
+    }
+  ],
+  "formula": {
+    "incomeTax": "grossSalary * 0.25",
+    "socialSecurity": "grossSalary * 0.20",
+    "healthInsurance": "grossSalary * 0.08",
+    "unemploymentInsurance": "grossSalary * 0.015",
+    "totalDeductions": "incomeTax + socialSecurity + healthInsurance + unemploymentInsurance",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

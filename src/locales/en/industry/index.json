@@ -1,0 +1,114 @@
+{
+  "title": "Industry Salary Guides | Career Salary Information | SalaryWise.io",
+  "description": "Explore salary information by industry. Compare compensation across technology, healthcare, finance, engineering, and other sectors.",
+  "keywords": "industry salary guide, career salary information, industry compensation, sector salary comparison",
+  "canonical": "https://salarywise.io/en/industry",
+
+  "header": {
+    "title": "Industry Salary Guides",
+    "subtitle": "Explore salaries by career sector"
+  },
+
+  "intro": {
+    "paragraph1": "Salaries vary significantly across different industries due to factors like demand, required skills, education, and market conditions. Understanding industry-specific compensation helps you make informed career decisions and negotiate better pay.",
+    "paragraph2": "Browse our industry guides to learn about typical salaries, growth opportunities, and key factors that influence compensation in your field."
+  },
+
+  "industries": [
+    {
+      "name": "Technology & IT",
+      "slug": "it",
+      "description": "Software development, cybersecurity, data science, and tech roles",
+      "averageSalary": "$85,000 - $150,000",
+      "growth": "High demand, 13% growth projected",
+      "keySkills": ["Programming", "Cloud computing", "AI/ML"],
+      "href": "/en/industry/it"
+    },
+    {
+      "name": "Healthcare",
+      "slug": "healthcare",
+      "description": "Doctors, nurses, medical technicians, and healthcare professionals",
+      "averageSalary": "$60,000 - $200,000",
+      "growth": "Strong demand, 16% growth projected",
+      "keySkills": ["Medical knowledge", "Patient care", "Specialized training"],
+      "href": "/en/industry/healthcare"
+    },
+    {
+      "name": "Finance & Banking",
+      "slug": "finance",
+      "description": "Investment banking, financial analysis, accounting, and financial services",
+      "averageSalary": "$70,000 - $180,000",
+      "growth": "Stable demand, 7% growth projected",
+      "keySkills": ["Financial analysis", "Risk management", "Regulatory compliance"],
+      "href": "/en/industry/finance"
+    },
+    {
+      "name": "Engineering",
+      "slug": "engineering",
+      "description": "Mechanical, electrical, civil, and other engineering disciplines",
+      "averageSalary": "$75,000 - $130,000",
+      "growth": "Moderate demand, 6% growth projected",
+      "keySkills": ["Technical expertise", "Problem solving", "Project management"],
+      "href": "/en/industry/engineering"
+    }
+  ],
+
+  "salaryFactors": {
+    "title": "Factors Affecting Industry Salaries",
+    "factors": [
+      {
+        "title": "Market Demand",
+        "description": "High-demand industries command higher salaries due to talent shortages"
+      },
+      {
+        "title": "Education & Training",
+        "description": "Roles requiring advanced degrees or specialized training typically pay more"
+      },
+      {
+        "title": "Experience Level",
+        "description": "Senior roles and specialized experience significantly impact compensation"
+      },
+      {
+        "title": "Location",
+        "description": "Cost of living and local market conditions affect salary ranges"
+      },
+      {
+        "title": "Company Size",
+        "description": "Large corporations often pay more than small businesses"
+      }
+    ]
+  },
+
+  "tools": {
+    "title": "Industry Salary Tools",
+    "description": "Use our tools to research salaries in your industry",
+    "items": [
+      {
+        "title": "Salary Calculator",
+        "description": "Calculate your take-home pay",
+        "href": "/en/salary-calculator"
+      },
+      {
+        "title": "Industry Comparison",
+        "description": "Compare salaries across industries",
+        "href": "/en"
+      }
+    ]
+  },
+
+  "cta": {
+    "title": "Ready to Explore Your Industry?",
+    "description": "Select an industry above to learn more about typical salaries, growth opportunities, and career paths.",
+    "button": {
+      "text": "View All Industries",
+      "href": "/en"
+    }
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Industry Salary Guides",
+    "description": "Explore salary information by industry and career sector"
+  }
+}

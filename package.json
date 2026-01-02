@@ -6,12 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "analyze": "ANALYZE=true next build",
+    "analyze:server": "ANALYZE=true next build && npx serve .next/static/analyze",
+    "perf": "next build --profile && next start"
   },
   "dependencies": {
+    "critters": "^0.0.23",
     "next": "16.1.1",
     "react": "19.2.3",
-    "react-dom": "19.2.3"
+    "react-dom": "19.2.3",
+    "web-vitals": "^5.1.0"
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -21,6 +26,7 @@
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
     "tailwindcss": "^4",
-    "typescript": "^5"
+    "typescript": "^5",
+    "webpack-bundle-analyzer": "^5.1.0"
   }
 }

@@ -1,0 +1,93 @@
+{
+  "id": "salaryVsFreelanceIncomeCalculator",
+  "name": "Salary vs Freelance Income Calculator",
+  "description": "Compare traditional salary with freelance/self-employed income",
+  "inputs": [
+    {
+      "id": "employeeSalary",
+      "label": "Employee Gross Salary",
+      "type": "number",
+      "default": 60000,
+      "unit": "$",
+      "placeholder": "60000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary as an employee"
+    },
+    {
+      "id": "freelanceRevenue",
+      "label": "Freelance Revenue",
+      "type": "number",
+      "default": 70000,
+      "unit": "$",
+      "placeholder": "70000",
+      "required": true,
+      "min": 0,
+      "description": "Your expected annual freelance revenue"
+    },
+    {
+      "id": "freelanceExpenses",
+      "label": "Freelance Expenses",
+      "type": "number",
+      "default": 10000,
+      "unit": "$",
+      "placeholder": "10000",
+      "required": false,
+      "min": 0,
+      "description": "Business expenses for freelance work"
+    },
+    {
+      "id": "country",
+      "label": "Country",
+      "type": "select",
+      "default": "US",
+      "options": [
+        {"value": "US", "label": "United States"},
+        {"value": "UK", "label": "United Kingdom"},
+        {"value": "Canada", "label": "Canada"},
+        {"value": "Australia", "label": "Australia"},
+        {"value": "Germany", "label": "Germany"},
+        {"value": "India", "label": "India"}
+      ],
+      "required": true,
+      "description": "Select your country for tax calculations"
+    },
+    {
+      "id": "optionalDeductions",
+      "label": "Optional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Additional deductions like retirement contributions, insurance, etc."
+    }
+  ],
+  "formula": {
+    "employeeTaxRate": "country === 'US' ? 0.25 : country === 'UK' ? 0.20 : country === 'Canada' ? 0.26 : country === 'Australia' ? 0.325 : country === 'Germany' ? 0.30 : country === 'India' ? 0.25 : 0.25",
+    "employeeSocialContributions": "country === 'US' ? 0.0765 : country === 'UK' ? 0.08 : country === 'Canada' ? 0.0495 : country === 'Australia' ? 0.02 : country === 'Germany' ? 0.20 : country === 'India' ? 0 : 0.0765",
+    "freelanceTaxableIncome": "freelanceRevenue - freelanceExpenses",
+    "freelanceSelfEmploymentTax": "country === 'US' ? freelanceTaxableIncome * 0.153 : country === 'UK' ? freelanceTaxableIncome * 0.08 : country === 'Canada' ? freelanceTaxableIncome * 0.0495 : country === 'Australia' ? freelanceTaxableIncome * 0.02 : country === 'Germany' ? freelanceTaxableIncome * 0.20 : country === 'India' ? 0 : freelanceTaxableIncome * 0.153",
+    "freelanceIncomeTax": "freelanceTaxableIncome * employeeTaxRate",
+    "employeeNetSalary": "employeeSalary - (employeeSalary * employeeTaxRate) - (employeeSalary * employeeSocialContributions) - optionalDeductions",
+    "freelanceNetIncome": "freelanceTaxableIncome - freelanceSelfEmploymentTax - freelanceIncomeTax - optionalDeductions",
+    "incomeDifference": "freelanceNetIncome - employeeNetSalary",
+    "employeeMonthlyNet": "employeeNetSalary / 12",
+    "freelanceMonthlyNet": "freelanceNetIncome / 12"
+  },
+  "outputLabels": {
+    "employeeNetSalary": "Employee Net Salary (Annual)",
+    "freelanceNetIncome": "Freelance Net Income (Annual)",
+    "incomeDifference": "Income Difference (Freelance - Employee)",
+    "employeeMonthlyNet": "Employee Monthly Net",
+    "freelanceMonthlyNet": "Freelance Monthly Net"
+  },
+  "outputUnits": {
+    "employeeNetSalary": "$",
+    "freelanceNetIncome": "$",
+    "incomeDifference": "$",
+    "employeeMonthlyNet": "$",
+    "freelanceMonthlyNet": "$"
+  }
+}

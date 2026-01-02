@@ -1,0 +1,75 @@
+{
+  "slug": "salary-after-tax-usa",
+  "type": "calculator",
+  "h1": "Salary After Tax Calculator – USA Net Pay Estimator",
+  "metaTitle": "Salary After Tax Calculator USA – Calculate Net Pay",
+  "metaDescription": "Use our USA salary after tax calculator to estimate your take-home pay. Include federal, state, and other deductions. Quick and free.",
+  "primaryKeyword": "salary after tax calculator USA",
+  "longTailKeywords": [
+    "US salary calculator after tax",
+    "net pay calculator USA",
+    "take home salary USA",
+    "calculate salary after federal tax",
+    "calculate salary after state tax",
+    "gross to net salary USA",
+    "payroll calculator USA"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator"
+  ],
+  "dataRef": "salaryAfterTaxUSA",
+  "intro": "Understanding your salary after tax in the USA is crucial for accurate budgeting and financial planning. This calculator estimates your take-home pay by accounting for federal income tax, state income tax, Social Security, Medicare, and other common deductions. Whether you're an employee, contractor, or freelancer working in the United States, this tool provides localized calculations for all 50 states to help you understand your actual net income.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howSalaryAfterTaxWorksUSA": "Salary after tax in the USA involves several key deductions from your gross pay. Federal income tax is calculated based on tax brackets and filing status. State income tax varies significantly by state, from 0% in Texas and Florida to over 10% in California and New York. Social Security tax (6.2%) and Medicare tax (1.45%) are withheld for most employees. Optional deductions like 401(k) contributions, health insurance premiums, and other pre-tax benefits can further reduce your taxable income and increase your take-home pay.",
+  "example": {
+    "scenario": "An employee earning $60,000 annually in California with standard deductions.",
+    "results": "Gross salary: $60,000 | Federal tax: $9,000 | State tax (CA): $3,000 | Social Security: $3,720 | Medicare: $870 | Net salary: $43,410 | Monthly net: $3,618"
+  },
+  "whyUseSalaryAfterTaxCalculator": [
+    "Accurate budgeting based on your actual take-home pay",
+    "Compare job offers using real net income figures",
+    "Plan for tax withholdings and avoid surprises",
+    "Make informed decisions about pre-tax deductions",
+    "Understand the impact of state taxes on your salary",
+    "Prepare for year-end tax planning and refunds"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include both federal and state taxes?",
+      "answer": "Yes, it includes federal income tax calculations and state-specific tax rates for all 50 US states."
+    },
+    {
+      "question": "Can I include deductions like 401k contributions?",
+      "answer": "Yes, you can add common deductions including 401(k), health insurance, and other pre-tax benefits that reduce your taxable income."
+    },
+    {
+      "question": "Is this calculator accurate for all US states?",
+      "answer": "Yes, it includes state-specific tax rates and calculations for all 50 states, including states with no income tax."
+    },
+    {
+      "question": "Can I calculate monthly take-home pay?",
+      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+    },
+    {
+      "question": "Is this USA salary after tax calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your W-4 form annually to ensure proper federal tax withholding",
+    "Consider state tax rates when evaluating job offers in different locations",
+    "Maximize pre-tax deductions like 401(k) contributions to reduce taxable income",
+    "Keep track of year-to-date earnings for accurate tax planning",
+    "Consult a tax professional for personalized advice on complex tax situations"
+  ]
+}

@@ -1,0 +1,196 @@
+{
+  "slug": "salary-negotiation-tips",
+  "type": "guide",
+  "h1": "Salary Negotiation Guide",
+  "metaTitle": "Salary Negotiation Tips | How to Negotiate Higher Pay | SalaryWise.io",
+  "metaDescription": "Learn proven salary negotiation strategies. Get tips for negotiating job offers, raises, and better compensation packages.",
+  "primaryKeyword": "salary negotiation tips",
+  "longTailKeywords": [
+    "salary negotiation",
+    "negotiate salary",
+    "job offer negotiation",
+    "salary increase",
+    "compensation negotiation"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net",
+    "guides/gross-vs-net"
+  ],
+  "title": "Salary Negotiation Tips | How to Negotiate Higher Pay | SalaryWise.io",
+  "description": "Learn proven salary negotiation strategies. Get tips for negotiating job offers, raises, and better compensation packages.",
+  "keywords": "salary negotiation, negotiate salary, job offer negotiation, salary increase, compensation negotiation",
+  "canonical": "https://salarywise.io/guides/salary-negotiation",
+
+  "header": {
+    "title": "Salary Negotiation Guide",
+    "subtitle": "Get the pay you deserve"
+  },
+
+  "intro": {
+    "paragraph1": "Salary negotiation is a skill that can add tens of thousands of dollars to your lifetime earnings. Most people accept the first offer they receive, leaving money on the table.",
+    "paragraph2": "This guide will teach you proven negotiation strategies, timing tactics, and how to research market rates to maximize your compensation."
+  },
+
+  "preparation": {
+    "title": "Preparation: Knowledge is Power",
+    "steps": [
+      {
+        "title": "Research Market Rates",
+        "description": "Use salary data from sources like Glassdoor, Salary.com, and Bureau of Labor Statistics. Know the range for your role, location, and experience level.",
+        "tools": ["Salary calculators", "Industry surveys", "Networking contacts"]
+      },
+      {
+        "title": "Calculate Your Value",
+        "description": "Quantify your contributions, skills, and impact. Prepare specific examples of your achievements and their business impact.",
+        "examples": ["Revenue generated", "Costs saved", "Efficiency improvements"]
+      },
+      {
+        "title": "Know Your Numbers",
+        "description": "Determine your target salary, ideal offer, and walk-away point. Consider total compensation including benefits.",
+        "considerations": ["Base salary", "Bonuses", "Benefits", "Stock options"]
+      }
+    ]
+  },
+
+  "timing": {
+    "title": "Timing Your Negotiation",
+    "bestTimes": [
+      {
+        "situation": "Job Interviews",
+        "when": "After receiving an offer, before accepting",
+        "why": "You have leverage as the chosen candidate"
+      },
+      {
+        "situation": "Performance Reviews",
+        "when": "After exceeding goals and receiving positive feedback",
+        "why": "Your value is clearly demonstrated"
+      },
+      {
+        "situation": "Taking on New Responsibilities",
+        "when": "Before or immediately after scope increase",
+        "why": "Additional responsibilities justify higher pay"
+      }
+    ]
+  },
+
+  "strategies": {
+    "title": "Negotiation Strategies",
+    "techniques": [
+      {
+        "title": "The Flinch Technique",
+        "description": "Express surprise at the initial offer, even if you expected it. This opens the door for counteroffers.",
+        "example": "'I was expecting something in the range of $X-$Y based on market rates.'"
+      },
+      {
+        "title": "Silence is Golden",
+        "description": "Don't respond immediately to an offer. Give yourself time to think and respond strategically.",
+        "why": "Creates pressure on the employer to improve the offer"
+      },
+      {
+        "title": "Focus on Total Compensation",
+        "description": "Consider base salary, bonuses, benefits, stock options, and other perks as part of the package.",
+        "consider": ["Health insurance", "Retirement matching", "Vacation time", "Remote work options"]
+      },
+      {
+        "title": "Use Precise Numbers",
+        "description": "Instead of round numbers, use specific amounts that show you've done your research.",
+        "example": "$87,500 instead of $85,000-$90,000"
+      }
+    ]
+  },
+
+  "scripts": {
+    "title": "Negotiation Scripts",
+    "emailResponse": {
+      "title": "Email Response to Initial Offer",
+      "content": "Thank you for the offer. I'm excited about the opportunity to join [Company] and contribute to [specific project/goal]. Based on my research and experience, I was targeting a salary in the range of $[target range]. Would you be able to match or exceed this range?"
+    },
+    "counterOffer": {
+      "title": "Counteroffer Response",
+      "content": "I appreciate the offer of $[offered amount]. Based on my research and the value I can bring to the team, I'm looking for $[target amount]. This aligns with market rates for this role and my level of experience."
+    }
+  },
+
+  "commonMistakes": {
+    "title": "Common Negotiation Mistakes to Avoid",
+    "mistakes": [
+      {
+        "title": "Accepting the First Offer",
+        "description": "Most offers have 10-20% negotiation room"
+      },
+      {
+        "title": "Focusing Only on Salary",
+        "description": "Benefits, bonuses, and perks add significant value"
+      },
+      {
+        "title": "Being Too Aggressive",
+        "description": "Maintain professionalism and build relationships"
+      },
+      {
+        "title": "Not Having a BATNA",
+        "description": "Know your alternatives if negotiation fails"
+      }
+    ]
+  },
+
+  "followUp": {
+    "title": "Following Up Effectively",
+    "strategies": [
+      {
+        "title": "Send Thank You Notes",
+        "description": "Express continued interest while reiterating your qualifications"
+      },
+      {
+        "title": "Provide References",
+        "description": "Offer to connect with references who can speak to your value"
+      },
+      {
+        "title": "Reiterate Enthusiasm",
+        "description": "Show genuine interest in the role and company"
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Salary Negotiation FAQ",
+    "questions": [
+      {
+        "question": "How much can I expect to negotiate?",
+        "answer": "Typically 10-20% above the initial offer, depending on the company, role, and your leverage."
+      },
+      {
+        "question": "Should I negotiate benefits separately?",
+        "answer": "Yes, negotiate the total package. You can often trade salary for better benefits or vice versa."
+      },
+      {
+        "question": "What if they won't increase the offer?",
+        "answer": "Be prepared to walk away if the offer doesn't meet your minimum requirements."
+      },
+      {
+        "question": "When should I bring up salary in interviews?",
+        "answer": "Wait until they bring it up, or after they've expressed strong interest in hiring you."
+      }
+    ]
+  },
+
+  "conclusion": {
+    "title": "Start Negotiating Like a Pro",
+    "content": "Salary negotiation is a skill that improves with practice. Research thoroughly, prepare your numbers, and approach negotiations with confidence.",
+    "cta": {
+      "text": "Research Market Salary",
+      "href": "/en/salary-calculator"
+    }
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Salary Negotiation Guide",
+    "description": "Complete guide to negotiating higher salary and better compensation",
+    "author": {
+      "@type": "Organization",
+      "name": "SalaryWise.io"
+    }
+  }
+}

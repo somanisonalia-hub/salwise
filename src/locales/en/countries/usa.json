@@ -1,0 +1,189 @@
+{
+  "title": "USA Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "description": "Calculate take-home pay in the USA including federal income tax, state taxes, Social Security, and Medicare. Accurate US tax calculations with state-specific rates.",
+  "keywords": "USA salary calculator, US tax calculator, take home pay USA, US paycheck calculator, federal tax calculator",
+  "canonical": "https://salarywise.io/countries/usa",
+
+  "header": {
+    "title": "USA Salary Calculator",
+    "subtitle": "Calculate your take-home pay with accurate US tax calculations"
+  },
+
+  "intro": {
+    "paragraph1": "Understanding your take-home pay in the United States requires accounting for federal income tax, state income tax, Social Security, Medicare, and other deductions. Our USA salary calculator provides accurate estimates based on current tax rates and your specific situation.",
+    "paragraph2": "Enter your gross salary, filing status, state, and other details to get a comprehensive breakdown of your net pay and tax obligations."
+  },
+
+  "federalTax": {
+    "title": "Federal Income Tax Brackets 2024",
+    "description": "Federal income tax is progressive, meaning higher earners pay a higher percentage.",
+    "brackets": {
+      "single": [
+        {"range": "$0 - $11,600", "rate": "10%"},
+        {"range": "$11,601 - $47,150", "rate": "12%"},
+        {"range": "$47,151 - $100,525", "rate": "22%"},
+        {"range": "$100,526 - $191,950", "rate": "24%"},
+        {"range": "$191,951 - $243,725", "rate": "32%"},
+        {"range": "$243,726 - $609,350", "rate": "35%"},
+        {"range": "$609,351+", "rate": "37%"}
+      ],
+      "marriedFilingJointly": [
+        {"range": "$0 - $23,200", "rate": "10%"},
+        {"range": "$23,201 - $94,300", "rate": "12%"},
+        {"range": "$94,301 - $201,050", "rate": "22%"},
+        {"range": "$201,051 - $383,900", "rate": "24%"},
+        {"range": "$383,901 - $487,450", "rate": "32%"},
+        {"range": "$487,451 - $731,200", "rate": "35%"},
+        {"range": "$731,201+", "rate": "37%"}
+      ]
+    }
+  },
+
+  "stateTax": {
+    "title": "State Income Tax Rates",
+    "description": "State tax rates vary significantly across the United States.",
+    "highlights": [
+      {"state": "California", "rate": "1-13.3%", "note": "Highest state tax rate"},
+      {"state": "New York", "rate": "4-8.82%", "note": "High cost of living"},
+      {"state": "Texas", "rate": "0%", "note": "No state income tax"},
+      {"state": "Florida", "rate": "0%", "note": "No state income tax"},
+      {"state": "Nevada", "rate": "0%", "note": "No state income tax"}
+    ]
+  },
+
+  "fica": {
+    "title": "FICA Taxes (Social Security & Medicare)",
+    "socialSecurity": {
+      "title": "Social Security Tax",
+      "rate": "6.2%",
+      "limit": "$168,600 (2024)",
+      "note": "Employer matches this amount for a total of 12.4%"
+    },
+    "medicare": {
+      "title": "Medicare Tax",
+      "rate": "1.45%",
+      "additional": "Additional Medicare Tax of 0.9% for wages over $200,000 (single) or $250,000 (joint)"
+    }
+  },
+
+  "deductions": {
+    "title": "Other Common Deductions",
+    "items": [
+      {
+        "title": "Health Insurance",
+        "description": "Employee portion of health insurance premiums",
+        "typical": "$200-600/month for individual coverage"
+      },
+      {
+        "title": "Retirement Contributions",
+        "description": "401(k), 403(b), IRA contributions",
+        "taxAdvantage": "Pre-tax deductions reduce taxable income"
+      },
+      {
+        "title": "Commuter Benefits",
+        "description": "Transit passes, parking expenses",
+        "taxAdvantage": "Pre-tax deductions"
+      },
+      {
+        "title": "Charitable Contributions",
+        "description": "Donations to qualified organizations",
+        "note": "May be pre-tax depending on plan"
+      }
+    ]
+  },
+
+  "examples": {
+    "title": "USA Salary Calculation Examples",
+    "scenarios": [
+      {
+        "title": "Software Engineer - San Francisco, CA",
+        "gross": "$150,000",
+        "details": {
+          "federalTax": "$25,500 (17%)",
+          "stateTax": "$19,950 (13.3%)",
+          "socialSecurity": "$11,475 (6.2%)",
+          "medicare": "$2,175 (1.45%)",
+          "healthInsurance": "$500/month ($6,000/year)",
+          "retirement": "$4,500 (3%)",
+          "netPay": "$80,400 (53.6% of gross)"
+        }
+      },
+      {
+        "title": "Teacher - Austin, TX",
+        "gross": "$55,000",
+        "details": {
+          "federalTax": "$6,050 (11%)",
+          "stateTax": "$0 (0%)",
+          "socialSecurity": "$4,208 (6.2%)",
+          "medicare": "$798 (1.45%)",
+          "healthInsurance": "$300/month ($3,600/year)",
+          "retirement": "$1,650 (3%)",
+          "netPay": "$38,694 (70.4% of gross)"
+        }
+      }
+    ]
+  },
+
+  "tools": {
+    "title": "USA Tax Calculators",
+    "calculators": [
+      {
+        "title": "Federal Tax Calculator",
+        "description": "Calculate federal income tax by bracket",
+        "href": "/en/take-home-pay"
+      },
+      {
+        "title": "State Tax Calculator",
+        "description": "Compare tax rates across states",
+        "href": "/en/country"
+      },
+      {
+        "title": "Net Pay Calculator",
+        "description": "Full take-home pay calculation",
+        "href": "/en/gross-to-net"
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "USA Tax FAQ",
+    "questions": [
+      {
+        "question": "How is US federal income tax calculated?",
+        "answer": "Federal tax uses a progressive bracket system where higher income is taxed at higher rates. Your taxable income is calculated after deductions and credits."
+      },
+      {
+        "question": "Do all states have income tax?",
+        "answer": "No, 9 states have no state income tax: Texas, Florida, Nevada, Washington, Wyoming, South Dakota, Alaska, Tennessee, and New Hampshire."
+      },
+      {
+        "question": "What's the difference between withholding and estimated taxes?",
+        "answer": "Withholding is tax taken from your paycheck throughout the year. Estimated taxes are quarterly payments for self-employed individuals or those with additional income."
+      },
+      {
+        "question": "How does the standard deduction work?",
+        "answer": "The standard deduction reduces your taxable income. For 2024: $14,600 (single), $29,200 (joint), $21,900 (head of household)."
+      }
+    ]
+  },
+
+  "disclaimer": {
+    "title": "Important Disclaimer",
+    "content": "This calculator provides estimates based on current tax rates and general assumptions. Tax laws change frequently, and individual circumstances vary. Consult a tax professional for personalized advice."
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "USA Salary Calculator",
+    "url": "https://salarywise.io/countries/usa",
+    "applicationCategory": "Calculator",
+    "description": "Calculate take-home pay in the USA including federal income tax, state taxes, Social Security, and Medicare",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "USD"
+    }
+  }
+}

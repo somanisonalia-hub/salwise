@@ -1,0 +1,22 @@
+{
+  "id": "franceSalary",
+  "name": "France Salary Calculator",
+  "description": "Calculate take-home pay in France",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 35000,
+      "unit": "€"
+    }
+  ],
+  "formula": {
+    "incomeTax": "grossSalary * 0.20",
+    "socialSecurity": "grossSalary * 0.22",
+    "unemploymentInsurance": "grossSalary * 0.025",
+    "totalDeductions": "incomeTax + socialSecurity + unemploymentInsurance",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

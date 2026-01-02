@@ -1,0 +1,20 @@
+{
+  "slug": "salary-comparison-calculator",
+  "type": "calculator",
+  "h1": "Salary Comparison Calculator",
+  "metaTitle": "Salary Comparison Calculator | Compare Job Offers | SalaryWise.io",
+  "metaDescription": "Compare multiple job offers side by side. Calculate differences in base pay, benefits, and total compensation to make the best career decision.",
+  "primaryKeyword": "salary comparison calculator",
+  "longTailKeywords": [
+    "compare job offers",
+    "salary comparison tool",
+    "job offer comparison",
+    "salary difference calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "take-home-pay-calculator",
+    "gross-to-net-salary"
+  ],
+  "dataRef": "salaryComparisonCalculator"
+}

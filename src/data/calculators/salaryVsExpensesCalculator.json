@@ -1,0 +1,88 @@
+{
+  "id": "salaryVsExpensesCalculator",
+  "name": "Salary vs Expenses Calculator",
+  "description": "Compare net salary with monthly expenses to plan budget",
+  "inputs": [
+    {
+      "id": "netSalary",
+      "label": "Net Monthly Salary",
+      "type": "number",
+      "default": 4000,
+      "unit": "$",
+      "placeholder": "4000",
+      "required": true,
+      "min": 0,
+      "description": "Your monthly take-home pay after taxes"
+    },
+    {
+      "id": "rentHousing",
+      "label": "Rent / Housing Expenses",
+      "type": "number",
+      "default": 1200,
+      "unit": "$",
+      "placeholder": "1200",
+      "required": false,
+      "min": 0,
+      "description": "Monthly rent, mortgage, or housing costs"
+    },
+    {
+      "id": "utilities",
+      "label": "Utilities",
+      "type": "number",
+      "default": 200,
+      "unit": "$",
+      "placeholder": "200",
+      "required": false,
+      "min": 0,
+      "description": "Electricity, water, internet, phone, etc."
+    },
+    {
+      "id": "foodGroceries",
+      "label": "Food / Groceries",
+      "type": "number",
+      "default": 400,
+      "unit": "$",
+      "placeholder": "400",
+      "required": false,
+      "min": 0,
+      "description": "Monthly food and grocery expenses"
+    },
+    {
+      "id": "transportation",
+      "label": "Transportation",
+      "type": "number",
+      "default": 300,
+      "unit": "$",
+      "placeholder": "300",
+      "required": false,
+      "min": 0,
+      "description": "Car payment, gas, public transport, etc."
+    },
+    {
+      "id": "otherExpenses",
+      "label": "Other Monthly Expenses",
+      "type": "number",
+      "default": 900,
+      "unit": "$",
+      "placeholder": "900",
+      "required": false,
+      "min": 0,
+      "description": "Entertainment, insurance, loans, miscellaneous"
+    }
+  ],
+  "formula": {
+    "totalExpenses": "rentHousing + utilities + foodGroceries + transportation + otherExpenses",
+    "remainingSavings": "netSalary - totalExpenses",
+    "savingsPercentage": "netSalary > 0 ? (remainingSavings / netSalary) * 100 : 0"
+  },
+  "outputLabels": {
+    "totalExpenses": "Total Monthly Expenses",
+    "remainingSavings": "Remaining Savings / (Deficit)",
+    "savingsPercentage": "Savings Percentage"
+  },
+  "outputUnits": {
+    "totalExpenses": "$",
+    "remainingSavings": "$",
+    "savingsPercentage": "%"
+  }
+}

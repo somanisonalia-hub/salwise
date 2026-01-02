@@ -1,0 +1,215 @@
+{
+  "slug": "how-to-calculate-take-home",
+  "type": "guide",
+  "h1": "How to Calculate Take-Home Pay",
+  "metaTitle": "How to Calculate Take-Home Pay | Net Salary Calculator Guide | SalaryWise.io",
+  "metaDescription": "Learn how to calculate your take-home pay after taxes and deductions. Step-by-step guide with examples and free calculator tools.",
+  "primaryKeyword": "calculate take home pay",
+  "longTailKeywords": [
+    "calculate take home pay",
+    "net salary calculation",
+    "paycheck calculator",
+    "after tax salary"
+  ],
+  "related": [
+    "take-home-pay",
+    "gross-to-net",
+    "guides/gross-vs-net"
+  ],
+  "title": "How to Calculate Take-Home Pay | Net Salary Calculator Guide | SalaryWise.io",
+  "description": "Learn how to calculate your take-home pay after taxes and deductions. Step-by-step guide with examples and free calculator tools.",
+  "keywords": "calculate take home pay, net salary calculation, paycheck calculator, after tax salary",
+  "canonical": "https://salarywise.io/guides/how-to-calculate-take-home",
+
+  "header": {
+    "title": "How to Calculate Take-Home Pay",
+    "subtitle": "Your complete guide to net salary calculation"
+  },
+
+  "intro": {
+    "paragraph1": "Understanding your take-home pay is essential for effective financial planning. Your gross salary doesn't tell the whole story - you need to know what actually arrives in your bank account.",
+    "paragraph2": "This comprehensive guide will teach you how to calculate your net salary, understand common deductions, and use our free tools to get accurate estimates."
+  },
+
+  "basicFormula": {
+    "title": "Basic Take-Home Pay Formula",
+    "formula": "Net Salary = Gross Salary - Total Deductions",
+    "explanation": "Start with your gross pay and subtract all taxes and deductions to find your take-home amount."
+  },
+
+  "commonDeductions": {
+    "title": "Common Salary Deductions",
+    "federalIncomeTax": {
+      "title": "Federal Income Tax",
+      "description": "Based on tax brackets (10-37% in the US)",
+      "examples": ["Single filer: 12-22%", "Married filing jointly: 12-24%"]
+    },
+    "stateIncomeTax": {
+      "title": "State Income Tax",
+      "description": "Varies by state (0-13.3% in the US)",
+      "examples": ["California: 1-13.3%", "Texas: 0%", "New York: 4-8.82%"]
+    },
+    "socialSecurity": {
+      "title": "Social Security Tax",
+      "description": "6.2% of wages up to $168,600 (2024 limit)",
+      "note": "Employer matches this amount"
+    },
+    "medicare": {
+      "title": "Medicare Tax",
+      "description": "1.45% of all wages",
+      "additional": "Additional Medicare Tax (0.9%) for high earners"
+    },
+    "healthInsurance": {
+      "title": "Health Insurance",
+      "description": "Employee portion of premiums",
+      "examples": ["Individual: $400-800/month", "Family: $800-1,500/month"]
+    },
+    "retirement": {
+      "title": "Retirement Contributions",
+      "description": "401(k), 403(b), or other retirement plans",
+      "examples": ["3-6% of salary", "Employer matching contributions"]
+    }
+  },
+
+  "stepByStep": {
+    "title": "Step-by-Step Calculation Guide",
+    "steps": [
+      {
+        "step": "1",
+        "title": "Determine Your Gross Salary",
+        "description": "Start with your annual, monthly, or hourly gross pay before any deductions.",
+        "examples": ["$75,000 annually", "$6,250 monthly", "$36.06 hourly"]
+      },
+      {
+        "step": "2",
+        "title": "Calculate Federal Income Tax",
+        "description": "Use current tax brackets and your filing status to estimate federal tax.",
+        "note": "Use our tax calculator for precise bracket calculations."
+      },
+      {
+        "step": "3",
+        "title": "Add State/Local Taxes",
+        "description": "Include state income tax and any local tax obligations.",
+        "note": "Rates vary significantly by location."
+      },
+      {
+        "step": "4",
+        "title": "Include FICA Taxes",
+        "description": "Add Social Security (6.2%) and Medicare (1.45%) taxes.",
+        "total": "Total FICA: 7.65% of wages"
+      },
+      {
+        "step": "5",
+        "title": "Account for Pre-Tax Deductions",
+        "description": "Subtract health insurance and retirement contributions taken before taxes.",
+        "note": "These reduce your taxable income."
+      },
+      {
+        "step": "6",
+        "title": "Subtract Other Deductions",
+        "description": "Include any post-tax deductions like garnishments or union dues.",
+        "note": "These are taken after taxes are calculated."
+      }
+    ]
+  },
+
+  "examples": {
+    "title": "Take-Home Pay Calculation Examples",
+    "scenarios": [
+      {
+        "title": "Software Engineer - San Francisco, CA",
+        "gross": "$150,000 annually",
+        "breakdown": {
+          "federalTax": "$25,500 (17%)",
+          "stateTax": "$19,950 (13.3%)",
+          "fica": "$11,475 (7.65%)",
+          "healthInsurance": "$6,000 (4%)",
+          "retirement": "$4,500 (3%)",
+          "totalDeductions": "$67,425",
+          "netPay": "$82,575 (55.1% of gross)"
+        }
+      },
+      {
+        "title": "Teacher - Austin, TX",
+        "gross": "$55,000 annually",
+        "breakdown": {
+          "federalTax": "$6,050 (11%)",
+          "stateTax": "$0 (0%)",
+          "fica": "$4,208 (7.65%)",
+          "healthInsurance": "$2,200 (4%)",
+          "retirement": "$1,650 (3%)",
+          "totalDeductions": "$14,108",
+          "netPay": "$40,892 (74.3% of gross)"
+        }
+      }
+    ]
+  },
+
+  "tools": {
+    "title": "Free Take-Home Pay Calculators",
+    "description": "Use our free tools to calculate your net salary accurately.",
+    "calculators": [
+      {
+        "title": "Salary Calculator",
+        "description": "Calculate annual, monthly, and hourly rates",
+        "href": "/en/salary-calculator"
+      },
+      {
+        "title": "Gross to Net Calculator",
+        "description": "Convert gross salary to net take-home pay",
+        "href": "/en/gross-to-net"
+      },
+      {
+        "title": "Tax Calculator",
+        "description": "Estimate federal and state tax obligations",
+        "href": "/en/take-home-pay"
+      }
+    ]
+  },
+
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "questions": [
+      {
+        "question": "How do I calculate my take-home pay?",
+        "answer": "Subtract all deductions from your gross salary: federal tax, state tax, FICA taxes, health insurance, retirement contributions, and other deductions."
+      },
+      {
+        "question": "What's the difference between pre-tax and post-tax deductions?",
+        "answer": "Pre-tax deductions (like health insurance, retirement) reduce your taxable income. Post-tax deductions are subtracted after taxes are calculated."
+      },
+      {
+        "question": "How much should I expect in take-home pay?",
+        "answer": "Expect 65-80% of your gross salary as take-home pay, depending on your location, income level, and deductions."
+      },
+      {
+        "question": "Do benefits affect my take-home pay?",
+        "answer": "Yes, benefits like health insurance premiums are typically deducted from your paycheck, reducing your net pay."
+      }
+    ]
+  },
+
+  "conclusion": {
+    "title": "Calculate Your Take-Home Pay Today",
+    "content": "Understanding your take-home pay is crucial for financial planning. Use our free calculators to get accurate estimates for your specific situation.",
+    "cta": {
+      "text": "Calculate Take-Home Pay",
+      "href": "/en/gross-to-net"
+    }
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "How to Calculate Take-Home Pay",
+    "description": "Complete guide to calculating net salary after taxes and deductions",
+    "author": {
+      "@type": "Organization",
+      "name": "SalaryWise.io"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "SalaryWise.io"
+    }
+  }
+}

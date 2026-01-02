@@ -1,0 +1,154 @@
+{
+  "calculators": [
+    {
+      "id": "globalSalary",
+      "name": "Salary Calculator (Global)",
+      "inputs": [
+        {"id": "salary", "label": "Annual Salary", "type": "number", "default": 50000, "unit": "$"},
+        {"id": "bonus", "label": "Annual Bonus", "type": "number", "default": 5000, "unit": "$"},
+        {"id": "hoursPerWeek", "label": "Hours per Week", "type": "number", "default": 40, "unit": "hours"}
+      ],
+      "formula": {
+        "monthlySalary": "salary / 12",
+        "weeklySalary": "salary / 52",
+        "hourlySalary": "salary / (hoursPerWeek * 52)",
+        "totalCompensation": "salary + bonus"
+      }
+    },
+    {
+      "id": "grossToNet",
+      "name": "Gross to Net Salary Calculator",
+      "inputs": [
+        {"id": "grossSalary", "label": "Gross Salary", "type": "number", "default": 60000, "unit": "$"},
+        {"id": "taxRate", "label": "Tax Rate (%)", "type": "number", "default": 25, "unit": "%"}
+      ],
+      "formula": {
+        "netSalary": "grossSalary * (1 - taxRate/100)"
+      }
+    },
+    {
+      "id": "netToGross",
+      "name": "Net to Gross Salary Calculator",
+      "inputs": [
+        {"id": "netSalary", "label": "Net Salary", "type": "number", "default": 45000, "unit": "$"},
+        {"id": "taxRate", "label": "Tax Rate (%)", "type": "number", "default": 25, "unit": "%"}
+      ],
+      "formula": {
+        "grossSalary": "netSalary / (1 - taxRate/100)"
+      }
+    },
+    {
+      "id": "takeHomePay",
+      "name": "Take-Home Pay Calculator",
+      "inputs": [
+        {"id": "grossSalary", "label": "Gross Salary", "type": "number", "default": 60000, "unit": "$"},
+        {"id": "taxRate", "label": "Tax Rate (%)", "type": "number", "default": 20, "unit": "%"},
+        {"id": "bonus", "label": "Bonus", "type": "number", "default": 5000, "unit": "$"}
+      ],
+      "formula": {
+        "netSalary": "(grossSalary + bonus) * (1 - taxRate/100)"
+      }
+    },
+    {
+      "id": "hourlyToSalary",
+      "name": "Hourly to Salary Calculator",
+      "inputs": [
+        {"id": "hourlyRate", "label": "Hourly Rate", "type": "number", "default": 25, "unit": "$"},
+        {"id": "hoursPerWeek", "label": "Hours per Week", "type": "number", "default": 40, "unit": "hours"},
+        {"id": "weeksPerYear", "label": "Weeks per Year", "type": "number", "default": 52, "unit": "weeks"}
+      ],
+      "formula": {
+        "annualSalary": "hourlyRate * hoursPerWeek * weeksPerYear",
+        "monthlySalary": "annualSalary / 12"
+      }
+    },
+    {
+      "id": "bonusCalculator",
+      "name": "Bonus Calculator",
+      "inputs": [
+        {"id": "salary", "label": "Annual Salary", "type": "number", "default": 50000, "unit": "$"},
+        {"id": "bonusPercentage", "label": "Bonus %", "type": "number", "default": 10, "unit": "%"},
+        {"id": "taxRate", "label": "Tax Rate (%)", "type": "number", "default": 25, "unit": "%"}
+      ],
+      "formula": {
+        "bonusAmount": "salary * bonusPercentage / 100",
+        "netBonus": "bonusAmount * (1 - taxRate/100)"
+      }
+    },
+
+    {
+      "id": "usaSalary",
+      "name": "USA Salary Calculator",
+      "inputs": [
+        {"id": "grossSalary", "label": "Gross Salary (USD)", "type": "number", "default": 70000, "unit": "$"},
+        {"id": "stateTax", "label": "State Tax (%)", "type": "number", "default": 5, "unit": "%"},
+        {"id": "federalTax", "label": "Federal Tax (%)", "type": "number", "default": 12, "unit": "%"},
+        {"id": "bonus", "label": "Bonus (USD)", "type": "number", "default": 5000, "unit": "$"}
+      ],
+      "formula": {
+        "netSalary": "(grossSalary + bonus) * (1 - (stateTax + federalTax)/100)"
+      }
+    },
+    {
+      "id": "ukSalary",
+      "name": "UK Salary Calculator",
+      "inputs": [
+        {"id": "grossSalary", "label": "Gross Salary (GBP)", "type": "number", "default": 50000, "unit": "£"},
+        {"id": "taxRate", "label": "Income Tax (%)", "type": "number", "default": 20, "unit": "%"},
+        {"id": "niContribution", "label": "National Insurance (%)", "type": "number", "default": 12, "unit": "%"}
+      ],
+      "formula": {
+        "netSalary": "grossSalary * (1 - (taxRate + niContribution)/100)"
+      }
+    },
+    {
+      "id": "irelandSalary",
+      "name": "Ireland Salary Calculator",
+      "inputs": [
+        {"id": "grossSalary", "label": "Gross Salary (EUR)", "type": "number", "default": 45000, "unit": "€"},
+        {"id": "taxRate", "label": "Income Tax (%)", "type": "number", "default": 20, "unit": "%"},
+        {"id": "prsi", "label": "PRSI (%)", "type": "number", "default": 4, "unit": "%"},
+        {"id": "usc", "label": "USC (%)", "type": "number", "default": 2, "unit": "%"}
+      ],
+      "formula": {
+        "netSalary": "grossSalary * (1 - (taxRate + prsi + usc)/100)"
+      }
+    },
+    {
+      "id": "canadaSalary",
+      "name": "Canada Salary Calculator",
+      "inputs": [
+        {"id": "grossSalary", "label": "Gross Salary (CAD)", "type": "number", "default": 65000, "unit": "$"},
+        {"id": "federalTax", "label": "Federal Tax (%)", "type": "number", "default": 15, "unit": "%"},
+        {"id": "provincialTax", "label": "Provincial Tax (%)", "type": "number", "default": 10, "unit": "%"}
+      ],
+      "formula": {
+        "netSalary": "grossSalary * (1 - (federalTax + provincialTax)/100)"
+      }
+    },
+    {
+      "id": "australiaSalary",
+      "name": "Australia Salary Calculator",
+      "inputs": [
+        {"id": "grossSalary", "label": "Gross Salary (AUD)", "type": "number", "default": 70000, "unit": "$"},
+        {"id": "taxRate", "label": "Income Tax (%)", "type": "number", "default": 19, "unit": "%"},
+        {"id": "superannuation", "label": "Superannuation (%)", "type": "number", "default": 10, "unit": "%"}
+      ],
+      "formula": {
+        "netSalary": "grossSalary * (1 - (taxRate + superannuation)/100)"
+      }
+    },
+    {
+      "id": "indiaSalary",
+      "name": "India Salary Calculator",
+      "inputs": [
+        {"id": "grossSalary", "label": "Gross Salary (INR)", "type": "number", "default": 1200000, "unit": "₹"},
+        {"id": "taxRate", "label": "Income Tax (%)", "type": "number", "default": 20, "unit": "%"},
+        {"id": "providentFund", "label": "Provident Fund (%)", "type": "number", "default": 12, "unit": "%"}
+      ],
+      "formula": {
+        "netSalary": "grossSalary * (1 - (taxRate + providentFund)/100)"
+      }
+    }
+  ]
+}

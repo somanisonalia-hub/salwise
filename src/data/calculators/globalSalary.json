@@ -1,0 +1,85 @@
+{
+  "id": "globalSalary",
+  "name": "Salary Calculator (Global)",
+  "description": "Calculate gross salary, estimated tax, and take-home pay",
+  "inputs": [
+    {
+      "id": "salaryAmount",
+      "label": "Salary Amount",
+      "type": "number",
+      "default": 50000,
+      "unit": "$",
+      "placeholder": "50000",
+      "required": true,
+      "min": 0,
+      "description": "Your base salary amount"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "hourly", "label": "Hourly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "taxRate",
+      "label": "Estimated Tax Rate (%)",
+      "type": "number",
+      "default": 25,
+      "unit": "%",
+      "placeholder": "25",
+      "required": false,
+      "min": 0,
+      "max": 50,
+      "description": "Approximate tax rate for estimation"
+    },
+    {
+      "id": "hoursPerWeek",
+      "label": "Hours per Week",
+      "type": "number",
+      "default": 40,
+      "unit": "hours",
+      "placeholder": "40",
+      "required": false,
+      "min": 1,
+      "max": 80,
+      "description": "Standard working hours per week"
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'hourly' ? salaryAmount * hoursPerWeek * 52 : payFrequency === 'monthly' ? salaryAmount * 12 : salaryAmount",
+    "monthlyGross": "annualGross / 12",
+    "weeklyGross": "annualGross / 52",
+    "hourlyGross": "annualGross / (hoursPerWeek * 52)",
+    "estimatedTax": "annualGross * (taxRate / 100)",
+    "annualNet": "annualGross - estimatedTax",
+    "monthlyNet": "annualNet / 12",
+    "weeklyNet": "annualNet / 52"
+  },
+  "outputLabels": {
+    "annualGross": "Annual Gross Salary",
+    "monthlyGross": "Monthly Gross Pay",
+    "weeklyGross": "Weekly Gross Pay",
+    "hourlyGross": "Hourly Gross Rate",
+    "estimatedTax": "Estimated Annual Tax",
+    "annualNet": "Annual Take-Home Pay",
+    "monthlyNet": "Monthly Take-Home Pay",
+    "weeklyNet": "Weekly Take-Home Pay"
+  },
+  "outputUnits": {
+    "annualGross": "$",
+    "monthlyGross": "$",
+    "weeklyGross": "$",
+    "hourlyGross": "$/hour",
+    "estimatedTax": "$",
+    "annualNet": "$",
+    "monthlyNet": "$",
+    "weeklyNet": "$"
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "pages": [
+    {
+      "slug": "salary-calculator",
+      "type": "calculator",
+      "h1": "Salary Calculator",
+      "metaTitle": "Salary Calculator – Calculate Your Salary Instantly",
+      "metaDescription": "Use our free salary calculator to quickly calculate your gross or net salary. Accurate and easy to use for hourly and salaried employees.",
+      "primaryKeyword": "salary calculator",
+      "longTailKeywords": ["online salary calculator", "calculate your salary", "free salary calculator", "annual salary calculator"],
+      "related": ["gross-to-net", "take-home-pay", "hourly-to-salary"],
+      "dataRef": "globalSalary"
+    },
+    {
+      "slug": "gross-to-net",
+      "type": "calculator",
+      "h1": "Gross to Net Salary Calculator",
+      "metaTitle": "Gross to Net Salary Calculator – Know Your Take-Home Pay",
+      "metaDescription": "Calculate your net salary from gross earnings with our simple gross to net salary calculator. See exactly how much you take home after taxes.",
+      "primaryKeyword": "gross to net salary calculator",
+      "longTailKeywords": ["calculate net salary from gross", "gross vs take home", "net pay calculator", "salary after tax calculator"],
+      "related": ["salary-calculator", "net-to-gross", "take-home-pay"],
+      "dataRef": "grossToNet"
+    },
+    {
+      "slug": "net-to-gross",
+      "type": "calculator",
+      "h1": "Net to Gross Salary Calculator",
+      "metaTitle": "Net to Gross Salary Calculator – Reverse Salary Calculation",
+      "metaDescription": "Convert your net salary to gross with our net to gross salary calculator, including taxes and deductions. Perfect for job offers and negotiations.",
+      "primaryKeyword": "net to gross salary calculator",
+      "longTailKeywords": ["convert net salary to gross", "reverse salary calculator", "calculate gross from net", "net to gross conversion"],
+      "related": ["gross-to-net", "salary-calculator", "take-home-pay"],
+      "dataRef": "netToGross"
+    },
+    {
+      "slug": "take-home-pay",
+      "type": "calculator",
+      "h1": "Take-Home Pay Calculator",
+      "metaTitle": "Take-Home Pay Calculator – Know Your Net Income",
+      "metaDescription": "Find out your take-home pay after taxes and deductions using our easy-to-use calculator. See your actual paycheck amount.",
+      "primaryKeyword": "take home pay calculator",
+      "longTailKeywords": ["calculate take home salary", "salary after taxes", "net income calculator", "paycheck calculator"],
+      "related": ["gross-to-net", "bonus-calculator", "salary-calculator"],
+      "dataRef": "takeHomePay"
+    },
+    {
+      "slug": "hourly-to-salary",
+      "type": "calculator",
+      "h1": "Hourly to Salary Calculator",
+      "metaTitle": "Hourly to Salary Calculator – Convert Your Hourly Wage",
+      "metaDescription": "Convert your hourly wage to monthly or annual salary with our simple hourly to salary calculator. Perfect for comparing job offers.",
+      "primaryKeyword": "hourly to salary calculator",
+      "longTailKeywords": ["convert hourly wage to salary", "hourly to annual salary", "hourly pay calculator", "hourly wage converter"],
+      "related": ["salary-calculator", "gross-to-net", "take-home-pay"],
+      "dataRef": "hourlyToSalary"
+    },
+    {
+      "slug": "bonus-calculator",
+      "type": "calculator",
+      "h1": "Bonus Calculator",
+      "metaTitle": "Bonus Calculator – Calculate Your Bonus Easily",
+      "metaDescription": "Calculate your annual or monthly bonus based on your salary and see your take-home bonus. Includes tax calculations.",
+      "primaryKeyword": "bonus calculator",
+      "longTailKeywords": ["calculate annual bonus", "salary bonus calculator", "bonus after tax", "performance bonus calculator"],
+      "related": ["take-home-pay", "overtime-pay", "salary-calculator"],
+      "dataRef": "bonusCalculator"
+    },
+
+    {
+      "slug": "country/usa",
+      "type": "calculator",
+      "h1": "USA Salary Calculator",
+      "metaTitle": "USA Salary Calculator – Know Your Earnings in America",
+      "metaDescription": "Calculate salaries in the USA with our accurate, free salary calculator including federal and state taxes. Perfect for American employees.",
+      "primaryKeyword": "usa salary calculator",
+      "longTailKeywords": ["salary calculator USA", "take home pay USA", "net salary USA", "US salary after taxes"],
+      "related": ["salary-calculator", "country/uk", "country/ireland", "gross-to-net"],
+      "dataRef": "usaSalary"
+    },
+    {
+      "slug": "country/uk",
+      "type": "calculator",
+      "h1": "UK Salary Calculator",
+      "metaTitle": "UK Salary Calculator – Calculate Your Pay in Britain",
+      "metaDescription": "Free UK salary calculator to find your net and gross salary quickly and accurately. Includes income tax and National Insurance calculations.",
+      "primaryKeyword": "uk salary calculator",
+      "longTailKeywords": ["salary calculator UK", "take home pay UK", "net salary UK", "British salary calculator"],
+      "related": ["salary-calculator", "country/usa", "country/ireland", "gross-to-net"],
+      "dataRef": "ukSalary"
+    },
+    {
+      "slug": "country/ireland",
+      "type": "calculator",
+      "h1": "Ireland Salary Calculator",
+      "metaTitle": "Ireland Salary Calculator – Take-Home Pay Made Easy",
+      "metaDescription": "Calculate your net salary in Ireland using our simple salary calculator, including taxes, USC, and PRSI calculations for Irish employees.",
+      "primaryKeyword": "ireland salary calculator",
+      "longTailKeywords": ["salary calculator Ireland", "net salary Ireland", "take home pay Ireland", "Irish salary calculator"],
+      "related": ["salary-calculator", "country/uk", "country/usa", "gross-to-net"],
+      "dataRef": "irelandSalary"
+    },
+    {
+      "slug": "country/canada",
+      "type": "calculator",
+      "h1": "Canada Salary Calculator",
+      "metaTitle": "Canada Salary Calculator – Calculate Take-Home Pay",
+      "metaDescription": "Quickly calculate your Canadian net and gross salary with our free salary calculator. Includes federal and provincial tax calculations.",
+      "primaryKeyword": "canada salary calculator",
+      "longTailKeywords": ["salary calculator Canada", "take home pay Canada", "net salary Canada", "Canadian salary calculator"],
+      "related": ["salary-calculator", "country/usa", "country/uk", "gross-to-net"],
+      "dataRef": "canadaSalary"
+    },
+    {
+      "slug": "country/australia",
+      "type": "calculator",
+      "h1": "Australia Salary Calculator",
+      "metaTitle": "Australia Salary Calculator – Net Salary Calculation",
+      "metaDescription": "Find your net salary in Australia using our free and easy salary calculator. Includes income tax and superannuation calculations.",
+      "primaryKeyword": "australia salary calculator",
+      "longTailKeywords": ["salary calculator Australia", "net salary Australia", "take home pay Australia", "Australian salary calculator"],
+      "related": ["salary-calculator", "country/canada", "country/new-zealand", "gross-to-net"],
+      "dataRef": "australiaSalary"
+    },
+    {
+      "slug": "country/india",
+      "type": "calculator",
+      "h1": "India Salary Calculator",
+      "metaTitle": "India Salary Calculator – Take-Home Pay Made Simple",
+      "metaDescription": "Calculate your net salary in India with our free and easy-to-use salary calculator. Includes income tax and professional tax calculations.",
+      "primaryKeyword": "india salary calculator",
+      "longTailKeywords": ["salary calculator India", "net salary India", "take home pay India", "Indian salary calculator"],
+      "related": ["salary-calculator", "country/usa", "country/singapore", "gross-to-net"],
+      "dataRef": "indiaSalary"
+    },
+
+    {
+      "slug": "guides/how-to-calculate-take-home",
+      "type": "guide",
+      "h1": "How to Calculate Your Take-Home Pay",
+      "metaTitle": "How to Calculate Your Take-Home Pay – Step by Step Guide",
+      "metaDescription": "Learn step-by-step how to calculate your take-home salary after taxes and deductions. Complete guide with examples and formulas.",
+      "primaryKeyword": "calculate take home pay",
+      "longTailKeywords": ["net salary calculation guide", "salary after tax guide", "how to calculate take home pay", "take home pay formula"],
+      "related": ["gross-to-net", "take-home-pay", "guides/gross-vs-net"],
+      "dataRef": "guideTakeHome"
+    },
+    {
+      "slug": "guides/gross-vs-net",
+      "type": "guide",
+      "h1": "Understanding Gross vs Net Salary",
+      "metaTitle": "Understanding Gross vs Net Salary – Complete Guide",
+      "metaDescription": "Learn the difference between gross salary and net take-home pay with examples and calculations. Everything you need to know about salary types.",
+      "primaryKeyword": "gross vs net salary",
+      "longTailKeywords": ["difference between gross and net salary", "gross vs take-home", "net salary guide", "salary types explained"],
+      "related": ["gross-to-net", "net-to-gross", "guides/how-to-calculate-take-home"],
+      "dataRef": "guideGrossNet"
+    },
+    {
+      "slug": "guides/salary-negotiation",
+      "type": "guide",
+      "h1": "Salary Negotiation Tips",
+      "metaTitle": "Salary Negotiation Tips – Maximize Your Pay in 2024",
+      "metaDescription": "Learn proven strategies to negotiate your salary and get the pay you deserve. Expert tips for successful salary negotiations.",
+      "primaryKeyword": "salary negotiation tips",
+      "longTailKeywords": ["negotiate salary effectively", "salary negotiation strategies", "raise negotiation tips", "how to negotiate salary"],
+      "related": ["salary-calculator", "guides/how-to-calculate-take-home", "bonus-calculator"],
+      "dataRef": "guideNegotiation"
+    }
+  ]
+}

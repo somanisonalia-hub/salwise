@@ -1,0 +1,69 @@
+{
+  "id": "salaryCalculatorGermany",
+  "name": "Salary Calculator (Germany)",
+  "description": "Calculate net salary after German income tax and social security contributions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 50000,
+      "unit": "€",
+      "placeholder": "50000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like private health insurance, pension, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "incomeTax": "taxableIncome <= 10908 ? 0 : taxableIncome <= 62809 ? (taxableIncome - 10908) * 0.14 + 0 : taxableIncome <= 277825 ? (taxableIncome - 62809) * 0.2397 + 15229.31 : (taxableIncome - 277825) * 0.42 + 63886.87",
+    "healthInsurance": "annualGross * 0.073",
+    "pensionInsurance": "annualGross * 0.093",
+    "unemploymentInsurance": "annualGross * 0.012",
+    "nursingCareInsurance": "annualGross * 0.01525",
+    "totalSocialSecurity": "healthInsurance + pensionInsurance + unemploymentInsurance + nursingCareInsurance",
+    "totalDeductions": "incomeTax + totalSocialSecurity + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "totalSocialSecurity": "Social Security Contributions",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "€",
+    "totalSocialSecurity": "€",
+    "totalDeductions": "€",
+    "netSalary": "€",
+    "monthlyNet": "€"
+  }
+}

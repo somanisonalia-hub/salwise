@@ -1,0 +1,112 @@
+{
+  "slug": "country/canada",
+  "type": "guide",
+  "h1": "Canada Salary Calculator",
+  "metaTitle": "Canada Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "metaDescription": "Calculate take-home pay in Canada including federal and provincial income tax, CPP, and EI contributions. Accurate Canadian tax calculations.",
+  "primaryKeyword": "canada salary calculator",
+  "longTailKeywords": [
+    "Canada salary calculator",
+    "canadian tax calculator",
+    "take home pay Canada",
+    "CPP calculator",
+    "EI calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net",
+    "country/usa"
+  ],
+  "title": "Canada Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "description": "Calculate take-home pay in Canada including federal and provincial income tax, CPP, and EI contributions. Accurate Canadian tax calculations.",
+  "keywords": "Canada salary calculator, canadian tax calculator, take home pay Canada, CPP calculator, EI calculator",
+  "canonical": "https://salarywise.io/en/country/canada",
+
+  "header": {
+    "title": "Canada Salary Calculator",
+    "subtitle": "Calculate your take-home pay with accurate Canadian tax calculations"
+  },
+
+  "intro": {
+    "paragraph1": "Canadian salary calculations include federal income tax, provincial income tax, Canada Pension Plan (CPP), and Employment Insurance (EI) contributions. Tax rates vary significantly by province.",
+    "paragraph2": "Enter your gross salary and province to get accurate calculations based on current Canadian tax rates."
+  },
+
+  "federalTax": {
+    "title": "Federal Income Tax Rates 2024",
+    "brackets": [
+      {"range": "$0 - $53,359", "rate": "15%"},
+      {"range": "$53,360 - $106,717", "rate": "20.5%"},
+      {"range": "$106,718 - $165,430", "rate": "26%"},
+      {"range": "$165,431 - $235,675", "rate": "29%"},
+      {"range": "$235,676+", "rate": "33%"}
+    ]
+  },
+
+  "provincialTax": {
+    "title": "Provincial Income Tax (Ontario Example)",
+    "brackets": [
+      {"range": "$0 - $49,231", "rate": "5.05%"},
+      {"range": "$49,232 - $98,463", "rate": "9.15%"},
+      {"range": "$98,464 - $151,980", "rate": "11.16%"},
+      {"range": "$151,981 - $207,239", "rate": "12.16%"},
+      {"range": "$207,240 - $246,752", "rate": "13.16%"},
+      {"range": "$246,753+", "rate": "13.16%"}
+    ]
+  },
+
+  "cpp": {
+    "title": "Canada Pension Plan (CPP)",
+    "employeeRate": "5.95% on earnings $3,500 - $66,600 (2024 maximum)",
+    "employerRate": "5.95% (matched by employer)"
+  },
+
+  "ei": {
+    "title": "Employment Insurance (EI)",
+    "employeeRate": "1.63% on earnings up to $61,500 (2024 maximum)",
+    "employerRate": "2.33% (additional employer contribution)"
+  },
+
+  "examples": {
+    "title": "Canadian Salary Calculation Examples",
+    "scenarios": [
+      {
+        "title": "Software Developer - Toronto, ON",
+        "gross": "$90,000",
+        "details": {
+          "federalTax": "$15,000 (16.7%)",
+          "provincialTax": "$8,500 (9.4%)",
+          "cpp": "$3,963 (4.4%)",
+          "ei": "$1,000 (1.1%)",
+          "netPay": "$61,537 (68.4% of gross)"
+        }
+      },
+      {
+        "title": "Teacher - Vancouver, BC",
+        "gross": "$75,000",
+        "details": {
+          "federalTax": "$12,000 (16%)",
+          "provincialTax": "$7,200 (9.6%)",
+          "cpp": "$3,963 (5.3%)",
+          "ei": "$1,000 (1.3%)",
+          "netPay": "$51,837 (69.1% of gross)"
+        }
+      }
+    ]
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Canada Salary Calculator",
+    "url": "https://salarywise.io/en/country/canada",
+    "applicationCategory": "Calculator",
+    "description": "Calculate take-home pay in Canada including federal and provincial income tax, CPP, and EI",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "CAD"
+    }
+  }
+}

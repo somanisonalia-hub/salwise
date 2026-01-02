@@ -1,0 +1,493 @@
+
+> salarywise@0.1.0 dev
+> next dev
+
+⚠ Warning: Next.js inferred your workspace root, but it may not be correct.
+ We detected multiple lockfiles and selected the directory of /Users/asomani16/Repository/package-lock.json as the root directory.
+ To silence this warning, set `turbopack.root` in your Next.js config, or consider removing one of the lockfiles if it's not needed.
+   See https://nextjs.org/docs/app/api-reference/config/next-config-js/turbopack#root-directory for more information.
+ Detected additional lockfiles: 
+   * /Users/asomani16/Repository/salarywise/package-lock.json
+
+▲ Next.js 16.1.1 (Turbopack)
+- Local:         http://localhost:3000
+- Network:       http://192.168.178.46:3000
+- Experiments (use with caution):
+  ✓ optimizeCss
+  ✓ scrollRestoration
+
+✓ Starting...
+✓ Ready in 544ms
+ GET /en 200 in 261ms (compile: 129ms, render: 132ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+Error loading page data: ReferenceError: calculatorData is not defined
+    at LocalizedPage (src/app/[locale]/[slug]/page.tsx:206:67)
+  204 |     // Calculator data will be loaded client-side using getCalculator
+  205 |
+> 206 |     return <DynamicPageClient pageData={pageData} calculatorData={calculatorData} />;
+      |                                                                   ^
+  207 |   } catch (error) {
+  208 |     console.error('Error loading page data:', error);
+  209 |     return (
+ GET /en/salary-calculator 200 in 234ms (compile: 185ms, generate-params: 159ms, render: 49ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+Error loading page data: ReferenceError: calculatorData is not defined
+    at LocalizedPage (src/app/[locale]/[slug]/page.tsx:206:67)
+  204 |     // Calculator data will be loaded client-side using getCalculator
+  205 |
+> 206 |     return <DynamicPageClient pageData={pageData} calculatorData={calculatorData} />;
+      |                                                                   ^
+  207 |   } catch (error) {
+  208 |     console.error('Error loading page data:', error);
+  209 |     return (
+ GET /en/salary-calculator 200 in 34ms (compile: 10ms, generate-params: 1414µs, render: 24ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 102ms (compile: 46ms, generate-params: 1508µs, render: 56ms)
+ GET /en 200 in 16ms (compile: 1367µs, render: 15ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 53ms (compile: 5ms, generate-params: 905µs, render: 48ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 30ms (compile: 7ms, generate-params: 1433µs, render: 23ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 31ms (compile: 7ms, generate-params: 1216µs, render: 24ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: gross-to-net-salary
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/gross-to-net-salary.json exists: true
+ GET /en/gross-to-net-salary 200 in 27ms (compile: 5ms, generate-params: 15µs, render: 22ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 33ms (compile: 5ms, generate-params: 14µs, render: 28ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: gross-to-net-salary
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/gross-to-net-salary.json exists: true
+ GET /en/gross-to-net-salary 200 in 25ms (compile: 5ms, generate-params: 17µs, render: 20ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 82ms (compile: 41ms, generate-params: 1269µs, render: 41ms)
+ GET /en 200 in 99ms (compile: 1768µs, render: 97ms)
+✓ Compiled in 19ms
+✓ Compiled in 16ms
+✓ Compiled in 16ms
+✓ Compiled in 17ms
+✓ Compiled in 16ms
+✓ Compiled in 14ms
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 70ms (compile: 41ms, generate-params: 1531µs, render: 29ms)
+ GET /en 200 in 148ms (compile: 35ms, render: 113ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 51ms (compile: 5ms, generate-params: 1190µs, render: 45ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: gross-to-net-salary
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/gross-to-net-salary.json exists: true
+ GET /en/gross-to-net-salary 200 in 30ms (compile: 7ms, generate-params: 1263µs, render: 23ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 32ms (compile: 7ms, generate-params: 1239µs, render: 24ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: gross-to-net-salary
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/gross-to-net-salary.json exists: true
+ GET /en/gross-to-net-salary 200 in 24ms (compile: 5ms, generate-params: 13µs, render: 20ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 25ms (compile: 5ms, generate-params: 13µs, render: 20ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 56ms (compile: 19ms, generate-params: 2ms, render: 37ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 30ms (compile: 6ms, generate-params: 1097µs, render: 24ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 32ms (compile: 7ms, generate-params: 1008µs, render: 26ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 26ms (compile: 6ms, generate-params: 967µs, render: 21ms)
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 30ms (compile: 6ms, generate-params: 1046µs, render: 23ms)
+✓ Compiled in 50ms
+✓ Compiled in 18ms
+⚠ ./salarywise/src/app/[locale]/[slug]/page.tsx:123:30
+Module not found: Can't resolve '../../../locales/en/pages/' <dynamic> '.json'
+[0m [90m 121 |[39m     [90m// Fallback to English if translation not available[39m
+ [90m 122 |[39m     [36mtry[39m {
+[31m[1m>[22m[39m[90m 123 |[39m       [36mconst[39m pageData [33m=[39m [36mawait[39m [36mimport[39m([32m`../../../locales/en/pages/${slug}.json`[39m)[33m;[39m
+ [90m     |[39m                              [31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m[31m[1m^[22m[39m
+ [90m 124 |[39m
+ [90m 125 |[39m       [36mreturn[39m {
+ [90m 126 |[39m         title[33m:[39m pageData[33m.[39mmetaTitle[33m,[39m[0m
+
+
+
+https://nextjs.org/docs/messages/module-not-found
+
+
+LocalizedPage called with locale: en slug: salary-calculator
+Loading page data from: /Users/asomani16/Repository/salarywise/src/locales/en/salary-calculator.json exists: true
+ GET /en/salary-calculator 200 in 124ms (compile: 41ms, generate-params: 1102µs, render: 83ms)
+✓ Compiled in 15ms
+[?25h

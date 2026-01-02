@@ -1,0 +1,35 @@
+{
+  "id": "annualRaiseCalculator",
+  "name": "Annual Raise Calculator",
+  "description": "Calculate new salary after a pay raise",
+  "inputs": [
+    {
+      "id": "currentSalary",
+      "label": "Current Annual Salary",
+      "type": "number",
+      "default": 50000,
+      "unit": "$"
+    },
+    {
+      "id": "raisePercentage",
+      "label": "Raise Percentage",
+      "type": "number",
+      "default": 3,
+      "unit": "%"
+    },
+    {
+      "id": "raiseAmount",
+      "label": "Raise Amount (Optional)",
+      "type": "number",
+      "default": 0,
+      "unit": "$"
+    }
+  ],
+  "formula": {
+    "calculatedRaiseAmount": "raiseAmount > 0 ? raiseAmount : currentSalary * (raisePercentage / 100)",
+    "newSalary": "currentSalary + calculatedRaiseAmount",
+    "raisePercentageActual": "raiseAmount > 0 ? (raiseAmount / currentSalary) * 100 : raisePercentage",
+    "monthlyIncrease": "calculatedRaiseAmount / 12",
+    "yearlyIncrease": "calculatedRaiseAmount"
+  }
+}

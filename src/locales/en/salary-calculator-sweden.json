@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-sweden",
+  "type": "calculator",
+  "h1": "Salary Calculator – Sweden Net Pay Estimator",
+  "metaTitle": "Salary Calculator Sweden – Calculate Net Pay",
+  "metaDescription": "Use our Sweden salary calculator to estimate your take-home pay. Includes income tax, social security contributions, and other deductions. Quick and free.",
+  "primaryKeyword": "salary calculator Sweden",
+  "longTailKeywords": [
+    "Sweden salary calculator after tax",
+    "net pay calculator Sweden",
+    "take home salary Sweden",
+    "gross to net salary Sweden",
+    "payroll calculator Sweden",
+    "Swedish income tax calculator",
+    "salary calculator SE"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator-netherlands"
+  ],
+  "dataRef": "salaryCalculatorSweden",
+  "intro": "Understanding your salary after tax in Sweden is essential for accurate financial planning. This calculator estimates your take-home pay by accounting for Swedish income tax and social security contributions. Whether you're an employee, contractor, or freelancer working in Sweden, this tool provides localized calculations to help you understand your actual net income and make informed financial decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howSalaryAfterTaxWorksSweden": "Salary after tax in Sweden involves several mandatory deductions from your gross pay. Income tax is calculated using a progressive system with municipal and national tax rates. Social security contributions are automatically deducted and include contributions for pensions, healthcare, and unemployment insurance. These contributions are shared between employees and employers, but the calculator shows the employee portion. Optional deductions like additional pension contributions can further reduce your taxable income and increase your take-home pay. The result is your net salary - the actual amount you'll receive in your bank account.",
+  "example": {
+    "scenario": "An employee earning SEK 500,000 annually in Stockholm with standard deductions.",
+    "results": "Gross salary: SEK 500,000 | Income tax: SEK 120,000 | Social contributions: SEK 30,000 | Net salary: SEK 350,000 | Monthly net: SEK 29,167"
+  },
+  "whyUseSalaryCalculatorSweden": [
+    "Accurate budgeting based on your actual take-home pay",
+    "Compare job offers using real net income figures",
+    "Plan for tax withholdings and avoid surprises",
+    "Make informed decisions about pre-tax deductions",
+    "Understand the impact of social contributions on your salary",
+    "Prepare for year-end tax planning and refunds"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include social security contributions?",
+      "answer": "Yes, it includes Swedish social security contributions for pensions, healthcare, and unemployment insurance."
+    },
+    {
+      "question": "Can I include pension or insurance deductions?",
+      "answer": "Yes, you can add pension contributions and private insurance as deductions that reduce your taxable income."
+    },
+    {
+      "question": "Is this calculator accurate for all Swedish regions?",
+      "answer": "Yes, it includes Sweden-wide tax rates and social contribution rates that apply across all Swedish regions."
+    },
+    {
+      "question": "Can I calculate monthly take-home pay?",
+      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+    },
+    {
+      "question": "Is this Sweden salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your annual tax return (Skattedeklaration) to ensure proper tax withholdings",
+    "Consider additional pension contributions for tax benefits",
+    "Use tax-advantaged savings accounts when possible",
+    "Keep track of year-to-date earnings for accurate tax planning",
+    "Consult a tax advisor for personalized advice on complex tax situations"
+  ]
+}

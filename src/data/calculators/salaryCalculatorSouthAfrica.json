@@ -1,0 +1,64 @@
+{
+  "id": "salaryCalculatorSouthAfrica",
+  "name": "Salary Calculator (South Africa)",
+  "description": "Calculate net salary after South African income tax and UIF contributions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 500000,
+      "unit": "ZAR",
+      "placeholder": "500000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "ZAR",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like retirement fund, medical aid, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "incomeTax": "taxableIncome <= 237100 ? taxableIncome * 0.18 : taxableIncome <= 370500 ? 237100 * 0.18 + (taxableIncome - 237100) * 0.26 : taxableIncome <= 512800 ? 237100 * 0.18 + 133400 * 0.26 + (taxableIncome - 370500) * 0.31 : taxableIncome <= 673000 ? 237100 * 0.18 + 133400 * 0.26 + 142300 * 0.31 + (taxableIncome - 512800) * 0.36 : taxableIncome <= 857900 ? 237100 * 0.18 + 133400 * 0.26 + 142300 * 0.31 + 160200 * 0.36 + (taxableIncome - 673000) * 0.39 : taxableIncome <= 1819000 ? 237100 * 0.18 + 133400 * 0.26 + 142300 * 0.31 + 160200 * 0.36 + 184900 * 0.39 + (taxableIncome - 857900) * 0.41 : 237100 * 0.18 + 133400 * 0.26 + 142300 * 0.31 + 160200 * 0.36 + 184900 * 0.39 + 960000 * 0.41 + (taxableIncome - 1819000) * 0.45",
+    "uifContribution": "annualGross * 0.0072",
+    "totalDeductions": "incomeTax + uifContribution + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "uifContribution": "UIF Contribution",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "ZAR",
+    "uifContribution": "ZAR",
+    "totalDeductions": "ZAR",
+    "netSalary": "ZAR",
+    "monthlyNet": "ZAR"
+  }
+}

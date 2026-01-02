@@ -1,0 +1,23 @@
+{
+  "id": "switzerlandSalary",
+  "name": "Switzerland Salary Calculator",
+  "description": "Calculate take-home pay in Switzerland",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 65000,
+      "unit": "CHF"
+    }
+  ],
+  "formula": {
+    "federalTax": "grossSalary * 0.099",
+    "cantonalTax": "grossSalary * 0.10",
+    "socialSecurity": "grossSalary * 0.053",
+    "unemploymentInsurance": "grossSalary * 0.011",
+    "totalDeductions": "federalTax + cantonalTax + socialSecurity + unemploymentInsurance",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

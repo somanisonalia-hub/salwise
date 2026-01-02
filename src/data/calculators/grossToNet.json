@@ -1,0 +1,71 @@
+{
+  "id": "grossToNet",
+  "name": "Gross to Net Salary Calculator",
+  "description": "Convert gross salary to net take-home pay",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary Amount",
+      "type": "number",
+      "default": 60000,
+      "unit": "$",
+      "placeholder": "60000",
+      "required": true,
+      "min": 0,
+      "description": "Your gross salary before deductions"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "taxRate",
+      "label": "Estimated Tax Rate",
+      "type": "number",
+      "default": 25,
+      "unit": "%",
+      "placeholder": "25",
+      "required": true,
+      "min": 0,
+      "max": 50,
+      "description": "Your estimated total tax rate"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like insurance or retirement"
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "estimatedTax": "annualGross * (taxRate / 100)",
+    "totalDeductions": "estimatedTax + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12",
+    "takeHomePercent": "(netSalary / annualGross) * 100"
+  },
+  "outputLabels": {
+    "estimatedTax": "Estimated Tax",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net Take-Home Salary"
+  },
+  "outputUnits": {
+    "estimatedTax": "$",
+    "totalDeductions": "$",
+    "netSalary": "$"
+  }
+}

@@ -1,0 +1,109 @@
+{
+  "id": "takeHomeVsCostOfLivingCalculator",
+  "name": "Take-Home vs Cost of Living Calculator",
+  "description": "Compare take-home pay against local cost of living",
+  "inputs": [
+    {
+      "id": "netSalary",
+      "label": "Net Salary / Take-Home Pay",
+      "type": "number",
+      "default": 5000,
+      "unit": "$",
+      "placeholder": "5000",
+      "required": true,
+      "min": 0,
+      "description": "Your monthly take-home pay after taxes"
+    },
+    {
+      "id": "city",
+      "label": "City / Country",
+      "type": "select",
+      "default": "Dublin",
+      "options": [
+        {"value": "Dublin", "label": "Dublin, Ireland"},
+        {"value": "London", "label": "London, UK"},
+        {"value": "New York", "label": "New York, USA"},
+        {"value": "Toronto", "label": "Toronto, Canada"},
+        {"value": "Sydney", "label": "Sydney, Australia"},
+        {"value": "Berlin", "label": "Berlin, Germany"},
+        {"value": "Amsterdam", "label": "Amsterdam, Netherlands"},
+        {"value": "Singapore", "label": "Singapore"},
+        {"value": "Mumbai", "label": "Mumbai, India"},
+        {"value": "Bangalore", "label": "Bangalore, India"},
+        {"value": "Custom", "label": "Custom Location"}
+      ],
+      "required": true,
+      "description": "Select a city or country to compare cost of living"
+    },
+    {
+      "id": "housingRent",
+      "label": "Housing / Rent",
+      "type": "number",
+      "default": 2000,
+      "unit": "$",
+      "placeholder": "2000",
+      "required": false,
+      "min": 0,
+      "description": "Monthly housing costs including rent/mortgage"
+    },
+    {
+      "id": "utilities",
+      "label": "Utilities",
+      "type": "number",
+      "default": 200,
+      "unit": "$",
+      "placeholder": "200",
+      "required": false,
+      "min": 0,
+      "description": "Electricity, water, internet, phone, etc."
+    },
+    {
+      "id": "foodGroceries",
+      "label": "Food / Groceries",
+      "type": "number",
+      "default": 500,
+      "unit": "$",
+      "placeholder": "500",
+      "required": false,
+      "min": 0,
+      "description": "Monthly food and grocery expenses"
+    },
+    {
+      "id": "transportation",
+      "label": "Transportation",
+      "type": "number",
+      "default": 300,
+      "unit": "$",
+      "placeholder": "300",
+      "required": false,
+      "min": 0,
+      "description": "Car payment, gas, public transport, etc."
+    },
+    {
+      "id": "otherLivingCosts",
+      "label": "Other Living Costs",
+      "type": "number",
+      "default": 800,
+      "unit": "$",
+      "placeholder": "800",
+      "required": false,
+      "min": 0,
+      "description": "Entertainment, insurance, healthcare, miscellaneous"
+    }
+  ],
+  "formula": {
+    "totalCostOfLiving": "housingRent + utilities + foodGroceries + transportation + otherLivingCosts",
+    "remainingDisposableIncome": "netSalary - totalCostOfLiving",
+    "percentageSpent": "netSalary > 0 ? (totalCostOfLiving / netSalary) * 100 : 0"
+  },
+  "outputLabels": {
+    "totalCostOfLiving": "Total Monthly Cost of Living",
+    "remainingDisposableIncome": "Remaining Disposable Income",
+    "percentageSpent": "Percentage of Salary Spent"
+  },
+  "outputUnits": {
+    "totalCostOfLiving": "$",
+    "remainingDisposableIncome": "$",
+    "percentageSpent": "%"
+  }
+}

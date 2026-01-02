@@ -1,0 +1,77 @@
+{
+  "slug": "take-home-pay-calculator",
+  "type": "calculator",
+  "h1": "Take-Home Pay Calculator – See Your Net Salary After Tax",
+  "metaTitle": "Take-Home Pay Calculator – Calculate Your Net Salary",
+  "metaDescription": "Use our free take-home pay calculator to see your net salary after tax and deductions. Get instant monthly and yearly results.",
+  "primaryKeyword": "take home pay calculator",
+  "longTailKeywords": [
+    "take home salary calculator",
+    "calculate take home pay",
+    "net pay calculator",
+    "salary take home calculator",
+    "take home pay after tax",
+    "monthly take home pay calculator",
+    "yearly take home pay calculator",
+    "net income calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net-salary",
+    "net-to-gross-salary",
+    "salary-calculator-uk"
+  ],
+  "dataRef": "takeHomePay",
+  "intro": "Take-home pay is the amount you actually receive in your bank account after all taxes and deductions are subtracted from your gross salary. This calculator helps you determine your real net income, making it easier to budget, compare job offers, and understand your true earning power. Perfect for employees, contractors, freelancers, and anyone who wants to know their actual paycheck amount.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "whatIsTakeHomePay": "Take-home pay, also known as net pay or net income, represents the actual amount of money you receive after all required deductions are taken from your gross earnings. Unlike gross salary which includes your total compensation, take-home pay accounts for various withholdings including income taxes, Social Security contributions, Medicare taxes, and other mandatory or voluntary deductions. Understanding your take-home pay is crucial for effective financial planning and accurate budgeting.",
+  "howCalculatorWorks": "Our take-home pay calculator starts with your gross income and applies estimated tax rates based on standard tax brackets. We then subtract common deductions like federal and state income taxes, FICA contributions, and any additional withholdings you specify. The result is your estimated net pay - the actual amount you'll see deposited in your account. We provide both monthly and annual breakdowns for comprehensive financial planning.",
+  "example": {
+    "scenario": "An employee earning €4,000 monthly gross salary with 25% tax rate and €200 monthly deductions.",
+    "results": "Monthly gross: €4,000 | Estimated tax: €1,000 | Total deductions: €1,200 | Monthly net: €2,800 | Annual net: €33,600"
+  },
+  "whyTakeHomeMatters": [
+    "Accurate budgeting based on actual income received",
+    "Better job offer comparisons using real take-home amounts",
+    "Proper cost of living calculations and financial planning",
+    "More effective salary negotiation with realistic expectations",
+    "Understanding the true impact of bonuses and raises on spending power",
+    "Planning for taxes and savings based on net income"
+  ],
+  "faqs": [
+    {
+      "question": "Is take-home pay the same as net pay?",
+      "answer": "Yes, take-home pay and net pay are the same thing - the amount you actually receive after all taxes and deductions are subtracted from your gross salary."
+    },
+    {
+      "question": "Does this calculator include tax calculations?",
+      "answer": "Yes, it includes estimated federal and state income taxes, as well as FICA taxes (Social Security and Medicare). You can adjust the tax rate for more accurate calculations."
+    },
+    {
+      "question": "Can I calculate hourly take-home pay?",
+      "answer": "Yes! Enter your hourly rate and select 'hourly' as the pay frequency. The calculator will show your take-home pay for hourly, daily, weekly, monthly, and annual amounts."
+    },
+    {
+      "question": "Is this accurate for all countries?",
+      "answer": "This calculator provides estimates based on general tax rates. For country-specific calculations, check our individual country calculators like UK, Canada, or Australia."
+    },
+    {
+      "question": "Is this take-home pay calculator free to use?",
+      "answer": "Yes, completely free. No registration required, no hidden fees, and no premium features. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Use take-home pay for realistic budgeting and expense planning",
+    "Compare job offers based on actual net income, not just gross salary",
+    "Consider the tax implications of bonuses and overtime pay",
+    "Review your tax withholdings annually to avoid surprises",
+    "Factor in additional deductions like retirement contributions and insurance"
+  ]
+}

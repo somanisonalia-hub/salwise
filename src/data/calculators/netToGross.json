@@ -1,0 +1,74 @@
+{
+  "id": "netToGross",
+  "name": "Net to Gross Salary Calculator",
+  "description": "Calculate gross salary required for desired net take-home pay",
+  "inputs": [
+    {
+      "id": "netSalary",
+      "label": "Net (Take-Home) Salary",
+      "type": "number",
+      "default": 3000,
+      "unit": "$",
+      "placeholder": "3000",
+      "required": true,
+      "min": 0,
+      "description": "Your desired take-home pay amount"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "monthly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "taxRate",
+      "label": "Estimated Tax Rate",
+      "type": "number",
+      "default": 25,
+      "unit": "%",
+      "placeholder": "25",
+      "required": true,
+      "min": 0,
+      "max": 50,
+      "description": "Total estimated tax rate (adjust as needed)"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 150,
+      "unit": "$",
+      "placeholder": "150",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like pension, insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualNet": "payFrequency === 'monthly' ? netSalary * 12 : netSalary",
+    "totalDeductionsRate": "taxRate / 100",
+    "requiredGross": "annualNet / (1 - totalDeductionsRate) + additionalDeductions",
+    "estimatedTax": "requiredGross * (taxRate / 100)",
+    "totalDeductions": "estimatedTax + additionalDeductions",
+    "monthlyGross": "requiredGross / 12",
+    "difference": "requiredGross - annualNet"
+  },
+  "outputLabels": {
+    "requiredGross": "Required Gross Salary (Annual)",
+    "estimatedTax": "Estimated Tax Amount",
+    "difference": "Difference (Gross - Net)",
+    "monthlyGross": "Required Gross Salary (Monthly)"
+  },
+  "outputUnits": {
+    "requiredGross": "$",
+    "estimatedTax": "$",
+    "difference": "$",
+    "monthlyGross": "$"
+  }
+}

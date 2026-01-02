@@ -1,0 +1,20 @@
+{
+  "slug": "annual-raise-calculator",
+  "type": "calculator",
+  "h1": "Annual Raise Calculator",
+  "metaTitle": "Annual Raise Calculator | Calculate Your Pay Raise | SalaryWise.io",
+  "metaDescription": "Calculate your new salary after a pay raise. See your percentage increase, new take-home pay, and total compensation change.",
+  "primaryKeyword": "annual raise calculator",
+  "longTailKeywords": [
+    "calculate pay raise",
+    "salary increase calculator",
+    "raise percentage calculator",
+    "annual salary raise"
+  ],
+  "related": [
+    "salary-calculator",
+    "take-home-pay-calculator",
+    "bonus-calculator"
+  ],
+  "dataRef": "annualRaiseCalculator"
+}

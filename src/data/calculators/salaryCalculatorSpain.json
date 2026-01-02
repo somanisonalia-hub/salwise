@@ -1,0 +1,67 @@
+{
+  "id": "salaryCalculatorSpain",
+  "name": "Salary Calculator (Spain)",
+  "description": "Calculate net salary after Spanish income tax and social security contributions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 40000,
+      "unit": "€",
+      "placeholder": "40000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like private pension, insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'weekly' ? grossSalary * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "incomeTax": "taxableIncome <= 12450 ? 0 : taxableIncome <= 20200 ? (taxableIncome - 12450) * 0.19 : taxableIncome <= 35200 ? 1463.5 + (taxableIncome - 20200) * 0.24 : taxableIncome <= 60000 ? 4463.5 + (taxableIncome - 35200) * 0.30 : taxableIncome <= 300000 ? 13663.5 + (taxableIncome - 60000) * 0.37 : 71663.5 + (taxableIncome - 300000) * 0.47",
+    "pensionContribution": "annualGross * 0.047",
+    "unemploymentInsurance": "annualGross * 0.0155",
+    "totalSocialContributions": "pensionContribution + unemploymentInsurance",
+    "totalDeductions": "incomeTax + totalSocialContributions + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "totalSocialContributions": "Social Security Contributions",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "€",
+    "totalSocialContributions": "€",
+    "totalDeductions": "€",
+    "netSalary": "€",
+    "monthlyNet": "€"
+  }
+}

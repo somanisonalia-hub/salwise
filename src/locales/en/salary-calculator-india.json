@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-india",
+  "type": "calculator",
+  "h1": "Salary Calculator – India Net Pay Estimator",
+  "metaTitle": "Salary Calculator India – Calculate Net Pay",
+  "metaDescription": "Use our India salary calculator to estimate your take-home pay. Includes income tax, professional tax, PF, and other deductions. Quick and free.",
+  "primaryKeyword": "salary calculator India",
+  "longTailKeywords": [
+    "India salary calculator after tax",
+    "net pay calculator India",
+    "take home salary India",
+    "gross to net salary India",
+    "payroll calculator India",
+    "Indian income tax calculator",
+    "salary calculator IN"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator-singapore"
+  ],
+  "dataRef": "salaryCalculatorIndia",
+  "intro": "Understanding your salary after tax in India is essential for accurate financial planning. This calculator estimates your take-home pay by accounting for Indian income tax, professional tax, Provident Fund contributions, and other common deductions. Whether you're an employee, contractor, or freelancer working in India, this tool provides localized calculations to help you understand your actual net income and make informed financial decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howSalaryAfterTaxWorksIndia": "Salary after tax in India involves several mandatory deductions from your gross pay. Income tax is calculated using progressive tax slabs based on your annual taxable income. Professional tax varies by state, ranging from ₹0 to ₹2,400 annually. Employees contribute 12% of basic salary to Provident Fund, matched by employer contributions. Additional deductions may include health insurance, conveyance allowance, and other benefits. The result is your net salary - the actual amount you'll receive in your bank account after all deductions.",
+  "example": {
+    "scenario": "An employee earning ₹10,00,000 annually in India with standard deductions.",
+    "results": "Gross salary: ₹10,00,000 | Income tax: ₹1,50,000 | PF: ₹1,20,000 | Professional tax: ₹2,400 | Net salary: ₹7,27,600 | Monthly net: ₹60,633"
+  },
+  "whyUseSalaryCalculatorIndia": [
+    "Accurate budgeting based on your actual take-home pay",
+    "Compare job offers using real net income figures",
+    "Plan for tax withholdings and avoid surprises",
+    "Make informed decisions about pre-tax deductions",
+    "Understand the impact of professional tax and PF on your salary",
+    "Prepare for year-end tax planning and refunds"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include PF and professional tax?",
+      "answer": "Yes, it includes Provident Fund contributions (employee share) and professional tax calculations applicable across Indian states."
+    },
+    {
+      "question": "Can I include insurance or other deductions?",
+      "answer": "Yes, you can add additional deductions like health insurance, conveyance allowance, and other benefits that reduce your taxable income."
+    },
+    {
+      "question": "Is this calculator accurate for all Indian states?",
+      "answer": "Yes, it includes all-India tax rates and professional tax calculations that apply across Indian states and union territories."
+    },
+    {
+      "question": "Can I calculate monthly take-home pay?",
+      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+    },
+    {
+      "question": "Is this India salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your Form 16 and annual tax return to ensure proper tax withholdings",
+    "Consider additional PF contributions for tax benefits",
+    "Use tax-advantaged savings accounts when possible",
+    "Keep track of year-to-date earnings for accurate tax planning",
+    "Consult a tax advisor for personalized advice on complex tax situations"
+  ]
+}

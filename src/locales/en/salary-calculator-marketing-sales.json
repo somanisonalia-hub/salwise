@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-marketing-sales",
+  "type": "calculator",
+  "h1": "Marketing / Sales Salary Calculator – Net Pay Estimator",
+  "metaTitle": "Marketing / Sales Salary Calculator – Calculate Net Pay",
+  "metaDescription": "Use our Marketing / Sales salary calculator to estimate your take-home pay. Includes income tax, social contributions, and deductions. Quick and free.",
+  "primaryKeyword": "marketing salary calculator",
+  "longTailKeywords": [
+    "sales executive salary calculator",
+    "marketing manager net pay calculator",
+    "digital marketing salary calculator",
+    "gross to net salary marketing jobs",
+    "net pay calculator sales roles",
+    "marketing professional salary calculator"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "salary-calculator-legal",
+    "salary-calculator-startup-entrepreneur"
+  ],
+  "dataRef": "salaryCalculatorMarketingSales",
+  "intro": "Marketing and sales professionals often have compensation structures that include base pay plus commissions, bonuses, and performance incentives. This calculator estimates your net salary by accounting for income tax and social contributions specific to marketing and sales roles. Whether you're a sales executive, marketing manager, or digital marketing specialist, this tool provides accurate calculations to help you understand your actual earnings and make informed career decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howMarketingSalesSalariesAreCalculated": "Marketing and sales salaries typically include base pay plus potential commissions, bonuses, and performance incentives. Gross salary is calculated based on role level, industry, and performance metrics. Standard deductions include federal/state income tax, Social Security and Medicare contributions, and optional deductions like retirement contributions, health insurance, and professional development funds. The result is your net salary - the actual amount you'll receive in your bank account after all deductions.",
+  "example": {
+    "scenario": "A marketing manager earning $65,000 annually in the United States with standard deductions.",
+    "results": "Gross salary: $65,000 | Income tax: $12,500 | Social contributions: $5,005 | Net salary: $47,495 | Monthly net: $3,958"
+  },
+  "whyUseAMarketingSalesSalaryCalculator": [
+    "Compare job offers from different companies",
+    "Plan your budget and understand your actual take-home pay",
+    "Negotiate salary packages more effectively",
+    "Calculate the impact of commissions and bonuses",
+    "Understand how different locations affect your net pay",
+    "Make informed decisions about benefits and deductions"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include tax and social contributions for marketing and sales jobs?",
+      "answer": "Yes, it includes federal and state income tax, Social Security, Medicare, and other standard deductions applicable to marketing and sales professionals."
+    },
+    {
+      "question": "Can I calculate salaries for different countries?",
+      "answer": "Yes, select your country to get localized calculations including taxes and social contributions specific to that location."
+    },
+    {
+      "question": "Is this accurate for all marketing and sales roles?",
+      "answer": "Yes, it works for all marketing and sales roles including sales executives, marketing managers, digital marketers, and sales professionals."
+    },
+    {
+      "question": "Can I include commissions or bonuses?",
+      "answer": "Yes, you can add commissions, bonuses, and performance incentives to the base salary for a complete net pay calculation."
+    },
+    {
+      "question": "Is this marketing/sales salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your employment contract carefully for all compensation components",
+    "Consider the total compensation package including benefits and commissions",
+    "Use industry salary surveys to validate calculations",
+    "Factor in cost of living when comparing offers",
+    "Consult with a tax professional for personalized advice",
+    "Keep track of year-to-date earnings for accurate tax planning"
+  ]
+}

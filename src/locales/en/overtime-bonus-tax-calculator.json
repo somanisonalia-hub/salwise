@@ -1,0 +1,75 @@
+{
+  "slug": "overtime-bonus-tax-calculator",
+  "type": "calculator",
+  "h1": "Overtime + Bonus + Tax Calculator – Total Take-Home Pay",
+  "metaTitle": "Overtime + Bonus + Tax Calculator – Total Take-Home Pay",
+  "metaDescription": "Use our Overtime + Bonus + Tax calculator to estimate total take-home pay including extra hours and bonuses. Quick, accurate, and free.",
+  "primaryKeyword": "overtime bonus calculator",
+  "longTailKeywords": [
+    "salary with overtime calculator",
+    "net pay including bonus calculator",
+    "extra hours pay calculator",
+    "bonus + tax calculator",
+    "gross to net salary including bonus",
+    "overtime and bonus net salary calculator"
+  ],
+  "related": [
+    "take-home-pay-calculator",
+    "salary-after-tax-calculator",
+    "salary-vs-expenses-calculator",
+    "bonus-calculator"
+  ],
+  "dataRef": "overtimeBonusTaxCalculator",
+  "intro": "Understanding your complete compensation package is crucial for accurate financial planning. This calculator helps you estimate your total take-home pay by including overtime hours, bonus amounts, and their tax implications. Whether you're a salaried employee, hourly worker, or freelancer, this tool provides clear insights into how extra income affects your net earnings across different countries.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Total Take-Home Pay",
+    "resultsHeading": "Total Compensation Analysis",
+    "calculateButton": "Calculate Take-Home Pay",
+    "scenarioLabel": "Your Compensation Details:",
+    "resultsLabel": "Analysis:",
+    "noResultsText": "Enter your compensation details above to calculate your total take-home pay"
+  },
+  "howOvertimeBonusAndTaxAreCalculated": "This calculator combines your base salary with overtime pay and bonuses to calculate total gross compensation. Overtime is calculated based on hours worked and the overtime rate (either hourly rate or percentage of base salary). Bonuses are added to the total gross amount. Country-specific tax rates are then applied to calculate the total tax liability. Standard deductions and contributions are subtracted to arrive at your net take-home pay.",
+  "example": {
+    "scenario": "A professional earning $60,000 base salary annually with 50 overtime hours at $50/hour and a $5,000 bonus.",
+    "results": "Gross Pay: $67,500 | Taxes: $13,500 | Net Take-Home Pay: $54,000"
+  },
+  "whyUseThisCalculator": [
+    "Plan your finances with complete compensation insights",
+    "Estimate tax implications of bonuses and overtime",
+    "Compare salary offers including extra compensation",
+    "Make informed decisions about working additional hours",
+    "Understand your true take-home pay from all income sources",
+    "Budget effectively with accurate net income calculations"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include taxes on overtime and bonuses?",
+      "answer": "Yes, it applies country-specific tax rates to overtime pay and bonuses to calculate accurate tax liability."
+    },
+    {
+      "question": "Can I calculate for different countries?",
+      "answer": "Yes, select your country to apply the correct tax rates and deductions for your location."
+    },
+    {
+      "question": "Is this accurate for hourly and salaried employees?",
+      "answer": "Yes, it works for both hourly and salaried employees, calculating overtime based on hours worked and rates."
+    },
+    {
+      "question": "Can I adjust the overtime rate?",
+      "answer": "Yes, you can specify overtime either as an hourly rate or as a percentage of your base hourly rate."
+    },
+    {
+      "question": "Is the overtime bonus tax calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Track your overtime hours accurately for precise calculations",
+    "Consider tax implications before accepting bonus structures",
+    "Use historical overtime data for realistic financial planning",
+    "Compare different bonus structures (cash vs deferred)",
+    "Factor in overtime taxes when negotiating compensation packages",
+    "Consider the impact on benefits and deductions from additional income"
+  ]
+}

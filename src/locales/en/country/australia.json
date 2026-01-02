@@ -1,0 +1,100 @@
+{
+  "slug": "country/australia",
+  "type": "guide",
+  "h1": "Australia Salary Calculator",
+  "metaTitle": "Australia Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "metaDescription": "Calculate take-home pay in Australia including income tax, superannuation guarantee, and Medicare levy. Accurate Australian tax calculations.",
+  "primaryKeyword": "australia salary calculator",
+  "longTailKeywords": [
+    "Australia salary calculator",
+    "australian tax calculator",
+    "take home pay Australia",
+    "superannuation calculator",
+    "medicare levy"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net",
+    "country/canada"
+  ],
+  "title": "Australia Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "description": "Calculate take-home pay in Australia including income tax, superannuation guarantee, and Medicare levy. Accurate Australian tax calculations.",
+  "keywords": "Australia salary calculator, australian tax calculator, take home pay Australia, superannuation calculator, medicare levy",
+  "canonical": "https://salarywise.io/en/country/australia",
+
+  "header": {
+    "title": "Australia Salary Calculator",
+    "subtitle": "Calculate your take-home pay with accurate Australian tax calculations"
+  },
+
+  "intro": {
+    "paragraph1": "Australian salary calculations include income tax, superannuation guarantee contributions, and Medicare levy. The tax system is progressive and includes compulsory superannuation for retirement savings.",
+    "paragraph2": "Enter your gross salary to get accurate calculations based on current Australian tax rates and superannuation requirements."
+  },
+
+  "incomeTax": {
+    "title": "Australian Income Tax Rates 2024/25",
+    "brackets": [
+      {"range": "$0 - $18,200", "rate": "0%"},
+      {"range": "$18,201 - $45,000", "rate": "19%"},
+      {"range": "$45,001 - $120,000", "rate": "32.5%"},
+      {"range": "$120,001 - $180,000", "rate": "37%"},
+      {"range": "$180,001+", "rate": "45%"}
+    ]
+  },
+
+  "superannuation": {
+    "title": "Superannuation Guarantee",
+    "description": "Compulsory employer contribution to retirement savings",
+    "rate": "11.5% of ordinary time earnings",
+    "note": "Minimum contribution required by law, can be higher"
+  },
+
+  "medicare": {
+    "title": "Medicare Levy",
+    "rate": "2% of taxable income",
+    "surcharge": "Additional levy surcharge for high earners without private health insurance",
+    "surchargeRates": ["1% for incomes $90,001-$105,000", "1.25% for incomes $105,001-$140,000", "1.5% for incomes over $140,000"]
+  },
+
+  "examples": {
+    "title": "Australian Salary Calculation Examples",
+    "scenarios": [
+      {
+        "title": "Software Engineer - Sydney",
+        "gross": "$100,000",
+        "details": {
+          "incomeTax": "$24,647 (24.6%)",
+          "medicareLevy": "$2,000 (2%)",
+          "superannuation": "$11,500 (11.5%)",
+          "netPay": "$61,853 (61.9% of gross)"
+        }
+      },
+      {
+        "title": "Teacher - Melbourne",
+        "gross": "$80,000",
+        "details": {
+          "incomeTax": "$15,447 (19.3%)",
+          "medicareLevy": "$1,600 (2%)",
+          "superannuation": "$9,200 (11.5%)",
+          "netPay": "$53,753 (67.2% of gross)"
+        }
+      }
+    ]
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Australia Salary Calculator",
+    "url": "https://salarywise.io/en/country/australia",
+    "applicationCategory": "Calculator",
+    "description": "Calculate take-home pay in Australia including income tax, superannuation, and Medicare levy",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "AUD"
+    }
+  }
+}

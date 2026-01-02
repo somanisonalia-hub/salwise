@@ -1,0 +1,81 @@
+{
+  "id": "usaSalary",
+  "name": "USA Salary Calculator",
+  "description": "Calculate take-home pay with US federal and state taxes",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Annual Gross Salary",
+      "type": "number",
+      "default": 65000,
+      "unit": "$",
+      "placeholder": "65000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual salary before taxes"
+    },
+    {
+      "id": "state",
+      "label": "State",
+      "type": "select",
+      "default": "CA",
+      "options": [
+        {"value": "TX", "label": "Texas (0% tax)"},
+        {"value": "FL", "label": "Florida (0% tax)"},
+        {"value": "NV", "label": "Nevada (0% tax)"},
+        {"value": "WA", "label": "Washington (0% tax)"},
+        {"value": "TN", "label": "Tennessee (0% tax)"},
+        {"value": "CA", "label": "California (13.3%)"},
+        {"value": "NY", "label": "New York (8.82%)"},
+        {"value": "IL", "label": "Illinois (4.95%)"},
+        {"value": "GA", "label": "Georgia (5.75%)"}
+      ],
+      "required": true,
+      "description": "Select your state for accurate tax calculations"
+    },
+    {
+      "id": "filingStatus",
+      "label": "Filing Status",
+      "type": "select",
+      "default": "single",
+      "options": [
+        {"value": "single", "label": "Single"},
+        {"value": "married_joint", "label": "Married Filing Jointly"},
+        {"value": "married_separate", "label": "Married Filing Separately"},
+        {"value": "head_household", "label": "Head of Household"}
+      ],
+      "required": true,
+      "description": "Your tax filing status affects federal tax brackets"
+    }
+  ],
+  "formula": {
+    "standardDeduction": "filingStatus === 'single' ? 13850 : filingStatus === 'married_joint' ? 27700 : filingStatus === 'head_household' ? 20800 : 13850",
+    "taxableIncome": "grossSalary - standardDeduction",
+    "federalTax": "calculateFederalTax(taxableIncome, filingStatus)",
+    "stateTax": "calculateStateTax(grossSalary, state)",
+    "ficaTax": "grossSalary * 0.0765",
+    "totalTax": "federalTax + stateTax + ficaTax",
+    "netSalary": "grossSalary - totalTax",
+    "effectiveTaxRate": "(totalTax / grossSalary) * 100"
+  },
+  "outputLabels": {
+    "standardDeduction": "Standard Deduction",
+    "taxableIncome": "Taxable Income",
+    "federalTax": "Federal Income Tax",
+    "stateTax": "State Income Tax",
+    "ficaTax": "FICA Taxes",
+    "totalTax": "Total Taxes",
+    "netSalary": "Net Take-Home Pay",
+    "effectiveTaxRate": "Effective Tax Rate"
+  },
+  "outputUnits": {
+    "standardDeduction": "$",
+    "taxableIncome": "$",
+    "federalTax": "$",
+    "stateTax": "$",
+    "ficaTax": "$",
+    "totalTax": "$",
+    "netSalary": "$",
+    "effectiveTaxRate": "%"
+  }
+}

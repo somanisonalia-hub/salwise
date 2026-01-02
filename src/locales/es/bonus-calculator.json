@@ -1,0 +1,55 @@
+{
+  "slug": "bonus-calculator",
+  "type": "calculator",
+  "h1": "Bonus Calculator",
+  "metaTitle": "Bonus Calculator | Calculate Bonus After Taxes | SalaryWise.io",
+  "metaDescription": "Calculate your bonus after taxes. Free bonus calculator with federal income tax, state taxes, and FICA calculations. Know your net bonus amount.",
+  "primaryKeyword": "bonus calculator",
+  "longTailKeywords": [
+    "bonus after tax",
+    "net bonus calculator",
+    "bonus tax calculator",
+    "performance bonus calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "take-home-pay",
+    "gross-to-net"
+  ],
+  "dataRef": "bonusCalculator",
+  "intro": {
+    "title": "Calculate Your Net Bonus After Taxes",
+    "description": "Bonuses are taxed differently than regular salary. Our calculator shows exactly how much you'll keep after federal, state, and FICA taxes.",
+    "features": [
+      "Bonus tax calculations",
+      "FICA tax inclusion",
+      "State tax options",
+      "Net bonus estimates"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "Are bonuses taxed differently than salary?",
+      "answer": "Yes, bonuses are subject to additional FICA taxes that don't apply to regular wages. They may also be taxed at higher supplemental rates."
+    },
+    {
+      "question": "What taxes apply to bonuses?",
+      "answer": "Bonuses are taxed with federal income tax, state income tax, and the full FICA tax rate (7.65%), unlike regular salary."
+    },
+    {
+      "question": "Can I defer bonus taxes?",
+      "answer": "Some employers offer bonus deferral plans that allow you to postpone taxation. You may also be able to defer taxes through retirement contributions."
+    },
+    {
+      "question": "How do I maximize my bonus take-home pay?",
+      "answer": "Consider timing bonuses strategically, use tax-advantaged accounts, and plan your overall tax bracket for the year."
+    }
+  ],
+  "tips": [
+    "Bonuses are taxed at higher effective rates",
+    "Consider timing for tax planning",
+    "Use tax-advantaged accounts when possible",
+    "Plan for year-end tax bracket changes",
+    "Consult a tax professional for advice"
+  ]
+}

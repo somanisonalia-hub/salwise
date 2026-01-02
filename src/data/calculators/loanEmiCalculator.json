@@ -1,0 +1,74 @@
+{
+  "id": "loanEmiCalculator",
+  "name": "Loan / EMI Calculator",
+  "description": "Calculate monthly EMI, total interest, and repayment plans for loans",
+  "inputs": [
+    {
+      "id": "loanAmount",
+      "label": "Loan Amount",
+      "type": "number",
+      "default": 500000,
+      "unit": "$",
+      "placeholder": "500000",
+      "required": true,
+      "min": 0,
+      "description": "Total loan amount you want to borrow"
+    },
+    {
+      "id": "interestRate",
+      "label": "Interest Rate",
+      "type": "number",
+      "default": 8,
+      "unit": "%",
+      "placeholder": "8",
+      "required": true,
+      "min": 0,
+      "max": 50,
+      "step": 0.1,
+      "description": "Annual interest rate for the loan"
+    },
+    {
+      "id": "loanTenure",
+      "label": "Loan Tenure",
+      "type": "number",
+      "default": 20,
+      "unit": "years",
+      "placeholder": "20",
+      "required": true,
+      "min": 1,
+      "max": 50,
+      "description": "Loan repayment period in years"
+    },
+    {
+      "id": "processingFees",
+      "label": "Processing Fees (Optional)",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Any one-time processing or administrative fees"
+    }
+  ],
+  "formula": {
+    "monthlyInterestRate": "interestRate / 100 / 12",
+    "totalMonths": "loanTenure * 12",
+    "emi": "loanAmount * monthlyInterestRate * Math.pow(1 + monthlyInterestRate, totalMonths) / (Math.pow(1 + monthlyInterestRate, totalMonths) - 1)",
+    "totalPayment": "emi * totalMonths",
+    "totalInterest": "totalPayment - loanAmount",
+    "totalCost": "totalPayment + processingFees"
+  },
+  "outputLabels": {
+    "emi": "Monthly EMI",
+    "totalInterest": "Total Interest Payable",
+    "totalPayment": "Total Amount Payable",
+    "totalCost": "Total Cost (including fees)"
+  },
+  "outputUnits": {
+    "emi": "$",
+    "totalInterest": "$",
+    "totalPayment": "$",
+    "totalCost": "$"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "gross-to-net",
+  "type": "calculator",
+  "h1": "Gross to Net Salary Calculator",
+  "metaTitle": "Gross to Net Salary Calculator – Know Your Take-Home Pay",
+  "metaDescription": "Calculate your net salary from gross earnings with our simple gross to net salary calculator. See exactly how much you take home after taxes.",
+  "primaryKeyword": "gross to net salary calculator",
+  "longTailKeywords": [
+    "calculate net salary from gross",
+    "gross vs take home",
+    "net pay calculator",
+    "salary after tax calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "net-to-gross",
+    "take-home-pay"
+  ],
+  "dataRef": "grossToNet",
+  "intro": {
+    "title": "Calculate Your Take-Home Pay",
+    "description": "Understanding the difference between gross and net salary is crucial for financial planning. Our calculator shows exactly how much you'll take home after federal, state, and FICA taxes.",
+    "features": [
+      "Calculate net salary from gross earnings",
+      "Account for federal and state income taxes",
+      "Include FICA taxes (Social Security + Medicare)",
+      "Get accurate take-home pay estimates"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What's the difference between gross and net salary?",
+      "answer": "Gross salary is your total earnings before any deductions. Net salary is what you actually receive after taxes and withholdings are subtracted."
+    },
+    {
+      "question": "What taxes are included in the calculation?",
+      "answer": "We include federal income tax, FICA taxes (Social Security and Medicare), and state income tax. Local taxes and other deductions may apply."
+    },
+    {
+      "question": "Are these calculations guaranteed to be accurate?",
+      "answer": "These are estimates based on current tax rates. Actual amounts may vary based on your specific tax situation and additional deductions."
+    },
+    {
+      "question": "How often should I recalculate?",
+      "answer": "Recalculate when tax rates change, your income changes, or when considering new job offers. Tax laws are updated annually."
+    }
+  ],
+  "tips": [
+    "Use this calculator when comparing job offers",
+    "Consider your tax bracket when negotiating salary",
+    "Remember that bonuses and overtime are taxed differently",
+    "Consult a tax professional for personalized advice"
+  ]
+}

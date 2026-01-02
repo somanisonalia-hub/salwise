@@ -1,0 +1,75 @@
+{
+  "slug": "annual-raise-promotion-calculator",
+  "type": "calculator",
+  "h1": "Annual Raise / Promotion Calculator – Estimate Your New Salary",
+  "metaTitle": "Annual Raise / Promotion Calculator – Estimate Your New Salary",
+  "metaDescription": "Use our Annual Raise / Promotion calculator to estimate your new salary after a raise or promotion. Includes taxes and take-home pay. Quick and free.",
+  "primaryKeyword": "annual raise calculator",
+  "longTailKeywords": [
+    "promotion salary increase calculator",
+    "yearly salary increment calculator",
+    "net pay after raise calculator",
+    "gross to net raise calculator",
+    "salary bump calculator",
+    "pay raise impact calculator"
+  ],
+  "related": [
+    "salary-after-tax-calculator",
+    "take-home-pay-calculator",
+    "overtime-bonus-tax-calculator",
+    "salary-vs-expenses-calculator"
+  ],
+  "dataRef": "annualRaisePromotionCalculator",
+  "intro": "Understanding the financial impact of a salary raise or promotion is crucial for effective career planning and budgeting. This calculator helps you estimate your new gross and net salary after a raise, accounting for tax implications and deductions. Whether you're negotiating a promotion, planning your career growth, or simply curious about the impact of a salary increase, this tool provides clear insights into how raises affect your take-home pay across different countries.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Salary After Raise",
+    "resultsHeading": "New Salary Analysis",
+    "calculateButton": "Calculate New Salary",
+    "scenarioLabel": "Your Current Salary & Raise Details:",
+    "resultsLabel": "Analysis:",
+    "noResultsText": "Enter your current salary and raise details above to calculate your new take-home pay"
+  },
+  "howSalaryRaiseAndPromotionAreCalculated": "This calculator applies your raise (either as a percentage or fixed amount) to your current gross salary to determine the new gross salary. It then recalculates taxes and contributions based on the new total income. The result shows your new net take-home salary, including both annual and monthly breakdowns, helping you understand the true financial impact of your salary increase.",
+  "example": {
+    "scenario": "A professional earning $60,000 annually who receives a 10% raise.",
+    "results": "Raise Amount: $6,000 | New Gross Salary: $66,000 | Taxes: $13,200 | New Net Salary: $52,800 | Monthly Take-Home: $4,400"
+  },
+  "whyUseThisCalculator": [
+    "Plan your budget after a salary increase or promotion",
+    "Negotiate raises more effectively with accurate net pay estimates",
+    "Forecast the financial impact of career advancement",
+    "Understand how taxes affect your salary increase",
+    "Make informed decisions about job offers and promotions",
+    "Track the real value of your compensation growth"
+  ],
+  "faqs": [
+    {
+      "question": "Can I calculate a fixed dollar amount or percentage raise?",
+      "answer": "Yes, you can enter either a percentage increase (e.g., 10%) or a fixed dollar amount for your raise."
+    },
+    {
+      "question": "Does it include taxes on the salary increase?",
+      "answer": "Yes, it applies country-specific tax rates to your new total salary to show accurate net take-home pay."
+    },
+    {
+      "question": "Can I see both monthly and yearly take-home amounts?",
+      "answer": "Yes, the calculator shows both annual and monthly breakdowns of your new net salary."
+    },
+    {
+      "question": "Can it handle promotions with additional bonuses?",
+      "answer": "Yes, you can include any promotion bonuses or additional compensation in your raise amount."
+    },
+    {
+      "question": "Is the annual raise calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Consider the tax bracket impact of your raise",
+    "Factor in benefits changes that may accompany promotions",
+    "Calculate raises from different job offers for comparison",
+    "Use historical raise data to set realistic expectations",
+    "Consider the cost of living increases when evaluating raises",
+    "Track your salary progression over time"
+  ]
+}

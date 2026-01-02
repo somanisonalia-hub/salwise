@@ -1,0 +1,21 @@
+{
+  "id": "singaporeSalary",
+  "name": "Singapore Salary Calculator",
+  "description": "Calculate take-home pay in Singapore",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 45000,
+      "unit": "SGD"
+    }
+  ],
+  "formula": {
+    "cpfEmployee": "grossSalary * 0.20",
+    "incomeTax": "grossSalary < 20000 ? 0 : grossSalary < 30000 ? (grossSalary - 20000) * 0.02 : grossSalary < 40000 ? 200 + (grossSalary - 30000) * 0.035 : grossSalary < 80000 ? 550 + (grossSalary - 40000) * 0.07 : grossSalary < 120000 ? 3350 + (grossSalary - 80000) * 0.115 : grossSalary < 160000 ? 7950 + (grossSalary - 120000) * 0.15 : grossSalary < 200000 ? 13950 + (grossSalary - 160000) * 0.18 : 23550 + (grossSalary - 200000) * 0.20",
+    "totalDeductions": "cpfEmployee + incomeTax",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

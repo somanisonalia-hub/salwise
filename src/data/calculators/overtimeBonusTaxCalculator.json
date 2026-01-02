@@ -1,0 +1,96 @@
+{
+  "id": "overtimeBonusTaxCalculator",
+  "name": "Overtime + Bonus + Tax Calculator",
+  "description": "Calculate total take-home pay including overtime and bonuses with taxes",
+  "inputs": [
+    {
+      "id": "baseSalary",
+      "label": "Base Annual Salary",
+      "type": "number",
+      "default": 60000,
+      "unit": "$",
+      "placeholder": "60000",
+      "required": true,
+      "min": 0,
+      "description": "Your base annual salary before overtime and bonuses"
+    },
+    {
+      "id": "overtimeHours",
+      "label": "Overtime Hours Worked",
+      "type": "number",
+      "default": 50,
+      "unit": "hours",
+      "placeholder": "50",
+      "required": false,
+      "min": 0,
+      "description": "Total overtime hours worked annually"
+    },
+    {
+      "id": "overtimeRate",
+      "label": "Overtime Rate",
+      "type": "number",
+      "default": 50,
+      "unit": "$",
+      "placeholder": "50",
+      "required": false,
+      "min": 0,
+      "description": "Overtime pay per hour"
+    },
+    {
+      "id": "bonusAmount",
+      "label": "Bonus Amount",
+      "type": "number",
+      "default": 5000,
+      "unit": "$",
+      "placeholder": "5000",
+      "required": false,
+      "min": 0,
+      "description": "Annual bonus or additional compensation"
+    },
+    {
+      "id": "country",
+      "label": "Country",
+      "type": "select",
+      "default": "US",
+      "options": [
+        {"value": "US", "label": "United States"},
+        {"value": "UK", "label": "United Kingdom"},
+        {"value": "Canada", "label": "Canada"},
+        {"value": "Australia", "label": "Australia"},
+        {"value": "Germany", "label": "Germany"},
+        {"value": "India", "label": "India"}
+      ],
+      "required": true,
+      "description": "Select your country for tax calculations"
+    },
+    {
+      "id": "optionalDeductions",
+      "label": "Optional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Additional deductions like retirement contributions, insurance, etc."
+    }
+  ],
+  "formula": {
+    "overtimePay": "overtimeHours * overtimeRate",
+    "totalGrossPay": "baseSalary + overtimePay + bonusAmount",
+    "taxRate": "country === 'US' ? 0.25 : country === 'UK' ? 0.20 : country === 'Canada' ? 0.26 : country === 'Australia' ? 0.325 : country === 'Germany' ? 0.30 : country === 'India' ? 0.25 : 0.25",
+    "totalTax": "totalGrossPay * taxRate",
+    "totalDeductions": "optionalDeductions",
+    "netTakeHomePay": "totalGrossPay - totalTax - totalDeductions"
+  },
+  "outputLabels": {
+    "totalGrossPay": "Total Gross Pay (Annual)",
+    "totalTax": "Total Tax",
+    "netTakeHomePay": "Net Take-Home Pay (Annual)"
+  },
+  "outputUnits": {
+    "totalGrossPay": "$",
+    "totalTax": "$",
+    "netTakeHomePay": "$"
+  }
+}

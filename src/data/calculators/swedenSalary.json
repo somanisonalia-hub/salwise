@@ -1,0 +1,22 @@
+{
+  "id": "swedenSalary",
+  "name": "Sweden Salary Calculator",
+  "description": "Calculate take-home pay in Sweden",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 350000,
+      "unit": "SEK"
+    }
+  ],
+  "formula": {
+    "incomeTax": "grossSalary * 0.30",
+    "socialSecurity": "grossSalary * 0.07",
+    "pension": "grossSalary * 0.025",
+    "totalDeductions": "incomeTax + socialSecurity + pension",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

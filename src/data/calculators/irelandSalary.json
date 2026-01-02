@@ -1,0 +1,25 @@
+{
+  "id": "irelandSalary",
+  "name": "Ireland Salary Calculator",
+  "description": "Calculate take-home pay in Ireland",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 40000,
+      "unit": "€"
+    }
+  ],
+  "formula": {
+    "taxCredit": "1655",
+    "standardRateTax": "Math.min(grossSalary, 40000) * 0.20",
+    "higherRateTax": "Math.max(grossSalary - 40000, 0) * 0.40",
+    "totalIncomeTax": "Math.max(standardRateTax + higherRateTax - taxCredit, 0)",
+    "usc": "grossSalary < 12012 ? grossSalary * 0.005 : grossSalary < 23130 ? 12012 * 0.005 + (grossSalary - 12012) * 0.02 : 12012 * 0.005 + (23130 - 12012) * 0.02 + (grossSalary - 23130) * 0.045",
+    "prsi": "grossSalary * 0.04",
+    "totalDeductions": "totalIncomeTax + usc + prsi",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

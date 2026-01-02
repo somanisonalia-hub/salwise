@@ -1,0 +1,54 @@
+{
+  "slug": "country/usa",
+  "type": "guide",
+  "h1": "USA Salary Calculator",
+  "metaTitle": "USA Salary Calculator – Know Your Earnings",
+  "metaDescription": "Calculate salaries in the USA with our accurate, free salary calculator including federal and state taxes.",
+  "primaryKeyword": "usa salary calculator",
+  "longTailKeywords": [
+    "salary calculator USA",
+    "take home pay USA",
+    "net salary USA",
+    "US salary tax calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net",
+    "country/uk"
+  ],
+  "dataRef": "usaSalary",
+  "country": {
+    "name": "United States",
+    "flag": "🇺🇸",
+    "currency": "USD",
+    "taxSystem": "Progressive federal + state income taxes"
+  },
+  "intro": {
+    "title": "Calculate Your USA Salary After Taxes",
+    "description": "Get accurate take-home pay calculations for US salaries. Our calculator includes federal income tax, state taxes, FICA contributions, and standard deductions.",
+    "features": [
+      "Federal income tax calculations (2024 brackets)",
+      "State-specific tax rates",
+      "FICA taxes (Social Security + Medicare)",
+      "Standard deduction calculations"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How is US salary tax calculated?",
+      "answer": "US salary taxes include federal income tax (progressive brackets), state income tax (varies by state), and FICA taxes. We calculate all three for accurate take-home pay."
+    },
+    {
+      "question": "What's the difference between federal and state taxes?",
+      "answer": "Federal taxes are the same nationwide but vary by income bracket. State taxes vary significantly - Texas has 0% while California has 13.3%."
+    },
+    {
+      "question": "Are FICA taxes included?",
+      "answer": "Yes, we include Social Security (6.2%) and Medicare (1.45%) taxes, totaling 7.65% for most employees."
+    },
+    {
+      "question": "How often are tax rates updated?",
+      "answer": "We update calculations annually based on the latest IRS tax brackets and rates. Current calculations use 2024 tax information."
+    }
+  ]
+}

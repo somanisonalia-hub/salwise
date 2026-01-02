@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-spain",
+  "type": "calculator",
+  "h1": "Salary Calculator – Spain Net Pay Estimator",
+  "metaTitle": "Salary Calculator Spain – Calculate Net Pay",
+  "metaDescription": "Use our Spain salary calculator to estimate your take-home pay. Includes income tax, social security, and other deductions. Quick and free.",
+  "primaryKeyword": "salary calculator Spain",
+  "longTailKeywords": [
+    "Spain salary calculator after tax",
+    "net pay calculator Spain",
+    "take home salary Spain",
+    "gross to net salary Spain",
+    "payroll calculator Spain",
+    "Spanish income tax calculator",
+    "salary calculator ES"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator-france"
+  ],
+  "dataRef": "salaryCalculatorSpain",
+  "intro": "Understanding your salary after tax in Spain is essential for accurate financial planning. This calculator estimates your take-home pay by accounting for Spanish income tax and social security contributions. Whether you're an employee, contractor, or freelancer working in Spain, this tool provides localized calculations to help you understand your actual net income and make informed financial decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howSalaryAfterTaxWorksSpain": "Salary after tax in Spain involves several mandatory deductions from your gross pay. Income tax is calculated using progressive tax brackets based on your taxable income. Social security contributions include contributions to the pension system, unemployment insurance, and other social benefits. These contributions are shared between employees and employers, but the calculator shows the employee portion. Optional deductions like pension contributions can further reduce your taxable income and increase your take-home pay. The result is your net salary - the actual amount you'll receive in your bank account.",
+  "example": {
+    "scenario": "An employee earning €40,000 annually in Spain with standard deductions.",
+    "results": "Gross salary: €40,000 | Income tax: €7,500 | Social contributions: €4,500 | Net salary: €28,000 | Monthly net: €2,333"
+  },
+  "whyUseSalaryCalculatorSpain": [
+    "Accurate budgeting based on your actual take-home pay",
+    "Compare job offers using real net income figures",
+    "Plan for tax withholdings and avoid surprises",
+    "Make informed decisions about pre-tax deductions",
+    "Understand the impact of social contributions on your salary",
+    "Prepare for year-end tax planning and refunds"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include social security contributions?",
+      "answer": "Yes, it includes Spanish social security contributions for pension, unemployment insurance, and other social benefits."
+    },
+    {
+      "question": "Can I include pension or insurance deductions?",
+      "answer": "Yes, you can add pension contributions and private insurance as deductions that reduce your taxable income."
+    },
+    {
+      "question": "Is this calculator accurate for all Spanish regions?",
+      "answer": "Yes, it includes Spain-wide tax rates and social contribution rates that apply across all Spanish regions."
+    },
+    {
+      "question": "Can I calculate monthly take-home pay?",
+      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+    },
+    {
+      "question": "Is this Spain salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your annual tax return (Declaración de la Renta) to ensure proper tax withholdings",
+    "Consider pension contributions for tax benefits",
+    "Use tax-advantaged savings accounts when possible",
+    "Keep track of year-to-date earnings for accurate tax planning",
+    "Consult a tax advisor for personalized advice on complex tax situations"
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "slug": "gross-to-net-salary",
+  "type": "calculator",
+  "h1": "Gross to Net Salary Calculator – Convert Your Salary After Tax",
+  "metaTitle": "Gross to Net Salary Calculator – Calculate Take-Home Pay",
+  "metaDescription": "Use our gross to net salary calculator to estimate your take-home pay after tax and deductions. Simple, fast, and free.",
+  "primaryKeyword": "gross to net salary calculator",
+  "longTailKeywords": [
+    "gross to net salary",
+    "gross to net salary calculator after tax",
+    "gross pay to net pay",
+    "calculate net salary from gross",
+    "gross to net monthly salary",
+    "net salary from gross income",
+    "gross salary to take home pay",
+    "gross vs net salary calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "take-home-pay-calculator",
+    "net-to-gross-salary",
+    "salary-calculator-ireland"
+  ],
+  "dataRef": "grossToNet",
+  "intro": "Understanding the difference between gross and net salary is crucial for financial planning. Your gross salary represents your total earnings before any deductions, while net salary shows what you actually take home after taxes and withholdings. This calculator helps you quickly estimate your take-home pay based on your gross earnings, making it easier to budget and compare job offers.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "whatIsGrossVsNet": "Gross salary refers to your total compensation before any deductions are taken out. It's the amount your employer agrees to pay you for your work. Net salary, on the other hand, is your take-home pay - the amount you actually receive in your bank account after taxes, social security contributions, health insurance premiums, and other withholdings have been deducted. Typical deductions include federal and state income taxes, Social Security (FICA) contributions, Medicare taxes, and sometimes retirement plan contributions or health insurance premiums.",
+  "howGrossConvertsToNet": "Converting gross salary to net pay involves applying your estimated tax rate and subtracting other deductions. We start with your gross earnings, calculate the applicable taxes based on the tax rate you provide, and subtract any additional deductions you specify. The result is your estimated net or take-home pay. Keep in mind that actual calculations may vary based on your specific tax situation, filing status, and additional benefits or deductions.",
+  "example": {
+    "scenario": "An employee earns €60,000 annually in gross salary with a 25% estimated tax rate.",
+    "results": "Annual gross: €60,000 | Estimated tax: €15,000 | Annual net: €45,000 | Monthly net: €3,750"
+  },
+  "whenToUse": [
+    "Evaluating job offers to understand actual take-home pay",
+    "Negotiating salary terms with employers",
+    "Creating accurate monthly budget plans",
+    "Comparing compensation packages between roles",
+    "Planning for tax season and annual tax obligations",
+    "Understanding the impact of bonuses and overtime on net income"
+  ],
+  "faqs": [
+    {
+      "question": "What deductions are included in gross to net calculations?",
+      "answer": "Our calculator includes estimated income tax and any additional deductions you specify. Common deductions include federal/state taxes, Social Security, Medicare, and retirement contributions."
+    },
+    {
+      "question": "How accurate are gross to net salary calculations?",
+      "answer": "These are estimates based on the tax rate and deductions you provide. Actual net pay may vary based on your specific tax situation, filing status, and additional withholdings."
+    },
+    {
+      "question": "Does this calculator include pension contributions?",
+      "answer": "You can include pension or retirement contributions as additional deductions. The calculator provides flexibility to add any custom deductions beyond the basic tax estimate."
+    },
+    {
+      "question": "Can I calculate monthly gross to net salary?",
+      "answer": "Yes! Enter your monthly gross salary and the calculator will show your estimated monthly take-home pay. You can also enter annual amounts and see monthly breakdowns."
+    },
+    {
+      "question": "Is this gross to net calculator free to use?",
+      "answer": "Yes, completely free. No registration required, no hidden fees, and no premium features. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Use this calculator when comparing different job offers",
+    "Consider your overall compensation package beyond base salary",
+    "Remember that tax rates vary by income level and location",
+    "Consult with a tax professional for personalized advice",
+    "Revisit calculations when tax laws or rates change"
+  ]
+}

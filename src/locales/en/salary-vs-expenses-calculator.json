@@ -1,0 +1,75 @@
+{
+  "slug": "salary-vs-expenses-calculator",
+  "type": "calculator",
+  "h1": "Salary vs Expenses Calculator – Plan Your Budget",
+  "metaTitle": "Salary vs Expenses Calculator – Plan Your Budget",
+  "metaDescription": "Use our Salary vs Expenses calculator to compare your net salary with monthly expenses. Track savings, plan budget, and manage finances easily.",
+  "primaryKeyword": "salary vs expenses calculator",
+  "longTailKeywords": [
+    "budget calculator based on salary",
+    "monthly expenses vs income calculator",
+    "take-home pay vs expenses",
+    "financial planning salary calculator",
+    "net salary budget planner",
+    "cost of living calculator"
+  ],
+  "related": [
+    "loan-emi-calculator",
+    "take-home-pay-calculator",
+    "salary-vs-freelance-income-calculator",
+    "salary-comparison-calculator"
+  ],
+  "dataRef": "salaryVsExpensesCalculator",
+  "intro": "Understanding the relationship between your salary and expenses is crucial for effective financial management. This calculator helps you compare your net income with your monthly expenses to determine how much you're saving or spending beyond your means. Whether you're an employee, freelancer, or student, this tool provides clear insights into your financial health and helps you plan a sustainable budget for the future.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Budget",
+    "resultsHeading": "Budget Analysis Results",
+    "calculateButton": "Calculate Budget",
+    "scenarioLabel": "Your Financial Details:",
+    "resultsLabel": "Analysis:",
+    "noResultsText": "Enter your salary and expenses above to analyze your budget"
+  },
+  "howSalaryVsExpensesIsCalculated": "This calculator compares your net monthly salary with your total monthly expenses. First, it sums all your monthly expenses including rent/housing, utilities, food, transportation, and other costs. Then it subtracts this total from your net salary to show your remaining savings or deficit. The savings percentage shows what portion of your income you have available for savings, investments, or debt repayment after covering essential expenses.",
+  "example": {
+    "scenario": "A professional earning $4,000 monthly net salary with $3,000 in monthly expenses.",
+    "results": "Total Expenses: $3,000 | Remaining Savings: $1,000 | Savings Percentage: 25%"
+  },
+  "whyUseASalaryVsExpensesCalculator": [
+    "Track your monthly spending against your income",
+    "Identify opportunities to increase savings",
+    "Plan for financial goals and emergency funds",
+    "Avoid overspending and financial stress",
+    "Make informed decisions about lifestyle changes",
+    "Monitor progress toward financial independence"
+  ],
+  "faqs": [
+    {
+      "question": "Can I include all types of monthly expenses?",
+      "answer": "Yes, you can include rent/housing, utilities, food/groceries, transportation, entertainment, insurance, loans, and any other regular monthly expenses."
+    },
+    {
+      "question": "Does it consider taxes?",
+      "answer": "Use your net (take-home) salary after taxes. The calculator focuses on comparing your actual income with expenses."
+    },
+    {
+      "question": "Can I calculate yearly savings?",
+      "answer": "Yes, the monthly savings amount can be multiplied by 12 to get yearly savings. The savings percentage shows your overall financial health."
+    },
+    {
+      "question": "Can I adjust expenses later?",
+      "answer": "Yes, you can change any expense amount and recalculate instantly to see how adjustments affect your savings."
+    },
+    {
+      "question": "Is the salary vs expenses calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Track your actual expenses for a month before using this calculator",
+    "Categorize expenses into needs vs wants to identify savings opportunities",
+    "Aim for 20-30% savings rate for financial security",
+    "Consider seasonal expenses and build an emergency fund",
+    "Review your budget monthly and adjust as needed",
+    "Use the savings amount to pay off debt or invest wisely"
+  ]
+}

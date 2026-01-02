@@ -1,0 +1,88 @@
+{
+  "id": "annualRaisePromotionCalculator",
+  "name": "Annual Raise / Promotion Calculator",
+  "description": "Estimate salary increase after raise or promotion",
+  "inputs": [
+    {
+      "id": "currentGrossSalary",
+      "label": "Current Gross Salary",
+      "type": "number",
+      "default": 60000,
+      "unit": "$",
+      "placeholder": "60000",
+      "required": true,
+      "min": 0,
+      "description": "Your current annual gross salary"
+    },
+    {
+      "id": "raiseType",
+      "label": "Raise Type",
+      "type": "select",
+      "default": "percentage",
+      "options": [
+        {"value": "percentage", "label": "Percentage (%)"},
+        {"value": "fixed", "label": "Fixed Amount ($)"}
+      ],
+      "required": true,
+      "description": "Choose percentage or fixed dollar amount"
+    },
+    {
+      "id": "raiseAmount",
+      "label": "Raise Amount",
+      "type": "number",
+      "default": 10,
+      "unit": "",
+      "placeholder": "10",
+      "required": true,
+      "min": 0,
+      "description": "Percentage or dollar amount of raise"
+    },
+    {
+      "id": "country",
+      "label": "Country",
+      "type": "select",
+      "default": "US",
+      "options": [
+        {"value": "US", "label": "United States"},
+        {"value": "UK", "label": "United Kingdom"},
+        {"value": "Canada", "label": "Canada"},
+        {"value": "Australia", "label": "Australia"},
+        {"value": "Germany", "label": "Germany"},
+        {"value": "India", "label": "India"}
+      ],
+      "required": true,
+      "description": "Select your country for tax calculations"
+    },
+    {
+      "id": "optionalDeductions",
+      "label": "Optional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Additional deductions like retirement contributions, insurance, etc."
+    }
+  ],
+  "formula": {
+    "raiseDollarAmount": "raiseType === 'percentage' ? (currentGrossSalary * raiseAmount / 100) : raiseAmount",
+    "newGrossSalary": "currentGrossSalary + raiseDollarAmount",
+    "taxRate": "country === 'US' ? 0.25 : country === 'UK' ? 0.20 : country === 'Canada' ? 0.26 : country === 'Australia' ? 0.325 : country === 'Germany' ? 0.30 : country === 'India' ? 0.25 : 0.25",
+    "taxAmount": "newGrossSalary * taxRate",
+    "netTakeHomeSalary": "newGrossSalary - taxAmount - optionalDeductions",
+    "monthlyTakeHome": "netTakeHomeSalary / 12"
+  },
+  "outputLabels": {
+    "newGrossSalary": "New Gross Salary (Annual)",
+    "taxAmount": "Tax Amount",
+    "netTakeHomeSalary": "Net Take-Home Salary (Annual)",
+    "monthlyTakeHome": "Net Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "newGrossSalary": "$",
+    "taxAmount": "$",
+    "netTakeHomeSalary": "$",
+    "monthlyTakeHome": "$"
+  }
+}

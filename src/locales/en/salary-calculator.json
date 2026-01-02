@@ -1,0 +1,78 @@
+{
+  "slug": "salary-calculator",
+  "type": "calculator",
+  "h1": "Salary Calculator – Calculate Your Take-Home Pay Instantly",
+  "metaTitle": "Salary Calculator – Calculate Your Take-Home Pay Online",
+  "metaDescription": "Use our free salary calculator to estimate your gross and take-home pay. Calculate salary monthly or yearly with instant results.",
+  "primaryKeyword": "salary calculator",
+  "longTailKeywords": [
+    "take home salary calculator",
+    "salary calculator online",
+    "annual salary calculator",
+    "salary calculator after tax",
+    "calculate salary per year",
+    "salary calculator monthly",
+    "gross salary calculator",
+    "net salary calculator",
+    "salary calculator with tax",
+    "simple salary calculator"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "hourly-to-salary-calculator",
+    "salary-calculator-usa"
+  ],
+  "dataRef": "globalSalary",
+  "intro": "Our salary calculator is your quick solution for understanding compensation across different pay structures. Whether you're an employee, freelancer, or job seeker, get instant calculations for hourly, monthly, or annual salaries. No sign-up required - just enter your details and see results immediately.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howItWorks": "This salary calculator works by taking your base compensation and converting it across different time periods. We calculate gross earnings (total before taxes) and provide estimated net take-home amounts. The tool handles frequency conversions automatically - hourly rates become monthly salaries, annual figures break down to weekly pay, and everything in between.",
+  "whenToUse": [
+    "Evaluating a new job offer with different pay structures",
+    "Negotiating salary and understanding your earning potential",
+    "Planning monthly budgets and financial goals",
+    "Comparing compensation packages between roles or companies",
+    "Understanding how bonuses affect your total earnings",
+    "Converting between hourly wages and salaried positions"
+  ],
+  "example": {
+    "scenario": "A marketing manager earns $75,000 annually with a $10,000 bonus, working 40 hours per week.",
+    "results": "Monthly gross: $7,083 | Weekly gross: $1,635 | Hourly rate: $40.87 | Total annual compensation: $85,000"
+  },
+  "faqs": [
+    {
+      "question": "How accurate is this salary calculator?",
+      "answer": "This calculator provides accurate frequency conversions and basic estimates. For precise tax calculations, consult a tax professional or use our country-specific calculators."
+    },
+    {
+      "question": "Does this include tax calculations?",
+      "answer": "This calculator provides basic estimates. For accurate tax calculations including local tax rates, use our Gross to Net Salary Calculator or country-specific calculators."
+    },
+    {
+      "question": "Can I calculate monthly or yearly salary?",
+      "answer": "Yes! Enter any salary amount and frequency, and we'll show you the equivalent across all time periods - hourly, weekly, monthly, and annually."
+    },
+    {
+      "question": "Is this calculator free?",
+      "answer": "Yes, completely free. No sign-up, no hidden fees, no premium features. All calculations are done instantly in your browser."
+    },
+    {
+      "question": "Can I use this internationally?",
+      "answer": "Yes, for basic salary conversions. For country-specific tax calculations and currency conversions, check our individual country calculators like USA, UK, Canada, and Australia."
+    }
+  ],
+  "tips": [
+    "Always consider your total compensation package beyond base salary",
+    "Factor in benefits like health insurance, retirement contributions, and paid time off",
+    "Research industry salary ranges for your location and experience level",
+    "Use this tool to compare different job offers and negotiate effectively",
+    "Remember that actual take-home pay varies by location and tax situation"
+  ]
+}

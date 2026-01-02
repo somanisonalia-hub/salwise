@@ -1,0 +1,22 @@
+{
+  "id": "spainSalary",
+  "name": "Spain Salary Calculator",
+  "description": "Calculate take-home pay in Spain",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 25000,
+      "unit": "€"
+    }
+  ],
+  "formula": {
+    "incomeTax": "grossSalary * 0.24",
+    "socialSecurity": "grossSalary * 0.063",
+    "unemploymentInsurance": "grossSalary * 0.016",
+    "totalDeductions": "incomeTax + socialSecurity + unemploymentInsurance",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

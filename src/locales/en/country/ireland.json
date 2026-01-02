@@ -1,0 +1,102 @@
+{
+  "slug": "country/ireland",
+  "type": "guide",
+  "h1": "Ireland Salary Calculator",
+  "metaTitle": "Ireland Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "metaDescription": "Calculate take-home pay in Ireland including income tax, Universal Social Charge, PRSI contributions. Accurate Irish tax calculations with USC rates.",
+  "primaryKeyword": "ireland salary calculator",
+  "longTailKeywords": [
+    "Ireland salary calculator",
+    "irish tax calculator",
+    "take home pay Ireland",
+    "USC calculator",
+    "PRSI calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net",
+    "country/uk"
+  ],
+  "title": "Ireland Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "description": "Calculate take-home pay in Ireland including income tax, Universal Social Charge, PRSI contributions. Accurate Irish tax calculations with USC rates.",
+  "keywords": "Ireland salary calculator, irish tax calculator, take home pay Ireland, USC calculator, PRSI calculator",
+  "canonical": "https://salarywise.io/en/country/ireland",
+
+  "header": {
+    "title": "Ireland Salary Calculator",
+    "subtitle": "Calculate your take-home pay with accurate Irish tax calculations"
+  },
+
+  "intro": {
+    "paragraph1": "Irish tax calculations involve income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI). Our Ireland salary calculator helps you understand your net pay after all deductions.",
+    "paragraph2": "Enter your gross salary and tax details to get accurate calculations based on current Irish tax rates."
+  },
+
+  "incomeTax": {
+    "title": "Irish Income Tax Rates 2024",
+    "brackets": [
+      {"range": "€0 - €17,600", "rate": "0%"},
+      {"range": "€17,601 - €36,800", "rate": "20%"},
+      {"range": "€36,801 - €70,044", "rate": "40%"},
+      {"range": "€70,045+", "rate": "45%"}
+    ]
+  },
+
+  "usc": {
+    "title": "Universal Social Charge (USC)",
+    "rates": [
+      {"range": "€0 - €12,012", "rate": "0.5%"},
+      {"range": "€12,013 - €25,760", "rate": "2%"},
+      {"range": "€25,761 - €70,044", "rate": "4.5%"},
+      {"range": "€70,045 - €100,000", "rate": "6%"},
+      {"range": "€100,001+", "rate": "8%"}
+    ]
+  },
+
+  "prsi": {
+    "title": "Pay Related Social Insurance (PRSI)",
+    "employeeRate": "4% on earnings up to €76,000",
+    "employerRate": "8.8% on all earnings"
+  },
+
+  "examples": {
+    "title": "Irish Salary Calculation Examples",
+    "scenarios": [
+      {
+        "title": "Software Engineer - Dublin",
+        "gross": "€70,000",
+        "details": {
+          "incomeTax": "€14,000 (20%)",
+          "usc": "€2,900 (4.1%)",
+          "prsi": "€2,800 (4%)",
+          "netPay": "€50,300 (71.9% of gross)"
+        }
+      },
+      {
+        "title": "Teacher - Cork",
+        "gross": "€45,000",
+        "details": {
+          "incomeTax": "€5,440 (12.1%)",
+          "usc": "€1,350 (3%)",
+          "prsi": "€1,800 (4%)",
+          "netPay": "€36,410 (80.9% of gross)"
+        }
+      }
+    ]
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Ireland Salary Calculator",
+    "url": "https://salarywise.io/en/country/ireland",
+    "applicationCategory": "Calculator",
+    "description": "Calculate take-home pay in Ireland including income tax, USC, and PRSI",
+    "operatingSystem": "Web Browser",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "EUR"
+    }
+  }
+}

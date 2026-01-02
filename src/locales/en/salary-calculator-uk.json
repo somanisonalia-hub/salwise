@@ -1,0 +1,20 @@
+{
+  "slug": "salary-calculator-uk",
+  "type": "calculator",
+  "h1": "UK Salary Calculator",
+  "metaTitle": "UK Salary Calculator | Take-Home Pay in United Kingdom | SalaryWise.io",
+  "metaDescription": "Calculate your take-home pay in the United Kingdom. Free UK salary calculator with income tax, National Insurance, and student loan deductions.",
+  "primaryKeyword": "uk salary calculator",
+  "longTailKeywords": [
+    "salary calculator UK",
+    "take home pay UK",
+    "net salary UK",
+    "UK paycheck calculator"
+  ],
+  "related": [
+    "salary-calculator",
+    "salary-calculator-usa",
+    "salary-calculator-ireland"
+  ],
+  "dataRef": "ukSalary"
+}

@@ -1,0 +1,64 @@
+{
+  "id": "salaryCalculatorNewZealand",
+  "name": "Salary Calculator (New Zealand)",
+  "description": "Calculate net salary after New Zealand income tax and ACC contributions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 70000,
+      "unit": "NZD",
+      "placeholder": "70000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross salary"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "NZD",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like KiwiSaver, insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
+    "taxableIncome": "annualGross",
+    "incomeTax": "taxableIncome <= 14000 ? 0 : taxableIncome <= 48000 ? (taxableIncome - 14000) * 0.105 : taxableIncome <= 70000 ? 3570 + (taxableIncome - 48000) * 0.175 : taxableIncome <= 180000 ? 8780 + (taxableIncome - 70000) * 0.30 : 44080 + (taxableIncome - 180000) * 0.33",
+    "accLevy": "annualGross * 0.015",
+    "totalDeductions": "incomeTax + accLevy + additionalDeductions",
+    "netSalary": "annualGross - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "accLevy": "ACC Levy",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "NZD",
+    "accLevy": "NZD",
+    "totalDeductions": "NZD",
+    "netSalary": "NZD",
+    "monthlyNet": "NZD"
+  }
+}

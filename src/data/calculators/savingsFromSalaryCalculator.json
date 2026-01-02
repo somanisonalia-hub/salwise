@@ -1,0 +1,91 @@
+{
+  "id": "savingsFromSalaryCalculator",
+  "name": "Savings from Salary Calculator",
+  "description": "Estimate how much you can save from your salary",
+  "inputs": [
+    {
+      "id": "netSalary",
+      "label": "Net Salary / Take-Home Pay",
+      "type": "number",
+      "default": 4000,
+      "unit": "$",
+      "placeholder": "4000",
+      "required": true,
+      "min": 0,
+      "description": "Your monthly take-home pay after taxes"
+    },
+    {
+      "id": "rentHousing",
+      "label": "Rent / Housing",
+      "type": "number",
+      "default": 1200,
+      "unit": "$",
+      "placeholder": "1200",
+      "required": false,
+      "min": 0,
+      "description": "Monthly rent, mortgage, or housing costs"
+    },
+    {
+      "id": "utilities",
+      "label": "Utilities",
+      "type": "number",
+      "default": 200,
+      "unit": "$",
+      "placeholder": "200",
+      "required": false,
+      "min": 0,
+      "description": "Electricity, water, internet, phone, etc."
+    },
+    {
+      "id": "foodGroceries",
+      "label": "Food / Groceries",
+      "type": "number",
+      "default": 500,
+      "unit": "$",
+      "placeholder": "500",
+      "required": false,
+      "min": 0,
+      "description": "Monthly food and grocery expenses"
+    },
+    {
+      "id": "transportation",
+      "label": "Transportation",
+      "type": "number",
+      "default": 300,
+      "unit": "$",
+      "placeholder": "300",
+      "required": false,
+      "min": 0,
+      "description": "Car payment, gas, public transport, etc."
+    },
+    {
+      "id": "otherExpenses",
+      "label": "Other Monthly Expenses",
+      "type": "number",
+      "default": 800,
+      "unit": "$",
+      "placeholder": "800",
+      "required": false,
+      "min": 0,
+      "description": "Entertainment, insurance, healthcare, miscellaneous"
+    }
+  ],
+  "formula": {
+    "totalMonthlyExpenses": "rentHousing + utilities + foodGroceries + transportation + otherExpenses",
+    "monthlySavings": "netSalary - totalMonthlyExpenses",
+    "yearlySavings": "monthlySavings * 12",
+    "savingsPercentage": "netSalary > 0 ? (monthlySavings / netSalary) * 100 : 0"
+  },
+  "outputLabels": {
+    "totalMonthlyExpenses": "Total Monthly Expenses",
+    "monthlySavings": "Monthly Savings",
+    "yearlySavings": "Yearly Savings",
+    "savingsPercentage": "Savings Percentage"
+  },
+  "outputUnits": {
+    "totalMonthlyExpenses": "$",
+    "monthlySavings": "$",
+    "yearlySavings": "$",
+    "savingsPercentage": "%"
+  }
+}

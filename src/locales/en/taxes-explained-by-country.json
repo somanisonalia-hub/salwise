@@ -1,0 +1,67 @@
+{
+  "slug": "taxes-explained-by-country",
+  "type": "guide",
+  "h1": "Taxes Explained by Country – Understand Salary Deductions",
+  "metaTitle": "Taxes Explained by Country – Salary Deductions Guide",
+  "metaDescription": "Understand how taxes affect your salary in different countries. Compare income tax, social contributions, and take-home pay with this simple guide.",
+  "primaryKeyword": "taxes explained by country",
+  "longTailKeywords": [
+    "income tax guide by country",
+    "payroll taxes comparison",
+    "salary deductions explained",
+    "gross to net taxes worldwide",
+    "tax rates by country",
+    "understand taxes on salary"
+  ],
+  "related": [
+    "salary-after-tax-calculator",
+    "gross-to-net-salary",
+    "take-home-pay-calculator"
+  ],
+  "intro": "Understanding how taxes affect your salary is crucial when considering international job opportunities or comparing compensation packages. Different countries have varying tax rates, social contributions, and deduction systems that significantly impact your take-home pay. This guide simplifies the complex world of international salary taxes, helping you understand how your gross salary translates to net income across major countries and regions.",
+  "commonTypesOfSalaryTaxes": [
+    "Income tax: Progressive tax rates based on your total income, typically ranging from 10-45% depending on income level and country",
+    "Social security / national insurance: Mandatory contributions for retirement, healthcare, and unemployment benefits, usually split between employer and employee",
+    "Health insurance contributions: Required payments for healthcare coverage, which may be separate from social security",
+    "Retirement contributions: Pension or retirement fund contributions, which may be mandatory or voluntary"
+  ],
+  "taxComparisonByCountry": [
+    {"country": "USA", "incomeTax": "10–37%", "socialSecurity": "7.65%", "netExample": "$52,000 (from $80,000 gross)"},
+    {"country": "UK", "incomeTax": "20–45%", "socialSecurity": "12%", "netExample": "$48,000 (from £60,000 gross)"},
+    {"country": "Ireland", "incomeTax": "20–40%", "socialSecurity": "4–8%", "netExample": "€38,000 (from €60,000 gross)"},
+    {"country": "Germany", "incomeTax": "14–45%", "socialSecurity": "9–10%", "netExample": "€42,000 (from €70,000 gross)"},
+    {"country": "Canada", "incomeTax": "15–33%", "socialSecurity": "5.95%", "netExample": "CAD $58,000 (from CAD $85,000 gross)"},
+    {"country": "Australia", "incomeTax": "19–45%", "socialSecurity": "2%", "netExample": "AUD $62,000 (from AUD $95,000 gross)"}
+  ],
+  "howToCalculateTaxes": "Calculating taxes across countries involves understanding your gross salary and applying the appropriate tax rates and deductions for your specific location. Start with your gross income, subtract mandatory social contributions, apply the progressive income tax rates, and account for any additional deductions. The exact calculation varies by country, income level, and individual circumstances. For precise calculations, use our country-specific salary calculators that account for local tax laws and contribution rates.",
+  "faqs": [
+    {
+      "question": "Are tax rates the same for all salaries?",
+      "answer": "No, most countries use progressive tax systems where higher income levels are taxed at higher rates. Tax brackets vary significantly by country."
+    },
+    {
+      "question": "How do social contributions affect take-home pay?",
+      "answer": "Social contributions are mandatory deductions that fund retirement, healthcare, and unemployment benefits. They typically range from 5-15% of salary and reduce your net income."
+    },
+    {
+      "question": "Can freelancers calculate taxes differently?",
+      "answer": "Yes, freelancers and self-employed individuals often have different tax treatments, including self-employment tax instead of social security contributions."
+    },
+    {
+      "question": "Does this guide cover multiple countries?",
+      "answer": "Yes, it covers major countries including the US, UK, Ireland, Germany, Canada, Australia, and others, with examples of their tax systems."
+    },
+    {
+      "question": "Is this taxes explained by country guide free?",
+      "answer": "Yes, this educational guide is completely free to help you understand international salary taxes and make informed career decisions."
+    }
+  ],
+  "tips": [
+    "Always use current tax rates as they can change annually",
+    "Consider tax treaties between countries for international workers",
+    "Factor in local cost of living when comparing after-tax salaries",
+    "Consult local tax authorities for your specific situation",
+    "Use tax calculators for precise calculations based on your circumstances",
+    "Understand the difference between marginal and effective tax rates"
+  ]
+}

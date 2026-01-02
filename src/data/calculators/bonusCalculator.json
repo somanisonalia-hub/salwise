@@ -1,0 +1,59 @@
+{
+  "id": "bonusCalculator",
+  "name": "Bonus Calculator",
+  "description": "Calculate bonus after tax and net impact",
+  "inputs": [
+    {
+      "id": "bonusAmount",
+      "label": "Bonus Amount",
+      "type": "number",
+      "default": 5000,
+      "unit": "$",
+      "placeholder": "5000",
+      "required": true,
+      "min": 0,
+      "description": "Pre-tax bonus amount"
+    },
+    {
+      "id": "taxRate",
+      "label": "Tax Rate",
+      "type": "number",
+      "default": 20,
+      "unit": "%",
+      "placeholder": "20",
+      "required": true,
+      "min": 0,
+      "max": 50,
+      "description": "Estimated tax rate (adjust as needed)"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Bonus Frequency",
+      "type": "select",
+      "default": "one-time",
+      "options": [
+        {"value": "one-time", "label": "One-time Bonus"},
+        {"value": "monthly", "label": "Monthly Bonus"},
+        {"value": "quarterly", "label": "Quarterly Bonus"},
+        {"value": "annual", "label": "Annual Bonus"}
+      ],
+      "required": true,
+      "description": "How often you receive this bonus"
+    }
+  ],
+  "formula": {
+    "estimatedTax": "bonusAmount * (taxRate / 100)",
+    "takeHomeBonus": "bonusAmount - estimatedTax",
+    "totalAddedToSalary": "payFrequency === 'monthly' ? takeHomeBonus * 12 : payFrequency === 'quarterly' ? takeHomeBonus * 4 : payFrequency === 'annual' ? takeHomeBonus : takeHomeBonus"
+  },
+  "outputLabels": {
+    "estimatedTax": "Estimated Tax",
+    "takeHomeBonus": "Take-Home Bonus",
+    "totalAddedToSalary": "Total Added to Annual Salary"
+  },
+  "outputUnits": {
+    "estimatedTax": "$",
+    "takeHomeBonus": "$",
+    "totalAddedToSalary": "$"
+  }
+}

@@ -1,0 +1,91 @@
+{
+  "id": "salaryCalculatorStartupEntrepreneur",
+  "name": "Startup / Entrepreneur Salary Calculator",
+  "description": "Calculate net salary for startup founders and entrepreneurs",
+  "inputs": [
+    {
+      "id": "grossRevenue",
+      "label": "Gross Revenue / Income",
+      "type": "number",
+      "default": 120000,
+      "unit": "$",
+      "placeholder": "120000",
+      "required": true,
+      "min": 0,
+      "description": "Your annual gross revenue or income"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "default": "yearly",
+      "options": [
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "yearly", "label": "Yearly"}
+      ],
+      "required": true,
+      "description": "How often you receive income"
+    },
+    {
+      "id": "businessExpenses",
+      "label": "Business Expenses",
+      "type": "number",
+      "default": 20000,
+      "unit": "$",
+      "placeholder": "20000",
+      "required": false,
+      "min": 0,
+      "description": "Deductible business expenses (office, marketing, equipment, etc.)"
+    },
+    {
+      "id": "country",
+      "label": "Country",
+      "type": "select",
+      "default": "US",
+      "options": [
+        {"value": "US", "label": "United States"},
+        {"value": "UK", "label": "United Kingdom"},
+        {"value": "Canada", "label": "Canada"},
+        {"value": "Australia", "label": "Australia"},
+        {"value": "Germany", "label": "Germany"},
+        {"value": "India", "label": "India"}
+      ],
+      "required": true,
+      "description": "Select your country for localized calculations"
+    },
+    {
+      "id": "additionalDeductions",
+      "label": "Additional Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Other deductions like retirement, insurance, etc."
+    }
+  ],
+  "formula": {
+    "annualGross": "payFrequency === 'monthly' ? grossRevenue * 12 : grossRevenue",
+    "taxableIncome": "annualGross - businessExpenses",
+    "incomeTax": "country === 'US' ? (taxableIncome <= 11000 ? 0 : taxableIncome <= 44725 ? (taxableIncome - 11000) * 0.12 : taxableIncome <= 95375 ? 3360 + (taxableIncome - 44725) * 0.22 : taxableIncome <= 182100 ? 11089 + (taxableIncome - 95375) * 0.24 : taxableIncome <= 231250 ? 25746 + (taxableIncome - 182100) * 0.32 : taxableIncome <= 578125 ? 44223 + (taxableIncome - 231250) * 0.35 : 110818 + (taxableIncome - 578125) * 0.37) : country === 'UK' ? (taxableIncome <= 12570 ? 0 : taxableIncome <= 50270 ? (taxableIncome - 12570) * 0.20 : taxableIncome <= 125140 ? 7540 + (taxableIncome - 50270) * 0.40 : 42970 + (taxableIncome - 125140) * 0.45) : country === 'India' ? (taxableIncome <= 250000 ? 0 : taxableIncome <= 500000 ? (taxableIncome - 250000) * 0.05 : taxableIncome <= 1000000 ? 12500 + (taxableIncome - 500000) * 0.20 : 112500 + (taxableIncome - 1000000) * 0.30) : country === 'Canada' ? (taxableIncome <= 142292 ? taxableIncome * 0.15 : taxableIncome <= 170751 ? 21344 + (taxableIncome - 142292) * 0.205 : taxableIncome <= 209952 ? 27922 + (taxableIncome - 170751) * 0.26 : taxableIncome <= 314928 ? 46366 + (taxableIncome - 209952) * 0.29 : 77314 + (taxableIncome - 314928) * 0.33) : country === 'Australia' ? (taxableIncome <= 18200 ? 0 : taxableIncome <= 45000 ? (taxableIncome - 18200) * 0.19 : taxableIncome <= 120000 ? 5092 + (taxableIncome - 45000) * 0.325 : taxableIncome <= 180000 ? 29467 + (taxableIncome - 120000) * 0.37 : 51667 + (taxableIncome - 180000) * 0.45) : country === 'Germany' ? taxableIncome * 0.42 : 0",
+    "socialContributions": "country === 'US' ? taxableIncome * 0.153 : country === 'UK' ? taxableIncome * 0.08 : country === 'Canada' ? taxableIncome * 0.0495 : country === 'Australia' ? taxableIncome * 0.02 : country === 'Germany' ? taxableIncome * 0.20 : country === 'India' ? 0 : 0",
+    "totalDeductions": "incomeTax + socialContributions + additionalDeductions",
+    "netSalary": "taxableIncome - totalDeductions",
+    "monthlyNet": "netSalary / 12"
+  },
+  "outputLabels": {
+    "incomeTax": "Income Tax",
+    "socialContributions": "Social Contributions",
+    "totalDeductions": "Total Deductions",
+    "netSalary": "Net / Take-Home Salary (Annual)",
+    "monthlyNet": "Net / Take-Home Salary (Monthly)"
+  },
+  "outputUnits": {
+    "incomeTax": "$",
+    "socialContributions": "$",
+    "totalDeductions": "$",
+    "netSalary": "$",
+    "monthlyNet": "$"
+  }
+}

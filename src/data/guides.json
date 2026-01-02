@@ -1,0 +1,126 @@
+{
+  "howToCalculateTakeHome": {
+    "slug": "how-to-calculate-take-home",
+    "title": "How to Calculate Take-Home Pay",
+    "metaTitle": "How to Calculate Take-Home Pay – Complete Guide 2024",
+    "metaDescription": "Learn how to calculate your take-home pay after taxes and deductions. Complete guide with examples and formulas.",
+    "contentSections": [
+      {
+        "heading": "What is Take-Home Pay?",
+        "text": "Take-home pay is the amount of money you actually receive in your paycheck after all taxes and deductions have been subtracted from your gross pay. Understanding how to calculate take-home pay is essential for budgeting and financial planning."
+      },
+      {
+        "heading": "Step-by-Step Calculation",
+        "text": "1. Start with your gross pay (annual salary or hourly wage × hours worked)\n2. Subtract federal income tax\n3. Subtract state/local taxes\n4. Subtract Social Security and Medicare taxes\n5. Subtract other deductions (health insurance, retirement contributions)\n6. The result is your take-home pay"
+      },
+      {
+        "heading": "Common Deductions",
+        "text": "• Federal Income Tax (varies by income bracket)\n• State Income Tax (varies by state)\n• Social Security (6.2% of wages)\n• Medicare (1.45% of wages)\n• Health Insurance Premiums\n• Retirement Contributions (401k, IRA)\n• Other Benefits (dental, vision)"
+      }
+    ]
+  },
+  "grossVsNet": {
+    "slug": "gross-vs-net",
+    "title": "Understanding Gross vs Net Salary",
+    "metaTitle": "Gross vs Net Salary – What's the Difference?",
+    "metaDescription": "Learn the difference between gross salary and net salary. Understand what each term means and how they affect your take-home pay.",
+    "contentSections": [
+      {
+        "heading": "What is Gross Salary?",
+        "text": "Gross salary is your total earnings before any taxes or deductions are taken out. This is the amount your employer agrees to pay you for your work. It's often quoted in job offers and salary discussions."
+      },
+      {
+        "heading": "What is Net Salary?",
+        "text": "Net salary is your take-home pay after all taxes and deductions have been subtracted from your gross salary. This is the actual amount you receive in your paycheck and can spend or save."
+      },
+      {
+        "heading": "Key Differences",
+        "text": "• Gross salary is pre-tax earnings\n• Net salary is post-tax earnings\n• Gross is used for job negotiations\n• Net determines your actual spending power\n• Gross affects tax calculations\n• Net affects your budget and lifestyle"
+      },
+      {
+        "heading": "Why Both Matter",
+        "text": "Understanding both gross and net salary helps you:\n• Compare job offers accurately\n• Plan your budget effectively\n• Understand tax implications\n• Negotiate better compensation packages"
+      }
+    ]
+  },
+  "salaryNegotiation": {
+    "slug": "salary-negotiation",
+    "title": "Salary Negotiation Guide",
+    "metaTitle": "Salary Negotiation Guide – How to Ask for a Raise",
+    "metaDescription": "Master the art of salary negotiation. Learn how to research, prepare, and negotiate your salary effectively.",
+    "contentSections": [
+      {
+        "heading": "Research Your Market Value",
+        "text": "Before negotiating, research what similar roles pay in your industry and location. Use salary calculators, industry reports, and networking to understand your worth."
+      },
+      {
+        "heading": "Prepare Your Case",
+        "text": "Document your achievements, contributions, and value to the company. Prepare specific examples of how you've helped the organization succeed."
+      },
+      {
+        "heading": "Timing is Everything",
+        "text": "Choose the right time to negotiate: after a successful project, during performance reviews, or when you've received a job offer."
+      },
+      {
+        "heading": "Practice Your Pitch",
+        "text": "Rehearse what you'll say. Focus on value you've added rather than personal needs. Be confident but realistic in your expectations."
+      },
+      {
+        "heading": "Consider Total Compensation",
+        "text": "Remember that salary is just one part of compensation. Consider benefits, bonuses, vacation time, and professional development opportunities."
+      }
+    ]
+  },
+  "taxesByCountry": {
+    "slug": "taxes-by-country",
+    "title": "Taxes by Country Guide",
+    "metaTitle": "Taxes by Country – International Tax Comparison",
+    "metaDescription": "Compare tax systems across different countries. Understand income tax rates, social contributions, and tax planning strategies.",
+    "contentSections": [
+      {
+        "heading": "Understanding Tax Systems",
+        "text": "Different countries have different approaches to taxation. Some rely heavily on income tax, while others focus on consumption taxes or social contributions."
+      },
+      {
+        "heading": "Progressive vs Flat Tax Systems",
+        "text": "• Progressive systems (like the US, UK) tax higher earners at higher rates\n• Flat tax systems (like some Eastern European countries) apply the same rate to all income levels"
+      },
+      {
+        "heading": "Social Insurance Contributions",
+        "text": "Many countries require employers and employees to contribute to social insurance systems covering healthcare, unemployment, and retirement benefits."
+      },
+      {
+        "heading": "Tax Optimization Strategies",
+        "text": "Understanding different tax systems can help with:\n• International job considerations\n• Tax planning and optimization\n• Retirement planning\n• Investment decisions"
+      }
+    ]
+  },
+  "salaryTrends2026": {
+    "slug": "salary-trends-2026",
+    "title": "Salary Trends 2026",
+    "metaTitle": "Salary Trends 2026 – Future of Compensation",
+    "metaDescription": "Explore salary trends for 2026. Understand emerging compensation models, remote work impact, and industry changes.",
+    "contentSections": [
+      {
+        "heading": "Remote Work Impact",
+        "text": "Remote and hybrid work continues to influence salary structures. Companies are adjusting compensation based on location and cost of living differences."
+      },
+      {
+        "heading": "Skills-Based Compensation",
+        "text": "More companies are moving toward skills-based pay structures, rewarding demonstrated abilities rather than traditional job titles or experience levels."
+      },
+      {
+        "heading": "Industry Growth Areas",
+        "text": "Technology, renewable energy, healthcare, and data science continue to see strong salary growth. Understanding these trends helps career planning."
+      },
+      {
+        "heading": "Total Compensation Packages",
+        "text": "Beyond base salary, companies are enhancing benefits packages with better healthcare, retirement contributions, and work-life balance perks."
+      },
+      {
+        "heading": "Inflation and Cost of Living",
+        "text": "Salary increases are being influenced by inflation rates and regional cost of living changes. Understanding local economic factors is crucial."
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "id": "newZealandSalary",
+  "name": "New Zealand Salary Calculator",
+  "description": "Calculate take-home pay in New Zealand",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 55000,
+      "unit": "NZD"
+    }
+  ],
+  "formula": {
+    "incomeTax": "grossSalary < 14000 ? 0 : grossSalary < 48000 ? (grossSalary - 14000) * 0.105 : grossSalary < 70000 ? 3570 + (grossSalary - 48000) * 0.175 : grossSalary < 180000 ? 8840 + (grossSalary - 70000) * 0.30 : 44040 + (grossSalary - 180000) * 0.33",
+    "accLevy": "grossSalary * 0.0139",
+    "kiwiSaver": "grossSalary * 0.03",
+    "totalDeductions": "incomeTax + accLevy + kiwiSaver",
+    "netSalary": "grossSalary - totalDeductions",
+    "takeHomeMonthly": "netSalary / 12"
+  }
+}

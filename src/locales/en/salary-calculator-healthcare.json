@@ -1,0 +1,75 @@
+{
+  "slug": "salary-calculator-healthcare",
+  "type": "calculator",
+  "h1": "Healthcare Salary Calculator – Net Pay Estimator",
+  "metaTitle": "Healthcare Salary Calculator – Calculate Net Pay",
+  "metaDescription": "Use our Healthcare salary calculator to estimate your take-home pay. Includes income tax, social contributions, and deductions. Quick and free.",
+  "primaryKeyword": "healthcare salary calculator",
+  "longTailKeywords": [
+    "nurse salary calculator",
+    "doctor salary calculator",
+    "medical professional take-home pay calculator",
+    "gross to net salary healthcare jobs",
+    "net pay calculator hospital staff",
+    "healthcare worker salary calculator"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "salary-calculator-it-tech",
+    "salary-calculator-engineering"
+  ],
+  "dataRef": "salaryCalculatorHealthcare",
+  "intro": "Healthcare professionals often have unique compensation structures that require specialized calculations to understand your true take-home pay. This calculator estimates your net salary by accounting for income tax and social contributions specific to healthcare roles. Whether you're a nurse, doctor, or other medical professional, this tool provides accurate calculations to help you understand your actual earnings and make informed career decisions.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howHealthcareSalariesAreCalculated": "Healthcare salaries typically include base pay plus potential shift differentials, overtime, and on-call pay. Gross salary is calculated based on market rates for specific healthcare roles. Standard deductions include federal/state income tax, Social Security and Medicare contributions, and optional deductions like retirement contributions, health insurance, and professional liability insurance. The result is your net salary - the actual amount you'll receive in your bank account after all deductions.",
+  "example": {
+    "scenario": "A registered nurse earning $70,000 annually in the United States with standard deductions.",
+    "results": "Gross salary: $70,000 | Income tax: $12,000 | Social contributions: $5,385 | Net salary: $52,615 | Monthly net: $4,385"
+  },
+  "whyUseAHealthcareSalaryCalculator": [
+    "Compare job offers from different healthcare facilities",
+    "Plan your budget and understand your actual take-home pay",
+    "Negotiate salary packages more effectively",
+    "Calculate the impact of shift differentials and overtime",
+    "Understand how different locations affect your net pay",
+    "Make informed decisions about benefits and deductions"
+  ],
+  "faqs": [
+    {
+      "question": "Does this calculator include tax and social contributions for healthcare jobs?",
+      "answer": "Yes, it includes federal and state income tax, Social Security, Medicare, and other standard deductions applicable to healthcare professionals."
+    },
+    {
+      "question": "Can I calculate salaries for different countries?",
+      "answer": "Yes, select your country to get localized calculations including taxes and social contributions specific to that location."
+    },
+    {
+      "question": "Is this accurate for all healthcare roles?",
+      "answer": "Yes, it works for all healthcare roles including nurses, doctors, therapists, technicians, and other medical professionals."
+    },
+    {
+      "question": "Can I include bonuses or overtime pay?",
+      "answer": "Yes, you can add bonuses, overtime pay, and shift differentials to the base salary for a complete net pay calculation."
+    },
+    {
+      "question": "Is this healthcare salary calculator free?",
+      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+    }
+  ],
+  "tips": [
+    "Review your employment contract carefully for all compensation components",
+    "Consider the total compensation package including benefits and differentials",
+    "Use industry salary surveys to validate calculations",
+    "Factor in cost of living when comparing offers",
+    "Consult with a tax professional for personalized advice",
+    "Keep track of year-to-date earnings for accurate tax planning"
+  ]
+}

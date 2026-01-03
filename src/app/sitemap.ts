@@ -5,7 +5,8 @@ export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://salarywise.io';
-  const lastModified = new Date('2026-01-04');
+  const lastModified = new Date('2026-01-02'); // General pages
+  const corePagesModified = new Date('2026-01-04'); // Updated core pages
 
   // Static pages - English locale URLs
   const staticPages = [
@@ -16,8 +17,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: `${baseUrl}/en/ireland-salary-calculator`,
+      lastModified: corePagesModified,
+      changeFrequency: 'weekly' as const,
+      priority: 1.0,
+    },
+    {
       url: `${baseUrl}/en/salary-calculator`,
-      lastModified,
+      lastModified: corePagesModified,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
@@ -29,7 +36,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/en/gross-to-net-salary`,
-      lastModified,
+      lastModified: corePagesModified,
       changeFrequency: 'weekly' as const,
       priority: 0.9,
     },
@@ -53,7 +60,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/en/take-home-pay-calculator`,
-      lastModified,
+      lastModified: corePagesModified,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
@@ -95,7 +102,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
     {
       url: `${baseUrl}/en/salary-after-tax-calculator`,
-      lastModified,
+      lastModified: corePagesModified,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
@@ -125,8 +132,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Country pages - All country calculators
-  const countries = ['usa', 'uk', 'ireland', 'canada', 'australia', 'germany', 'france', 'spain', 'india', 'singapore', 'netherlands', 'sweden', 'switzerland', 'new-zealand', 'south-africa'];
+  // Country pages - All country calculators (excluding ireland which is now a core page)
+  const countries = ['usa', 'uk', 'canada', 'australia', 'germany', 'france', 'spain', 'india', 'singapore', 'netherlands', 'sweden', 'switzerland', 'new-zealand', 'south-africa'];
   const countryPages = countries.map(country => ({
     url: `${baseUrl}/en/${country}-salary-calculator`,
     lastModified,

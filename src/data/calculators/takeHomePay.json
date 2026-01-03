@@ -1,18 +1,18 @@
 {
   "id": "takeHomePay",
-  "name": "Take-Home Pay Calculator",
-  "description": "Calculate your net salary after tax and deductions",
+  "name": "Ireland Take-Home Pay Calculator",
+  "description": "Calculate your net take-home pay in Ireland after PAYE, USC, PRSI, and deductions",
   "inputs": [
     {
       "id": "grossSalary",
       "label": "Gross Salary",
       "type": "number",
       "default": 4000,
-      "unit": "$",
+      "unit": "€",
       "placeholder": "4000",
       "required": true,
       "min": 0,
-      "description": "Your gross salary before deductions"
+      "description": "Your gross salary before Irish taxes and deductions"
     },
     {
       "id": "payFrequency",
@@ -20,53 +20,73 @@
       "type": "select",
       "default": "monthly",
       "options": [
-        {"value": "hourly", "label": "Hourly"},
         {"value": "monthly", "label": "Monthly"},
-        {"value": "yearly", "label": "Yearly"}
+        {"value": "weekly", "label": "Weekly"}
       ],
       "required": true,
       "description": "How often you get paid"
     },
     {
-      "id": "taxRate",
-      "label": "Tax Rate",
+      "id": "pensionPercent",
+      "label": "Pension Contribution (%)",
       "type": "number",
-      "default": 25,
+      "default": 0,
       "unit": "%",
-      "placeholder": "25",
-      "required": true,
+      "placeholder": "5",
+      "required": false,
       "min": 0,
-      "max": 50,
-      "description": "Estimated total tax rate (adjust as needed)"
+      "max": 20,
+      "description": "Percentage of salary contributed to pension",
+      "advanced": true
     },
     {
-      "id": "additionalDeductions",
-      "label": "Additional Deductions",
+      "id": "bonus",
+      "label": "Bonus",
       "type": "number",
-      "default": 200,
-      "unit": "$",
-      "placeholder": "200",
+      "default": 0,
+      "unit": "€",
+      "placeholder": "0",
       "required": false,
       "min": 0,
       "description": "Other deductions like pension, insurance, etc."
     }
   ],
   "formula": {
-    "annualGross": "payFrequency === 'hourly' ? grossSalary * 40 * 52 : payFrequency === 'monthly' ? grossSalary * 12 : grossSalary",
-    "monthlyGross": "payFrequency === 'hourly' ? grossSalary * 40 * 4.333 : payFrequency === 'monthly' ? grossSalary : annualGross / 12",
-    "estimatedTax": "annualGross * (taxRate / 100)",
-    "totalDeductions": "estimatedTax + additionalDeductions",
-    "netSalary": "annualGross - totalDeductions",
-    "monthlyNet": "netSalary / 12"
+    "annualGross": "payFrequency === 'monthly' ? grossSalary * 12 : payFrequency === 'weekly' ? grossSalary * 52 : grossSalary",
+    "incomeTax": "calculateIrelandPAYE(annualGross)",
+    "usc": "calculateIrelandUSC(annualGross)",
+    "prsi": "annualGross * 0.04",
+    "pension": "annualGross * (pensionPercent / 100)",
+    "bonusTax": "bonus > 0 ? (calculateIrelandPAYE(bonus) + calculateIrelandUSC(bonus) + bonus * 0.04) : 0",
+    "totalDeductions": "incomeTax + usc + prsi + pension + bonusTax",
+    "netAnnual": "annualGross + bonus - totalDeductions",
+    "netMonthly": "payFrequency === 'monthly' ? grossSalary - (totalDeductions / 12) : netAnnual / 12",
+    "netWeekly": "netAnnual / 52"
   },
   "outputLabels": {
+    "annualGross": "Annual Gross Salary",
+    "incomeTax": "PAYE Income Tax",
+    "usc": "Universal Social Charge (USC)",
+    "prsi": "Pay Related Social Insurance (PRSI)",
+    "pension": "Pension Contribution",
+    "bonus": "Bonus Amount",
+    "bonusTax": "Tax on Bonus",
     "totalDeductions": "Total Deductions",
-    "netSalary": "Net / Take-Home Pay (Annual)",
-    "monthlyNet": "Net / Take-Home Pay (Monthly)"
+    "netAnnual": "Net Annual Take-Home Pay",
+    "netMonthly": "Monthly Take-Home Pay",
+    "netWeekly": "Weekly Take-Home Pay"
   },
   "outputUnits": {
-    "totalDeductions": "$",
-    "netSalary": "$",
-    "monthlyNet": "$"
+    "annualGross": "€",
+    "incomeTax": "€",
+    "usc": "€",
+    "prsi": "€",
+    "pension": "€",
+    "bonus": "€",
+    "bonusTax": "€",
+    "totalDeductions": "€",
+    "netAnnual": "€",
+    "netMonthly": "€",
+    "netWeekly": "€"
   }
 }

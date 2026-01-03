@@ -1,19 +1,17 @@
 {
   "slug": "gross-to-net-salary",
   "type": "calculator",
-  "h1": "Gross to Net Salary Calculator – Convert Your Salary After Tax",
-  "metaTitle": "Gross to Net Salary Calculator – Calculate Take-Home Pay",
-  "metaDescription": "Use our gross to net salary calculator to estimate your take-home pay after tax and deductions. Simple, fast, and free.",
-  "primaryKeyword": "gross to net salary calculator",
+  "h1": "Ireland Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
+  "metaTitle": "Ireland Gross to Net Salary Calculator 2026 – Calculate Take-Home Pay",
+  "metaDescription": "Convert gross to net salary in Ireland for 2026. Calculate take-home pay after PAYE, USC, PRSI taxes and deductions.",
+  "primaryKeyword": "ireland salary calculator",
   "longTailKeywords": [
-    "gross to net salary",
-    "gross to net salary calculator after tax",
-    "gross pay to net pay",
-    "calculate net salary from gross",
-    "gross to net monthly salary",
-    "net salary from gross income",
-    "gross salary to take home pay",
-    "gross vs net salary calculator"
+    "ireland salary calculator",
+    "take home pay ireland",
+    "salary after tax ireland",
+    "net salary ireland",
+    "gross to net ireland",
+    "irish salary calculator"
   ],
   "related": [
     "salary-calculator",
@@ -22,7 +20,7 @@
     "salary-calculator-ireland"
   ],
   "dataRef": "grossToNet",
-  "intro": "Understanding the difference between gross and net salary is crucial for financial planning. Your gross salary represents your total earnings before any deductions, while net salary shows what you actually take home after taxes and withholdings. This calculator helps you quickly estimate your take-home pay based on your gross earnings, making it easier to budget and compare job offers.",
+  "intro": "Calculate your take-home pay in Ireland with our comprehensive salary calculator. This tool provides accurate estimates by incorporating PAYE (Pay As You Earn) income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions based on 2026 Irish tax rates. Whether you're comparing job offers, planning your budget, or negotiating a salary increase, knowing your exact net income after all Irish deductions is essential for effective financial planning. Get instant results for annual, monthly, and weekly take-home pay calculations tailored to Ireland's unique tax system.",
   "ui": {
     "calculatorHeading": "Calculate Your Results",
     "resultsHeading": "Results",
@@ -32,195 +30,108 @@
     "noResultsText": "No results calculated yet"
   },
   "whatIsGrossVsNet": "Gross salary refers to your total compensation before any deductions are taken out. It's the amount your employer agrees to pay you for your work. Net salary, on the other hand, is your take-home pay - the amount you actually receive in your bank account after taxes, social security contributions, health insurance premiums, and other withholdings have been deducted. Typical deductions include federal and state income taxes, Social Security (FICA) contributions, Medicare taxes, and sometimes retirement plan contributions or health insurance premiums.",
-  "howGrossConvertsToNet": "Converting gross salary to net pay involves applying your estimated tax rate and subtracting other deductions. We start with your gross earnings, calculate the applicable taxes based on the tax rate you provide, and subtract any additional deductions you specify. The result is your estimated net or take-home pay. Keep in mind that actual calculations may vary based on your specific tax situation, filing status, and additional benefits or deductions.",
-  "example": {
-    "scenario": "An employee earns €60,000 annually in gross salary with a 25% estimated tax rate.",
-    "results": "Annual gross: €60,000 | Estimated tax: €15,000 | Annual net: €45,000 | Monthly net: €3,750"
+  "howThisIrelandSalaryCalculatorWorks": "This Ireland salary calculator works by taking your gross salary and applying the relevant Irish tax calculations step by step. First, your gross annual salary is calculated from your pay frequency. Then PAYE income tax is calculated using Ireland's progressive tax bands: 20% on the first €42,335, 40% on income between €42,336 and €70,557, and 48% on income over €70,557. Next, Universal Social Charge (USC) is applied with rates ranging from 0.5% to 8% depending on your income level. Pay Related Social Insurance (PRSI) contributions are then calculated at the standard employee rate. The calculator subtracts these mandatory deductions from your gross pay to show your net take-home salary, helping you understand exactly how much you'll receive after all Irish taxes and social insurance contributions.",
+  "workedExamples": {
+    "example1": {
+      "title": "€35,000 Annual Salary Example",
+      "scenario": "A junior professional earning €35,000 annually in Ireland",
+      "grossSalary": "€35,000",
+      "payeTax": "€4,667",
+      "usc": "€1,225",
+      "prsi": "€1,400",
+      "totalDeductions": "€7,292",
+      "netSalary": "€27,708",
+      "monthlyNet": "€2,309"
+    },
+    "example2": {
+      "title": "€60,000 Annual Salary Example",
+      "scenario": "A senior professional earning €60,000 annually in Ireland",
+      "grossSalary": "€60,000",
+      "payeTax": "€13,913",
+      "usc": "€2,475",
+      "prsi": "€2,400",
+      "totalDeductions": "€18,788",
+      "netSalary": "€41,212",
+      "monthlyNet": "€3,434"
+    }
   },
-  "whenToUse": [
-    "Evaluating job offers to understand actual take-home pay",
-    "Negotiating salary terms with employers",
-    "Creating accurate monthly budget plans",
-    "Comparing compensation packages between roles",
-    "Planning for tax season and annual tax obligations",
-    "Understanding the impact of bonuses and overtime on net income"
+  "whoShouldUseThisCalculator": [
+    "Irish employees comparing job offers and salary packages",
+    "Employers calculating payroll costs and employee take-home pay",
+    "Freelancers and contractors estimating net income after Irish taxes",
+    "Expats moving to Ireland who need to understand local tax implications",
+    "Students and graduates entering the Irish job market",
+    "Financial advisors helping clients with Irish salary planning",
+    "Anyone planning their budget based on actual take-home pay in Ireland"
   ],
   "faqs": [
     {
-      "question": "What deductions are included in gross to net calculations?",
-      "answer": "Our calculator includes estimated income tax and any additional deductions you specify. Common deductions include federal/state taxes, Social Security, Medicare, and retirement contributions."
+      "question": "Is this Ireland salary calculator accurate?",
+      "answer": "Yes, this calculator uses the official 2026 Irish tax rates and brackets for PAYE, USC, and PRSI. It provides reliable estimates for financial planning, though actual take-home pay may vary based on individual circumstances."
     },
     {
-      "question": "How accurate are gross to net salary calculations?",
-      "answer": "These are estimates based on the tax rate and deductions you provide. Actual net pay may vary based on your specific tax situation, filing status, and additional withholdings."
+      "question": "Does it include PAYE, PRSI, and USC?",
+      "answer": "Yes, the calculator includes all major Irish deductions: PAYE (Pay As You Earn) income tax, PRSI (Pay Related Social Insurance), and USC (Universal Social Charge), providing a comprehensive view of your net salary."
     },
     {
-      "question": "Does this calculator include pension contributions?",
-      "answer": "You can include pension or retirement contributions as additional deductions. The calculator provides flexibility to add any custom deductions beyond the basic tax estimate."
+      "question": "Can I calculate monthly and weekly take-home pay?",
+      "answer": "Yes, the calculator shows results in multiple formats: annual, monthly, and weekly take-home pay, making it easy to understand your salary across different time periods for budgeting purposes."
     },
     {
-      "question": "Can I calculate monthly gross to net salary?",
-      "answer": "Yes! Enter your monthly gross salary and the calculator will show your estimated monthly take-home pay. You can also enter annual amounts and see monthly breakdowns."
+      "question": "Is this calculator suitable for contractors?",
+      "answer": "While designed primarily for employees, contractors can use it as a reference for understanding Irish tax rates. However, contractors may have different tax obligations and should consult a tax professional for personalized advice."
     },
     {
-      "question": "Is this gross to net calculator free to use?",
-      "answer": "Yes, completely free. No registration required, no hidden fees, and no premium features. All calculations are performed instantly in your browser."
+      "question": "Does it work for different tax years in Ireland?",
+      "answer": "This calculator is specifically calibrated for 2026 Irish tax rates. For previous years or future projections, results may vary as tax rates and brackets are subject to annual government changes."
     }
   ],
-  "tips": [
-    "Use this calculator when comparing different job offers",
-    "Consider your overall compensation package beyond base salary",
-    "Remember that tax rates vary by income level and location",
-    "Consult with a tax professional for personalized advice",
-    "Revisit calculations when tax laws or rates change"
+  "internalLinks": [
+    {
+      "text": "Calculate Take-Home Pay",
+      "url": "/en/take-home-pay-calculator",
+      "description": "General take-home pay calculator for comparison"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Convert gross salary to net income"
+    },
+    {
+      "text": "Salary After Tax Calculator",
+      "url": "/en/salary-after-tax-calculator",
+      "description": "Calculate salary deductions and net pay"
+    }
   ],
+  "conclusion": "This Ireland salary calculator provides essential insights for anyone working in Ireland. By accounting for PAYE, USC, and PRSI, you can confidently plan your finances and make informed career decisions. Whether you're an employee, employer, or financial advisor, this free tool helps you understand the real impact of Irish taxes on your take-home pay. Use it regularly to stay on top of your financial planning and ensure you're maximizing your net income in Ireland's unique tax environment.",
   "disclaimer": "SalaryWise provides estimated take-home pay based on publicly available tax structures. Results are for guidance only.",
   "structuredData": {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "WebPage",
-        "@id": "https://salarywise.io/en/gross-to-net-salary",
-        "url": "https://salarywise.io/en/gross-to-net-salary",
-        "name": "Gross to Net Salary Calculator | Take-Home Pay Calculator 2025",
-        "description": "Calculate your take-home pay from gross salary. Free gross to net calculator with country-specific tax rates, deductions, and benefits. 2025 tax rates updated.",
-        "inLanguage": "en-US",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://salarywise.io",
-          "url": "https://salarywise.io",
-          "name": "SalaryWise.io"
-        },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://salarywise.io"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Calculators",
-              "item": "https://salarywise.io/en/calculators"
-            },
-            {
-              "@type": "ListItem",
-              "position": 3,
-              "name": "Gross to Net Salary",
-              "item": "https://salarywise.io/en/gross-to-net-salary"
-            }
-          ]
-        },
-        "mainEntity": {
-          "@type": "SoftwareApplication",
-          "@id": "https://salarywise.io/en/gross-to-net-salary#software",
-          "name": "Gross to Net Salary Calculator",
-          "description": "Professional tax calculator that converts gross salary to net take-home pay with detailed breakdowns of federal, state, and payroll taxes",
-          "url": "https://salarywise.io/en/gross-to-net-salary",
-          "applicationCategory": "FinanceApplication",
-          "operatingSystem": "Web Browser",
-          "offers": {
-            "@type": "Offer",
-            "price": "0",
-            "priceCurrency": "USD",
-            "availability": "https://schema.org/InStock"
-          },
-          "featureList": [
-            "2025 tax rates updated",
-            "Country and state tax calculations",
-            "Filing status options",
-            "Dependent tax credits",
-            "Pre-tax deduction calculations",
-            "FICA tax breakdown",
-            "Real-time calculations"
-          ],
-          "screenshot": "https://salarywise.io/images/gross-to-net-calculator.jpg",
-          "author": {
-            "@type": "Organization",
-            "name": "SalaryWise.io"
-          },
-          "aggregateRating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "ratingCount": "9562",
-            "bestRating": "5",
-            "worstRating": "1"
-          }
-        },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://salarywise.io/images/gross-to-net-hero.jpg",
-          "width": 1200,
-          "height": 630
-        },
-        "datePublished": "2024-01-01",
-        "dateModified": "2026-01-01",
-        "mentions": [
-          {
-            "@type": "GovernmentOrganization",
-            "name": "Internal Revenue Service (IRS)",
-            "url": "https://www.irs.gov",
-            "description": "Official US tax authority"
-          },
-          {
-            "@type": "GovernmentOrganization",
-            "name": "HM Revenue & Customs (HMRC)",
-            "url": "https://www.gov.uk/government/organisations/hm-revenue-customs",
-            "description": "Official UK tax authority"
-          },
-          {
-            "@type": "GovernmentOrganization",
-            "name": "Canada Revenue Agency (CRA)",
-            "url": "https://www.canada.ca/en/revenue-agency.html",
-            "description": "Official Canadian tax authority"
-          },
-          {
-            "@type": "GovernmentOrganization",
-            "name": "Australian Taxation Office (ATO)",
-            "url": "https://www.ato.gov.au",
-            "description": "Official Australian tax authority"
-          }
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What is gross to net salary?", "acceptedAnswer": { "@type": "Answer", "text": "Gross to net salary subtracts taxes and deductions from your gross income." } },
+          { "@type": "Question", "name": "Does it include PAYE, PRSI, USC?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, all Ireland deductions are included." } },
+          { "@type": "Question", "name": "Can I include bonuses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, bonuses are added to calculate net salary." } },
+          { "@type": "Question", "name": "Can I calculate weekly or monthly?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, choose the pay frequency." } },
+          { "@type": "Question", "name": "Is it AdSense safe?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, fully text-based and fast-loading." } }
         ]
       },
       {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "How does the gross to net calculator work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Enter your annual gross salary and select your country, state, and filing status. The calculator applies current tax rates, deductions, and credits to show your take-home pay."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Are the tax calculations accurate?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We use official 2025 tax brackets and rates. While accurate for estimates, consult a tax professional for your specific situation."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "What deductions are included?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Standard deduction, dependent tax credits, pre-tax retirement contributions, and health insurance premiums."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I calculate for different countries?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, we support tax calculations for the US, UK, Canada, Australia, Germany, France, and other major countries."
-            }
-          }
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Gross to Net Salary", "item": "https://salarywise.io/en/gross-to-net-salary" }
         ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Gross to Net Salary Calculator",
+        "url": "https://salarywise.io/en/gross-to-net-salary",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Convert gross salary to net salary in Ireland including PAYE, PRSI, USC and bonuses."
       }
     ]
   }

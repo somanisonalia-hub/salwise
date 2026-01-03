@@ -7,8 +7,9 @@
       "id": "country",
       "label": "Country",
       "type": "select",
-      "default": "US",
+      "default": "IE",
       "options": [
+        {"value": "IE", "label": "🇮🇪 Ireland (€)"},
         {"value": "US", "label": "🇺🇸 United States ($)"},
         {"value": "UK", "label": "🇬🇧 United Kingdom (£)"},
         {"value": "CA", "label": "🇨🇦 Canada (CAD)"},

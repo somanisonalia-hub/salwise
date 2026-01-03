@@ -1,10 +1,10 @@
 {
   "slug": "salary-after-tax-calculator",
   "type": "calculator",
-  "h1": "Salary After Tax Calculator",
-  "metaTitle": "Salary After Tax Calculator | Take-Home Pay Calculator | SalaryWise.io",
-  "metaDescription": "Calculate your actual take-home pay after federal, state, and local taxes. Accurate salary after tax calculations for employees and job seekers.",
-  "primaryKeyword": "salary after tax calculator",
+  "h1": "Ireland Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
+  "metaTitle": "Ireland Salary After Tax Calculator 2026 | Take-Home Pay Calculator",
+  "metaDescription": "Calculate your take-home pay in Ireland for 2026. Free calculator showing net salary after PAYE, USC, PRSI taxes and deductions.",
+  "primaryKeyword": "ireland salary calculator",
   "longTailKeywords": [
     "calculate salary after taxes",
     "take home pay after tax",
@@ -16,6 +16,119 @@
     "gross-to-net-salary",
     "salary-calculator"
   ],
-  "dataRef": "usaSalary"
+  "dataRef": "irelandSalaryCalculator",
+  "intro": "Calculate your take-home pay in Ireland with our comprehensive salary calculator. This tool provides accurate estimates by incorporating PAYE (Pay As You Earn) income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions based on 2026 Irish tax rates. Whether you're comparing job offers, planning your budget, or negotiating a salary increase, knowing your exact net income after all Irish deductions is essential for effective financial planning. Get instant results for annual, monthly, and weekly take-home pay calculations tailored to Ireland's unique tax system.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisIrelandSalaryCalculatorWorks": "This Ireland salary calculator works by taking your gross salary and applying the relevant Irish tax calculations step by step. First, your gross annual salary is calculated from your pay frequency. Then PAYE income tax is calculated using Ireland's progressive tax bands: 20% on the first €42,335, 40% on income between €42,336 and €70,557, and 48% on income over €70,557. Next, Universal Social Charge (USC) is applied with rates ranging from 0.5% to 8% depending on your income level. Pay Related Social Insurance (PRSI) contributions are then calculated at the standard employee rate. The calculator subtracts these mandatory deductions from your gross pay to show your net take-home salary, helping you understand exactly how much you'll receive after all Irish taxes and social insurance contributions.",
+  "workedExamples": {
+    "example1": {
+      "title": "€35,000 Annual Salary Example",
+      "scenario": "A junior professional earning €35,000 annually in Ireland",
+      "grossSalary": "€35,000",
+      "payeTax": "€4,667",
+      "usc": "€1,225",
+      "prsi": "€1,400",
+      "totalDeductions": "€7,292",
+      "netSalary": "€27,708",
+      "monthlyNet": "€2,309"
+    },
+    "example2": {
+      "title": "€60,000 Annual Salary Example",
+      "scenario": "A senior professional earning €60,000 annually in Ireland",
+      "grossSalary": "€60,000",
+      "payeTax": "€13,913",
+      "usc": "€2,475",
+      "prsi": "€2,400",
+      "totalDeductions": "€18,788",
+      "netSalary": "€41,212",
+      "monthlyNet": "€3,434"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Irish employees comparing job offers and salary packages",
+    "Employers calculating payroll costs and employee take-home pay",
+    "Freelancers and contractors estimating net income after Irish taxes",
+    "Expats moving to Ireland who need to understand local tax implications",
+    "Students and graduates entering the Irish job market",
+    "Financial advisors helping clients with Irish salary planning",
+    "Anyone planning their budget based on actual take-home pay in Ireland"
+  ],
+  "faqs": [
+    {
+      "question": "Is this Ireland salary calculator accurate?",
+      "answer": "Yes, this calculator uses the official 2026 Irish tax rates and brackets for PAYE, USC, and PRSI. It provides reliable estimates for financial planning, though actual take-home pay may vary based on individual circumstances."
+    },
+    {
+      "question": "Does it include PAYE, PRSI, and USC?",
+      "answer": "Yes, the calculator includes all major Irish deductions: PAYE (Pay As You Earn) income tax, PRSI (Pay Related Social Insurance), and USC (Universal Social Charge), providing a comprehensive view of your net salary."
+    },
+    {
+      "question": "Can I calculate monthly and weekly take-home pay?",
+      "answer": "Yes, the calculator shows results in multiple formats: annual, monthly, and weekly take-home pay, making it easy to understand your salary across different time periods for budgeting purposes."
+    },
+    {
+      "question": "Is this calculator suitable for contractors?",
+      "answer": "While designed primarily for employees, contractors can use it as a reference for understanding Irish tax rates. However, contractors may have different tax obligations and should consult a tax professional for personalized advice."
+    },
+    {
+      "question": "Does it work for different tax years in Ireland?",
+      "answer": "This calculator is specifically calibrated for 2026 Irish tax rates. For previous years or future projections, results may vary as tax rates and brackets are subject to annual government changes."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "Calculate Take-Home Pay",
+      "url": "/en/take-home-pay-calculator",
+      "description": "General take-home pay calculator for comparison"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Convert gross salary to net income"
+    },
+    {
+      "text": "Salary After Tax Calculator",
+      "url": "/en/salary-after-tax-calculator",
+      "description": "Calculate salary deductions and net pay"
+    }
+  ],
+  "conclusion": "This Ireland salary calculator provides essential insights for anyone working in Ireland. By accounting for PAYE, USC, and PRSI, you can confidently plan your finances and make informed career decisions. Whether you're an employee, employer, or financial advisor, this free tool helps you understand the real impact of Irish taxes on your take-home pay. Use it regularly to stay on top of your financial planning and ensure you're maximizing your net income in Ireland's unique tax environment.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How do I calculate salary after tax?", "acceptedAnswer": { "@type": "Answer", "text": "Subtract PAYE, PRSI, USC and optional deductions from your gross salary to get net pay." } },
+          { "@type": "Question", "name": "Can I add bonuses and overtime?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, both bonuses and overtime are included in net salary." } },
+          { "@type": "Question", "name": "Can I calculate weekly or monthly?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, select pay frequency." } },
+          { "@type": "Question", "name": "Does it include pension contributions?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, optional pension can be included." } },
+          { "@type": "Question", "name": "Is it AdSense safe?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, fully text-based and safe for ads." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Salary After Tax Calculator", "item": "https://salarywise.io/en/salary-after-tax-calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Salary After Tax Calculator",
+        "url": "https://salarywise.io/en/salary-after-tax-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate your net salary in Ireland after taxes, bonuses, and overtime including PAYE, PRSI, and USC."
+      }
+    ]
+  }
 }
 

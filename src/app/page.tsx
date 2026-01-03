@@ -5,64 +5,6 @@ import Head from 'next/head';
 import { useState, useMemo } from 'react';
 import content from '../locales/en/page.json';
 
-// Newsletter signup component
-function NewsletterSignup() {
-  const [email, setEmail] = useState('');
-  const [isSubscribed, setIsSubscribed] = useState(false);
-
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Here you would integrate with your email service
-    setIsSubscribed(true);
-    setEmail('');
-  };
-
-  return (
-    <div className="bg-gradient-to-r from-blue-600 to-blue-700 text-white rounded-2xl p-8 md:p-12 text-center">
-      <div className="max-w-2xl mx-auto">
-        <h2 className="text-2xl md:text-3xl font-bold mb-3">{content.newsletter.title}</h2>
-        <p className="text-blue-100 mb-6 text-lg">{content.newsletter.subtitle}</p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-          {content.newsletter.benefits.map((benefit: string, index: number) => (
-            <div key={index} className="flex items-center justify-center text-sm">
-              <span className="bg-white bg-opacity-20 px-3 py-1 rounded-full">{benefit}</span>
-            </div>
-          ))}
-        </div>
-
-        {!isSubscribed ? (
-          <form onSubmit={handleSubmit} className="max-w-md mx-auto">
-            <div className="flex gap-2 mb-4">
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder={content.newsletter.placeholder}
-                className="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-blue-300"
-                required
-              />
-              <button
-                type="submit"
-                className="bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold hover:bg-blue-50 transition-colors whitespace-nowrap"
-              >
-                {content.newsletter.buttonText}
-              </button>
-            </div>
-            <p className="text-blue-200 text-sm">{content.newsletter.privacy}</p>
-          </form>
-        ) : (
-          <div className="max-w-md mx-auto">
-            <div className="bg-green-500 text-white px-6 py-4 rounded-lg mb-4">
-              ✅ {content.newsletter.successMessage}
-            </div>
-            <p className="text-blue-200 text-sm">Welcome to the SalaryWise community!</p>
-          </div>
-        )}
-      </div>
-    </div>
-  );
-}
 
 // Enhanced homepage component with improved UX
 function HomePageContent() {
@@ -476,20 +418,6 @@ function HomePageContent() {
           <div className="max-w-6xl mx-auto px-4">
             <div className="text-center mb-12">
               <h2 className="text-3xl font-bold text-gray-900 mb-4">{content.socialProof.title}</h2>
-              <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-2xl mx-auto">
-                {Object.entries(content.socialProof.stats).map(([key, value]) => (
-                  <div key={key} className="text-center">
-                    <div className="text-3xl font-bold text-blue-600">{value}</div>
-                    <div className="text-gray-600 capitalize text-sm">
-                      {key === 'users' ? 'Happy Users' :
-                       key === 'calculations' ? 'Calculations Run' :
-                       key === 'countries' ? 'Countries' :
-                       key === 'accuracy' ? 'Accuracy' :
-                       key === 'satisfaction' ? 'Satisfaction' : key}
-                    </div>
-                  </div>
-                ))}
-              </div>
             </div>
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
@@ -515,35 +443,10 @@ function HomePageContent() {
                 </div>
               ))}
             </div>
-
-            <div className="flex flex-wrap justify-center gap-4">
-              {content.socialProof.trustBadges.map((badge: string, index: number) => (
-                <span key={index} className="bg-blue-50 text-blue-700 px-4 py-2 rounded-full text-sm font-medium">
-                  {badge}
-                </span>
-              ))}
-            </div>
           </div>
         </div>
 
-        {/* Newsletter Signup */}
-        <div className="bg-gray-900 py-16">
-          <NewsletterSignup />
-        </div>
 
-        {/* Urgency Section */}
-        <div className="bg-gradient-to-r from-red-600 to-red-700 text-white py-12">
-          <div className="max-w-4xl mx-auto px-4 text-center">
-            <h2 className="text-2xl md:text-3xl font-bold mb-4">{content.urgency.title}</h2>
-            <p className="text-xl mb-6 text-red-100">{content.urgency.message}</p>
-            <Link
-              href={`/en${content.urgency.href}`}
-              className="bg-white text-red-600 px-8 py-4 rounded-xl font-bold hover:bg-red-50 transition-all shadow-xl text-lg"
-            >
-              {content.urgency.cta}
-            </Link>
-          </div>
-        </div>
 
         {/* Mobile Bottom Navigation - Optimized for performance */}
         <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 px-4 py-2 z-20 md:hidden shadow-lg">

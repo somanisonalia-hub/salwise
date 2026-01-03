@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Inter, JetBrains_Mono } from "next/font/google";
-import { Layout } from "../components";
+import { Layout, CookieConsent } from "../components";
 import Script from "next/script";
 import "./globals.css";
 
@@ -98,6 +98,9 @@ export default function RootLayout({
             }
           `}
         </Script>
+
+        {/* Cookie Consent Popup */}
+        <CookieConsent />
       </body>
     </html>
   );

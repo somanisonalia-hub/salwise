@@ -6,4 +6,5 @@ export { Layout } from './Layout';
 export { RelatedCalculators } from './RelatedCalculators';
 export { CountrySelector } from './CountrySelector';
 export { IndustrySelector } from './IndustrySelector';
+export { CookieConsent } from './CookieConsent';
 export { default as DynamicPageClient } from './DynamicPageClient';

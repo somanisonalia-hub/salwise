@@ -84,22 +84,33 @@ function HomePageContent() {
 
   // Create searchable index of all calculators
   const searchableItems = useMemo(() => {
-    const calculatorItems = content.calculators.categories.flatMap(category =>
-      category.items.map(item => ({ ...item, category: 'calculator' }))
-    );
+    // Handle different calculator structures (EN has categories, ES/FR have items)
+    const calculatorItems = (content.calculators as any).categories
+      ? (content.calculators as any).categories.flatMap((category: any) =>
+          category.items.map((item: any) => ({ ...item, category: 'calculator' }))
+        )
+      : (content.calculators as any).items?.map((item: any) => ({ ...item, category: 'calculator' })) || [];
+
+    // Handle countries (may not exist in all locales)
+    const countryItems = content.countries?.items?.map(item => ({
+      ...item,
+      category: 'country',
+      title: item.name,
+      description: `Calculate salary after tax in ${item.name}`,
+      icon: item.flag // Use flag as icon for countries
+    })) || [];
+
+    // Handle different guide structures (EN has categories.guides, ES/FR have items)
+    const guideItems = (content.guides as any).categories
+      ? (content.guides as any).categories.flatMap((category: any) =>
+          category.guides.map((item: any) => ({ ...item, category: 'guide', icon: '📖' }))
+        )
+      : (content.guides as any).items?.map((item: any) => ({ ...item, category: 'guide', icon: '📖' })) || [];
 
     const allItems = [
       ...calculatorItems,
-      ...content.countries.items.map(item => ({
-        ...item,
-        category: 'country',
-        title: item.name,
-        description: `Calculate salary after tax in ${item.name}`,
-        icon: item.flag // Use flag as icon for countries
-      })),
-      ...content.guides.categories.flatMap(category =>
-        category.guides.map(item => ({ ...item, category: 'guide', icon: '📖' }))
-      ),
+      ...countryItems,
+      ...guideItems,
     ];
     return allItems;
   }, []);
@@ -247,42 +258,67 @@ function HomePageContent() {
             </div>
           ) : (
             <div className="space-y-12">
-              {content.calculators.categories.map((category, categoryIndex) => (
-                <div key={categoryIndex}>
-                  <div className="text-center mb-8">
-                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{category.name}</h3>
-                    <p className="text-gray-600">{category.description}</p>
+              {content.calculators.categories ? (
+                // EN structure with categories
+                content.calculators.categories.map((category, categoryIndex) => (
+                  <div key={categoryIndex}>
+                    <div className="text-center mb-8">
+                      <h3 className="text-2xl font-bold text-gray-900 mb-2">{category.name}</h3>
+                      <p className="text-gray-600">{category.description}</p>
+                    </div>
+                    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                      {category.items.map((item, index) => (
+                        <Link
+                          key={index}
+                          href={`/en${item.href}`}
+                          className="bg-white rounded-xl shadow-sm p-6 hover:shadow-lg active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100 group"
+                        >
+                          <div className="flex items-start gap-4">
+                            <div className="bg-blue-50 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
+                              <span className="text-2xl">{item.icon}</span>
+                            </div>
+                            <div className="flex-1">
+                              <h4 className="font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">{item.title}</h4>
+                              <p className="text-sm text-gray-600 mb-3">{item.description}</p>
+                              {item.features && (
+                                <div className="flex flex-wrap gap-1">
+                                  {item.features.slice(0, 2).map((feature, i) => (
+                                    <span key={i} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                                      {feature}
+                                    </span>
+                                  ))}
+                                </div>
+                              )}
+                            </div>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                    {category.items.map((item, index) => (
+                ))
+              ) : (
+                // ES/FR structure with flat items
+                <div>
+                  <div className="text-center mb-8">
+                    <h3 className="text-2xl font-bold text-gray-900 mb-2">{content.calculators.title || 'Calculadoras'}</h3>
+                  </div>
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    {(content.calculators as any).items?.map((item: any, index: number) => (
                       <Link
                         key={index}
                         href={`/en${item.href}`}
-                        className="bg-white rounded-xl shadow-sm p-6 hover:shadow-lg active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100 group"
+                        className="bg-white rounded-lg shadow-sm p-4 hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
                       >
-                        <div className="flex items-start gap-4">
-                          <div className="bg-blue-50 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0 group-hover:bg-blue-100 transition-colors">
-                            <span className="text-2xl">{item.icon}</span>
-                          </div>
-                          <div className="flex-1">
-                            <h4 className="font-bold text-gray-900 mb-2 group-hover:text-blue-600 transition-colors">{item.title}</h4>
-                            <p className="text-sm text-gray-600 mb-3">{item.description}</p>
-                            {item.features && (
-                              <div className="flex flex-wrap gap-1">
-                                {item.features.slice(0, 2).map((feature, i) => (
-                                  <span key={i} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
-                                    {feature}
-                                  </span>
-                                ))}
-                              </div>
-                            )}
-                          </div>
+                        <div className="text-center">
+                          <div className="text-2xl mb-2">{item.icon}</div>
+                          <h4 className="text-sm font-bold text-gray-900 mb-1">{item.title}</h4>
+                          <p className="text-xs text-gray-600 leading-tight">{item.description}</p>
                         </div>
                       </Link>
-                    ))}
+                    )) || []}
                   </div>
                 </div>
-              ))}
+              )}
             </div>
           )}
 
@@ -418,7 +454,10 @@ function HomePageContent() {
             <h2 className="text-lg font-bold text-gray-900 mb-4 text-center">{content.guides.title}</h2>
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
-              {content.guides.categories.flatMap((category: any) => category.guides).slice(0, 3).map((guide, index) => (
+              {((content.guides as any).categories
+                ? (content.guides as any).categories.flatMap((category: any) => category.guides)
+                : (content.guides as any).items || []
+              ).slice(0, 3).map((guide: any, index: number) => (
                 <Link
                   key={index}
                   href={`/en${guide.href}`}

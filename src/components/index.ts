@@ -6,5 +6,4 @@ export { Layout } from './Layout';
 export { RelatedCalculators } from './RelatedCalculators';
 export { CountrySelector } from './CountrySelector';
 export { IndustrySelector } from './IndustrySelector';
-export { PerformanceMonitor } from './PerformanceMonitor';
 export { default as DynamicPageClient } from './DynamicPageClient';

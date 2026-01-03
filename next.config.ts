@@ -136,6 +136,18 @@ const nextConfig: NextConfig = {
           },
         },
       };
+
+      // Add compression for production assets
+      const CompressionPlugin = require('compression-webpack-plugin');
+      config.plugins.push(
+        new CompressionPlugin({
+          algorithm: 'gzip',
+          test: /\.(js|css|html|svg|json)$/,
+          threshold: 1024,
+          minRatio: 0.8,
+          compressionOptions: { level: 9 },
+        })
+      );
     }
 
     return config;

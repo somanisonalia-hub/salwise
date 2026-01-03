@@ -1,0 +1,178 @@
+{
+  "slug": "country",
+  "type": "directory",
+  "h1": "Salary Calculators by Country | International Pay Tools",
+  "metaTitle": "Salary Calculators by Country | International Pay Comparison | SalaryWise.io",
+  "metaDescription": "Calculate your take-home pay in 15+ countries. Compare salaries, taxes, and benefits across the US, UK, Canada, Australia, Europe, and Asia.",
+  "primaryKeyword": "salary calculator by country",
+  "longTailKeywords": [
+    "international salary calculator",
+    "salary comparison by country",
+    "take home pay calculator country",
+    "international pay comparison",
+    "salary tax calculator by country"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net-salary",
+    "taxes-explained-by-country"
+  ],
+  "title": "Salary Calculators by Country",
+  "description": "Compare salaries and taxes across countries",
+  "keywords": "international salary, country comparison, global pay, tax calculator",
+  "canonical": "https://salarywise.io/en/country",
+
+  "header": {
+    "title": "Salary Calculators by Country",
+    "subtitle": "Compare take-home pay across 15+ countries worldwide"
+  },
+
+  "intro": {
+    "paragraph1": "Understanding how your salary translates across different countries is essential for international job opportunities, expatriate assignments, and global career planning. Our country-specific salary calculators help you compare take-home pay, tax burdens, and living costs worldwide.",
+    "paragraph2": "Each calculator is customized for local tax laws, currency, and benefit structures, ensuring accurate calculations for informed decision-making."
+  },
+
+  "countries": {
+    "popular": [
+      {
+        "name": "United States",
+        "slug": "usa-salary-calculator",
+        "flag": "🇺🇸",
+        "currency": "USD",
+        "description": "Federal & state income tax, FICA taxes, comprehensive benefits"
+      },
+      {
+        "name": "United Kingdom",
+        "slug": "uk-salary-calculator",
+        "flag": "🇬🇧",
+        "currency": "GBP",
+        "description": "Income tax, National Insurance, student loan repayments"
+      },
+      {
+        "name": "Canada",
+        "slug": "canada-salary-calculator",
+        "flag": "🇨🇦",
+        "currency": "CAD",
+        "description": "Federal & provincial tax, CPP, EI contributions"
+      },
+      {
+        "name": "Australia",
+        "slug": "australia-salary-calculator",
+        "flag": "🇦🇺",
+        "currency": "AUD",
+        "description": "Income tax, Medicare levy, superannuation guarantee"
+      }
+    ],
+    "europe": [
+      {
+        "name": "Ireland",
+        "slug": "ireland-salary-calculator",
+        "flag": "🇮🇪",
+        "currency": "EUR",
+        "description": "PAYE tax, Universal Social Charge, PRSI"
+      },
+      {
+        "name": "Germany",
+        "slug": "germany-salary-calculator",
+        "flag": "🇩🇪",
+        "currency": "EUR",
+        "description": "Income tax, social security, solidarity surcharge"
+      },
+      {
+        "name": "France",
+        "slug": "france-salary-calculator",
+        "flag": "🇫🇷",
+        "currency": "EUR",
+        "description": "Income tax, social security, CSG/CRDS"
+      },
+      {
+        "name": "Spain",
+        "slug": "spain-salary-calculator",
+        "flag": "🇪🇸",
+        "currency": "EUR",
+        "description": "IRPF tax, social security contributions"
+      },
+      {
+        "name": "Netherlands",
+        "slug": "netherlands-salary-calculator",
+        "flag": "🇳🇱",
+        "currency": "EUR",
+        "description": "Income tax, social security, pension contributions"
+      },
+      {
+        "name": "Sweden",
+        "slug": "sweden-salary-calculator",
+        "flag": "🇸🇪",
+        "currency": "SEK",
+        "description": "Income tax, social security, pension contributions"
+      },
+      {
+        "name": "Switzerland",
+        "slug": "switzerland-salary-calculator",
+        "flag": "🇨🇭",
+        "currency": "CHF",
+        "description": "Federal & cantonal tax, social security"
+      }
+    ],
+    "asia": [
+      {
+        "name": "India",
+        "slug": "india-salary-calculator",
+        "flag": "🇮🇳",
+        "currency": "INR",
+        "description": "Income tax, provident fund, professional tax"
+      },
+      {
+        "name": "Singapore",
+        "slug": "singapore-salary-calculator",
+        "flag": "🇸🇬",
+        "currency": "SGD",
+        "description": "Income tax, CPF contributions, no GST on salary"
+      }
+    ],
+    "other": [
+      {
+        "name": "New Zealand",
+        "slug": "new-zealand-salary-calculator",
+        "flag": "🇳🇿",
+        "currency": "NZD",
+        "description": "Income tax, ACC levy, KiwiSaver"
+      },
+      {
+        "name": "South Africa",
+        "slug": "south-africa-salary-calculator",
+        "flag": "🇿🇦",
+        "currency": "ZAR",
+        "description": "Income tax, UIF, SDL contributions"
+      }
+    ]
+  },
+
+  "features": [
+    {
+      "icon": "🧮",
+      "title": "Accurate Calculations",
+      "description": "Country-specific tax rates, deductions, and benefits"
+    },
+    {
+      "icon": "💱",
+      "title": "Currency Support",
+      "description": "Local currency calculations with exchange rate awareness"
+    },
+    {
+      "icon": "📊",
+      "title": "Detailed Breakdowns",
+      "description": "Tax components, deductions, and net pay analysis"
+    },
+    {
+      "icon": "🌍",
+      "title": "Global Coverage",
+      "description": "15+ countries with localized tax structures"
+    }
+  ],
+
+  "cta": {
+    "text": "Start Comparing Salaries",
+    "href": "/salary-calculator"
+  }
+}

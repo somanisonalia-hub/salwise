@@ -10,8 +10,8 @@ interface PageProps {
   }>;
 }
 
-// Supported locales
-const supportedLocales = ['en', 'es', 'fr'];
+// Supported locales - Temporarily disabled ES/FR for performance optimization
+const supportedLocales = ['en'];
 
 // All available page slugs - Phase 1 (45 pages)
 const availablePages = [
@@ -77,10 +77,9 @@ const availablePages = [
 export async function generateStaticParams() {
   const params: Array<{ locale: string; slug: string }> = [];
 
-  for (const locale of supportedLocales) {
-    for (const slug of availablePages) {
-      params.push({ locale, slug });
-    }
+  // Only generate for English locale for maximum performance
+  for (const slug of availablePages) {
+    params.push({ locale: 'en', slug });
   }
 
   return params;
@@ -125,6 +124,12 @@ export async function generateMetadata({ params }: PageProps) {
         } else if (slug.startsWith('guides/')) {
           const guide = slug.split('/')[1];
           pageData = require(`../../../locales/en/guides/${guide}.json`);
+        } else if (slug === 'country') {
+          pageData = require('../../../locales/en/country/index.json');
+        } else if (slug === 'industry') {
+          pageData = require('../../../locales/en/industry/index.json');
+        } else if (slug === 'guides') {
+          pageData = require('../../../locales/en/guides/index.json');
         } else {
           pageData = require(`../../../locales/en/${slug}.json`);
         }
@@ -247,6 +252,12 @@ export default async function LocalizedPage({ params }: PageProps) {
         } else if (slug.startsWith('guides/')) {
           const guide = slug.split('/')[1];
           pageData = require(`../../../locales/en/guides/${guide}.json`);
+        } else if (slug === 'country') {
+          pageData = require('../../../locales/en/country/index.json');
+        } else if (slug === 'industry') {
+          pageData = require('../../../locales/en/industry/index.json');
+        } else if (slug === 'guides') {
+          pageData = require('../../../locales/en/guides/index.json');
         } else {
           pageData = require(`../../../locales/en/${slug}.json`);
         }

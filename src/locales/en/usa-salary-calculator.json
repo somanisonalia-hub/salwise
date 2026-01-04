@@ -1,21 +1,13 @@
 {
   "slug": "usa-salary-calculator",
   "type": "calculator",
-  "h1": "USA Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
-  "metaTitle": "USA Salary Calculator 2026 – Take Home Pay After Tax",
-  "metaDescription": "Calculate your take-home pay in the USA for 2026. Includes federal tax, state tax, Social Security, Medicare, 401k. Free & accurate.",
-  "primaryKeyword": "USA salary calculator",
+  "h1": "USA Salary Calculator",
+  "metaTitle": "USA Salary Calculator",
+  "metaDescription": "Calculate your US take-home pay including federal, state tax, and FICA deductions.",
+  "primaryKeyword": "USA Salary Calculator, Take-Home Pay USA",
   "longTailKeywords": [
-    "USA salary calculator",
-    "take home pay USA",
-    "net salary USA",
-    "salary after tax USA",
-    "US paycheck calculator",
-    "US tax calculator",
-    "payslip calculator USA",
-    "US income tax calculator",
-    "US payroll calculator",
-    "gross to net USA"
+    "US Salary Calculator 2026",
+    "Calculate Take-Home Pay USA"
   ],
   "related": [
     "gross-to-net-salary",

@@ -1,18 +1,13 @@
 {
   "slug": "ireland-bonus-tax",
   "type": "calculator",
-  "h1": "Ireland Bonus Tax Calculator – Calculate Bonus Pay After Tax",
-  "metaTitle": "Ireland Bonus Tax Calculator | Calculate Bonus Pay After Tax",
-  "metaDescription": "Calculate bonus tax in Ireland including PAYE, USC, PRSI deductions. Free 2026 rates calculator for salary bonuses.",
-  "primaryKeyword": "ireland bonus tax calculator",
+  "h1": "Ireland Bonus Tax Calculator",
+  "metaTitle": "Ireland Bonus Tax Calculator",
+  "metaDescription": "Compute taxes on your bonuses in Ireland using progressive rates for accurate take-home pay.",
+  "primaryKeyword": "Ireland Bonus Tax, Bonus Tax Calculator",
   "longTailKeywords": [
-    "ireland bonus tax calculator",
-    "bonus calculator ireland",
-    "tax on bonus ireland",
-    "salary bonus ireland",
-    "bonus after tax ireland",
-    "irish bonus tax",
-    "year end bonus ireland"
+    "Ireland Bonus Calculator 2026",
+    "Bonus Tax Take-Home Ireland"
   ],
   "related": [
     "ireland-salary-calculator",

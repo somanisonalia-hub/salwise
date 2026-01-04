@@ -1,17 +1,13 @@
 {
   "slug": "usa-contractor-salary-calculator",
   "type": "calculator",
-  "h1": "USA Contractor Salary Calculator – Calculate Contractor / Freelancer Take-Home Pay",
-  "metaTitle": "USA Contractor Salary Calculator | Calculate Contractor Pay After Tax",
-  "metaDescription": "Calculate contractor salary in the USA including self-employment tax, federal tax, state tax, Social Security, Medicare. Free 2026 rates calculator.",
-  "primaryKeyword": "USA contractor salary calculator",
+  "h1": "USA Contractor Salary Calculator",
+  "metaTitle": "USA Contractor Salary Calculator",
+  "metaDescription": "Calculate 1099 vs W2 contractor net pay in the USA including tax deductions.",
+  "primaryKeyword": "USA Contractor Calculator, Contractor Salary USA",
   "longTailKeywords": [
-    "USA contractor salary calculator",
-    "contractor pay USA",
-    "freelance salary USA",
-    "self-employed tax USA",
-    "1099 contractor calculator USA",
-    "freelance tax calculator USA"
+    "US Contractor Salary Calculator 2026",
+    "1099 vs W2 Pay USA"
   ],
   "related": [
     "usa-salary-calculator",

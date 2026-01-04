@@ -69,7 +69,8 @@
         "includeOvertime",
         "bonus",
         "contractorType",
-        "pensionPercent"
+        "pensionPercent",
+        "retirementContribution"
       ]
     },
     "take-home-pay-calculator": {

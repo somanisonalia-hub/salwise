@@ -1,15 +1,12 @@
 {
   "slug": "terms-of-service",
   "type": "page",
-  "h1": "Terms of Service - SalaryWise.io",
-  "metaTitle": "Terms of Service - SalaryWise.io Salary Calculators",
-  "metaDescription": "Read our terms of service for using SalaryWise.io. Understand the terms and conditions for our free salary calculators and financial tools.",
-  "primaryKeyword": "terms of service salarywise",
+  "h1": "Terms of Service",
+  "metaTitle": "Terms of Service",
+  "metaDescription": "Review the terms and conditions for using SalaryWise calculators and services.",
+  "primaryKeyword": "Terms of Service, User Agreement",
   "longTailKeywords": [
-    "salarywise.io terms of service",
-    "salary calculator terms",
-    "financial calculator terms",
-    "website terms and conditions"
+    "Terms of Use SalaryWise"
   ],
   "related": [
     "privacy-policy",

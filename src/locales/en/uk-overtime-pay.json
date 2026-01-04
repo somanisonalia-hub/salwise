@@ -1,18 +1,13 @@
 {
   "slug": "uk-overtime-pay",
   "type": "calculator",
-  "h1": "UK Overtime Pay Calculator – Calculate Extra Pay After Tax",
-  "metaTitle": "UK Overtime Pay Calculator | Calculate Overtime Pay After Tax",
-  "metaDescription": "Calculate overtime pay in the UK including tax deductions. PAYE, NIC on extra hours. Free 2026 rates calculator.",
-  "primaryKeyword": "UK overtime pay calculator",
+  "h1": "UK Overtime Pay Calculator",
+  "metaTitle": "UK Overtime Pay Calculator",
+  "metaDescription": "Calculate your overtime pay in the UK with PAYE and NI applied.",
+  "primaryKeyword": "UK Overtime Calculator, Overtime Pay UK",
   "longTailKeywords": [
-    "UK overtime pay calculator",
-    "overtime calculator UK",
-    "extra pay UK",
-    "tax on overtime UK",
-    "overtime tax calculator UK",
-    "time and a half UK",
-    "double time UK"
+    "UK Overtime Rate Calculator 2026",
+    "Overtime Pay UK Example"
   ],
   "related": [
     "uk-salary-calculator",

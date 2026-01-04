@@ -1,8 +1,8 @@
 'use client';
 
 import { useState, useEffect, memo, useCallback } from 'react';
-import Head from 'next/head';
 import Link from 'next/link';
+import { SEOHead } from './SEOHead';
 import {
   loadPageData,
   loadCalculatorData
@@ -16,6 +16,7 @@ interface PageData {
   metaTitle: string;
   metaDescription: string;
   primaryKeyword: string;
+  canonical?: string;
   dataRef?: string;
   related?: string[];
   tips?: string[];
@@ -210,12 +211,42 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
     return `Use our ${pageData.primaryKeyword} to calculate your results instantly.`;
   };
 
+  // Determine page type for schema markup
+  const getPageType = () => {
+    if (pageData.type === 'guide') return 'guide';
+    if (pageData.type === 'country' || pageData.type === 'industry') return 'collection';
+    return 'webpage';
+  };
+
+  // Generate breadcrumb for the page
+  const generateBreadcrumb = () => {
+    const breadcrumbs = [
+      { name: 'Home', url: 'https://salarywise.io/en/' }
+    ];
+
+    if (pageData.type === 'guide') {
+      breadcrumbs.push({ name: 'Guides', url: 'https://salarywise.io/en/guides' });
+    } else if (pageData.type === 'country') {
+      breadcrumbs.push({ name: 'Countries', url: 'https://salarywise.io/en/country' });
+    } else if (pageData.type === 'industry') {
+      breadcrumbs.push({ name: 'Industries', url: 'https://salarywise.io/en/industry' });
+    }
+
+    breadcrumbs.push({ name: pageData.h1, url: typeof window !== 'undefined' ? window.location.href : '' });
+
+    return breadcrumbs;
+  };
+
   return (
     <div className="min-h-screen bg-gray-50">
-      <Head>
-        <title>{pageData.metaTitle}</title>
-        <meta name="description" content={pageData.metaDescription} />
-      </Head>
+      <SEOHead
+        title={pageData.metaTitle}
+        description={pageData.metaDescription}
+        canonicalUrl={pageData.canonical || (typeof window !== 'undefined' ? window.location.href : '')}
+        pageType={getPageType()}
+        keywords={pageData.longTailKeywords || []}
+        breadcrumb={generateBreadcrumb()}
+      />
 
       {/* Main Layout with Sidebar */}
       <div className="max-w-7xl mx-auto px-4 py-8">

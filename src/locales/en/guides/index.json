@@ -1,17 +1,13 @@
 {
   "slug": "guides",
   "type": "guide",
-  "h1": "Best Salary & Tax Guides (2025) — Tips, Calculators & How-Tos",
-  "metaTitle": "Salary & Tax Guides 2025 — Tips, Calculators & How-Tos | SalaryWise.io",
-  "metaDescription": "Explore top salary and tax guides for 2025 — learn how to calculate take-home pay, understand taxes, and get negotiation tips.",
-  "primaryKeyword": "salary guides",
+  "h1": "Salary & Tax Guides",
+  "metaTitle": "Guides Index",
+  "metaDescription": "Explore guides on salary, taxes, bonuses, and negotiation tips.",
+  "primaryKeyword": "Salary Guides, Tax Guides",
   "longTailKeywords": [
-    "salary guides",
-    "how to calculate take home pay",
-    "tax explained by country",
-    "salary negotiation tips",
-    "gross vs net salary guide",
-    "salary trends 2026"
+    "Salary Guides 2026",
+    "Salary Calculation Tips"
   ],
   "related": [
     "salary-calculator",

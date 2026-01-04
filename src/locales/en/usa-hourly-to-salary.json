@@ -1,18 +1,13 @@
 {
   "slug": "usa-hourly-to-salary",
   "type": "calculator",
-  "h1": "USA Hourly to Salary Calculator – Convert Hourly Pay to Annual Salary",
-  "metaTitle": "USA Hourly to Salary Calculator | Convert Hourly Pay to Annual Salary",
-  "metaDescription": "Convert hourly pay to annual salary in the USA. Calculate your take-home pay including federal tax, state tax, Social Security, Medicare. Free & accurate 2026 rates.",
-  "primaryKeyword": "USA hourly to salary calculator",
+  "h1": "Hourly to Salary Calculator USA",
+  "metaTitle": "USA Hourly to Salary Calculator",
+  "metaDescription": "Convert your hourly wage to annual salary in the USA, including taxes and overtime.",
+  "primaryKeyword": "USA Hourly to Salary, Hourly Rate to Annual",
   "longTailKeywords": [
-    "USA hourly to salary calculator",
-    "hourly pay USA",
-    "salary from hourly USA",
-    "convert hourly to salary USA",
-    "hourly rate to annual salary USA",
-    "part time salary calculator USA",
-    "hourly wage calculator USA"
+    "US Hourly Salary Calculator 2026",
+    "Convert Hourly to Salary USA"
   ],
   "related": [
     "usa-salary-calculator",

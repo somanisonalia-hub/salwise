@@ -1,18 +1,13 @@
 {
   "slug": "usa-overtime-pay",
   "type": "calculator",
-  "h1": "USA Overtime Pay Calculator – Calculate Extra Pay for Overtime Hours",
-  "metaTitle": "USA Overtime Pay Calculator | Calculate Overtime Pay After Tax",
-  "metaDescription": "Calculate overtime pay in the USA including federal tax, state tax, Social Security, Medicare deductions. Free 2026 rates calculator.",
-  "primaryKeyword": "USA overtime pay calculator",
+  "h1": "USA Overtime Pay Calculator",
+  "metaTitle": "USA Overtime Pay Calculator",
+  "metaDescription": "Calculate your overtime pay in the USA according to FLSA rules.",
+  "primaryKeyword": "USA Overtime Calculator, Overtime Pay USA",
   "longTailKeywords": [
-    "USA overtime pay calculator",
-    "overtime calculator USA",
-    "extra pay USA",
-    "tax on overtime USA",
-    "overtime tax calculator USA",
-    "time and a half USA",
-    "double time USA"
+    "US Overtime Pay Calculator 2026",
+    "FLSA Overtime Calculator"
   ],
   "related": [
     "usa-salary-calculator",

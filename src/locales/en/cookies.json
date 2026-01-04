@@ -1,15 +1,12 @@
 {
   "slug": "cookies",
   "type": "page",
-  "h1": "Cookie Policy - SalaryWise.io",
-  "metaTitle": "Cookie Policy - How We Use Cookies on SalaryWise.io",
-  "metaDescription": "Learn about how SalaryWise.io uses cookies to enhance your experience. Understand our cookie policy, manage your preferences, and control your privacy settings.",
-  "primaryKeyword": "cookie policy salarywise",
+  "h1": "Cookie Policy",
+  "metaTitle": "Cookie Policy",
+  "metaDescription": "Learn about our use of cookies and how to manage your preferences.",
+  "primaryKeyword": "Cookies Policy, Cookie Consent",
   "longTailKeywords": [
-    "salarywise.io cookie policy",
-    "salary calculator cookies",
-    "cookie settings",
-    "manage cookies"
+    "Manage Cookies SalaryWise"
   ],
   "related": [
     "privacy-policy",

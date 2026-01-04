@@ -1,18 +1,13 @@
 {
   "slug": "uk-hourly-to-salary",
   "type": "calculator",
-  "h1": "UK Hourly to Salary Calculator – Convert Hourly Pay to Annual Salary",
-  "metaTitle": "UK Hourly to Salary Calculator | Convert Hourly Pay to Annual Salary",
-  "metaDescription": "Convert hourly pay to annual salary in the UK. Calculate your take-home pay including PAYE tax, NIC, pension. Free & accurate 2026 rates.",
-  "primaryKeyword": "UK hourly to salary calculator",
+  "h1": "Hourly to Salary Calculator UK",
+  "metaTitle": "UK Hourly to Salary Calculator",
+  "metaDescription": "Convert your hourly wage to annual salary in the UK, including taxes and NI contributions.",
+  "primaryKeyword": "UK Hourly to Salary, Convert Hourly to Salary",
   "longTailKeywords": [
-    "UK hourly to salary calculator",
-    "hourly pay UK",
-    "salary from hourly UK",
-    "convert hourly to salary UK",
-    "hourly rate to annual salary UK",
-    "part time salary calculator UK",
-    "hourly wage calculator UK"
+    "UK Hourly Salary Calculator 2026",
+    "Hourly Rate to Salary UK"
   ],
   "related": [
     "uk-salary-calculator",

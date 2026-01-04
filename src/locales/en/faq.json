@@ -1,15 +1,12 @@
 {
   "slug": "faq",
   "type": "page",
-  "h1": "Frequently Asked Questions - SalaryWise.io",
-  "metaTitle": "FAQ - Frequently Asked Questions About Salary Calculators",
-  "metaDescription": "Get answers to common questions about salary calculations, tax rates, take-home pay, and using our free salary calculators. Comprehensive FAQ guide.",
-  "primaryKeyword": "salary calculator faq",
+  "h1": "FAQ",
+  "metaTitle": "FAQ",
+  "metaDescription": "Frequently asked questions about salary calculations in Ireland, UK, and USA.",
+  "primaryKeyword": "FAQ, Salary Questions",
   "longTailKeywords": [
-    "salary calculator frequently asked questions",
-    "how to calculate take home pay",
-    "salary tax calculator questions",
-    "gross vs net salary faq"
+    "Salary Calculator FAQ 2026"
   ],
   "related": [
     "guides/how-to-calculate-take-home",

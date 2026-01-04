@@ -1,21 +1,13 @@
 {
   "slug": "uk-salary-calculator",
   "type": "calculator",
-  "h1": "UK Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
-  "metaTitle": "UK Salary Calculator 2026 – Take Home Pay After Tax",
-  "metaDescription": "Calculate your take-home pay in the UK for 2026. Includes PAYE, NIC, pension, student loan and deductions. Free & accurate.",
-  "primaryKeyword": "UK salary calculator",
+  "h1": "UK Salary Calculator",
+  "metaTitle": "UK Salary Calculator",
+  "metaDescription": "Calculate your UK take-home pay after PAYE, NIC, and optional student loan deductions.",
+  "primaryKeyword": "UK Salary Calculator, Take-Home Pay UK",
   "longTailKeywords": [
-    "UK salary calculator",
-    "take home pay UK",
-    "net salary UK",
-    "salary after tax UK",
-    "UK paycheck calculator",
-    "UK tax calculator",
-    "payslip calculator UK",
-    "UK income tax calculator",
-    "UK payroll calculator",
-    "gross to net UK"
+    "UK Salary Calculator 2026",
+    "Take-Home Pay UK Calculator"
   ],
   "related": [
     "gross-to-net-salary",

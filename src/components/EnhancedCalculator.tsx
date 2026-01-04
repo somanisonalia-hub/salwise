@@ -1,8 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import Head from 'next/head';
 import { useState, useEffect } from 'react';
+import { SEOHead } from './SEOHead';
 import { calculateResults, getCalculator } from '../lib/calculatorEngine';
 import {
   getCalculatorInputs,
@@ -166,18 +166,57 @@ export default function EnhancedCalculator({
     }
   };
 
+  // Generate breadcrumb for calculator pages
+  const generateBreadcrumb = () => {
+    const breadcrumbs = [
+      { name: 'Home', url: 'https://salarywise.io/en/' }
+    ];
+
+    // Add country/category specific breadcrumb
+    if (pageData.slug?.includes('ireland')) {
+      breadcrumbs.push({ name: 'Ireland Calculators', url: 'https://salarywise.io/en/country/ireland' });
+    } else if (pageData.slug?.includes('uk')) {
+      breadcrumbs.push({ name: 'UK Calculators', url: 'https://salarywise.io/en/country/uk' });
+    } else if (pageData.slug?.includes('usa')) {
+      breadcrumbs.push({ name: 'USA Calculators', url: 'https://salarywise.io/en/country/usa' });
+    }
+
+    breadcrumbs.push({ name: pageData.h1, url: typeof window !== 'undefined' ? window.location.href : '' });
+
+    return breadcrumbs;
+  };
+
+  // Generate feature list for calculator
+  const generateFeatureList = () => {
+    const features = ['Tax calculations', 'Net salary estimation'];
+
+    if (pageData.slug?.includes('hourly')) {
+      features.push('Hourly to annual conversion');
+    }
+    if (pageData.slug?.includes('overtime')) {
+      features.push('Overtime pay calculation');
+    }
+    if (pageData.slug?.includes('bonus')) {
+      features.push('Bonus tax calculation');
+    }
+    if (pageData.slug?.includes('contractor')) {
+      features.push('Contractor tax optimization');
+    }
+
+    return features;
+  };
+
   return (
     <>
-      <Head>
-        <title>{pageData.metaTitle}</title>
-        <meta name="description" content={pageData.metaDescription} />
-        <meta name="keywords" content={pageData.longTailKeywords.join(', ')} />
-        <link rel="canonical" href={typeof window !== 'undefined' ? window.location.href : ''} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
-      </Head>
+      <SEOHead
+        title={pageData.metaTitle}
+        description={pageData.metaDescription}
+        canonicalUrl={typeof window !== 'undefined' ? window.location.href : ''}
+        pageType="calculator"
+        keywords={pageData.longTailKeywords || []}
+        breadcrumb={generateBreadcrumb()}
+        featureList={generateFeatureList()}
+      />
 
       <div className="bg-gray-50 border-b border-gray-200">
         <div className="max-w-6xl mx-auto px-4 py-4">
@@ -280,7 +319,7 @@ export default function EnhancedCalculator({
                     Calculating...
                   </span>
                 ) : (
-                  `Calculate ${pageData.primaryKeyword}`
+                  'Calculate'
                 )}
               </button>
             </div>

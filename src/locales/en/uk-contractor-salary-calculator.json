@@ -1,18 +1,13 @@
 {
   "slug": "uk-contractor-salary-calculator",
   "type": "calculator",
-  "h1": "UK Contractor Salary Calculator – Calculate Contractor Pay After Tax",
-  "metaTitle": "UK Contractor Salary Calculator | Calculate Contractor Pay After Tax",
-  "metaDescription": "Calculate contractor salary in the UK including Ltd company vs umbrella company options. Free 2026 rates calculator.",
-  "primaryKeyword": "UK contractor salary calculator",
+  "h1": "UK Contractor Salary Calculator",
+  "metaTitle": "UK Contractor Salary Calculator",
+  "metaDescription": "Calculate UK contractor salaries including Ltd vs Umbrella, IR35 rules, and net pay.",
+  "primaryKeyword": "UK Contractor Calculator, Contractor Salary UK",
   "longTailKeywords": [
-    "UK contractor salary calculator",
-    "contractor pay UK",
-    "freelance salary UK",
-    "umbrella company UK",
-    "ltd company UK",
-    "contractor tax UK",
-    "self employed tax UK"
+    "UK Contractor Salary 2026",
+    "Umbrella vs Ltd UK"
   ],
   "related": [
     "uk-salary-calculator",

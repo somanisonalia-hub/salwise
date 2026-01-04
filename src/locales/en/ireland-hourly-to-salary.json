@@ -1,18 +1,13 @@
 {
   "slug": "ireland-hourly-to-salary",
   "type": "calculator",
-  "h1": "Ireland Hourly to Salary Calculator – Convert Hourly Pay to Annual Salary",
-  "metaTitle": "Ireland Hourly to Salary Calculator | Convert Hourly Pay to Annual Salary",
-  "metaDescription": "Convert hourly pay to annual salary in Ireland. Calculate your take-home pay including PAYE tax, USC, PRSI. Free & accurate 2026 rates.",
-  "primaryKeyword": "ireland hourly to salary calculator",
+  "h1": "Hourly to Salary Calculator Ireland",
+  "metaTitle": "Ireland Hourly to Salary Calculator",
+  "metaDescription": "Convert your hourly wage to annual salary in Ireland, including PRSI, USC, and tax deductions.",
+  "primaryKeyword": "Ireland Hourly to Salary, Hourly Wage to Annual Salary",
   "longTailKeywords": [
-    "ireland hourly to salary calculator",
-    "hourly pay ireland",
-    "salary from hourly ireland",
-    "convert hourly to salary ireland",
-    "hourly rate to annual salary ireland",
-    "part time salary calculator ireland",
-    "hourly wage calculator ireland"
+    "Ireland Hourly Salary Calculator 2026",
+    "Convert Hourly Rate to Salary Ireland"
   ],
   "related": [
     "ireland-salary-calculator",

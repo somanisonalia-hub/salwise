@@ -1,18 +1,13 @@
 {
   "slug": "usa-bonus-tax",
   "type": "calculator",
-  "h1": "USA Bonus Tax Calculator – Calculate Tax on Salary Bonus",
-  "metaTitle": "USA Bonus Tax Calculator | Calculate Bonus Pay After Tax",
-  "metaDescription": "Calculate bonus tax in the USA including federal tax, state tax, Social Security, Medicare deductions. Free 2026 rates calculator.",
-  "primaryKeyword": "USA bonus tax calculator",
+  "h1": "USA Bonus Tax Calculator",
+  "metaTitle": "USA Bonus Tax Calculator",
+  "metaDescription": "Compute federal and state taxes on US bonuses for accurate net pay.",
+  "primaryKeyword": "USA Bonus Tax, Bonus Calculator",
   "longTailKeywords": [
-    "USA bonus tax calculator",
-    "bonus calculator USA",
-    "tax on bonus USA",
-    "salary bonus USA",
-    "bonus after tax USA",
-    "US bonus tax",
-    "year end bonus USA"
+    "US Bonus Tax Calculator 2026",
+    "Bonus Take-Home USA"
   ],
   "related": [
     "usa-salary-calculator",

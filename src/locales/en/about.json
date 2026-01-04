@@ -1,15 +1,13 @@
 {
   "slug": "about",
   "type": "page",
-  "h1": "About SalaryWise.io - Free Salary Calculators",
-  "metaTitle": "About SalaryWise.io - Free Salary Calculator Tools",
-  "metaDescription": "Learn about SalaryWise.io, your trusted source for free salary calculators. Calculate take-home pay, tax savings, and salary comparisons for USA, UK, and Ireland.",
-  "primaryKeyword": "about salarywise",
+  "h1": "About SalaryWise",
+  "metaTitle": "About Us",
+  "metaDescription": "Learn about SalaryWise, our mission, team, and expertise in salary calculations.",
+  "primaryKeyword": "About SalaryWise, Company Info",
   "longTailKeywords": [
-    "about salarywise.io",
-    "salary calculator website",
-    "free salary tools",
-    "take home pay calculator"
+    "SalaryWise Company Info",
+    "Our Mission & Team"
   ],
   "related": [
     "salary-calculator",

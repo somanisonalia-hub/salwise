@@ -1,16 +1,12 @@
 {
   "slug": "country",
   "type": "directory",
-  "h1": "Salary Calculators by Country | International Pay Tools",
-  "metaTitle": "Salary Calculators by Country | International Pay Comparison | SalaryWise.io",
-  "metaDescription": "Calculate your take-home pay in the US, UK, and Ireland. Compare salaries, taxes, and benefits across these major economies.",
-  "primaryKeyword": "salary calculator by country",
+  "h1": "Country Comparison",
+  "metaTitle": "Country Index",
+  "metaDescription": "Compare salaries and tax info by country: Ireland, UK, USA.",
+  "primaryKeyword": "Country Salary Info, Salary by Country",
   "longTailKeywords": [
-    "international salary calculator",
-    "salary comparison by country",
-    "take home pay calculator country",
-    "international pay comparison",
-    "salary tax calculator by country"
+    "Ireland UK USA Salary Comparison"
   ],
   "related": [
     "salary-calculator",

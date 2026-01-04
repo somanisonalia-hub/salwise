@@ -1,20 +1,14 @@
 {
   "slug": "ireland-salary-calculator",
   "type": "calculator",
-  "h1": "Ireland Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
-  "metaTitle": "Ireland Salary Calculator 2026 – Take Home Pay After Tax",
-  "metaDescription": "Calculate your take-home pay in Ireland for 2026. Includes PAYE, USC, PRSI, pension, bonus and deductions. Free & accurate.",
-  "primaryKeyword": "Ireland Salary Calculator",
+  "h1": "Ireland Salary Calculator",
+  "metaTitle": "Ireland Salary Calculator",
+  "metaDescription": "Estimate your take-home pay in Ireland with accurate tax, PRSI, and USC calculations for 2026.",
+  "primaryKeyword": "Ireland Salary Calculator, Take-Home Pay Ireland",
   "longTailKeywords": [
-    "ireland salary calculator",
-    "take home pay ireland",
-    "salary after tax ireland",
-    "net salary ireland",
-    "irish paycheck calculator",
-    "ireland tax calculator",
-    "payslip calculator ireland",
-    "ireland income tax calculator",
-    "ireland payroll calculator"
+    "Ireland Salary Calculator 2026",
+    "Calculate Take-Home Pay Ireland",
+    "Ireland Net Salary Calculator"
   ],
   "related": [
     "gross-to-net-salary",

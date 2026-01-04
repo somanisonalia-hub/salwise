@@ -1,16 +1,13 @@
 {
   "slug": "salary-after-tax-calculator",
   "type": "calculator",
-  "h1": "Ireland Tax Calculator – Calculate Irish Salary After Tax",
-  "metaTitle": "Ireland Tax Calculator | Irish Salary After Tax Calculator",
-  "metaDescription": "Calculate your salary after Irish tax deductions including PAYE, USC, and PRSI. Free calculator for Irish employees showing net pay after all deductions.",
-  "primaryKeyword": "ireland tax calculator",
+  "h1": "Salary After Tax Calculator",
+  "metaTitle": "Salary After Tax Calculator",
+  "metaDescription": "Know your post-tax salary in Ireland, UK, and USA with examples and scenarios.",
+  "primaryKeyword": "Salary After Tax Calculator, Post-Tax Salary",
   "longTailKeywords": [
-    "ireland tax calculator",
-    "irish salary after tax",
-    "calculate irish take home pay",
-    "ireland net salary calculator",
-    "irish payslip calculator"
+    "Salary After Tax Calculator 2026",
+    "Net Pay Calculator"
   ],
   "related": [
     "take-home-pay-calculator",

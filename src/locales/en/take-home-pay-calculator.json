@@ -1,17 +1,13 @@
 {
   "slug": "take-home-pay-calculator",
   "type": "calculator",
-  "h1": "Simple Take-Home Pay Calculator – Basic Net Salary Estimate",
-  "metaTitle": "Simple Take-Home Pay Calculator | Basic Net Salary Calculator",
-  "metaDescription": "Get a basic estimate of your take-home pay with this simple calculator. Enter your gross salary and basic tax rate for a rough net income calculation.",
-  "primaryKeyword": "simple take home pay calculator",
+  "h1": "Take-Home Pay Calculator",
+  "metaTitle": "Take-Home Pay Calculator",
+  "metaDescription": "Estimate your net pay after taxes and deductions for multiple countries.",
+  "primaryKeyword": "Take-Home Pay Calculator, Net Salary Calculator",
   "longTailKeywords": [
-    "simple take home pay calculator",
-    "basic net salary calculator",
-    "rough salary estimate",
-    "quick paycheck calculator",
-    "basic tax calculator",
-    "simple net income calculator"
+    "Take-Home Pay Calculator 2026",
+    "Multi-Country Net Salary"
   ],
   "related": [
     "salary-calculator",

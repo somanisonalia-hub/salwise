@@ -1,15 +1,13 @@
 {
   "slug": "contact",
   "type": "page",
-  "h1": "Contact Us - SalaryWise.io",
-  "metaTitle": "Contact SalaryWise.io - Get in Touch",
-  "metaDescription": "Contact SalaryWise.io for questions about our salary calculators, suggestions, or support. We're here to help with your salary calculation needs.",
-  "primaryKeyword": "contact salarywise",
+  "h1": "Contact SalaryWise",
+  "metaTitle": "Contact Us",
+  "metaDescription": "Get in touch with SalaryWise for questions, support, or inquiries.",
+  "primaryKeyword": "Contact SalaryWise, Support",
   "longTailKeywords": [
-    "contact salarywise.io",
-    "salary calculator support",
-    "calculator feedback",
-    "salary tool questions"
+    "Contact Salary Calculator Team",
+    "SalaryWise Help"
   ],
   "related": [
     "faq",

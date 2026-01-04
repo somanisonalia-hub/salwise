@@ -1,15 +1,12 @@
 {
   "slug": "privacy-policy",
   "type": "page",
-  "h1": "Privacy Policy - SalaryWise.io",
-  "metaTitle": "Privacy Policy - SalaryWise.io Salary Calculators",
-  "metaDescription": "Read our privacy policy to understand how SalaryWise.io handles your data. We respect your privacy and don't store personal information.",
-  "primaryKeyword": "privacy policy salarywise",
+  "h1": "Privacy Policy",
+  "metaTitle": "Privacy Policy",
+  "metaDescription": "Read our GDPR-compliant privacy policy explaining how we handle your data.",
+  "primaryKeyword": "Privacy Policy, GDPR",
   "longTailKeywords": [
-    "salarywise.io privacy policy",
-    "salary calculator privacy",
-    "data privacy policy",
-    "financial calculator privacy"
+    "GDPR Privacy Policy 2026"
   ],
   "related": [
     "about",

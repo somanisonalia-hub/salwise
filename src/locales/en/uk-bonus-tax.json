@@ -1,18 +1,13 @@
 {
   "slug": "uk-bonus-tax",
   "type": "calculator",
-  "h1": "UK Bonus Tax Calculator – Calculate Bonus Pay After Tax",
-  "metaTitle": "UK Bonus Tax Calculator | Calculate Bonus Pay After Tax",
-  "metaDescription": "Calculate bonus tax in the UK including PAYE, NIC deductions. Free 2026 rates calculator for salary bonuses.",
-  "primaryKeyword": "UK bonus tax calculator",
+  "h1": "UK Bonus Tax Calculator",
+  "metaTitle": "UK Bonus Tax Calculator",
+  "metaDescription": "Compute taxes on bonuses in the UK with PAYE and NI considered.",
+  "primaryKeyword": "UK Bonus Tax, Bonus Tax Calculator",
   "longTailKeywords": [
-    "UK bonus tax calculator",
-    "bonus calculator UK",
-    "tax on bonus UK",
-    "salary bonus UK",
-    "bonus after tax UK",
-    "UK bonus tax",
-    "year end bonus UK"
+    "UK Bonus Tax Calculator 2026",
+    "UK Bonus Pay After Tax"
   ],
   "related": [
     "uk-salary-calculator",

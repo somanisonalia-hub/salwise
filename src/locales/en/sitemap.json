@@ -2,10 +2,12 @@
   "slug": "sitemap",
   "type": "page",
   "h1": "Sitemap",
-  "metaTitle": "Sitemap | Navigate SalaryWise.io",
-  "metaDescription": "Complete sitemap of all pages and calculators on SalaryWise.io for easy navigation.",
-  "primaryKeyword": "sitemap",
-  "longTailKeywords": ["site map", "navigation", "page index"],
+  "metaTitle": "Sitemap",
+  "metaDescription": "Complete website sitemap for easy navigation and indexing.",
+  "primaryKeyword": "Sitemap, Site Navigation",
+  "longTailKeywords": [
+    "SalaryWise Sitemap 2026"
+  ],
   "related": ["about", "contact"],
   "intro": "Find all pages and calculators on SalaryWise.io organized by category for easy navigation.",
   "content": "Complete site navigation and page index.",

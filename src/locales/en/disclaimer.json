@@ -1,15 +1,12 @@
 {
   "slug": "disclaimer",
   "type": "page",
-  "h1": "Disclaimer - SalaryWise.io",
-  "metaTitle": "Disclaimer - Important Legal Notice for Salary Calculators",
-  "metaDescription": "Read our disclaimer for using SalaryWise.io salary calculators. Understand the limitations and important notices about our financial estimation tools.",
-  "primaryKeyword": "salary calculator disclaimer",
+  "h1": "Disclaimer",
+  "metaTitle": "Disclaimer",
+  "metaDescription": "Legal disclaimers for calculators, content accuracy, and external links.",
+  "primaryKeyword": "Legal Disclaimer, Accuracy",
   "longTailKeywords": [
-    "salarywise.io disclaimer",
-    "financial calculator disclaimer",
-    "salary calculator legal notice",
-    "tax calculator disclaimer"
+    "Salary Calculator Disclaimer 2026"
   ],
   "related": [
     "terms-of-service",

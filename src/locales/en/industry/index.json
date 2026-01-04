@@ -1,13 +1,10 @@
 {
-  "h1": "Industry Salary Comparison — Find Your Career Path",
-  "metaTitle": "Industry Salary Comparison | Career Salary Information | SalaryWise.io",
-  "metaDescription": "Compare salaries across industries including technology, healthcare, finance, and engineering. Understand how industry choice affects your earning potential.",
-  "primaryKeyword": "industry salary comparison",
+  "h1": "Industry Comparison",
+  "metaTitle": "Industry Index",
+  "metaDescription": "Compare salaries and tax info by industry: IT, Healthcare, Finance.",
+  "primaryKeyword": "Industry Salaries, Salary by Industry",
   "longTailKeywords": [
-    "industry salary comparison",
-    "career salary information",
-    "industry compensation",
-    "sector salary comparison"
+    "IT Healthcare Finance Salary Comparison"
   ],
   "related": [
     "salary-calculator",

@@ -187,21 +187,19 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               <ul className="space-y-2">
                 <li><Link href={`/${locale}/salary-calculator`} className="text-gray-300 hover:text-white transition-colors">Global Salary</Link></li>
                 <li><Link href={`/${locale}/gross-to-net-salary`} className="text-gray-300 hover:text-white transition-colors">Gross to Net</Link></li>
-                <li><Link href={`/${locale}/hourly-to-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">Hourly to Salary</Link></li>
-                <li><Link href={`/${locale}/loan-emi-calculator`} className="text-gray-300 hover:text-white transition-colors">Loan EMI</Link></li>
                 <li><Link href={`/${locale}/take-home-pay-calculator`} className="text-gray-300 hover:text-white transition-colors">Take-Home Pay</Link></li>
+                <li><Link href={`/${locale}/salary-after-tax-calculator`} className="text-gray-300 hover:text-white transition-colors">Salary After Tax</Link></li>
               </ul>
             </div>
 
-            {/* Countries & Industries */}
+            {/* Countries & Regions */}
             <div>
-              <h3 className="text-lg font-semibold mb-4">By Region & Industry</h3>
+              <h3 className="text-lg font-semibold mb-4">By Country</h3>
               <ul className="space-y-2">
                 <li><Link href={`/${locale}/usa-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇺🇸 USA</Link></li>
                 <li><Link href={`/${locale}/uk-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇬🇧 UK</Link></li>
-                <li><Link href={`/${locale}/canada-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇨🇦 Canada</Link></li>
-                <li><Link href={`/${locale}/australia-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇦🇺 Australia</Link></li>
-                <li><Link href={`/${locale}/salary-calculator-it-tech`} className="text-gray-300 hover:text-white transition-colors">💻 IT & Tech</Link></li>
+                <li><Link href={`/${locale}/ireland-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇮🇪 Ireland</Link></li>
+                <li><Link href={`/${locale}/country`} className="text-gray-300 hover:text-white transition-colors">🌍 All Countries</Link></li>
               </ul>
             </div>
 
@@ -221,21 +219,15 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
           {/* Government Resources */}
           <div className="border-t border-gray-700 mt-8 pt-8">
             <h3 className="text-lg font-semibold mb-4">Official Government Resources</h3>
-            <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
               <a href="https://www.irs.gov" className="text-gray-300 hover:text-white transition-colors text-sm">
                 🇺🇸 IRS (USA)
               </a>
               <a href="https://www.gov.uk/government/organisations/hm-revenue-customs" className="text-gray-300 hover:text-white transition-colors text-sm">
                 🇬🇧 HMRC (UK)
               </a>
-              <a href="https://www.canada.ca/en/revenue-agency.html" className="text-gray-300 hover:text-white transition-colors text-sm">
-                🇨🇦 CRA (Canada)
-              </a>
-              <a href="https://www.ato.gov.au" className="text-gray-300 hover:text-white transition-colors text-sm">
-                🇦🇺 ATO (Australia)
-              </a>
-              <a href="https://www.bls.gov" className="text-gray-300 hover:text-white transition-colors text-sm">
-                📊 BLS (Labor Stats)
+              <a href="https://www.revenue.ie" className="text-gray-300 hover:text-white transition-colors text-sm">
+                🇮🇪 Revenue (Ireland)
               </a>
             </div>
           </div>
@@ -262,8 +254,8 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               </div>
             </div>
             <div className="mt-4 text-center text-gray-400 text-xs space-y-2">
-              <div>SalaryWise provides estimated take-home pay based on publicly available tax structures. Results are for guidance only.</div>
-              <div>Trusted by thousands for accurate salary calculations. Not financial advice.</div>
+              <div>⚠️ Calculators are for informational purposes only. See our <Link href={`/${locale}/disclaimer`} className="text-blue-400 hover:text-blue-300 underline">Disclaimer</Link> for details.</div>
+              <div>SalaryWise provides estimated take-home pay based on publicly available tax structures. Results are for guidance only and not financial advice.</div>
             </div>
           </div>
         </div>

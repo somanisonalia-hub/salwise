@@ -1,0 +1,183 @@
+{
+  "slug": "ireland-bonus-tax",
+  "type": "calculator",
+  "h1": "Ireland Bonus Tax Calculator – Calculate Bonus Pay After Tax",
+  "metaTitle": "Ireland Bonus Tax Calculator | Calculate Bonus Pay After Tax",
+  "metaDescription": "Calculate bonus tax in Ireland including PAYE, USC, PRSI deductions. Free 2026 rates calculator for salary bonuses.",
+  "primaryKeyword": "ireland bonus tax calculator",
+  "longTailKeywords": [
+    "ireland bonus tax calculator",
+    "bonus calculator ireland",
+    "tax on bonus ireland",
+    "salary bonus ireland",
+    "bonus after tax ireland",
+    "irish bonus tax",
+    "year end bonus ireland"
+  ],
+  "related": [
+    "ireland-salary-calculator",
+    "ireland-overtime-pay",
+    "gross-to-net-salary"
+  ],
+  "dataRef": "irelandBonusTax",
+  "intro": "Calculate your bonus tax in Ireland with our comprehensive calculator. Bonuses are a significant part of many Irish salaries, but understanding how they're taxed is crucial for accurate financial planning. Unlike regular salary, bonuses are taxed at your marginal PAYE rate, potentially pushing you into higher tax brackets. This calculator uses official 2026 Revenue.ie rates to show you exactly how much tax you'll pay on bonuses, including PAYE income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions. Whether you're expecting a year-end bonus, performance bonus, or other supplemental pay, this tool helps you understand your true take-home bonus amount and overall compensation package.",
+  "ui": {
+    "calculatorHeading": "Calculate Bonus Tax",
+    "resultsHeading": "Bonus Tax Results",
+    "calculateButton": "Calculate Bonus",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This Ireland bonus tax calculator determines your take-home bonus by adding the bonus to your annual salary, then calculating Irish taxes on the total amount. Bonuses are taxed at marginal rates - if your base salary puts you in the 20% bracket but the bonus pushes you into the 40% bracket, the entire bonus is taxed at 40%. The calculator shows both the bonus tax breakdown and your total salary including bonus, helping you understand the overall tax impact. Irish bonuses are typically paid as a lump sum and taxed under the PAYE system with USC and PRSI calculated on total earnings. Some employers offer salary sacrifice schemes for bonuses, which may offer tax advantages.",
+  "useCases": {
+    "example1": {
+      "title": "5% Annual Bonus",
+      "scenario": "€50,000 base salary employee receiving a 5% annual performance bonus",
+      "grossSalary": "€50,000",
+      "bonusPercent": "5",
+      "grossBonus": "€2,500",
+      "netBonus": "€1,650",
+      "totalNetSalary": "€39,150",
+      "payeTax": "€600 (24% marginal rate)",
+      "usc": "€175 (7% marginal rate)",
+      "prsi": "€100 (4%)",
+      "effectiveBonusTaxRate": "34%"
+    },
+    "example2": {
+      "title": "10% Annual Bonus",
+      "scenario": "€70,000 base salary manager receiving a 10% annual bonus",
+      "grossSalary": "€70,000",
+      "bonusPercent": "10",
+      "grossBonus": "€7,000",
+      "netBonus": "€4,200",
+      "totalNetSalary": "€53,200",
+      "payeTax": "€2,200 (31.4% marginal rate)",
+      "usc": "€500 (7.1% marginal rate)",
+      "prsi": "€280 (4%)",
+      "effectiveBonusTaxRate": "40%"
+    },
+    "example3": {
+      "title": "7% Bonus + Overtime",
+      "scenario": "€60,000 base salary with 7% bonus and 8 hours weekly overtime",
+      "grossSalary": "€60,000",
+      "bonusPercent": "7",
+      "otHoursPerWeek": "8",
+      "otRate": "1.5",
+      "grossBonus": "€4,200",
+      "grossOvertime": "€9,600",
+      "netBonus": "€2,400",
+      "netOvertime": "€6,200",
+      "totalNetSalary": "€48,600",
+      "payeTax": "€3,800 (31% marginal rate)",
+      "usc": "€1,100 (8.2% marginal rate)",
+      "prsi": "€560 (4%)",
+      "effectiveTaxRate": "35%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Employees expecting bonuses who want to understand take-home amount",
+    "Employers calculating bonus payments and total compensation costs",
+    "Anyone comparing bonus offers and understanding tax implications",
+    "HR professionals managing bonus schemes and payroll",
+    "Financial advisors helping clients plan for bonus income",
+    "Workers negotiating bonus structures in employment contracts"
+  ],
+  "bonusTaxationRules": {
+    "title": "Irish Bonus Taxation Rules",
+    "rules": [
+      "**Marginal Rate Taxation:** Bonuses are taxed at your marginal PAYE rate, not averaged",
+      "**Total Earnings:** Bonuses are added to your annual salary for tax calculations",
+      "**Lump Sum:** Bonuses are typically paid as one-off payments, not spread over the year",
+      "**USC Impact:** Higher total income may push bonuses into higher USC brackets",
+      "**PRSI Impact:** Bonuses increase total earnings, affecting social insurance",
+      "**Salary Sacrifice:** Some employers offer tax-advantaged bonus schemes"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How are bonuses taxed in Ireland?",
+      "answer": "Bonuses are added to your annual salary and taxed at your marginal PAYE rate. If your regular salary puts you in the 20% bracket but the bonus pushes you into the 40% bracket, the entire bonus is taxed at 40%. USC and PRSI are calculated on total earnings."
+    },
+    {
+      "question": "Are bonuses taxed differently from salary?",
+      "answer": "No, bonuses are taxed the same as regular salary under PAYE, but at marginal rates rather than being averaged across the year. This can result in bonuses being taxed at higher rates than your standard salary."
+    },
+    {
+      "question": "Can I reduce bonus tax through salary sacrifice?",
+      "answer": "Some Irish employers offer salary sacrifice schemes where you can sacrifice part of your bonus for benefits like pensions or health insurance, which may reduce your taxable income. Check with your employer for available schemes."
+    },
+    {
+      "question": "When are bonuses usually paid in Ireland?",
+      "answer": "Bonuses in Ireland are typically paid annually, often at year-end (December/January) or following the company's financial year-end. Some companies pay quarterly or half-yearly bonuses."
+    },
+    {
+      "question": "Do bonuses affect my tax credits?",
+      "answer": "Yes, bonuses increase your total income, which may affect your tax credits and rate band. Higher income may reduce or eliminate certain tax credits you're entitled to."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "Ireland Salary Calculator",
+      "url": "/en/ireland-salary-calculator",
+      "description": "Calculate base salary take-home pay in Ireland"
+    },
+    {
+      "text": "Ireland Overtime Pay Calculator",
+      "url": "/en/ireland-overtime-pay",
+      "description": "Calculate overtime pay and tax in Ireland"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    }
+  ],
+  "externalResources": {
+    "title": "Official Irish Tax Resources",
+    "links": [
+      {
+        "text": "Revenue.ie - Taxation of Bonuses",
+        "url": "https://www.revenue.ie/en/jobs-and-pensions/taxation-of-employment-income/index.aspx",
+        "description": "Official Revenue guidance on taxation of bonuses and supplemental pay."
+      },
+      {
+        "text": "Citizens Information - Pay and Employment",
+        "url": "https://www.citizensinformation.ie/en/money-and-tax/tax/income-tax/how-your-tax-is-calculated/",
+        "description": "Information about how bonuses are treated in Irish tax calculations."
+      }
+    ]
+  },
+  "conclusion": "Bonuses can significantly enhance your compensation package in Ireland, but understanding the tax implications is essential for accurate financial planning. This calculator uses official 2026 Revenue.ie rates to show you how bonuses are taxed at marginal rates, potentially resulting in higher effective tax rates than your regular salary. Whether you're negotiating a bonus package, planning your finances around expected bonuses, or helping employees understand their compensation, knowing the true take-home value helps make informed decisions. Remember that bonus taxation can vary based on individual circumstances and employer schemes. For personalized advice, consult Revenue.ie or a qualified tax professional.",
+  "disclaimer": "SalaryWise provides estimated bonus tax calculations based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How are bonuses taxed in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Bonuses are added to your annual salary and taxed at your marginal PAYE rate. If your regular salary puts you in the 20% bracket but the bonus pushes you into the 40% bracket, the entire bonus is taxed at 40%. USC and PRSI are calculated on total earnings." } },
+          { "@type": "Question", "name": "Are bonuses taxed differently from salary?", "acceptedAnswer": { "@type": "Answer", "text": "No, bonuses are taxed the same as regular salary under PAYE, but at marginal rates rather than being averaged across the year. This can result in bonuses being taxed at higher rates than your standard salary." } },
+          { "@type": "Question", "name": "Can I reduce bonus tax through salary sacrifice?", "acceptedAnswer": { "@type": "Answer", "text": "Some Irish employers offer salary sacrifice schemes where you can sacrifice part of your bonus for benefits like pensions or health insurance, which may reduce your taxable income. Check with your employer for available schemes." } },
+          { "@type": "Question", "name": "When are bonuses usually paid in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Bonuses in Ireland are typically paid annually, often at year-end (December/January) or following the company's financial year-end. Some companies pay quarterly or half-yearly bonuses." } },
+          { "@type": "Question", "name": "Do bonuses affect my tax credits?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, bonuses increase your total income, which may affect your tax credits and rate band. Higher income may reduce or eliminate certain tax credits you're entitled to." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Ireland Bonus Tax Calculator", "item": "https://salarywise.io/en/ireland-bonus-tax" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Ireland Bonus Tax Calculator",
+        "url": "https://salarywise.io/en/ireland-bonus-tax",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate bonus tax in Ireland including marginal rates and total compensation."
+      }
+    ]
+  }
+}

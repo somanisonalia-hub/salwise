@@ -1,0 +1,123 @@
+{
+  "id": "irelandHourlyToSalary",
+  "name": "Ireland Hourly to Salary Calculator",
+  "description": "Convert hourly pay to annual salary in Ireland with tax calculations",
+  "inputs": [
+    {
+      "id": "hourlyRate",
+      "label": "Hourly Rate",
+      "type": "number",
+      "default": 20,
+      "unit": "€",
+      "required": true,
+      "min": 0,
+      "max": 500,
+      "description": "Your hourly pay rate in euros"
+    },
+    {
+      "id": "hoursPerWeek",
+      "label": "Hours per Week",
+      "type": "number",
+      "default": 40,
+      "unit": "hours",
+      "required": true,
+      "min": 1,
+      "max": 80,
+      "description": "Number of hours worked per week"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "grossAnnual",
+      "label": "Gross Annual Salary",
+      "formula": "hourlyRate * hoursPerWeek * 52",
+      "unit": "€"
+    },
+    {
+      "id": "grossMonthly",
+      "label": "Gross Monthly Salary",
+      "formula": "(hourlyRate * hoursPerWeek * 52) / 12",
+      "unit": "€"
+    },
+    {
+      "id": "grossWeekly",
+      "label": "Gross Weekly Salary",
+      "formula": "hourlyRate * hoursPerWeek",
+      "unit": "€"
+    },
+    {
+      "id": "payeTax",
+      "label": "PAYE Tax",
+      "formula": "calculateIrelandPAYE(grossAnnual)",
+      "unit": "€"
+    },
+    {
+      "id": "usc",
+      "label": "USC",
+      "formula": "calculateIrelandUSC(grossAnnual)",
+      "unit": "€"
+    },
+    {
+      "id": "prsi",
+      "label": "PRSI",
+      "formula": "calculateIrelandPRSI(grossAnnual)",
+      "unit": "€"
+    },
+    {
+      "id": "totalDeductions",
+      "label": "Total Deductions",
+      "formula": "payeTax + usc + prsi",
+      "unit": "€"
+    },
+    {
+      "id": "netAnnual",
+      "label": "Net Annual Salary",
+      "formula": "grossAnnual - totalDeductions",
+      "unit": "€"
+    },
+    {
+      "id": "netMonthly",
+      "label": "Net Monthly Salary",
+      "formula": "netAnnual / 12",
+      "unit": "€"
+    },
+    {
+      "id": "netWeekly",
+      "label": "Net Weekly Salary",
+      "formula": "netAnnual / 52",
+      "unit": "€"
+    },
+    {
+      "id": "effectiveTaxRate",
+      "label": "Effective Tax Rate",
+      "formula": "grossAnnual > 0 ? (totalDeductions / grossAnnual) * 100 : 0",
+      "unit": "%"
+    }
+  ],
+  "examples": [
+    {
+      "scenario": "€20/hour full-time retail worker",
+      "inputs": {"hourlyRate": 20, "hoursPerWeek": 40},
+      "expectedOutputs": {
+        "grossAnnual": 41600,
+        "payeTax": 4232,
+        "usc": 1040,
+        "prsi": 1664,
+        "totalDeductions": 6936,
+        "netAnnual": 34664
+      }
+    },
+    {
+      "scenario": "€30/hour professional, 35 hours/week",
+      "inputs": {"hourlyRate": 30, "hoursPerWeek": 35},
+      "expectedOutputs": {
+        "grossAnnual": 54600,
+        "payeTax": 8282,
+        "usc": 1872,
+        "prsi": 2184,
+        "totalDeductions": 12338,
+        "netAnnual": 42262
+      }
+    }
+  ]
+}

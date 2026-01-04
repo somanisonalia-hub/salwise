@@ -1,0 +1,13 @@
+{
+  "slug": "support",
+  "type": "page",
+  "h1": "Support",
+  "metaTitle": "Support | Get Help | SalaryWise.io",
+  "metaDescription": "Get help and support for using SalaryWise.io calculators and tools.",
+  "primaryKeyword": "support",
+  "longTailKeywords": ["help", "customer support", "technical support"],
+  "related": ["faq", "contact"],
+  "intro": "Need help using our calculators or have questions about salary calculations? Find answers and get support here.",
+  "content": "Support resources and help information.",
+  "disclaimer": "For technical issues, please contact our support team."
+}

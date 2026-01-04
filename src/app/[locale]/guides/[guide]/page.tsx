@@ -9,8 +9,8 @@ interface PageProps {
   }>;
 }
 
-// Supported locales
-const supportedLocales = ['en', 'es', 'fr'];
+// Only generate for English locale for Phase 1
+const supportedLocales = ['en'];
 
 export async function generateStaticParams() {
   const guides = [
@@ -18,20 +18,14 @@ export async function generateStaticParams() {
     'gross-vs-net-salary',
     'salary-negotiation-tips',
     'taxes-explained-by-country',
-    'salary-trends-2026',
-    'salary-vs-freelance-income',
-    'cost-of-living-vs-salary',
-    'how-bonuses-are-taxed',
-    'salary-calculation-examples',
-    'common-salary-mistakes'
+    'salary-trends-2026'
   ];
 
   const params: Array<{ locale: string; guide: string }> = [];
 
-  for (const locale of supportedLocales) {
-    for (const guide of guides) {
-      params.push({ locale, guide });
-    }
+  // Only generate English pages for Phase 1
+  for (const guide of guides) {
+    params.push({ locale: 'en', guide });
   }
 
   return params;

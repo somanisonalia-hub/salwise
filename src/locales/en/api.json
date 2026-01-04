@@ -1,0 +1,13 @@
+{
+  "slug": "api",
+  "type": "page",
+  "h1": "API Documentation",
+  "metaTitle": "API | Developer Documentation | SalaryWise.io",
+  "metaDescription": "Developer documentation and API access for integrating SalaryWise.io calculators.",
+  "primaryKeyword": "api documentation",
+  "longTailKeywords": ["developer api", "api access", "integration"],
+  "related": ["support", "help"],
+  "intro": "Integrate SalaryWise.io calculators into your applications with our developer API.",
+  "content": "API documentation and developer resources.",
+  "disclaimer": "API access requires registration and approval."
+}

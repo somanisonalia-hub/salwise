@@ -1,0 +1,189 @@
+{
+  "slug": "usa-contractor-salary-calculator",
+  "type": "calculator",
+  "h1": "USA Contractor Salary Calculator – Calculate Contractor / Freelancer Take-Home Pay",
+  "metaTitle": "USA Contractor Salary Calculator | Calculate Contractor Pay After Tax",
+  "metaDescription": "Calculate contractor salary in the USA including self-employment tax, federal tax, state tax, Social Security, Medicare. Free 2026 rates calculator.",
+  "primaryKeyword": "USA contractor salary calculator",
+  "longTailKeywords": [
+    "USA contractor salary calculator",
+    "contractor pay USA",
+    "freelance salary USA",
+    "self-employed tax USA",
+    "1099 contractor calculator USA",
+    "freelance tax calculator USA"
+  ],
+  "related": [
+    "usa-salary-calculator",
+    "take-home-pay-calculator",
+    "gross-to-net-salary"
+  ],
+  "dataRef": "usaContractorSalary",
+  "intro": "Calculate your contractor salary in the USA with our comprehensive calculator designed specifically for contractors and freelancers. US contractors have unique tax obligations including self-employment tax (15.3%) instead of FICA taxes, plus federal and state income taxes. This calculator uses official 2026 IRS rates to compare take-home pay for 1099 contractors vs W-2 employees, helping you choose the most tax-efficient structure for your contracting work. Whether you're considering contracting for the first time, comparing offers from different clients, or optimizing your current setup, this tool provides accurate calculations for US contractors and freelancers.",
+  "ui": {
+    "calculatorHeading": "Calculate Contractor Salary",
+    "resultsHeading": "Contractor Salary Results",
+    "calculateButton": "Calculate Contractor Pay",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This USA contractor salary calculator determines take-home pay for self-employed contractors by applying self-employment tax (15.3% instead of FICA), federal income tax, state income tax, and accounting for business expenses and quarterly estimated tax payments. Contractors typically work as 1099 independent contractors rather than W-2 employees, facing different tax treatments. The calculator shows your net income after all federal, state, and self-employment taxes, helping you understand the true cost of self-employment in the US.",
+  "useCases": {
+    "example1": {
+      "title": "$500/day Contractor",
+      "scenario": "Software developer working $500 per day, 20 days per month as 1099 contractor in California",
+      "dailyRate": "$500",
+      "daysPerMonth": "20",
+      "state": "CA",
+      "expensesPerDay": "$0",
+      "grossAnnual": "$120,000",
+      "selfEmploymentTax": "$18,360 (15.3%)",
+      "federalTax": "$20,790 (24.5% effective rate)",
+      "stateTax": "$11,400 (9.5% CA rate)",
+      "netAnnual": "$69,450",
+      "netMonthly": "$5,788",
+      "effectiveTaxRate": "42.1%"
+    },
+    "example2": {
+      "title": "$650/day with Expenses",
+      "scenario": "$650 per day consultant, 15 days per month with $200/day business expenses in New York",
+      "dailyRate": "$650",
+      "daysPerMonth": "15",
+      "state": "NY",
+      "expensesPerDay": "$200",
+      "grossAnnual": "$117,000",
+      "businessExpenses": "$72,000",
+      "taxableIncome": "$45,000",
+      "selfEmploymentTax": "$6,885 (15.3% on net)",
+      "federalTax": "$6,890 (15.3% effective rate)",
+      "stateTax": "$1,800 (4% NY rate)",
+      "netAnnual": "$29,425",
+      "netMonthly": "$2,452",
+      "effectiveTaxRate": "74.8%"
+    },
+    "example3": {
+      "title": "$600/day with 401k",
+      "scenario": "$600 per day freelancer, 18 days per month with $150/day expenses and self-employed 401(k) in Texas",
+      "dailyRate": "$600",
+      "daysPerMonth": "18",
+      "state": "TX",
+      "expensesPerDay": "$150",
+      "fourOOneKPercent": "10",
+      "grossAnnual": "$129,600",
+      "businessExpenses": "$32,400",
+      "taxableIncome": "$97,200",
+      "fourOOneKContribution": "$9,720 (10%)",
+      "adjustedTaxableIncome": "$87,480",
+      "selfEmploymentTax": "$13,368 (15.3%)",
+      "federalTax": "$18,790 (21.5% effective rate)",
+      "stateTax": "$0 (0% TX rate)",
+      "netAnnual": "$55,542",
+      "netMonthly": "$4,629",
+      "effectiveTaxRate": "57.1%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Contractors comparing 1099 vs W-2 employment structures",
+    "Freelancers calculating self-employment tax obligations",
+    "1099 independent contractors estimating quarterly tax payments",
+    "Business owners hiring contractors vs employees",
+    "Tax professionals advising self-employed clients",
+    "Anyone considering self-employment in the USA"
+  ],
+  "contractorStructures": {
+    "title": "US Contractor Structures",
+    "structures": [
+      "**1099 Contractor:** Self-employed, pays self-employment tax (15.3%) instead of FICA, files Schedule C, makes quarterly estimated payments",
+      "**W-2 Employee:** Employer withholds FICA taxes (7.65%), employer pays matching FICA, taxes withheld from paychecks",
+      "**LLC Owner:** Can elect corporate taxation or pass-through, provides some liability protection",
+      "**S-Corp Shareholder:** Allows reasonable salary + distributions, complex tax treatment"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What's the difference between self-employment tax and FICA?",
+      "answer": "Self-employment tax (15.3%) covers both the employee and employer portions of Social Security and Medicare taxes that W-2 employees split. Self-employed individuals pay the full amount."
+    },
+    {
+      "question": "How do contractors pay taxes in the USA?",
+      "answer": "1099 contractors make quarterly estimated tax payments (Form 1040-ES) for federal income tax and self-employment tax. State taxes vary by state. Many states require quarterly payments for state income tax."
+    },
+    {
+      "question": "Can contractors deduct business expenses?",
+      "answer": "Yes, legitimate business expenses like home office, equipment, software, mileage, and professional services can be deducted, reducing taxable income and self-employment tax."
+    },
+    {
+      "question": "What's the tax rate for US contractors?",
+      "answer": "Federal income tax rates (10-37%) plus self-employment tax (15.3%) plus state income tax (0-13.3%). Effective rates often range from 30-45% depending on income level and state."
+    },
+    {
+      "question": "Do contractors get retirement benefits?",
+      "answer": "Contractors can set up SEP-IRA or Solo 401(k) plans with higher contribution limits than employee 401(k)s. They can also contribute to traditional or Roth IRAs."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "USA Salary Calculator",
+      "url": "/en/usa-salary-calculator",
+      "description": "Calculate employee salary take-home pay in the USA"
+    },
+    {
+      "text": "Take-Home Pay Calculator",
+      "url": "/en/take-home-pay-calculator",
+      "description": "General calculator for net salary calculations"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    }
+  ],
+  "externalResources": {
+    "title": "Official US Contractor Resources",
+    "links": [
+      {
+        "text": "IRS Self-Employed Individuals Tax Center",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/self-employed-individuals-tax-center",
+        "description": "Official IRS information for self-employed taxpayers."
+      },
+      {
+        "text": "IRS Estimated Tax Payments",
+        "url": "https://www.irs.gov/payments/estimated-tax",
+        "description": "Information about quarterly estimated tax payments."
+      }
+    ]
+  },
+  "conclusion": "Choosing contractor status in the USA involves understanding complex tax obligations including self-employment tax, federal and state income taxes, and quarterly estimated payments. This calculator uses official 2026 IRS rates to help you understand the true cost of self-employment. Whether you're considering contracting for the first time or optimizing your current setup, understanding the tax implications is crucial. Remember that self-employment offers flexibility but comes with higher tax burdens and administrative responsibilities. For personalized advice, consult IRS resources or a qualified tax professional specializing in self-employment taxation.",
+  "disclaimer": "SalaryWise provides estimated contractor calculations based on publicly available tax structures. Self-employment tax rules can be complex and may involve additional considerations. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What's the difference between self-employment tax and FICA?", "acceptedAnswer": { "@type": "Answer", "text": "Self-employment tax (15.3%) covers both the employee and employer portions of Social Security and Medicare taxes that W-2 employees split. Self-employed individuals pay the full amount." } },
+          { "@type": "Question", "name": "How do contractors pay taxes in the USA?", "acceptedAnswer": { "@type": "Answer", "text": "1099 contractors make quarterly estimated tax payments (Form 1040-ES) for federal income tax and self-employment tax. State taxes vary by state. Many states require quarterly payments for state income tax." } },
+          { "@type": "Question", "name": "Can contractors deduct business expenses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, legitimate business expenses like home office, equipment, software, mileage, and professional services can be deducted, reducing taxable income and self-employment tax." } },
+          { "@type": "Question", "name": "What's the tax rate for US contractors?", "acceptedAnswer": { "@type": "Answer", "text": "Federal income tax rates (10-37%) plus self-employment tax (15.3%) plus state income tax (0-13.3%). Effective rates often range from 30-45% depending on income level and state." } },
+          { "@type": "Question", "name": "Do contractors get retirement benefits?", "acceptedAnswer": { "@type": "Answer", "text": "Contractors can set up SEP-IRA or Solo 401(k) plans with higher contribution limits than employee 401(k)s. They can also contribute to traditional or Roth IRAs." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "USA Contractor Salary Calculator", "item": "https://salarywise.io/en/usa-contractor-salary-calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "USA Contractor Salary Calculator",
+        "url": "/en/usa-contractor-salary-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate contractor salary in the USA including self-employment tax, federal tax, and state tax."
+      }
+    ]
+  }
+}

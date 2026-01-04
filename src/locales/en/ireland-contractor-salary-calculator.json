@@ -1,0 +1,188 @@
+{
+  "slug": "ireland-contractor-salary-calculator",
+  "type": "calculator",
+  "h1": "Ireland Contractor Salary Calculator – Calculate Contractor Pay After Tax",
+  "metaTitle": "Ireland Contractor Salary Calculator | Calculate Contractor Pay After Tax",
+  "metaDescription": "Calculate contractor salary in Ireland including Ltd company vs umbrella company options. Free 2026 rates calculator.",
+  "primaryKeyword": "ireland contractor salary calculator",
+  "longTailKeywords": [
+    "ireland contractor salary calculator",
+    "contractor pay ireland",
+    "freelance salary ireland",
+    "umbrella company ireland",
+    "ltd company ireland",
+    "contractor tax ireland",
+    "self employed tax ireland"
+  ],
+  "related": [
+    "ireland-salary-calculator",
+    "take-home-pay-calculator",
+    "gross-to-net-salary"
+  ],
+  "dataRef": "irelandContractorSalary",
+  "intro": "Calculate your contractor salary in Ireland with our comprehensive calculator designed specifically for contractors and freelancers. Irish contractors have unique tax obligations and can choose between different working structures including Ltd company setups, umbrella companies, or operating as sole traders. This calculator uses official 2026 Revenue.ie rates to compare take-home pay across different contractor arrangements, helping you choose the most tax-efficient structure for your contracting work. Whether you're considering contracting for the first time, comparing offers from different agencies, or optimizing your current setup, this tool provides accurate calculations for Irish contractors and freelancers.",
+  "ui": {
+    "calculatorHeading": "Calculate Contractor Salary",
+    "resultsHeading": "Contractor Salary Results",
+    "calculateButton": "Calculate Contractor Pay",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This Ireland contractor salary calculator compares two common Irish contracting structures: Ltd company (where you work through your own limited company) and umbrella company (where you work through an agency's payroll). For Ltd companies, it calculates corporation tax (12.5%), director's salary, and dividends. For umbrella companies, it calculates PAYE tax, USC, and PRSI on your full rate. The calculator accounts for expenses, holidays, and other deductions to show you the true take-home pay for each structure. Irish contractors typically work through these structures to optimize tax efficiency, with Ltd companies often providing better net returns for higher earners.",
+  "useCases": {
+    "example1": {
+      "title": "€400/day Ltd Company Contractor",
+      "scenario": "IT contractor working €400 per day, 20 days per month through Ltd company",
+      "dailyRate": "€400",
+      "daysPerMonth": "20",
+      "structure": "Ltd Company",
+      "grossAnnual": "€96,000",
+      "corporationTax": "€12,000",
+      "directorsSalary": "€30,000",
+      "dividends": "€54,000",
+      "dividendTax": "€8,100",
+      "totalTax": "€20,100",
+      "netAnnual": "€75,900",
+      "netMonthly": "€6,325",
+      "effectiveTaxRate": "20.9%"
+    },
+    "example2": {
+      "title": "€550/day Umbrella Company Contractor",
+      "scenario": "Senior developer earning €550 per day, 15 days per month through umbrella company",
+      "dailyRate": "€550",
+      "daysPerMonth": "15",
+      "structure": "Umbrella Company",
+      "grossAnnual": "€99,000",
+      "payeTax": "€27,467",
+      "usc": "€4,950",
+      "prsi": "€3,960",
+      "totalTax": "€36,377",
+      "netAnnual": "€62,623",
+      "netMonthly": "€5,219",
+      "effectiveTaxRate": "36.7%"
+    },
+    "example3": {
+      "title": "€500/day with Expenses",
+      "scenario": "Marketing consultant earning €500 per day, 18 days per month with €200/day expenses",
+      "dailyRate": "€500",
+      "daysPerMonth": "18",
+      "expensesPerDay": "€200",
+      "structure": "Ltd Company",
+      "grossAnnual": "€90,000",
+      "expenses": "€36,000",
+      "taxableIncome": "€54,000",
+      "corporationTax": "€6,750",
+      "directorsSalary": "€20,000",
+      "dividends": "€27,250",
+      "dividendTax": "€4,088",
+      "totalTax": "€10,838",
+      "netAnnual": "€79,162",
+      "netMonthly": "€6,597",
+      "effectiveTaxRate": "12%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Contractors comparing Ltd company vs umbrella company structures",
+    "Freelancers considering contracting arrangements in Ireland",
+    "IT consultants and professionals evaluating contract rates",
+    "Agencies helping contractors understand take-home pay",
+    "Irish residents considering self-employment or contracting",
+    "Expats working as contractors in Ireland"
+  ],
+  "contractorStructures": {
+    "title": "Irish Contractor Structures",
+    "structures": [
+      "**Ltd Company:** You set up your own limited company. Pays 12.5% corporation tax, then you take salary + dividends. Often more tax-efficient for higher earners.",
+      "**Umbrella Company:** You work through an agency's payroll. Pays PAYE, USC, PRSI like a regular employee. Simpler but often less tax-efficient.",
+      "**Sole Trader:** Self-employed structure. Pays income tax, USC, PRSI. Suitable for lower earners but limited tax reliefs.",
+      "**Partnership:** For multiple contractors working together. Similar tax treatment to sole traders."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What's the difference between Ltd company and umbrella company in Ireland?",
+      "answer": "Ltd companies allow you to pay yourself a reasonable salary plus dividends taxed at 12.5% corporation tax. Umbrella companies treat you like a regular employee with PAYE, USC, and PRSI deductions. Ltd companies are often more tax-efficient for higher earners."
+    },
+    {
+      "question": "How much corporation tax do Irish Ltd companies pay?",
+      "answer": "Irish limited companies pay 12.5% corporation tax on profits, one of the lowest rates in Europe. This makes Ltd company structures attractive for contractors."
+    },
+    {
+      "question": "Can contractors claim expenses in Ireland?",
+      "answer": "Yes, contractors can claim legitimate business expenses like home office costs, travel, equipment, and professional subscriptions. These reduce taxable income for both Ltd companies and umbrella structures."
+    },
+    {
+      "question": "What's the minimum contractor rate in Ireland?",
+      "answer": "There's no official minimum, but contractors typically earn €300-€600+ per day depending on their field and experience. Rates vary by sector, location, and demand."
+    },
+    {
+      "question": "Do contractors get holiday pay in Ireland?",
+      "answer": "Self-employed contractors don't automatically get paid holidays, but they can build holiday pay into their daily rates. The calculator assumes holiday pay is included in the daily rate."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "Ireland Salary Calculator",
+      "url": "/en/ireland-salary-calculator",
+      "description": "Calculate employee salary take-home pay in Ireland"
+    },
+    {
+      "text": "Take-Home Pay Calculator",
+      "url": "/en/take-home-pay-calculator",
+      "description": "General calculator for net salary calculations"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    }
+  ],
+  "externalResources": {
+    "title": "Official Irish Contractor Resources",
+    "links": [
+      {
+        "text": "Revenue.ie - Self Employed",
+        "url": "https://www.revenue.ie/en/self-assessment-and-self-employment/index.aspx",
+        "description": "Official information about self-employment and contractor taxation in Ireland."
+      },
+      {
+        "text": "Citizens Information - Self Employment",
+        "url": "https://www.citizensinformation.ie/en/employment/types-of-employment/self-employment/",
+        "description": "Guide to self-employment rights and obligations in Ireland."
+      }
+    ]
+  },
+  "conclusion": "Choosing the right contracting structure in Ireland can significantly impact your take-home pay and overall tax efficiency. This calculator compares Ltd company and umbrella company arrangements using official 2026 Revenue.ie rates, helping contractors make informed decisions about their working arrangements. Whether you're considering contracting for the first time or optimizing your current setup, understanding the tax implications of different structures is crucial. Remember that individual circumstances vary, and professional advice from accountants specializing in contractor taxation is recommended for personalized guidance. The Irish tax system offers attractive rates for contractors, particularly through Ltd company structures, making it an attractive destination for international contractors.",
+  "disclaimer": "SalaryWise provides estimated contractor calculations based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Contractor taxation can be complex and may involve additional considerations. Always consult a qualified accountant or tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What's the difference between Ltd company and umbrella company in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Ltd companies allow you to pay yourself a reasonable salary plus dividends taxed at 12.5% corporation tax. Umbrella companies treat you like a regular employee with PAYE, USC, and PRSI deductions. Ltd companies are often more tax-efficient for higher earners." } },
+          { "@type": "Question", "name": "How much corporation tax do Irish Ltd companies pay?", "acceptedAnswer": { "@type": "Answer", "text": "Irish limited companies pay 12.5% corporation tax on profits, one of the lowest rates in Europe. This makes Ltd company structures attractive for contractors." } },
+          { "@type": "Question", "name": "Can contractors claim expenses in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, contractors can claim legitimate business expenses like home office costs, travel, equipment, and professional subscriptions. These reduce taxable income for both Ltd companies and umbrella structures." } },
+          { "@type": "Question", "name": "What's the minimum contractor rate in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "There's no official minimum, but contractors typically earn €300-€600+ per day depending on their field and experience. Rates vary by sector, location, and demand." } },
+          { "@type": "Question", "name": "Do contractors get holiday pay in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Self-employed contractors don't automatically get paid holidays, but they can build holiday pay into their daily rates. The calculator assumes holiday pay is included in the daily rate." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Ireland Contractor Salary Calculator", "item": "https://salarywise.io/en/ireland-contractor-salary-calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Ireland Contractor Salary Calculator",
+        "url": "https://salarywise.io/en/ireland-contractor-salary-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate contractor salary in Ireland comparing Ltd company vs umbrella company structures."
+      }
+    ]
+  }
+}

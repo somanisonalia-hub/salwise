@@ -1,0 +1,142 @@
+{
+  "id": "irelandContractorSalary",
+  "name": "Ireland Contractor Salary Calculator",
+  "description": "Compare Ltd vs umbrella company options for Irish contractors",
+  "inputs": [
+    {
+      "id": "dailyRate",
+      "label": "Daily Rate",
+      "type": "number",
+      "default": 400,
+      "unit": "€",
+      "required": true,
+      "min": 0,
+      "max": 2000,
+      "description": "Your daily contracting rate"
+    },
+    {
+      "id": "daysPerMonth",
+      "label": "Working Days per Month",
+      "type": "number",
+      "default": 20,
+      "unit": "days",
+      "required": true,
+      "min": 1,
+      "max": 31,
+      "description": "Number of working days per month"
+    },
+    {
+      "id": "expenses",
+      "label": "Monthly Expenses",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "required": false,
+      "min": 0,
+      "max": 50000,
+      "description": "Legitimate business expenses (optional)"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "grossMonthly",
+      "label": "Gross Monthly Income",
+      "formula": "dailyRate * daysPerMonth",
+      "unit": "€"
+    },
+    {
+      "id": "grossAnnual",
+      "label": "Gross Annual Income",
+      "formula": "grossMonthly * 12",
+      "unit": "€"
+    },
+    {
+      "id": "ltdCorporationTax",
+      "label": "Ltd Corporation Tax (25%)",
+      "formula": "Math.max(0, grossAnnual - expenses * 12) * 0.25",
+      "unit": "€"
+    },
+    {
+      "id": "ltdDirectorsSalary",
+      "label": "Ltd Director's Salary",
+      "formula": "Math.min(grossAnnual * 0.3, 50000)",
+      "unit": "€"
+    },
+    {
+      "id": "ltdSalaryTax",
+      "label": "Ltd Salary Tax",
+      "formula": "calculateIrelandPAYE(ltdDirectorsSalary) + calculateIrelandUSC(ltdDirectorsSalary) + calculateIrelandPRSI(ltdDirectorsSalary)",
+      "unit": "€"
+    },
+    {
+      "id": "ltdProfitsAfterTax",
+      "label": "Ltd Profits After Corporation Tax",
+      "formula": "Math.max(0, grossAnnual - expenses * 12 - ltdDirectorsSalary - ltdCorporationTax)",
+      "unit": "€"
+    },
+    {
+      "id": "ltdDividendTax",
+      "label": "Ltd Dividend Tax (25%)",
+      "formula": "ltdProfitsAfterTax * 0.25",
+      "unit": "€"
+    },
+    {
+      "id": "ltdNetMonthly",
+      "label": "Ltd Net Monthly Income",
+      "formula": "(ltdDirectorsSalary - ltdSalaryTax + (ltdProfitsAfterTax - ltdDividendTax)) / 12",
+      "unit": "€"
+    },
+    {
+      "id": "umbrellaMargin",
+      "label": "Umbrella Company Margin (6%)",
+      "formula": "grossMonthly * 0.06",
+      "unit": "€"
+    },
+    {
+      "id": "umbrellaTaxableIncome",
+      "label": "Umbrella Taxable Income",
+      "formula": "grossMonthly - umbrellaMargin - expenses",
+      "unit": "€"
+    },
+    {
+      "id": "umbrellaTax",
+      "label": "Umbrella Tax (PAYE + PRSI + USC)",
+      "formula": "calculateIrelandPAYE(umbrellaTaxableIncome * 12) / 12 + calculateIrelandUSC(umbrellaTaxableIncome * 12) / 12 + calculateIrelandPRSI(umbrellaTaxableIncome * 12) / 12",
+      "unit": "€"
+    },
+    {
+      "id": "umbrellaNetMonthly",
+      "label": "Umbrella Net Monthly Income",
+      "formula": "umbrellaTaxableIncome - umbrellaTax",
+      "unit": "€"
+    },
+    {
+      "id": "ltdVsUmbrella",
+      "label": "Ltd vs Umbrella Difference",
+      "formula": "ltdNetMonthly - umbrellaNetMonthly",
+      "unit": "€"
+    }
+  ],
+  "examples": [
+    {
+      "scenario": "€400/day, 20 days/month contractor",
+      "inputs": {"dailyRate": 400, "daysPerMonth": 20, "expenses": 0},
+      "expectedOutputs": {
+        "grossMonthly": 8000,
+        "ltdNetMonthly": 5920,
+        "umbrellaNetMonthly": 5680,
+        "ltdVsUmbrella": 240
+      }
+    },
+    {
+      "scenario": "€550/day, 15 days/month senior contractor",
+      "inputs": {"dailyRate": 550, "daysPerMonth": 15, "expenses": 200},
+      "expectedOutputs": {
+        "grossMonthly": 8250,
+        "ltdNetMonthly": 6088,
+        "umbrellaNetMonthly": 5773,
+        "ltdVsUmbrella": 315
+      }
+    }
+  ]
+}

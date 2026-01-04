@@ -1,0 +1,226 @@
+{
+  "slug": "ireland-salary-calculator",
+  "type": "calculator",
+  "h1": "Ireland Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
+  "metaTitle": "Ireland Salary Calculator 2026 – Take Home Pay After Tax",
+  "metaDescription": "Calculate your take-home pay in Ireland for 2026. Includes PAYE, USC, PRSI, pension, bonus and deductions. Free & accurate.",
+  "primaryKeyword": "ireland salary calculator",
+  "longTailKeywords": [
+    "ireland salary calculator",
+    "take home pay ireland",
+    "salary after tax ireland",
+    "net salary ireland",
+    "irish paycheck calculator",
+    "ireland tax calculator",
+    "payslip calculator ireland",
+    "ireland income tax calculator",
+    "ireland payroll calculator"
+  ],
+  "related": [
+    "gross-to-net-salary",
+    "take-home-pay-calculator",
+    "net-to-gross-salary"
+  ],
+  "dataRef": "irelandSalaryCalculator",
+  "intro": "Calculate your take-home pay in Ireland for 2026 with our comprehensive salary calculator. Based on official Revenue.ie tax rates and guidelines, this tool accurately calculates PAYE (Pay As You Earn) income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions. Ireland's progressive tax system uses multiple tax bands and rates, making precise calculations essential for financial planning. Whether you're an Irish resident, expatriate worker, or employer calculating payroll costs, this calculator provides reliable estimates for budgeting, salary negotiations, and understanding your net income after all mandatory Irish tax deductions. Use current 2026 tax brackets and rates for accurate financial planning.",
+  "ui": {
+    "calculatorHeading": "Calculate Your Results",
+    "resultsHeading": "Results",
+    "calculateButton": "Calculate",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisIrelandSalaryCalculatorWorks": "This Ireland salary calculator provides accurate 2026 tax calculations based on official Revenue.ie rates and Deloitte's comprehensive tax methodology. The calculation follows Ireland's progressive tax system: First, your gross annual salary is determined. Then PAYE (Pay As You Earn) income tax is calculated using 2026 tax brackets: 20% on the first €42,335, 40% on income €42,336-€70,557, and 45% above €70,557. Universal Social Charge (USC) is applied across four brackets: 0.5% up to €12,012, 2% from €12,013-€25,760, 4.5% from €25,761-€70,044, and 8% above €70,044. Pay Related Social Insurance (PRSI) is calculated at standard employee rates. Additional deductions like pensions and bonuses are factored in. The calculator follows official Irish tax calculation methods for reliable financial planning.",
+  "workedExamples": {
+    "example1": {
+      "title": "€35,000 Entry-Level Professional",
+      "scenario": "A graduate or junior professional earning €35,000 annually in Ireland",
+      "grossSalary": "€35,000",
+      "payeTax": "€4,667 (20% rate)",
+      "usc": "€1,050 (3% effective rate)",
+      "prsi": "€1,400 (4%)",
+      "totalDeductions": "€7,117",
+      "netSalary": "€27,883",
+      "monthlyNet": "€2,324",
+      "effectiveTaxRate": "20.3%"
+    },
+    "example2": {
+      "title": "€45,000 Mid-Level Manager",
+      "scenario": "A manager earning €45,000 annually with 5% pension contribution",
+      "grossSalary": "€45,000",
+      "payeTax": "€7,467 (16.6% effective rate)",
+      "usc": "€1,725 (3.8% effective rate)",
+      "prsi": "€1,800 (4%)",
+      "pension": "€2,250 (5%)",
+      "totalDeductions": "€12,242",
+      "netSalary": "€32,758",
+      "monthlyNet": "€2,730",
+      "effectiveTaxRate": "27.2%"
+    },
+    "example3": {
+      "title": "€65,000 Senior Executive",
+      "scenario": "A senior executive earning €65,000 annually in Ireland",
+      "grossSalary": "€65,000",
+      "payeTax": "€16,467 (25.3% effective rate)",
+      "usc": "€2,900 (4.5% effective rate)",
+      "prsi": "€2,600 (4%)",
+      "totalDeductions": "€21,967",
+      "netSalary": "€43,033",
+      "monthlyNet": "€3,586",
+      "effectiveTaxRate": "33.8%"
+    },
+    "example4": {
+      "title": "€80,000 Director Level",
+      "scenario": "A director earning €80,000 annually with bonus and benefits",
+      "grossSalary": "€80,000",
+      "bonus": "€10,000",
+      "payeTax": "€22,467 (26.1% effective rate)",
+      "usc": "€3,625 (4.2% effective rate)",
+      "prsi": "€3,600 (4.2% effective rate on total)",
+      "totalDeductions": "€29,692",
+      "netSalary": "€50,308",
+      "monthlyNet": "€4,192",
+      "effectiveTaxRate": "32.1%"
+    },
+    "example5": {
+      "title": "€25,000 Graduate Starting Salary",
+      "scenario": "A recent graduate earning €25,000 annually in their first job",
+      "grossSalary": "€25,000",
+      "payeTax": "€5,000 (20% rate)",
+      "usc": "€625 (2.5% effective rate)",
+      "prsi": "€1,000 (4%)",
+      "totalDeductions": "€6,625",
+      "netSalary": "€18,375",
+      "monthlyNet": "€1,531",
+      "effectiveTaxRate": "26.5%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Irish employees comparing job offers and understanding take-home pay",
+    "Employers calculating payroll costs and employee compensation packages",
+    "Expats and foreign workers adapting to Irish tax system",
+    "Students and graduates entering the Irish job market",
+    "Financial advisors helping clients with Irish salary planning",
+    "HR professionals benchmarking compensation in Ireland",
+    "Anyone budgeting based on actual net income in Ireland",
+    "Business owners estimating employment costs",
+    "Tax professionals explaining Irish tax calculations"
+  ],
+  "taxCreditsInfo": "Irish tax calculations include various tax credits that can significantly reduce your final tax bill. The standard tax credit for 2026 is €2,200 for single individuals, with higher credits for married couples (€4,400) and additional credits for children, medical expenses, and other qualifying circumstances. Tax credits are applied after calculating your tax liability and can substantially lower your effective tax rate. This calculator provides estimates - consult your Tax Credit Certificate or Revenue.ie for personalized calculations including all applicable credits.",
+  "importantTaxConsiderations": [
+    "Ireland operates a 'pay-as-you-earn' (PAYE) system where tax is deducted at source",
+    "The standard tax year runs from January 1 to December 31",
+    "Tax credits can significantly reduce your effective tax rate - always check your Tax Credit Certificate",
+    "USC rates vary by income level and are separate from income tax",
+    "PRSI contributions fund social welfare and are required for most employees",
+    "Pension contributions are tax-deductible and can reduce your taxable income",
+    "Some benefits (like health insurance) may be tax-free under certain conditions",
+    "Non-residents may be subject to different tax treatments and withholding rates"
+  ],
+  "faqs": [
+    {
+      "question": "How accurate are the Irish tax calculations?",
+      "answer": "This calculator uses official 2026 Revenue.ie tax rates and brackets for PAYE, USC, and PRSI as published by the Irish government. Calculations follow the same methodology as Deloitte's tax calculator and Citizens Information guidelines, providing reliable estimates for financial planning."
+    },
+    {
+      "question": "What taxes and deductions are included?",
+      "answer": "The calculator includes PAYE income tax (progressive rates of 20%, 40%, and 45%), Universal Social Charge (USC) across four brackets (0.5%-8%), Pay Related Social Insurance (PRSI) at employee rates, pension contributions, bonuses, and other voluntary deductions."
+    },
+    {
+      "question": "How do tax credits affect my take-home pay?",
+      "answer": "Tax credits reduce your final tax liability. The standard tax credit for 2026 is €2,200, with additional credits available for married couples, medical expenses, and other qualifying circumstances. This calculator provides estimates but consult Revenue.ie for personalized tax credit calculations."
+    },
+    {
+      "question": "Can I include bonuses and overtime?",
+      "answer": "Yes, you can add annual bonuses, overtime pay, and other additional income. These are taxed at the same rates as your regular salary and may push you into higher tax brackets depending on your total income."
+    },
+    {
+      "question": "What's the difference between gross and net salary?",
+      "answer": "Gross salary is your total compensation before deductions. Net salary (take-home pay) is what you receive after PAYE tax, USC, PRSI, and other deductions. The difference varies by income level and can range from 20-45% depending on your salary bracket."
+    },
+    {
+      "question": "How does the Irish tax system work?",
+      "answer": "Ireland uses a progressive tax system with PAYE deducted at source. Income is taxed in bands: 20% on the first €42,335, 40% from €42,336-€70,557, and 45% above €70,557. USC and PRSI are additional social contributions that fund public services."
+    },
+    {
+      "question": "Can freelancers and contractors use this calculator?",
+      "answer": "This calculator is designed for employees with standard PRSI rates. Self-employed individuals have different tax treatments, higher USC rates, and additional obligations. Contractors should consult Revenue.ie for self-employment tax guidance."
+    },
+    {
+      "question": "Where can I find my tax credit certificate?",
+      "answer": "Your Tax Credit Certificate is issued annually by Revenue and shows your tax credits and rate band. Access it through myAccount on Revenue.ie. It determines your tax-free allowance and marginal tax rates."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "Take-Home Pay Calculator",
+      "url": "/en/take-home-pay-calculator",
+      "description": "General calculator for net salary calculations"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    },
+    {
+      "text": "Global Salary Calculator",
+      "url": "/en/salary-calculator",
+      "description": "Compare salaries across different countries"
+    }
+  ],
+  "externalLinks": [
+    {
+      "text": "Revenue.ie - Official Irish Tax Information",
+      "url": "https://www.revenue.ie/en/jobs-and-pensions/calculating-your-income-tax/index.aspx",
+      "description": "Official Revenue Commissioners website with detailed tax calculation guides"
+    },
+    {
+      "text": "Citizens Information - Irish Tax Guide",
+      "url": "https://www.citizensinformation.ie/en/money-and-tax/tax/income-tax/how-your-tax-is-calculated/",
+      "description": "Citizens Information guide to how Irish income tax is calculated"
+    },
+    {
+      "text": "Deloitte Ireland Tax Calculator",
+      "url": "https://services.deloitte.ie/",
+      "description": "Comprehensive tax calculator from Deloitte Ireland with advanced features"
+    },
+    {
+      "text": "Revenue MyAccount Login",
+      "url": "https://www.revenue.ie/en/online-services/services/my-account.aspx",
+      "description": "Access your Tax Credit Certificate and personal tax information"
+    }
+  ],
+  "conclusion": "Understanding your take-home pay in Ireland is crucial for effective financial planning in one of Europe's most dynamic economies. This calculator provides accurate 2026 tax calculations based on official Revenue.ie rates and Deloitte's comprehensive methodology. By accounting for Ireland's progressive tax system, PAYE income tax, Universal Social Charge, and Pay Related Social Insurance contributions, you can confidently compare job offers, plan budgets, and make informed career decisions. Whether you're an Irish resident, expatriate worker, or employer, this tool helps you understand the real purchasing power of your salary after all mandatory Irish deductions. Remember that individual circumstances may affect final calculations - consult Revenue.ie for personalized tax advice and your Tax Credit Certificate for accurate credit information.",
+  "disclaimer": "SalaryWise provides estimated take-home pay based on publicly available tax structures. Results are for guidance only.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How accurate are Irish tax calculations?", "acceptedAnswer": { "@type": "Answer", "text": "Uses official 2026 Revenue.ie rates and brackets for PAYE, USC, and PRSI." } },
+          { "@type": "Question", "name": "What taxes are included?", "acceptedAnswer": { "@type": "Answer", "text": "PAYE income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI)." } },
+          { "@type": "Question", "name": "How do tax credits work?", "acceptedAnswer": { "@type": "Answer", "text": "Tax credits reduce final tax liability. Standard credit is €2,200 for 2026." } },
+          { "@type": "Question", "name": "Can I include bonuses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, bonuses are taxed at the same rates as regular salary." } },
+          { "@type": "Question", "name": "What's the Irish tax system?", "acceptedAnswer": { "@type": "Answer", "text": "Progressive tax with bands: 20%, 40%, and 45% on income." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Ireland Salary Calculator", "item": "https://salarywise.io/en/ireland-salary-calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Ireland Salary Calculator",
+        "url": "https://salarywise.io/en/ireland-salary-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate your take-home pay in Ireland including PAYE, USC, PRSI and bonuses."
+      }
+    ]
+  }
+}

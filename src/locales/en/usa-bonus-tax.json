@@ -1,0 +1,189 @@
+{
+  "slug": "usa-bonus-tax",
+  "type": "calculator",
+  "h1": "USA Bonus Tax Calculator – Calculate Tax on Salary Bonus",
+  "metaTitle": "USA Bonus Tax Calculator | Calculate Bonus Pay After Tax",
+  "metaDescription": "Calculate bonus tax in the USA including federal tax, state tax, Social Security, Medicare deductions. Free 2026 rates calculator.",
+  "primaryKeyword": "USA bonus tax calculator",
+  "longTailKeywords": [
+    "USA bonus tax calculator",
+    "bonus calculator USA",
+    "tax on bonus USA",
+    "salary bonus USA",
+    "bonus after tax USA",
+    "US bonus tax",
+    "year end bonus USA"
+  ],
+  "related": [
+    "usa-salary-calculator",
+    "usa-overtime-pay",
+    "gross-to-net-salary"
+  ],
+  "dataRef": "usaBonusTax",
+  "intro": "Calculate your bonus tax in the USA with our comprehensive calculator. Bonuses are a significant part of many US salaries, but understanding how they're taxed is crucial for accurate financial planning. Unlike regular salary, bonuses are taxed at your marginal federal rate plus state taxes, potentially pushing you into higher tax brackets. This calculator uses official 2026 IRS rates to show you exactly how much tax you'll pay on bonuses, including federal income tax, state income tax, Social Security tax (6.2%), Medicare tax (1.45%), and 401(k) contributions. Whether you're expecting a year-end bonus, performance bonus, or other supplemental pay, this tool helps you understand your true take-home bonus amount and overall compensation package.",
+  "ui": {
+    "calculatorHeading": "Calculate Bonus Tax",
+    "resultsHeading": "Bonus Tax Results",
+    "calculateButton": "Calculate Bonus",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This USA bonus tax calculator determines your take-home bonus by adding the bonus to your annual salary, then calculating US taxes on the total amount. Bonuses are taxed at marginal rates - if your base salary puts you in the 22% bracket but the bonus pushes you into the 24% bracket, the entire bonus is taxed at 24%. State taxes, Social Security, and Medicare are calculated on total earnings. The calculator shows both the bonus tax breakdown and your total salary including bonus, helping you understand the overall tax impact. US bonuses are typically paid as a lump sum and taxed under federal and state income tax rules.",
+  "useCases": {
+    "example1": {
+      "title": "5% Annual Bonus",
+      "scenario": "$60,000 base salary employee receiving a 5% annual performance bonus in New York",
+      "grossSalary": "$60,000",
+      "bonusPercent": "5",
+      "state": "NY",
+      "grossBonus": "$3,000",
+      "netBonus": "$1,920",
+      "totalNetSalary": "$45,920",
+      "federalTax": "$720 (24% marginal rate)",
+      "stateTax": "$120 (4% NY rate)",
+      "socialSecurity": "$186 (6.2%)",
+      "medicare": "$44 (1.45%)",
+      "effectiveBonusTaxRate": "36%"
+    },
+    "example2": {
+      "title": "10% Annual Bonus",
+      "scenario": "$90,000 base salary manager receiving a 10% annual bonus in California",
+      "grossSalary": "$90,000",
+      "bonusPercent": "10",
+      "state": "CA",
+      "grossBonus": "$9,000",
+      "netBonus": "$5,400",
+      "totalNetSalary": "$70,400",
+      "federalTax": "$2,700 (30% marginal rate)",
+      "stateTax": "$855 (9.5% CA rate)",
+      "socialSecurity": "$558 (6.2%)",
+      "medicare": "$131 (1.45%)",
+      "effectiveBonusTaxRate": "40%"
+    },
+    "example3": {
+      "title": "7% Bonus + Overtime",
+      "scenario": "$75,000 base salary with 7% bonus and 5 hours weekly overtime in Texas",
+      "grossSalary": "$75,000",
+      "bonusPercent": "7",
+      "otHoursPerWeek": "5",
+      "otRate": "1.5",
+      "state": "TX",
+      "grossBonus": "$5,250",
+      "grossOvertime": "$9,750",
+      "netBonus": "$3,400",
+      "netOvertime": "$6,300",
+      "totalNetSalary": "$64,700",
+      "federalTax": "$2,100 (28% marginal rate)",
+      "stateTax": "$0 (0% TX rate)",
+      "socialSecurity": "$930 (6.2%)",
+      "medicare": "$218 (1.45%)",
+      "effectiveTaxRate": "34%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Employees expecting bonuses who want to understand take-home amount",
+    "Employers calculating bonus payments and total compensation costs",
+    "Anyone comparing bonus offers and understanding tax implications",
+    "HR professionals managing bonus schemes and payroll",
+    "Financial advisors helping clients plan for bonus income",
+    "Workers negotiating bonus structures in employment contracts"
+  ],
+  "bonusTaxationRules": {
+    "title": "USA Bonus Taxation Rules",
+    "rules": [
+      "**Marginal Rate Taxation:** Bonuses taxed at marginal federal rate, not averaged",
+      "**Total Earnings:** Bonuses added to annual salary for tax calculations",
+      "**Lump Sum:** Bonuses typically paid as one-off payments",
+      "**FICA Impact:** Bonuses increase Social Security/Medicare earnings",
+      "**State Variations:** Bonus tax rates vary by state income tax rates",
+      "**Withholding:** Employers must withhold appropriate taxes on bonuses"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How are bonuses taxed in the USA?",
+      "answer": "Bonuses are added to your annual salary and taxed at your marginal federal income tax rate plus state income tax, Social Security (6.2%), and Medicare (1.45%). They don't receive special tax treatment - they're taxed the same as regular wages."
+    },
+    {
+      "question": "Are bonuses taxed differently from salary?",
+      "answer": "No, bonuses are taxed the same as regular salary under US federal tax rules, but at marginal rates rather than being averaged across the year. This can result in bonuses being taxed at higher effective rates than your standard salary."
+    },
+    {
+      "question": "Can I reduce bonus tax through retirement contributions?",
+      "answer": "Yes, you can increase 401(k) contributions around bonus time to reduce your taxable income. However, 401(k) contribution limits apply annually, so plan ahead to maximize tax advantages."
+    },
+    {
+      "question": "When are bonuses usually paid in the USA?",
+      "answer": "Bonuses in the US are typically paid annually, often at year-end (December/January) or following the company's fiscal year-end. Some companies pay quarterly or half-yearly bonuses."
+    },
+    {
+      "question": "Do bonuses affect my tax bracket?",
+      "answer": "Yes, bonuses increase your total income, which may push you into higher federal tax brackets and state tax brackets. Higher income levels can result in bonuses being taxed at rates up to 37% federal plus state taxes."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "USA Salary Calculator",
+      "url": "/en/usa-salary-calculator",
+      "description": "Calculate base salary take-home pay in the USA"
+    },
+    {
+      "text": "USA Overtime Pay Calculator",
+      "url": "/en/usa-overtime-pay",
+      "description": "Calculate overtime pay and tax in the USA"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    }
+  ],
+  "externalResources": {
+    "title": "Official US Tax Resources",
+    "links": [
+      {
+        "text": "IRS Bonuses and Supplemental Wages",
+        "url": "https://www.irs.gov/taxtopics/tc419",
+        "description": "Official IRS information on taxing bonuses and supplemental wages."
+      },
+      {
+        "text": "IRS Tax Withholding on Bonuses",
+        "url": "https://www.irs.gov/publications/p15",
+        "description": "IRS Publication 15 guidance on withholding taxes on bonuses."
+      }
+    ]
+  },
+  "conclusion": "Bonuses can significantly enhance your compensation package in the USA, but understanding the tax implications is essential for accurate financial planning. This calculator uses official 2026 IRS rates to show you how bonuses are taxed at marginal rates, potentially resulting in higher effective tax rates than your regular salary. Whether you're negotiating a bonus package, planning your finances around expected bonuses, or helping employees understand their compensation, knowing the true take-home value helps make informed decisions. Remember that bonus taxation can vary based on individual circumstances and state tax laws. For personalized advice, consult IRS resources or a qualified tax professional.",
+  "disclaimer": "SalaryWise provides estimated bonus tax calculations based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How are bonuses taxed in the USA?", "acceptedAnswer": { "@type": "Answer", "text": "Bonuses are added to your annual salary and taxed at your marginal federal income tax rate plus state income tax, Social Security (6.2%), and Medicare (1.45%). They don't receive special tax treatment - they're taxed the same as regular wages." } },
+          { "@type": "Question", "name": "Are bonuses taxed differently from salary?", "acceptedAnswer": { "@type": "Answer", "text": "No, bonuses are taxed the same as regular salary under US federal tax rules, but at marginal rates rather than being averaged across the year. This can result in bonuses being taxed at higher effective rates than your standard salary." } },
+          { "@type": "Question", "name": "Can I reduce bonus tax through retirement contributions?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, you can increase 401(k) contributions around bonus time to reduce your taxable income. However, 401(k) contribution limits apply annually, so plan ahead to maximize tax advantages." } },
+          { "@type": "Question", "name": "When are bonuses usually paid in the USA?", "acceptedAnswer": { "@type": "Answer", "text": "Bonuses in the US are typically paid annually, often at year-end (December/January) or following the company's fiscal year-end. Some companies pay quarterly or half-yearly bonuses." } },
+          { "@type": "Question", "name": "Do bonuses affect my tax bracket?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, bonuses increase your total income, which may push you into higher federal tax brackets and state tax brackets. Higher income levels can result in bonuses being taxed at rates up to 37% federal plus state taxes." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "USA Bonus Tax Calculator", "item": "https://salarywise.io/en/usa-bonus-tax" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "USA Bonus Tax Calculator",
+        "url": "/en/usa-bonus-tax",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate bonus tax in the USA including federal tax, state tax, Social Security, and Medicare."
+      }
+    ]
+  }
+}

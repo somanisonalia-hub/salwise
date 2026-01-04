@@ -1,0 +1,187 @@
+{
+  "slug": "uk-contractor-salary-calculator",
+  "type": "calculator",
+  "h1": "UK Contractor Salary Calculator – Calculate Contractor Pay After Tax",
+  "metaTitle": "UK Contractor Salary Calculator | Calculate Contractor Pay After Tax",
+  "metaDescription": "Calculate contractor salary in the UK including Ltd company vs umbrella company options. Free 2026 rates calculator.",
+  "primaryKeyword": "UK contractor salary calculator",
+  "longTailKeywords": [
+    "UK contractor salary calculator",
+    "contractor pay UK",
+    "freelance salary UK",
+    "umbrella company UK",
+    "ltd company UK",
+    "contractor tax UK",
+    "self employed tax UK"
+  ],
+  "related": [
+    "uk-salary-calculator",
+    "take-home-pay-calculator",
+    "gross-to-net-salary"
+  ],
+  "dataRef": "ukContractorSalary",
+  "intro": "Calculate your contractor salary in the UK with our comprehensive calculator designed specifically for contractors and freelancers. UK contractors have unique tax obligations and can choose between different working structures including Ltd company setups, umbrella companies, or operating as sole traders. This calculator uses official 2026 HMRC rates to compare take-home pay across different contractor arrangements, helping you choose the most tax-efficient structure for your contracting work. Whether you're considering contracting for the first time, comparing offers from different agencies, or optimizing your current setup, this tool provides accurate calculations for UK contractors and freelancers.",
+  "ui": {
+    "calculatorHeading": "Calculate Contractor Salary",
+    "resultsHeading": "Contractor Salary Results",
+    "calculateButton": "Calculate Contractor Pay",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This UK contractor salary calculator compares two common UK contracting structures: Ltd company (where you work through your own limited company) and umbrella company (where you work through an agency's payroll). For Ltd companies, it calculates corporation tax (25%), director's salary, and dividends. For umbrella companies, it calculates PAYE tax, NIC, and pension contributions on your full rate. The calculator accounts for expenses and other deductions to show you the true take-home pay for each structure. UK contractors typically work through these structures to optimize tax efficiency, with Ltd companies often providing better net returns for higher earners.",
+  "useCases": {
+    "example1": {
+      "title": "£350/day Ltd Company Contractor",
+      "scenario": "IT contractor working £350 per day, 20 days per month through Ltd company",
+      "dailyRate": "£350",
+      "daysPerMonth": "20",
+      "structure": "Ltd Company",
+      "grossAnnual": "£84,000",
+      "corporationTax": "£21,000",
+      "directorsSalary": "£30,000",
+      "dividends": "£33,000",
+      "dividendTax": "£4,950",
+      "totalTax": "£25,950",
+      "netAnnual": "£58,050",
+      "netMonthly": "£4,838",
+      "effectiveTaxRate": "30.9%"
+    },
+    "example2": {
+      "title": "£450/day Umbrella Company Contractor",
+      "scenario": "Senior developer earning £450 per day, 15 days per month through umbrella company",
+      "dailyRate": "£450",
+      "daysPerMonth": "15",
+      "structure": "Umbrella Company",
+      "grossAnnual": "£81,000",
+      "payeTax": "£23,454",
+      "nic": "£4,454",
+      "totalTax": "£27,908",
+      "netAnnual": "£53,092",
+      "netMonthly": "£4,424",
+      "effectiveTaxRate": "34.5%"
+    },
+    "example3": {
+      "title": "£400/day with Expenses",
+      "scenario": "Marketing consultant earning £400 per day, 18 days per month with £150/day expenses",
+      "dailyRate": "£400",
+      "daysPerMonth": "18",
+      "expensesPerDay": "£150",
+      "structure": "Ltd Company",
+      "grossAnnual": "£72,000",
+      "expenses": "£32,400",
+      "taxableIncome": "£39,600",
+      "corporationTax": "£9,900",
+      "directorsSalary": "£20,000",
+      "dividends": "£9,700",
+      "dividendTax": "£1,455",
+      "totalTax": "£11,355",
+      "netAnnual": "£60,645",
+      "netMonthly": "£5,054",
+      "effectiveTaxRate": "15.8%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Contractors comparing Ltd company vs umbrella company structures",
+    "Freelancers considering contracting arrangements in the UK",
+    "IT consultants and professionals evaluating contract rates",
+    "Agencies helping contractors understand take-home pay",
+    "UK residents considering self-employment or contracting",
+    "Expats working as contractors in the UK"
+  ],
+  "contractorStructures": {
+    "title": "UK Contractor Structures",
+    "structures": [
+      "**Ltd Company:** You set up your own limited company. Pays 25% corporation tax, then you take salary + dividends. Often more tax-efficient for higher earners.",
+      "**Umbrella Company:** You work through an agency's payroll. Pays PAYE, NIC, and pension contributions like a regular employee. Simpler but often less tax-efficient.",
+      "**Sole Trader:** Self-employed structure. Pays income tax, NIC, and Class 2/4 contributions. Suitable for lower earners but limited tax reliefs.",
+      "**Partnership:** For multiple contractors working together. Similar tax treatment to sole traders."
+    ]
+  },
+  "faqs": [
+    {
+      "question": "What's the difference between Ltd company and umbrella company in the UK?",
+      "answer": "Ltd companies allow you to pay yourself a reasonable salary plus dividends taxed at 25% corporation tax. Umbrella companies treat you like a regular employee with PAYE, NIC, and pension deductions. Ltd companies are often more tax-efficient for higher earners."
+    },
+    {
+      "question": "How much corporation tax do UK Ltd companies pay?",
+      "answer": "UK limited companies pay 25% corporation tax on profits, though the rate may change. This makes Ltd company structures attractive for contractors."
+    },
+    {
+      "question": "Can contractors claim expenses in the UK?",
+      "answer": "Yes, contractors can claim legitimate business expenses like home office costs, travel, equipment, and professional subscriptions. These reduce taxable income for both Ltd companies and umbrella structures."
+    },
+    {
+      "question": "What's the IR35 rules in the UK?",
+      "answer": "IR35 rules determine whether contractors should be treated as employees for tax purposes. If caught by IR35, contractors may need to pay employer NICs through umbrella companies."
+    },
+    {
+      "question": "Do contractors get holiday pay in the UK?",
+      "answer": "Self-employed contractors don't automatically get paid holidays, but they can build holiday pay into their daily rates. The calculator assumes holiday pay is included in the daily rate."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "UK Salary Calculator",
+      "url": "/en/uk-salary-calculator",
+      "description": "Calculate employee salary take-home pay in the UK"
+    },
+    {
+      "text": "Take-Home Pay Calculator",
+      "url": "/en/take-home-pay-calculator",
+      "description": "General calculator for net salary calculations"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    }
+  ],
+  "externalResources": {
+    "title": "Official UK Contractor Resources",
+    "links": [
+      {
+        "text": "HMRC - Self Employed",
+        "url": "https://www.gov.uk/self-employed",
+        "description": "Official information about self-employment and contractor taxation in the UK."
+      },
+      {
+        "text": "Citizens Information - Self Employment",
+        "url": "https://www.citizensinformation.ie/en/money-and-tax/tax/income-tax/self-employed/",
+        "description": "Guide to self-employment rights and obligations in the UK."
+      }
+    ]
+  },
+  "conclusion": "Choosing the right contracting structure in the UK can significantly impact your take-home pay and overall tax efficiency. This calculator compares Ltd company and umbrella company arrangements using official 2026 HMRC rates, helping contractors make informed decisions about their working arrangements. Whether you're considering contracting for the first time or optimizing your current setup, understanding the tax implications of different structures is crucial. Remember that individual circumstances vary, and professional advice from accountants specializing in contractor taxation is recommended for personalized guidance. The UK tax system offers competitive rates for contractors, particularly through Ltd company structures, making it an attractive destination for international contractors.",
+  "disclaimer": "SalaryWise provides estimated contractor calculations based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Contractor taxation can be complex and may involve additional considerations like IR35. Always consult a qualified accountant or tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What's the difference between Ltd company and umbrella company in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "Ltd companies allow you to pay yourself a reasonable salary plus dividends taxed at 25% corporation tax. Umbrella companies treat you like a regular employee with PAYE, NIC, and pension deductions. Ltd companies are often more tax-efficient for higher earners." } },
+          { "@type": "Question", "name": "How much corporation tax do UK Ltd companies pay?", "acceptedAnswer": { "@type": "Answer", "text": "UK limited companies pay 25% corporation tax on profits, though the rate may change. This makes Ltd company structures attractive for contractors." } },
+          { "@type": "Question", "name": "Can contractors claim expenses in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, contractors can claim legitimate business expenses like home office costs, travel, equipment, and professional subscriptions. These reduce taxable income for both Ltd companies and umbrella structures." } },
+          { "@type": "Question", "name": "What's the IR35 rules in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "IR35 rules determine whether contractors should be treated as employees for tax purposes. If caught by IR35, contractors may need to pay employer NICs through umbrella companies." } },
+          { "@type": "Question", "name": "Do contractors get holiday pay in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "Self-employed contractors don't automatically get paid holidays, but they can build holiday pay into their daily rates. The calculator assumes holiday pay is included in the daily rate." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "UK Contractor Salary Calculator", "item": "https://salarywise.io/en/uk-contractor-salary-calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "UK Contractor Salary Calculator",
+        "url": "https://salarywise.io/en/uk-contractor-salary-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate contractor salary in the UK comparing Ltd company vs umbrella company structures."
+      }
+    ]
+  }
+}

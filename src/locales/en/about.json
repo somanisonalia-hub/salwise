@@ -95,5 +95,11 @@
     "text": "Try Our Calculators",
     "href": "/salary-calculator",
     "description": "Start calculating your salary today"
+  },
+
+  "universalDisclaimer": {
+    "icon": "⚠️",
+    "title": "Important Notice",
+    "content": "The calculators and salary tools on this website are provided for informational purposes only. We do our best to provide accurate and up-to-date information, but we cannot guarantee the results. Actual salaries, taxes, and deductions may vary depending on your individual situation and local regulations. Users should not rely solely on this website for financial, legal, or tax decisions. Always consult with a qualified professional for advice. By using this website, you agree that SalaryWise.io is not responsible for any decisions or actions taken based on the calculator results."
   }
 }

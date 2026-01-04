@@ -1,0 +1,182 @@
+{
+  "slug": "ireland-hourly-to-salary",
+  "type": "calculator",
+  "h1": "Ireland Hourly to Salary Calculator – Convert Hourly Pay to Annual Salary",
+  "metaTitle": "Ireland Hourly to Salary Calculator | Convert Hourly Pay to Annual Salary",
+  "metaDescription": "Convert hourly pay to annual salary in Ireland. Calculate your take-home pay including PAYE tax, USC, PRSI. Free & accurate 2026 rates.",
+  "primaryKeyword": "ireland hourly to salary calculator",
+  "longTailKeywords": [
+    "ireland hourly to salary calculator",
+    "hourly pay ireland",
+    "salary from hourly ireland",
+    "convert hourly to salary ireland",
+    "hourly rate to annual salary ireland",
+    "part time salary calculator ireland",
+    "hourly wage calculator ireland"
+  ],
+  "related": [
+    "ireland-salary-calculator",
+    "gross-to-net-salary",
+    "ireland-overtime-pay"
+  ],
+  "dataRef": "irelandHourlyToSalary",
+  "intro": "Convert your hourly wage to annual salary in Ireland with our comprehensive calculator. Whether you're considering a new job offer, negotiating pay rates, or planning your budget, understanding your annual equivalent salary is crucial for financial planning. This calculator accounts for Ireland's unique tax system including PAYE income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions. Based on official 2026 Revenue.ie rates, it provides accurate calculations for hourly workers, part-time employees, and contractors who bill by the hour. Simply enter your hourly rate, hours worked per week, and let the calculator show you your net take-home pay across different payment periods.",
+  "ui": {
+    "calculatorHeading": "Convert Hourly Rate to Salary",
+    "resultsHeading": "Salary Conversion Results",
+    "calculateButton": "Calculate Salary",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This Ireland hourly to salary calculator converts your hourly wage to annual, monthly, and weekly equivalents while accounting for Irish tax deductions. First, it calculates your gross annual salary by multiplying hourly rate × hours per week × 52 weeks. Then it applies Ireland's 2026 tax rates: PAYE income tax (20% on first €42,335, 40% on €42,336-€70,557, 45% above), Universal Social Charge (0.5%-8% across brackets), and PRSI (4% for most employees). The result shows both gross and net salary figures so you can understand your true take-home pay. Holiday pay and other benefits are not included in this calculation.",
+  "useCases": {
+    "example1": {
+      "title": "€20/hour Part-Time Worker",
+      "scenario": "A retail assistant working €20 per hour, 40 hours per week",
+      "hourlyRate": "€20",
+      "hoursPerWeek": "40",
+      "grossAnnual": "€41,600",
+      "netAnnual": "€34,483",
+      "netMonthly": "€2,874",
+      "netWeekly": "€663",
+      "payeTax": "€5,167 (20% rate)",
+      "usc": "€1,725 (4.2% effective rate)",
+      "prsi": "€1,664 (4%)",
+      "effectiveTaxRate": "17%"
+    },
+    "example2": {
+      "title": "€30/hour Professional",
+      "scenario": "A skilled tradesperson earning €30 per hour, 35 hours per week",
+      "hourlyRate": "€30",
+      "hoursPerWeek": "35",
+      "grossAnnual": "€40,950",
+      "netAnnual": "€33,798",
+      "netMonthly": "€2,817",
+      "netWeekly": "€650",
+      "payeTax": "€5,167 (20% rate)",
+      "usc": "€1,725 (4.2% effective rate)",
+      "prsi": "€1,638 (4%)",
+      "effectiveTaxRate": "17.5%"
+    },
+    "example3": {
+      "title": "€25/hour with Holiday Pay",
+      "scenario": "An office worker earning €25 per hour, 38 hours per week including holiday entitlement",
+      "hourlyRate": "€25",
+      "hoursPerWeek": "38",
+      "grossAnnual": "€49,400",
+      "netAnnual": "€39,834",
+      "netMonthly": "€3,320",
+      "netWeekly": "€766",
+      "payeTax": "€6,467 (20% rate)",
+      "usc": "€2,100 (4.3% effective rate)",
+      "prsi": "€1,976 (4%)",
+      "effectiveTaxRate": "19.3%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Hourly workers comparing job offers and understanding annual equivalent pay",
+    "Part-time employees calculating their annual salary for budgeting purposes",
+    "Freelancers and contractors who charge by the hour",
+    "Employers calculating hourly rates for job postings",
+    "Students and graduates considering hourly paid roles",
+    "Anyone converting between hourly and salary-based compensation"
+  ],
+  "importantConsiderations": {
+    "title": "Important Considerations for Hourly Pay in Ireland",
+    "points": [
+      "**Holiday Pay:** Most employees are entitled to 4 weeks paid annual leave, which adds about 8% to your annual equivalent salary",
+      "**Overtime:** Time-and-a-half or double-time for hours worked beyond your contracted hours",
+      "**Minimum Wage:** Ireland's minimum wage is €12.70 per hour for large employers (2024 rates)",
+      "**Contract Hours:** Your calculation assumes consistent hours throughout the year",
+      "**Tax Treatment:** Hourly pay is taxed the same as salary income under PAYE",
+      "**Pension:** Many employers offer pension contributions based on salary, not hourly rates"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How do I convert hourly pay to annual salary in Ireland?",
+      "answer": "Multiply your hourly rate by hours worked per week, then by 52 weeks in a year. Then deduct Irish taxes (PAYE, USC, PRSI) to get your net annual salary."
+    },
+    {
+      "question": "Does this calculator include holiday pay?",
+      "answer": "No, this calculator shows your base hourly conversion. Most Irish employees are entitled to 4 weeks paid annual leave, which typically adds 8% to your annual equivalent salary."
+    },
+    {
+      "question": "What's the minimum hourly wage in Ireland?",
+      "answer": "Ireland's national minimum wage is €12.70 per hour for employees aged 20 and over working for large employers, as of 2024."
+    },
+    {
+      "question": "How are hourly workers taxed in Ireland?",
+      "answer": "Hourly pay is treated as salary income and taxed under the PAYE system with the same rates and brackets as regular employees."
+    },
+    {
+      "question": "Can I include overtime in this calculation?",
+      "answer": "This calculator is for your base hourly rate. Use our Ireland Overtime Pay Calculator for overtime calculations."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "Ireland Salary Calculator",
+      "url": "/en/ireland-salary-calculator",
+      "description": "Calculate take-home pay from annual salary in Ireland"
+    },
+    {
+      "text": "Ireland Overtime Pay Calculator",
+      "url": "/en/ireland-overtime-pay",
+      "description": "Calculate overtime pay and tax in Ireland"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    }
+  ],
+  "externalResources": {
+    "title": "Official Irish Employment Resources",
+    "links": [
+      {
+        "text": "Revenue.ie - Employment Income",
+        "url": "https://www.revenue.ie/en/jobs-and-pensions/index.aspx",
+        "description": "Official information about employment income and taxation."
+      },
+      {
+        "text": "Citizens Information - Pay and Employment",
+        "url": "https://www.citizensinformation.ie/en/employment/employment-rights-and-conditions/pay-and-employment/",
+        "description": "Information about pay rates and employment conditions in Ireland."
+      }
+    ]
+  },
+  "conclusion": "Converting hourly pay to annual salary in Ireland requires understanding both your gross earnings and the impact of Irish tax deductions. This calculator provides accurate 2026 conversions based on official Revenue.ie rates, helping you compare job offers, plan your budget, and make informed career decisions. Remember that additional factors like holiday pay, overtime, and benefits can significantly affect your total compensation package. For personalized advice, consult with Revenue.ie or a qualified tax professional.",
+  "disclaimer": "SalaryWise provides estimated salary conversions based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How do I convert hourly pay to annual salary in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Multiply your hourly rate by hours worked per week, then by 52 weeks in a year. Then deduct Irish taxes (PAYE, USC, PRSI) to get your net annual salary." } },
+          { "@type": "Question", "name": "Does this calculator include holiday pay?", "acceptedAnswer": { "@type": "Answer", "text": "No, this calculator shows your base hourly conversion. Most Irish employees are entitled to 4 weeks paid annual leave, which typically adds 8% to your annual equivalent salary." } },
+          { "@type": "Question", "name": "What's the minimum hourly wage in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Ireland's national minimum wage is €12.70 per hour for employees aged 20 and over working for large employers, as of 2024." } },
+          { "@type": "Question", "name": "How are hourly workers taxed in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Hourly pay is treated as salary income and taxed under the PAYE system with the same rates and brackets as regular employees." } },
+          { "@type": "Question", "name": "Can I include overtime in this calculation?", "acceptedAnswer": { "@type": "Answer", "text": "This calculator is for your base hourly rate. Use our Ireland Overtime Pay Calculator for overtime calculations." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Ireland Hourly to Salary Calculator", "item": "https://salarywise.io/en/ireland-hourly-to-salary" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Ireland Hourly to Salary Calculator",
+        "url": "https://salarywise.io/en/ireland-hourly-to-salary",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Convert hourly pay to annual salary in Ireland including taxes and deductions."
+      }
+    ]
+  }
+}

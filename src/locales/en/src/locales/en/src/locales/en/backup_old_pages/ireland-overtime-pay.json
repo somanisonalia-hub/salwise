@@ -1,0 +1,136 @@
+{
+  "slug": "ireland-overtime-pay",
+  "type": "calculator",
+  "h1": "Ireland Overtime Pay Calculator – Calculate Extra Pay After Tax",
+  "metaTitle": "Ireland Overtime Pay Calculator | Tax on Overtime Hours",
+  "metaDescription": "Calculate your overtime pay in Ireland including tax deductions. Find out how much extra pay you keep after PAYE, PRSI, and USC.",
+  "primaryKeyword": "ireland overtime pay calculator",
+  "longTailKeywords": [
+    "overtime calculator Ireland",
+    "extra pay Ireland",
+    "tax on overtime Ireland",
+    "overtime hours calculator Ireland",
+    "Ireland overtime tax"
+  ],
+  "related": [
+    "ireland-salary-calculator",
+    "take-home-pay-calculator",
+    "ireland-hourly-to-salary"
+  ],
+  "dataRef": "irelandOvertimePay",
+  "intro": "Calculate your overtime pay in Ireland with our comprehensive calculator that accounts for Irish tax laws. Overtime work is taxed at the same rates as regular income, including PAYE income tax, PRSI contributions, and Universal Social Charge. This calculator helps you understand how much of your extra pay you actually keep after tax deductions, making it easier to evaluate the true value of overtime work.",
+  "ui": {
+    "calculatorHeading": "Calculate Overtime Pay",
+    "resultsHeading": "Overtime Pay Results",
+    "calculateButton": "Calculate Overtime",
+    "scenarioLabel": "Overtime Details:",
+    "resultsLabel": "Take-Home Overtime Pay:",
+    "noResultsText": "Enter overtime details to calculate"
+  },
+  "howOvertimeCalculatorWorks": "This Ireland overtime pay calculator determines your take-home overtime earnings by applying standard Irish tax rates. Enter your base hourly rate, overtime hours worked, and any overtime premium. The calculator then computes the gross overtime pay and deducts PAYE tax, PRSI, and USC using Ireland's progressive tax system. Results show both the gross overtime amount and your net take-home pay from overtime work.",
+  "workedExamples": {
+    "example1": {
+      "title": "5 Hours Overtime per Week",
+      "scenario": "Employee earning €25/hour base rate, working 5 hours overtime per week at time-and-a-half",
+      "baseHourlyRate": "€25",
+      "overtimeHoursPerWeek": "5",
+      "overtimeMultiplier": "1.5",
+      "grossOvertimeWeekly": "€187.50",
+      "grossOvertimeAnnual": "€9,750",
+      "taxOnOvertime": "€1,988",
+      "netOvertimeWeekly": "€154.69",
+      "netOvertimeAnnual": "€7,762"
+    },
+    "example2": {
+      "title": "10 Hours Overtime per Week",
+      "scenario": "Employee earning €30/hour base rate, working 10 hours overtime per week at double time",
+      "baseHourlyRate": "€30",
+      "overtimeHoursPerWeek": "10",
+      "overtimeMultiplier": "2.0",
+      "grossOvertimeWeekly": "€600",
+      "grossOvertimeAnnual": "€31,200",
+      "taxOnOvertime": "€8,082",
+      "netOvertimeWeekly": "€461.54",
+      "netOvertimeAnnual": "€23,118"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Employees working overtime hours",
+    "Workers comparing overtime rates",
+    "Employers calculating overtime costs",
+    "Anyone evaluating extra work compensation",
+    "Financial planners assessing additional income",
+    "Contract workers with variable hours"
+  ],
+  "faqs": [
+    {
+      "question": "How is overtime taxed in Ireland?",
+      "answer": "Overtime pay in Ireland is taxed at the same rates as regular income, including PAYE income tax, PRSI employee contributions, and Universal Social Charge (USC). There's no special tax treatment for overtime earnings."
+    },
+    {
+      "question": "What's time-and-a-half and double time?",
+      "answer": "Time-and-a-half means 1.5 times your regular hourly rate. Double time means 2 times your regular rate. These are common overtime multipliers in Ireland, though actual rates depend on your employment contract."
+    },
+    {
+      "question": "Are there limits on overtime hours?",
+      "answer": "Irish law limits overtime to 48 hours per week on average over a 4-month period. Anything beyond this may require special permission and could affect tax treatment."
+    },
+    {
+      "question": "How do I calculate overtime hours?",
+      "answer": "Overtime is typically hours worked beyond your standard working week. In Ireland, this is usually 35-40 hours per week depending on your contract. Check your employment agreement for exact overtime definitions."
+    },
+    {
+      "question": "Is overtime pay included in my tax credits?",
+      "answer": "Yes, overtime pay is included in your total taxable income and counts toward tax credits and rate bands. It doesn't receive special tax treatment."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "Ireland Salary Calculator",
+      "url": "/en/ireland-salary-calculator",
+      "description": "Complete Ireland salary calculator with tax breakdown"
+    },
+    {
+      "text": "Take-Home Pay Calculator",
+      "url": "/en/take-home-pay-calculator",
+      "description": "Calculate net salary for any country"
+    },
+    {
+      "text": "Ireland Hourly to Salary",
+      "url": "/en/ireland-hourly-to-salary",
+      "description": "Convert hourly rates to annual salary"
+    }
+  ],
+  "conclusion": "Understanding your overtime pay in Ireland helps you make informed decisions about extra work hours. Our calculator shows the true value of overtime by accounting for Irish tax deductions, helping you compare different compensation packages and work schedules. Whether you're considering additional hours or negotiating overtime rates, knowing your net overtime earnings is essential for financial planning.",
+  "disclaimer": "SalaryWise provides estimated calculations based on publicly available tax structures. Overtime tax treatment may vary based on individual circumstances and employment contracts.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How is overtime taxed in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Same as regular income: PAYE, PRSI, and USC apply to overtime pay." } },
+          { "@type": "Question", "name": "What's time-and-a-half?", "acceptedAnswer": { "@type": "Answer", "text": "1.5 times your regular hourly rate for overtime work." } },
+          { "@type": "Question", "name": "Are there overtime limits?", "acceptedAnswer": { "@type": "Answer", "text": "Maximum 48 hours per week on average over 4 months." } },
+          { "@type": "Question", "name": "How to calculate overtime hours?", "acceptedAnswer": { "@type": "Answer", "text": "Hours beyond your standard working week (usually 35-40 hours)." } },
+          { "@type": "Question", "name": "Does overtime affect tax credits?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, overtime is included in total taxable income." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Ireland Overtime Pay Calculator", "item": "https://salarywise.io/en/ireland-overtime-pay" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Ireland Overtime Pay Calculator",
+        "url": "https://salarywise.io/en/ireland-overtime-pay",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate overtime pay in Ireland with tax deductions."
+      }
+    ]
+  }
+}

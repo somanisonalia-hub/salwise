@@ -16,8 +16,8 @@
   "related": [
     "salary-calculator",
     "gross-to-net-salary",
-    "net-to-gross-salary",
-    "uk-salary-calculator"
+    "uk-salary-calculator",
+    "usa-salary-calculator"
   ],
   "dataRef": "takeHomePay",
   "intro": "Calculate your take-home pay in Ireland with our comprehensive salary calculator. This tool provides accurate estimates by incorporating PAYE (Pay As You Earn) income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions based on 2026 Irish tax rates. Whether you're comparing job offers, planning your budget, or negotiating a salary increase, knowing your exact net income after all Irish deductions is essential for effective financial planning. Get instant results for annual, monthly, and weekly take-home pay calculations tailored to Ireland's unique tax system.",

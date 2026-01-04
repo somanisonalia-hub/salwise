@@ -13,65 +13,54 @@ interface PageProps {
 // Supported locales - Temporarily disabled ES/FR for performance optimization
 const supportedLocales = ['en'];
 
-// All available page slugs - Phase 1 (45 pages)
+// All available page slugs - Phase 1 AdSense-ready (35 pages)
 const availablePages = [
-  // Core Calculator Pages (10)
+  // Ireland Calculators (5 pages)
+  'ireland-salary-calculator',
+  'ireland-hourly-to-salary',
+  'ireland-overtime-pay',
+  'ireland-bonus-tax',
+  'ireland-contractor-salary-calculator',
+
+  // UK Calculators (5 pages)
+  'uk-salary-calculator',
+  'uk-hourly-to-salary',
+  'uk-overtime-pay',
+  'uk-bonus-tax',
+  'uk-contractor-salary-calculator',
+
+  // USA Calculators (5 pages)
+  'usa-salary-calculator',
+  'usa-hourly-to-salary',
+  'usa-overtime-pay',
+  'usa-bonus-tax',
+  'usa-contractor-salary-calculator',
+
+  // Global Calculators (4 pages)
   'salary-calculator',
   'gross-to-net-salary',
-  'net-to-gross-salary',
   'take-home-pay-calculator',
-  'hourly-to-salary-calculator',
-  'bonus-calculator',
-  'overtime-pay-calculator',
   'salary-after-tax-calculator',
-  'annual-raise-calculator',
-  'salary-comparison-calculator',
-  // Industry-Specific Calculators (10)
-  'salary-calculator-it-tech',
-  'salary-calculator-healthcare',
-  'salary-calculator-engineering',
-  'salary-calculator-teacher',
-  'salary-calculator-finance-banking',
-  'salary-calculator-retail',
-  'salary-calculator-construction',
-  'salary-calculator-legal',
-  'salary-calculator-marketing-sales',
-  'salary-calculator-startup-entrepreneur',
-  // Financial & Planning Calculators (8)
-  'loan-emi-calculator',
-  'salary-vs-expenses-calculator',
-  'take-home-vs-cost-of-living-calculator',
-  'overtime-bonus-tax-calculator',
-  'annual-raise-promotion-calculator',
-  'salary-vs-freelance-income-calculator',
-  'savings-from-salary-calculator',
-  'retirement-contribution-calculator',
-  // Educational Guides (5)
-  'how-to-calculate-take-home-pay',
-  'understanding-gross-vs-net-salary',
-  'salary-negotiation-tips',
-  'taxes-explained-by-country',
-  'salary-trends-2026-global',
-  // Country-Specific Calculators (15)
-  'usa-salary-calculator',
-  'uk-salary-calculator',
-  'ireland-salary-calculator',
-  'canada-salary-calculator',
-  'australia-salary-calculator',
-  'germany-salary-calculator',
-  'france-salary-calculator',
-  'spain-salary-calculator',
-  'india-salary-calculator',
-  'singapore-salary-calculator',
-  'netherlands-salary-calculator',
-  'sweden-salary-calculator',
-  'switzerland-salary-calculator',
-  'new-zealand-salary-calculator',
-  'south-africa-salary-calculator',
-    // Directory pages
+
+  // Essential Informational / Guidance Pages (17 pages)
+  'about',
+  'contact',
+  'privacy-policy',
+  'terms-of-service',
+  'disclaimer',
+  'cookies',
+  'faq',
+  'how-salary-calculators-work',
+  'salary-guide',
+  'guides',
   'country',
   'industry',
-  'guides'
+  'understanding-gross-vs-net-salary',
+  'salary-negotiation-tips',
+  'how-to-calculate-take-home-pay',
+  'taxes-explained-by-country',
+  'salary-trends-2026',
+  'sitemap'
 ];
 
 export async function generateStaticParams() {
@@ -460,31 +449,6 @@ function CountryDirectory({ locale }: { locale: string }) {
               </div>
             </Link>
 
-            <Link
-              href={`/${locale}/country/canada`}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all"
-            >
-              <div className="text-center">
-                <div className="text-4xl mb-4">🇨🇦</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Canada</h3>
-                <p className="text-gray-600 text-sm mb-3">Federal and provincial income tax, CPP, EI contributions</p>
-                <div className="text-blue-600 font-medium text-sm">Federal: 15-29%, Provincial: 5-20.5%</div>
-                <div className="mt-3 text-blue-600 font-medium">Calculate →</div>
-              </div>
-            </Link>
-
-            <Link
-              href={`/${locale}/country/australia`}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all"
-            >
-              <div className="text-center">
-                <div className="text-4xl mb-4">🇦🇺</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">Australia</h3>
-                <p className="text-gray-600 text-sm mb-3">Income tax, superannuation guarantee, Medicare levy</p>
-                <div className="text-blue-600 font-medium text-sm">Income tax: 0-45%, Super: 10%</div>
-                <div className="mt-3 text-blue-600 font-medium">Calculate →</div>
-              </div>
-            </Link>
 
             <Link
               href={`/${locale}/country/ireland`}
@@ -499,18 +463,6 @@ function CountryDirectory({ locale }: { locale: string }) {
               </div>
             </Link>
 
-            <Link
-              href={`/${locale}/country/india`}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all"
-            >
-              <div className="text-center">
-                <div className="text-4xl mb-4">🇮🇳</div>
-                <h3 className="text-lg font-bold text-gray-900 mb-2">India</h3>
-                <p className="text-gray-600 text-sm mb-3">Income tax, professional tax, provident fund contributions</p>
-                <div className="text-blue-600 font-medium text-sm">Income tax: 0-30%, PF: 12%</div>
-                <div className="mt-3 text-blue-600 font-medium">Calculate →</div>
-              </div>
-            </Link>
           </div>
 
           <div className="bg-blue-600 text-white rounded-lg shadow-sm p-6 text-center">

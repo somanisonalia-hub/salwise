@@ -1,0 +1,13 @@
+{
+  "slug": "press",
+  "type": "page",
+  "h1": "Press & Media",
+  "metaTitle": "Press | Media Kit | SalaryWise.io",
+  "metaDescription": "Press releases, media kit, and information for journalists covering SalaryWise.io.",
+  "primaryKeyword": "press",
+  "longTailKeywords": ["media kit", "press releases", "journalists"],
+  "related": ["about", "contact"],
+  "intro": "Press resources and information for media covering SalaryWise.io and salary transparency topics.",
+  "content": "Press releases and media resources.",
+  "disclaimer": "For press inquiries, please contact our media team."
+}

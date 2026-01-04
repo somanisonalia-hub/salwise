@@ -8,7 +8,7 @@ export default function CountryPageFocused() {
     "@type": "WebSite",
     "name": "Country Salary Calculators",
     "url": "https://salarywise.io/country",
-    "description": "Calculate take-home pay for 15+ countries with localized tax rules. Compare salaries across different countries with accurate tax calculations.",
+    "description": "Calculate take-home pay for USA, UK, and Ireland with localized tax rules. Compare salaries across these major economies with accurate tax calculations.",
     "publisher": {
       "@type": "Organization",
       "name": "SalaryWise.io"
@@ -39,28 +39,6 @@ export default function CountryPageFocused() {
       population: '67M'
     },
     {
-      code: 'CA',
-      name: 'Canada',
-      flag: '🇨🇦',
-      slug: 'canada-salary-calculator',
-      currency: 'CAD',
-      taxRate: '~26%',
-      description: 'Federal & provincial taxes, CPP, EI',
-      popular: true,
-      population: '38M'
-    },
-    {
-      code: 'AU',
-      name: 'Australia',
-      flag: '🇦🇺',
-      slug: 'australia-salary-calculator',
-      currency: 'AUD',
-      taxRate: '~30%',
-      description: 'Income tax, superannuation',
-      popular: true,
-      population: '26M'
-    },
-    {
       code: 'IE',
       name: 'Ireland',
       flag: '🇮🇪',
@@ -68,19 +46,8 @@ export default function CountryPageFocused() {
       currency: 'EUR',
       taxRate: '~27%',
       description: 'Income tax, USC, PRSI',
-      popular: false,
+      popular: true,
       population: '5M'
-    },
-    {
-      code: 'IN',
-      name: 'India',
-      flag: '🇮🇳',
-      slug: 'india-salary-calculator',
-      currency: 'INR',
-      taxRate: '~22%',
-      description: 'Income tax slabs, cess',
-      popular: false,
-      population: '1.4B'
     }
   ];
 
@@ -91,7 +58,7 @@ export default function CountryPageFocused() {
     <>
       <Head>
         <title>Country Salary Calculators | International Take-Home Pay | SalaryWise.io</title>
-        <meta name="description" content="Calculate take-home pay for 15+ countries with localized tax rules. Compare salaries across US, UK, Canada, Australia, Ireland, India and more." />
+        <meta name="description" content="Calculate take-home pay for USA, UK, and Ireland with localized tax rules. Compare salaries across US, UK, and Ireland with accurate tax calculations." />
         <meta name="keywords" content="country salary calculator, international salary, take home pay by country, tax calculator by country, salary comparison" />
         <link rel="canonical" href="https://salarywise.io/country" />
         <script
@@ -107,7 +74,7 @@ export default function CountryPageFocused() {
             <div className="flex items-center justify-between">
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Country Salary Calculators</h1>
-                <p className="text-gray-600 mt-1">Localized tax calculations for 15+ countries</p>
+                <p className="text-gray-600 mt-1">Localized tax calculations for USA, UK, and Ireland</p>
               </div>
               <Link
                 href="/en"
@@ -132,7 +99,7 @@ export default function CountryPageFocused() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-4 text-center">
               <div className="bg-blue-50 p-4 rounded">
-                <div className="text-2xl font-bold text-blue-600">15+</div>
+                <div className="text-2xl font-bold text-blue-600">3</div>
                 <div className="text-sm text-blue-800">Countries Supported</div>
               </div>
               <div className="bg-green-50 p-4 rounded">
@@ -317,7 +284,7 @@ export default function CountryPageFocused() {
             <div className="space-y-4">
               <details className="border border-gray-200 rounded p-4">
                 <summary className="font-medium cursor-pointer">Which countries do you support?</summary>
-                <p className="mt-2 text-gray-600">We currently support salary calculations for USA, UK, Canada, Australia, Ireland, and India. Each calculator includes country-specific tax rules and currency formatting.</p>
+                <p className="mt-2 text-gray-600">We currently support salary calculations for USA, UK, and Ireland. Each calculator includes country-specific tax rules and currency formatting.</p>
               </details>
 
               <details className="border border-gray-200 rounded p-4">

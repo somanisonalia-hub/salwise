@@ -1,78 +1,231 @@
 {
   "slug": "uk-salary-calculator",
   "type": "calculator",
-  "h1": "Salary After Tax Calculator – UK Net Pay Estimator",
-  "metaTitle": "Salary After Tax Calculator UK – Calculate Net Pay",
-  "metaDescription": "Use our UK salary after tax calculator to estimate your take-home pay. Include income tax, National Insurance, and other deductions. Quick and free.",
-  "primaryKeyword": "salary after tax calculator UK",
+  "h1": "UK Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
+  "metaTitle": "UK Salary Calculator 2026 – Take Home Pay After Tax",
+  "metaDescription": "Calculate your take-home pay in the UK for 2026. Includes PAYE, NIC, pension, student loan and deductions. Free & accurate.",
+  "primaryKeyword": "UK salary calculator",
   "longTailKeywords": [
-    "UK salary calculator after tax",
-    "net pay calculator UK",
-    "take home salary UK",
-    "calculate salary after tax UK",
-    "gross to net salary UK",
-    "payroll calculator UK",
-    "salary calculator England",
-    "salary calculator Scotland",
-    "salary calculator Wales"
+    "UK salary calculator",
+    "take home pay UK",
+    "net salary UK",
+    "salary after tax UK",
+    "UK paycheck calculator",
+    "UK tax calculator",
+    "payslip calculator UK",
+    "UK income tax calculator",
+    "UK payroll calculator",
+    "gross to net UK"
   ],
   "related": [
     "gross-to-net-salary",
     "take-home-pay-calculator",
-    "net-to-gross-salary",
     "uk-salary-calculator"
   ],
-  "dataRef": "salaryAfterTaxUK",
-  "intro": "Understanding your salary after tax in the UK is essential for accurate financial planning. This calculator estimates your take-home pay by accounting for UK income tax, National Insurance contributions, and other common deductions. Whether you're an employee, contractor, or freelancer working in the United Kingdom, this tool provides localized calculations for England, Scotland, and Wales to help you understand your actual net income and make informed financial decisions.",
+  "dataRef": "ukSalaryCalculator",
+  "intro": "Calculate your take-home pay in the UK for 2026 with our comprehensive salary calculator. Understanding your net income after UK taxes and deductions is crucial for accurate financial planning. Our calculator accounts for PAYE (Pay As You Earn) income tax using the progressive tax system, National Insurance contributions (NIC), pension contributions, student loan repayments, and other common deductions. Whether you're comparing job offers, planning your budget, or negotiating a salary increase, knowing your exact net salary after all UK deductions is essential for effective financial decision-making. This free calculator is designed specifically for UK employees across England, Scotland, and Wales, offering fast, reliable calculations that help you understand the real impact of UK taxes on your gross salary. With current 2026 tax rates and brackets, you can confidently plan your finances and make informed career decisions based on your actual take-home pay.",
   "ui": {
-    "calculatorHeading": "Calculate Your Results",
-    "resultsHeading": "Results",
-    "calculateButton": "Calculate",
+    "calculatorHeading": "Calculate Your UK Salary",
+    "resultsHeading": "Your Take-Home Pay Results",
+    "calculateButton": "Calculate Take-Home Pay",
     "scenarioLabel": "Scenario:",
     "resultsLabel": "Results:",
     "noResultsText": "No results calculated yet"
   },
-  "howSalaryAfterTaxWorksUK": "Salary after tax in the UK involves several key deductions from your gross pay. Income tax is calculated using progressive tax bands: Personal Allowance (tax-free up to £12,570), Basic rate (20% on income £12,571-£50,270), Higher rate (40% on income £50,271-£150,000), and Additional rate (45% on income over £150,000). National Insurance contributions are also deducted at rates of 8% for earnings between £12,570-£50,270 and 2% above that. Optional deductions like pension contributions and student loan repayments can further reduce your taxable income and increase your take-home pay.",
-  "example": {
-    "scenario": "An employee earning £40,000 annually in England with standard deductions.",
-    "results": "Gross salary: £40,000 | Income tax: £6,000 | National Insurance: £3,500 | Net salary: £30,500 | Monthly net: £2,542"
+  "howThisUKSalaryCalculatorWorks": "This UK salary calculator works by taking your gross salary and applying all relevant UK tax calculations step by step. First, your gross annual salary is calculated from your pay frequency. Then PAYE income tax is calculated using the UK's progressive tax bands: 20% on the first £12,570-£50,270, 40% on income £50,271-£150,000, and 45% on income over £150,000. National Insurance contributions are applied at Class 1 rates: 8% on earnings £12,570-£50,270 and 2% above that. Additional deductions like pension contributions (which are tax-relievable) and student loan repayments are factored in. The calculator follows official HMRC calculation methods for reliable financial planning across England, Scotland, and Wales.",
+  "useCases": {
+    "example1": {
+      "title": "£30,000 Entry-Level Professional",
+      "scenario": "A graduate or junior professional earning £30,000 annually in the UK",
+      "grossSalary": "£30,000",
+      "payeTax": "£3,454 (20% rate)",
+      "nic": "£1,754 (8% rate)",
+      "totalDeductions": "£5,208",
+      "netSalary": "£24,792",
+      "monthlyNet": "£2,066",
+      "effectiveTaxRate": "17.4%"
+    },
+    "example2": {
+      "title": "£50,000 Mid-Level Manager",
+      "scenario": "A manager earning £50,000 annually with 5% pension contribution",
+      "grossSalary": "£50,000",
+      "payeTax": "£8,454 (24.6% effective rate)",
+      "nic": "£3,754 (8% rate)",
+      "pension": "£2,500 (5%)",
+      "totalDeductions": "£14,708",
+      "netSalary": "£35,292",
+      "monthlyNet": "£2,941",
+      "effectiveTaxRate": "29.4%"
+    },
+    "example3": {
+      "title": "£40,000 Professional + 5h/week OT",
+      "scenario": "A professional earning £40,000 base salary with 5 hours weekly overtime at time-and-a-half",
+      "grossSalary": "£40,000",
+      "overtime": "£5,000 (annual equivalent)",
+      "payeTax": "£6,908 (24% effective rate)",
+      "nic": "£3,100 (8% rate)",
+      "totalDeductions": "£10,008",
+      "netSalary": "£34,992",
+      "monthlyNet": "£2,916",
+      "effectiveTaxRate": "22.2%"
+    }
   },
-  "whyUseSalaryAfterTaxCalculator": [
-    "Accurate budgeting based on your actual take-home pay",
-    "Compare job offers using real net income figures",
-    "Plan for tax withholdings and avoid surprises",
-    "Make informed decisions about pre-tax deductions",
-    "Understand the impact of National Insurance on your salary",
-    "Prepare for year-end tax planning and refunds"
+  "whoShouldUseThisCalculator": [
+    "UK employees comparing job offers and salary packages",
+    "Employers calculating payroll costs and employee take-home pay",
+    "Graduates and students entering the UK job market",
+    "Expats and foreign workers adapting to UK tax system",
+    "Financial advisors helping clients with UK salary planning",
+    "Anyone planning their budget based on actual take-home pay in the UK"
   ],
+  "taxCreditsInformation": {
+    "title": "Understanding UK Tax Allowances (2026)",
+    "intro": "Tax allowances are crucial in reducing your overall tax liability in the UK. The Personal Allowance provides tax-free income up to £12,570 for most people. Additional allowances may apply for married couples, blind persons, and other qualifying circumstances. Allowances are applied after calculating your tax liability and can substantially lower your final tax bill.",
+    "credits": [
+      {
+        "name": "Personal Allowance",
+        "amount": "£12,570",
+        "description": "Tax-free allowance for most UK taxpayers"
+      },
+      {
+        "name": "Marriage Allowance",
+        "amount": "Up to £1,260",
+        "description": "Available to married couples and civil partners"
+      },
+      {
+        "name": "Blind Person's Allowance",
+        "amount": "£2,980",
+        "description": "Additional allowance for registered blind persons"
+      }
+    ],
+    "conclusion": "It's important to note that this calculator provides estimates. Your actual tax allowances may vary based on your personal circumstances. Always refer to your P60 or contact HMRC for precise details."
+  },
+  "importantConsiderations": {
+    "title": "Important UK Tax Considerations",
+    "points": [
+      "**Tax Year:** The UK tax year runs from 6 April to 5 April.",
+      "**PAYE System:** Most employees pay tax through the Pay As You Earn (PAYE) system, where tax is deducted directly from your salary by your employer.",
+      "**National Insurance:** Contributions go towards state benefits like the NHS, pensions, and unemployment support.",
+      "**Pension Contributions:** Employee pension contributions are tax-relievable, reducing your taxable income.",
+      "**Student Loans:** Repayments are deducted directly from your salary if you earn above the threshold.",
+      "**Tax Codes:** Your tax code determines your tax-free allowance and should be checked annually."
+    ]
+  },
   "faqs": [
     {
-      "question": "Does this calculator include National Insurance contributions?",
-      "answer": "Yes, it includes both Class 1 employee National Insurance contributions and income tax calculations based on current UK tax rates."
+      "question": "How accurate are UK tax calculations?",
+      "answer": "This calculator uses the official 2026 UK tax rates and brackets for PAYE, NIC, and allowances, providing highly reliable estimates for financial planning. Actual take-home pay may vary based on individual circumstances and tax codes."
     },
     {
-      "question": "Can I include pension and student loan deductions?",
-      "answer": "Yes, you can add pension contributions and student loan repayments as deductions that reduce your taxable income."
+      "question": "What taxes and deductions are included?",
+      "answer": "The calculator includes all major UK deductions: PAYE income tax, National Insurance contributions, pension contributions, student loan repayments, and other annual deductions."
     },
     {
-      "question": "Is this calculator accurate for all UK regions?",
-      "answer": "Yes, it includes UK-wide tax rates and calculations that apply across England, Scotland, and Wales."
+      "question": "How do tax allowances affect my take-home pay?",
+      "answer": "Tax allowances like the Personal Allowance (£12,570) provide tax-free income. Your taxable income is calculated after deducting allowances, which can significantly increase your net take-home pay."
     },
     {
-      "question": "Can I calculate monthly take-home pay?",
-      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+      "question": "Can I include bonuses and overtime?",
+      "answer": "Yes, you can add annual bonuses and overtime pay. These are taxed at your marginal rate, meaning they can be subject to higher tax bands (40% or 45% PAYE) depending on your total income."
     },
     {
-      "question": "Is this UK salary after tax calculator free?",
-      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+      "question": "What's the difference between gross and net salary?",
+      "answer": "Gross salary is your total earnings before any deductions. Net salary is your take-home pay after all taxes (PAYE, NIC) and other deductions (like pension) have been subtracted. This calculator shows that difference clearly."
+    },
+    {
+      "question": "How does the UK tax system work?",
+      "answer": "The UK operates a progressive tax system. Income is taxed at different rates (20%, 40%, 45%) across various bands after deducting your Personal Allowance. National Insurance is added separately."
+    },
+    {
+      "question": "Can freelancers and contractors use this calculator?",
+      "answer": "This calculator is primarily designed for employees under the PAYE system. Self-employed individuals have different tax treatments and should use our UK Contractor Salary Calculator instead."
+    },
+    {
+      "question": "Where can I find my tax code?",
+      "answer": "Your tax code is shown on your P60 form issued annually by your employer, or you can check it online through your HMRC account. It determines your tax-free allowance for the year."
     }
   ],
-  "tips": [
-    "Review your P60 form annually to ensure proper tax code",
-    "Consider salary sacrifice schemes for tax-efficient benefits",
-    "Use tax-advantaged pension schemes when possible",
-    "Keep track of year-to-date earnings for accurate tax planning",
-    "Consult a tax professional for personalized advice on complex tax situations"
-  ]
+  "internalLinks": [
+    {
+      "text": "Take-Home Pay Calculator",
+      "url": "/en/take-home-pay-calculator",
+      "description": "General calculator for net salary calculations"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    },
+    {
+      "text": "UK Bonus Tax Calculator",
+      "url": "/en/uk-bonus-tax",
+      "description": "Calculate tax on bonuses in the UK"
+    },
+    {
+      "text": "UK Overtime Pay Calculator",
+      "url": "/en/uk-overtime-pay",
+      "description": "Calculate overtime pay and tax in the UK"
+    }
+  ],
+  "externalResources": {
+    "title": "Official UK Tax Resources",
+    "links": [
+      {
+        "text": "HMRC - Income Tax",
+        "url": "https://www.gov.uk/income-tax",
+        "description": "Official HMRC guide to income tax in the UK."
+      },
+      {
+        "text": "Citizens Advice - Tax and Money",
+        "url": "https://www.citizensadvice.org.uk/money/tax/",
+        "description": "Helpful guide to UK tax system and allowances."
+      },
+      {
+        "text": "GOV.UK - National Insurance",
+        "url": "https://www.gov.uk/national-insurance",
+        "description": "Information about National Insurance contributions."
+      },
+      {
+        "text": "HMRC Personal Tax Account",
+        "url": "https://www.gov.uk/personal-tax-account",
+        "description": "Access your tax code and tax information online."
+      }
+    ]
+  },
+  "conclusion": "This UK salary calculator is an indispensable tool for anyone navigating the UK tax landscape. By providing accurate 2026 tax calculations, detailed use cases, and links to official HMRC resources, it empowers you to make informed financial decisions. Whether you're an employee, employer, or simply planning your finances, trust SalaryWise.io for reliable insights into your take-home pay in the United Kingdom.",
+  "disclaimer": "SalaryWise provides estimated take-home pay based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How accurate are UK tax calculations?", "acceptedAnswer": { "@type": "Answer", "text": "This calculator uses the official 2026 UK tax rates and brackets for PAYE, NIC, and allowances, providing highly reliable estimates for financial planning. Actual take-home pay may vary based on individual circumstances and tax codes." } },
+          { "@type": "Question", "name": "What taxes and deductions are included?", "acceptedAnswer": { "@type": "Answer", "text": "The calculator includes all major UK deductions: PAYE income tax, National Insurance contributions, pension contributions, student loan repayments, and other annual deductions." } },
+          { "@type": "Question", "name": "How do tax allowances affect my take-home pay?", "acceptedAnswer": { "@type": "Answer", "text": "Tax allowances like the Personal Allowance (£12,570) provide tax-free income. Your taxable income is calculated after deducting allowances, which can significantly increase your net take-home pay." } },
+          { "@type": "Question", "name": "Can I include bonuses and overtime?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, you can add annual bonuses and overtime pay. These are taxed at your marginal rate, meaning they can be subject to higher tax bands (40% or 45% PAYE) depending on your total income." } },
+          { "@type": "Question", "name": "What's the difference between gross and net salary?", "acceptedAnswer": { "@type": "Answer", "text": "Gross salary is your total earnings before any deductions. Net salary is your take-home pay after all taxes (PAYE, NIC) and other deductions (like pension) have been subtracted. This calculator shows that difference clearly." } },
+          { "@type": "Question", "name": "How does the UK tax system work?", "acceptedAnswer": { "@type": "Answer", "text": "The UK operates a progressive tax system. Income is taxed at different rates (20%, 40%, 45%) across various bands after deducting your Personal Allowance. National Insurance is added separately." } },
+          { "@type": "Question", "name": "Can freelancers and contractors use this calculator?", "acceptedAnswer": { "@type": "Answer", "text": "This calculator is primarily designed for employees under the PAYE system. Self-employed individuals have different tax treatments and should use our UK Contractor Salary Calculator instead." } },
+          { "@type": "Question", "name": "Where can I find my tax code?", "acceptedAnswer": { "@type": "Answer", "text": "Your tax code is shown on your P60 form issued annually by your employer, or you can check it online through your HMRC account. It determines your tax-free allowance for the year." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "UK Salary Calculator", "item": "https://salarywise.io/en/uk-salary-calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "UK Salary Calculator",
+        "url": "https://salarywise.io/en/uk-salary-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate your take-home pay in the UK including PAYE, NIC, pension, and student loan deductions."
+      }
+    ]
+  }
 }
 

@@ -1,0 +1,191 @@
+{
+  "slug": "usa-overtime-pay",
+  "type": "calculator",
+  "h1": "USA Overtime Pay Calculator – Calculate Extra Pay for Overtime Hours",
+  "metaTitle": "USA Overtime Pay Calculator | Calculate Overtime Pay After Tax",
+  "metaDescription": "Calculate overtime pay in the USA including federal tax, state tax, Social Security, Medicare deductions. Free 2026 rates calculator.",
+  "primaryKeyword": "USA overtime pay calculator",
+  "longTailKeywords": [
+    "USA overtime pay calculator",
+    "overtime calculator USA",
+    "extra pay USA",
+    "tax on overtime USA",
+    "overtime tax calculator USA",
+    "time and a half USA",
+    "double time USA"
+  ],
+  "related": [
+    "usa-salary-calculator",
+    "usa-hourly-to-salary",
+    "usa-bonus-tax"
+  ],
+  "dataRef": "usaOvertimePay",
+  "intro": "Calculate your overtime pay in the USA with our comprehensive tax calculator. Understanding how overtime is taxed is crucial for maximizing your take-home earnings from extra hours worked. US law requires overtime to be paid at time-and-a-half (1.5x) or double time (2x) your normal hourly rate for hours worked over 40 per week under the Fair Labor Standards Act (FLSA). This calculator uses official 2026 IRS rates to show you exactly how much tax you'll pay on overtime earnings, including federal income tax, state income tax, Social Security tax (6.2%), Medicare tax (1.45%), and 401(k) contributions. Whether you work occasional overtime or regularly put in extra hours, this tool helps you understand the true value of your overtime work.",
+  "ui": {
+    "calculatorHeading": "Calculate Overtime Pay",
+    "resultsHeading": "Overtime Pay Results",
+    "calculateButton": "Calculate Overtime",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This USA overtime pay calculator determines your take-home overtime earnings by first calculating the gross overtime pay (base salary ÷ 52 weeks ÷ contracted hours × overtime hours × overtime multiplier), then applying US tax rates. Overtime is taxed at your marginal federal rate plus state taxes, potentially pushing you into higher tax brackets. Social Security and Medicare are calculated on total earnings. The calculator shows both the overtime pay breakdown and your total salary including overtime, so you can see the overall tax impact. US federal law requires time-and-a-half for hours over 40/week, though individual contracts may specify different rates.",
+  "useCases": {
+    "example1": {
+      "title": "$60k Base + 5h/week OT",
+      "scenario": "$60,000 base salary employee working 5 hours overtime per week at time-and-a-half in New York",
+      "baseSalary": "$60,000",
+      "otHoursPerWeek": "5",
+      "otRate": "1.5",
+      "state": "NY",
+      "grossOvertime": "$7,500",
+      "netOvertime": "$5,100",
+      "totalNetSalary": "$47,100",
+      "federalTax": "$1,500 (20% marginal rate)",
+      "stateTax": "$300 (4% NY rate)",
+      "socialSecurity": "$465 (6.2%)",
+      "medicare": "$109 (1.45%)",
+      "effectiveOvertimeTaxRate": "32%"
+    },
+    "example2": {
+      "title": "$80k Base + 10h/week OT",
+      "scenario": "$80,000 base salary manager working 10 hours overtime per week at double time in California",
+      "baseSalary": "$80,000",
+      "otHoursPerWeek": "10",
+      "otRate": "2.0",
+      "state": "CA",
+      "grossOvertime": "$30,000",
+      "netOvertime": "$18,000",
+      "totalNetSalary": "$78,000",
+      "federalTax": "$9,000 (30% marginal rate)",
+      "stateTax": "$2,850 (9.5% CA rate)",
+      "socialSecurity": "$1,860 (6.2%)",
+      "medicare": "$435 (1.45%)",
+      "effectiveOvertimeTaxRate": "40%"
+    },
+    "example3": {
+      "title": "$70k + 8h/week OT + 5% Bonus",
+      "scenario": "$70,000 base salary with 8 hours weekly overtime and 5% annual bonus in Texas",
+      "baseSalary": "$70,000",
+      "otHoursPerWeek": "8",
+      "otRate": "1.5",
+      "bonusPercent": "5",
+      "state": "TX",
+      "grossOvertime": "$14,400",
+      "bonus": "$3,500",
+      "netOvertime": "$9,700",
+      "netBonus": "$2,300",
+      "totalNetSalary": "$65,000",
+      "federalTax": "$4,800 (28% marginal rate)",
+      "stateTax": "$0 (0% TX rate)",
+      "socialSecurity": "$1,105 (6.2%)",
+      "medicare": "$258 (1.45%)",
+      "effectiveTaxRate": "32%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Employees working overtime hours who want to understand their take-home pay",
+    "Employers calculating the true cost of overtime payments",
+    "Anyone comparing overtime rates and understanding tax implications",
+    "Workers negotiating overtime rates in employment contracts",
+    "HR professionals managing payroll and overtime calculations",
+    "Union representatives advising members on overtime pay"
+  ],
+  "overtimeRules": {
+    "title": "USA Overtime Pay Rules",
+    "rules": [
+      "**FLSA Requirement:** Time-and-a-half for hours over 40/week for most employees",
+      "**Exempt Employees:** Some salaried professionals may be exempt from overtime",
+      "**State Variations:** Some states have stricter overtime laws than federal",
+      "**Tax Treatment:** Overtime taxed at marginal rates, same as regular pay",
+      "**FICA Impact:** Overtime increases total earnings for Social Security/Medicare",
+      "**Recording:** Employers must track and pay overtime correctly"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How is overtime taxed in the USA?",
+      "answer": "Overtime pay is taxed at your marginal federal income tax rate plus state income tax, Social Security (6.2%), and Medicare (1.45%). It doesn't receive special tax treatment - it's taxed the same as regular wages."
+    },
+    {
+      "question": "What's the federal overtime rate in the USA?",
+      "answer": "Under the FLSA, non-exempt employees must receive time-and-a-half (1.5x their regular rate) for hours worked over 40 in a workweek. Some states require double-time for excessive overtime hours."
+    },
+    {
+      "question": "Does overtime affect my tax bracket?",
+      "answer": "Yes, overtime increases your total annual earnings, potentially pushing you into higher federal tax brackets (from 22% to 24%, etc.) and state tax brackets. The overtime itself is taxed at your new marginal rate."
+    },
+    {
+      "question": "Are salaried employees eligible for overtime?",
+      "answer": "It depends on their job duties and salary level. Many salaried employees are exempt from overtime under FLSA if they meet certain criteria (duties test and salary threshold currently $43,888/year)."
+    },
+    {
+      "question": "How do I calculate my overtime rate?",
+      "answer": "Divide your annual salary by 2,080 (52 weeks × 40 hours) to get your regular hourly rate. Multiply by 1.5 for time-and-a-half or 2.0 for double-time overtime rates."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "USA Salary Calculator",
+      "url": "/en/usa-salary-calculator",
+      "description": "Calculate base salary take-home pay in the USA"
+    },
+    {
+      "text": "USA Bonus Tax Calculator",
+      "url": "/en/usa-bonus-tax",
+      "description": "Calculate tax on bonuses in the USA"
+    },
+    {
+      "text": "Take-Home Pay Calculator",
+      "url": "/en/take-home-pay-calculator",
+      "description": "General calculator for net salary calculations"
+    }
+  ],
+  "externalResources": {
+    "title": "Official US Employment Resources",
+    "links": [
+      {
+        "text": "DOL Overtime Rules",
+        "url": "https://www.dol.gov/agencies/whd/overtime",
+        "description": "Department of Labor overtime pay requirements."
+      },
+      {
+        "text": "IRS Overtime Taxation",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/employment-taxes",
+        "description": "IRS guidance on taxing overtime pay."
+      }
+    ]
+  },
+  "conclusion": "Overtime pay can significantly boost your earnings in the USA, but understanding the tax implications is crucial for maximizing your take-home pay. This calculator uses official 2026 IRS rates to show you exactly how overtime is taxed at marginal rates, potentially resulting in higher effective tax rates than your regular salary. Whether you're working occasional extra hours or regularly putting in overtime, knowing the true value of your time helps you make informed decisions about work-life balance and compensation. Remember that overtime rates and taxation can vary based on your employment contract and state laws. For personalized advice, consult your employment contract or IRS resources.",
+  "disclaimer": "SalaryWise provides estimated overtime calculations based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How is overtime taxed in the USA?", "acceptedAnswer": { "@type": "Answer", "text": "Overtime pay is taxed at your marginal federal income tax rate plus state income tax, Social Security (6.2%), and Medicare (1.45%). It doesn't receive special tax treatment - it's taxed the same as regular wages." } },
+          { "@type": "Question", "name": "What's the federal overtime rate in the USA?", "acceptedAnswer": { "@type": "Answer", "text": "Under the FLSA, non-exempt employees must receive time-and-a-half (1.5x their regular rate) for hours worked over 40 in a workweek. Some states require double-time for excessive overtime hours." } },
+          { "@type": "Question", "name": "Does overtime affect my tax bracket?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, overtime increases your total annual earnings, potentially pushing you into higher federal tax brackets (from 22% to 24%, etc.) and state tax brackets. The overtime itself is taxed at your new marginal rate." } },
+          { "@type": "Question", "name": "Are salaried employees eligible for overtime?", "acceptedAnswer": { "@type": "Answer", "text": "It depends on their job duties and salary level. Many salaried employees are exempt from overtime under FLSA if they meet certain criteria (duties test and salary threshold currently $43,888/year)." } },
+          { "@type": "Question", "name": "How do I calculate my overtime rate?", "acceptedAnswer": { "@type": "Answer", "text": "Divide your annual salary by 2,080 (52 weeks × 40 hours) to get your regular hourly rate. Multiply by 1.5 for time-and-a-half or 2.0 for double-time overtime rates." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "USA Overtime Pay Calculator", "item": "https://salarywise.io/en/usa-overtime-pay" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "USA Overtime Pay Calculator",
+        "url": "https://salarywise.io/en/usa-overtime-pay",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate overtime pay in the USA including federal tax, state tax, Social Security, and Medicare."
+      }
+    ]
+  }
+}

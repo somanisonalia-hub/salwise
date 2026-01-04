@@ -20,6 +20,7 @@ interface PageData {
   tips?: string[];
   faqs?: any[];
   disclaimer?: string | { title: string; content: string };
+  universalDisclaimer?: { icon: string; title: string; content: string };
   intro?: string | { paragraph1: string; paragraph2: string };
   howItWorks?: string;
   whatIsGrossVsNet?: string;
@@ -1719,6 +1720,19 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
               </div>
             )}
 
+            {/* Universal Disclaimer */}
+            {pageData.universalDisclaimer && (
+              <div className="bg-yellow-50 border border-yellow-200 rounded-lg p-6 mb-6">
+                <div className="flex items-start">
+                  <span className="text-2xl mr-3">{pageData.universalDisclaimer.icon}</span>
+                  <div>
+                    <h3 className="text-lg font-bold text-yellow-800 mb-2">{pageData.universalDisclaimer.title}</h3>
+                    <p className="text-yellow-700 leading-relaxed">{pageData.universalDisclaimer.content}</p>
+                  </div>
+                </div>
+              </div>
+            )}
+
             {/* Related Calculators Section */}
             <div className="bg-white border border-gray-200 rounded-lg shadow-sm p-8">
               <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Explore Our Salary Tools</h2>
@@ -1734,7 +1748,7 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
                     <a href="/en/salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Salary Calculator</a>
                     <a href="/en/gross-to-net-salary" className="block text-blue-600 hover:text-blue-800 text-sm">Gross to Net Calculator</a>
                     <a href="/en/take-home-pay-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Take-Home Pay Calculator</a>
-                    <a href="/en/hourly-to-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Hourly to Salary Calculator</a>
+                    <a href="/en/salary-after-tax-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Salary After Tax Calculator</a>
                   </div>
                 </div>
 
@@ -1759,8 +1773,7 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
                   <div className="space-y-2">
                     <a href="/en/usa-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">USA Salary Calculator</a>
                     <a href="/en/uk-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">UK Salary Calculator</a>
-                    <a href="/en/canada-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Canada Salary Calculator</a>
-                    <a href="/en/australia-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Australia Salary Calculator</a>
+                    <a href="/en/ireland-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Ireland Salary Calculator</a>
                   </div>
                 </div>
 
@@ -1770,10 +1783,10 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
                     🏢 By Industry
                   </h3>
                   <div className="space-y-2">
-                    <a href="/en/salary-calculator-it-tech" className="block text-blue-600 hover:text-blue-800 text-sm">IT/Tech Salary Calculator</a>
-                    <a href="/en/salary-calculator-healthcare" className="block text-blue-600 hover:text-blue-800 text-sm">Healthcare Salary Calculator</a>
-                    <a href="/en/salary-calculator-engineering" className="block text-blue-600 hover:text-blue-800 text-sm">Engineering Salary Calculator</a>
-                    <a href="/en/salary-calculator-finance-banking" className="block text-blue-600 hover:text-blue-800 text-sm">Finance/Banking Calculator</a>
+                    <a href="/en/salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Technology & IT</a>
+                    <a href="/en/salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Healthcare</a>
+                    <a href="/en/salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Finance & Banking</a>
+                    <a href="/en/salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Engineering</a>
                   </div>
                 </div>
 
@@ -1783,10 +1796,10 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
                     📊 Financial Planning
                   </h3>
                   <div className="space-y-2">
-                    <a href="/en/annual-raise-promotion-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Raise Calculator</a>
-                    <a href="/en/salary-vs-expenses-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Salary vs Expenses Calculator</a>
-                    <a href="/en/savings-from-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Savings Calculator</a>
-                    <a href="/en/retirement-contribution-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Retirement Calculator</a>
+                    <a href="/en/salary-negotiation-tips" className="block text-blue-600 hover:text-blue-800 text-sm">Salary Negotiation Tips</a>
+                    <a href="/en/understanding-gross-vs-net-salary" className="block text-blue-600 hover:text-blue-800 text-sm">Gross vs Net Salary</a>
+                    <a href="/en/how-to-calculate-take-home-pay" className="block text-blue-600 hover:text-blue-800 text-sm">Calculate Take-Home Pay</a>
+                    <a href="/en/taxes-explained-by-country" className="block text-blue-600 hover:text-blue-800 text-sm">Tax Information</a>
                   </div>
                 </div>
 
@@ -1796,10 +1809,10 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
                     💰 Tax & Benefits
                   </h3>
                   <div className="space-y-2">
-                    <a href="/en/bonus-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Bonus Calculator</a>
-                    <a href="/en/overtime-pay-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Overtime Calculator</a>
-                    <a href="/en/loan-emi-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Loan EMI Calculator</a>
-                    <a href="/en/salary-vs-freelance-income-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Freelance Income Calculator</a>
+                    <a href="/en/usa-bonus-tax" className="block text-blue-600 hover:text-blue-800 text-sm">USA Bonus Tax</a>
+                    <a href="/en/uk-bonus-tax" className="block text-blue-600 hover:text-blue-800 text-sm">UK Bonus Tax</a>
+                    <a href="/en/ireland-bonus-tax" className="block text-blue-600 hover:text-blue-800 text-sm">Ireland Bonus Tax</a>
+                    <a href="/en/usa-overtime-pay" className="block text-blue-600 hover:text-blue-800 text-sm">USA Overtime Pay</a>
                   </div>
                 </div>
               </div>

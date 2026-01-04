@@ -1,0 +1,13 @@
+{
+  "slug": "help",
+  "type": "page",
+  "h1": "Help Center",
+  "metaTitle": "Help Center | User Guide | SalaryWise.io",
+  "metaDescription": "User guides and help documentation for SalaryWise.io calculators.",
+  "primaryKeyword": "help center",
+  "longTailKeywords": ["user guide", "help documentation", "how to use"],
+  "related": ["faq", "support"],
+  "intro": "Learn how to use our salary calculators effectively with our comprehensive help guides.",
+  "content": "User guides and help documentation.",
+  "disclaimer": "Help content is regularly updated."
+}

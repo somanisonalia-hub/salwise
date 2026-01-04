@@ -3,7 +3,7 @@
   "type": "calculator",
   "h1": "Global Salary Calculator – Compare Take-Home Pay Worldwide",
   "metaTitle": "Global Salary Calculator | Compare Salaries Across Countries",
-  "metaDescription": "Compare take-home pay across different countries with our global salary calculator. Calculate net salary after taxes for 15+ countries worldwide.",
+  "metaDescription": "Compare take-home pay across USA, UK, and Ireland with our global salary calculator. Calculate net salary after taxes for these major economies.",
   "primaryKeyword": "global salary calculator",
   "longTailKeywords": [
     "salary calculator worldwide",
@@ -15,10 +15,10 @@
   "related": [
     "gross-to-net-salary",
     "take-home-pay-calculator",
-    "net-to-gross-salary"
+    "salary-after-tax-calculator"
   ],
   "dataRef": "globalSalary",
-  "intro": "Compare salaries across different countries with our comprehensive global salary calculator. This tool helps you understand how your compensation stacks up internationally by calculating take-home pay after local taxes and deductions. Whether you're considering international job offers, planning an expatriate assignment, or simply curious about global compensation standards, our calculator provides accurate estimates for over 15 countries worldwide. Select your country and see how your salary translates to real purchasing power in different economies.",
+  "intro": "Compare salaries across USA, UK, and Ireland with our comprehensive global salary calculator. This tool helps you understand how your compensation stacks up internationally by calculating take-home pay after local taxes and deductions. Whether you're considering international job offers, planning an expatriate assignment, or simply curious about global compensation standards, our calculator provides accurate estimates for these major economies. Select your country and see how your salary translates to real purchasing power in different economies.",
   "ui": {
     "calculatorHeading": "Compare Global Salaries",
     "resultsHeading": "Salary Comparison Results",
@@ -27,23 +27,21 @@
     "resultsLabel": "Comparison Results:",
     "noResultsText": "Select countries to compare salaries"
   },
-  "howGlobalSalaryCalculatorWorks": "Our global salary calculator works by applying country-specific tax rates and deductions to your gross salary. First, select your base country and target comparison countries. The calculator then applies each country's progressive tax brackets, social insurance contributions, and mandatory deductions. Results show your net take-home pay in each country, helping you understand the real value of international compensation packages. All calculations use the most current tax rates and are updated regularly to reflect changes in tax legislation.",
+  "howGlobalSalaryCalculatorWorks": "Our global salary calculator works by applying country-specific tax rates and deductions to your gross salary. Select your base country and compare against USA, UK, and Ireland. The calculator applies each country's progressive tax brackets, social insurance contributions, and mandatory deductions. Results show your net take-home pay in each country, helping you understand the real value of international compensation packages. All calculations use the most current tax rates and are updated regularly to reflect changes in tax legislation.",
   "workedExamples": {
     "example1": {
       "title": "$75,000 USA Salary Comparison",
       "scenario": "Software engineer earning $75,000 annually in the United States",
       "usaNet": "$55,250",
-      "germanyNet": "€52,180",
       "ukNet": "£45,920",
-      "canadaNet": "C$56,410"
+      "irelandNet": "€48,750"
     },
     "example2": {
-      "title": "€65,000 Germany Salary Comparison",
-      "scenario": "Marketing manager earning €65,000 annually in Germany",
-      "germanyNet": "€48,750",
-      "usaNet": "$62,180",
-      "ukNet": "£51,420",
-      "franceNet": "€47,920"
+      "title": "£55,000 UK Salary Comparison",
+      "scenario": "Project manager earning £55,000 annually in the United Kingdom",
+      "ukNet": "£41,250",
+      "usaNet": "$67,180",
+      "irelandNet": "€52,420"
     }
   },
   "whoShouldUseThisCalculator": [

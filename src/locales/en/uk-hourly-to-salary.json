@@ -1,0 +1,180 @@
+{
+  "slug": "uk-hourly-to-salary",
+  "type": "calculator",
+  "h1": "UK Hourly to Salary Calculator – Convert Hourly Pay to Annual Salary",
+  "metaTitle": "UK Hourly to Salary Calculator | Convert Hourly Pay to Annual Salary",
+  "metaDescription": "Convert hourly pay to annual salary in the UK. Calculate your take-home pay including PAYE tax, NIC, pension. Free & accurate 2026 rates.",
+  "primaryKeyword": "UK hourly to salary calculator",
+  "longTailKeywords": [
+    "UK hourly to salary calculator",
+    "hourly pay UK",
+    "salary from hourly UK",
+    "convert hourly to salary UK",
+    "hourly rate to annual salary UK",
+    "part time salary calculator UK",
+    "hourly wage calculator UK"
+  ],
+  "related": [
+    "uk-salary-calculator",
+    "gross-to-net-salary",
+    "uk-overtime-pay"
+  ],
+  "dataRef": "ukHourlyToSalary",
+  "intro": "Convert your hourly wage to annual salary in the UK with our comprehensive calculator. Whether you're considering a new job offer, negotiating pay rates, or planning your budget, understanding your annual equivalent salary is crucial for financial planning. This calculator accounts for the UK's unique tax system including PAYE income tax, National Insurance contributions (NIC), pension contributions, and student loan repayments. Based on official 2026 HMRC rates, it provides accurate calculations for hourly workers, part-time employees, and contractors who bill by the hour. Simply enter your hourly rate, hours worked per week, and let the calculator show you your net take-home pay across different payment periods.",
+  "ui": {
+    "calculatorHeading": "Convert Hourly Rate to Salary",
+    "resultsHeading": "Salary Conversion Results",
+    "calculateButton": "Calculate Salary",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This UK hourly to salary calculator converts your hourly wage to annual, monthly, and weekly equivalents while accounting for UK tax deductions. First, it calculates your gross annual salary by multiplying hourly rate × hours per week × 52 weeks. Then it applies UK 2026 tax rates: PAYE income tax (20%, 40%, or 45% across bands after £12,570 Personal Allowance), National Insurance (8% and 2% rates), and optional deductions like pension contributions and student loans. The result shows both gross and net salary figures so you can understand your true take-home pay. Holiday pay and other benefits are not included in this calculation.",
+  "useCases": {
+    "example1": {
+      "title": "£15/hour Retail Worker",
+      "scenario": "A retail assistant working £15 per hour, 40 hours per week",
+      "hourlyRate": "£15",
+      "hoursPerWeek": "40",
+      "grossAnnual": "£31,200",
+      "netAnnual": "£26,248",
+      "netMonthly": "£2,187",
+      "netWeekly": "£505",
+      "payeTax": "£3,654 (20% rate)",
+      "nic": "£1,298 (8% rate)",
+      "effectiveTaxRate": "15.8%"
+    },
+    "example2": {
+      "title": "£25/hour Professional",
+      "scenario": "A skilled professional earning £25 per hour, 35 hours per week",
+      "hourlyRate": "£25",
+      "hoursPerWeek": "35",
+      "grossAnnual": "£45,500",
+      "netAnnual": "£36,362",
+      "netMonthly": "£3,030",
+      "netWeekly": "£700",
+      "payeTax": "£7,254 (24.6% effective rate)",
+      "nic": "£2,054 (8% rate)",
+      "effectiveTaxRate": "20.1%"
+    },
+    "example3": {
+      "title": "£20/hour with Pension",
+      "scenario": "An office worker earning £20 per hour, 38 hours per week with 3% pension contribution",
+      "hourlyRate": "£20",
+      "hoursPerWeek": "38",
+      "grossAnnual": "£39,520",
+      "netAnnual": "£32,514",
+      "netMonthly": "£2,710",
+      "netWeekly": "£626",
+      "payeTax": "£5,454 (20% rate)",
+      "nic": "£1,756 (8% rate)",
+      "pension": "£1,186 (3%)",
+      "effectiveTaxRate": "18.7%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Hourly workers comparing job offers and understanding annual equivalent pay",
+    "Part-time employees calculating their annual salary for budgeting purposes",
+    "Freelancers and contractors who charge by the hour",
+    "Employers calculating hourly rates for job postings",
+    "Students and graduates considering hourly paid roles",
+    "Anyone converting between hourly and salary-based compensation"
+  ],
+  "importantConsiderations": {
+    "title": "Important Considerations for Hourly Pay in the UK",
+    "points": [
+      "**Holiday Pay:** Most employees are entitled to 5.6 weeks paid annual leave, which adds about 10.8% to your annual equivalent salary",
+      "**National Minimum Wage:** UK minimum wage varies by age and region (£11.44 for 21+ in 2024)",
+      "**Contract Hours:** Your calculation assumes consistent hours throughout the year",
+      "**Tax Treatment:** Hourly pay is taxed the same as salary income under PAYE",
+      "**Pension:** Many employers offer pension contributions based on salary, not hourly rates",
+      "**Overtime:** Time-and-a-half or double-time for hours worked beyond your contracted hours"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How do I convert hourly pay to annual salary in the UK?",
+      "answer": "Multiply your hourly rate by hours worked per week, then by 52 weeks in a year. Then deduct UK taxes (PAYE, NIC) and other deductions to get your net annual salary."
+    },
+    {
+      "question": "Does this calculator include holiday pay?",
+      "answer": "No, this calculator shows your base hourly conversion. Most UK employees are entitled to 5.6 weeks paid annual leave, which typically adds 10.8% to your annual equivalent salary."
+    },
+    {
+      "question": "What's the UK National Minimum Wage?",
+      "answer": "The UK National Living Wage for workers aged 21+ is £11.44 per hour (2024 rates). Apprentices and those aged 18-20 have different rates."
+    },
+    {
+      "question": "How are hourly workers taxed in the UK?",
+      "answer": "Hourly pay is treated as salary income and taxed under the PAYE system with the same rates and bands as regular employees."
+    },
+    {
+      "question": "Can I include overtime in this calculation?",
+      "answer": "This calculator is for your base hourly rate. Use our UK Overtime Pay Calculator for overtime calculations."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "UK Salary Calculator",
+      "url": "/en/uk-salary-calculator",
+      "description": "Calculate take-home pay from annual salary in the UK"
+    },
+    {
+      "text": "UK Overtime Pay Calculator",
+      "url": "/en/uk-overtime-pay",
+      "description": "Calculate overtime pay and tax in the UK"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    }
+  ],
+  "externalResources": {
+    "title": "Official UK Employment Resources",
+    "links": [
+      {
+        "text": "GOV.UK - National Minimum Wage",
+        "url": "https://www.gov.uk/national-minimum-wage",
+        "description": "Official information about minimum wage rates in the UK."
+      },
+      {
+        "text": "Citizens Advice - Pay and Work",
+        "url": "https://www.citizensadvice.org.uk/work/pay-and-work-rights/",
+        "description": "Information about pay rates and employment rights in the UK."
+      }
+    ]
+  },
+  "conclusion": "Converting hourly pay to annual salary in the UK requires understanding both your gross earnings and the impact of UK tax deductions. This calculator provides accurate 2026 conversions based on official HMRC rates, helping you compare job offers, plan your budget, and make informed career decisions. Remember that additional factors like holiday pay, overtime, and benefits can significantly affect your total compensation package. For personalized advice, consult with HMRC or a qualified tax professional.",
+  "disclaimer": "SalaryWise provides estimated salary conversions based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How do I convert hourly pay to annual salary in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "Multiply your hourly rate by hours worked per week, then by 52 weeks in a year. Then deduct UK taxes (PAYE, NIC) and other deductions to get your net annual salary." } },
+          { "@type": "Question", "name": "Does this calculator include holiday pay?", "acceptedAnswer": { "@type": "Answer", "text": "No, this calculator shows your base hourly conversion. Most UK employees are entitled to 5.6 weeks paid annual leave, which typically adds 10.8% to your annual equivalent salary." } },
+          { "@type": "Question", "name": "What's the UK National Minimum Wage?", "acceptedAnswer": { "@type": "Answer", "text": "The UK National Living Wage for workers aged 21+ is £11.44 per hour (2024 rates). Apprentices and those aged 18-20 have different rates." } },
+          { "@type": "Question", "name": "How are hourly workers taxed in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "Hourly pay is treated as salary income and taxed under the PAYE system with the same rates and bands as regular employees." } },
+          { "@type": "Question", "name": "Can I include overtime in this calculation?", "acceptedAnswer": { "@type": "Answer", "text": "This calculator is for your base hourly rate. Use our UK Overtime Pay Calculator for overtime calculations." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "UK Hourly to Salary Calculator", "item": "https://salarywise.io/en/uk-hourly-to-salary" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "UK Hourly to Salary Calculator",
+        "url": "https://salarywise.io/en/uk-hourly-to-salary",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Convert hourly pay to annual salary in the UK including taxes and deductions."
+      }
+    ]
+  }
+}

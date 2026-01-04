@@ -78,17 +78,17 @@
         "popular": false
       },
       {
-        "icon": "🏠",
-        "text": "Loan Calculator",
-        "description": "EMI & mortgage payments",
-        "href": "/loan-emi-calculator",
+        "icon": "🇬🇧",
+        "text": "UK Tax Calculator",
+        "description": "PAYE, NIC, student loans",
+        "href": "/uk-salary-calculator",
         "popular": false
       },
       {
-        "icon": "💻",
-        "text": "Tech Salary",
-        "description": "IT & developer compensation",
-        "href": "/salary-calculator-it-tech",
+        "icon": "🇮🇪",
+        "text": "Ireland Tax Calculator",
+        "description": "PAYE, USC, PRSI taxes",
+        "href": "/ireland-salary-calculator",
         "popular": false
       },
       {
@@ -132,50 +132,29 @@
         ]
       },
       {
-        "name": "Specialized Calculators",
-        "description": "Industry and scenario-specific tools",
+        "name": "Country-Specific Calculators",
+        "description": "Localized tax calculations for major markets",
         "items": [
           {
-            "title": "IT/Tech Salary",
-            "description": "Tech compensation with equity, remote stipends & learning budgets",
-            "icon": "💻",
-            "href": "/salary-calculator-it-tech",
-            "features": ["Equity analysis", "Benefits", "Experience levels"]
+            "title": "USA Salary Calculator",
+            "description": "Federal & state income tax, FICA taxes, comprehensive benefits",
+            "icon": "🇺🇸",
+            "href": "/usa-salary-calculator",
+            "features": ["Federal tax", "State tax", "401k contributions"]
           },
           {
-            "title": "Loan Calculator",
-            "description": "EMI calculations with prepayments and loan comparisons",
-            "icon": "🏠",
-            "href": "/loan-emi-calculator",
-            "features": ["Prepayments", "Balloon loans", "Multi-currency"]
+            "title": "UK Salary Calculator",
+            "description": "PAYE income tax, National Insurance, student loan repayments",
+            "icon": "🇬🇧",
+            "href": "/uk-salary-calculator",
+            "features": ["PAYE tax", "NIC contributions", "Student loans"]
           },
           {
-            "title": "Hourly vs Salary",
-            "description": "Compare hourly wages vs salaried positions",
-            "icon": "⏰",
-            "href": "/hourly-to-salary-calculator",
-            "features": ["Overtime calc", "Benefits comparison", "Tax impact"]
-          },
-          {
-            "title": "Bonus Calculator",
-            "description": "Calculate bonus impact and total compensation",
-            "icon": "🎁",
-            "href": "/bonus-calculator",
-            "features": ["Tax impact", "Total comp", "Scenario analysis"]
-          },
-          {
-            "title": "Overtime Calculator",
-            "description": "Calculate overtime pay and premium earnings",
-            "icon": "⏱️",
-            "href": "/overtime-pay-calculator",
-            "features": ["Premium rates", "Tax impact", "Weekly totals"]
-          },
-          {
-            "title": "Budget Calculator",
-            "description": "Compare salary vs expenses and savings potential",
-            "icon": "📈",
-            "href": "/salary-vs-expenses-calculator",
-            "features": ["Expense tracking", "Savings goals", "Budget planning"]
+            "title": "Ireland Salary Calculator",
+            "description": "PAYE tax, Universal Social Charge, PRSI contributions",
+            "icon": "🇮🇪",
+            "href": "/ireland-salary-calculator",
+            "features": ["PAYE tax", "USC", "PRSI"]
           }
         ]
       }
@@ -232,24 +211,9 @@
         "href": "/uk-salary-calculator"
       },
       {
-        "name": "Canada",
-        "flag": "🇨🇦",
-        "href": "/canada-salary-calculator"
-      },
-      {
-        "name": "Australia",
-        "flag": "🇦🇺",
-        "href": "/australia-salary-calculator"
-      },
-      {
         "name": "Ireland",
         "flag": "🇮🇪",
         "href": "/ireland-salary-calculator"
-      },
-      {
-        "name": "India",
-        "flag": "🇮🇳",
-        "href": "/india-salary-calculator"
       }
     ]
   },
@@ -464,14 +428,9 @@
             "description": "UK Tax Authority"
           },
           {
-            "name": "CRA (Canada)",
-            "url": "https://www.canada.ca/en/revenue-agency.html",
-            "description": "Canadian Tax Authority"
-          },
-          {
-            "name": "ATO (Australia)",
-            "url": "https://www.ato.gov.au",
-            "description": "Australian Tax Authority"
+            "name": "Revenue (Ireland)",
+            "url": "https://www.revenue.ie",
+            "description": "Irish Tax Authority"
           },
           {
             "name": "BLS (USA)",
@@ -606,15 +565,9 @@
           },
           {
             "@type": "GovernmentOrganization",
-            "name": "Canada Revenue Agency (CRA)",
-            "url": "https://www.canada.ca/en/revenue-agency.html",
-            "description": "Official Canadian tax authority providing tax information and services"
-          },
-          {
-            "@type": "GovernmentOrganization",
-            "name": "Australian Taxation Office (ATO)",
-            "url": "https://www.ato.gov.au",
-            "description": "Official Australian tax authority providing tax information and services"
+            "name": "Revenue Commissioners (Ireland)",
+            "url": "https://www.revenue.ie",
+            "description": "Official Irish tax authority providing tax information and services"
           },
           {
             "@type": "WebSite",

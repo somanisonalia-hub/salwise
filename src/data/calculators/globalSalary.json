@@ -11,15 +11,7 @@
       "options": [
         {"value": "IE", "label": "🇮🇪 Ireland (€)"},
         {"value": "US", "label": "🇺🇸 United States ($)"},
-        {"value": "UK", "label": "🇬🇧 United Kingdom (£)"},
-        {"value": "CA", "label": "🇨🇦 Canada (CAD)"},
-        {"value": "AU", "label": "🇦🇺 Australia (AUD)"},
-        {"value": "DE", "label": "🇩🇪 Germany (€)"},
-        {"value": "FR", "label": "🇫🇷 France (€)"},
-        {"value": "IN", "label": "🇮🇳 India (₹)"},
-        {"value": "JP", "label": "🇯🇵 Japan (¥)"},
-        {"value": "SG", "label": "🇸🇬 Singapore (SGD)"},
-        {"value": "AE", "label": "🇦🇪 UAE (AED)"}
+        {"value": "UK", "label": "🇬🇧 United Kingdom (£)"}
       ],
       "required": true,
       "description": "Select your country for accurate currency and regional data"

@@ -19,8 +19,8 @@
   "related": [
     "gross-to-net-salary",
     "take-home-pay-calculator",
-    "net-to-gross-salary",
-    "ireland-salary-calculator"
+    "salary-after-tax-calculator",
+    "ireland-overtime-pay"
   ],
   "dataRef": "irelandSalaryCalculator",
   "intro": "Calculate your take-home pay in Ireland for 2026 with our comprehensive salary calculator. Based on official Revenue.ie tax rates and guidelines, this tool accurately calculates PAYE (Pay As You Earn) income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions. Ireland's progressive tax system uses multiple tax bands and rates, making precise calculations essential for financial planning. Whether you're an Irish resident, expatriate worker, or employer calculating payroll costs, this calculator provides reliable estimates for budgeting, salary negotiations, and understanding your net income after all mandatory Irish tax deductions. Use current 2026 tax brackets and rates for accurate financial planning.",
@@ -33,7 +33,7 @@
     "noResultsText": "No results calculated yet"
   },
   "howThisIrelandSalaryCalculatorWorks": "This Ireland salary calculator provides accurate 2026 tax calculations based on official Revenue.ie rates and Deloitte's comprehensive tax methodology. The calculation follows Ireland's progressive tax system: First, your gross annual salary is determined. Then PAYE (Pay As You Earn) income tax is calculated using 2026 tax brackets: 20% on the first €42,335, 40% on income €42,336-€70,557, and 45% above €70,557. Universal Social Charge (USC) is applied across four brackets: 0.5% up to €12,012, 2% from €12,013-€25,760, 4.5% from €25,761-€70,044, and 8% above €70,044. Pay Related Social Insurance (PRSI) is calculated at standard employee rates. Additional deductions like pensions and bonuses are factored in. The calculator follows official Irish tax calculation methods for reliable financial planning.",
-  "workedExamples": {
+  "useCases": {
     "example1": {
       "title": "€35,000 Entry-Level Professional",
       "scenario": "A graduate or junior professional earning €35,000 annually in Ireland",
@@ -165,9 +165,14 @@
       "description": "Learn about gross vs net salary concepts"
     },
     {
-      "text": "Global Salary Calculator",
-      "url": "/en/salary-calculator",
-      "description": "Compare salaries across different countries"
+      "text": "Ireland Bonus Tax Calculator",
+      "url": "/en/ireland-bonus-tax",
+      "description": "Calculate tax on bonuses in Ireland"
+    },
+    {
+      "text": "Ireland Overtime Pay Calculator",
+      "url": "/en/ireland-overtime-pay",
+      "description": "Calculate overtime pay and tax in Ireland"
     }
   ],
   "externalLinks": [

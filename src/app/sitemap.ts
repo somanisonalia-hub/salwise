@@ -1,244 +1,335 @@
 import { MetadataRoute } from 'next';
+import fs from 'fs';
+import path from 'path';
 
 // Required for static export compatibility
 export const dynamic = 'force-static';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://salarywise.io';
-  const lastModified = new Date('2026-01-02'); // General pages
-  const corePagesModified = new Date('2026-01-07'); // Updated core pages (intent fix)
 
-  // Static pages - English locale URLs
-  const staticPages = [
-    {
-      url: `${baseUrl}/en`,
-      lastModified,
-      changeFrequency: 'daily' as const,
-      priority: 1,
-    },
+  // Staggered lastmod dates for batch control
+  const batch1Date = new Date('2025-01-04'); // Core calculators - crawl first
+  const batch2Date = new Date('2025-01-06'); // Essential pages - crawl second
+  const batch3Date = new Date('2025-01-08'); // Guides - crawl last
+
+  // ===========================================
+  // BATCH 1: Main Country Calculators + Global Tools (19 URLs)
+  // Focus: Core calculators users will click first
+  // ===========================================
+
+  const batch1Pages: MetadataRoute.Sitemap = [
+    // Ireland Calculators (5 pages) - Priority 1.0, Daily updates
     {
       url: `${baseUrl}/en/ireland-salary-calculator`,
-      lastModified: corePagesModified,
-      changeFrequency: 'weekly' as const,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
       priority: 1.0,
     },
     {
-      url: `${baseUrl}/en/salary-calculator`,
-      lastModified: corePagesModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
+      url: `${baseUrl}/en/ireland-hourly-to-salary`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
     },
     {
-      url: `${baseUrl}/en/hourly-to-salary-calculator`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
+      url: `${baseUrl}/en/ireland-overtime-pay`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/en/ireland-bonus-tax`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/en/ireland-contractor-salary-calculator`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+
+    // UK Calculators (5 pages) - Priority 1.0, Daily updates
+    {
+      url: `${baseUrl}/en/uk-salary-calculator`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/en/uk-hourly-to-salary`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/en/uk-overtime-pay`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/en/uk-bonus-tax`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/en/uk-contractor-salary-calculator`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+
+    // USA Calculators (5 pages) - Priority 1.0, Daily updates
+    {
+      url: `${baseUrl}/en/usa-salary-calculator`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/en/usa-hourly-to-salary`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/en/usa-overtime-pay`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/en/usa-bonus-tax`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/en/usa-contractor-salary-calculator`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
+    },
+
+    // Global Tools (4 pages) - Priority 1.0, Daily updates
+    {
+      url: `${baseUrl}/en/salary-calculator`,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
     },
     {
       url: `${baseUrl}/en/gross-to-net-salary`,
-      lastModified: corePagesModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.9,
-    },
-    {
-      url: `${baseUrl}/en/net-to-gross-salary`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/en/overtime-pay-calculator`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/en/bonus-calculator`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
     },
     {
       url: `${baseUrl}/en/take-home-pay-calculator`,
-      lastModified: corePagesModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/en/loan-emi-calculator`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/en/salary-vs-expenses-calculator`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/en/annual-raise-promotion-calculator`,
-      lastModified,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/en/salary-vs-freelance-income-calculator`,
-      lastModified,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/en/savings-from-salary-calculator`,
-      lastModified,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/en/retirement-contribution-calculator`,
-      lastModified,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
     },
     {
       url: `${baseUrl}/en/salary-after-tax-calculator`,
-      lastModified: corePagesModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/en/annual-raise-calculator`,
-      lastModified,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/en/salary-comparison-calculator`,
-      lastModified,
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/en/take-home-vs-cost-of-living-calculator`,
-      lastModified,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
-    },
-    {
-      url: `${baseUrl}/en/overtime-bonus-tax-calculator`,
-      lastModified,
-      changeFrequency: 'monthly' as const,
-      priority: 0.6,
+      lastModified: batch1Date,
+      changeFrequency: 'daily' as const,
+      priority: 1.0,
     },
   ];
 
-  // Country pages - All country calculators (excluding ireland which is now a core page)
-  const countries = ['usa', 'uk', 'canada', 'australia', 'germany', 'france', 'spain', 'india', 'singapore', 'netherlands', 'sweden', 'switzerland', 'new-zealand', 'south-africa'];
-  const countryPages = countries.map(country => ({
-    url: `${baseUrl}/en/${country}-salary-calculator`,
-    lastModified,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }));
+  // ===========================================
+  // BATCH 2: Essential / Legal Pages (18 URLs)
+  // Focus: Trust & compliance pages for AdSense
+  // ===========================================
 
-  // Industry pages - Job-specific calculators
-  const industries = ['it-tech', 'healthcare', 'engineering', 'teacher', 'finance-banking', 'retail', 'construction', 'legal', 'marketing-sales', 'startup-entrepreneur'];
-  const industryPages = industries.map(industry => ({
-    url: `${baseUrl}/en/salary-calculator-${industry}`,
-    lastModified,
-    changeFrequency: 'monthly' as const,
-    priority: 0.6,
-  }));
-
-  // Guide pages - Educational content
-  const guides = ['understanding-gross-vs-net-salary', 'salary-negotiation-tips', 'how-to-calculate-take-home-pay', 'taxes-explained-by-country', 'salary-trends-2026-global'];
-  const guidePages = guides.map(guide => ({
-    url: `${baseUrl}/en/${guide}`,
-    lastModified,
-    changeFrequency: 'monthly' as const,
-    priority: 0.7,
-  }));
-
-  // Index pages
-  const indexPages = [
-    {
-      url: `${baseUrl}/en/country`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/en/industry`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/en/guides`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-  ];
-
-  // Essential pages for AdSense compliance and user experience
-  const essentialPages = [
+  const batch2Pages: MetadataRoute.Sitemap = [
+    // Core Essential Pages - Priority 0.8, Monthly updates
     {
       url: `${baseUrl}/en/about`,
-      lastModified,
+      lastModified: batch2Date,
       changeFrequency: 'monthly' as const,
-      priority: 0.7,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/en/contact`,
-      lastModified,
+      lastModified: batch2Date,
       changeFrequency: 'monthly' as const,
-      priority: 0.6,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/en/privacy-policy`,
-      lastModified,
+      lastModified: batch2Date,
       changeFrequency: 'monthly' as const,
-      priority: 0.5,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/en/terms-of-service`,
-      lastModified,
+      lastModified: batch2Date,
       changeFrequency: 'monthly' as const,
-      priority: 0.5,
+      priority: 0.8,
     },
     {
       url: `${baseUrl}/en/disclaimer`,
-      lastModified,
+      lastModified: batch2Date,
       changeFrequency: 'monthly' as const,
-      priority: 0.5,
-    },
-    {
-      url: `${baseUrl}/en/faq`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/en/how-salary-calculators-work`,
-      lastModified,
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    },
-    {
-      url: `${baseUrl}/en/salary-guide`,
-      lastModified,
-      changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
     {
       url: `${baseUrl}/en/cookies`,
-      lastModified,
+      lastModified: batch2Date,
       changeFrequency: 'monthly' as const,
-      priority: 0.5,
+      priority: 0.8,
+    },
+
+    // Content Pages - Priority 0.8, Monthly updates
+    {
+      url: `${baseUrl}/en/faq`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/how-salary-calculators-work`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/salary-guide`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/guides`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+
+    // Navigation Pages - Priority 0.8, Monthly updates
+    {
+      url: `${baseUrl}/en/country`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/industry`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+
+    // Educational Content - Priority 0.8, Monthly updates
+    {
+      url: `${baseUrl}/en/understanding-gross-vs-net-salary`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/salary-negotiation-tips`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/how-to-calculate-take-home-pay`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/taxes-explained-by-country`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/salary-trends-2026`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/en/sitemap`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
     },
   ];
 
-  return [...staticPages, ...countryPages, ...industryPages, ...guidePages, ...indexPages, ...essentialPages];
-}
+  // ===========================================
+  // BATCH 3: Guide Articles (5 URLs)
+  // Focus: Content depth for SEO / indexing
+  // ===========================================
 
+  const batch3Pages: MetadataRoute.Sitemap = [
+    // Guide Articles - Priority 0.6, Weekly updates
+    {
+      url: `${baseUrl}/en/guides/how-to-calculate-take-home`,
+      lastModified: batch3Date,
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/en/guides/gross-vs-net-salary`,
+      lastModified: batch3Date,
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/en/guides/salary-negotiation-tips`,
+      lastModified: batch3Date,
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/en/guides/taxes-explained-by-country`,
+      lastModified: batch3Date,
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    },
+    {
+      url: `${baseUrl}/en/guides/salary-trends-2026`,
+      lastModified: batch3Date,
+      changeFrequency: 'weekly' as const,
+      priority: 0.6,
+    },
+  ];
+
+  // Generate separate sitemap files for each batch
+  const generateSitemapXML = (pages: MetadataRoute.Sitemap, filename: string) => {
+    const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+${pages.map(page => `  <url>
+    <loc>${page.url}</loc>
+    <lastmod>${page.lastModified instanceof Date ? page.lastModified.toISOString() : page.lastModified || new Date().toISOString()}</lastmod>
+    <changefreq>${page.changeFrequency || 'monthly'}</changefreq>
+    <priority>${page.priority || 0.5}</priority>
+  </url>`).join('\n')}
+</urlset>`;
+
+    const outDir = path.join(process.cwd(), 'out');
+    if (!fs.existsSync(outDir)) {
+      fs.mkdirSync(outDir, { recursive: true });
+    }
+
+    fs.writeFileSync(path.join(outDir, filename), xmlContent);
+    console.log(`Generated ${filename} with ${pages.length} URLs`);
+  };
+
+  // Generate the three batch sitemaps
+  generateSitemapXML(batch1Pages, 'sitemap-batch1.xml');
+  generateSitemapXML(batch2Pages, 'sitemap-batch2.xml');
+  generateSitemapXML(batch3Pages, 'sitemap-batch3.xml');
+
+  // Return all pages for the main sitemap (optional - can return empty for separate files only)
+  return [...batch1Pages, ...batch2Pages, ...batch3Pages];
+}

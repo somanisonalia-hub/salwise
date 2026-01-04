@@ -1,0 +1,186 @@
+{
+  "slug": "usa-hourly-to-salary",
+  "type": "calculator",
+  "h1": "USA Hourly to Salary Calculator – Convert Hourly Pay to Annual Salary",
+  "metaTitle": "USA Hourly to Salary Calculator | Convert Hourly Pay to Annual Salary",
+  "metaDescription": "Convert hourly pay to annual salary in the USA. Calculate your take-home pay including federal tax, state tax, Social Security, Medicare. Free & accurate 2026 rates.",
+  "primaryKeyword": "USA hourly to salary calculator",
+  "longTailKeywords": [
+    "USA hourly to salary calculator",
+    "hourly pay USA",
+    "salary from hourly USA",
+    "convert hourly to salary USA",
+    "hourly rate to annual salary USA",
+    "part time salary calculator USA",
+    "hourly wage calculator USA"
+  ],
+  "related": [
+    "usa-salary-calculator",
+    "gross-to-net-salary",
+    "usa-overtime-pay"
+  ],
+  "dataRef": "usaHourlyToSalary",
+  "intro": "Convert your hourly wage to annual salary in the USA with our comprehensive calculator. Whether you're considering a new job offer, negotiating pay rates, or planning your budget, understanding your annual equivalent salary is crucial for financial planning. This calculator accounts for the US tax system including federal income tax, state income tax, Social Security tax (6.2%), Medicare tax (1.45%), 401(k) contributions, and other common deductions. Based on official 2026 IRS rates and all 50 state tax rates, it provides accurate calculations for hourly workers, part-time employees, and contractors who bill by the hour. Simply enter your hourly rate, hours worked per week, and selected state to see your net take-home pay across different payment periods.",
+  "ui": {
+    "calculatorHeading": "Convert Hourly Rate to Salary",
+    "resultsHeading": "Salary Conversion Results",
+    "calculateButton": "Calculate Salary",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This USA hourly to salary calculator converts your hourly wage to annual, monthly, and weekly equivalents while accounting for US tax deductions. First, it calculates your gross annual salary by multiplying hourly rate × hours per week × 52 weeks. Then it applies 2026 federal income tax using progressive brackets (10%-37%), state income tax based on your selected state (0% in Texas to 13.3% in California), Social Security tax (6.2%), Medicare tax (1.45%), and optional deductions like 401(k) contributions. The result shows both gross and net salary figures so you can understand your true take-home pay. Holiday pay and other benefits are not included in this calculation.",
+  "useCases": {
+    "example1": {
+      "title": "$20/hour Retail Worker",
+      "scenario": "A retail assistant working $20 per hour, 40 hours per week in California",
+      "hourlyRate": "$20",
+      "hoursPerWeek": "40",
+      "grossAnnual": "$41,600",
+      "netAnnual": "$31,248",
+      "netMonthly": "$2,604",
+      "netWeekly": "$601",
+      "federalTax": "$4,890 (11.8% rate)",
+      "stateTax": "$3,928 (9.5% CA rate)",
+      "socialSecurity": "$2,579 (6.2%)",
+      "medicare": "$603 (1.45%)",
+      "effectiveTaxRate": "24.8%"
+    },
+    "example2": {
+      "title": "$35/hour Professional",
+      "scenario": "A skilled professional earning $35 per hour, 35 hours per week in New York",
+      "hourlyRate": "$35",
+      "hoursPerWeek": "35",
+      "grossAnnual": "$63,700",
+      "netAnnual": "$45,362",
+      "netMonthly": "$3,780",
+      "netWeekly": "$873",
+      "federalTax": "$9,790 (15.4% effective rate)",
+      "stateTax": "$2,548 (4% NY rate)",
+      "socialSecurity": "$3,949 (6.2%)",
+      "medicare": "$923 (1.45%)",
+      "effectiveTaxRate": "28.8%"
+    },
+    "example3": {
+      "title": "$25/hour with 401k",
+      "scenario": "An office worker earning $25 per hour, 38 hours per week with 3% 401(k) contribution in Texas",
+      "hourlyRate": "$25",
+      "hoursPerWeek": "38",
+      "grossAnnual": "$49,400",
+      "netAnnual": "$39,516",
+      "netMonthly": "$3,293",
+      "netWeekly": "$760",
+      "federalTax": "$6,890 (14% rate)",
+      "stateTax": "$0 (0% TX rate)",
+      "socialSecurity": "$3,063 (6.2%)",
+      "medicare": "$716 (1.45%)",
+      "fourOOneK": "$1,482 (3%)",
+      "effectiveTaxRate": "19.9%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Hourly workers comparing job offers and understanding annual equivalent pay",
+    "Part-time employees calculating their annual salary for budgeting purposes",
+    "Freelancers and contractors who charge by the hour",
+    "Employers calculating hourly rates for job postings",
+    "Students and graduates considering hourly paid roles",
+    "Anyone converting between hourly and salary-based compensation"
+  ],
+  "importantConsiderations": {
+    "title": "Important Considerations for Hourly Pay in the USA",
+    "points": [
+      "**Federal Minimum Wage:** $7.25/hour for large employers (2024 rates, may increase)",
+      "**State Minimum Wages:** Vary from $7.25 (federal) to $16.90/hour (Washington DC)",
+      "**Overtime:** Time-and-a-half for hours over 40/week under FLSA",
+      "**Contract Hours:** Your calculation assumes consistent hours throughout the year",
+      "**Tax Treatment:** Hourly pay is taxed the same as salary income under federal/state systems",
+      "**Benefits:** Many employers offer 401(k) and health insurance to hourly workers"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How do I convert hourly pay to annual salary in the USA?",
+      "answer": "Multiply your hourly rate by hours worked per week, then by 52 weeks in a year. Then deduct federal income tax, state income tax, Social Security (6.2%), Medicare (1.45%), and other deductions to get your net annual salary."
+    },
+    {
+      "question": "Does this calculator include holiday pay?",
+      "answer": "No, this calculator shows your base hourly conversion. Most US employees are entitled to 10 days paid annual leave (2 weeks), which typically adds about 4% to your annual equivalent salary."
+    },
+    {
+      "question": "What's the federal minimum wage in the USA?",
+      "answer": "The federal minimum wage is $7.25 per hour for large employers. Many states and cities have higher minimum wages - for example, California has $16.90/hour and New York City has $15.00/hour."
+    },
+    {
+      "question": "How are hourly workers taxed in the USA?",
+      "answer": "Hourly pay is treated as salary income and taxed under the federal progressive system with rates from 10%-37%, plus state taxes that vary by location, and FICA taxes (Social Security + Medicare)."
+    },
+    {
+      "question": "Can I include overtime in this calculation?",
+      "answer": "This calculator is for your base hourly rate. Use our USA Overtime Pay Calculator for overtime calculations including time-and-a-half and double-time rates."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "USA Salary Calculator",
+      "url": "/en/usa-salary-calculator",
+      "description": "Calculate take-home pay from annual salary in the USA"
+    },
+    {
+      "text": "USA Overtime Pay Calculator",
+      "url": "/en/usa-overtime-pay",
+      "description": "Calculate overtime pay and tax in the USA"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    }
+  ],
+  "externalResources": {
+    "title": "Official US Employment Resources",
+    "links": [
+      {
+        "text": "DOL Minimum Wage Laws",
+        "url": "https://www.dol.gov/agencies/whd/state/minimum-wage",
+        "description": "Department of Labor minimum wage information by state."
+      },
+      {
+        "text": "IRS Tax Withholding for Hourly Workers",
+        "url": "https://www.irs.gov/businesses/small-businesses-self-employed/understanding-employment-taxes",
+        "description": "IRS guidance on tax withholding for hourly employees."
+      }
+    ]
+  },
+  "conclusion": "Converting hourly pay to annual salary in the USA requires understanding both your gross earnings and the impact of federal and state tax deductions. This calculator provides accurate 2026 conversions based on official IRS rates and all 50 state tax structures, helping you compare job offers, plan your budget, and make informed career decisions. Remember that additional factors like holiday pay, overtime, and benefits can significantly affect your total compensation package. For personalized advice, consult with IRS resources or a qualified tax professional.",
+  "disclaimer": "SalaryWise provides estimated salary conversions based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How do I convert hourly pay to annual salary in the USA?", "acceptedAnswer": { "@type": "Answer", "text": "Multiply your hourly rate by hours worked per week, then by 52 weeks in a year. Then deduct federal income tax, state income tax, Social Security (6.2%), Medicare (1.45%), and other deductions to get your net annual salary." } },
+          { "@type": "Question", "name": "Does this calculator include holiday pay?", "acceptedAnswer": { "@type": "Answer", "text": "No, this calculator shows your base hourly conversion. Most US employees are entitled to 10 days paid annual leave (2 weeks), which typically adds about 4% to your annual equivalent salary." } },
+          { "@type": "Question", "name": "What's the federal minimum wage in the USA?", "acceptedAnswer": { "@type": "Answer", "text": "The federal minimum wage is $7.25 per hour for large employers. Many states and cities have higher minimum wages - for example, California has $16.90/hour and New York City has $15.00/hour." } },
+          { "@type": "Question", "name": "How are hourly workers taxed in the USA?", "acceptedAnswer": { "@type": "Answer", "text": "Hourly pay is treated as salary income and taxed under the federal progressive system with rates from 10%-37%, plus state taxes that vary by location, and FICA taxes (Social Security + Medicare)." } },
+          { "@type": "Question", "name": "Can I include overtime in this calculation?", "acceptedAnswer": { "@type": "Answer", "text": "This calculator is for your base hourly rate. Use our USA Overtime Pay Calculator for overtime calculations including time-and-a-half and double-time rates." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "USA Hourly to Salary Calculator", "item": "https://salarywise.io/en/usa-hourly-to-salary" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "USA Hourly to Salary Calculator",
+        "url": "https://salarywise.io/en/usa-hourly-to-salary",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Convert hourly pay to annual salary in the USA including federal tax, state tax, Social Security, and Medicare."
+      }
+    ]
+  }
+}

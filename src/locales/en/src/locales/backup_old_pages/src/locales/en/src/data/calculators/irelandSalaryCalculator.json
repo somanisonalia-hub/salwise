@@ -1,0 +1,198 @@
+{
+  "id": "irelandSalaryCalculator",
+  "name": "Ireland Salary Calculator",
+  "description": "Calculate take-home pay in Ireland including PAYE, USC, PRSI, and deductions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "default": 50000,
+      "unit": "€",
+      "required": true,
+      "min": 0,
+      "max": 1000000,
+      "description": "Your annual gross salary before taxes and deductions"
+    },
+    {
+      "id": "payFrequency",
+      "label": "Pay Frequency",
+      "type": "select",
+      "options": ["Annual", "Monthly", "Weekly", "Hourly"],
+      "default": "Annual",
+      "required": true,
+      "description": "How often you get paid"
+    },
+    {
+      "id": "hoursPerWeek",
+      "label": "Hours per Week",
+      "type": "number",
+      "default": 40,
+      "unit": "hours",
+      "optional": true,
+      "min": 1,
+      "max": 80,
+      "dependsOn": {"payFrequency": ["Hourly"]},
+      "description": "Only required if paid hourly"
+    },
+    {
+      "id": "weeksPerYear",
+      "label": "Weeks per Year",
+      "type": "number",
+      "default": 52,
+      "unit": "weeks",
+      "optional": true,
+      "min": 48,
+      "max": 52,
+      "dependsOn": {"payFrequency": ["Hourly"]},
+      "description": "Number of weeks worked per year"
+    },
+    {
+      "id": "bonus",
+      "label": "Annual Bonus",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "optional": true,
+      "min": 0,
+      "max": 500000,
+      "description": "Annual bonus amount (optional)",
+      "advanced": true
+    },
+    {
+      "id": "pensionPercent",
+      "label": "Pension Contribution (%)",
+      "type": "number",
+      "default": 0,
+      "unit": "%",
+      "min": 0,
+      "max": 20,
+      "optional": true,
+      "description": "Percentage of salary contributed to pension",
+      "advanced": true
+    },
+    {
+      "id": "otherDeductions",
+      "label": "Other Deductions",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "optional": true,
+      "min": 0,
+      "max": 50000,
+      "description": "Union fees, professional subscriptions, etc.",
+      "advanced": true
+    },
+    {
+      "id": "applyUSC",
+      "label": "Apply Universal Social Charge (USC)",
+      "type": "boolean",
+      "default": true,
+      "optional": true,
+      "description": "Include USC in calculations",
+      "advanced": true
+    },
+    {
+      "id": "applyPRSI",
+      "label": "Apply Pay Related Social Insurance (PRSI)",
+      "type": "boolean",
+      "default": true,
+      "optional": true,
+      "description": "Include PRSI in calculations",
+      "advanced": true
+    }
+  ],
+  "outputs": [
+    {
+      "id": "grossAnnualSalary",
+      "label": "Gross Annual Salary",
+      "formula": "grossSalary",
+      "unit": "€"
+    },
+    {
+      "id": "totalTaxableIncome",
+      "label": "Total Taxable Income",
+      "formula": "grossSalary + bonus",
+      "unit": "€"
+    },
+    {
+      "id": "payeTax",
+      "label": "PAYE Tax",
+      "formula": "calculateIrelandPAYE(totalTaxableIncome)",
+      "unit": "€"
+    },
+    {
+      "id": "usc",
+      "label": "USC",
+      "formula": "applyUSC ? calculateIrelandUSC(totalTaxableIncome) : 0",
+      "unit": "€"
+    },
+    {
+      "id": "prsi",
+      "label": "PRSI",
+      "formula": "applyPRSI ? calculateIrelandPRSI(totalTaxableIncome) : 0",
+      "unit": "€"
+    },
+    {
+      "id": "pensionContribution",
+      "label": "Pension Contribution",
+      "formula": "grossSalary * pensionPercent / 100",
+      "unit": "€"
+    },
+    {
+      "id": "totalDeductions",
+      "label": "Total Deductions",
+      "formula": "payeTax + usc + prsi + pensionContribution + otherDeductions",
+      "unit": "€"
+    },
+    {
+      "id": "netAnnualSalary",
+      "label": "Net Annual Salary",
+      "formula": "totalTaxableIncome - totalDeductions",
+      "unit": "€"
+    },
+    {
+      "id": "netMonthlySalary",
+      "label": "Net Monthly Salary",
+      "formula": "netAnnualSalary / 12",
+      "unit": "€"
+    },
+    {
+      "id": "netWeeklySalary",
+      "label": "Net Weekly Salary",
+      "formula": "netAnnualSalary / 52",
+      "unit": "€"
+    },
+    {
+      "id": "effectiveTaxRate",
+      "label": "Effective Tax Rate",
+      "formula": "totalTaxableIncome > 0 ? ((payeTax + usc + prsi) / totalTaxableIncome) * 100 : 0",
+      "unit": "%"
+    }
+  ],
+  "examples": [
+    {
+      "scenario": "Entry-level professional €35,000",
+      "inputs": {"grossSalary": 35000, "payFrequency": "Annual", "bonus": 0, "pensionPercent": 0, "otherDeductions": 0, "applyUSC": true, "applyPRSI": true},
+      "expectedOutputs": {
+        "payeTax": 4667,
+        "usc": 1050,
+        "prsi": 1400,
+        "totalDeductions": 7117,
+        "netAnnualSalary": 27883
+      }
+    },
+    {
+      "scenario": "Mid-level manager €45,000 with 5% pension",
+      "inputs": {"grossSalary": 45000, "payFrequency": "Annual", "bonus": 0, "pensionPercent": 5, "otherDeductions": 0, "applyUSC": true, "applyPRSI": true},
+      "expectedOutputs": {
+        "payeTax": 7467,
+        "usc": 1725,
+        "prsi": 1800,
+        "pensionContribution": 2250,
+        "totalDeductions": 13242,
+        "netAnnualSalary": 31758
+      }
+    }
+  ]
+}

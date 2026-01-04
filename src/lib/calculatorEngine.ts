@@ -35,6 +35,20 @@ import salaryAfterTaxUSAData from '../data/calculators/salaryAfterTaxUSA.json';
 import salaryAfterTaxUKData from '../data/calculators/salaryAfterTaxUK.json';
 import salaryAfterTaxIrelandData from '../data/calculators/salaryAfterTaxIreland.json';
 import irelandSalaryCalculatorData from '../data/calculators/irelandSalaryCalculator.json';
+import irelandHourlyToSalary from '../data/calculators/irelandHourlyToSalary.js';
+import irelandOvertimePay from '../data/calculators/irelandOvertimePay.js';
+import irelandBonusTax from '../data/calculators/irelandBonusTax.js';
+import irelandContractorSalary from '../data/calculators/irelandContractorSalary.js';
+import ukSalaryCalculator from '../data/calculators/ukSalaryCalculator.js';
+import ukHourlyToSalary from '../data/calculators/ukHourlyToSalary.js';
+import ukOvertimePay from '../data/calculators/ukOvertimePay.js';
+import ukBonusTax from '../data/calculators/ukBonusTax.js';
+import ukContractorSalary from '../data/calculators/ukContractorSalary.js';
+import usaSalaryCalculator from '../data/calculators/usaSalaryCalculator.js';
+import usaHourlyToSalary from '../data/calculators/usaHourlyToSalary.js';
+import usaOvertimePay from '../data/calculators/usaOvertimePay.js';
+import usaBonusTax from '../data/calculators/usaBonusTax.js';
+import usaContractorSalary from '../data/calculators/usaContractorSalary.js';
 import salaryCalculatorCanadaData from '../data/calculators/salaryCalculatorCanada.json';
 import salaryCalculatorAustraliaData from '../data/calculators/salaryCalculatorAustralia.json';
 import salaryCalculatorGermanyData from '../data/calculators/salaryCalculatorGermany.json';
@@ -85,6 +99,20 @@ const calculatorsData: Calculator[] = [
   salaryAfterTaxUKData,
   salaryAfterTaxIrelandData,
   irelandSalaryCalculatorData,
+  irelandHourlyToSalary,
+  irelandOvertimePay,
+  irelandBonusTax,
+  irelandContractorSalary,
+  ukSalaryCalculator,
+  ukHourlyToSalary,
+  ukOvertimePay,
+  ukBonusTax,
+  ukContractorSalary,
+  usaSalaryCalculator,
+  usaHourlyToSalary,
+  usaOvertimePay,
+  usaBonusTax,
+  usaContractorSalary,
   salaryCalculatorCanadaData,
   salaryCalculatorAustraliaData,
   salaryCalculatorGermanyData,
@@ -715,6 +743,125 @@ function calculateIrelandPAYE(grossIncome: number): number {
   return incomeTax;
 }
 
+// UK Tax Calculations (2026 rates)
+function calculateUKPAYE(grossIncome: number): number {
+  const personalAllowance = 12570;
+  const basicRateLimit = 50270;
+  const higherRateLimit = 150000;
+
+  let incomeTax = 0;
+  const taxableIncome = grossIncome - personalAllowance;
+
+  if (taxableIncome <= 0) {
+    return 0;
+  }
+
+  if (taxableIncome <= (basicRateLimit - personalAllowance)) {
+    incomeTax = taxableIncome * 0.20;
+  } else if (taxableIncome <= (higherRateLimit - personalAllowance)) {
+    incomeTax = ((basicRateLimit - personalAllowance) * 0.20) +
+                ((taxableIncome - (basicRateLimit - personalAllowance)) * 0.40);
+  } else {
+    incomeTax = ((basicRateLimit - personalAllowance) * 0.20) +
+                ((higherRateLimit - basicRateLimit) * 0.40) +
+                ((taxableIncome - (higherRateLimit - personalAllowance)) * 0.45);
+  }
+
+  return incomeTax;
+}
+
+function calculateUKNIC(grossIncome: number): number {
+  const primaryThreshold = 12570;
+  const upperEarningsLimit = 50270;
+
+  let nic = 0;
+
+  if (grossIncome <= primaryThreshold) {
+    return 0;
+  }
+
+  if (grossIncome <= upperEarningsLimit) {
+    nic = (grossIncome - primaryThreshold) * 0.08;
+  } else {
+    nic = (upperEarningsLimit - primaryThreshold) * 0.08 +
+          (grossIncome - upperEarningsLimit) * 0.02;
+  }
+
+  return nic;
+}
+
+function calculateUKStudentLoan(grossIncome: number, plan: string): number {
+  let threshold = 0;
+  let rate = 0;
+
+  switch (plan) {
+    case 'Plan 1':
+      threshold = 22015;
+      rate = 0.09;
+      break;
+    case 'Plan 2':
+      threshold = 27295;
+      rate = 0.09;
+      break;
+    case 'Plan 4':
+      threshold = 27660;
+      rate = 0.09;
+      break;
+    case 'Plan 5':
+      threshold = 24990;
+      rate = 0.09;
+      break;
+    default:
+      return 0;
+  }
+
+  if (grossIncome <= threshold) {
+    return 0;
+  }
+
+  return (grossIncome - threshold) * rate;
+}
+
+// USA Tax Calculations (2026 rates)
+function calculateUSAFederalTax(grossIncome: number): number {
+  const brackets = [
+    { min: 0, max: 11600, rate: 0.10 },
+    { min: 11600, max: 47150, rate: 0.12 },
+    { min: 47150, max: 100525, rate: 0.22 },
+    { min: 100525, max: 191950, rate: 0.24 },
+    { min: 191950, max: 243725, rate: 0.32 },
+    { min: 243725, max: 609350, rate: 0.35 },
+    { min: 609350, max: Infinity, rate: 0.37 }
+  ];
+
+  let tax = 0;
+  for (const bracket of brackets) {
+    if (grossIncome > bracket.min) {
+      const taxableInBracket = Math.min(grossIncome, bracket.max) - bracket.min;
+      tax += taxableInBracket * bracket.rate;
+    }
+  }
+  return tax;
+}
+
+function calculateUSAStateTax(grossIncome: number, state: string): number {
+  const stateRates: Record<string, number> = {
+    'AL': 0.05, 'AK': 0.00, 'AZ': 0.0259, 'AR': 0.049, 'CA': 0.0955,
+    'CO': 0.044, 'CT': 0.0495, 'DE': 0.048, 'FL': 0.00, 'GA': 0.0499,
+    'HI': 0.0725, 'ID': 0.0483, 'IL': 0.0495, 'IN': 0.0315, 'IA': 0.0482,
+    'KS': 0.045, 'KY': 0.048, 'LA': 0.0425, 'ME': 0.058, 'MD': 0.0475,
+    'MA': 0.05, 'MI': 0.0425, 'MN': 0.0525, 'MS': 0.05, 'MO': 0.04,
+    'MT': 0.041, 'NE': 0.0425, 'NV': 0.00, 'NH': 0.04, 'NJ': 0.0553,
+    'NM': 0.049, 'NY': 0.04, 'NC': 0.0475, 'ND': 0.029, 'OH': 0.0399,
+    'OK': 0.0475, 'OR': 0.0475, 'PA': 0.0307, 'RI': 0.0499, 'SC': 0.03,
+    'SD': 0.00, 'TN': 0.00, 'TX': 0.00, 'UT': 0.0495, 'VT': 0.0359,
+    'VA': 0.0575, 'WA': 0.00, 'WV': 0.0472, 'WI': 0.035, 'WY': 0.00
+  };
+
+  const rate = stateRates[state] || 0;
+  return grossIncome * rate;
+}
+
 // Safe evaluation of mathematical expressions
 function safeEval(expression: string, variables: Record<string, number | string>): number {
   try {
@@ -730,6 +877,11 @@ function safeEval(expression: string, variables: Record<string, number | string>
       calculateIrelandIncomeTax,
       calculateIrelandUSC,
       calculateIrelandPAYE,
+      calculateUKPAYE,
+      calculateUKNIC,
+      calculateUKStudentLoan,
+      calculateUSAFederalTax,
+      calculateUSAStateTax,
       calculateAustraliaIncomeTax,
       calculateAustraliaMedicareLevy,
       calculateSpainIncomeTax,

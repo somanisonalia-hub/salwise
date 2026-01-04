@@ -1,0 +1,13 @@
+{
+  "slug": "changelog",
+  "type": "page",
+  "h1": "Changelog",
+  "metaTitle": "Changelog | Updates & New Features | SalaryWise.io",
+  "metaDescription": "Latest updates, new features, and improvements to SalaryWise.io.",
+  "primaryKeyword": "changelog",
+  "longTailKeywords": ["updates", "new features", "version history"],
+  "related": ["about", "faq"],
+  "intro": "Stay updated with the latest changes and improvements to SalaryWise.io.",
+  "content": "Version history and changelog information.",
+  "disclaimer": "Changelog is updated with each release."
+}

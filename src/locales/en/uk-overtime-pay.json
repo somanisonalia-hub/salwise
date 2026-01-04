@@ -1,0 +1,182 @@
+{
+  "slug": "uk-overtime-pay",
+  "type": "calculator",
+  "h1": "UK Overtime Pay Calculator – Calculate Extra Pay After Tax",
+  "metaTitle": "UK Overtime Pay Calculator | Calculate Overtime Pay After Tax",
+  "metaDescription": "Calculate overtime pay in the UK including tax deductions. PAYE, NIC on extra hours. Free 2026 rates calculator.",
+  "primaryKeyword": "UK overtime pay calculator",
+  "longTailKeywords": [
+    "UK overtime pay calculator",
+    "overtime calculator UK",
+    "extra pay UK",
+    "tax on overtime UK",
+    "overtime tax calculator UK",
+    "time and a half UK",
+    "double time UK"
+  ],
+  "related": [
+    "uk-salary-calculator",
+    "uk-hourly-to-salary",
+    "uk-bonus-tax"
+  ],
+  "dataRef": "ukOvertimePay",
+  "intro": "Calculate your overtime pay in the UK with our comprehensive tax calculator. Understanding how overtime is taxed is crucial for maximizing your take-home earnings from extra hours worked. UK law typically requires overtime to be paid at time-and-a-half (1.5x) or double time (2x) your normal hourly rate, but these payments are taxed at your marginal PAYE rate, potentially pushing you into higher tax brackets. This calculator uses official 2026 HMRC rates to show you exactly how much tax you'll pay on overtime earnings, including PAYE income tax, National Insurance contributions (NIC), and pension deductions. Whether you work occasional overtime or regularly put in extra hours, this tool helps you understand the true value of your overtime work.",
+  "ui": {
+    "calculatorHeading": "Calculate Overtime Pay",
+    "resultsHeading": "Overtime Pay Results",
+    "calculateButton": "Calculate Overtime",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This UK overtime pay calculator determines your take-home overtime earnings by first calculating the gross overtime pay (base salary ÷ 52 weeks ÷ contracted hours × overtime hours × overtime multiplier), then applying UK tax rates. Overtime is taxed at your marginal rate - if your regular salary puts you in the 20% bracket but overtime pushes you into the 40% bracket, the overtime is taxed at 40%. National Insurance is calculated on total earnings. The calculator shows both the overtime pay breakdown and your total salary including overtime, so you can see the overall tax impact. UK employment law generally requires overtime rates of 1.5x for weekdays and 2x for weekends/holidays, though individual contracts may vary.",
+  "useCases": {
+    "example1": {
+      "title": "5 Hours Weekly Overtime",
+      "scenario": "£35,000 base salary employee working 5 hours overtime per week at time-and-a-half",
+      "baseSalary": "£35,000",
+      "otHoursPerWeek": "5",
+      "otRate": "1.5",
+      "grossOvertime": "£5,000",
+      "netOvertime": "£3,400",
+      "totalNetSalary": "£29,400",
+      "payeTax": "£1,100 (22% marginal rate)",
+      "nic": "£350 (7% marginal rate)",
+      "effectiveOvertimeTaxRate": "32%"
+    },
+    "example2": {
+      "title": "10 Hours Weekly Overtime",
+      "scenario": "£50,000 base salary manager working 10 hours overtime per week at double time",
+      "baseSalary": "£50,000",
+      "otHoursPerWeek": "10",
+      "otRate": "2.0",
+      "grossOvertime": "£20,000",
+      "netOvertime": "£12,800",
+      "totalNetSalary": "£42,800",
+      "payeTax": "£6,000 (30% marginal rate)",
+      "nic": "£1,200 (6% marginal rate)",
+      "effectiveOvertimeTaxRate": "36%"
+    },
+    "example3": {
+      "title": "Overtime + 5% Bonus",
+      "scenario": "£45,000 base salary with 8 hours weekly overtime and 5% annual bonus",
+      "baseSalary": "£45,000",
+      "otHoursPerWeek": "8",
+      "otRate": "1.5",
+      "bonusPercent": "5",
+      "grossOvertime": "£12,000",
+      "bonus": "£2,250",
+      "netOvertime": "£8,000",
+      "netBonus": "£1,500",
+      "totalNetSalary": "£38,500",
+      "payeTax": "£4,200 (32% marginal rate)",
+      "nic": "£1,050 (8.2% marginal rate)",
+      "effectiveTaxRate": "34%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Employees working overtime hours who want to understand their take-home pay",
+    "Employers calculating the true cost of overtime payments",
+    "Anyone comparing overtime rates and understanding tax implications",
+    "Workers negotiating overtime rates in employment contracts",
+    "HR professionals managing payroll and overtime calculations",
+    "Union representatives advising members on overtime pay"
+  ],
+  "overtimeRules": {
+    "title": "UK Overtime Pay Rules",
+    "rules": [
+      "**Legal Requirement:** Most UK employment contracts require overtime pay at premium rates",
+      "**Standard Rates:** Time-and-a-half (1.5x) for normal overtime, double time (2x) for weekends/holidays",
+      "**Contract Variations:** Some contracts specify different rates or overtime banking arrangements",
+      "**Tax Treatment:** Overtime is taxed at marginal rates, potentially in higher tax brackets",
+      "**NIC Impact:** Overtime increases total earnings, affecting National Insurance",
+      "**Working Time Regulations:** Maximum 48 hours per week averaged over 17 weeks (can be opted out)"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How is overtime taxed in the UK?",
+      "answer": "Overtime pay is taxed at your marginal PAYE rate. If your regular salary puts you in the 20% bracket but overtime pushes you into the 40% bracket, the overtime is taxed at 40%. National Insurance is calculated on your total earnings."
+    },
+    {
+      "question": "What's the standard overtime rate in the UK?",
+      "answer": "UK law generally requires time-and-a-half (1.5x your normal rate) for overtime worked on weekdays, and double time (2x) for overtime worked on weekends or bank holidays."
+    },
+    {
+      "question": "Does overtime affect my tax bracket?",
+      "answer": "Yes, overtime increases your total annual earnings, potentially pushing you into higher PAYE tax brackets and NIC bands. The overtime itself is taxed at your new marginal rate."
+    },
+    {
+      "question": "Can I bank overtime instead of getting paid immediately?",
+      "answer": "Some UK employers offer overtime banking schemes where you can accumulate overtime hours for future time off. Check your employment contract for specific arrangements."
+    },
+    {
+      "question": "How do I calculate my overtime rate?",
+      "answer": "Divide your annual salary by 52 weeks, then divide by your contracted weekly hours. Multiply by the overtime multiplier (usually 1.5 or 2.0) for your overtime rate."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "UK Salary Calculator",
+      "url": "/en/uk-salary-calculator",
+      "description": "Calculate base salary take-home pay in the UK"
+    },
+    {
+      "text": "UK Bonus Tax Calculator",
+      "url": "/en/uk-bonus-tax",
+      "description": "Calculate tax on bonuses in the UK"
+    },
+    {
+      "text": "Take-Home Pay Calculator",
+      "url": "/en/take-home-pay-calculator",
+      "description": "General calculator for net salary calculations"
+    }
+  ],
+  "externalResources": {
+    "title": "Official UK Employment Resources",
+    "links": [
+      {
+        "text": "GOV.UK - Working Hours",
+        "url": "https://www.gov.uk/maximum-weekly-working-hours",
+        "description": "Information about working hours and overtime entitlements in the UK."
+      },
+      {
+        "text": "Citizens Advice - Overtime",
+        "url": "https://www.citizensadvice.org.uk/work/pay-and-work-rights/pay/overtime-and-extra-hours/",
+        "description": "Guidance on overtime pay and rights in the UK."
+      }
+    ]
+  },
+  "conclusion": "Overtime pay can significantly boost your earnings in the UK, but understanding the tax implications is crucial for maximizing your take-home pay. This calculator uses official 2026 HMRC rates to show you exactly how overtime is taxed at marginal rates, potentially resulting in higher effective tax rates than your regular salary. Whether you're working occasional extra hours or regularly putting in overtime, knowing the true value of your time helps you make informed decisions about work-life balance and compensation. Remember that overtime rates and taxation can vary based on your employment contract and individual circumstances. For personalized advice, consult your employment contract or HMRC.",
+  "disclaimer": "SalaryWise provides estimated overtime calculations based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How is overtime taxed in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "Overtime pay is taxed at your marginal PAYE rate. If your regular salary puts you in the 20% bracket but overtime pushes you into the 40% bracket, the overtime is taxed at 40%. National Insurance is calculated on your total earnings." } },
+          { "@type": "Question", "name": "What's the standard overtime rate in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "UK law generally requires time-and-a-half (1.5x your normal rate) for overtime worked on weekdays, and double time (2x) for overtime worked on weekends or bank holidays." } },
+          { "@type": "Question", "name": "Does overtime affect my tax bracket?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, overtime increases your total annual earnings, potentially pushing you into higher PAYE tax brackets and NIC bands. The overtime itself is taxed at your new marginal rate." } },
+          { "@type": "Question", "name": "Can I bank overtime instead of getting paid immediately?", "acceptedAnswer": { "@type": "Answer", "text": "Some UK employers offer overtime banking schemes where you can accumulate overtime hours for future time off. Check your employment contract for specific arrangements." } },
+          { "@type": "Question", "name": "How do I calculate my overtime rate?", "acceptedAnswer": { "@type": "Answer", "text": "Divide your annual salary by 52 weeks, then divide by your contracted weekly hours. Multiply by the overtime multiplier (usually 1.5 or 2.0) for your overtime rate." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "UK Overtime Pay Calculator", "item": "https://salarywise.io/en/uk-overtime-pay" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "UK Overtime Pay Calculator",
+        "url": "https://salarywise.io/en/uk-overtime-pay",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate overtime pay in the UK including tax deductions and marginal rates."
+      }
+    ]
+  }
+}

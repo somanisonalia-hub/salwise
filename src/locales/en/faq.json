@@ -113,5 +113,11 @@
     "description": "Can't find the answer you're looking for? Get in touch with us!",
     "cta": "Contact Us",
     "href": "/contact"
+  },
+
+  "universalDisclaimer": {
+    "icon": "💡",
+    "title": "Important Note",
+    "content": "The information, examples, and calculators on this website are for educational and informational purposes only. Results are estimates and may not reflect your exact salary, taxes, or deductions. Always consult a qualified professional (e.g., accountant, tax advisor, or financial consultant) for personalized advice. SalaryWise.io cannot be held responsible for any decisions or actions taken based on this information."
   }
 }

@@ -1,0 +1,108 @@
+export default {
+  "id": "irelandBonusTax",
+  "name": "Ireland Bonus Tax Calculator",
+  "description": "Calculate bonus tax in Ireland with PAYE, PRSI, and USC deductions",
+  "inputs": [
+    {
+      "id": "baseSalary",
+      "label": "Base Annual Salary",
+      "type": "number",
+      "default": 50000,
+      "unit": "€",
+      "required": true,
+      "min": 0,
+      "max": 1000000,
+      "description": "Your regular annual salary before bonus"
+    },
+    {
+      "id": "bonusPercentage",
+      "label": "Bonus Percentage",
+      "type": "number",
+      "default": 5,
+      "unit": "%",
+      "required": false,
+      "min": 0,
+      "max": 100,
+      "description": "Bonus as percentage of base salary (optional)"
+    },
+    {
+      "id": "bonusAmount",
+      "label": "Bonus Amount",
+      "type": "number",
+      "default": 0,
+      "unit": "€",
+      "required": false,
+      "min": 0,
+      "max": 1000000,
+      "description": "Fixed bonus amount (alternative to percentage)"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "calculatedBonusAmount",
+      "label": "Bonus Amount",
+      "formula": "bonusAmount > 0 ? bonusAmount : (baseSalary * bonusPercentage / 100)",
+      "unit": "€"
+    },
+    {
+      "id": "totalIncome",
+      "label": "Total Income (Base + Bonus)",
+      "formula": "baseSalary + calculatedBonusAmount",
+      "unit": "€"
+    },
+    {
+      "id": "taxOnTotalIncome",
+      "label": "Tax on Total Income",
+      "formula": "calculateIrelandPAYE(totalIncome) + calculateIrelandUSC(totalIncome) + calculateIrelandPRSI(totalIncome)",
+      "unit": "€"
+    },
+    {
+      "id": "taxOnBaseSalary",
+      "label": "Tax on Base Salary",
+      "formula": "calculateIrelandPAYE(baseSalary) + calculateIrelandUSC(baseSalary) + calculateIrelandPRSI(baseSalary)",
+      "unit": "€"
+    },
+    {
+      "id": "taxOnBonus",
+      "label": "Tax on Bonus",
+      "formula": "taxOnTotalIncome - taxOnBaseSalary",
+      "unit": "€"
+    },
+    {
+      "id": "netBonus",
+      "label": "Net Bonus Amount",
+      "formula": "calculatedBonusAmount - taxOnBonus",
+      "unit": "€"
+    },
+    {
+      "id": "effectiveBonusTaxRate",
+      "label": "Effective Bonus Tax Rate",
+      "formula": "calculatedBonusAmount > 0 ? (taxOnBonus / calculatedBonusAmount) * 100 : 0",
+      "unit": "%"
+    }
+  ],
+  "examples": [
+    {
+      "scenario": "€50,000 base salary with 5% bonus",
+      "inputs": {"baseSalary": 50000, "bonusPercentage": 5, "bonusAmount": 0},
+      "expectedOutputs": {
+        "calculatedBonusAmount": 2500,
+        "totalIncome": 52500,
+        "taxOnBonus": 513,
+        "netBonus": 1987,
+        "effectiveBonusTaxRate": 20.5
+      }
+    },
+    {
+      "scenario": "€70,000 base salary with 10% bonus",
+      "inputs": {"baseSalary": 70000, "bonusPercentage": 10, "bonusAmount": 0},
+      "expectedOutputs": {
+        "calculatedBonusAmount": 7000,
+        "totalIncome": 77000,
+        "taxOnBonus": 2113,
+        "netBonus": 4887,
+        "effectiveBonusTaxRate": 30.2
+      }
+    }
+  ]
+};

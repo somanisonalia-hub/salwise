@@ -1,0 +1,180 @@
+{
+  "slug": "uk-bonus-tax",
+  "type": "calculator",
+  "h1": "UK Bonus Tax Calculator – Calculate Bonus Pay After Tax",
+  "metaTitle": "UK Bonus Tax Calculator | Calculate Bonus Pay After Tax",
+  "metaDescription": "Calculate bonus tax in the UK including PAYE, NIC deductions. Free 2026 rates calculator for salary bonuses.",
+  "primaryKeyword": "UK bonus tax calculator",
+  "longTailKeywords": [
+    "UK bonus tax calculator",
+    "bonus calculator UK",
+    "tax on bonus UK",
+    "salary bonus UK",
+    "bonus after tax UK",
+    "UK bonus tax",
+    "year end bonus UK"
+  ],
+  "related": [
+    "uk-salary-calculator",
+    "uk-overtime-pay",
+    "gross-to-net-salary"
+  ],
+  "dataRef": "ukBonusTax",
+  "intro": "Calculate your bonus tax in the UK with our comprehensive calculator. Bonuses are a significant part of many UK salaries, but understanding how they're taxed is crucial for accurate financial planning. Unlike regular salary, bonuses are taxed at your marginal PAYE rate, potentially pushing you into higher tax brackets. This calculator uses official 2026 HMRC rates to show you exactly how much tax you'll pay on bonuses, including PAYE income tax, National Insurance contributions (NIC), and pension deductions. Whether you're expecting a year-end bonus, performance bonus, or other supplemental pay, this tool helps you understand your true take-home bonus amount and overall compensation package.",
+  "ui": {
+    "calculatorHeading": "Calculate Bonus Tax",
+    "resultsHeading": "Bonus Tax Results",
+    "calculateButton": "Calculate Bonus",
+    "scenarioLabel": "Scenario:",
+    "resultsLabel": "Results:",
+    "noResultsText": "No results calculated yet"
+  },
+  "howThisCalculatorWorks": "This UK bonus tax calculator determines your take-home bonus by adding the bonus to your annual salary, then calculating UK taxes on the total amount. Bonuses are taxed at marginal rates - if your base salary puts you in the 20% bracket but the bonus pushes you into the 40% bracket, the entire bonus is taxed at 40%. National Insurance is calculated on total earnings. The calculator shows both the bonus tax breakdown and your total salary including bonus, helping you understand the overall tax impact. UK bonuses are typically paid as a lump sum and taxed under the PAYE system.",
+  "useCases": {
+    "example1": {
+      "title": "5% Annual Bonus",
+      "scenario": "£40,000 base salary employee receiving a 5% annual performance bonus",
+      "grossSalary": "£40,000",
+      "bonusPercent": "5",
+      "grossBonus": "£2,000",
+      "netBonus": "£1,320",
+      "totalNetSalary": "£31,320",
+      "payeTax": "£520 (26% marginal rate)",
+      "nic": "£140 (7% marginal rate)",
+      "effectiveBonusTaxRate": "34%"
+    },
+    "example2": {
+      "title": "10% Annual Bonus",
+      "scenario": "£60,000 base salary manager receiving a 10% annual bonus",
+      "grossSalary": "£60,000",
+      "bonusPercent": "10",
+      "grossBonus": "£6,000",
+      "netBonus": "£3,720",
+      "totalNetSalary": "£43,720",
+      "payeTax": "£1,920 (32% marginal rate)",
+      "nic": "£480 (8% marginal rate)",
+      "effectiveBonusTaxRate": "38%"
+    },
+    "example3": {
+      "title": "7% Bonus + Overtime",
+      "scenario": "£50,000 base salary with 7% bonus and 8 hours weekly overtime",
+      "grossSalary": "£50,000",
+      "bonusPercent": "7",
+      "otHoursPerWeek": "8",
+      "otRate": "1.5",
+      "grossBonus": "£3,500",
+      "grossOvertime": "£12,000",
+      "netBonus": "£2,100",
+      "netOvertime": "£7,800",
+      "totalNetSalary": "£39,900",
+      "payeTax": "£3,500 (32% marginal rate)",
+      "nic": "£1,000 (8.2% marginal rate)",
+      "effectiveTaxRate": "35%"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "Employees expecting bonuses who want to understand take-home amount",
+    "Employers calculating bonus payments and total compensation costs",
+    "Anyone comparing bonus offers and understanding tax implications",
+    "HR professionals managing bonus schemes and payroll",
+    "Financial advisors helping clients plan for bonus income",
+    "Workers negotiating bonus structures in employment contracts"
+  ],
+  "bonusTaxationRules": {
+    "title": "UK Bonus Taxation Rules",
+    "rules": [
+      "**Marginal Rate Taxation:** Bonuses are taxed at your marginal PAYE rate, not averaged",
+      "**Total Earnings:** Bonuses are added to your annual salary for tax calculations",
+      "**Lump Sum:** Bonuses are typically paid as one-off payments, not spread over the year",
+      "**NIC Impact:** Higher total income may push bonuses into higher NIC bands",
+      "**Pension Impact:** Bonuses increase total earnings, affecting pension contributions",
+      "**Timing:** Bonuses can affect your tax code for the following year"
+    ]
+  },
+  "faqs": [
+    {
+      "question": "How are bonuses taxed in the UK?",
+      "answer": "Bonuses are added to your annual salary and taxed at your marginal PAYE rate. If your regular salary puts you in the 20% bracket but the bonus pushes you into the 40% bracket, the entire bonus is taxed at 40%. National Insurance is calculated on total earnings."
+    },
+    {
+      "question": "Are bonuses taxed differently from salary?",
+      "answer": "No, bonuses are taxed the same as regular salary under PAYE, but at marginal rates rather than being averaged across the year. This can result in bonuses being taxed at higher rates than your standard salary."
+    },
+    {
+      "question": "Can I reduce bonus tax through salary sacrifice?",
+      "answer": "Some UK employers offer salary sacrifice schemes where you can sacrifice part of your bonus for benefits like pensions or health insurance, which may reduce your taxable income. Check with your employer for available schemes."
+    },
+    {
+      "question": "When are bonuses usually paid in the UK?",
+      "answer": "Bonuses in the UK are typically paid annually, often at year-end (March/April) or following the company's financial year-end. Some companies pay quarterly or half-yearly bonuses."
+    },
+    {
+      "question": "Do bonuses affect my Personal Allowance?",
+      "answer": "Yes, bonuses increase your total income, which may affect your tax allowances and rate band. Higher income may reduce or eliminate certain allowances you're entitled to."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "UK Salary Calculator",
+      "url": "/en/uk-salary-calculator",
+      "description": "Calculate base salary take-home pay in the UK"
+    },
+    {
+      "text": "UK Overtime Pay Calculator",
+      "url": "/en/uk-overtime-pay",
+      "description": "Calculate overtime pay and tax in the UK"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    }
+  ],
+  "externalResources": {
+    "title": "Official UK Tax Resources",
+    "links": [
+      {
+        "text": "HMRC - Bonuses and Benefits",
+        "url": "https://www.gov.uk/income-tax/tax-on-bonuses-and-commission",
+        "description": "Official HMRC guide on taxation of bonuses and benefits."
+      },
+      {
+        "text": "Citizens Advice - Tax and Money",
+        "url": "https://www.citizensadvice.org.uk/money/tax/",
+        "description": "Helpful guide to UK tax system including bonuses."
+      }
+    ]
+  },
+  "conclusion": "Bonuses can significantly enhance your compensation package in the UK, but understanding the tax implications is essential for accurate financial planning. This calculator uses official 2026 HMRC rates to show you how bonuses are taxed at marginal rates, potentially resulting in higher effective tax rates than your regular salary. Whether you're negotiating a bonus package, planning your finances around expected bonuses, or helping employees understand their compensation, knowing the true take-home value helps make informed decisions. Remember that bonus taxation can vary based on individual circumstances and employer schemes. For personalized advice, consult HMRC or a qualified tax professional.",
+  "disclaimer": "SalaryWise provides estimated bonus tax calculations based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How are bonuses taxed in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "Bonuses are added to your annual salary and taxed at your marginal PAYE rate. If your regular salary puts you in the 20% bracket but the bonus pushes you into the 40% bracket, the entire bonus is taxed at 40%. National Insurance is calculated on total earnings." } },
+          { "@type": "Question", "name": "Are bonuses taxed differently from salary?", "acceptedAnswer": { "@type": "Answer", "text": "No, bonuses are taxed the same as regular salary under PAYE, but at marginal rates rather than being averaged across the year. This can result in bonuses being taxed at higher rates than your standard salary." } },
+          { "@type": "Question", "name": "Can I reduce bonus tax through salary sacrifice?", "acceptedAnswer": { "@type": "Answer", "text": "Some UK employers offer salary sacrifice schemes where you can sacrifice part of your bonus for benefits like pensions or health insurance, which may reduce your taxable income. Check with your employer for available schemes." } },
+          { "@type": "Question", "name": "When are bonuses usually paid in the UK?", "acceptedAnswer": { "@type": "Answer", "text": "Bonuses in the UK are typically paid annually, often at year-end (March/April) or following the company's financial year-end. Some companies pay quarterly or half-yearly bonuses." } },
+          { "@type": "Question", "name": "Do bonuses affect my Personal Allowance?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, bonuses increase your total income, which may affect your tax allowances and rate band. Higher income may reduce or eliminate certain allowances you're entitled to." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "UK Bonus Tax Calculator", "item": "https://salarywise.io/en/uk-bonus-tax" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "UK Bonus Tax Calculator",
+        "url": "https://salarywise.io/en/uk-bonus-tax",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate bonus tax in the UK including marginal rates and total compensation."
+      }
+    ]
+  }
+}

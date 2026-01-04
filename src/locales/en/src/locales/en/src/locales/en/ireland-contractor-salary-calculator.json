@@ -1,0 +1,132 @@
+{
+  "slug": "ireland-contractor-salary-calculator",
+  "type": "calculator",
+  "h1": "Ireland Contractor Salary Calculator – Freelance & Contractor Pay",
+  "metaTitle": "Ireland Contractor Salary Calculator | Freelance Pay Calculator",
+  "metaDescription": "Calculate contractor pay in Ireland including Ltd company vs umbrella options, tax deductions, and take-home earnings.",
+  "primaryKeyword": "ireland contractor salary calculator",
+  "longTailKeywords": [
+    "contractor pay Ireland",
+    "freelance salary Ireland",
+    "umbrella company Ireland",
+    "Ireland contractor tax",
+    "Ltd company contractor Ireland"
+  ],
+  "related": [
+    "ireland-salary-calculator",
+    "take-home-pay-calculator",
+    "gross-to-net-salary"
+  ],
+  "dataRef": "irelandContractorSalary",
+  "intro": "Calculate your earnings as a contractor or freelancer in Ireland with our specialized calculator. Ireland offers contractors two main options: operating through a limited company (Ltd) or using an umbrella company. Each option has different tax implications, deductions, and administrative requirements. This calculator helps you compare both approaches to find the most tax-efficient structure for your contracting work.",
+  "ui": {
+    "calculatorHeading": "Contractor Pay Calculator",
+    "resultsHeading": "Contractor Pay Results",
+    "calculateButton": "Calculate Contractor Pay",
+    "scenarioLabel": "Contract Details:",
+    "resultsLabel": "Take-Home Earnings:",
+    "noResultsText": "Enter contract details to calculate"
+  },
+  "howContractorCalculatorWorks": "This Ireland contractor calculator compares two common contracting structures: Ltd company and umbrella company. For Ltd companies, it calculates corporation tax, director's salary, and dividends. For umbrella companies, it calculates PAYE tax, PRSI, and USC. The calculator shows net take-home pay for both options, helping you choose the most suitable structure based on your working patterns and tax situation.",
+  "workedExamples": {
+    "example1": {
+      "title": "Ltd Company Contractor",
+      "scenario": "Contractor earning €400/day, working 20 days/month through Ltd company",
+      "dailyRate": "€400",
+      "daysPerMonth": "20",
+      "grossMonthly": "€8,000",
+      "ltdNetMonthly": "€5,920",
+      "umbrellaNetMonthly": "€5,680",
+      "ltdVsUmbrella": "Ltd: €240 more per month"
+    },
+    "example2": {
+      "title": "High-Earning Contractor",
+      "scenario": "Senior contractor earning €550/day, working 15 days/month",
+      "dailyRate": "€550",
+      "daysPerMonth": "15",
+      "grossMonthly": "€8,250",
+      "ltdNetMonthly": "€6,088",
+      "umbrellaNetMonthly": "€5,773",
+      "ltdVsUmbrella": "Ltd: €315 more per month"
+    }
+  },
+  "whoShouldUseThisCalculator": [
+    "IT contractors and freelancers",
+    "Consultants working through agencies",
+    "Self-employed professionals",
+    "Business owners comparing structures",
+    "Tax advisors helping contractors",
+    "Anyone considering contracting work"
+  ],
+  "faqs": [
+    {
+      "question": "What's the difference between Ltd and umbrella companies?",
+      "answer": "Ltd companies are your own limited company where you invoice clients and pay corporation tax. Umbrella companies employ you and handle tax/PAYE deductions, but take a margin for their services."
+    },
+    {
+      "question": "Which option is more tax-efficient?",
+      "answer": "Ltd companies are often more tax-efficient for higher earners due to lower effective tax rates on dividends. Umbrella companies may be simpler for occasional contractors."
+    },
+    {
+      "question": "What are the costs of running an Ltd company?",
+      "answer": "Annual costs include accounting fees (€1,200-2,000), registered office (€300-600), and corporation tax filing. Umbrella companies charge 5-8% margin."
+    },
+    {
+      "question": "Do I need to register for VAT?",
+      "answer": "If your annual turnover exceeds €75,000, you must register for VAT. Umbrella companies handle this automatically."
+    },
+    {
+      "question": "Can I claim expenses as a contractor?",
+      "answer": "Yes, you can claim legitimate business expenses like travel, equipment, and home office costs. Keep detailed records and receipts."
+    }
+  ],
+  "internalLinks": [
+    {
+      "text": "Ireland Salary Calculator",
+      "url": "/en/ireland-salary-calculator",
+      "description": "Complete Ireland salary calculator for employees"
+    },
+    {
+      "text": "Take-Home Pay Calculator",
+      "url": "/en/take-home-pay-calculator",
+      "description": "Calculate net salary for any country"
+    },
+    {
+      "text": "Ireland Hourly to Salary",
+      "url": "/en/ireland-hourly-to-salary",
+      "description": "Convert hourly rates to annual salary"
+    }
+  ],
+  "conclusion": "Choosing between Ltd and umbrella company structures in Ireland depends on your working patterns, tax situation, and administrative preferences. Our calculator provides a clear comparison of both options, helping you make an informed decision about your contracting setup. Consider consulting a tax advisor to ensure compliance with Irish tax laws and to optimize your tax efficiency.",
+  "disclaimer": "SalaryWise provides general guidance on contractor structures. Tax treatment varies based on individual circumstances. Consult a qualified tax advisor for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "What's the difference between Ltd and umbrella?", "acceptedAnswer": { "@type": "Answer", "text": "Ltd is your own company paying corporation tax. Umbrella employs you and handles taxes." } },
+          { "@type": "Question", "name": "Which is more tax-efficient?", "acceptedAnswer": { "@type": "Answer", "text": "Ltd often better for higher earners due to dividend tax rates." } },
+          { "@type": "Question", "name": "What are Ltd company costs?", "acceptedAnswer": { "@type": "Answer", "text": "Accounting €1,200-2,000/year, registered office €300-600/year." } },
+          { "@type": "Question", "name": "Do I need VAT registration?", "acceptedAnswer": { "@type": "Answer", "text": "Yes if turnover exceeds €75,000. Umbrellas handle this." } },
+          { "@type": "Question", "name": "Can I claim expenses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, keep detailed records of legitimate business expenses." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "Ireland Contractor Salary Calculator", "item": "https://salarywise.io/en/ireland-contractor-salary-calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "Ireland Contractor Salary Calculator",
+        "url": "https://salarywise.io/en/ireland-contractor-salary-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Compare Ltd vs umbrella company options for Irish contractors."
+      }
+    ]
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "ukSalary",
+  "name": "UK Salary Calculator", 
+  "description": "Calculate take-home pay in the United Kingdom",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary (GBP)",
+      "type": "number",
+      "default": 50000,
+      "unit": "£",
+      "required": true
+    }
+  ],
+  "outputs": [
+    {
+      "id": "netSalary",
+      "label": "Net Salary",
+      "formula": "grossSalary * 0.78",
+      "unit": "£"
+    }
+  ]
+}

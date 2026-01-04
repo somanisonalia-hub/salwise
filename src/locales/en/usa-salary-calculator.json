@@ -1,76 +1,242 @@
 {
   "slug": "usa-salary-calculator",
   "type": "calculator",
-  "h1": "Salary After Tax Calculator – USA Net Pay Estimator",
-  "metaTitle": "Salary After Tax Calculator USA – Calculate Net Pay",
-  "metaDescription": "Use our USA salary after tax calculator to estimate your take-home pay. Include federal, state, and other deductions. Quick and free.",
-  "primaryKeyword": "salary after tax calculator USA",
+  "h1": "USA Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
+  "metaTitle": "USA Salary Calculator 2026 – Take Home Pay After Tax",
+  "metaDescription": "Calculate your take-home pay in the USA for 2026. Includes federal tax, state tax, Social Security, Medicare, 401k. Free & accurate.",
+  "primaryKeyword": "USA salary calculator",
   "longTailKeywords": [
-    "US salary calculator after tax",
-    "net pay calculator USA",
-    "take home salary USA",
-    "calculate salary after federal tax",
-    "calculate salary after state tax",
-    "gross to net salary USA",
-    "payroll calculator USA"
+    "USA salary calculator",
+    "take home pay USA",
+    "net salary USA",
+    "salary after tax USA",
+    "US paycheck calculator",
+    "US tax calculator",
+    "payslip calculator USA",
+    "US income tax calculator",
+    "US payroll calculator",
+    "gross to net USA"
   ],
   "related": [
     "gross-to-net-salary",
     "take-home-pay-calculator",
-    "net-to-gross-salary",
-    "salary-calculator"
+    "usa-salary-calculator"
   ],
-  "dataRef": "salaryAfterTaxUSA",
-  "intro": "Understanding your salary after tax in the USA is crucial for accurate budgeting and financial planning. This calculator estimates your take-home pay by accounting for federal income tax, state income tax, Social Security, Medicare, and other common deductions. Whether you're an employee, contractor, or freelancer working in the United States, this tool provides localized calculations for all 50 states to help you understand your actual net income.",
+  "dataRef": "usaSalaryCalculator",
+  "intro": "Calculate your take-home pay in the USA for 2026 with our comprehensive salary calculator. Understanding your net income after US taxes and deductions is crucial for accurate financial planning. Our calculator accounts for federal income tax using progressive tax brackets, state income tax (varying by state from 0% to over 13%), Social Security tax (6.2%), Medicare tax (1.45%), 401(k) contributions, and other common deductions. Whether you're comparing job offers, planning your budget, or negotiating a salary increase, knowing your exact net salary after all US deductions is essential for effective financial decision-making. This free calculator is designed specifically for US employees across all 50 states, offering fast, reliable calculations that help you understand the real impact of US taxes on your gross salary. With current 2026 tax rates and brackets, you can confidently plan your finances and make informed career decisions based on your actual take-home pay.",
   "ui": {
-    "calculatorHeading": "Calculate Your Results",
-    "resultsHeading": "Results",
-    "calculateButton": "Calculate",
+    "calculatorHeading": "Calculate Your USA Salary",
+    "resultsHeading": "Your Take-Home Pay Results",
+    "calculateButton": "Calculate Take-Home Pay",
     "scenarioLabel": "Scenario:",
     "resultsLabel": "Results:",
     "noResultsText": "No results calculated yet"
   },
-  "howSalaryAfterTaxWorksUSA": "Salary after tax in the USA involves several key deductions from your gross pay. Federal income tax is calculated based on tax brackets and filing status. State income tax varies significantly by state, from 0% in Texas and Florida to over 10% in California and New York. Social Security tax (6.2%) and Medicare tax (1.45%) are withheld for most employees. Optional deductions like 401(k) contributions, health insurance premiums, and other pre-tax benefits can further reduce your taxable income and increase your take-home pay.",
-  "example": {
-    "scenario": "An employee earning $60,000 annually in California with standard deductions.",
-    "results": "Gross salary: $60,000 | Federal tax: $9,000 | State tax (CA): $3,000 | Social Security: $3,720 | Medicare: $870 | Net salary: $43,410 | Monthly net: $3,618"
+  "howThisUSASalaryCalculatorWorks": "This USA salary calculator works by taking your gross salary and applying all relevant US tax calculations step by step. First, your gross annual salary is calculated from your pay frequency. Then federal income tax is calculated using 2026 tax brackets: 10% on the first $11,600, 12% on $11,601-$47,150, 22% on $47,151-$100,525, and higher rates above that. State income tax is added based on your selected state (from 0% in Texas to over 13% in California). Social Security tax (6.2%) and Medicare tax (1.45%) are applied to most employees. Additional deductions like 401(k) contributions (which are tax-relievable) and other annual deductions are factored in. The calculator follows official IRS calculation methods for reliable financial planning across all US states.",
+  "useCases": {
+    "example1": {
+      "title": "$50,000 Entry-Level Professional",
+      "scenario": "A graduate or junior professional earning $50,000 annually in New York",
+      "grossSalary": "$50,000",
+      "federalTax": "$6,890 (13.8% effective rate)",
+      "stateTax": "$2,250 (4.5% NY rate)",
+      "socialSecurity": "$3,100 (6.2%)",
+      "medicare": "$725 (1.45%)",
+      "totalDeductions": "$12,965",
+      "netSalary": "$37,035",
+      "monthlyNet": "$3,086",
+      "effectiveTaxRate": "25.9%"
+    },
+    "example2": {
+      "title": "$80,000 Mid-Level Manager",
+      "scenario": "A manager earning $80,000 annually in California with 5% 401(k) contribution",
+      "grossSalary": "$80,000",
+      "federalTax": "$14,790 (18.5% effective rate)",
+      "stateTax": "$5,840 (7.3% CA rate)",
+      "socialSecurity": "$4,960 (6.2%)",
+      "medicare": "$1,160 (1.45%)",
+      "fourOOneK": "$4,000 (5%)",
+      "totalDeductions": "$30,750",
+      "netSalary": "$49,250",
+      "monthlyNet": "$4,104",
+      "effectiveTaxRate": "38.4%"
+    },
+    "example3": {
+      "title": "$60,000 Professional + 5h/week OT",
+      "scenario": "A professional earning $60,000 base salary with 5 hours weekly overtime at time-and-a-half",
+      "grossSalary": "$60,000",
+      "overtime": "$5,000 (annual equivalent)",
+      "federalTax": "$9,790 (15.5% effective rate)",
+      "stateTax": "$3,000 (5% average state rate)",
+      "socialSecurity": "$3,720 (6.2%)",
+      "medicare": "$870 (1.45%)",
+      "totalDeductions": "$17,380",
+      "netSalary": "$47,620",
+      "monthlyNet": "$3,968",
+      "effectiveTaxRate": "28.9%"
+    }
   },
-  "whyUseSalaryAfterTaxCalculator": [
-    "Accurate budgeting based on your actual take-home pay",
-    "Compare job offers using real net income figures",
-    "Plan for tax withholdings and avoid surprises",
-    "Make informed decisions about pre-tax deductions",
-    "Understand the impact of state taxes on your salary",
-    "Prepare for year-end tax planning and refunds"
+  "whoShouldUseThisCalculator": [
+    "US employees comparing job offers and salary packages",
+    "Employers calculating payroll costs and employee take-home pay",
+    "Job seekers evaluating compensation packages across states",
+    "Expats and immigrants adapting to US tax system",
+    "Financial advisors helping clients with US salary planning",
+    "Anyone planning their budget based on actual take-home pay in the USA"
   ],
+  "taxCreditsInformation": {
+    "title": "Understanding US Tax Allowances (2026)",
+    "intro": "US tax calculations include various allowances and deductions that can significantly reduce your overall tax liability. The standard deduction for 2026 is $14,600 for single filers and $29,200 for married filing jointly. Additional deductions may apply for dependents, mortgage interest, charitable contributions, and other qualifying expenses. These allowances are applied after calculating your tax liability and can substantially lower your final tax bill.",
+    "credits": [
+      {
+        "name": "Standard Deduction",
+        "amount": "$14,600 (single) / $29,200 (married)",
+        "description": "Basic deduction applied to most taxpayers"
+      },
+      {
+        "name": "Personal Exemption",
+        "amount": "$0 (eliminated in 2018, but may return)",
+        "description": "Per-person exemption (currently suspended)"
+      },
+      {
+        "name": "Child Tax Credit",
+        "amount": "Up to $2,000 per qualifying child",
+        "description": "Available for children under 17"
+      },
+      {
+        "name": "Earned Income Tax Credit",
+        "amount": "Up to $7,430 (2024 amounts)",
+        "description": "Refundable credit for low-to-moderate income workers"
+      }
+    ],
+    "conclusion": "It's important to note that this calculator provides estimates. Your actual tax allowances may vary based on your filing status, dependents, and specific circumstances. Always refer to IRS Publication 17 or consult a tax professional for personalized calculations."
+  },
+  "importantConsiderations": {
+    "title": "Important US Tax Considerations",
+    "points": [
+      "**Tax Year:** The US tax year runs from January 1 to December 31.",
+      "**Progressive Tax System:** Federal tax uses 7 brackets from 10% to 37%.",
+      "**State Taxes:** Vary widely from 0% (Texas, Florida) to over 13% (California).",
+      "**Social Security & Medicare:** FICA taxes of 7.65% (employee share) for most workers.",
+      "**401(k) Contributions:** Pre-tax retirement savings that reduce taxable income.",
+      "**W-4 Form:** Determines federal tax withholding - should be reviewed annually."
+    ]
+  },
   "faqs": [
     {
-      "question": "Does this calculator include both federal and state taxes?",
-      "answer": "Yes, it includes federal income tax calculations and state-specific tax rates for all 50 US states."
+      "question": "How accurate are US tax calculations?",
+      "answer": "This calculator uses the official 2026 US federal tax rates and brackets for all 50 states, providing highly reliable estimates for financial planning. Actual take-home pay may vary based on individual circumstances and W-4 elections."
     },
     {
-      "question": "Can I include deductions like 401k contributions?",
-      "answer": "Yes, you can add common deductions including 401(k), health insurance, and other pre-tax benefits that reduce your taxable income."
+      "question": "What taxes and deductions are included?",
+      "answer": "The calculator includes all major US deductions: federal income tax, state income tax, Social Security (6.2%), Medicare (1.45%), 401(k) contributions, and other annual deductions."
     },
     {
-      "question": "Is this calculator accurate for all US states?",
-      "answer": "Yes, it includes state-specific tax rates and calculations for all 50 states, including states with no income tax."
+      "question": "How do state taxes affect my take-home pay?",
+      "answer": "State taxes vary significantly: 9 states have no income tax (Texas, Florida, etc.), while California and New York have rates over 10%. Your location can add 0-13%+ to your federal tax burden."
     },
     {
-      "question": "Can I calculate monthly take-home pay?",
-      "answer": "Yes! Enter your annual salary and the calculator will show both annual and monthly breakdowns of your net pay."
+      "question": "Can I include bonuses and overtime?",
+      "answer": "Yes, you can add annual bonuses and overtime pay. These are taxed at your marginal federal rate plus state taxes, potentially pushing you into higher tax brackets depending on your total income."
     },
     {
-      "question": "Is this USA salary after tax calculator free?",
-      "answer": "Yes, completely free with no registration required. All calculations are performed instantly in your browser."
+      "question": "What's the difference between gross and net salary?",
+      "answer": "Gross salary is your total compensation before any deductions. Net salary is your take-home pay after all taxes (federal, state, FICA) and other deductions (like 401(k)) have been subtracted. This calculator shows that difference clearly."
+    },
+    {
+      "question": "How does the US tax system work?",
+      "answer": "The US operates a progressive federal tax system with 7 brackets, plus state taxes that vary by location. Social Security and Medicare are separate payroll taxes. Taxpayers can reduce taxable income through deductions and credits."
+    },
+    {
+      "question": "Can freelancers and contractors use this calculator?",
+      "answer": "This calculator is primarily designed for employees under W-2. Self-employed individuals face different tax treatments including self-employment tax (15.3%) instead of FICA. Use our USA Contractor Salary Calculator instead."
+    },
+    {
+      "question": "Where can I find my W-4 form?",
+      "answer": "Your W-4 is filed with your employer and determines federal tax withholding. You can download Form W-4 from IRS.gov or get a new one from your employer. It should be updated whenever your tax situation changes."
     }
   ],
-  "tips": [
-    "Review your W-4 form annually to ensure proper federal tax withholding",
-    "Consider state tax rates when evaluating job offers in different locations",
-    "Maximize pre-tax deductions like 401(k) contributions to reduce taxable income",
-    "Keep track of year-to-date earnings for accurate tax planning",
-    "Consult a tax professional for personalized advice on complex tax situations"
-  ]
+  "internalLinks": [
+    {
+      "text": "Take-Home Pay Calculator",
+      "url": "/en/take-home-pay-calculator",
+      "description": "General calculator for net salary calculations"
+    },
+    {
+      "text": "Gross to Net Salary Calculator",
+      "url": "/en/gross-to-net-salary",
+      "description": "Learn about gross vs net salary concepts"
+    },
+    {
+      "text": "USA Bonus Tax Calculator",
+      "url": "/en/usa-bonus-tax",
+      "description": "Calculate tax on bonuses in the USA"
+    },
+    {
+      "text": "USA Overtime Pay Calculator",
+      "url": "/en/usa-overtime-pay",
+      "description": "Calculate overtime pay and tax in the USA"
+    }
+  ],
+  "externalResources": {
+    "title": "Official US Tax Resources",
+    "links": [
+      {
+        "text": "IRS Tax Withholding Estimator",
+        "url": "https://www.irs.gov/individuals/tax-withholding-estimator",
+        "description": "Official IRS tool to check your tax withholding."
+      },
+      {
+        "text": "IRS Income Tax Brackets",
+        "url": "https://www.irs.gov/filing/federal-income-tax-brackets",
+        "description": "Current federal income tax brackets and rates."
+      },
+      {
+        "text": "SSA Retirement Benefits",
+        "url": "https://www.ssa.gov/benefits/retirement/",
+        "description": "Information about Social Security benefits."
+      },
+      {
+        "text": "IRS Free File",
+        "url": "https://www.irs.gov/filing/free-file-do-your-federal-taxes-for-free",
+        "description": "Free tax filing options for qualifying taxpayers."
+      }
+    ]
+  },
+  "conclusion": "This USA salary calculator is an indispensable tool for anyone navigating the complex US tax landscape. By providing accurate 2026 tax calculations, detailed use cases, and links to official IRS resources, it empowers you to make informed financial decisions. Whether you're an employee, employer, or simply planning your finances, trust SalaryWise.io for reliable insights into your take-home pay across all 50 states.",
+  "disclaimer": "SalaryWise provides estimated take-home pay based on publicly available tax structures. Results are for guidance only and should not be considered financial advice. Always consult official government resources or a qualified tax professional for personalized advice.",
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          { "@type": "Question", "name": "How accurate are US tax calculations?", "acceptedAnswer": { "@type": "Answer", "text": "This calculator uses the official 2026 US federal tax rates and brackets for all 50 states, providing highly reliable estimates for financial planning. Actual take-home pay may vary based on individual circumstances and W-4 elections." } },
+          { "@type": "Question", "name": "What taxes and deductions are included?", "acceptedAnswer": { "@type": "Answer", "text": "The calculator includes all major US deductions: federal income tax, state income tax, Social Security (6.2%), Medicare (1.45%), 401(k) contributions, and other annual deductions." } },
+          { "@type": "Question", "name": "How do state taxes affect my take-home pay?", "acceptedAnswer": { "@type": "Answer", "text": "State taxes vary significantly: 9 states have no income tax (Texas, Florida, etc.), while California and New York have rates over 10%. Your location can add 0-13%+ to your federal tax burden." } },
+          { "@type": "Question", "name": "Can I include bonuses and overtime?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, you can add annual bonuses and overtime pay. These are taxed at your marginal federal rate plus state taxes, potentially pushing you into higher tax brackets depending on your total income." } },
+          { "@type": "Question", "name": "What's the difference between gross and net salary?", "acceptedAnswer": { "@type": "Answer", "text": "Gross salary is your total earnings before any deductions. Net salary is your take-home pay after all taxes (federal, state, FICA) and other deductions (like 401(k)) have been subtracted. This calculator shows that difference clearly." } },
+          { "@type": "Question", "name": "How does the US tax system work?", "acceptedAnswer": { "@type": "Answer", "text": "The US operates a progressive federal tax system with 7 brackets, plus state taxes that vary by location. Social Security and Medicare are separate payroll taxes. Taxpayers can reduce taxable income through deductions and credits." } },
+          { "@type": "Question", "name": "Can freelancers and contractors use this calculator?", "acceptedAnswer": { "@type": "Answer", "text": "This calculator is primarily designed for employees under W-2. Self-employed individuals face different tax treatments including self-employment tax (15.3%) instead of FICA. Use our USA Contractor Salary Calculator instead." } },
+          { "@type": "Question", "name": "Where can I find my W-4 form?", "acceptedAnswer": { "@type": "Answer", "text": "Your W-4 is filed with your employer and determines federal tax withholding. You can download Form W-4 from IRS.gov or get a new one from your employer. It should be updated whenever your tax situation changes." } }
+        ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
+          { "@type": "ListItem", "position": 2, "name": "USA Salary Calculator", "item": "https://salarywise.io/en/usa-salary-calculator" }
+        ]
+      },
+      {
+        "@type": "WebApplication",
+        "name": "USA Salary Calculator",
+        "url": "https://salarywise.io/en/usa-salary-calculator",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": "Web",
+        "description": "Calculate your take-home pay in the USA including federal tax, state tax, Social Security, Medicare, and 401k deductions."
+      }
+    ]
+  }
 }
 

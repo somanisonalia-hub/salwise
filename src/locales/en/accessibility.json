@@ -1,0 +1,13 @@
+{
+  "slug": "accessibility",
+  "type": "page",
+  "h1": "Accessibility Statement",
+  "metaTitle": "Accessibility | WCAG Compliance | SalaryWise.io",
+  "metaDescription": "Our commitment to accessibility and WCAG compliance on SalaryWise.io.",
+  "primaryKeyword": "accessibility",
+  "longTailKeywords": ["wcag compliance", "accessible website", "disability access"],
+  "related": ["about", "privacy-policy"],
+  "intro": "We are committed to making SalaryWise.io accessible to everyone, including users with disabilities.",
+  "content": "Accessibility statement and WCAG compliance information.",
+  "disclaimer": "We continuously work to improve accessibility."
+}

@@ -16,7 +16,7 @@
   "related": [
     "salary-calculator",
     "take-home-pay-calculator",
-    "net-to-gross-salary"
+    "salary-after-tax-calculator"
   ],
   "dataRef": "grossToNet",
   "intro": "Understanding the difference between gross and net salary is fundamental to personal finance. Gross salary represents your total compensation before any deductions, while net salary is the actual amount you receive after taxes and mandatory contributions. This educational calculator helps you understand salary conversions by demonstrating how various deductions transform your gross pay into take-home pay. Learn about different types of deductions, tax calculations, and how to estimate your net income from gross compensation.",

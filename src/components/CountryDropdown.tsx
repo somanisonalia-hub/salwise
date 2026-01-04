@@ -33,7 +33,7 @@ const countries: Country[] = [
     code: 'CA',
     name: 'Canada',
     flag: '🇨🇦',
-    slug: 'salary-calculator-canada',
+    slug: 'canada-salary-calculator',
     currency: 'CAD',
     description: 'Federal & provincial tax calculations'
   },
@@ -41,7 +41,7 @@ const countries: Country[] = [
     code: 'AU',
     name: 'Australia',
     flag: '🇦🇺',
-    slug: 'salary-calculator-australia',
+    slug: 'australia-salary-calculator',
     currency: 'AUD',
     description: 'Income tax & superannuation'
   },
@@ -57,7 +57,7 @@ const countries: Country[] = [
     code: 'IN',
     name: 'India',
     flag: '🇮🇳',
-    slug: 'salary-calculator-india',
+    slug: 'india-salary-calculator',
     currency: 'INR',
     description: 'Indian income tax slabs'
   }

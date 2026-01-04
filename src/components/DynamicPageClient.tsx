@@ -37,6 +37,7 @@ interface PageData {
   whyUseBonusCalculator?: string[];
   howOvertimePayIsCalculated?: string;
   whenToUseOvertimeCalculator?: string[];
+  workedExamples?: any;
   howSalaryAfterTaxWorksUSA?: string;
   howSalaryAfterTaxWorksUK?: string;
   howSalaryAfterTaxWorksIreland?: string;
@@ -1604,18 +1605,53 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
                 </div>
               )}
 
-            {/* Example Gross to Net Salary Calculation Section */}
-            <div className="bg-white border border-gray-200 p-6 mb-6">
-              <h2 className="text-xl font-bold text-gray-900 mb-4">Example Gross to Net Salary Calculation</h2>
-              <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
-                <p className="text-gray-700">
-                  <strong>{pageData.ui?.scenarioLabel || "Scenario:"}</strong> {pageData.example?.scenario || "An employee earns €60,000 annually in gross salary with a 25% estimated tax rate."}
-                </p>
-                <p className="text-gray-700 mt-2">
-                  <strong>{pageData.ui?.resultsLabel || "Results:"}</strong> {pageData.example?.results || "Annual gross: €60,000 | Estimated tax: €15,000 | Annual net: €45,000 | Monthly net: €3,750"}
-                </p>
+            {/* Use Cases Section */}
+            {pageData.workedExamples && (
+              <div className="bg-white border border-gray-200 p-6 mb-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-4">Use Cases</h2>
+                <div className="space-y-6">
+                  {Object.entries(pageData.workedExamples).map(([key, example]: [string, any], index: number) => (
+                    <div key={key} className="bg-blue-50 border-l-4 border-blue-400 p-4">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-2">{example.title}</h3>
+                      <p className="text-gray-700 mb-3">
+                        <strong>Scenario:</strong> {example.scenario}
+                      </p>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
+                        <div>
+                          <p><strong>Gross Salary:</strong> {example.grossSalary}</p>
+                          {example.payeTax && <p><strong>PAYE Tax:</strong> {example.payeTax}</p>}
+                          {example.usc && <p><strong>USC:</strong> {example.usc}</p>}
+                          {example.prsi && <p><strong>PRSI:</strong> {example.prsi}</p>}
+                          {example.pension && <p><strong>Pension:</strong> {example.pension}</p>}
+                          {example.otherDeductions && <p><strong>Other Deductions:</strong> {example.otherDeductions}</p>}
+                        </div>
+                        <div>
+                          {example.totalDeductions && <p><strong>Total Deductions:</strong> {example.totalDeductions}</p>}
+                          <p><strong>Net Salary:</strong> {example.netSalary}</p>
+                          {example.monthlyNet && <p><strong>Monthly Net:</strong> {example.monthlyNet}</p>}
+                          {example.effectiveTaxRate && <p><strong>Effective Tax Rate:</strong> {example.effectiveTaxRate}</p>}
+                        </div>
+                      </div>
+                    </div>
+                  ))}
+                </div>
               </div>
-            </div>
+            )}
+
+            {/* Single Example Section (fallback) */}
+            {!pageData.workedExamples && pageData.example && (
+              <div className="bg-white border border-gray-200 p-6 mb-6">
+                <h2 className="text-xl font-bold text-gray-900 mb-4">Example Calculation</h2>
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
+                  <p className="text-gray-700">
+                    <strong>{pageData.ui?.scenarioLabel || "Scenario:"}</strong> {pageData.example.scenario || "An employee earns €60,000 annually in gross salary with a 25% estimated tax rate."}
+                  </p>
+                  <p className="text-gray-700 mt-2">
+                    <strong>{pageData.ui?.resultsLabel || "Results:"}</strong> {pageData.example.results || "Annual gross: €60,000 | Estimated tax: €15,000 | Annual net: €45,000 | Monthly net: €3,750"}
+                  </p>
+                </div>
+              </div>
+            )}
 
             {/* When to Use a Gross to Net Calculator Section */}
             {pageData.whenToUse && pageData.whenToUse.length > 0 && (
@@ -1721,10 +1757,10 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
                     🌍 By Country
                   </h3>
                   <div className="space-y-2">
-                    <a href="/en/salary-calculator-usa" className="block text-blue-600 hover:text-blue-800 text-sm">USA Salary Calculator</a>
-                    <a href="/en/salary-calculator-uk" className="block text-blue-600 hover:text-blue-800 text-sm">UK Salary Calculator</a>
-                    <a href="/en/salary-calculator-canada" className="block text-blue-600 hover:text-blue-800 text-sm">Canada Salary Calculator</a>
-                    <a href="/en/salary-calculator-australia" className="block text-blue-600 hover:text-blue-800 text-sm">Australia Salary Calculator</a>
+                    <a href="/en/usa-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">USA Salary Calculator</a>
+                    <a href="/en/uk-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">UK Salary Calculator</a>
+                    <a href="/en/canada-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Canada Salary Calculator</a>
+                    <a href="/en/australia-salary-calculator" className="block text-blue-600 hover:text-blue-800 text-sm">Australia Salary Calculator</a>
                   </div>
                 </div>
 

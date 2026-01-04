@@ -20,7 +20,7 @@
     "gross-to-net-salary",
     "take-home-pay-calculator",
     "net-to-gross-salary",
-    "salary-calculator-uk"
+    "uk-salary-calculator"
   ],
   "dataRef": "salaryAfterTaxUK",
   "intro": "Understanding your salary after tax in the UK is essential for accurate financial planning. This calculator estimates your take-home pay by accounting for UK income tax, National Insurance contributions, and other common deductions. Whether you're an employee, contractor, or freelancer working in the United Kingdom, this tool provides localized calculations for England, Scotland, and Wales to help you understand your actual net income and make informed financial decisions.",

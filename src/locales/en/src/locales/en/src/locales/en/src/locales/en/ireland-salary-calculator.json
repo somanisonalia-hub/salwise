@@ -19,8 +19,7 @@
   "related": [
     "gross-to-net-salary",
     "take-home-pay-calculator",
-    "net-to-gross-salary",
-    "ireland-salary-calculator"
+    "net-to-gross-salary"
   ],
   "dataRef": "irelandSalaryCalculator",
   "intro": "Calculate your take-home pay in Ireland for 2026 with our comprehensive salary calculator. Based on official Revenue.ie tax rates and guidelines, this tool accurately calculates PAYE (Pay As You Earn) income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions. Ireland's progressive tax system uses multiple tax bands and rates, making precise calculations essential for financial planning. Whether you're an Irish resident, expatriate worker, or employer calculating payroll costs, this calculator provides reliable estimates for budgeting, salary negotiations, and understanding your net income after all mandatory Irish tax deductions. Use current 2026 tax brackets and rates for accurate financial planning.",
@@ -200,11 +199,11 @@
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "How do I calculate take-home pay in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Deduct PAYE, PRSI, and USC from your gross salary." } },
-          { "@type": "Question", "name": "What is PAYE in Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "PAYE is the income tax deducted from your salary." } },
-          { "@type": "Question", "name": "What is PRSI?", "acceptedAnswer": { "@type": "Answer", "text": "PRSI is the social insurance contribution paid by employees and employers." } },
-          { "@type": "Question", "name": "What is USC?", "acceptedAnswer": { "@type": "Answer", "text": "USC is the Universal Social Charge, a tax on gross income." } },
-          { "@type": "Question", "name": "Can I include bonuses and overtime?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the calculator allows you to add bonuses and overtime to calculate net pay." } }
+          { "@type": "Question", "name": "How accurate are Irish tax calculations?", "acceptedAnswer": { "@type": "Answer", "text": "Uses official 2026 Revenue.ie rates and brackets for PAYE, USC, and PRSI." } },
+          { "@type": "Question", "name": "What taxes are included?", "acceptedAnswer": { "@type": "Answer", "text": "PAYE income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI)." } },
+          { "@type": "Question", "name": "How do tax credits work?", "acceptedAnswer": { "@type": "Answer", "text": "Tax credits reduce final tax liability. Standard credit is €2,200 for 2026." } },
+          { "@type": "Question", "name": "Can I include bonuses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, bonuses are taxed at the same rates as regular salary." } },
+          { "@type": "Question", "name": "What's the Irish tax system?", "acceptedAnswer": { "@type": "Answer", "text": "Progressive tax with bands: 20%, 40%, and 45% on income." } }
         ]
       },
       {
@@ -220,9 +219,8 @@
         "url": "https://salarywise.io/en/ireland-salary-calculator",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "Web",
-        "description": "Calculate your take-home pay in Ireland including PAYE, PRSI, USC and bonuses."
+        "description": "Calculate your take-home pay in Ireland including PAYE, USC, PRSI and bonuses."
       }
     ]
   }
 }
-

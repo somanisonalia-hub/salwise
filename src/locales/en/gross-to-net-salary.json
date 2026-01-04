@@ -1,26 +1,25 @@
 {
   "slug": "gross-to-net-salary",
   "type": "calculator",
-  "h1": "Ireland Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
-  "metaTitle": "Ireland Gross to Net Salary Calculator 2026 – Calculate Take-Home Pay",
-  "metaDescription": "Convert gross to net salary in Ireland for 2026. Calculate take-home pay after PAYE, USC, PRSI taxes and deductions.",
-  "primaryKeyword": "ireland salary calculator",
+  "h1": "Gross to Net Salary Calculator – Understanding Salary Conversions",
+  "metaTitle": "Gross to Net Salary Calculator | Convert Gross Pay to Net Income",
+  "metaDescription": "Learn the difference between gross and net salary. Calculate take-home pay after taxes and deductions with our educational salary conversion tool.",
+  "primaryKeyword": "gross to net salary calculator",
   "longTailKeywords": [
-    "ireland salary calculator",
-    "take home pay ireland",
-    "salary after tax ireland",
-    "net salary ireland",
-    "gross to net ireland",
-    "irish salary calculator"
+    "gross to net salary",
+    "gross pay vs net pay",
+    "salary conversion calculator",
+    "how to calculate net salary",
+    "gross income to net income",
+    "salary after taxes calculator"
   ],
   "related": [
     "salary-calculator",
     "take-home-pay-calculator",
-    "net-to-gross-salary",
-    "salary-calculator-ireland"
+    "net-to-gross-salary"
   ],
   "dataRef": "grossToNet",
-  "intro": "Calculate your take-home pay in Ireland with our comprehensive salary calculator. This tool provides accurate estimates by incorporating PAYE (Pay As You Earn) income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions based on 2026 Irish tax rates. Whether you're comparing job offers, planning your budget, or negotiating a salary increase, knowing your exact net income after all Irish deductions is essential for effective financial planning. Get instant results for annual, monthly, and weekly take-home pay calculations tailored to Ireland's unique tax system.",
+  "intro": "Understanding the difference between gross and net salary is fundamental to personal finance. Gross salary represents your total compensation before any deductions, while net salary is the actual amount you receive after taxes and mandatory contributions. This educational calculator helps you understand salary conversions by demonstrating how various deductions transform your gross pay into take-home pay. Learn about different types of deductions, tax calculations, and how to estimate your net income from gross compensation.",
   "ui": {
     "calculatorHeading": "Calculate Your Results",
     "resultsHeading": "Results",
@@ -29,40 +28,41 @@
     "resultsLabel": "Results:",
     "noResultsText": "No results calculated yet"
   },
-  "whatIsGrossVsNet": "Gross salary refers to your total compensation before any deductions are taken out. It's the amount your employer agrees to pay you for your work. Net salary, on the other hand, is your take-home pay - the amount you actually receive in your bank account after taxes, social security contributions, health insurance premiums, and other withholdings have been deducted. Typical deductions include federal and state income taxes, Social Security (FICA) contributions, Medicare taxes, and sometimes retirement plan contributions or health insurance premiums.",
-  "howThisIrelandSalaryCalculatorWorks": "This Ireland salary calculator works by taking your gross salary and applying the relevant Irish tax calculations step by step. First, your gross annual salary is calculated from your pay frequency. Then PAYE income tax is calculated using Ireland's progressive tax bands: 20% on the first €42,335, 40% on income between €42,336 and €70,557, and 48% on income over €70,557. Next, Universal Social Charge (USC) is applied with rates ranging from 0.5% to 8% depending on your income level. Pay Related Social Insurance (PRSI) contributions are then calculated at the standard employee rate. The calculator subtracts these mandatory deductions from your gross pay to show your net take-home salary, helping you understand exactly how much you'll receive after all Irish taxes and social insurance contributions.",
+  "whatIsGrossVsNet": "Gross salary represents your total compensation before any deductions, while net salary is what you actually take home after taxes and mandatory contributions. Understanding this difference is crucial for budgeting, comparing job offers, and financial planning. Gross pay includes your base salary plus any additional compensation like bonuses or overtime. Net pay is calculated by subtracting various deductions including income taxes, social security contributions, and other withholdings. The percentage difference between gross and net varies by country, income level, and individual circumstances.",
+  "howGrossToNetCalculatorWorks": "This educational calculator demonstrates how gross salary is converted to net pay through various deductions. You can add different types of deductions to see how they affect your take-home pay. While this tool focuses on common deductions, actual calculations depend on your country's tax system and personal circumstances. Use this calculator to understand salary conversion concepts and estimate your net income for different scenarios.",
   "workedExamples": {
     "example1": {
-      "title": "€35,000 Annual Salary Example",
-      "scenario": "A junior professional earning €35,000 annually in Ireland",
-      "grossSalary": "€35,000",
-      "payeTax": "€4,667",
-      "usc": "€1,225",
-      "prsi": "€1,400",
-      "totalDeductions": "€7,292",
-      "netSalary": "€27,708",
-      "monthlyNet": "€2,309"
+      "title": "Basic Salary Conversion",
+      "scenario": "Employee with $50,000 gross salary and standard deductions",
+      "grossSalary": "$50,000",
+      "incomeTax": "$12,000 (24%)",
+      "socialSecurity": "$3,825 (7.65%)",
+      "otherDeductions": "$2,500",
+      "totalDeductions": "$18,325",
+      "netSalary": "$31,675",
+      "effectiveRate": "36.7%"
     },
     "example2": {
-      "title": "€60,000 Annual Salary Example",
-      "scenario": "A senior professional earning €60,000 annually in Ireland",
-      "grossSalary": "€60,000",
-      "payeTax": "€13,913",
-      "usc": "€2,475",
-      "prsi": "€2,400",
-      "totalDeductions": "€18,788",
-      "netSalary": "€41,212",
-      "monthlyNet": "€3,434"
+      "title": "Complex Deductions",
+      "scenario": "Employee with benefits and multiple deductions",
+      "grossSalary": "$75,000",
+      "incomeTax": "$18,750 (25%)",
+      "socialSecurity": "$5,738 (7.65%)",
+      "healthInsurance": "$4,800",
+      "retirement": "$5,625 (7.5%)",
+      "totalDeductions": "$34,913",
+      "netSalary": "$40,087",
+      "effectiveRate": "46.6%"
     }
   },
   "whoShouldUseThisCalculator": [
-    "Irish employees comparing job offers and salary packages",
-    "Employers calculating payroll costs and employee take-home pay",
-    "Freelancers and contractors estimating net income after Irish taxes",
-    "Expats moving to Ireland who need to understand local tax implications",
-    "Students and graduates entering the Irish job market",
-    "Financial advisors helping clients with Irish salary planning",
-    "Anyone planning their budget based on actual take-home pay in Ireland"
+    "Job seekers comparing salary offers",
+    "Employees understanding their pay structure",
+    "Students learning about compensation",
+    "Financial planners explaining salary concepts",
+    "Anyone budgeting based on take-home pay",
+    "HR professionals explaining compensation packages",
+    "Business owners calculating payroll costs"
   ],
   "faqs": [
     {

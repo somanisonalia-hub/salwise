@@ -41,6 +41,157 @@ const nextConfig: NextConfig = {
         permanent: true,
       },
       // Country calculator redirects
+      {
+        source: '/salary-calculator-usa',
+        destination: '/en/usa-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-uk',
+        destination: '/en/uk-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-ireland',
+        destination: '/en/ireland-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-canada',
+        destination: '/en/canada-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-australia',
+        destination: '/en/australia-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-germany',
+        destination: '/en/germany-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-france',
+        destination: '/en/france-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-spain',
+        destination: '/en/spain-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-india',
+        destination: '/en/india-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-singapore',
+        destination: '/en/singapore-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-netherlands',
+        destination: '/en/netherlands-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-sweden',
+        destination: '/en/sweden-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-switzerland',
+        destination: '/en/switzerland-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-new-zealand',
+        destination: '/en/new-zealand-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/salary-calculator-south-africa',
+        destination: '/en/south-africa-salary-calculator',
+        permanent: true,
+      },
+      // Also add redirects with /en/ prefix
+      {
+        source: '/en/salary-calculator-usa',
+        destination: '/en/usa-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-uk',
+        destination: '/en/uk-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-ireland',
+        destination: '/en/ireland-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-canada',
+        destination: '/en/canada-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-australia',
+        destination: '/en/australia-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-germany',
+        destination: '/en/germany-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-france',
+        destination: '/en/france-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-spain',
+        destination: '/en/spain-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-india',
+        destination: '/en/india-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-singapore',
+        destination: '/en/singapore-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-netherlands',
+        destination: '/en/netherlands-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-sweden',
+        destination: '/en/sweden-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-switzerland',
+        destination: '/en/switzerland-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-new-zealand',
+        destination: '/en/new-zealand-salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/salary-calculator-south-africa',
+        destination: '/en/south-africa-salary-calculator',
+        permanent: true,
+      },
       // Industry calculator redirects
       {
         source: '/salary-calculator-it-tech',

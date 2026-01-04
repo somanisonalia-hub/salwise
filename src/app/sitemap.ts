@@ -6,7 +6,7 @@ export const dynamic = 'force-static';
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://salarywise.io';
   const lastModified = new Date('2026-01-02'); // General pages
-  const corePagesModified = new Date('2026-01-04'); // Updated core pages
+  const corePagesModified = new Date('2026-01-07'); // Updated core pages (intent fix)
 
   // Static pages - English locale URLs
   const staticPages = [

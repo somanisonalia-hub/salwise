@@ -1,139 +1,128 @@
 {
   "slug": "salary-calculator",
   "type": "calculator",
-  "h1": "Ireland Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
-  "metaTitle": "Ireland Salary Calculator 2026 – Take Home Pay After Tax",
-  "metaDescription": "Calculate your take-home pay in Ireland for 2026. Includes PAYE, USC, PRSI, pension, bonus and deductions. Free & accurate.",
-  "primaryKeyword": "ireland salary calculator",
+  "h1": "Global Salary Calculator – Compare Take-Home Pay Worldwide",
+  "metaTitle": "Global Salary Calculator | Compare Salaries Across Countries",
+  "metaDescription": "Compare take-home pay across different countries with our global salary calculator. Calculate net salary after taxes for 15+ countries worldwide.",
+  "primaryKeyword": "global salary calculator",
   "longTailKeywords": [
-    "ireland salary calculator",
-    "take home pay ireland",
-    "salary after tax ireland",
-    "net salary ireland",
-    "irish paycheck calculator",
-    "ireland tax calculator",
-    "payslip calculator ireland",
-    "ireland income tax calculator",
-    "ireland payroll calculator"
+    "salary calculator worldwide",
+    "international salary comparison",
+    "compare salaries globally",
+    "salary by country calculator",
+    "worldwide salary comparison tool"
   ],
   "related": [
     "gross-to-net-salary",
     "take-home-pay-calculator",
-    "net-to-gross-salary",
-    "ireland-salary-calculator"
+    "net-to-gross-salary"
   ],
   "dataRef": "globalSalary",
-  "intro": "Understanding your take-home pay in Ireland requires accounting for the country's unique tax system. Our Ireland salary calculator provides accurate estimates by incorporating PAYE (Pay As You Earn) income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions. Whether you're comparing job offers, planning your budget, or negotiating a salary increase, knowing your exact net income after all Irish deductions is essential for effective financial planning. This free calculator is designed specifically for Irish employees and employers, offering fast, reliable calculations that help you understand the real impact of Irish taxes on your gross salary. With 2026 tax rates and brackets, you can confidently plan your finances and make informed career decisions based on your actual take-home pay.",
+  "intro": "Compare salaries across different countries with our comprehensive global salary calculator. This tool helps you understand how your compensation stacks up internationally by calculating take-home pay after local taxes and deductions. Whether you're considering international job offers, planning an expatriate assignment, or simply curious about global compensation standards, our calculator provides accurate estimates for over 15 countries worldwide. Select your country and see how your salary translates to real purchasing power in different economies.",
   "ui": {
-    "calculatorHeading": "Calculate Your Results",
-    "resultsHeading": "Results",
-    "calculateButton": "Calculate",
-    "scenarioLabel": "Scenario:",
-    "resultsLabel": "Results:",
-    "noResultsText": "No results calculated yet"
+    "calculatorHeading": "Compare Global Salaries",
+    "resultsHeading": "Salary Comparison Results",
+    "calculateButton": "Compare Salaries",
+    "scenarioLabel": "Example:",
+    "resultsLabel": "Comparison Results:",
+    "noResultsText": "Select countries to compare salaries"
   },
-  "howThisIrelandSalaryCalculatorWorks": "This Ireland salary calculator works by taking your gross salary and applying the relevant Irish tax calculations step by step. First, your gross annual salary is calculated from your pay frequency. Then PAYE income tax is calculated using Ireland's progressive tax bands: 20% on the first €42,335, 40% on income between €42,336 and €70,557, and 48% on income over €70,557. Next, Universal Social Charge (USC) is applied with rates ranging from 0.5% to 8% depending on your income level. Pay Related Social Insurance (PRSI) contributions are then calculated at the standard employee rate. The calculator subtracts these mandatory deductions from your gross pay to show your net take-home salary, helping you understand exactly how much you'll receive after all Irish taxes and social insurance contributions.",
+  "howGlobalSalaryCalculatorWorks": "Our global salary calculator works by applying country-specific tax rates and deductions to your gross salary. First, select your base country and target comparison countries. The calculator then applies each country's progressive tax brackets, social insurance contributions, and mandatory deductions. Results show your net take-home pay in each country, helping you understand the real value of international compensation packages. All calculations use the most current tax rates and are updated regularly to reflect changes in tax legislation.",
   "workedExamples": {
     "example1": {
-      "title": "€35,000 Annual Salary Example",
-      "scenario": "A junior professional earning €35,000 annually in Ireland",
-      "grossSalary": "€35,000",
-      "payeTax": "€4,667",
-      "usc": "€1,225",
-      "prsi": "€1,400",
-      "totalDeductions": "€7,292",
-      "netSalary": "€27,708",
-      "monthlyNet": "€2,309"
+      "title": "$75,000 USA Salary Comparison",
+      "scenario": "Software engineer earning $75,000 annually in the United States",
+      "usaNet": "$55,250",
+      "germanyNet": "€52,180",
+      "ukNet": "£45,920",
+      "canadaNet": "C$56,410"
     },
     "example2": {
-      "title": "€60,000 Annual Salary Example",
-      "scenario": "A senior professional earning €60,000 annually in Ireland",
-      "grossSalary": "€60,000",
-      "payeTax": "€13,913",
-      "usc": "€2,475",
-      "prsi": "€2,400",
-      "totalDeductions": "€18,788",
-      "netSalary": "€41,212",
-      "monthlyNet": "€3,434"
+      "title": "€65,000 Germany Salary Comparison",
+      "scenario": "Marketing manager earning €65,000 annually in Germany",
+      "germanyNet": "€48,750",
+      "usaNet": "$62,180",
+      "ukNet": "£51,420",
+      "franceNet": "€47,920"
     }
   },
   "whoShouldUseThisCalculator": [
-    "Irish employees comparing job offers and salary packages",
-    "Employers calculating payroll costs and employee take-home pay",
-    "Freelancers and contractors estimating net income after Irish taxes",
-    "Expats moving to Ireland who need to understand local tax implications",
-    "Students and graduates entering the Irish job market",
-    "Financial advisors helping clients with Irish salary planning",
-    "Anyone planning their budget based on actual take-home pay in Ireland"
+    "Professionals considering international job offers",
+    "Companies benchmarking compensation globally",
+    "Expats comparing cost of living adjustments",
+    "HR professionals researching market rates",
+    "Anyone curious about global salary standards",
+    "Job seekers researching international opportunities",
+    "Multinational companies setting compensation policies"
   ],
   "faqs": [
     {
-      "question": "Is this Ireland salary calculator accurate?",
-      "answer": "Yes, this calculator uses the official 2026 Irish tax rates and brackets for PAYE, USC, and PRSI. It provides reliable estimates for financial planning, though actual take-home pay may vary based on individual circumstances."
+      "question": "How accurate are the international salary comparisons?",
+      "answer": "Our calculator uses official tax rates and brackets for each country, providing reliable estimates for comparison purposes. Actual take-home pay may vary based on individual circumstances, deductions, and local tax laws."
     },
     {
-      "question": "Does it include PAYE, PRSI, and USC?",
-      "answer": "Yes, the calculator includes all major Irish deductions: PAYE (Pay As You Earn) income tax, PRSI (Pay Related Social Insurance), and USC (Universal Social Charge), providing a comprehensive view of your net salary."
+      "question": "Does the calculator include all taxes and deductions?",
+      "answer": "Yes, we include major taxes like income tax, social security contributions, and mandatory deductions for each country. Optional deductions like retirement contributions are not included."
     },
     {
-      "question": "Can I calculate monthly and weekly take-home pay?",
-      "answer": "Yes, the calculator shows results in multiple formats: annual, monthly, and weekly take-home pay, making it easy to understand your salary across different time periods for budgeting purposes."
+      "question": "Can I compare more than two countries?",
+      "answer": "Yes, you can compare your salary across multiple countries simultaneously to get a comprehensive view of international compensation differences."
     },
     {
-      "question": "Is this calculator suitable for contractors?",
-      "answer": "While designed primarily for employees, contractors can use it as a reference for understanding Irish tax rates. However, contractors may have different tax obligations and should consult a tax professional for personalized advice."
+      "question": "How often are tax rates updated?",
+      "answer": "We update tax rates annually to reflect the latest changes in tax legislation across all supported countries."
     },
     {
-      "question": "Does it work for different tax years in Ireland?",
-      "answer": "This calculator is specifically calibrated for 2026 Irish tax rates. For previous years or future projections, results may vary as tax rates and brackets are subject to annual government changes."
+      "question": "Is this calculator suitable for freelancers and contractors?",
+      "answer": "While designed for employees with standard tax rates, freelancers can use it as a reference. However, contractors often have different tax obligations and should consult local tax authorities."
     }
   ],
   "internalLinks": [
     {
-      "text": "Calculate Take-Home Pay",
+      "text": "Take-Home Pay Calculator",
       "url": "/en/take-home-pay-calculator",
-      "description": "General take-home pay calculator for comparison"
+      "description": "Calculate net salary for a specific country"
     },
     {
       "text": "Gross to Net Salary Calculator",
       "url": "/en/gross-to-net-salary",
-      "description": "Convert gross salary to net income"
+      "description": "Learn about gross vs net salary concepts"
     },
     {
-      "text": "Salary After Tax Calculator",
-      "url": "/en/salary-after-tax-calculator",
-      "description": "Calculate salary deductions and net pay"
+      "text": "Country Salary Calculators",
+      "url": "/en/country",
+      "description": "Browse country-specific salary calculators"
     }
   ],
-  "conclusion": "This Ireland salary calculator provides essential insights for anyone working in Ireland. By accounting for PAYE, USC, and PRSI, you can confidently plan your finances and make informed career decisions. Whether you're an employee, employer, or financial advisor, this free tool helps you understand the real impact of Irish taxes on your take-home pay. Use it regularly to stay on top of your financial planning and ensure you're maximizing your net income in Ireland's unique tax environment.",
-  "disclaimer": "SalaryWise provides estimated take-home pay based on publicly available tax structures. Results are for guidance only.",
+  "conclusion": "Understanding global salary comparisons is essential in today's interconnected job market. Our global salary calculator provides the insights you need to make informed decisions about international career opportunities. By comparing take-home pay across countries, you can better understand the true value of compensation packages and make choices that align with your financial goals. Use this tool regularly to stay informed about international compensation standards and market rates.",
+  "disclaimer": "SalaryWise provides estimated comparisons based on publicly available tax structures. Results are for guidance only and actual take-home pay may vary.",
   "structuredData": {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "FAQPage",
         "mainEntity": [
-          { "@type": "Question", "name": "How do I calculate my salary?", "acceptedAnswer": { "@type": "Answer", "text": "Use gross salary minus taxes like PAYE, PRSI, USC to find net salary." } },
-          { "@type": "Question", "name": "Can I use this calculator for Ireland?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, Ireland is the default country." } },
-          { "@type": "Question", "name": "Does it include bonuses?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, you can add bonuses to calculate take-home pay." } },
-          { "@type": "Question", "name": "Can I calculate weekly pay?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, select weekly or monthly pay frequency." } },
-          { "@type": "Question", "name": "Is the calculator AdSense safe?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, it's fully text-based and fast-loading." } }
+          { "@type": "Question", "name": "How do international salary comparisons work?", "acceptedAnswer": { "@type": "Answer", "text": "We apply country-specific tax rates and deductions to provide accurate net salary comparisons." } },
+          { "@type": "Question", "name": "Can I compare salaries across different currencies?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, the calculator handles currency conversions and shows equivalent purchasing power." } },
+          { "@type": "Question", "name": "Does it include cost of living adjustments?", "acceptedAnswer": { "@type": "Answer", "text": "Currently focused on tax calculations, but we're planning cost of living features." } },
+          { "@type": "Question", "name": "How often are exchange rates updated?", "acceptedAnswer": { "@type": "Answer", "text": "Exchange rates are updated daily to ensure accurate international comparisons." } },
+          { "@type": "Question", "name": "Is the calculator AdSense safe?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, it's fully text-based and designed for safe ad monetization." } }
         ]
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://salarywise.io/en/" },
-          { "@type": "ListItem", "position": 2, "name": "Salary Calculator", "item": "https://salarywise.io/en/salary-calculator" }
+          { "@type": "ListItem", "position": 2, "name": "Global Salary Calculator", "item": "https://salarywise.io/en/salary-calculator" }
         ]
       },
       {
         "@type": "WebApplication",
-        "name": "Salary Calculator",
+        "name": "Global Salary Calculator",
         "url": "https://salarywise.io/en/salary-calculator",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": "Web",
-        "description": "Calculate your net salary from gross income including PAYE, PRSI, USC and bonuses."
+        "description": "Compare take-home pay across different countries and currencies with accurate tax calculations."
       }
     ]
   }

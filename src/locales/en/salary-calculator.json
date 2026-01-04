@@ -93,7 +93,7 @@
     }
   ],
   "conclusion": "Understanding global salary comparisons is essential in today's interconnected job market. Our global salary calculator provides the insights you need to make informed decisions about international career opportunities. By comparing take-home pay across countries, you can better understand the true value of compensation packages and make choices that align with your financial goals. Use this tool regularly to stay informed about international compensation standards and market rates.",
-  "disclaimer": "SalaryWise provides estimated comparisons based on publicly available tax structures. Results are for guidance only and actual take-home pay may vary.",
+
   "structuredData": {
     "@context": "https://schema.org",
     "@graph": [

@@ -198,7 +198,7 @@
     }
   ],
   "conclusion": "Understanding your take-home pay in Ireland is crucial for effective financial planning in one of Europe's most dynamic economies. This calculator provides accurate 2026 tax calculations based on official Revenue.ie rates and Deloitte's comprehensive methodology. By accounting for Ireland's progressive tax system, PAYE income tax, Universal Social Charge, and Pay Related Social Insurance contributions, you can confidently compare job offers, plan budgets, and make informed career decisions. Whether you're an Irish resident, expatriate worker, or employer, this tool helps you understand the real purchasing power of your salary after all mandatory Irish deductions. Remember that individual circumstances may affect final calculations - consult Revenue.ie for personalized tax advice and your Tax Credit Certificate for accurate credit information.",
-  "disclaimer": "SalaryWise provides estimated take-home pay based on publicly available tax structures. Results are for guidance only.",
+
   "structuredData": {
     "@context": "https://schema.org",
     "@graph": [

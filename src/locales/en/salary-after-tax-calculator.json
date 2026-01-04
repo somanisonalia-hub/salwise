@@ -100,6 +100,8 @@
     }
   ],
   "conclusion": "This Ireland salary calculator provides essential insights for anyone working in Ireland. By accounting for PAYE, USC, and PRSI, you can confidently plan your finances and make informed career decisions. Whether you're an employee, employer, or financial advisor, this free tool helps you understand the real impact of Irish taxes on your take-home pay. Use it regularly to stay on top of your financial planning and ensure you're maximizing your net income in Ireland's unique tax environment.",
+
+
   "structuredData": {
     "@context": "https://schema.org",
     "@graph": [

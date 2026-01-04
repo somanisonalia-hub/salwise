@@ -20,6 +20,15 @@ const usaHourlyToSalary = {
       "max": 60
     },
     {
+      "id": "weeksPerYear",
+      "label": "Weeks per Year",
+      "type": "number",
+      "default": 52,
+      "unit": "weeks",
+      "min": 1,
+      "max": 53
+    },
+    {
       "id": "state",
       "label": "State",
       "type": "select",
@@ -35,7 +44,11 @@ const usaHourlyToSalary = {
       "id": "payFrequency",
       "label": "Display Period",
       "type": "select",
-      "options": ["Annual", "Monthly", "Weekly"],
+      "options": [
+        {"value": "Annual", "label": "Annual"},
+        {"value": "Monthly", "label": "Monthly"},
+        {"value": "Weekly", "label": "Weekly"}
+      ],
       "default": "Annual"
     },
     {
@@ -50,7 +63,7 @@ const usaHourlyToSalary = {
     }
   ],
   "formula": {
-    "grossAnnualSalary": "hourlyRate * hoursPerWeek * 52",
+    "grossAnnualSalary": "hourlyRate * hoursPerWeek * weeksPerYear",
     "federalTax": "calculateUSAFederalTax(grossAnnualSalary)",
     "stateTax": "calculateUSAStateTax(grossAnnualSalary, state)",
     "socialSecurity": "Math.min(grossAnnualSalary * 0.062, 160200 * 0.062)",
@@ -64,16 +77,11 @@ const usaHourlyToSalary = {
   },
   "examples": [
     {
-      "scenario": "$20/hour, 40 hours/week in California",
-      "inputs": {"hourlyRate": 20, "hoursPerWeek": 40, "state": "CA", "payFrequency": "Annual", "fourOOneKPercent": 0},
+      "scenario": "$35/hour, 40 hours/week, 52 weeks/year",
+      "inputs": {"hourlyRate": 35, "hoursPerWeek": 40, "weeksPerYear": 52, "state": "CA", "payFrequency": "Annual", "fourOOneKPercent": 0},
       "expectedOutputs": {
-        "grossAnnualSalary": 41600,
-        "federalTax": 4890,
-        "stateTax": 3928,
-        "socialSecurity": 2579,
-        "medicare": 603,
-        "totalDeductions": 12000,
-        "netAnnualSalary": 29600
+        "grossAnnualSalary": 72800,
+        "netAnnualSalary": 55000
       }
     },
     {

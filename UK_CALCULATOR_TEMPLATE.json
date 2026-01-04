@@ -1,0 +1,195 @@
+{
+  "calculator": "UK Salary Calculator",
+  "category": "Country-Specific",
+  "country": "United Kingdom",
+
+  "mandatoryInputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary (£)",
+      "type": "number",
+      "default": 45000,
+      "unit": "£",
+      "required": true,
+      "min": 0,
+      "description": "Your total annual salary before any deductions"
+    },
+    {
+      "id": "paymentFrequency",
+      "label": "How Are You Paid?",
+      "type": "select",
+      "default": "monthly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "biweekly", "label": "Every 2 Weeks"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "annually", "label": "Annually"}
+      ],
+      "required": true,
+      "description": "Your payroll frequency"
+    },
+    {
+      "id": "taxYear",
+      "label": "Tax Year",
+      "type": "select",
+      "default": "2024-25",
+      "options": [
+        {"value": "2024-25", "label": "2024/25 Tax Rates"},
+        {"value": "2023-24", "label": "2023/24 Tax Rates"}
+      ],
+      "required": true,
+      "description": "Tax year for calculations"
+    }
+  ],
+
+  "optionalInputs": [
+    {
+      "id": "showAdvancedOptions",
+      "label": "Show Advanced Options",
+      "type": "checkbox",
+      "default": false,
+      "description": "Enable additional calculation options"
+    },
+    {
+      "id": "includeOvertime",
+      "label": "Include Overtime Pay",
+      "type": "checkbox",
+      "default": false,
+      "conditional": "showAdvancedOptions",
+      "description": "Calculate additional overtime earnings"
+    },
+    {
+      "id": "overtimeHours",
+      "label": "Overtime Hours per Week",
+      "type": "number",
+      "default": 0,
+      "unit": "hours",
+      "conditional": "includeOvertime",
+      "min": 0,
+      "max": 80,
+      "description": "Additional hours worked per week"
+    },
+    {
+      "id": "overtimeRate",
+      "label": "Overtime Rate Multiplier",
+      "type": "select",
+      "default": "1.5",
+      "options": [
+        {"value": "1.5", "label": "1.5x (Standard)"},
+        {"value": "2.0", "label": "2.0x (Double Time)"}
+      ],
+      "conditional": "includeOvertime",
+      "description": "How much extra you earn for overtime"
+    },
+    {
+      "id": "annualBonus",
+      "label": "Annual Bonus/Commission (£)",
+      "type": "number",
+      "default": 0,
+      "unit": "£",
+      "conditional": "showAdvancedOptions",
+      "min": 0,
+      "description": "Expected annual bonus or commission"
+    },
+    {
+      "id": "studentLoanPlan",
+      "label": "Student Loan Plan",
+      "type": "select",
+      "default": "none",
+      "options": [
+        {"value": "none", "label": "No Student Loan"},
+        {"value": "plan1", "label": "Plan 1 (9.25% over £22,015)"},
+        {"value": "plan2", "label": "Plan 2 (9% over £27,295)"},
+        {"value": "plan4", "label": "Plan 4 (9% over £25,725)"},
+        {"value": "plan5", "label": "Plan 5 (9% over £25,725)"}
+      ],
+      "conditional": "showAdvancedOptions",
+      "description": "Student loan repayment plan (affects take-home pay)"
+    },
+    {
+      "id": "pensionContribution",
+      "label": "Pension Contribution (%)",
+      "type": "slider",
+      "default": 0,
+      "min": 0,
+      "max": 15,
+      "step": 0.5,
+      "conditional": "showAdvancedOptions",
+      "description": "Percentage of salary going to pension (reduces taxable income)"
+    },
+    {
+      "id": "scottishTax",
+      "label": "Scottish Tax Rates",
+      "type": "checkbox",
+      "default": false,
+      "conditional": "showAdvancedOptions",
+      "description": "Use Scottish income tax rates instead of UK rates"
+    }
+  ],
+
+  "uiLayout": {
+    "header": "🇬🇧 UK Salary Calculator",
+    "calculateButtonText": "Calculate UK Salary",
+    "resultsHeader": "Your UK Salary Breakdown",
+
+    "sections": [
+      {
+        "name": "Mandatory Inputs",
+        "description": "Required information for basic calculation",
+        "inputs": ["grossSalary", "paymentFrequency", "taxYear"]
+      },
+      {
+        "name": "Advanced Options",
+        "description": "Additional factors affecting your take-home pay",
+        "toggleInput": "showAdvancedOptions",
+        "inputs": ["includeOvertime", "overtimeHours", "overtimeRate", "annualBonus", "studentLoanPlan", "pensionContribution", "scottishTax"]
+      }
+    ]
+  },
+
+  "taxComponents": [
+    {
+      "name": "PAYE (Income Tax)",
+      "description": "Progressive income tax",
+      "rates": "20%, 40%, 45%",
+      "function": "calculateUKPAYE"
+    },
+    {
+      "name": "National Insurance (NIC)",
+      "description": "Social security contributions",
+      "rates": "8%, 12% (employee)",
+      "function": "calculateUKNIC"
+    },
+    {
+      "name": "Student Loan Repayment",
+      "description": "Repayment based on income thresholds",
+      "rates": "9% above threshold",
+      "function": "calculateUKStudentLoan"
+    }
+  ],
+
+  "expectedOutputs": [
+    "grossAnnualSalary",
+    "monthlyGrossSalary",
+    "payeTax",
+    "nic",
+    "studentLoan",
+    "totalDeductions",
+    "annualNetSalary",
+    "monthlyNetSalary",
+    "effectiveTaxRate"
+  ],
+
+  "testCases": [
+    {
+      "description": "Standard £45,000 salary",
+      "inputs": {"grossSalary": 45000, "paymentFrequency": "monthly"},
+      "expected": {
+        "annualNetSalary": 33448,
+        "effectiveTaxRate": 25.7
+      }
+    }
+  ]
+}</content>
+</xai:function_call">Write
+

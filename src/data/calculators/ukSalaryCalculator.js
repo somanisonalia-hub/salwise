@@ -14,7 +14,11 @@ const ukSalaryCalculator = {
       "id": "payFrequency",
       "label": "Pay Frequency",
       "type": "select",
-      "options": ["Annual", "Monthly", "Weekly"],
+      "options": [
+        {"value": "Annual", "label": "Annual"},
+        {"value": "Monthly", "label": "Monthly"},
+        {"value": "Weekly", "label": "Weekly"}
+      ],
       "default": "Annual"
     },
     {
@@ -56,7 +60,13 @@ const ukSalaryCalculator = {
       "id": "studentLoan",
       "label": "Student Loan Plan",
       "type": "select",
-      "options": ["None", "Plan 1", "Plan 2", "Plan 4", "Plan 5"],
+      "options": [
+        {"value": "None", "label": "None"},
+        {"value": "Plan 1", "label": "Plan 1"},
+        {"value": "Plan 2", "label": "Plan 2"},
+        {"value": "Plan 4", "label": "Plan 4"},
+        {"value": "Plan 5", "label": "Plan 5"}
+      ],
       "default": "None",
       "optional": true
     },
@@ -67,6 +77,56 @@ const ukSalaryCalculator = {
       "default": 0,
       "unit": "£",
       "optional": true
+    }
+  ],
+  "outputs": [
+    {
+      "id": "netAnnualSalary",
+      "label": "Net Annual Salary",
+      "unit": "currency",
+      "description": "Your take-home pay after all taxes and deductions"
+    },
+    {
+      "id": "netMonthlySalary",
+      "label": "Net Monthly Salary",
+      "unit": "currency",
+      "description": "Monthly take-home pay"
+    },
+    {
+      "id": "payeTax",
+      "label": "PAYE Income Tax",
+      "unit": "currency",
+      "description": "UK income tax based on tax brackets"
+    },
+    {
+      "id": "nic",
+      "label": "National Insurance",
+      "unit": "currency",
+      "description": "National Insurance contributions"
+    },
+    {
+      "id": "studentLoanRepayment",
+      "label": "Student Loan Repayment",
+      "unit": "currency",
+      "description": "Student loan repayment if applicable"
+    },
+    {
+      "id": "pensionContribution",
+      "label": "Pension Contribution",
+      "unit": "currency",
+      "description": "Your pension contribution"
+    },
+    {
+      "id": "totalDeductions",
+      "label": "Total Deductions",
+      "unit": "currency",
+      "description": "All taxes and deductions combined"
+    },
+    {
+      "id": "effectiveTaxRate",
+      "label": "Effective Tax Rate",
+      "unit": "%",
+      "description": "Overall tax rate on your income"
     }
   ],
   "formula": {

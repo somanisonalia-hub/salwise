@@ -6,16 +6,29 @@ export interface CalculatorInput {
   type: string;
   default: number | string | boolean;
   unit?: string;
+  options?: Array<{value: string, label: string}>;
+  min?: number;
+  max?: number;
+  description?: string;
 }
 
 export interface CalculatorFormula {
   [key: string]: string | undefined; // Formula expressions as strings
 }
 
+export interface CalculatorOutput {
+  id: string;
+  label: string;
+  type?: string;
+  description?: string;
+  unit?: string;
+}
+
 export interface Calculator {
   id: string;
   name: string;
   inputs: CalculatorInput[];
+  outputs?: CalculatorOutput[];
   formula: CalculatorFormula;
 }
 
@@ -27,6 +40,7 @@ export interface CalculatorsData {
 import globalSalaryData from '../data/calculators/globalSalary.json';
 import grossToNetData from '../data/calculators/grossToNet.json';
 import takeHomePayData from '../data/calculators/takeHomePay.json';
+import simpleTakeHomePayData from '../data/calculators/simpleTakeHomePay.json';
 import netToGrossData from '../data/calculators/netToGross.json';
 import hourlyToSalaryData from '../data/calculators/hourlyToSalary.json';
 import bonusCalculatorData from '../data/calculators/bonusCalculator.json';
@@ -34,7 +48,7 @@ import overtimePayData from '../data/calculators/overtimePay.json';
 import salaryAfterTaxUSAData from '../data/calculators/salaryAfterTaxUSA.json';
 import salaryAfterTaxUKData from '../data/calculators/salaryAfterTaxUK.json';
 import salaryAfterTaxIrelandData from '../data/calculators/salaryAfterTaxIreland.json';
-import irelandSalaryCalculatorData from '../data/calculators/irelandSalaryCalculator.json';
+import irelandSalaryCalculatorData from '../data/calculators/irelandSalaryCalculator';
 import irelandHourlyToSalary from '../data/calculators/irelandHourlyToSalary.js';
 import irelandOvertimePay from '../data/calculators/irelandOvertimePay.js';
 import irelandBonusTax from '../data/calculators/irelandBonusTax.js';
@@ -88,6 +102,7 @@ const calculatorsData: Calculator[] = [
   globalSalaryData,
   grossToNetData,
   takeHomePayData,
+  simpleTakeHomePayData,
   netToGrossData,
   hourlyToSalaryData,
   bonusCalculatorData,
@@ -681,6 +696,11 @@ function calculateCountryTax(annualGross: number, country: string): number {
       if (annualGross <= 82341) return 1930.19 + (annualGross - 28797) * 0.30;
       if (annualGross <= 177106) return 1930.19 + 16064.44 + (annualGross - 82341) * 0.41;
       return 1930.19 + 16064.44 + 38871.15 + (annualGross - 177106) * 0.45;
+
+    case 'IE':
+      // Ireland tax calculation using the detailed functions
+      const prsi = annualGross * 0.04; // PRSI is 4% of gross salary
+      return calculateIrelandPAYE(annualGross) + calculateIrelandUSC(annualGross) + prsi;
 
     case 'IN':
       // Indian tax (old regime simplified)

@@ -4,91 +4,91 @@ const ukContractorSalary = {
   "description": "Calculate contractor salary comparing Ltd company vs umbrella company structures",
   "inputs": [
     {
-      "id": "dailyRate",
-      "label": "Daily Rate (£)",
+      "id": "contractRate",
+      "label": "Annual Contract Rate (£)",
       "type": "number",
-      "default": 350,
-      "unit": "£"
+      "default": 60000,
+      "unit": "£",
+      "required": true
     },
     {
-      "id": "daysPerMonth",
-      "label": "Working Days per Month",
-      "type": "number",
-      "default": 20,
-      "unit": "days",
-      "min": 1,
-      "max": 25
-    },
-    {
-      "id": "structure",
-      "label": "Contractor Structure",
+      "id": "ir35Status",
+      "label": "IR35 Status",
       "type": "select",
-      "options": ["Ltd Company", "Umbrella Company"],
-      "default": "Ltd Company"
+      "options": [
+        {"value": "Inside IR35", "label": "Inside IR35"},
+        {"value": "Outside IR35", "label": "Outside IR35"}
+      ],
+      "default": "Inside IR35",
+      "required": true
     },
     {
-      "id": "expensesPerDay",
-      "label": "Daily Expenses (£)",
+      "id": "expenses",
+      "label": "Annual Expenses (£)",
       "type": "number",
       "default": 0,
       "unit": "£",
-      "optional": true,
-      "min": 0
-    },
-    {
-      "id": "monthsPerYear",
-      "label": "Months Worked per Year",
-      "type": "number",
-      "default": 12,
-      "unit": "months",
-      "min": 1,
-      "max": 12
+      "optional": true
     }
   ],
   "formula": {
-    "grossAnnual": "dailyRate * daysPerMonth * monthsPerYear",
-    "annualExpenses": "expensesPerDay * daysPerMonth * monthsPerYear",
-    "taxableIncome": "grossAnnual - annualExpenses",
-    "corporationTax": "structure === 'Ltd Company' ? taxableIncome * 0.25 : 0",
-    "directorsSalary": "structure === 'Ltd Company' ? Math.min(taxableIncome * 0.4, 50000) : 0",
-    "dividends": "structure === 'Ltd Company' ? Math.max(0, taxableIncome - corporationTax - directorsSalary) : 0",
-    "payeTax": "structure === 'Ltd Company' ? calculateUKPAYE(directorsSalary) : structure === 'Umbrella Company' ? calculateUKPAYE(taxableIncome) : 0",
-    "nic": "structure === 'Ltd Company' ? calculateUKNIC(directorsSalary) : structure === 'Umbrella Company' ? calculateUKNIC(taxableIncome) : 0",
-    "dividendTax": "structure === 'Ltd Company' ? dividends * 0.0875 : 0",
-    "totalTax": "corporationTax + payeTax + nic + dividendTax",
+    "taxableIncome": "contractRate - expenses",
+    "payeTax": "ir35Status === 'Inside IR35' ? calculateUKPAYE(taxableIncome) : 0",
+    "nic": "ir35Status === 'Inside IR35' ? calculateUKNIC(taxableIncome) : 0",
+    "totalTax": "payeTax + nic",
     "netAnnual": "taxableIncome - totalTax",
     "netMonthly": "netAnnual / 12",
-    "effectiveTaxRate": "grossAnnual > 0 ? (totalTax / grossAnnual) * 100 : 0"
+    "effectiveTaxRate": "contractRate > 0 ? (totalTax / contractRate) * 100 : 0"
+  },
+  "outputs": [
+    {"id": "taxableIncome", "label": "Taxable Income", "unit": "£"},
+    {"id": "payeTax", "label": "PAYE Tax", "unit": "£"},
+    {"id": "nic", "label": "National Insurance", "unit": "£"},
+    {"id": "totalTax", "label": "Total Tax", "unit": "£"},
+    {"id": "netAnnual", "label": "Net Annual Salary", "unit": "£"},
+    {"id": "netMonthly", "label": "Net Monthly Salary", "unit": "£"},
+    {"id": "effectiveTaxRate", "label": "Effective Tax Rate", "unit": "%"}
+  ],
+  "outputLabels": {
+    "grossAnnual": "Gross Annual Income",
+    "annualExpenses": "Annual Expenses",
+    "taxableIncome": "Taxable Income",
+    "corporationTax": "Corporation Tax",
+    "directorsSalary": "Director's Salary",
+    "dividends": "Dividends",
+    "payeTax": "PAYE Tax",
+    "nic": "National Insurance",
+    "dividendTax": "Dividend Tax",
+    "totalTax": "Total Tax",
+    "netAnnual": "Net Annual Income",
+    "netMonthly": "Net Monthly Income",
+    "effectiveTaxRate": "Effective Tax Rate"
+  },
+  "outputUnits": {
+    "grossAnnual": "£",
+    "annualExpenses": "£",
+    "taxableIncome": "£",
+    "corporationTax": "£",
+    "directorsSalary": "£",
+    "dividends": "£",
+    "payeTax": "£",
+    "nic": "£",
+    "dividendTax": "£",
+    "totalTax": "£",
+    "netAnnual": "£",
+    "netMonthly": "£",
+    "effectiveTaxRate": "%"
   },
   "examples": [
     {
-      "scenario": "£350/day Ltd Company, 20 days/month",
-      "inputs": {"dailyRate": 350, "daysPerMonth": 20, "structure": "Ltd Company", "expensesPerDay": 0, "monthsPerYear": 12},
+      "scenario": "£60,000 contract, Inside IR35",
+      "inputs": {"contractRate": 60000, "ir35Status": "Inside IR35", "expenses": 0},
       "expectedOutputs": {
-        "grossAnnual": 84000,
-        "corporationTax": 21000,
-        "directorsSalary": 30000,
-        "dividends": 33000,
-        "payeTax": 4454,
-        "nic": 1754,
-        "dividendTax": 2888,
-        "totalTax": 31096,
-        "netAnnual": 52904
-      }
-    },
-    {
-      "scenario": "£450/day Umbrella, 15 days/month",
-      "inputs": {"dailyRate": 450, "daysPerMonth": 15, "structure": "Umbrella Company", "expensesPerDay": 0, "monthsPerYear": 12},
-      "expectedOutputs": {
-        "grossAnnual": 81000,
-        "corporationTax": 0,
-        "directorsSalary": 0,
-        "dividends": 0,
-        "payeTax": 23454,
-        "nic": 4454,
-        "dividendTax": 0,
-        "totalTax": 27908,
-        "netAnnual": 53092
+        "taxableIncome": 60000,
+        "payeTax": 8454,
+        "nic": 3754,
+        "totalTax": 12208,
+        "netAnnual": 47792
       }
     }
   ]

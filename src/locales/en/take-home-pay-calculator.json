@@ -1,17 +1,17 @@
 {
   "slug": "take-home-pay-calculator",
   "type": "calculator",
-  "h1": "Take-Home Pay Calculator – Calculate Your Net Salary",
-  "metaTitle": "Take-Home Pay Calculator | Calculate Net Salary After Taxes",
-  "metaDescription": "Calculate your take-home pay after taxes and deductions. Free calculator showing net salary for budgeting and financial planning.",
-  "primaryKeyword": "take home pay calculator",
+  "h1": "Simple Take-Home Pay Calculator – Basic Net Salary Estimate",
+  "metaTitle": "Simple Take-Home Pay Calculator | Basic Net Salary Calculator",
+  "metaDescription": "Get a basic estimate of your take-home pay with this simple calculator. Enter your gross salary and basic tax rate for a rough net income calculation.",
+  "primaryKeyword": "simple take home pay calculator",
   "longTailKeywords": [
-    "take home pay calculator",
-    "net salary calculator",
-    "salary after taxes",
-    "calculate net pay",
-    "paycheck calculator",
-    "net income calculator"
+    "simple take home pay calculator",
+    "basic net salary calculator",
+    "rough salary estimate",
+    "quick paycheck calculator",
+    "basic tax calculator",
+    "simple net income calculator"
   ],
   "related": [
     "salary-calculator",
@@ -19,8 +19,8 @@
     "uk-salary-calculator",
     "usa-salary-calculator"
   ],
-  "dataRef": "takeHomePay",
-  "intro": "Calculate your take-home pay in Ireland with our comprehensive salary calculator. This tool provides accurate estimates by incorporating PAYE (Pay As You Earn) income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions based on 2026 Irish tax rates. Whether you're comparing job offers, planning your budget, or negotiating a salary increase, knowing your exact net income after all Irish deductions is essential for effective financial planning. Get instant results for annual, monthly, and weekly take-home pay calculations tailored to Ireland's unique tax system.",
+  "dataRef": "simpleTakeHomePay",
+  "intro": "Get a basic estimate of your take-home pay with this simple calculator. Enter your gross salary and an estimated tax rate to get a rough calculation of your net income after basic deductions. This tool provides quick approximations for budgeting purposes. For accurate calculations with country-specific tax rates, use our dedicated country calculators for Ireland, UK, or USA.",
   "ui": {
     "calculatorHeading": "Calculate Your Results",
     "resultsHeading": "Results",
@@ -103,8 +103,37 @@
       "description": "Calculate salary deductions and net pay"
     }
   ],
-  "conclusion": "This Ireland salary calculator provides essential insights for anyone working in Ireland. By accounting for PAYE, USC, and PRSI, you can confidently plan your finances and make informed career decisions. Whether you're an employee, employer, or financial advisor, this free tool helps you understand the real impact of Irish taxes on your take-home pay. Use it regularly to stay on top of your financial planning and ensure you're maximizing your net income in Ireland's unique tax environment.",
+  "useCases": {
+    "example1": {
+      "title": "Paycheck Planning",
+      "scenario": "Understanding your bi-weekly paycheck from $50,000 annual salary",
+      "grossSalary": "$50,000",
+      "payFrequency": "Bi-weekly",
+      "grossPerPaycheck": "$1,923",
+      "estimatedNet": "$1,442 (25% deductions)",
+      "note": "Bi-weekly pay periods require different budgeting strategies"
+    },
+    "example2": {
+      "title": "Monthly Budgeting",
+      "scenario": "Planning monthly expenses with $65,000 annual salary",
+      "grossSalary": "$65,000",
+      "payFrequency": "Monthly",
+      "grossPerPaycheck": "$5,417",
+      "estimatedNet": "$4,062 (25% deductions)",
+      "note": "Monthly pay provides more predictable cash flow"
+    },
+    "example3": {
+      "title": "Weekly Income Assessment",
+      "scenario": "Evaluating weekly earnings from $40,000 annual salary",
+      "grossSalary": "$40,000",
+      "payFrequency": "Weekly",
+      "grossPerPaycheck": "$769",
+      "estimatedNet": "$577 (25% deductions)",
+      "note": "Weekly pay affects savings and expense planning"
+    }
+  },
 
+  "conclusion": "Take-home pay calculations are essential for effective financial planning and budgeting. This conceptual tool helps you understand how different pay frequencies affect your cash flow and budgeting strategies. Whether you receive your salary weekly, bi-weekly, semi-monthly, or monthly, understanding your actual take-home pay is crucial for managing expenses, saving for goals, and making informed financial decisions. Remember that your actual net pay depends on various factors including tax rates, deductions, and individual circumstances in your specific country.",
 
   "structuredData": {
     "@context": "https://schema.org",

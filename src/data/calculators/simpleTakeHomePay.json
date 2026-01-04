@@ -1,0 +1,67 @@
+{
+  "id": "simpleTakeHomePay",
+  "name": "Simple Take-Home Pay Calculator",
+  "description": "Basic calculator for estimating net salary after simple tax deductions",
+  "inputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Salary",
+      "type": "number",
+      "default": 50000,
+      "unit": "$",
+      "placeholder": "50000",
+      "required": true,
+      "min": 0,
+      "description": "Your gross annual salary"
+    },
+    {
+      "id": "taxRate",
+      "label": "Estimated Tax Rate (%)",
+      "type": "number",
+      "default": 25,
+      "unit": "%",
+      "placeholder": "25",
+      "required": true,
+      "min": 0,
+      "max": 50,
+      "description": "Rough estimate of your total tax rate"
+    },
+    {
+      "id": "otherDeductions",
+      "label": "Other Deductions ($)",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "placeholder": "0",
+      "required": false,
+      "min": 0,
+      "description": "Insurance, retirement, etc. (annual amount)"
+    }
+  ],
+  "outputs": [
+    {
+      "id": "taxAmount",
+      "label": "Estimated Tax Amount",
+      "type": "currency",
+      "description": "Calculated tax based on your rate"
+    },
+    {
+      "id": "netSalary",
+      "label": "Net Take-Home Pay",
+      "type": "currency",
+      "description": "Your estimated take-home pay"
+    },
+    {
+      "id": "netMonthly",
+      "label": "Monthly Take-Home Pay",
+      "type": "currency",
+      "description": "Monthly net amount"
+    }
+  ],
+  "formula": {
+    "taxAmount": "grossSalary * (taxRate / 100)",
+    "netSalary": "grossSalary - taxAmount - otherDeductions",
+    "netMonthly": "netSalary / 12"
+  }
+}
+

@@ -56,17 +56,20 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
 
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-8">
+              <Link href={`/${locale}`} className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+                Home
+              </Link>
               <Link href={`/${locale}/salary-calculator`} className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-                Calculators
+                Compare Salaries
               </Link>
               <Link href={`/${locale}/country`} className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-                By Country
-              </Link>
-              <Link href={`/${locale}/industry`} className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
-                By Industry
+                Countries
               </Link>
               <Link href={`/${locale}/guides`} className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                 Guides
+              </Link>
+              <Link href={`/${locale}/about`} className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
+                About
               </Link>
 
               {/* Trust Indicators */}
@@ -80,10 +83,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   <span>2026 Data</span>
                 </span>
               </div>
-
-              <Link href={`/${locale}/contact`} className="bg-blue-600 text-white px-4 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors">
-                Contact
-              </Link>
             </nav>
 
             {/* Mobile menu button */}
@@ -104,25 +103,25 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div className="md:hidden border-t border-gray-200 py-4">
               <nav className="flex flex-col space-y-2">
                 <Link
+                  href={`/${locale}`}
+                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Home
+                </Link>
+                <Link
                   href={`/${locale}/salary-calculator`}
                   className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Calculators
+                  Compare Salaries
                 </Link>
                 <Link
                   href={`/${locale}/country`}
                   className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  By Country
-                </Link>
-                <Link
-                  href={`/${locale}/industry`}
-                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  By Industry
+                  Countries
                 </Link>
                 <Link
                   href={`/${locale}/guides`}
@@ -132,11 +131,11 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                   Guides
                 </Link>
                 <Link
-                  href={`/${locale}/contact`}
-                  className="bg-blue-600 text-white px-3 py-2 rounded-lg text-sm font-medium hover:bg-blue-700 transition-colors inline-block text-center"
+                  href={`/${locale}/about`}
+                  className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  Contact
+                  About
                 </Link>
               </nav>
             </div>
@@ -163,7 +162,7 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
                 <span className="text-xl font-bold">SalaryWise.io</span>
               </div>
               <p className="text-gray-300 text-sm mb-4">
-                Professional salary calculators with accurate 2025/2026 tax data for 15+ countries. Free, fast, and reliable.
+                Professional salary calculators with accurate 2026 tax data for USA, UK, and Ireland. Free, fast, and reliable.
               </p>
               <div className="flex space-x-4">
                 <a href="https://twitter.com/salarywiseio" className="text-gray-400 hover:text-white transition-colors">
@@ -196,22 +195,22 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
             <div>
               <h3 className="text-lg font-semibold mb-4">By Country</h3>
               <ul className="space-y-2">
-                <li><Link href={`/${locale}/usa-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇺🇸 USA</Link></li>
-                <li><Link href={`/${locale}/uk-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇬🇧 UK</Link></li>
-                <li><Link href={`/${locale}/ireland-salary-calculator`} className="text-gray-300 hover:text-white transition-colors">🇮🇪 Ireland</Link></li>
-                <li><Link href={`/${locale}/country`} className="text-gray-300 hover:text-white transition-colors">🌍 All Countries</Link></li>
+                <li><Link href={`/${locale}/country`} className="text-gray-300 hover:text-white transition-colors">🌍 Countries Hub</Link></li>
+                <li><Link href={`/${locale}/country/usa`} className="text-gray-300 hover:text-white transition-colors">🇺🇸 USA</Link></li>
+                <li><Link href={`/${locale}/country/uk`} className="text-gray-300 hover:text-white transition-colors">🇬🇧 UK</Link></li>
+                <li><Link href={`/${locale}/country/ireland`} className="text-gray-300 hover:text-white transition-colors">🇮🇪 Ireland</Link></li>
               </ul>
             </div>
 
-            {/* Guides & Support */}
+            {/* Resources */}
             <div>
               <h3 className="text-lg font-semibold mb-4">Resources</h3>
               <ul className="space-y-2">
                 <li><Link href={`/${locale}/guides`} className="text-gray-300 hover:text-white transition-colors">📚 Guides</Link></li>
-                <li><Link href={`/${locale}/understanding-gross-vs-net-salary`} className="text-gray-300 hover:text-white transition-colors">Gross vs Net</Link></li>
-                <li><Link href={`/${locale}/salary-negotiation-tips`} className="text-gray-300 hover:text-white transition-colors">Negotiation Tips</Link></li>
+                <li><Link href={`/${locale}/industry`} className="text-gray-300 hover:text-white transition-colors">🏭 By Industry</Link></li>
                 <li><Link href={`/${locale}/contact`} className="text-gray-300 hover:text-white transition-colors">📞 Contact</Link></li>
                 <li><Link href={`/${locale}/about`} className="text-gray-300 hover:text-white transition-colors">About Us</Link></li>
+                <li><Link href={`/${locale}/sitemap`} className="text-gray-300 hover:text-white transition-colors">🗺️ Sitemap</Link></li>
               </ul>
             </div>
           </div>

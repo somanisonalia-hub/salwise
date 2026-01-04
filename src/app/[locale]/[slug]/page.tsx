@@ -56,10 +56,6 @@ const availablePages = [
   'country',
   'industry',
   'understanding-gross-vs-net-salary',
-  'salary-negotiation-tips',
-  'how-to-calculate-take-home-pay',
-  'taxes-explained-by-country',
-  'salary-trends-2026',
   'sitemap'
 ];
 
@@ -279,12 +275,15 @@ export default async function LocalizedPage({ params }: PageProps) {
 
 // Directory Components
 async function GuidesDirectory({ locale }: { locale: string }) {
+  // Load the guides data from JSON
+  const guidesData = require(`../../../locales/${locale}/guides/index.json`);
+
   return (
     <>
       <Head>
-        <title>Salary Guides & Tips | Compensation Advice | SalaryWise.io</title>
-        <meta name="description" content="Comprehensive guides on salary negotiation, tax planning, career advancement, and compensation strategies. Free expert advice for job seekers and professionals." />
-        <meta name="keywords" content="salary guide, compensation advice, salary negotiation tips, career advancement, pay advice" />
+        <title>Salary & Tax Guides | SalaryWise.io</title>
+        <meta name="description" content="Expert salary and tax guides for understanding compensation, taxes, and career planning." />
+        <meta name="keywords" content="salary guides, tax guides, career advice, salary planning" />
         <link rel="canonical" href={`https://salarywise.io/${locale}/guides`} />
       </Head>
 
@@ -293,8 +292,8 @@ async function GuidesDirectory({ locale }: { locale: string }) {
           <div className="max-w-6xl mx-auto px-4 py-4">
             <div className="flex items-center justify-between">
               <div>
-                <h1 className="text-2xl font-bold text-gray-900">Salary Guides & Tips</h1>
-                <p className="text-gray-600 mt-1">Expert advice for maximizing your compensation</p>
+                <h1 className="text-2xl font-bold text-gray-900">{guidesData.header.title}</h1>
+                <p className="text-gray-600 mt-1">{guidesData.header.subtitle}</p>
               </div>
               <Link
                 href={`/${locale}`}
@@ -306,78 +305,54 @@ async function GuidesDirectory({ locale }: { locale: string }) {
           </div>
         </div>
 
-        <div className="max-w-6xl mx-auto px-4 py-8">
+        <div className="max-w-4xl mx-auto px-4 py-8">
+          {/* Intro */}
           <div className="bg-white rounded-lg shadow-sm p-6 mb-8">
-            <p className="text-gray-700 mb-4">
-              Understanding salary, taxes, and compensation is crucial for financial success. Our comprehensive guides cover everything from salary negotiation strategies to tax optimization techniques.
-            </p>
-            <p className="text-gray-700">
-              Whether you're looking for a new job, negotiating a raise, or planning your career, our expert guides provide actionable advice to help you maximize your earning potential.
-            </p>
+            <p className="text-gray-700 mb-4">{guidesData.intro.paragraph1}</p>
+            <p className="text-gray-700">{guidesData.intro.paragraph2}</p>
           </div>
 
-          <h2 className="text-xl font-bold text-gray-900 mb-6">Guide Categories</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-            <div className="bg-white rounded-lg shadow-sm p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Salary Negotiation</h3>
-              <p className="text-gray-600 mb-4">Learn proven strategies to negotiate higher pay and better benefits</p>
-              <div className="space-y-3">
-                <Link
-                  href={`/${locale}/guides/salary-negotiation`}
-                  className="block p-3 border border-gray-200 rounded hover:border-blue-300 transition-colors"
-                >
-                  <h4 className="font-medium text-gray-900">Salary Negotiation Tips</h4>
-                  <p className="text-sm text-gray-600 mt-1">Master the art of negotiating job offers and raises</p>
-                  <div className="text-blue-600 text-sm mt-2">8 min read</div>
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-sm p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Tax & Finance</h3>
-              <p className="text-gray-600 mb-4">Understand taxes, deductions, and financial planning</p>
-              <div className="space-y-3">
-                <Link
-                  href={`/${locale}/guides/gross-vs-net`}
-                  className="block p-3 border border-gray-200 rounded hover:border-blue-300 transition-colors"
-                >
-                  <h4 className="font-medium text-gray-900">Gross vs Net Salary</h4>
-                  <p className="text-sm text-gray-600 mt-1">Learn the difference between gross and net pay</p>
-                  <div className="text-blue-600 text-sm mt-2">6 min read</div>
-                </Link>
-                <Link
-                  href={`/${locale}/guides/how-to-calculate-take-home`}
-                  className="block p-3 border border-gray-200 rounded hover:border-blue-300 transition-colors"
-                >
-                  <h4 className="font-medium text-gray-900">How to Calculate Take-Home Pay</h4>
-                  <p className="text-sm text-gray-600 mt-1">Step-by-step guide to calculating net salary</p>
-                  <div className="text-blue-600 text-sm mt-2">10 min read</div>
-                </Link>
-              </div>
-            </div>
-
-            <div className="bg-white rounded-lg shadow-sm p-6">
-              <h3 className="text-lg font-bold text-gray-900 mb-2">Career Development</h3>
-              <p className="text-gray-600 mb-4">Advance your career and increase your earning potential</p>
-              <div className="space-y-3">
-                <div className="p-3 border border-gray-200 rounded bg-gray-50">
-                  <h4 className="font-medium text-gray-500">Coming Soon</h4>
-                  <p className="text-sm text-gray-400 mt-1">Career advancement strategies</p>
+          {/* Guides List */}
+          <div className="space-y-4">
+            {guidesData.guides.map((guide: any, index: number) => (
+              <Link
+                key={index}
+                href={guide.href}
+                className="block bg-white rounded-lg shadow-sm p-6 hover:shadow-md transition-shadow"
+              >
+                <div className="flex items-start justify-between">
+                  <div className="flex-1">
+                    <h3 className="text-lg font-bold text-gray-900 mb-2">{guide.title}</h3>
+                    <p className="text-gray-600 mb-3">{guide.description}</p>
+                    <div className="flex items-center gap-4 text-sm text-gray-500">
+                      <span className="bg-gray-100 px-2 py-1 rounded">{guide.category}</span>
+                      <span>{guide.readTime}</span>
+                    </div>
+                  </div>
+                  <div className="text-gray-400 ml-4">
+                    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+                    </svg>
+                  </div>
                 </div>
-              </div>
+              </Link>
+            ))}
+          </div>
+
+          {/* CTA */}
+          <div className="mt-8 bg-blue-50 border border-blue-200 rounded-lg p-6">
+            <h3 className="text-lg font-bold text-blue-900 mb-2">{guidesData.calculatorsCta.title}</h3>
+            <p className="text-blue-800 mb-4">{guidesData.calculatorsCta.content}</p>
+            <div className="flex gap-4">
+              <Link
+                href={`/${locale}/salary-calculator`}
+                className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              >
+                Try Salary Calculator
+              </Link>
             </div>
           </div>
 
-          <div className="bg-blue-600 text-white rounded-lg shadow-sm p-6 text-center">
-            <h2 className="text-xl font-bold mb-2">Ready to Explore Our Guides?</h2>
-            <p className="mb-4">Select a guide above to learn more about maximizing your compensation.</p>
-            <Link
-              href={`/${locale}`}
-              className="bg-white text-blue-600 px-6 py-3 rounded-lg font-bold hover:bg-gray-100 transition-colors"
-            >
-              Back to Calculator
-            </Link>
-          </div>
         </div>
       </div>
     </>
@@ -519,85 +494,16 @@ function IndustryDirectory({ locale }: { locale: string }) {
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-8">
+            <h3 className="text-lg font-bold text-blue-900 mb-3">Industry Salary Information</h3>
+            <p className="text-blue-800 mb-4">
+              Salaries vary significantly across industries. Use our industry salary comparison tool to understand how your field affects compensation.
+            </p>
             <Link
-              href={`/${locale}/industry/it`}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all"
+              href={`/${locale}/industry`}
+              className="inline-flex items-center px-4 py-2 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transition-colors"
             >
-              <div className="flex items-start gap-4">
-                <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <div className="text-blue-600 text-xl">💻</div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Technology & IT</h3>
-                  <p className="text-gray-600 text-sm mb-3">Software development, cybersecurity, data science, and tech roles</p>
-                  <div className="space-y-1 text-sm">
-                    <div><strong>Average Salary:</strong> $85,000 - $150,000</div>
-                    <div><strong>Growth:</strong> High demand, 13% growth projected</div>
-                  </div>
-                  <div className="mt-3 text-blue-600 font-medium">Learn More →</div>
-                </div>
-              </div>
-            </Link>
-
-            <Link
-              href={`/${locale}/industry/healthcare`}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all"
-            >
-              <div className="flex items-start gap-4">
-                <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <div className="text-blue-600 text-xl">🏥</div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Healthcare</h3>
-                  <p className="text-gray-600 text-sm mb-3">Doctors, nurses, medical technicians, and healthcare professionals</p>
-                  <div className="space-y-1 text-sm">
-                    <div><strong>Average Salary:</strong> $60,000 - $200,000</div>
-                    <div><strong>Growth:</strong> Strong demand, 16% growth projected</div>
-                  </div>
-                  <div className="mt-3 text-blue-600 font-medium">Learn More →</div>
-                </div>
-              </div>
-            </Link>
-
-            <Link
-              href={`/${locale}/industry/finance`}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all"
-            >
-              <div className="flex items-start gap-4">
-                <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <div className="text-blue-600 text-xl">💰</div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Finance & Banking</h3>
-                  <p className="text-gray-600 text-sm mb-3">Investment banking, financial analysis, accounting, and financial services</p>
-                  <div className="space-y-1 text-sm">
-                    <div><strong>Average Salary:</strong> $70,000 - $180,000</div>
-                    <div><strong>Growth:</strong> Stable demand, 7% growth projected</div>
-                  </div>
-                  <div className="mt-3 text-blue-600 font-medium">Learn More →</div>
-                </div>
-              </div>
-            </Link>
-
-            <Link
-              href={`/${locale}/industry/engineering`}
-              className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 hover:shadow-md hover:border-blue-300 transition-all"
-            >
-              <div className="flex items-start gap-4">
-                <div className="bg-blue-100 w-12 h-12 rounded-lg flex items-center justify-center flex-shrink-0">
-                  <div className="text-blue-600 text-xl">⚙️</div>
-                </div>
-                <div className="flex-1">
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">Engineering</h3>
-                  <p className="text-gray-600 text-sm mb-3">Mechanical, electrical, civil, and other engineering disciplines</p>
-                  <div className="space-y-1 text-sm">
-                    <div><strong>Average Salary:</strong> $75,000 - $130,000</div>
-                    <div><strong>Growth:</strong> Moderate demand, 6% growth projected</div>
-                  </div>
-                  <div className="mt-3 text-blue-600 font-medium">Learn More →</div>
-                </div>
-              </div>
+              Compare Industry Salaries →
             </Link>
           </div>
 

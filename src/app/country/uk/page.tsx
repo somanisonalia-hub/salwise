@@ -1,4 +1,4 @@
-import DynamicPageClient from '../../../components/DynamicPageClient';
+import CountryHubPage from '../../../components/CountryHubPage';
 import pageData from '../../../locales/en/country/uk.json';
 
 export function generateMetadata() {
@@ -15,5 +15,5 @@ export function generateMetadata() {
 }
 
 export default function Page() {
-  return <DynamicPageClient pageData={pageData} />
+  return <CountryHubPage pageData={pageData} />
 }

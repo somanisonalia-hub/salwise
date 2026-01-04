@@ -1,0 +1,472 @@
+{
+  "calculatorInputs": {
+    "ireland-salary-calculator": {
+      "mandatory": [
+        "grossSalary",
+        "paymentFrequency"
+      ],
+      "optional": [
+        "showAdvancedOptions",
+        "bonus",
+        "overtimeHours",
+        "overtimeRate",
+        "pensionPercent"
+      ]
+    },
+    "ireland-hourly-to-salary": {
+      "mandatory": [
+        "hourlyRate",
+        "hoursPerWeek",
+        "weeksPerYear",
+        "bonus"
+      ],
+      "optional": []
+    },
+    "ireland-overtime-pay": {
+      "mandatory": [
+        "baseHourlyRate",
+        "overtimeHours",
+        "overtimeRate"
+      ],
+      "optional": []
+    },
+    "ireland-bonus-tax": {
+      "mandatory": [
+        "bonusAmount"
+      ],
+      "optional": []
+    },
+    "ireland-contractor-salary-calculator": {
+      "mandatory": [
+        "contractRate",
+        "contractorType"
+      ],
+      "optional": [
+        "expenses"
+      ]
+    },
+    "usa-contractor-salary-calculator": {
+      "mandatory": [
+        "contractorType",
+        "annualContractValue",
+        "paymentFrequency",
+        "state"
+      ],
+      "optional": [
+        "includeOvertime",
+        "bonus",
+        "taxOption",
+        "pensionPercent"
+      ]
+    },
+    "gross-to-net-salary": {
+      "mandatory": [
+        "grossSalary",
+        "paymentFrequency",
+        "country"
+      ],
+      "optional": [
+        "includeOvertime",
+        "bonus",
+        "contractorType",
+        "pensionPercent"
+      ]
+    },
+    "take-home-pay-calculator": {
+      "mandatory": [
+        "grossSalary",
+        "paymentFrequency",
+        "country"
+      ],
+      "optional": [
+        "includeOvertime",
+        "bonus",
+        "contractorType",
+        "pensionPercent"
+      ]
+    },
+    "salary-after-tax-calculator": {
+      "mandatory": [
+        "grossSalary",
+        "paymentFrequency",
+        "country"
+      ],
+      "optional": [
+        "includeOvertime",
+        "bonus",
+        "contractorType",
+        "pensionPercent"
+      ]
+    }
+  },
+
+  "inputDefinitions": {
+    "grossSalary": {
+      "label": "Gross Annual Salary",
+      "type": "number",
+      "unit": "currency",
+      "default": 50000,
+      "required": true,
+      "min": 0
+    },
+    "hourlyRate": {
+      "label": "Hourly Rate",
+      "type": "number",
+      "unit": "currency",
+      "required": true,
+      "min": 0
+    },
+    "hoursPerWeek": {
+      "label": "Hours per Week",
+      "type": "number",
+      "unit": "hours",
+      "required": true,
+      "min": 1,
+      "max": 80
+    },
+    "weeksPerYear": {
+      "label": "Weeks per Year",
+      "type": "number",
+      "unit": "weeks",
+      "default": 52,
+      "required": true,
+      "min": 1,
+      "max": 52
+    },
+    "paymentFrequency": {
+      "label": "How Are You Paid?",
+      "type": "select",
+      "default": "annual",
+      "required": true,
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "biweekly", "label": "Every 2 Weeks"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "annual", "label": "Annually"}
+      ]
+    },
+    "country": {
+      "label": "Country",
+      "type": "select",
+      "required": true,
+      "options": [
+        {"value": "IE", "label": "🇮🇪 Ireland"},
+        {"value": "UK", "label": "🇬🇧 United Kingdom"},
+        {"value": "US", "label": "🇺🇸 United States"}
+      ]
+    },
+    "state": {
+      "label": "State",
+      "type": "select",
+      "default": "CA",
+      "required": true,
+      "options": [
+        {"value": "CA", "label": "California"},
+        {"value": "TX", "label": "Texas"},
+        {"value": "NY", "label": "New York"}
+      ]
+    },
+    "includeOvertime": {
+      "label": "Include Overtime & Bonus",
+      "type": "checkbox",
+      "default": false
+    },
+    "overtimeRate": {
+      "label": "Overtime Rate Multiplier",
+      "type": "select",
+      "default": "1.5",
+      "conditional": "includeOvertime",
+      "options": [
+        {"value": "1.5", "label": "1.5x (Standard)"},
+        {"value": "2.0", "label": "2.0x (Double Time)"}
+      ]
+    },
+    "bonus": {
+      "label": "Annual Bonus/Commission",
+      "type": "number",
+      "unit": "currency",
+      "default": 0,
+      "min": 0
+    },
+    "contractorType": {
+      "label": "Contractor Type",
+      "type": "select",
+      "options": [
+        {"value": "Ltd Company", "label": "Ltd Company"},
+        {"value": "Umbrella Company", "label": "Umbrella Company"}
+      ],
+      "default": "Ltd Company"
+    },
+    "contractRate": {
+      "label": "Contract Rate",
+      "type": "number",
+      "unit": "currency",
+      "default": 70000,
+      "required": true,
+      "min": 0
+    },
+    "expenses": {
+      "label": "Business Expenses",
+      "type": "number",
+      "unit": "currency",
+      "default": 0,
+      "required": false,
+      "min": 0
+    },
+    "pensionPercent": {
+      "label": "Pension Contribution (%)",
+      "type": "slider",
+      "default": 0,
+      "min": 0,
+      "max": 15,
+      "step": 0.5,
+      "conditional": "showAdvancedOptions"
+    },
+    "showAdvancedOptions": {
+      "label": "Show Advanced Options",
+      "type": "checkbox",
+      "default": false
+    },
+    "prsiOverride": {
+      "label": "PRSI Rate Override (%)",
+      "type": "number",
+      "default": 4,
+      "unit": "%",
+      "min": 0,
+      "max": 10,
+      "conditional": "showAdvancedOptions"
+    },
+    "uscOverride": {
+      "label": "USC Rate Override (%)",
+      "type": "number",
+      "default": 8,
+      "unit": "%",
+      "min": 0,
+      "max": 8,
+      "conditional": "showAdvancedOptions"
+    },
+    "studentLoanPlan": {
+      "label": "Student Loan Plan",
+      "type": "select",
+      "default": "none",
+      "options": [
+        {"value": "none", "label": "No Student Loan"},
+        {"value": "plan1", "label": "Plan 1 (9.25% over £22,015)"},
+        {"value": "plan2", "label": "Plan 2 (9% over £27,295)"},
+        {"value": "plan4", "label": "Plan 4 (9% over £25,725)"},
+        {"value": "plan5", "label": "Plan 5 (9% over £25,725)"}
+      ],
+      "conditional": "showAdvancedOptions"
+    },
+    "niOverride": {
+      "label": "NI Rate Override (%)",
+      "type": "number",
+      "default": 12,
+      "unit": "%",
+      "min": 0,
+      "max": 15,
+      "conditional": "showAdvancedOptions"
+    },
+    "ficaOverride": {
+      "label": "FICA Rate Override (%)",
+      "type": "number",
+      "default": 7.65,
+      "unit": "%",
+      "min": 0,
+      "max": 10,
+      "conditional": "showAdvancedOptions"
+    },
+    "baseSalary": {
+      "label": "Base Annual Salary",
+      "type": "number",
+      "unit": "currency",
+      "required": true,
+      "min": 0
+    },
+    "baseHourlyRate": {
+      "label": "Base Hourly Rate",
+      "type": "number",
+      "unit": "currency",
+      "required": true,
+      "min": 0
+    },
+    "regularHours": {
+      "label": "Regular Hours per Week",
+      "type": "number",
+      "unit": "hours",
+      "required": true,
+      "min": 1,
+      "max": 80,
+      "default": 40
+    },
+    "overtimeHours": {
+      "label": "Overtime Hours per Week",
+      "type": "number",
+      "unit": "hours",
+      "default": 0,
+      "min": 0,
+      "max": 40,
+      "conditional": "includeOvertime"
+    },
+    "bonusAmount": {
+      "label": "Bonus Amount",
+      "type": "number",
+      "unit": "currency",
+      "required": true,
+      "min": 0
+    },
+    "includeHolidayPay": {
+      "label": "Include Holiday Pay",
+      "type": "checkbox",
+      "default": false
+    },
+    "annualContractValue": {
+      "label": "Annual Contract Value",
+      "type": "number",
+      "unit": "currency",
+      "required": true,
+      "min": 0
+    },
+    "ir35Option": {
+      "label": "IR35 Status",
+      "type": "select",
+      "default": "inside",
+      "options": [
+        {"value": "inside", "label": "Inside IR35"},
+        {"value": "outside", "label": "Outside IR35"}
+      ],
+      "conditional": "showAdvancedOptions"
+    },
+    "taxOption": {
+      "label": "Tax Option",
+      "type": "select",
+      "default": "1099",
+      "options": [
+        {"value": "1099", "label": "1099 Contractor"},
+        {"value": "w2", "label": "W2 Employee"}
+      ],
+      "conditional": "showAdvancedOptions"
+    },
+    "fourOOneKPercent": {
+      "label": "401(k) Contribution (%)",
+      "type": "slider",
+      "default": 0,
+      "min": 0,
+      "max": 20,
+      "step": 0.5,
+      "conditional": "showAdvancedOptions"
+    },
+    "expensesPerDay": {
+      "label": "Daily Business Expenses",
+      "type": "number",
+      "unit": "currency",
+      "default": 0,
+      "min": 0,
+      "conditional": "showAdvancedOptions"
+    },
+    "monthsPerYear": {
+      "label": "Months Worked per Year",
+      "type": "number",
+      "unit": "months",
+      "default": 12,
+      "min": 1,
+      "max": 12
+    },
+    "includeOvertimeHours": {
+      "label": "Include Overtime Hours",
+      "type": "checkbox",
+      "default": false,
+      "conditional": "showAdvancedOptions"
+    },
+    "stateOverride": {
+      "label": "State Override",
+      "type": "select",
+      "options": [
+        {"value": "CA", "label": "California"},
+        {"value": "TX", "label": "Texas"},
+        {"value": "NY", "label": "New York"}
+      ],
+      "conditional": "showAdvancedOptions"
+    },
+    "healthInsurance": {
+      "label": "Monthly Health Insurance",
+      "type": "number",
+      "unit": "currency",
+      "default": 0,
+      "min": 0,
+      "conditional": "showAdvancedOptions"
+    },
+    "dependents": {
+      "label": "Number of Dependents",
+      "type": "number",
+      "default": 0,
+      "min": 0,
+      "max": 10,
+      "conditional": "showAdvancedOptions"
+    },
+    "salaryType": {
+      "label": "Salary Type",
+      "type": "select",
+      "default": "gross",
+      "options": [
+        {"value": "gross", "label": "Gross Salary"},
+        {"value": "net", "label": "Net Salary"}
+      ]
+    },
+    "benefitsValue": {
+      "label": "Employer Benefits Value",
+      "type": "number",
+      "unit": "currency",
+      "default": 0,
+      "min": 0,
+      "conditional": "showAdvancedOptions"
+    },
+    "paidTimeOff": {
+      "label": "Paid Time Off (PTO) Days",
+      "type": "number",
+      "unit": "days",
+      "default": 15,
+      "min": 0,
+      "max": 365,
+      "conditional": "showAdvancedOptions"
+    },
+    "retirementContribution": {
+      "label": "Retirement Contribution",
+      "type": "number",
+      "unit": "currency",
+      "default": 0,
+      "min": 0,
+      "conditional": "showAdvancedOptions"
+    },
+    "workHoursPerWeek": {
+      "label": "Work Hours Per Week",
+      "type": "number",
+      "unit": "hours",
+      "default": 40,
+      "min": 1,
+      "max": 80,
+      "conditional": "showAdvancedOptions"
+    },
+    "employmentType": {
+      "label": "Employment Type",
+      "type": "select",
+      "default": "fulltime",
+      "options": [
+        {"value": "fulltime", "label": "Full-Time"},
+        {"value": "parttime", "label": "Part-Time"},
+        {"value": "contractor", "label": "Contractor"},
+        {"value": "freelance", "label": "Freelance"}
+      ],
+      "conditional": "showAdvancedOptions"
+    },
+    "retirement401k": {
+      "label": "401(k) Contribution (%)",
+      "type": "slider",
+      "default": 0,
+      "min": 0,
+      "max": 20,
+      "step": 0.5,
+      "conditional": "showAdvancedOptions"
+    }
+  }
+}

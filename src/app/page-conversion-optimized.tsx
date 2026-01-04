@@ -56,7 +56,7 @@ export default function HomeConversionOptimized() {
             </h1>
 
             <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-blue-100 leading-relaxed">
-              Know exactly what you'll earn. Calculate gross to net pay, hourly wages, bonuses, and compare salaries across 15+ countries.
+              Know exactly what you'll earn. Calculate gross to net pay, hourly wages, bonuses, and compare salaries across USA, UK, and Ireland.
               <strong className="text-white"> Used by 500,000+ professionals worldwide.</strong>
             </p>
 
@@ -289,7 +289,7 @@ export default function HomeConversionOptimized() {
                 🧮 Calculate Salary Now
               </Link>
               <Link
-                href="/guides/salary-negotiation"
+                href="/en/guides/salary-negotiation-tips"
                 className="border-2 border-white text-white px-6 py-3 rounded-lg font-bold hover:bg-white hover:text-red-600 transition-colors"
               >
                 💪 Negotiation Tips
@@ -315,7 +315,7 @@ export default function HomeConversionOptimized() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
             <Link
-              href="/guides/gross-vs-net"
+              href="/en/guides/gross-vs-net-salary"
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100"
             >
               <h3 className="font-bold text-gray-900 mb-2">Gross vs Net Salary</h3>
@@ -324,7 +324,7 @@ export default function HomeConversionOptimized() {
             </Link>
 
             <Link
-              href="/guides/how-to-calculate-take-home"
+              href="/en/guides/how-to-calculate-take-home"
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100"
             >
               <h3 className="font-bold text-gray-900 mb-2">Calculate Take-Home Pay</h3>
@@ -333,7 +333,7 @@ export default function HomeConversionOptimized() {
             </Link>
 
             <Link
-              href="/guides/salary-negotiation"
+              href="/en/guides/salary-negotiation-tips"
               className="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100"
             >
               <h3 className="font-bold text-gray-900 mb-2">Salary Negotiation</h3>

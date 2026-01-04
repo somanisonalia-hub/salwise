@@ -16,21 +16,10 @@ export default function GuidesPageFocused() {
 
   const guides = [
     {
-      id: 'gross-vs-net',
-      title: 'Gross vs Net Salary Guide',
-      slug: 'guides/gross-vs-net',
-      description: 'Understand the critical difference between gross salary and net take-home pay with detailed examples and calculations.',
-      icon: '📊',
-      readTime: '5 min read',
-      category: 'Tax Basics',
-      popular: true,
-      color: 'from-blue-500 to-blue-600'
-    },
-    {
-      id: 'calculate-take-home',
+      id: 'how-to-calculate-take-home',
       title: 'How to Calculate Take-Home Pay',
       slug: 'guides/how-to-calculate-take-home',
-      description: 'Step-by-step guide to calculating your take-home pay after taxes, deductions, and withholdings.',
+      description: 'Step-by-step breakdown of paycheck calculations after taxes and deductions.',
       icon: '🧮',
       readTime: '7 min read',
       category: 'Calculations',
@@ -38,25 +27,41 @@ export default function GuidesPageFocused() {
       color: 'from-green-500 to-green-600'
     },
     {
-      id: 'salary-negotiation',
-      title: 'Salary Negotiation Strategies',
-      slug: 'guides/salary-negotiation',
+      id: 'salary-negotiation-tips',
+      title: 'Salary Negotiation Tips',
+      slug: 'guides/salary-negotiation-tips',
       description: 'Proven techniques to negotiate your salary effectively and get the compensation you deserve.',
       icon: '💪',
       readTime: '8 min read',
       category: 'Career',
       popular: true,
       color: 'from-purple-500 to-purple-600'
+    },
+    {
+      id: 'taxes-explained-by-country',
+      title: 'Taxes Explained by Country',
+      slug: 'guides/taxes-explained-by-country',
+      description: 'Understanding tax systems and requirements across different countries.',
+      icon: '💰',
+      readTime: '10 min read',
+      category: 'Tax Planning',
+      popular: true,
+      color: 'from-blue-500 to-blue-600'
+    },
+    {
+      id: 'salary-trends-2026',
+      title: 'Salary Trends 2026',
+      slug: 'guides/salary-trends-2026',
+      description: 'Latest salary trends and market insights for 2026.',
+      icon: '📈',
+      readTime: '6 min read',
+      category: 'Market Insights',
+      popular: true,
+      color: 'from-orange-500 to-orange-600'
     }
   ];
 
   const guideCategories = [
-    {
-      name: 'Tax Basics',
-      description: 'Understanding taxes and deductions',
-      guides: 1,
-      icon: '💰'
-    },
     {
       name: 'Calculations',
       description: 'How to calculate salaries and taxes',
@@ -67,25 +72,37 @@ export default function GuidesPageFocused() {
       name: 'Career',
       description: 'Salary negotiation and career planning',
       guides: 1,
+      icon: '💪'
+    },
+    {
+      name: 'Tax Planning',
+      description: 'Understanding tax systems and requirements',
+      guides: 1,
+      icon: '💰'
+    },
+    {
+      name: 'Market Insights',
+      description: 'Salary trends and market analysis',
+      guides: 1,
       icon: '📈'
     }
   ];
 
   const learningPaths = [
     {
-      title: 'New to Salary Calculations',
-      description: 'Start with the fundamentals',
+      title: 'Understanding Your Salary',
+      description: 'Learn the basics of salary calculations',
       steps: [
-        { name: 'Gross vs Net Salary', slug: 'guides/gross-vs-net' },
-        { name: 'Calculate Take-Home Pay', slug: 'guides/how-to-calculate-take-home' }
+        { name: 'How to Calculate Take-Home Pay', slug: 'guides/how-to-calculate-take-home' },
+        { name: 'Taxes Explained by Country', slug: 'guides/taxes-explained-by-country' }
       ]
     },
     {
-      title: 'Career Advancement',
-      description: 'Maximize your earning potential',
+      title: 'Career Growth',
+      description: 'Advance your career and salary',
       steps: [
-        { name: 'Salary Negotiation', slug: 'guides/salary-negotiation' },
-        { name: 'Gross vs Net Salary', slug: 'guides/gross-vs-net' }
+        { name: 'Salary Negotiation Tips', slug: 'guides/salary-negotiation-tips' },
+        { name: 'Salary Trends 2026', slug: 'guides/salary-trends-2026' }
       ]
     }
   ];
@@ -93,7 +110,7 @@ export default function GuidesPageFocused() {
   return (
     <>
       <Head>
-        <title>Salary Calculation Guides | Learn About Pay & Taxes | SalaryWise.io</title>
+        <title>UPDATED: Salary Calculation Guides | Learn About Pay & Taxes | SalaryWise.io</title>
         <meta name="description" content="Comprehensive salary calculation guides. Learn about gross vs net pay, tax deductions, salary negotiation, and financial planning with expert advice." />
         <meta name="keywords" content="salary guides, gross vs net, take home pay, salary negotiation, tax guide, financial planning" />
         <link rel="canonical" href="https://salarywise.io/guides" />
@@ -164,7 +181,7 @@ export default function GuidesPageFocused() {
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               {guides.map((guide) => (
                 <article key={guide.id} className="bg-white rounded-lg border border-gray-200 p-6 hover:shadow-md transition-all">
-                  <Link href={`/${guide.slug}`} className="block">
+                  <Link href={`/en/${guide.slug}`} className="block">
                     <div className={`w-16 h-16 rounded-xl bg-gradient-to-br ${guide.color} flex items-center justify-center mb-4`}>
                       <div className="text-2xl">{guide.icon}</div>
                     </div>
@@ -219,7 +236,7 @@ export default function GuidesPageFocused() {
                     {path.steps.map((step, stepIndex) => (
                       <Link
                         key={stepIndex}
-                        href={`/${step.slug}`}
+                        href={`/en/${step.slug}`}
                         className="flex items-center gap-3 text-white hover:text-blue-200 transition-colors"
                       >
                         <div className="w-6 h-6 bg-white bg-opacity-20 rounded-full flex items-center justify-center text-xs font-bold">
@@ -311,13 +328,6 @@ export default function GuidesPageFocused() {
               <div className="text-sm font-medium">Country Calc</div>
             </Link>
 
-            <Link
-              href="/industry/it"
-              className="bg-white p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all text-center"
-            >
-              <div className="text-2xl mb-2">💼</div>
-              <div className="text-sm font-medium">Industry Calc</div>
-            </Link>
           </div>
 
           {/* FAQ Section */}

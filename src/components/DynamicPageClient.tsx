@@ -2,6 +2,7 @@
 
 import { useState, useEffect, memo, useCallback } from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 import {
   loadPageData,
   loadCalculatorData
@@ -21,7 +22,9 @@ interface PageData {
   faqs?: any[];
   disclaimer?: string | { title: string; content: string };
   universalDisclaimer?: { icon: string; title: string; content: string };
+  socialSharing?: { title: string; links: any[] };
   intro?: string | { paragraph1: string; paragraph2: string };
+  differentiationNotice?: { title: string; message: string; links?: any[] };
   howItWorks?: string;
   whatIsGrossVsNet?: string;
   howGrossConvertsToNet?: string;
@@ -38,7 +41,7 @@ interface PageData {
   whyUseBonusCalculator?: string[];
   howOvertimePayIsCalculated?: string;
   whenToUseOvertimeCalculator?: string[];
-  workedExamples?: any;
+  useCases?: any;
   howSalaryAfterTaxWorksUSA?: string;
   howSalaryAfterTaxWorksUK?: string;
   howSalaryAfterTaxWorksIreland?: string;
@@ -236,6 +239,28 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
               )}
             </div>
 
+            {/* Differentiation Notice */}
+            {pageData.differentiationNotice && (
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+                <h3 className="text-lg font-semibold text-blue-900 mb-3 flex items-center">
+                  <span className="mr-2">{pageData.differentiationNotice.title}</span>
+                </h3>
+                <p className="text-blue-800 mb-4">{pageData.differentiationNotice.message}</p>
+                {pageData.differentiationNotice.links && (
+                  <div className="flex flex-wrap gap-3">
+                    {pageData.differentiationNotice.links.map((link: any, index: number) => (
+                      <Link
+                        key={index}
+                        href={link.url}
+                        className="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700 transition-colors text-sm"
+                      >
+                        {link.text}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+            )}
 
             {calculatorData && calculatorData.inputs && calculatorData.inputs.length > 0 && (
               <div className="bg-white border border-gray-200 p-6 mb-6">
@@ -1607,11 +1632,11 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
               )}
 
             {/* Use Cases Section */}
-            {pageData.workedExamples && (
+            {pageData.useCases && (
               <div className="bg-white border border-gray-200 p-6 mb-6">
                 <h2 className="text-xl font-bold text-gray-900 mb-4">Use Cases</h2>
                 <div className="space-y-6">
-                  {Object.entries(pageData.workedExamples).map(([key, example]: [string, any], index: number) => (
+                  {Object.entries(pageData.useCases).map(([key, example]: [string, any], index: number) => (
                     <div key={key} className="bg-blue-50 border-l-4 border-blue-400 p-4">
                       <h3 className="text-lg font-semibold text-gray-900 mb-2">{example.title}</h3>
                       <p className="text-gray-700 mb-3">
@@ -1640,7 +1665,7 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
             )}
 
             {/* Single Example Section (fallback) */}
-            {!pageData.workedExamples && pageData.example && (
+            {!pageData.useCases && pageData.example && (
               <div className="bg-white border border-gray-200 p-6 mb-6">
                 <h2 className="text-xl font-bold text-gray-900 mb-4">Example Calculation</h2>
                 <div className="bg-blue-50 border-l-4 border-blue-400 p-4">
@@ -1707,14 +1732,37 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
 
             {/* FAQ Section */}
             {pageData.faqs && pageData.faqs.length > 0 && (
-              <div className="bg-white border border-gray-200 p-6 mb-6">
-                <h2 className="text-xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
-                <div className="space-y-4">
+              <div className="bg-blue-50 border border-blue-200 p-6 mb-6">
+                <h2 className="text-2xl font-bold text-blue-900 mb-6 text-center">❓ Frequently Asked Questions</h2>
+                <div className="space-y-6">
                   {pageData.faqs.map((faq: any, index: number) => (
-                    <div key={index} className="border-b border-gray-200 pb-4 last:border-b-0">
-                      <h3 className="text-lg font-semibold text-gray-900 mb-2">{faq.question}</h3>
-                      <p className="text-gray-700">{faq.answer}</p>
+                    <div key={index} className="bg-white rounded-lg p-4 shadow-sm border border-gray-100">
+                      <h3 className="text-lg font-semibold text-gray-900 mb-3">
+                        {faq.question}
+                      </h3>
+                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
                     </div>
+                  ))}
+                </div>
+              </div>
+            )}
+
+            {/* Social Sharing */}
+            {pageData.socialSharing && (
+              <div className="bg-blue-50 border border-blue-200 rounded-lg p-6 mb-6">
+                <h3 className="text-lg font-semibold text-blue-900 mb-3">{pageData.socialSharing.title}</h3>
+                <div className="flex space-x-4">
+                  {pageData.socialSharing.links.map((link: any, index: number) => (
+                    <a
+                      key={index}
+                      href={link.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="flex items-center space-x-2 bg-white border border-blue-300 text-blue-700 px-4 py-2 rounded-lg hover:bg-blue-50 transition-colors"
+                    >
+                      <span>{link.icon}</span>
+                      <span>{link.platform}</span>
+                    </a>
                   ))}
                 </div>
               </div>
@@ -1758,10 +1806,10 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
                     📚 Learn About Salary
                   </h3>
                   <div className="space-y-2">
-                    <a href="/en/understanding-gross-vs-net-salary" className="block text-blue-600 hover:text-blue-800 text-sm">Gross vs Net Salary</a>
-                    <a href="/en/salary-negotiation-tips" className="block text-blue-600 hover:text-blue-800 text-sm">Salary Negotiation Tips</a>
-                    <a href="/en/how-to-calculate-take-home-pay" className="block text-blue-600 hover:text-blue-800 text-sm">How to Calculate Take-Home Pay</a>
-                    <a href="/en/taxes-explained-by-country" className="block text-blue-600 hover:text-blue-800 text-sm">Taxes Explained by Country</a>
+                    <a href="/en/guides/gross-vs-net-salary" className="block text-blue-600 hover:text-blue-800 text-sm">Gross vs Net Salary</a>
+                    <a href="/en/guides/salary-negotiation-tips" className="block text-blue-600 hover:text-blue-800 text-sm">Salary Negotiation Tips</a>
+                    <a href="/en/guides/how-to-calculate-take-home" className="block text-blue-600 hover:text-blue-800 text-sm">How to Calculate Take-Home Pay</a>
+                    <a href="/en/guides/taxes-explained-by-country" className="block text-blue-600 hover:text-blue-800 text-sm">Taxes Explained by Country</a>
                   </div>
                 </div>
 
@@ -1796,10 +1844,10 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
                     📊 Financial Planning
                   </h3>
                   <div className="space-y-2">
-                    <a href="/en/salary-negotiation-tips" className="block text-blue-600 hover:text-blue-800 text-sm">Salary Negotiation Tips</a>
-                    <a href="/en/understanding-gross-vs-net-salary" className="block text-blue-600 hover:text-blue-800 text-sm">Gross vs Net Salary</a>
-                    <a href="/en/how-to-calculate-take-home-pay" className="block text-blue-600 hover:text-blue-800 text-sm">Calculate Take-Home Pay</a>
-                    <a href="/en/taxes-explained-by-country" className="block text-blue-600 hover:text-blue-800 text-sm">Tax Information</a>
+                    <a href="/en/guides/salary-negotiation-tips" className="block text-blue-600 hover:text-blue-800 text-sm">Salary Negotiation Tips</a>
+                    <a href="/en/guides/gross-vs-net-salary" className="block text-blue-600 hover:text-blue-800 text-sm">Gross vs Net Salary</a>
+                    <a href="/en/guides/how-to-calculate-take-home" className="block text-blue-600 hover:text-blue-800 text-sm">Calculate Take-Home Pay</a>
+                    <a href="/en/guides/taxes-explained-by-country" className="block text-blue-600 hover:text-blue-800 text-sm">Tax Information</a>
                   </div>
                 </div>
 

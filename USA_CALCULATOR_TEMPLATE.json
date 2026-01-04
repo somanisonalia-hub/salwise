@@ -1,0 +1,234 @@
+{
+  "calculator": "USA Salary Calculator",
+  "category": "Country-Specific",
+  "country": "United States",
+
+  "mandatoryInputs": [
+    {
+      "id": "grossSalary",
+      "label": "Gross Annual Salary ($)",
+      "type": "number",
+      "default": 75000,
+      "unit": "$",
+      "required": true,
+      "min": 0,
+      "description": "Your total annual salary before any deductions"
+    },
+    {
+      "id": "paymentFrequency",
+      "label": "How Are You Paid?",
+      "type": "select",
+      "default": "biweekly",
+      "options": [
+        {"value": "weekly", "label": "Weekly"},
+        {"value": "biweekly", "label": "Every 2 Weeks"},
+        {"value": "semimonthly", "label": "Semi-Monthly"},
+        {"value": "monthly", "label": "Monthly"},
+        {"value": "annually", "label": "Annually"}
+      ],
+      "required": true,
+      "description": "Your payroll frequency"
+    },
+    {
+      "id": "state",
+      "label": "State",
+      "type": "select",
+      "default": "CA",
+      "options": [
+        {"value": "CA", "label": "California"},
+        {"value": "TX", "label": "Texas"},
+        {"value": "NY", "label": "New York"},
+        {"value": "FL", "label": "Florida"},
+        {"value": "IL", "label": "Illinois"},
+        {"value": "PA", "label": "Pennsylvania"},
+        {"value": "OH", "label": "Ohio"},
+        {"value": "GA", "label": "Georgia"},
+        {"value": "NC", "label": "North Carolina"},
+        {"value": "MI", "label": "Michigan"}
+      ],
+      "required": true,
+      "description": "Your state for accurate state tax calculations"
+    },
+    {
+      "id": "taxYear",
+      "label": "Tax Year",
+      "type": "select",
+      "default": "2025",
+      "options": [
+        {"value": "2025", "label": "2025 Tax Rates"},
+        {"value": "2024", "label": "2024 Tax Rates"}
+      ],
+      "required": true,
+      "description": "Tax year for calculations"
+    }
+  ],
+
+  "optionalInputs": [
+    {
+      "id": "showAdvancedOptions",
+      "label": "Show Advanced Options",
+      "type": "checkbox",
+      "default": false,
+      "description": "Enable additional calculation options"
+    },
+    {
+      "id": "filingStatus",
+      "label": "Filing Status",
+      "type": "select",
+      "default": "single",
+      "options": [
+        {"value": "single", "label": "Single"},
+        {"value": "married_joint", "label": "Married Filing Jointly"},
+        {"value": "married_separate", "label": "Married Filing Separately"},
+        {"value": "head_household", "label": "Head of Household"}
+      ],
+      "conditional": "showAdvancedOptions",
+      "description": "Your tax filing status"
+    },
+    {
+      "id": "includeOvertime",
+      "label": "Include Overtime Pay",
+      "type": "checkbox",
+      "default": false,
+      "conditional": "showAdvancedOptions",
+      "description": "Calculate additional overtime earnings"
+    },
+    {
+      "id": "overtimeHours",
+      "label": "Overtime Hours per Week",
+      "type": "number",
+      "default": 0,
+      "unit": "hours",
+      "conditional": "includeOvertime",
+      "min": 0,
+      "max": 80,
+      "description": "Additional hours worked per week"
+    },
+    {
+      "id": "overtimeRate",
+      "label": "Overtime Rate Multiplier",
+      "type": "select",
+      "default": "1.5",
+      "options": [
+        {"value": "1.5", "label": "1.5x (Standard)"},
+        {"value": "2.0", "label": "2.0x (Double Time)"}
+      ],
+      "conditional": "includeOvertime",
+      "description": "How much extra you earn for overtime"
+    },
+    {
+      "id": "annualBonus",
+      "label": "Annual Bonus/Commission ($)",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "conditional": "showAdvancedOptions",
+      "min": 0,
+      "description": "Expected annual bonus or commission"
+    },
+    {
+      "id": "retirement401k",
+      "label": "401(k) Contribution (%)",
+      "type": "slider",
+      "default": 0,
+      "min": 0,
+      "max": 20,
+      "step": 0.5,
+      "conditional": "showAdvancedOptions",
+      "description": "Percentage of salary going to 401(k) (pre-tax deduction)"
+    },
+    {
+      "id": "healthInsurance",
+      "label": "Monthly Health Insurance ($)",
+      "type": "number",
+      "default": 0,
+      "unit": "$",
+      "conditional": "showAdvancedOptions",
+      "min": 0,
+      "description": "Monthly health insurance premium (pre-tax)"
+    },
+    {
+      "id": "dependents",
+      "label": "Number of Dependents",
+      "type": "number",
+      "default": 0,
+      "conditional": "showAdvancedOptions",
+      "min": 0,
+      "max": 10,
+      "description": "Number of dependents for tax calculations"
+    }
+  ],
+
+  "uiLayout": {
+    "header": "🇺🇸 USA Salary Calculator",
+    "calculateButtonText": "Calculate USA Salary",
+    "resultsHeader": "Your USA Salary Breakdown",
+
+    "sections": [
+      {
+        "name": "Mandatory Inputs",
+        "description": "Required information for basic calculation",
+        "inputs": ["grossSalary", "paymentFrequency", "state", "taxYear"]
+      },
+      {
+        "name": "Advanced Options",
+        "description": "Additional factors affecting your take-home pay",
+        "toggleInput": "showAdvancedOptions",
+        "inputs": ["filingStatus", "includeOvertime", "overtimeHours", "overtimeRate", "annualBonus", "retirement401k", "healthInsurance", "dependents"]
+      }
+    ]
+  },
+
+  "taxComponents": [
+    {
+      "name": "Federal Income Tax",
+      "description": "Progressive federal income tax",
+      "rates": "10%, 12%, 22%, 24%, 32%, 35%, 37%",
+      "function": "calculateUSAFederalTax"
+    },
+    {
+      "name": "State Income Tax",
+      "description": "State-specific income tax rates",
+      "rates": "0% to 13.3% (varies by state)",
+      "function": "calculateUSAStateTax"
+    },
+    {
+      "name": "Social Security Tax",
+      "description": "Social security contribution (FICA)",
+      "rates": "6.2% (employee portion)",
+      "function": "socialSecurity = gross * 0.062"
+    },
+    {
+      "name": "Medicare Tax",
+      "description": "Medicare contribution (FICA)",
+      "rates": "1.45% (employee portion)",
+      "function": "medicare = gross * 0.0145"
+    }
+  ],
+
+  "expectedOutputs": [
+    "grossAnnualSalary",
+    "federalTax",
+    "stateTax",
+    "socialSecurityTax",
+    "medicareTax",
+    "ficaTax",
+    "totalDeductions",
+    "annualNetSalary",
+    "monthlyNetSalary",
+    "effectiveTaxRate"
+  ],
+
+  "testCases": [
+    {
+      "description": "Standard $75,000 salary in California",
+      "inputs": {"grossSalary": 75000, "paymentFrequency": "biweekly", "state": "CA"},
+      "expected": {
+        "annualNetSalary": 54750,
+        "effectiveTaxRate": 27.0
+      }
+    }
+  ]
+}</content>
+</xai:function_call">Write
+

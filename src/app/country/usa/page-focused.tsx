@@ -257,7 +257,7 @@ export default function USAFocused() {
             </Link>
 
             <Link
-              href="/guides/gross-vs-net"
+              href="/en/guides/gross-vs-net-salary"
               className="bg-white p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all text-center"
             >
               <div className="text-2xl mb-2">📚</div>

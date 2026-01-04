@@ -8,7 +8,7 @@ export default function CountryPageFocused() {
     "@type": "WebSite",
     "name": "Country Salary Calculators",
     "url": "https://salarywise.io/country",
-    "description": "Calculate take-home pay for 15+ countries with localized tax rules. Compare salaries across different countries with accurate tax calculations.",
+    "description": "Calculate take-home pay for USA, UK, and Ireland with localized tax rules. Compare salaries across these countries with accurate tax calculations.",
     "publisher": {
       "@type": "Organization",
       "name": "SalaryWise.io"
@@ -91,7 +91,7 @@ export default function CountryPageFocused() {
     <>
       <Head>
         <title>Country Salary Calculators | International Take-Home Pay | SalaryWise.io</title>
-        <meta name="description" content="Calculate take-home pay for 15+ countries with localized tax rules. Compare salaries across US, UK, Canada, Australia, Ireland, India and more." />
+        <meta name="description" content="Calculate take-home pay for USA, UK, and Ireland with localized tax rules. Compare salaries across these major economies with accurate tax calculations." />
         <meta name="keywords" content="country salary calculator, international salary, take home pay by country, tax calculator by country, salary comparison" />
         <link rel="canonical" href="https://salarywise.io/country" />
         <script
@@ -107,7 +107,7 @@ export default function CountryPageFocused() {
             <div className="flex items-center justify-between">
               <div>
                 <h1 className="text-2xl font-bold text-gray-900">Country Salary Calculators</h1>
-                <p className="text-gray-600 mt-1">Localized tax calculations for 15+ countries</p>
+                <p className="text-gray-600 mt-1">Localized tax calculations for USA, UK & Ireland</p>
               </div>
               <Link
                 href="/"
@@ -294,7 +294,7 @@ export default function CountryPageFocused() {
             </Link>
 
             <Link
-              href="/guides/gross-vs-net"
+              href="/en/guides/gross-vs-net-salary"
               className="bg-white p-4 rounded-lg border border-gray-200 hover:border-blue-300 hover:shadow-sm transition-all text-center"
             >
               <div className="text-2xl mb-2">📚</div>

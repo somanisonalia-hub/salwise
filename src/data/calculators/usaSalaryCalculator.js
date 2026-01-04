@@ -72,7 +72,11 @@ const usaSalaryCalculator = {
       "id": "payFrequency",
       "label": "Pay Frequency",
       "type": "select",
-      "options": ["Annual", "Monthly", "Weekly"],
+      "options": [
+        {"value": "Annual", "label": "Annual"},
+        {"value": "Monthly", "label": "Monthly"},
+        {"value": "Weekly", "label": "Weekly"}
+      ],
       "default": "Annual"
     },
     {
@@ -117,6 +121,56 @@ const usaSalaryCalculator = {
       "default": 0,
       "unit": "$",
       "optional": true
+    }
+  ],
+  "outputs": [
+    {
+      "id": "netAnnualSalary",
+      "label": "Net Annual Salary",
+      "unit": "currency",
+      "description": "Your take-home pay after all taxes and deductions"
+    },
+    {
+      "id": "netMonthlySalary",
+      "label": "Net Monthly Salary",
+      "unit": "currency",
+      "description": "Monthly take-home pay"
+    },
+    {
+      "id": "federalTax",
+      "label": "Federal Income Tax",
+      "unit": "currency",
+      "description": "Federal tax based on 2026 brackets"
+    },
+    {
+      "id": "stateTax",
+      "label": "State Income Tax",
+      "unit": "currency",
+      "description": "State tax based on your selected state"
+    },
+    {
+      "id": "socialSecurity",
+      "label": "Social Security",
+      "unit": "currency",
+      "description": "6.2% Social Security tax"
+    },
+    {
+      "id": "medicare",
+      "label": "Medicare",
+      "unit": "currency",
+      "description": "1.45% Medicare tax"
+    },
+    {
+      "id": "totalDeductions",
+      "label": "Total Deductions",
+      "unit": "currency",
+      "description": "All taxes and deductions combined"
+    },
+    {
+      "id": "effectiveTaxRate",
+      "label": "Effective Tax Rate",
+      "unit": "%",
+      "description": "Overall tax rate on your income"
     }
   ],
   "formula": {

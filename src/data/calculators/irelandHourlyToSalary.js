@@ -5,10 +5,12 @@ const irelandHourlyToSalary = {
   "inputs": [
     {
       "id": "hourlyRate",
-      "label": "Hourly Rate (EUR)",
+      "label": "Hourly Rate",
       "type": "number",
       "default": 20,
-      "unit": "€"
+      "unit": "€",
+      "required": true,
+      "min": 0
     },
     {
       "id": "hoursPerWeek",
@@ -16,34 +18,49 @@ const irelandHourlyToSalary = {
       "type": "number",
       "default": 40,
       "unit": "hours",
+      "required": true,
       "min": 1,
-      "max": 60
+      "max": 80
     },
     {
-      "id": "payFrequency",
-      "label": "Display Period",
-      "type": "select",
-      "options": ["Annual", "Monthly", "Weekly"],
-      "default": "Annual"
+      "id": "weeksPerYear",
+      "label": "Weeks per Year",
+      "type": "number",
+      "default": 52,
+      "unit": "weeks",
+      "required": true,
+      "min": 1,
+      "max": 52
+    },
+    {
+      "id": "bonus",
+      "label": "Annual Bonus/Commission",
+      "type": "number",
+      "unit": "€",
+      "default": 0,
+      "required": true,
+      "min": 0
     }
   ],
   "formula": {
-    "grossAnnualSalary": "hourlyRate * hoursPerWeek * 52",
-    "payeTax": "calculateIrelandPAYE(grossAnnualSalary)",
-    "usc": "calculateIrelandUSC(grossAnnualSalary)",
-    "prsi": "calculateIrelandPRSI(grossAnnualSalary)",
+    "annualSalary": "hourlyRate * hoursPerWeek * weeksPerYear",
+    "totalAnnualSalary": "annualSalary + bonus",
+    "payeTax": "calculateIrelandPAYE(totalAnnualSalary)",
+    "usc": "calculateIrelandUSC(totalAnnualSalary)",
+    "prsi": "calculateIrelandPRSI(totalAnnualSalary)",
     "totalDeductions": "payeTax + usc + prsi",
-    "netAnnualSalary": "grossAnnualSalary - totalDeductions",
+    "netAnnualSalary": "totalAnnualSalary - totalDeductions",
     "netMonthlySalary": "netAnnualSalary / 12",
     "netWeeklySalary": "netAnnualSalary / 52",
-    "effectiveTaxRate": "(totalDeductions / grossAnnualSalary) * 100"
+    "effectiveTaxRate": "(totalDeductions / totalAnnualSalary) * 100"
   },
   "examples": [
     {
-      "scenario": "€20/hour, 40 hours/week",
-      "inputs": {"hourlyRate": 20, "hoursPerWeek": 40, "payFrequency": "Annual"},
+      "scenario": "€20/hour, 40 hours/week, 52 weeks",
+      "inputs": {"hourlyRate": 20, "hoursPerWeek": 40, "weeksPerYear": 52, "bonus": 0},
       "expectedOutputs": {
-        "grossAnnualSalary": 41600,
+        "annualSalary": 41600,
+        "totalAnnualSalary": 41600,
         "payeTax": 5167,
         "usc": 1725,
         "prsi": 1664,

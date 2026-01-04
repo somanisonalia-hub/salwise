@@ -7,7 +7,7 @@ export default function HomeSEOOptimized() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "SalaryWise.io - Free Salary Calculators",
-    "description": "Calculate salary, hourly wage, gross to net pay, take-home pay, and bonuses with our free salary calculators. Compare salaries across 15+ countries.",
+    "description": "Calculate salary, hourly wage, gross to net pay, take-home pay, and bonuses with our free salary calculators. Compare salaries across USA, UK, and Ireland.",
     "url": "https://salarywise.io",
     "publisher": {
       "@type": "Organization",
@@ -65,7 +65,7 @@ export default function HomeSEOOptimized() {
     <>
       <Head>
         <title>Salary Calculator | Free Gross to Net Pay Calculator | SalaryWise.io</title>
-        <meta name="description" content="Calculate salary, hourly wage, gross to net pay, take-home pay, and bonuses with our free salary calculators. Compare salaries across 15+ countries. Accurate tax calculations." />
+        <meta name="description" content="Calculate salary, hourly wage, gross to net pay, take-home pay, and bonuses with our free salary calculators. Compare salaries across USA, UK, and Ireland. Accurate tax calculations." />
         <meta name="keywords" content="salary calculator, gross to net, take home pay, hourly to salary, pay calculator, net income, paycheck calculator, tax calculator" />
         <link rel="canonical" href="https://salarywise.io" />
         <meta property="og:title" content="Salary Calculator | Free Gross to Net Pay Calculator" />
@@ -91,7 +91,7 @@ export default function HomeSEOOptimized() {
               </h1>
               <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto leading-relaxed">
                 Calculate salary, hourly wage, gross to net pay, take-home pay, and bonuses with our free salary calculators.
-                Compare salaries across 15+ countries with accurate tax calculations and localized currency support.
+                Compare salaries across USA, UK, and Ireland with accurate tax calculations and localized currency support.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
                 <Link
@@ -259,7 +259,7 @@ export default function HomeSEOOptimized() {
 
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
               <article className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100">
-                <Link href="/guides/gross-vs-net">
+                <Link href="/en/guides/gross-vs-net-salary">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Understanding Gross vs Net Salary</h3>
                   <p className="text-gray-600 mb-4">Learn the critical difference between gross salary and net take-home pay. Includes examples and calculations for better financial planning.</p>
                   <div className="text-blue-600 font-medium">Read Guide →</div>
@@ -267,7 +267,7 @@ export default function HomeSEOOptimized() {
               </article>
 
               <article className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100">
-                <Link href="/guides/how-to-calculate-take-home">
+                <Link href="/en/guides/how-to-calculate-take-home">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">How to Calculate Take-Home Pay</h3>
                   <p className="text-gray-600 mb-4">Step-by-step guide to calculating your take-home pay after taxes and deductions. Includes federal, state, and local tax calculations.</p>
                   <div className="text-blue-600 font-medium">Read Guide →</div>
@@ -275,7 +275,7 @@ export default function HomeSEOOptimized() {
               </article>
 
               <article className="bg-white rounded-xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 border border-gray-100">
-                <Link href="/guides/salary-negotiation">
+                <Link href="/en/guides/salary-negotiation-tips">
                   <h3 className="text-xl font-bold text-gray-900 mb-3">Salary Negotiation Strategies</h3>
                   <p className="text-gray-600 mb-4">Proven techniques to negotiate your salary effectively. Learn how to research market rates and present your value to employers.</p>
                   <div className="text-blue-600 font-medium">Read Guide →</div>

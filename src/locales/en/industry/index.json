@@ -1,120 +1,126 @@
 {
-  "title": "Industry Salary Guides | Career Salary Information | SalaryWise.io",
-  "description": "Explore salary information by industry. Compare compensation across technology, healthcare, finance, engineering, and other sectors.",
-  "keywords": "industry salary guide, career salary information, industry compensation, sector salary comparison",
+  "h1": "Industry Salary Comparison — Find Your Career Path",
+  "metaTitle": "Industry Salary Comparison | Career Salary Information | SalaryWise.io",
+  "metaDescription": "Compare salaries across industries including technology, healthcare, finance, and engineering. Understand how industry choice affects your earning potential.",
+  "primaryKeyword": "industry salary comparison",
+  "longTailKeywords": [
+    "industry salary comparison",
+    "career salary information",
+    "industry compensation",
+    "sector salary comparison"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net-salary",
+    "take-home-pay-calculator"
+  ],
+  "title": "Industry Salary Comparison — Find Your Career Path",
+  "description": "Compare salaries across major industries to understand earning potential and career opportunities. Free salary calculators and industry insights.",
+  "keywords": "industry salary comparison, career salary information, industry compensation, sector salary comparison",
   "canonical": "https://salarywise.io/en/industry",
 
   "header": {
-    "title": "Industry Salary Guides",
-    "subtitle": "Explore salaries by career sector"
+    "title": "Industry Salary Comparison",
+    "subtitle": "Discover earning potential across career sectors"
   },
 
   "intro": {
-    "paragraph1": "Salaries vary significantly across different industries due to factors like demand, required skills, education, and market conditions. Understanding industry-specific compensation helps you make informed career decisions and negotiate better pay.",
-    "paragraph2": "Browse our industry guides to learn about typical salaries, growth opportunities, and key factors that influence compensation in your field."
+    "paragraph1": "Different industries offer vastly different salary ranges and career opportunities. From high-paying technology roles to stable healthcare positions, understanding industry compensation helps you make informed career decisions.",
+    "paragraph2": "Explore how your industry choice affects take-home pay, growth potential, and work-life balance. Use our free salary calculator to compare compensation across sectors."
   },
 
   "industries": [
     {
       "name": "Technology & IT",
-      "slug": "it",
       "description": "Software development, cybersecurity, data science, and tech roles",
-      "averageSalary": "$85,000 - $150,000",
-      "growth": "High demand, 13% growth projected",
-      "keySkills": ["Programming", "Cloud computing", "AI/ML"],
       "href": "/en/salary-calculator"
     },
     {
       "name": "Healthcare",
-      "slug": "healthcare",
       "description": "Doctors, nurses, medical technicians, and healthcare professionals",
-      "averageSalary": "$60,000 - $200,000",
-      "growth": "Strong demand, 16% growth projected",
-      "keySkills": ["Medical knowledge", "Patient care", "Specialized training"],
       "href": "/en/salary-calculator"
     },
     {
       "name": "Finance & Banking",
-      "slug": "finance",
       "description": "Investment banking, financial analysis, accounting, and financial services",
-      "averageSalary": "$70,000 - $180,000",
-      "growth": "Stable demand, 7% growth projected",
-      "keySkills": ["Financial analysis", "Risk management", "Regulatory compliance"],
       "href": "/en/salary-calculator"
     },
     {
       "name": "Engineering",
-      "slug": "engineering",
       "description": "Mechanical, electrical, civil, and other engineering disciplines",
-      "averageSalary": "$75,000 - $130,000",
-      "growth": "Moderate demand, 6% growth projected",
-      "keySkills": ["Technical expertise", "Problem solving", "Project management"],
       "href": "/en/salary-calculator"
     }
   ],
 
-  "salaryFactors": {
-    "title": "Factors Affecting Industry Salaries",
-    "factors": [
+  "industryImpact": {
+    "title": "How Industry Choice Affects Your Salary",
+    "subtitle": "Understanding industry salary variations",
+    "content": [
       {
-        "title": "Market Demand",
-        "description": "High-demand industries command higher salaries due to talent shortages"
+        "heading": "Market Demand Drives Compensation",
+        "text": "Industries experiencing rapid growth or facing talent shortages typically offer higher salaries to attract skilled professionals. Technology and healthcare sectors often lead in compensation due to high demand for specialized skills."
       },
       {
-        "title": "Education & Training",
-        "description": "Roles requiring advanced degrees or specialized training typically pay more"
+        "heading": "Required Skills and Education",
+        "text": "Professions requiring advanced degrees, specialized certifications, or extensive training generally command higher salaries. Engineering and healthcare roles often fall into this category due to the significant investment required."
       },
       {
-        "title": "Experience Level",
-        "description": "Senior roles and specialized experience significantly impact compensation"
+        "heading": "Economic Factors",
+        "text": "Industry stability, profit margins, and economic conditions directly impact salary levels. While some sectors offer high base pay, others may provide better bonus structures or benefits packages."
       },
       {
-        "title": "Location",
-        "description": "Cost of living and local market conditions affect salary ranges"
-      },
-      {
-        "title": "Company Size",
-        "description": "Large corporations often pay more than small businesses"
+        "heading": "Career Growth Potential",
+        "text": "Industries with strong growth trajectories often provide better long-term earning potential through promotions, raises, and career advancement opportunities."
       }
     ]
   },
 
-  "tools": {
-    "title": "Industry Salary Tools",
-    "description": "Use our tools to research salaries in your industry",
-    "items": [
+  "salaryCalculators": {
+    "title": "Explore Salary Calculations",
+    "subtitle": "Use our free tools to understand industry compensation",
+    "calculators": [
       {
-        "title": "Salary Calculator",
-        "description": "Calculate your take-home pay",
+        "title": "Global Salary Calculator",
+        "description": "Compare take-home pay across different countries and industries",
         "href": "/en/salary-calculator"
       },
       {
-        "title": "Industry Comparison",
-        "description": "Compare salaries across industries",
-        "href": "/en"
+        "title": "Gross to Net Calculator",
+        "description": "Convert gross salary to net take-home pay",
+        "href": "/en/gross-to-net-salary"
+      },
+      {
+        "title": "Take-Home Pay Calculator",
+        "description": "Calculate net salary after all deductions",
+        "href": "/en/take-home-pay-calculator"
+      },
+      {
+        "title": "Salary After Tax Calculator",
+        "description": "Estimate salary after tax calculations",
+        "href": "/en/salary-after-tax-calculator"
       }
     ]
   },
 
-  "cta": {
-    "title": "Ready to Explore Your Industry?",
-    "description": "Select an industry above to learn more about typical salaries, growth opportunities, and career paths.",
+  "exploreCTA": {
+    "title": "Calculate Your Industry Salary",
+    "text": "Ready to see how your industry and experience level affect take-home pay? Use our salary calculator to get personalized estimates.",
     "button": {
-      "text": "View All Industries",
-      "href": "/en"
+      "text": "Start Calculating Salary",
+      "href": "/en/salary-calculator"
     }
   },
 
   "structuredData": {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Industry Salary Guides",
-    "description": "Explore salary information by industry and career sector"
+    "name": "Industry Salary Comparison — Find Your Career Path",
+    "description": "Compare salaries across major industries including technology, healthcare, finance, and engineering to understand earning potential and career opportunities."
   },
 
   "universalDisclaimer": {
-    "icon": "⚠️",
-    "title": "Important Notice",
-    "content": "The calculators and salary tools on this website are provided for informational purposes only. We do our best to provide accurate and up-to-date information, but we cannot guarantee the results. Actual salaries, taxes, and deductions may vary depending on your individual situation and local regulations. Users should not rely solely on this website for financial, legal, or tax decisions. Always consult with a qualified professional for advice. By using this website, you agree that SalaryWise.io is not responsible for any decisions or actions taken based on the calculator results."
+    "icon": "📊",
+    "title": "Salary Information",
+    "content": "Industry salary ranges are estimates based on available data and market conditions. Actual salaries vary by location, experience, company size, and individual qualifications. Use our calculators for general guidance only."
   }
 }

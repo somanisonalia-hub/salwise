@@ -35,7 +35,7 @@ export default function HomeMobileOptimized() {
   const quickActions = [
     { label: "USA Salary", href: "/country/usa", icon: "🇺🇸" },
     { label: "UK Salary", href: "/country/uk", icon: "🇬🇧" },
-    { label: "Tax Guide", href: "/guides/gross-vs-net", icon: "📖" },
+    { label: "Tax Guide", href: "/en/guides/gross-vs-net-salary", icon: "📖" },
     { label: "Calculator", href: "/salary-calculator", icon: "🧮" }
   ];
 
@@ -238,7 +238,7 @@ export default function HomeMobileOptimized() {
 
           <div className="space-y-4">
             <Link
-              href="/guides/gross-vs-net"
+              href="/en/guides/gross-vs-net-salary"
               className="block bg-white rounded-xl p-6 shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
             >
               <div className="flex items-center">
@@ -258,7 +258,7 @@ export default function HomeMobileOptimized() {
             </Link>
 
             <Link
-              href="/guides/how-to-calculate-take-home"
+              href="/en/guides/how-to-calculate-take-home"
               className="block bg-white rounded-xl p-6 shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
             >
               <div className="flex items-center">
@@ -278,7 +278,7 @@ export default function HomeMobileOptimized() {
             </Link>
 
             <Link
-              href="/guides/salary-negotiation"
+              href="/en/guides/salary-negotiation-tips"
               className="block bg-white rounded-xl p-6 shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
             >
               <div className="flex items-center">
@@ -332,7 +332,7 @@ export default function HomeMobileOptimized() {
             <span className="text-xs font-medium mt-1">USA</span>
           </Link>
           <Link
-            href="/guides/gross-vs-net"
+            href="/en/guides/gross-vs-net-salary"
             className="flex flex-col items-center p-2 rounded-lg hover:bg-gray-50 active:bg-gray-100 touch-manipulation"
           >
             <span className="text-lg">📖</span>

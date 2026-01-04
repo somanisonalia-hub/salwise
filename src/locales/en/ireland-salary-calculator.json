@@ -4,7 +4,7 @@
   "h1": "Ireland Salary Calculator (2026) – Calculate Take-Home Pay After Tax",
   "metaTitle": "Ireland Salary Calculator 2026 – Take Home Pay After Tax",
   "metaDescription": "Calculate your take-home pay in Ireland for 2026. Includes PAYE, USC, PRSI, pension, bonus and deductions. Free & accurate.",
-  "primaryKeyword": "ireland salary calculator",
+  "primaryKeyword": "Ireland Salary Calculator",
   "longTailKeywords": [
     "ireland salary calculator",
     "take home pay ireland",
@@ -24,6 +24,15 @@
   ],
   "dataRef": "irelandSalaryCalculator",
   "intro": "Calculate your take-home pay in Ireland for 2026 with our comprehensive salary calculator. Based on official Revenue.ie tax rates and guidelines, this tool accurately calculates PAYE (Pay As You Earn) income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) contributions. Ireland's progressive tax system uses multiple tax bands and rates, making precise calculations essential for financial planning. Whether you're an Irish resident, expatriate worker, or employer calculating payroll costs, this calculator provides reliable estimates for budgeting, salary negotiations, and understanding your net income after all mandatory Irish tax deductions. Use current 2026 tax brackets and rates for accurate financial planning.",
+  "differentiationNotice": {
+    "title": "🇮🇪 Ireland-Specific Tax Calculator",
+    "message": "This calculator provides detailed Irish tax calculations with 2026 Revenue.ie rates. For comparing salaries across multiple countries, use our global salary comparison tool.",
+    "links": [
+      {"text": "Compare Global Salaries", "url": "/en/salary-calculator"},
+      {"text": "UK Calculator", "url": "/en/uk-salary-calculator"},
+      {"text": "USA Calculator", "url": "/en/usa-salary-calculator"}
+    ]
+  },
   "ui": {
     "calculatorHeading": "Calculate Your Results",
     "resultsHeading": "Results",

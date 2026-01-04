@@ -229,6 +229,38 @@ const nextConfig: NextConfig = {
         destination: '/en/privacy-policy',
         permanent: true,
       },
+      // Country page redirects (locale-prefixed to static routes)
+      {
+        source: '/en/country/ireland',
+        destination: '/country/ireland',
+        permanent: true,
+      },
+      {
+        source: '/en/country/uk',
+        destination: '/country/uk',
+        permanent: true,
+      },
+      {
+        source: '/en/country/usa',
+        destination: '/country/usa',
+        permanent: true,
+      },
+      // Industry page redirects - redirect to salary calculator since industry page is not in Phase 1
+      {
+        source: '/industry/:path+',
+        destination: '/en/salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/industry/:path+',
+        destination: '/en/salary-calculator',
+        permanent: true,
+      },
+      {
+        source: '/en/industry',
+        destination: '/en/salary-calculator',
+        permanent: true,
+      },
     ];
   },
 

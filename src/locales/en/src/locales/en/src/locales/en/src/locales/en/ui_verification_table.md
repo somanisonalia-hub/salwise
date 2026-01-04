@@ -29,7 +29,7 @@ This table serves as the definitive 'source of truth' for all clickable UI eleme
 ### Footer Navigation - Resources Section
 | Footer – Resources | 📚 Guides | /en/guides | Internal | Approved |
 | Footer – Resources | Gross vs Net | /en/understanding-gross-vs-net-salary | Internal | Approved |
-| Footer – Resources | Negotiation Tips | /en/salary-negotiation-tips | Internal | Approved |
+| Footer – Resources | Negotiation Tips | /en/guides/salary-negotiation-tips | Internal | Approved |
 | Footer – Resources | 📞 Contact | /en/contact | Internal | Approved |
 | Footer – Resources | About Us | /en/about | Internal | Approved |
 
@@ -92,9 +92,9 @@ This table serves as the definitive 'source of truth' for all clickable UI eleme
 | Calculator – Dynamic | UK Salary Calculator | /en/uk-salary-calculator | Internal | Approved |
 | Calculator – Dynamic | Ireland Salary Calculator | /en/ireland-salary-calculator | Internal | Approved |
 | Calculator – Dynamic | Gross vs Net Salary | /en/understanding-gross-vs-net-salary | Internal | Approved |
-| Calculator – Dynamic | Salary Negotiation Tips | /en/salary-negotiation-tips | Internal | Approved |
-| Calculator – Dynamic | How to Calculate Take-Home Pay | /en/how-to-calculate-take-home-pay | Internal | Approved |
-| Calculator – Dynamic | Tax Information | /en/taxes-explained-by-country | Internal | Approved |
+| Calculator – Dynamic | Salary Negotiation Tips | /en/guides/salary-negotiation-tips | Internal | Approved |
+| Calculator – Dynamic | How to Calculate Take-Home Pay | /en/guides/how-to-calculate-take-home | Internal | Approved |
+| Calculator – Dynamic | Tax Information | /en/guides/taxes-explained-by-country | Internal | Approved |
 | Calculator – Dynamic | Technology & IT | /en/salary-calculator | Internal | Redirects to main calculator |
 | Calculator – Dynamic | Healthcare | /en/salary-calculator | Internal | Redirects to main calculator |
 | Calculator – Dynamic | Finance & Banking | /en/salary-calculator | Internal | Redirects to main calculator |
@@ -117,8 +117,8 @@ This table serves as the definitive 'source of truth' for all clickable UI eleme
 
 ### Guides Index Page
 | Guides Index | Gross vs Net Salary Guide | /en/understanding-gross-vs-net-salary | Internal | Approved |
-| Guides Index | Salary Negotiation Tips | /en/salary-negotiation-tips | Internal | Approved |
-| Guides Index | How to Calculate Take-Home Pay | /en/how-to-calculate-take-home-pay | Internal | Approved |
+| Guides Index | Salary Negotiation Tips | /en/guides/salary-negotiation-tips | Internal | Approved |
+| Guides Index | How to Calculate Take-Home Pay | /en/guides/how-to-calculate-take-home | Internal | Approved |
 
 ## 📊 Summary Statistics
 - **Total Internal Links**: 74

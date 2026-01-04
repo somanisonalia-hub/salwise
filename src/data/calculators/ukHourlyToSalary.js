@@ -7,7 +7,7 @@ const ukHourlyToSalary = {
       "id": "hourlyRate",
       "label": "Hourly Rate (£)",
       "type": "number",
-      "default": 15,
+      "default": 25,
       "unit": "£"
     },
     {
@@ -20,55 +20,45 @@ const ukHourlyToSalary = {
       "max": 60
     },
     {
-      "id": "payFrequency",
-      "label": "Display Period",
-      "type": "select",
-      "options": ["Annual", "Monthly", "Weekly"],
-      "default": "Annual"
+      "id": "weeksPerYear",
+      "label": "Weeks per Year",
+      "type": "number",
+      "default": 52,
+      "unit": "weeks",
+      "min": 1,
+      "max": 53
     },
     {
-      "id": "pensionPercent",
-      "label": "Pension Contribution (%)",
+      "id": "bonus",
+      "label": "Annual Bonus (£)",
       "type": "number",
       "default": 0,
-      "unit": "%",
-      "min": 0,
-      "max": 100,
+      "unit": "£",
       "optional": true
     }
   ],
   "formula": {
-    "grossAnnualSalary": "hourlyRate * hoursPerWeek * 52",
-    "payeTax": "calculateUKPAYE(grossAnnualSalary)",
-    "nic": "calculateUKNIC(grossAnnualSalary)",
-    "pensionContribution": "grossAnnualSalary * pensionPercent / 100",
-    "totalDeductions": "payeTax + nic + pensionContribution",
-    "netAnnualSalary": "grossAnnualSalary - totalDeductions",
+    "grossAnnualSalary": "hourlyRate * hoursPerWeek * weeksPerYear",
+    "totalAnnualSalary": "grossAnnualSalary + bonus",
+    "payeTax": "calculateUKPAYE(totalAnnualSalary)",
+    "nic": "calculateUKNIC(totalAnnualSalary)",
+    "totalDeductions": "payeTax + nic",
+    "netAnnualSalary": "totalAnnualSalary - totalDeductions",
     "netMonthlySalary": "netAnnualSalary / 12",
     "netWeeklySalary": "netAnnualSalary / 52",
-    "effectiveTaxRate": "(totalDeductions / grossAnnualSalary) * 100"
+    "effectiveTaxRate": "(totalDeductions / totalAnnualSalary) * 100"
   },
   "examples": [
     {
-      "scenario": "£15/hour, 40 hours/week",
-      "inputs": {"hourlyRate": 15, "hoursPerWeek": 40, "payFrequency": "Annual", "pensionPercent": 0},
+      "scenario": "£25/hour, 40 hours/week, 52 weeks/year",
+      "inputs": {"hourlyRate": 25, "hoursPerWeek": 40, "weeksPerYear": 52, "bonus": 0},
       "expectedOutputs": {
-        "grossAnnualSalary": 31200,
-        "payeTax": 3654,
-        "nic": 1298,
-        "totalDeductions": 4952,
-        "netAnnualSalary": 26248
-      }
-    },
-    {
-      "scenario": "£25/hour, 35 hours/week",
-      "inputs": {"hourlyRate": 25, "hoursPerWeek": 35, "payFrequency": "Annual", "pensionPercent": 0},
-      "expectedOutputs": {
-        "grossAnnualSalary": 45500,
-        "payeTax": 7254,
-        "nic": 2054,
-        "totalDeductions": 9308,
-        "netAnnualSalary": 36192
+        "grossAnnualSalary": 52000,
+        "totalAnnualSalary": 52000,
+        "payeTax": 8454,
+        "nic": 3754,
+        "totalDeductions": 12208,
+        "netAnnualSalary": 39792
       }
     }
   ]

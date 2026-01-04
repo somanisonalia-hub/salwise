@@ -99,12 +99,6 @@
             },
             {
               "@type": "ListItem",
-              "position": 2,
-              "name": "Industry Calculators",
-              "item": "https://salarywise.io/en/industry"
-            },
-            {
-              "@type": "ListItem",
               "position": 3,
               "name": "IT/Tech Salary Calculator",
               "item": "https://salarywise.io/en/salary-calculator-it-tech"

@@ -2,7 +2,7 @@
   "hero": {
     "title": "Stop Leaving Money on the Table",
     "subtitle": "Calculate Your Exact Take-Home Pay in 30 Seconds",
-    "description": "Get precise salary calculations with 2025 tax rates, benefits valuation, and equity analysis. Compare offers accurately and never under-negotiate again.",
+    "description": "Get precise salary calculations with 2026 tax rates, benefits valuation, and equity analysis for USA, UK, and Ireland. Compare offers accurately and maximize your earnings.",
     "painPoints": [
       "❌ Losing $1,200+/year to incorrect tax withholdings",
       "❌ Accepting lowball offers because you can't compare total comp",
@@ -32,10 +32,8 @@
     "trustIndicators": [
       "💰 Save $1,200+/year on taxes",
       "📈 Negotiate $15K+ raises",
-      "🎯 Compare total compensation",
-      "🌍 25+ countries supported",
-      "⚡ Results in 30 seconds",
-      "🔒 Bank-level security"
+      "🌍 USA, UK & Ireland supported",
+      "⚡ Results in 30 seconds"
     ],
     "testimonials": [
       {
@@ -95,7 +93,7 @@
         "icon": "📖",
         "text": "Salary Guides",
         "description": "Expert salary advice",
-        "href": "/understanding-gross-vs-net-salary",
+        "href": "/gross-to-net-salary",
         "popular": false
       }
     ]
@@ -249,14 +247,14 @@
           {
             "title": "Gross vs Net Salary Guide",
             "description": "The fundamental difference that affects your finances",
-            "href": "/understanding-gross-vs-net-salary",
+            "href": "/gross-to-net-salary",
             "readTime": "5 min",
             "popular": true
           },
           {
             "title": "How to Calculate Take-Home Pay",
             "description": "Step-by-step breakdown of paycheck calculations",
-            "href": "/how-to-calculate-take-home-pay",
+            "href": "/guides/how-to-calculate-take-home",
             "readTime": "7 min",
             "popular": true
           }
@@ -269,14 +267,14 @@
           {
             "title": "Salary Negotiation Strategies",
             "description": "Proven techniques to get the salary you deserve",
-            "href": "/salary-negotiation-tips",
+            "href": "/guides/salary-negotiation-tips",
             "readTime": "8 min",
             "popular": true
           },
           {
-            "title": "2025 Salary Trends",
+            "title": "Salary Trends 2026",
             "description": "What's happening in the job market this year",
-            "href": "/salary-trends-2026-global",
+            "href": "/guides/salary-trends-2026",
             "readTime": "6 min",
             "popular": false
           }
@@ -289,7 +287,7 @@
           {
             "title": "Taxes Explained by Country",
             "description": "Understanding tax systems worldwide",
-            "href": "/taxes-explained-by-country",
+            "href": "/guides/taxes-explained-by-country",
             "readTime": "10 min",
             "popular": false
           }
@@ -477,7 +475,7 @@
         "@id": "https://salarywise.io",
         "url": "https://salarywise.io",
         "name": "SalaryWise.io - Salary Calculators & Financial Planning Tools",
-        "description": "Professional salary calculators with accurate 2025 tax rates. Calculate gross to net pay, hourly wages, benefits, equity, and more for 15+ countries.",
+        "description": "Professional salary calculators with accurate 2026 tax rates for USA, UK, and Ireland. Calculate gross to net pay, hourly wages, benefits, equity, and more.",
         "inLanguage": "en-US",
         "publisher": {
           "@type": "Organization",
@@ -617,7 +615,7 @@
             "name": "Which countries do you support?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "We support tax calculations for 15+ countries including USA, UK, Canada, Australia, Germany, France, India, and many more."
+              "text": "We support tax calculations for USA, UK, and Ireland with highly accurate, localized calculations."
             }
           },
           {

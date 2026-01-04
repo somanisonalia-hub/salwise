@@ -1,15 +1,16 @@
 {
   "slug": "salary-after-tax-calculator",
   "type": "calculator",
-  "h1": "Salary After Tax Calculator – Calculate Net Income",
-  "metaTitle": "Salary After Tax Calculator | Calculate Net Pay After Deductions",
-  "metaDescription": "Calculate your salary after tax deductions. Free calculator showing net pay after taxes and mandatory deductions.",
-  "primaryKeyword": "salary after tax calculator",
+  "h1": "Ireland Tax Calculator – Calculate Irish Salary After Tax",
+  "metaTitle": "Ireland Tax Calculator | Irish Salary After Tax Calculator",
+  "metaDescription": "Calculate your salary after Irish tax deductions including PAYE, USC, and PRSI. Free calculator for Irish employees showing net pay after all deductions.",
+  "primaryKeyword": "ireland tax calculator",
   "longTailKeywords": [
-    "calculate salary after taxes",
-    "take home pay after tax",
-    "salary minus taxes calculator",
-    "net salary after deductions"
+    "ireland tax calculator",
+    "irish salary after tax",
+    "calculate irish take home pay",
+    "ireland net salary calculator",
+    "irish payslip calculator"
   ],
   "related": [
     "take-home-pay-calculator",
@@ -99,8 +100,37 @@
       "description": "Calculate salary deductions and net pay"
     }
   ],
-  "conclusion": "This Ireland salary calculator provides essential insights for anyone working in Ireland. By accounting for PAYE, USC, and PRSI, you can confidently plan your finances and make informed career decisions. Whether you're an employee, employer, or financial advisor, this free tool helps you understand the real impact of Irish taxes on your take-home pay. Use it regularly to stay on top of your financial planning and ensure you're maximizing your net income in Ireland's unique tax environment.",
+  "useCases": {
+    "example1": {
+      "title": "Tax Optimization Planning",
+      "scenario": "Analyzing tax impact on $80,000 salary for retirement planning",
+      "grossSalary": "$80,000",
+      "estimatedTaxes": "$20,000 (25% effective rate)",
+      "netAfterTax": "$60,000",
+      "retirementContribution": "$6,000 (7.5% of gross)",
+      "note": "Pre-tax retirement contributions reduce taxable income"
+    },
+    "example2": {
+      "title": "Deductions Analysis",
+      "scenario": "Understanding deductions impact on $55,000 salary",
+      "grossSalary": "$55,000",
+      "estimatedTaxes": "$11,000 (20% effective rate)",
+      "netAfterTax": "$44,000",
+      "additionalDeductions": "$2,200 (4% of gross)",
+      "note": "Medical and charitable deductions can reduce tax burden"
+    },
+    "example3": {
+      "title": "Progressive Tax Assessment",
+      "scenario": "Evaluating progressive tax impact on $90,000 salary",
+      "grossSalary": "$90,000",
+      "estimatedTaxes": "$24,750 (27.5% effective rate)",
+      "netAfterTax": "$65,250",
+      "marginalRate": "32% (highest bracket)",
+      "note": "Progressive taxes mean higher earners pay higher rates"
+    }
+  },
 
+  "conclusion": "Understanding salary after tax is crucial for comprehensive financial planning. This conceptual tool helps you analyze the various deductions and taxes that reduce your gross salary to your final net income. From income taxes to social contributions, retirement savings to healthcare costs, numerous factors affect your take-home pay. By understanding these deductions, you can better plan your budget, optimize your compensation strategy, and make informed decisions about benefits and retirement contributions. Remember that tax laws vary significantly by country and individual circumstances - always consult local tax authorities for personalized advice.",
 
   "structuredData": {
     "@context": "https://schema.org",

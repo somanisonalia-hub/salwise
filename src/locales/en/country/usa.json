@@ -1,54 +1,159 @@
 {
   "slug": "country/usa",
   "type": "guide",
-  "h1": "USA Salary Calculator",
-  "metaTitle": "USA Salary Calculator – Know Your Earnings",
-  "metaDescription": "Calculate salaries in the USA with our accurate, free salary calculator including federal and state taxes.",
-  "primaryKeyword": "usa salary calculator",
+  "h1": "USA Salary Calculators & Tools",
+  "metaTitle": "USA Salary Calculators & Guides | SalaryWise",
+  "metaDescription": "Explore USA salary calculators, bonus & overtime calculators, and guides. Calculate your take-home pay, hourly salary, and learn about taxes and negotiation tips in the USA.",
+  "primaryKeyword": "usa salary calculators",
   "longTailKeywords": [
-    "salary calculator USA",
-    "take home pay USA",
-    "net salary USA",
-    "US salary tax calculator"
+    "USA salary calculator",
+    "US tax calculator",
+    "USA take home pay calculator",
+    "USA overtime calculator",
+    "USA bonus tax calculator"
   ],
   "related": [
+    "usa-salary-calculator",
     "salary-calculator",
-    "gross-to-net",
-    "country/uk"
+    "gross-to-net-salary"
   ],
-  "dataRef": "usaSalary",
-  "country": {
-    "name": "United States",
-    "flag": "🇺🇸",
-    "currency": "USD",
-    "taxSystem": "Progressive federal + state income taxes"
+  "title": "USA Salary Calculators & Tools | SalaryWise.io",
+  "description": "Complete USA salary toolkit: Calculate take-home pay, taxes, overtime, bonuses, and contractor earnings with accurate US federal, state, and FICA calculations.",
+  "keywords": "USA salary calculators, US tax calculator, USA take home pay, USA overtime calculator, USA bonus tax calculator",
+  "canonical": "https://salarywise.io/country/usa",
+
+  "hero": {
+    "title": "Salary Calculators for the USA 🇺🇸",
+    "subtitle": "Quickly calculate your take-home pay, overtime, bonuses, and contractor income with our USA-specific calculators.",
+    "cta": {
+      "text": "Start Calculating 🚀",
+      "href": "/en/usa-salary-calculator"
+    }
   },
+
   "intro": {
-    "title": "Calculate Your USA Salary After Taxes",
-    "description": "Get accurate take-home pay calculations for US salaries. Our calculator includes federal income tax, state taxes, FICA contributions, and standard deductions.",
-    "features": [
-      "Federal income tax calculations (2026 brackets)",
-      "State-specific tax rates",
-      "FICA taxes (Social Security + Medicare)",
-      "Standard deduction calculations"
+    "paragraph1": "Explore comprehensive USA salary calculators designed specifically for American workers. Whether you're calculating take-home pay, converting hourly wages to annual salary, or understanding how bonuses and overtime affect your income, our tools provide accurate results based on current federal and state tax rates.",
+    "paragraph2": "All calculations follow official IRS guidelines and include the latest 2026 tax brackets for all 50 states plus Washington D.C."
+  },
+
+  "calculators": {
+    "title": "USA Salary Calculators",
+    "subtitle": "Specialized tools for US employment and taxation",
+    "items": [
+      {
+        "title": "Salary Calculator",
+        "description": "Calculate your annual or monthly salary and take-home pay including federal & state taxes.",
+        "href": "/en/usa-salary-calculator"
+      },
+      {
+        "title": "Hourly to Salary",
+        "description": "Convert your hourly wage to annual salary, accounting for taxes and deductions.",
+        "href": "/en/usa-hourly-to-salary"
+      },
+      {
+        "title": "Overtime Pay Calculator",
+        "description": "Compute overtime pay following FLSA rules and state-specific regulations.",
+        "href": "/en/usa-overtime-pay"
+      },
+      {
+        "title": "Bonus Tax Calculator",
+        "description": "Find out how your bonuses are taxed at federal and state levels.",
+        "href": "/en/usa-bonus-tax"
+      },
+      {
+        "title": "Contractor Salary Calculator",
+        "description": "Compare 1099 vs W2 contractor income after taxes and deductions.",
+        "href": "/en/usa-contractor-salary-calculator"
+      }
     ]
   },
-  "faqs": [
-    {
-      "question": "How is US salary tax calculated?",
-      "answer": "US salary taxes include federal income tax (progressive brackets), state income tax (varies by state), and FICA taxes. We calculate all three for accurate take-home pay."
-    },
-    {
-      "question": "What's the difference between federal and state taxes?",
-      "answer": "Federal taxes are the same nationwide but vary by income bracket. State taxes vary significantly - Texas has 0% while California has 13.3%."
-    },
-    {
-      "question": "Are FICA taxes included?",
-      "answer": "Yes, we include Social Security (6.2%) and Medicare (1.45%) taxes, totaling 7.65% for most employees."
-    },
-    {
-      "question": "How often are tax rates updated?",
-      "answer": "We update calculations annually based on the latest IRS tax brackets and rates. Current calculations use 2026 tax information."
+
+  "guides": {
+    "title": "USA Salary & Tax Guides",
+    "subtitle": "Learn about salary planning and tax optimization in the USA",
+    "items": [
+      {
+        "title": "How to Calculate Take-Home Pay",
+        "href": "/en/guides/how-to-calculate-take-home"
+      },
+      {
+        "title": "Gross vs Net Salary Explained",
+        "href": "/en/guides/gross-vs-net-salary"
+      },
+      {
+        "title": "Salary Negotiation Tips",
+        "href": "/en/guides/salary-negotiation-tips"
+      },
+      {
+        "title": "USA Taxes Explained",
+        "href": "/en/guides/taxes-explained-by-country"
+      },
+      {
+        "title": "USA Salary Trends 2026",
+        "href": "/en/guides/salary-trends-2026"
+      }
+    ]
+  },
+
+  "countryNav": {
+    "title": "Explore Other Countries",
+    "links": [
+      {
+        "name": "Ireland",
+        "flag": "🇮🇪",
+        "href": "/country/ireland"
+      },
+      {
+        "name": "UK",
+        "flag": "🇬🇧",
+        "href": "/country/uk"
+      },
+      {
+        "name": "USA",
+        "flag": "🇺🇸",
+        "href": "/country/usa",
+        "active": true
+      }
+    ]
+  },
+
+  "ctaFooter": {
+    "title": "Want to Compare Salaries?",
+    "text": "Want to compare salaries across countries?",
+    "link": {
+      "text": "Use our Global Salary Calculator 🌍",
+      "href": "/en/salary-calculator"
     }
-  ]
+  },
+
+  "structuredData": {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is take-home pay calculated in the USA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our USA Salary Calculator deducts federal & state taxes, FICA contributions (Social Security and Medicare), and optional deductions to show your net take-home pay. Calculations follow current IRS guidelines and include progressive tax brackets."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between 1099 and W2 contractor income?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "1099 contractors are self-employed and responsible for their own taxes, including self-employment tax. W2 employees have taxes withheld by their employer. Our Contractor Salary Calculator helps compare the net income differences between these arrangements."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does overtime pay work in the USA?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Under FLSA rules, non-exempt employees must receive 1.5x their regular rate for hours worked over 40 in a workweek. Some states require higher rates. Our Overtime Pay Calculator factors in federal and state-specific overtime requirements."
+        }
+      }
+    ]
+  }
 }

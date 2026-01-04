@@ -74,6 +74,21 @@ const usaContractorSalary = {
     "quarterlyPayment": "totalTax / 4",
     "effectiveTaxRate": "grossAnnual > 0 ? (totalTax / grossAnnual) * 100 : 0"
   },
+  "outputs": [
+    {"id": "grossAnnual", "label": "Gross Annual Income", "unit": "$"},
+    {"id": "annualExpenses", "label": "Annual Expenses", "unit": "$"},
+    {"id": "taxableIncome", "label": "Taxable Income", "unit": "$"},
+    {"id": "fourOOneKContribution", "label": "401(k) Contribution", "unit": "$"},
+    {"id": "adjustedTaxableIncome", "label": "Adjusted Taxable Income", "unit": "$"},
+    {"id": "selfEmploymentTax", "label": "Self-Employment Tax", "unit": "$"},
+    {"id": "federalTax", "label": "Federal Tax", "unit": "$"},
+    {"id": "stateTax", "label": "State Tax", "unit": "$"},
+    {"id": "totalTax", "label": "Total Tax", "unit": "$"},
+    {"id": "netAnnual", "label": "Net Annual Income", "unit": "$"},
+    {"id": "netMonthly", "label": "Net Monthly Income", "unit": "$"},
+    {"id": "quarterlyPayment", "label": "Quarterly Tax Payment", "unit": "$"},
+    {"id": "effectiveTaxRate", "label": "Effective Tax Rate", "unit": "%"}
+  ],
   "examples": [
     {
       "scenario": "$500/day, 20 days/month in California",

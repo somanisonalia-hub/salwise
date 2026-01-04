@@ -4,94 +4,73 @@ const irelandContractorSalary = {
   "description": "Calculate contractor salary comparing Ltd company vs umbrella company structures",
   "inputs": [
     {
-      "id": "dailyRate",
-      "label": "Daily Rate (EUR)",
+      "id": "contractRate",
+      "label": "Contract Rate",
       "type": "number",
-      "default": 400,
-      "unit": "€"
-    },
-    {
-      "id": "daysPerMonth",
-      "label": "Working Days per Month",
-      "type": "number",
-      "default": 20,
-      "unit": "days",
-      "min": 1,
-      "max": 25
-    },
-    {
-      "id": "structure",
-      "label": "Contractor Structure",
-      "type": "select",
-      "options": ["Ltd Company", "Umbrella Company"],
-      "default": "Ltd Company"
-    },
-    {
-      "id": "expensesPerDay",
-      "label": "Daily Expenses (EUR)",
-      "type": "number",
-      "default": 0,
+      "default": 70000,
       "unit": "€",
-      "optional": true,
+      "required": true,
       "min": 0
     },
     {
-      "id": "monthsPerYear",
-      "label": "Months Worked per Year",
+      "id": "contractorType",
+      "label": "Contractor Type",
+      "type": "select",
+      "options": [
+        {"value": "Ltd Company", "label": "Ltd Company"},
+        {"value": "Umbrella Company", "label": "Umbrella Company"}
+      ],
+      "default": "Ltd Company",
+      "required": true
+    },
+    {
+      "id": "expenses",
+      "label": "Business Expenses",
       "type": "number",
-      "default": 12,
-      "unit": "months",
-      "min": 1,
-      "max": 12
+      "default": 0,
+      "unit": "€",
+      "required": false,
+      "min": 0
     }
   ],
   "formula": {
-    "grossAnnual": "dailyRate * daysPerMonth * monthsPerYear",
-    "annualExpenses": "expensesPerDay * daysPerMonth * monthsPerYear",
-    "taxableIncome": "grossAnnual - annualExpenses",
-    "corporationTax": "structure === 'Ltd Company' ? taxableIncome * 0.125 : 0",
-    "directorsSalary": "structure === 'Ltd Company' ? Math.min(taxableIncome * 0.4, 50000) : 0",
-    "dividends": "structure === 'Ltd Company' ? Math.max(0, taxableIncome - corporationTax - directorsSalary) : 0",
-    "payeTax": "structure === 'Ltd Company' ? calculateIrelandPAYE(directorsSalary) : structure === 'Umbrella Company' ? calculateIrelandPAYE(taxableIncome) : 0",
-    "usc": "structure === 'Ltd Company' ? calculateIrelandUSC(directorsSalary) : structure === 'Umbrella Company' ? calculateIrelandUSC(taxableIncome) : 0",
-    "prsi": "structure === 'Ltd Company' ? calculateIrelandPRSI(directorsSalary) : structure === 'Umbrella Company' ? calculateIrelandPRSI(taxableIncome) : 0",
-    "dividendTax": "structure === 'Ltd Company' ? dividends * 0.20 : 0",
-    "totalTax": "corporationTax + payeTax + usc + prsi + dividendTax",
-    "netAnnual": "taxableIncome - totalTax",
-    "netMonthly": "netAnnual / 12",
-    "effectiveTaxRate": "grossAnnual > 0 ? (totalTax / grossAnnual) * 100 : 0"
+    "adjustedContractRate": "contractRate - expenses",
+    "corporationTax": "contractorType === 'Ltd Company' ? adjustedContractRate * 0.125 : 0",
+    "dividendIncome": "contractorType === 'Ltd Company' ? adjustedContractRate - corporationTax : 0",
+    "dividendTax": "contractorType === 'Ltd Company' ? calculateIrelandPAYE(dividendIncome) : 0",
+    "umbrellaPAYE": "contractorType === 'Umbrella Company' ? calculateIrelandPAYE(adjustedContractRate) : 0",
+    "umbrellaPRSI": "contractorType === 'Umbrella Company' ? adjustedContractRate * 0.04 : 0",
+    "umbrellaUSC": "contractorType === 'Umbrella Company' ? calculateIrelandUSC(adjustedContractRate) : 0",
+    "totalLtdTax": "corporationTax + dividendTax",
+    "totalUmbrellaTax": "umbrellaPAYE + umbrellaPRSI + umbrellaUSC",
+    "netLtd": "dividendIncome - dividendTax",
+    "netUmbrella": "adjustedContractRate - totalUmbrellaTax",
+    "netIncome": "contractorType === 'Ltd Company' ? netLtd : netUmbrella"
   },
+  "outputs": [
+    {"id": "adjustedContractRate", "label": "Adjusted Contract Rate", "unit": "€"},
+    {"id": "corporationTax", "label": "Corporation Tax", "unit": "€"},
+    {"id": "dividendIncome", "label": "Dividend Income", "unit": "€"},
+    {"id": "dividendTax", "label": "Dividend Tax", "unit": "€"},
+    {"id": "umbrellaPAYE", "label": "PAYE (Umbrella)", "unit": "€"},
+    {"id": "umbrellaPRSI", "label": "PRSI (Umbrella)", "unit": "€"},
+    {"id": "umbrellaUSC", "label": "USC (Umbrella)", "unit": "€"},
+    {"id": "totalLtdTax", "label": "Total Ltd Tax", "unit": "€"},
+    {"id": "totalUmbrellaTax", "label": "Total Umbrella Tax", "unit": "€"},
+    {"id": "netIncome", "label": "Net Income", "unit": "€"}
+  ],
   "examples": [
     {
-      "scenario": "€400/day Ltd Company, 20 days/month",
-      "inputs": {"dailyRate": 400, "daysPerMonth": 20, "structure": "Ltd Company", "expensesPerDay": 0, "monthsPerYear": 12},
+      "scenario": "€70,000 Umbrella Company contract",
+      "inputs": {"contractRate": 70000, "contractorType": "Umbrella Company", "expenses": 0},
       "expectedOutputs": {
-        "grossAnnual": 96000,
-        "corporationTax": 12000,
-        "directorsSalary": 30000,
-        "dividends": 54000,
-        "payeTax": 4667,
-        "usc": 1725,
-        "prsi": 1200,
-        "dividendTax": 10800,
-        "totalTax": 29392,
-        "netAnnual": 66608
-      }
-    },
-    {
-      "scenario": "€550/day Umbrella, 15 days/month",
-      "inputs": {"dailyRate": 550, "daysPerMonth": 15, "structure": "Umbrella Company", "expensesPerDay": 0, "monthsPerYear": 12},
-      "expectedOutputs": {
-        "grossAnnual": 99000,
+        "adjustedContractRate": 70000,
         "corporationTax": 0,
-        "directorsSalary": 0,
-        "dividends": 0,
-        "payeTax": 27467,
-        "usc": 4950,
-        "prsi": 3960,
-        "dividendTax": 0,
-        "totalTax": 36377,
-        "netAnnual": 62623
+        "umbrellaPAYE": 11000,
+        "umbrellaPRSI": 2800,
+        "umbrellaUSC": 3100,
+        "totalUmbrellaTax": 16900,
+        "netIncome": 53100
       }
     }
   ]

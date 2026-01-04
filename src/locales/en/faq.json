@@ -12,7 +12,7 @@
     "gross vs net salary faq"
   ],
   "related": [
-    "how-to-calculate-take-home-pay",
+    "guides/how-to-calculate-take-home",
     "understanding-gross-vs-net-salary",
     "contact"
   ],
@@ -90,7 +90,7 @@
       "faqs": [
         {
           "question": "Which countries are supported?",
-          "answer": "We support salary calculations for 15+ countries including the USA, UK, Canada, Australia, Germany, France, and many more. Check our country-specific calculators for your location."
+          "answer": "We currently support salary calculations for USA, UK, and Ireland with highly accurate, localized tax calculations. We're actively expanding to more countries."
         },
         {
           "question": "What tax systems are included?",

@@ -15,7 +15,7 @@
   "related": [
     "salary-calculator",
     "gross-to-net-salary",
-    "taxes-explained-by-country"
+    "guides/taxes-explained-by-country"
   ],
   "title": "Salary Calculators by Country",
   "description": "Compare salaries and taxes across countries",

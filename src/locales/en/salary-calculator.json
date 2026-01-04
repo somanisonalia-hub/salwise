@@ -1,7 +1,8 @@
 {
   "slug": "salary-calculator",
   "type": "calculator",
-  "h1": "Global Salary Calculator – Compare Take-Home Pay Worldwide",
+  "h1": "Global Salary Calculator - Compare Take-Home Pay Worldwide",
+  "description": "Compare take-home pay across USA, UK, and Ireland with accurate tax calculations",
   "metaTitle": "Global Salary Calculator | Compare Salaries Across Countries",
   "metaDescription": "Compare take-home pay across USA, UK, and Ireland with our global salary calculator. Calculate net salary after taxes for these major economies.",
   "primaryKeyword": "global salary calculator",
@@ -19,6 +20,15 @@
   ],
   "dataRef": "globalSalary",
   "intro": "Compare salaries across USA, UK, and Ireland with our comprehensive global salary calculator. This tool helps you understand how your compensation stacks up internationally by calculating take-home pay after local taxes and deductions. Whether you're considering international job offers, planning an expatriate assignment, or simply curious about global compensation standards, our calculator provides accurate estimates for these major economies. Select your country and see how your salary translates to real purchasing power in different economies.",
+  "differentiationNotice": {
+    "title": "🌍 Global Salary Comparison Tool",
+    "message": "This calculator compares take-home pay across multiple countries. For detailed tax calculations specific to one country, visit our country-specific calculators.",
+    "links": [
+      {"text": "Ireland Calculator", "url": "/en/ireland-salary-calculator"},
+      {"text": "UK Calculator", "url": "/en/uk-salary-calculator"},
+      {"text": "USA Calculator", "url": "/en/usa-salary-calculator"}
+    ]
+  },
   "ui": {
     "calculatorHeading": "Compare Global Salaries",
     "resultsHeading": "Salary Comparison Results",
@@ -28,7 +38,7 @@
     "noResultsText": "Select countries to compare salaries"
   },
   "howGlobalSalaryCalculatorWorks": "Our global salary calculator works by applying country-specific tax rates and deductions to your gross salary. Select your base country and compare against USA, UK, and Ireland. The calculator applies each country's progressive tax brackets, social insurance contributions, and mandatory deductions. Results show your net take-home pay in each country, helping you understand the real value of international compensation packages. All calculations use the most current tax rates and are updated regularly to reflect changes in tax legislation.",
-  "workedExamples": {
+  "useCases": {
     "example1": {
       "title": "$75,000 USA Salary Comparison",
       "scenario": "Software engineer earning $75,000 annually in the United States",
@@ -53,6 +63,36 @@
     "Job seekers researching international opportunities",
     "Multinational companies setting compensation policies"
   ],
+  "calculatorChooser": {
+    "title": "Which Calculator Should I Use?",
+    "description": "We have several salary calculators - here's how to choose the right one:",
+    "calculators": [
+      {
+        "name": "Global Salary Calculator",
+        "url": "/en/salary-calculator",
+        "purpose": "Compare salaries across USA, UK, and Ireland",
+        "bestFor": "International job comparisons, expatriate planning"
+      },
+      {
+        "name": "Country Salary Calculators",
+        "url": "/en/country",
+        "purpose": "Detailed tax calculations for specific countries",
+        "bestFor": "Accurate take-home pay in one country (USA/UK/Ireland)"
+      },
+      {
+        "name": "Simple Take-Home Pay Calculator",
+        "url": "/en/take-home-pay-calculator",
+        "purpose": "Basic estimates with custom tax rates",
+        "bestFor": "Quick approximations, other countries not listed"
+      },
+      {
+        "name": "Gross vs Net Salary Guide",
+        "url": "/en/gross-to-net-salary",
+        "purpose": "Learn about salary deductions and conversions",
+        "bestFor": "Understanding salary concepts, educational purposes"
+      }
+    ]
+  },
   "faqs": [
     {
       "question": "How accurate are the international salary comparisons?",

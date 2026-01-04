@@ -58,7 +58,7 @@ export default function Home() {
                 Start Calculating
               </Link>
               <Link
-                href="/guides/gross-vs-net"
+                href="/en/guides/gross-vs-net-salary"
                 className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition-colors"
               >
                 Learn More
@@ -143,7 +143,7 @@ export default function Home() {
                 </svg>
               </div>
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Global Coverage</h3>
-              <p className="text-gray-600">15+ countries with localized tax rules and currency support.</p>
+              <p className="text-gray-600">USA, UK & Ireland with localized tax rules and currency support.</p>
             </div>
 
             <div className="text-center">
@@ -169,7 +169,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link
-              href="/guides/gross-vs-net"
+              href="/en/guides/gross-vs-net-salary"
               className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Gross vs Net Salary</h3>
@@ -177,7 +177,7 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/guides/how-to-calculate-take-home"
+              href="/en/guides/how-to-calculate-take-home"
               className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Calculate Take-Home Pay</h3>
@@ -185,7 +185,7 @@ export default function Home() {
             </Link>
 
             <Link
-              href="/guides/salary-negotiation"
+              href="/en/guides/salary-negotiation-tips"
               className="bg-white rounded-lg shadow-md p-6 hover:shadow-lg transition-shadow"
             >
               <h3 className="text-xl font-semibold text-gray-900 mb-2">Salary Negotiation Tips</h3>

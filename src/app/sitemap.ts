@@ -220,7 +220,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/en/industry`,
+      url: `${baseUrl}/country/ireland`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/country/uk`,
+      lastModified: batch2Date,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/country/usa`,
       lastModified: batch2Date,
       changeFrequency: 'monthly' as const,
       priority: 0.8,
@@ -229,30 +241,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Educational Content - Priority 0.8, Monthly updates
     {
       url: `${baseUrl}/en/understanding-gross-vs-net-salary`,
-      lastModified: batch2Date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/en/salary-negotiation-tips`,
-      lastModified: batch2Date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/en/how-to-calculate-take-home-pay`,
-      lastModified: batch2Date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/en/taxes-explained-by-country`,
-      lastModified: batch2Date,
-      changeFrequency: 'monthly' as const,
-      priority: 0.8,
-    },
-    {
-      url: `${baseUrl}/en/salary-trends-2026`,
       lastModified: batch2Date,
       changeFrequency: 'monthly' as const,
       priority: 0.8,

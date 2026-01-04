@@ -3,7 +3,7 @@
   "type": "page",
   "h1": "About SalaryWise.io - Free Salary Calculators",
   "metaTitle": "About SalaryWise.io - Free Salary Calculator Tools",
-  "metaDescription": "Learn about SalaryWise.io, your trusted source for free salary calculators. Calculate take-home pay, tax savings, and salary comparisons across 15+ countries.",
+  "metaDescription": "Learn about SalaryWise.io, your trusted source for free salary calculators. Calculate take-home pay, tax savings, and salary comparisons for USA, UK, and Ireland.",
   "primaryKeyword": "about salarywise",
   "longTailKeywords": [
     "about salarywise.io",
@@ -18,6 +18,7 @@
   ],
   "title": "About SalaryWise.io - Free Salary Calculators",
   "description": "Your trusted source for accurate salary calculations",
+  "lastUpdated": "January 4, 2025",
   "keywords": "salary calculator, take home pay, tax calculator, salary tools",
   "canonical": "https://salarywise.io/en/about",
 
@@ -29,15 +30,15 @@
   "sections": [
     {
       "heading": "What We Offer",
-      "content": "SalaryWise.io provides a complete suite of salary calculation tools including gross-to-net pay calculators, hourly wage converters, bonus calculators, and country-specific tax calculators. All our tools are free to use and require no registration."
+      "content": "SalaryWise.io provides a complete suite of salary calculation tools including <a href=\"/en/gross-to-net-salary\">gross-to-net pay calculators</a>, <a href=\"/en/usa-hourly-to-salary\">hourly wage converters</a>, <a href=\"/en/usa-bonus-tax\">bonus calculators</a>, and <a href=\"/en/country\">country-specific tax calculators</a>. All our tools are free to use and require no registration."
     },
     {
       "heading": "Our Accuracy",
-      "content": "We use the latest tax rates and regulations from official government sources to ensure our calculations are as accurate as possible. Our tools are regularly updated to reflect changes in tax laws and financial regulations."
+      "content": "We use the latest tax rates and regulations from official government sources to ensure our calculations are as accurate as possible. Our tools are regularly updated to reflect changes in tax laws and financial regulations. Try our <a href=\"/en/salary-calculator\">global salary calculator</a> for accurate international comparisons."
     },
     {
       "heading": "Global Coverage",
-      "content": "With support for 15+ countries including the USA, UK, Canada, Australia, Germany, France, and many more, SalaryWise.io helps professionals worldwide understand their salary in any location."
+      "content": "With support for major economies including the <a href=\"/en/usa-salary-calculator\">USA</a>, <a href=\"/en/uk-salary-calculator\">UK</a>, <a href=\"/en/ireland-salary-calculator\">Ireland</a>, and many more, SalaryWise.io helps professionals worldwide understand their salary in any location. Explore our <a href=\"/en/country\">country-specific calculators</a> for localized tax calculations."
     },
     {
       "heading": "Privacy & Security",
@@ -77,7 +78,7 @@
     {
       "icon": "🌍",
       "title": "Global Support",
-      "description": "15+ countries with localized tax rules"
+      "description": "USA, UK & Ireland with localized tax rules"
     },
     {
       "icon": "🔒",

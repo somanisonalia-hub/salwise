@@ -1,246 +1,104 @@
 {
-  "title": "Salary Guides & Tips | Compensation Advice | SalaryWise.io",
-  "description": "Comprehensive guides on salary negotiation, tax planning, career advancement, and compensation strategies. Free expert advice for job seekers and professionals.",
-  "keywords": "salary guide, compensation advice, salary negotiation tips, career advancement, pay advice",
+  "slug": "guides",
+  "type": "guide",
+  "h1": "Best Salary & Tax Guides (2025) — Tips, Calculators & How-Tos",
+  "metaTitle": "Salary & Tax Guides 2025 — Tips, Calculators & How-Tos | SalaryWise.io",
+  "metaDescription": "Explore top salary and tax guides for 2025 — learn how to calculate take-home pay, understand taxes, and get negotiation tips.",
+  "primaryKeyword": "salary guides",
+  "longTailKeywords": [
+    "salary guides",
+    "how to calculate take home pay",
+    "tax explained by country",
+    "salary negotiation tips",
+    "gross vs net salary guide",
+    "salary trends 2026"
+  ],
+  "related": [
+    "salary-calculator",
+    "gross-to-net-salary",
+    "take-home-pay-calculator"
+  ],
+  "title": "Salary & Tax Guides | SalaryWise.io",
+  "description": "Complete collection of salary and tax guides for 2026. Learn how to calculate take-home pay, understand taxes by country, get negotiation tips, and use our free calculators.",
+  "keywords": "salary guides, how to calculate take home pay, tax explained by country, salary negotiation tips, gross vs net salary",
   "canonical": "https://salarywise.io/en/guides",
 
   "header": {
-    "title": "Salary Guides & Tips",
-    "subtitle": "Expert advice for maximizing your compensation"
+    "title": "Salary & Tax Guides",
+    "subtitle": "Expert advice for salary planning and tax understanding"
   },
 
   "intro": {
-    "paragraph1": "Understanding salary, taxes, and compensation is crucial for financial success. Our comprehensive guides cover everything from salary negotiation strategies to tax optimization techniques.",
-    "paragraph2": "Whether you're looking for a new job, negotiating a raise, or planning your career, our expert guides provide actionable advice to help you maximize your earning potential."
+    "paragraph1": "Our expert salary and tax guides provide practical advice for understanding compensation, taxes, and career planning. Each guide is designed to help you make informed decisions about your salary and financial planning.",
+    "paragraph2": "From calculating take-home pay to mastering negotiation strategies, our guides offer step-by-step instructions with real-world examples and links to our free calculators."
   },
 
-  "categories": [
+  "guides": [
     {
-      "name": "Salary Negotiation",
-      "description": "Learn proven strategies to negotiate higher pay and better benefits",
-      "guides": [
-        {
-          "title": "Salary Negotiation Tips",
-          "description": "Master the art of negotiating job offers and raises",
-          "href": "/en/salary-negotiation-tips",
-          "readTime": "8 min read"
-        }
-      ]
+      "title": "How to Calculate Take-Home Pay",
+      "description": "Step-by-step breakdown of paycheck calculations after taxes and deductions",
+      "href": "/en/guides/how-to-calculate-take-home",
+      "readTime": "7 min",
+      "category": "Calculations"
     },
     {
-      "name": "Tax & Finance",
-      "description": "Understand taxes, deductions, and financial planning",
-      "guides": [
-        {
-          "title": "Gross vs Net Salary",
-          "description": "The complete guide to understanding take-home pay",
-          "href": "/en/understanding-gross-vs-net-salary",
-          "readTime": "6 min read"
-        },
-        {
-          "title": "How to Calculate Take-Home Pay",
-          "description": "Step-by-step guide to net salary calculation",
-          "href": "/en/how-to-calculate-take-home-pay",
-          "readTime": "10 min read"
-        }
-      ]
+      "title": "Salary Negotiation Tips",
+      "description": "Proven techniques to negotiate your salary effectively and get what you deserve",
+      "href": "/en/guides/salary-negotiation-tips",
+      "readTime": "8 min",
+      "category": "Career"
     },
     {
-      "name": "Career Development",
-      "description": "Advance your career and increase your earning potential",
-      "guides": [
-        {
-          "title": "Career Advancement Strategies",
-          "description": "Tips for getting promoted and increasing your salary",
-          "href": "/en/salary-guide",
-          "readTime": "12 min read"
-        }
-      ]
+      "title": "Taxes Explained by Country",
+      "description": "Understanding tax systems and requirements across different countries",
+      "href": "/en/guides/taxes-explained-by-country",
+      "readTime": "10 min",
+      "category": "Tax Planning"
+    },
+    {
+      "title": "Salary Trends 2026",
+      "description": "Latest salary trends and market insights for 2026",
+      "href": "/en/guides/salary-trends-2026",
+      "readTime": "6 min",
+      "category": "Market Insights"
     }
   ],
 
-  "popularGuides": {
-    "title": "Most Popular Guides",
-    "guides": [
-      {
-        "title": "Gross vs Net Salary Guide",
-        "description": "Learn the difference between gross and net pay",
-        "href": "/en/understanding-gross-vs-net-salary",
-        "readTime": "6 min read",
-        "views": "25K+ views"
-      },
-      {
-        "title": "Salary Negotiation Strategies",
-        "description": "Get proven tips for negotiating higher pay",
-        "href": "/en/salary-negotiation-tips",
-        "readTime": "8 min read",
-        "views": "18K+ views"
-      },
-      {
-        "title": "Take-Home Pay Calculator Guide",
-        "description": "Complete guide to calculating net salary",
-        "href": "/en/how-to-calculate-take-home-pay",
-        "readTime": "10 min read",
-        "views": "15K+ views"
-      }
-    ]
+  "calculatorsCta": {
+    "title": "Ready to Calculate?",
+    "description": "Put your knowledge into practice with our free, accurate salary calculators",
+    "content": "Now that you've read our guides, use our calculators to see how the concepts apply to your specific situation. Calculate take-home pay, compare salaries across countries, and understand your tax burden with our comprehensive tools."
   },
 
-  "tools": {
-    "title": "Salary Planning Tools",
-    "description": "Free calculators and tools to help with salary planning",
-    "items": [
+  "ctaSection": {
+    "title": "Explore Our Salary Calculators",
+    "content": "Ready to put your salary knowledge into practice? Our free calculators provide instant, accurate results for take-home pay, tax calculations, and salary comparisons across Ireland, UK, and USA.",
+    "buttons": [
       {
-        "title": "Salary Calculator",
-        "description": "Calculate annual, monthly, and hourly rates",
-        "href": "/en/salary-calculator",
-        "icon": "calculator"
+        "text": "Take-Home Pay Calculator",
+        "href": "/take-home-pay-calculator",
+        "primary": true
       },
       {
-        "title": "Gross to Net Calculator",
-        "description": "Convert gross salary to net take-home pay",
-        "href": "/en/gross-to-net",
-        "icon": "convert"
-      },
-      {
-        "title": "Tax Calculator",
-        "description": "Estimate federal and state tax obligations",
-        "href": "/en/take-home-pay",
-        "icon": "tax"
+        "text": "Salary Calculator",
+        "href": "/salary-calculator",
+        "primary": false
       }
     ]
-  },
-
-  "newsletter": {
-    "title": "Stay Updated",
-    "description": "Get the latest salary trends, negotiation tips, and career advice delivered to your inbox.",
-    "button": {
-      "text": "Subscribe to Updates",
-      "href": "/en"
-    }
   },
 
   "structuredData": {
     "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "CollectionPage",
-        "@id": "https://salarywise.io/en/guides",
-        "url": "https://salarywise.io/en/guides",
-        "name": "Salary Guides & Tips | Compensation Advice | SalaryWise.io",
-        "description": "Comprehensive guides on salary negotiation, tax planning, career advancement, and compensation strategies. Free expert advice for job seekers and professionals.",
-        "inLanguage": "en-US",
-        "isPartOf": {
-          "@type": "WebSite",
-          "@id": "https://salarywise.io",
-          "url": "https://salarywise.io",
-          "name": "SalaryWise.io"
-        },
-        "breadcrumb": {
-          "@type": "BreadcrumbList",
-          "itemListElement": [
-            {
-              "@type": "ListItem",
-              "position": 1,
-              "name": "Home",
-              "item": "https://salarywise.io"
-            },
-            {
-              "@type": "ListItem",
-              "position": 2,
-              "name": "Guides",
-              "item": "https://salarywise.io/en/guides"
-            }
-          ]
-        },
-        "mainEntity": {
-          "@type": "ItemList",
-          "name": "Salary & Compensation Guides",
-          "description": "Expert-written guides covering salary negotiation, tax planning, career development, and financial planning",
-          "numberOfItems": 5,
-          "itemListElement": [
-            {
-              "@type": "Article",
-              "position": 1,
-              "name": "Understanding Gross vs Net Salary",
-              "url": "https://salarywise.io/en/understanding-gross-vs-net-salary",
-              "description": "Learn the critical difference between gross salary and net take-home pay"
-            },
-            {
-              "@type": "Article",
-              "position": 2,
-              "name": "Salary Negotiation Tips",
-              "url": "https://salarywise.io/en/salary-negotiation-tips",
-              "description": "Proven techniques to negotiate your salary effectively"
-            },
-            {
-              "@type": "Article",
-              "position": 3,
-              "name": "How to Calculate Take-Home Pay",
-              "url": "https://salarywise.io/en/how-to-calculate-take-home-pay",
-              "description": "Step-by-step guide to calculating your take-home pay"
-            },
-            {
-              "@type": "Article",
-              "position": 4,
-              "name": "Taxes Explained by Country",
-              "url": "https://salarywise.io/en/taxes-explained-by-country",
-              "description": "Comprehensive guide to tax systems across different countries"
-            },
-            {
-              "@type": "Article",
-              "position": 5,
-              "name": "Salary Trends 2026 (Global)",
-              "url": "https://salarywise.io/en/salary-trends-2026-global",
-              "description": "Latest global salary trends and forecasts for 2026"
-            }
-          ]
-        },
-        "primaryImageOfPage": {
-          "@type": "ImageObject",
-          "url": "https://salarywise.io/images/guides-hero.jpg",
-          "width": 1200,
-          "height": 630
-        },
-        "datePublished": "2024-01-01",
-        "dateModified": "2026-01-01"
-      },
-      {
-        "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "Are these guides free to read?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, all our guides are completely free to read. No subscription or registration required."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How often are the guides updated?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "We update our guides regularly to reflect current tax laws, salary trends, and best practices."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Can I use this information for salary negotiations?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, our guides provide practical advice for salary negotiations, but results may vary based on your specific situation."
-            }
-          }
-        ]
-      }
-    ]
+    "@type": "CollectionPage",
+    "name": "Salary & Tax Guides",
+    "description": "Expert salary and tax guides for understanding compensation, taxes, and career planning.",
+    "url": "https://salarywise.io/en/guides"
   },
 
   "universalDisclaimer": {
-    "icon": "💡",
-    "title": "Important Note",
-    "content": "The information, examples, and calculators on this website are for educational and informational purposes only. Results are estimates and may not reflect your exact salary, taxes, or deductions. Always consult a qualified professional (e.g., accountant, tax advisor, or financial consultant) for personalized advice. SalaryWise.io cannot be held responsible for any decisions or actions taken based on this information."
+    "icon": "📚",
+    "title": "Educational Resource",
+    "content": "Our salary and tax guides are designed for educational purposes to help you understand compensation concepts and tax systems. While we strive for accuracy, tax laws and salary practices can vary. For personalized advice, always consult qualified professionals including accountants, tax advisors, or employment specialists."
   }
 }
 

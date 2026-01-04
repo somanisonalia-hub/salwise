@@ -121,19 +121,7 @@ export default function HomePage() {
                   <div className="text-2xl">🌍</div>
                   <div>
                     <h3 className="text-sm font-bold text-gray-900">Country Calculators</h3>
-                    <p className="text-xs text-gray-600">15 countries with localized tax rules</p>
-                  </div>
-                </div>
-              </Link>
-              <Link
-                href="/en/industry"
-                className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
-              >
-                <div className="flex items-center gap-3">
-                  <div className="text-2xl">💼</div>
-                  <div>
-                    <h3 className="text-sm font-bold text-gray-900">Industry Calculators</h3>
-                    <p className="text-xs text-gray-600">10 job-specific salary calculators</p>
+                    <p className="text-xs text-gray-600">USA, UK & Ireland with localized tax rules</p>
                   </div>
                 </div>
               </Link>

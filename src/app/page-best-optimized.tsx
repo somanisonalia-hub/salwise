@@ -7,7 +7,7 @@ export default function HomeBestOptimized() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "SalaryWise.io",
-    "description": "Free salary calculator. Calculate gross to net pay, hourly wages, bonuses. Accurate tax calculations for 15+ countries.",
+    "description": "Free salary calculator. Calculate gross to net pay, hourly wages, bonuses. Accurate tax calculations for USA, UK, and Ireland.",
     "url": "https://salarywise.io",
     "potentialAction": {
       "@type": "SearchAction",
@@ -56,7 +56,7 @@ export default function HomeBestOptimized() {
     <>
       <Head>
         <title>Salary Calculator | Free Gross to Net Pay Calculator | SalaryWise.io</title>
-        <meta name="description" content="Calculate salary, hourly wage, gross to net pay, take-home pay. Free calculators with accurate tax calculations for 15+ countries." />
+        <meta name="description" content="Calculate salary, hourly wage, gross to net pay, take-home pay. Free calculators with accurate tax calculations for USA, UK, and Ireland." />
         <meta name="keywords" content="salary calculator, gross to net, take home pay, hourly to salary, pay calculator" />
         <link rel="canonical" href="https://salarywise.io" />
         <script
@@ -77,7 +77,7 @@ export default function HomeBestOptimized() {
                 </span>
               </h1>
               <p className="text-sm sm:text-base md:text-lg mb-6 max-w-2xl mx-auto text-blue-100 leading-relaxed px-2">
-                Calculate gross to net pay, hourly wages, bonuses. Accurate tax calculations for 15+ countries.
+                Calculate gross to net pay, hourly wages, bonuses. Accurate tax calculations for USA, UK, and Ireland.
               </p>
 
               {/* Mobile-optimized CTA buttons */}
@@ -130,7 +130,7 @@ export default function HomeBestOptimized() {
                 <span className="text-xs font-medium mt-1 text-center">USA</span>
               </Link>
               <Link
-                href="/guides/gross-vs-net"
+                href="/en/guides/gross-vs-net-salary"
                 className="flex flex-col items-center p-2 rounded-lg hover:bg-gray-50 active:bg-gray-100 touch-manipulation min-w-[60px]"
               >
                 <span className="text-lg">📖</span>
@@ -242,7 +242,7 @@ export default function HomeBestOptimized() {
 
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
               <Link
-                href="/guides/gross-vs-net"
+                href="/en/guides/gross-vs-net-salary"
                 className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
               >
                 <h3 className="text-sm font-bold text-gray-900 mb-2">Gross vs Net Salary</h3>
@@ -250,7 +250,7 @@ export default function HomeBestOptimized() {
               </Link>
 
               <Link
-                href="/guides/how-to-calculate-take-home"
+                href="/en/guides/how-to-calculate-take-home"
                 className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
               >
                 <h3 className="text-sm font-bold text-gray-900 mb-2">Calculate Take-Home Pay</h3>
@@ -258,7 +258,7 @@ export default function HomeBestOptimized() {
               </Link>
 
               <Link
-                href="/guides/salary-negotiation"
+                href="/en/guides/salary-negotiation-tips"
                 className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md active:shadow-lg transition-all active:scale-[0.98] touch-manipulation border border-gray-100"
               >
                 <h3 className="text-sm font-bold text-gray-900 mb-2">Salary Negotiation</h3>
@@ -302,7 +302,7 @@ export default function HomeBestOptimized() {
               <span className="text-xs font-medium mt-1">USA</span>
             </Link>
             <Link
-              href="/guides/gross-vs-net"
+              href="/en/guides/gross-vs-net-salary"
               className="flex flex-col items-center p-2 rounded-lg hover:bg-gray-50 active:bg-gray-100 touch-manipulation"
             >
               <span className="text-lg">📖</span>

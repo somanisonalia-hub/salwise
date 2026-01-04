@@ -17,6 +17,21 @@
     "gross-to-net",
     "guides/gross-vs-net"
   ],
+  "socialSharing": {
+    "title": "Share this guide",
+    "links": [
+      {
+        "platform": "Twitter",
+        "url": "https://twitter.com/intent/tweet?text=Salary%20Negotiation%20Guide&url=https://salarywise.io/guides/salary-negotiation-tips",
+        "icon": "🐦"
+      },
+      {
+        "platform": "LinkedIn",
+        "url": "https://www.linkedin.com/sharing/share-offsite/?url=https://salarywise.io/guides/salary-negotiation-tips",
+        "icon": "💼"
+      }
+    ]
+  },
   "title": "Salary Negotiation Tips | How to Negotiate Higher Pay | SalaryWise.io",
   "description": "Learn proven salary negotiation strategies. Get tips for negotiating job offers, raises, and better compensation packages.",
   "keywords": "salary negotiation, negotiate salary, job offer negotiation, salary increase, compensation negotiation",
@@ -26,6 +41,7 @@
     "title": "Salary Negotiation Guide",
     "subtitle": "Get the pay you deserve"
   },
+  "lastUpdated": "January 4, 2025",
 
   "intro": {
     "paragraph1": "Salary negotiation is a skill that can add tens of thousands of dollars to your lifetime earnings. Most people accept the first offer they receive, leaving money on the table.",
@@ -37,8 +53,8 @@
     "steps": [
       {
         "title": "Research Market Rates",
-        "description": "Use salary data from sources like Glassdoor, Salary.com, and Bureau of Labor Statistics. Know the range for your role, location, and experience level.",
-        "tools": ["Salary calculators", "Industry surveys", "Networking contacts"]
+        "description": "Use salary data from sources like Glassdoor, Salary.com, and Bureau of Labor Statistics. Know the range for your role, location, and experience level. Use our <a href=\"/en/salary-calculator\">global salary calculator</a> to compare offers across countries.",
+        "tools": ["<a href=\"/en/salary-calculator\">Salary calculators</a>", "Industry surveys", "Networking contacts"]
       },
       {
         "title": "Calculate Your Value",

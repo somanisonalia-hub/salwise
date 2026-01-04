@@ -1,102 +1,159 @@
 {
   "slug": "country/ireland",
   "type": "guide",
-  "h1": "Ireland Salary Calculator",
-  "metaTitle": "Ireland Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
-  "metaDescription": "Calculate take-home pay in Ireland including income tax, Universal Social Charge, PRSI contributions. Accurate Irish tax calculations with USC rates.",
-  "primaryKeyword": "ireland salary calculator",
+  "h1": "Ireland Salary Calculators & Tools",
+  "metaTitle": "Ireland Salary Calculators & Guides | SalaryWise",
+  "metaDescription": "Explore Ireland salary calculators, bonus & overtime calculators, and guides. Calculate your take-home pay, hourly salary, and learn about taxes and negotiation tips in Ireland.",
+  "primaryKeyword": "ireland salary calculators",
   "longTailKeywords": [
     "Ireland salary calculator",
-    "irish tax calculator",
-    "take home pay Ireland",
-    "USC calculator",
-    "PRSI calculator"
+    "Irish tax calculator",
+    "Ireland take home pay calculator",
+    "Ireland overtime calculator",
+    "Ireland bonus tax calculator"
   ],
   "related": [
+    "ireland-salary-calculator",
     "salary-calculator",
-    "gross-to-net",
-    "country/uk"
+    "gross-to-net-salary"
   ],
-  "title": "Ireland Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
-  "description": "Calculate take-home pay in Ireland including income tax, Universal Social Charge, PRSI contributions. Accurate Irish tax calculations with USC rates.",
-  "keywords": "Ireland salary calculator, irish tax calculator, take home pay Ireland, USC calculator, PRSI calculator",
-  "canonical": "https://salarywise.io/en/country/ireland",
+  "title": "Ireland Salary Calculators & Tools | SalaryWise.io",
+  "description": "Complete Ireland salary toolkit: Calculate take-home pay, taxes, overtime, bonuses, and contractor earnings with accurate Irish PAYE, USC, and PRSI calculations.",
+  "keywords": "Ireland salary calculators, Irish tax calculator, Ireland take home pay, Ireland overtime calculator, Ireland bonus tax calculator",
+  "canonical": "https://salarywise.io/country/ireland",
 
-  "header": {
-    "title": "Ireland Salary Calculator",
-    "subtitle": "Calculate your take-home pay with accurate Irish tax calculations"
+  "hero": {
+    "title": "Salary Calculators for Ireland 🇮🇪",
+    "subtitle": "Quickly calculate your take-home pay, overtime, bonuses, and contractor income with our Ireland-specific calculators.",
+    "cta": {
+      "text": "Start Calculating 🚀",
+      "href": "/en/ireland-salary-calculator"
+    }
   },
 
   "intro": {
-    "paragraph1": "Irish tax calculations involve income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI). Our Ireland salary calculator helps you understand your net pay after all deductions.",
-    "paragraph2": "Enter your gross salary and tax details to get accurate calculations based on current Irish tax rates."
+    "paragraph1": "Explore comprehensive Ireland salary calculators designed specifically for Irish workers. Whether you're calculating take-home pay, converting hourly wages to annual salary, or understanding how bonuses and overtime affect your income, our tools provide accurate results based on current PAYE, USC, and PRSI rates.",
+    "paragraph2": "All calculations follow official Revenue.ie guidelines and include the latest tax brackets for the Republic of Ireland."
   },
 
-  "incomeTax": {
-    "title": "Irish Income Tax Rates 2024",
-    "brackets": [
-      {"range": "€0 - €17,600", "rate": "0%"},
-      {"range": "€17,601 - €36,800", "rate": "20%"},
-      {"range": "€36,801 - €70,044", "rate": "40%"},
-      {"range": "€70,045+", "rate": "45%"}
-    ]
-  },
-
-  "usc": {
-    "title": "Universal Social Charge (USC)",
-    "rates": [
-      {"range": "€0 - €12,012", "rate": "0.5%"},
-      {"range": "€12,013 - €25,760", "rate": "2%"},
-      {"range": "€25,761 - €70,044", "rate": "4.5%"},
-      {"range": "€70,045 - €100,000", "rate": "6%"},
-      {"range": "€100,001+", "rate": "8%"}
-    ]
-  },
-
-  "prsi": {
-    "title": "Pay Related Social Insurance (PRSI)",
-    "employeeRate": "4% on earnings up to €76,000",
-    "employerRate": "8.8% on all earnings"
-  },
-
-  "examples": {
-    "title": "Irish Salary Calculation Examples",
-    "scenarios": [
+  "calculators": {
+    "title": "Ireland Salary Calculators",
+    "subtitle": "Specialized tools for Irish employment and taxation",
+    "items": [
       {
-        "title": "Software Engineer - Dublin",
-        "gross": "€70,000",
-        "details": {
-          "incomeTax": "€14,000 (20%)",
-          "usc": "€2,900 (4.1%)",
-          "prsi": "€2,800 (4%)",
-          "netPay": "€50,300 (71.9% of gross)"
-        }
+        "title": "Salary Calculator",
+        "description": "Calculate your annual or monthly salary and take-home pay including PAYE, USC & PRSI.",
+        "href": "/en/ireland-salary-calculator"
       },
       {
-        "title": "Teacher - Cork",
-        "gross": "€45,000",
-        "details": {
-          "incomeTax": "€5,440 (12.1%)",
-          "usc": "€1,350 (3%)",
-          "prsi": "€1,800 (4%)",
-          "netPay": "€36,410 (80.9% of gross)"
-        }
+        "title": "Hourly to Salary",
+        "description": "Convert your hourly wage to annual salary, accounting for taxes and deductions.",
+        "href": "/en/ireland-hourly-to-salary"
+      },
+      {
+        "title": "Overtime Pay Calculator",
+        "description": "Compute overtime pay following Irish employment law and tax regulations.",
+        "href": "/en/ireland-overtime-pay"
+      },
+      {
+        "title": "Bonus Tax Calculator",
+        "description": "Find out how your bonuses are taxed at PAYE, USC, and PRSI rates.",
+        "href": "/en/ireland-bonus-tax"
+      },
+      {
+        "title": "Contractor Salary Calculator",
+        "description": "Compare 1099 vs W2 contractor income after taxes and deductions.",
+        "href": "/en/ireland-contractor-salary-calculator"
       }
     ]
   },
 
+  "guides": {
+    "title": "Ireland Salary & Tax Guides",
+    "subtitle": "Learn about salary planning and tax optimization in Ireland",
+    "items": [
+      {
+        "title": "How to Calculate Take-Home Pay",
+        "href": "/en/guides/how-to-calculate-take-home"
+      },
+      {
+        "title": "Gross vs Net Salary Explained",
+        "href": "/en/guides/gross-vs-net-salary"
+      },
+      {
+        "title": "Salary Negotiation Tips",
+        "href": "/en/guides/salary-negotiation-tips"
+      },
+      {
+        "title": "Ireland Taxes Explained",
+        "href": "/en/guides/taxes-explained-by-country"
+      },
+      {
+        "title": "Ireland Salary Trends 2026",
+        "href": "/en/guides/salary-trends-2026"
+      }
+    ]
+  },
+
+  "countryNav": {
+    "title": "Explore Other Countries",
+    "links": [
+      {
+        "name": "Ireland",
+        "flag": "🇮🇪",
+        "href": "/country/ireland",
+        "active": true
+      },
+      {
+        "name": "UK",
+        "flag": "🇬🇧",
+        "href": "/country/uk"
+      },
+      {
+        "name": "USA",
+        "flag": "🇺🇸",
+        "href": "/country/usa"
+      }
+    ]
+  },
+
+  "ctaFooter": {
+    "title": "Want to Compare Salaries?",
+    "text": "Want to compare salaries across countries?",
+    "link": {
+      "text": "Use our Global Salary Calculator 🌍",
+      "href": "/en/salary-calculator"
+    }
+  },
+
   "structuredData": {
     "@context": "https://schema.org",
-    "@type": "SoftwareApplication",
-    "name": "Ireland Salary Calculator",
-    "url": "https://salarywise.io/en/country/ireland",
-    "applicationCategory": "Calculator",
-    "description": "Calculate take-home pay in Ireland including income tax, USC, and PRSI",
-    "operatingSystem": "Web Browser",
-    "offers": {
-      "@type": "Offer",
-      "price": "0",
-      "priceCurrency": "EUR"
-    }
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "How is take-home pay calculated in Ireland?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our Ireland Salary Calculator deducts PAYE income tax, Universal Social Charge (USC), and Pay Related Social Insurance (PRSI) to show your net take-home pay. Calculations follow current Revenue.ie guidelines and include tax credits where applicable."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is the difference between PAYE and USC in Ireland?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PAYE is Ireland's income tax system with progressive rates from 20% to 45%. USC (Universal Social Charge) is an additional social charge with rates from 0.5% to 8% that applies from the first euro earned. Both are calculated differently and serve different purposes."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does PRSI work in Ireland?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "PRSI (Pay Related Social Insurance) is charged at 4% for most employees on earnings up to €76,744. It funds social welfare benefits and the employer pays an additional 8.8%. Our Ireland calculators include all PRSI calculations for accurate take-home pay estimates."
+        }
+      }
+    ]
   }
 }

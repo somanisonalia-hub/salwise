@@ -15,7 +15,7 @@ function HomePageContent() {
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "SalaryWise.io",
-    "description": content.seo.description,
+    "description": content.metaDescription,
     "url": "https://salarywise.io",
     "potentialAction": {
       "@type": "SearchAction",
@@ -71,10 +71,10 @@ function HomePageContent() {
   return (
     <>
       <Head>
-        <title>{content.seo.title}</title>
-        <meta name="description" content={content.seo.description} />
-        <meta name="keywords" content={content.seo.keywords} />
-        <link rel="canonical" href="https://salarywise.io" />
+        <title>{content.metaTitle}</title>
+        <meta name="description" content={content.metaDescription} />
+        <meta name="keywords" content={content.keywords} />
+        <link rel="canonical" href={content.canonical} />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

@@ -8,22 +8,64 @@ import "./globals.css";
 const poppins = Poppins({
   variable: "--font-poppins",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
+  weight: ["400", "500", "600"], // Reduced weights for better performance
   display: "swap",
-  preload: false, // Disable preload for better LCP
+  preload: false,
   fallback: ["Inter", "system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Arial", "sans-serif"],
 });
 
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300", "400", "500", "600"],
+  weight: ["400", "500"], // Reduced weights for better performance
   display: "swap",
-  preload: false, // Disable preload for better LCP
+  preload: false,
   fallback: ["system-ui", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "Arial", "sans-serif"],
 });
 
 export const metadata: Metadata = {
+  title: 'SalaryWise.io - Free Salary Calculators for USA, UK & Ireland',
+  description: 'Calculate your exact take-home pay with 2026 tax rates. Compare salaries, benefits, and equity across USA, UK, and Ireland. Maximize your earnings with accurate compensation analysis.',
+  keywords: 'salary calculator, take home pay, tax calculator, gross to net, salary comparison, USA salary, UK salary, Ireland salary',
+  authors: [{ name: 'SalaryWise.io' }],
+  creator: 'SalaryWise.io',
+  publisher: 'SalaryWise.io',
+  formatDetection: {
+    email: false,
+    address: false,
+    telephone: false,
+  },
+  metadataBase: new URL('https://salarywise.io'),
+  alternates: {
+    canonical: '/',
+  },
+  openGraph: {
+    title: 'SalaryWise.io - Free Salary Calculators',
+    description: 'Calculate your exact take-home pay with 2026 tax rates. Compare salaries across USA, UK, and Ireland.',
+    url: 'https://salarywise.io',
+    siteName: 'SalaryWise.io',
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'SalaryWise.io - Free Salary Calculators',
+    description: 'Calculate your exact take-home pay with 2026 tax rates. Compare salaries across USA, UK, and Ireland.',
+    creator: '@salarywiseio',
+  },
+  robots: {
+    index: true,
+    follow: true,
+    nocache: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      noimageindex: false,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   other: {
     'google-site-verification': '43vJJoR_yHx5bfRFM23A_Sz1OV1ZXbYoGFwcfUB3Z7c',
   },
@@ -40,26 +82,9 @@ export default function RootLayout({
         {/* Critical performance optimizations */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
-        <link rel="dns-prefetch" href="//www.google-analytics.com" />
-        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
-
-        {/* Preload critical resources for instant loading */}
-        <link rel="modulepreload" href="/_next/static/chunks/framework.js" />
-        <link rel="modulepreload" href="/_next/static/chunks/main.js" />
-        <link rel="preload" href="/_next/static/css/app.css" as="style" />
-        <link rel="preload" href="/favicon.ico" as="image" />
-
-        {/* Preconnect to external domains */}
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
-
-        {/* DNS prefetch for faster connections */}
-        <link rel="dns-prefetch" href="//fonts.googleapis.com" />
-        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
-        <link rel="dns-prefetch" href="//www.google-analytics.com" />
-        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
 
         {/* Optimize rendering */}
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />

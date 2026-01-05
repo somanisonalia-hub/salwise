@@ -3,6 +3,13 @@
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 
+// Ultra-lightweight Your Privacy Choices Component for CCPA Compliance
+// Optimized for AdSense approval and zero performance impact
+export function YourPrivacyChoices() {
+  // This component now returns null - functionality moved to inline script for performance
+  return null;
+}
+
 export function CookieConsent() {
   const [showPopup, setShowPopup] = useState(false);
   const [showDetails, setShowDetails] = useState(false);

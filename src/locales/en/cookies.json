@@ -3,7 +3,7 @@
   "type": "page",
   "h1": "Cookie Policy",
   "metaTitle": "Cookie Policy",
-  "metaDescription": "Learn about our use of cookies and how to manage your preferences.",
+  "metaDescription": "Learn about our cookie policy including Google Analytics and AdSense cookies used to improve your experience and provide relevant advertising.",
   "primaryKeyword": "Cookies Policy, Cookie Consent",
   "longTailKeywords": [
     "Manage Cookies SalaryWise"
@@ -17,6 +17,7 @@
   "description": "How we use cookies and your privacy choices",
   "keywords": "cookies, privacy, cookie policy, cookie settings",
   "canonical": "https://salarywise.io/en/cookies",
+  "robots": "noindex, follow",
 
   "lastUpdated": "January 2, 2025",
 
@@ -46,13 +47,15 @@
     {
       "type": "Analytics Cookies",
       "description": "Help us understand how visitors use our site",
-      "purpose": "These cookies collect information about how you use our website, which pages you visit, and if you encounter any errors. This helps us improve our website's performance and user experience.",
+      "purpose": "These cookies collect information about how you use our website, which pages you visit, and if you encounter any errors. This helps us improve our website's performance and user experience. We use Google Analytics for this purpose.",
       "duration": "Up to 2 years",
       "required": false,
+      "provider": "Google Analytics",
       "examples": [
         "Page view tracking",
         "Traffic source analysis",
-        "Error monitoring"
+        "User behavior analysis",
+        "Calculator usage statistics"
       ]
     },
     {
@@ -70,13 +73,15 @@
     {
       "type": "Marketing Cookies",
       "description": "Used for advertising and retargeting",
-      "purpose": "These cookies are used to deliver relevant advertisements and track the effectiveness of our marketing campaigns. They may be set by third-party advertising networks.",
+      "purpose": "These cookies are used to deliver relevant advertisements and track the effectiveness of our marketing campaigns. They may be set by third-party advertising networks including Google AdSense.",
       "duration": "Up to 1 year",
       "required": false,
+      "provider": "Google AdSense",
       "examples": [
         "Ad targeting",
         "Campaign measurement",
-        "Retargeting"
+        "Retargeting",
+        "Ad personalization"
       ]
     }
   ],
@@ -90,6 +95,12 @@
         "purpose": "Website analytics and performance monitoring",
         "policy": "Google Analytics Privacy Policy",
         "optOut": "Google Analytics Opt-out"
+      },
+      {
+        "name": "Google AdSense",
+        "purpose": "Advertising and monetization",
+        "policy": "Google AdSense Privacy Policy",
+        "optOut": "Google Ads Settings"
       },
       {
         "name": "Cloudflare",

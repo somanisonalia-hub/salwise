@@ -4,3 +4,4 @@ export default function Page() {
   redirect('/country/ireland');
 }
 
+

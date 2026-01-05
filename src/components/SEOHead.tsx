@@ -11,6 +11,7 @@ interface SEOHeadProps {
   keywords?: string[];
   breadcrumb?: Array<{name: string, url: string}>;
   featureList?: string[];
+  robots?: string;
 }
 
 export const SEOHead: React.FC<SEOHeadProps> = ({
@@ -22,7 +23,8 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
   pageType = 'webpage',
   keywords = [],
   breadcrumb = [],
-  featureList = []
+  featureList = [],
+  robots
 }) => {
   const fullTitle = `${title} | SalaryWise.io`;
   const siteUrl = 'https://salarywise.io';
@@ -173,7 +175,7 @@ export const SEOHead: React.FC<SEOHeadProps> = ({
       <meta name="twitter:description" content={description} />
 
       {/* Additional SEO meta tags */}
-      <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+      <meta name="robots" content={robots || "index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1"} />
       <meta name="googlebot" content="index, follow" />
       <meta name="format-detection" content="telephone=no" />
       <link rel="alternate" hrefLang="en" href={canonicalUrl || siteUrl} />

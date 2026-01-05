@@ -3,7 +3,7 @@
   "type": "page",
   "h1": "Privacy Policy",
   "metaTitle": "Privacy Policy",
-  "metaDescription": "Read our GDPR-compliant privacy policy explaining how we handle your data.",
+  "metaDescription": "Read our privacy policy explaining how we use Google Analytics and AdSense to improve our salary calculators while protecting your data.",
   "primaryKeyword": "Privacy Policy, GDPR",
   "longTailKeywords": [
     "GDPR Privacy Policy 2026"
@@ -17,29 +17,34 @@
   "description": "How we protect your privacy",
   "keywords": "privacy policy, data protection, salary calculator privacy",
   "canonical": "https://salarywise.io/en/privacy-policy",
+  "robots": "noindex, follow",
 
   "lastUpdated": "January 2, 2025",
 
   "sections": [
     {
       "heading": "Information We Collect",
-      "content": "SalaryWise.io does not collect, store, or transmit any personal information. All salary calculations are performed entirely in your web browser using JavaScript. No data is sent to our servers or third-party services."
+      "content": "SalaryWise.io collects limited anonymous information to improve our services and provide relevant advertising. All salary calculations are performed entirely in your web browser using JavaScript. Personal salary data remains on your device and is not transmitted to our servers. However, we use Google Analytics to understand how visitors use our website and Google AdSense for advertising."
     },
     {
       "heading": "How Calculations Work",
-      "content": "Our calculators run locally in your browser. When you enter salary information, all processing happens on your device. We use mathematical formulas based on publicly available tax rates and do not require internet connectivity for basic calculations."
+      "content": "Our calculators run locally in your browser. When you enter salary information, all processing happens on your device. We use mathematical formulas based on publicly available tax rates. While calculations are performed locally, we may use analytics tools to understand which calculators are most popular."
     },
     {
       "heading": "Cookies and Tracking",
-      "content": "We do not use cookies, tracking pixels, or any form of user tracking. Our website does not collect analytics data, usage statistics, or any information about your browsing behavior."
+      "content": "We use cookies and similar technologies to enhance your experience, analyze site traffic, and provide personalized advertising. This includes Google Analytics for website analytics and Google AdSense for displaying relevant advertisements. You can control your cookie preferences and opt out of personalized advertising through our cookie settings."
     },
     {
       "heading": "Third-Party Services",
-      "content": "We use Google Fonts for typography and Cloudflare for content delivery. These services may collect anonymous usage data according to their respective privacy policies. We do not share any user data with third parties."
+      "content": "We use several third-party services to provide our website functionality: Google Analytics for website analytics, Google AdSense for advertising, Google Fonts for typography, and Cloudflare for content delivery. These services may collect anonymous usage data according to their respective privacy policies. Google services are subject to Google's Privacy Policy."
+    },
+    {
+      "heading": "Google Analytics and Advertising",
+      "content": "We use Google Analytics to understand how our website is used, which pages are most popular, and how users navigate through our salary calculators. This helps us improve our services. We also use Google AdSense to display relevant advertisements. Google may use cookies and similar technologies to collect information about your online activities across websites. You can opt out of personalized advertising and analytics tracking through our cookie consent banner or by visiting Google's Ad Settings."
     },
     {
       "heading": "Data Security",
-      "content": "Since no user data is stored on our servers, there is no risk of data breaches or unauthorized access. Your financial information remains entirely on your device and under your control."
+      "content": "Your personal salary calculation data remains entirely on your device and is not transmitted to our servers. However, analytics and advertising data collected by Google services is subject to Google's security measures and privacy policies. We recommend reviewing Google's privacy documentation for details about their data security practices."
     },
     {
       "heading": "Children's Privacy",
@@ -58,13 +63,23 @@
   "keyPoints": [
     {
       "icon": "🔒",
-      "title": "No Data Storage",
-      "description": "We don't store any personal or financial information"
+      "title": "Secure Calculations",
+      "description": "Your salary data stays in your browser"
     },
     {
       "icon": "💻",
       "title": "Local Processing",
-      "description": "All calculations happen in your browser"
+      "description": "Calculations happen on your device"
+    },
+    {
+      "icon": "📊",
+      "title": "Anonymous Analytics",
+      "description": "We use Google Analytics to improve our services"
+    },
+    {
+      "icon": "🎯",
+      "title": "Relevant Ads",
+      "description": "Google AdSense provides personalized advertising"
     },
     {
       "icon": "🚫",

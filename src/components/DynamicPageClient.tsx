@@ -17,6 +17,7 @@ interface PageData {
   metaDescription: string;
   primaryKeyword: string;
   canonical?: string;
+  robots?: string;
   dataRef?: string;
   related?: string[];
   tips?: string[];
@@ -246,6 +247,7 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
         pageType={getPageType()}
         keywords={pageData.longTailKeywords || []}
         breadcrumb={generateBreadcrumb()}
+        robots={pageData.robots}
       />
 
       {/* Main Layout with Sidebar */}

@@ -17,6 +17,7 @@
   "description": "Important legal notices and limitations",
   "keywords": "disclaimer, legal notice, salary calculator limitations, financial disclaimer",
   "canonical": "https://salarywise.io/en/disclaimer",
+  "robots": "noindex, follow",
 
   "lastUpdated": "January 2, 2025",
 

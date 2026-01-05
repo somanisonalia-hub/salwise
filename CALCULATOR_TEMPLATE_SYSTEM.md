@@ -242,3 +242,4 @@ src/locales/en/[country]-[calculatorType].json
 This template system ensures consistency, maintainability, and scalability for all SalaryWise calculators.</content>
 </xai:function_call">Write
 
+

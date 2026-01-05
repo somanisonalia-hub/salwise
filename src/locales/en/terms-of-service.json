@@ -17,6 +17,7 @@
   "description": "Terms and conditions for using our services",
   "keywords": "terms of service, terms and conditions, salary calculator terms",
   "canonical": "https://salarywise.io/en/terms-of-service",
+  "robots": "noindex, follow",
 
   "lastUpdated": "January 2, 2025",
 

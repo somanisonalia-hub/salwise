@@ -9,8 +9,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://salarywise.io';
 
   // Staggered lastmod dates for batch control
-  const batch1Date = new Date('2025-01-04'); // Core calculators - crawl first
-  const batch2Date = new Date('2025-01-06'); // Essential pages - crawl second
+  const batch1Date = new Date('2025-01-06'); // Core calculators - crawl first
+  const batch2Date = new Date('2025-01-07'); // Essential pages - crawl second
   const batch3Date = new Date('2025-01-08'); // Guides - crawl last
 
   // ===========================================
@@ -292,7 +292,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  // Generate separate sitemap files for each batch
+  // Create public directory sitemaps for static export
   const generateSitemapXML = (pages: MetadataRoute.Sitemap, filename: string) => {
     const xmlContent = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
@@ -304,16 +304,16 @@ ${pages.map(page => `  <url>
   </url>`).join('\n')}
 </urlset>`;
 
-    const outDir = path.join(process.cwd(), 'out');
-    if (!fs.existsSync(outDir)) {
-      fs.mkdirSync(outDir, { recursive: true });
+    const publicDir = path.join(process.cwd(), 'public');
+    if (!fs.existsSync(publicDir)) {
+      fs.mkdirSync(publicDir, { recursive: true });
     }
 
-    fs.writeFileSync(path.join(outDir, filename), xmlContent);
+    fs.writeFileSync(path.join(publicDir, filename), xmlContent);
     console.log(`Generated ${filename} with ${pages.length} URLs`);
   };
 
-  // Generate the three batch sitemaps
+  // Generate the three batch sitemaps in public directory
   generateSitemapXML(batch1Pages, 'sitemap-batch1.xml');
   generateSitemapXML(batch2Pages, 'sitemap-batch2.xml');
   generateSitemapXML(batch3Pages, 'sitemap-batch3.xml');

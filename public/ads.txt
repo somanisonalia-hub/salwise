@@ -6,3 +6,4 @@ google.com, pub-5200046884352893, DIRECT, f08c47fec0942fa0
 
 # Contact information for ads.txt inquiries
 # contact=salarywise.io
+

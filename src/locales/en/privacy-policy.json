@@ -19,7 +19,7 @@
   "canonical": "https://salarywise.io/en/privacy-policy",
   "robots": "noindex, follow",
 
-  "lastUpdated": "January 2, 2025",
+  "lastUpdated": "January 5, 2026",
 
   "sections": [
     {
@@ -82,9 +82,9 @@
       "description": "Google AdSense provides personalized advertising"
     },
     {
-      "icon": "🚫",
-      "title": "No Cookies",
-      "description": "We don't use tracking cookies or analytics"
+      "icon": "⚙️",
+      "title": "Consent Management",
+      "description": "Control your privacy preferences with our consent tools"
     },
     {
       "icon": "🛡️",

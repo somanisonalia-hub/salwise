@@ -1,56 +1,125 @@
 {
+  "slug": "usa",
+  "type": "page",
+  "h1": "USA Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "metaTitle": "USA Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "metaDescription": "Calculate take-home pay in the USA including federal income tax, state taxes, Social Security, and Medicare. Accurate US tax calculations with state-specific...",
+  "primaryKeyword": "USA Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
+  "longTailKeywords": [
+    "USA Salary Calculator | Take-Home Pay Calculator | SalaryWise.io"
+  ],
+  "related": [],
+  "canonical": "https://salarywise.io/countries/usa",
+  "robots": "index, follow",
+  "lastUpdated": "January 4, 2025",
   "title": "USA Salary Calculator | Take-Home Pay Calculator | SalaryWise.io",
   "description": "Calculate take-home pay in the USA including federal income tax, state taxes, Social Security, and Medicare. Accurate US tax calculations with state-specific rates.",
   "keywords": "USA salary calculator, US tax calculator, take home pay USA, US paycheck calculator, federal tax calculator",
-  "canonical": "https://salarywise.io/countries/usa",
-
   "header": {
     "title": "USA Salary Calculator",
     "subtitle": "Calculate your take-home pay with accurate US tax calculations"
   },
-
   "intro": {
     "paragraph1": "Understanding your take-home pay in the United States requires accounting for federal income tax, state income tax, Social Security, Medicare, and other deductions. Our USA salary calculator provides accurate estimates based on current tax rates and your specific situation.",
     "paragraph2": "Enter your gross salary, filing status, state, and other details to get a comprehensive breakdown of your net pay and tax obligations."
   },
-
   "federalTax": {
     "title": "Federal Income Tax Brackets 2024",
     "description": "Federal income tax is progressive, meaning higher earners pay a higher percentage.",
     "brackets": {
       "single": [
-        {"range": "$0 - $11,600", "rate": "10%"},
-        {"range": "$11,601 - $47,150", "rate": "12%"},
-        {"range": "$47,151 - $100,525", "rate": "22%"},
-        {"range": "$100,526 - $191,950", "rate": "24%"},
-        {"range": "$191,951 - $243,725", "rate": "32%"},
-        {"range": "$243,726 - $609,350", "rate": "35%"},
-        {"range": "$609,351+", "rate": "37%"}
+        {
+          "range": "$0 - $11,600",
+          "rate": "10%"
+        },
+        {
+          "range": "$11,601 - $47,150",
+          "rate": "12%"
+        },
+        {
+          "range": "$47,151 - $100,525",
+          "rate": "22%"
+        },
+        {
+          "range": "$100,526 - $191,950",
+          "rate": "24%"
+        },
+        {
+          "range": "$191,951 - $243,725",
+          "rate": "32%"
+        },
+        {
+          "range": "$243,726 - $609,350",
+          "rate": "35%"
+        },
+        {
+          "range": "$609,351+",
+          "rate": "37%"
+        }
       ],
       "marriedFilingJointly": [
-        {"range": "$0 - $23,200", "rate": "10%"},
-        {"range": "$23,201 - $94,300", "rate": "12%"},
-        {"range": "$94,301 - $201,050", "rate": "22%"},
-        {"range": "$201,051 - $383,900", "rate": "24%"},
-        {"range": "$383,901 - $487,450", "rate": "32%"},
-        {"range": "$487,451 - $731,200", "rate": "35%"},
-        {"range": "$731,201+", "rate": "37%"}
+        {
+          "range": "$0 - $23,200",
+          "rate": "10%"
+        },
+        {
+          "range": "$23,201 - $94,300",
+          "rate": "12%"
+        },
+        {
+          "range": "$94,301 - $201,050",
+          "rate": "22%"
+        },
+        {
+          "range": "$201,051 - $383,900",
+          "rate": "24%"
+        },
+        {
+          "range": "$383,901 - $487,450",
+          "rate": "32%"
+        },
+        {
+          "range": "$487,451 - $731,200",
+          "rate": "35%"
+        },
+        {
+          "range": "$731,201+",
+          "rate": "37%"
+        }
       ]
     }
   },
-
   "stateTax": {
     "title": "State Income Tax Rates",
     "description": "State tax rates vary significantly across the United States.",
     "highlights": [
-      {"state": "California", "rate": "1-13.3%", "note": "Highest state tax rate"},
-      {"state": "New York", "rate": "4-8.82%", "note": "High cost of living"},
-      {"state": "Texas", "rate": "0%", "note": "No state income tax"},
-      {"state": "Florida", "rate": "0%", "note": "No state income tax"},
-      {"state": "Nevada", "rate": "0%", "note": "No state income tax"}
+      {
+        "state": "California",
+        "rate": "1-13.3%",
+        "note": "Highest state tax rate"
+      },
+      {
+        "state": "New York",
+        "rate": "4-8.82%",
+        "note": "High cost of living"
+      },
+      {
+        "state": "Texas",
+        "rate": "0%",
+        "note": "No state income tax"
+      },
+      {
+        "state": "Florida",
+        "rate": "0%",
+        "note": "No state income tax"
+      },
+      {
+        "state": "Nevada",
+        "rate": "0%",
+        "note": "No state income tax"
+      }
     ]
   },
-
   "fica": {
     "title": "FICA Taxes (Social Security & Medicare)",
     "socialSecurity": {
@@ -65,7 +134,6 @@
       "additional": "Additional Medicare Tax of 0.9% for wages over $200,000 (single) or $250,000 (joint)"
     }
   },
-
   "deductions": {
     "title": "Other Common Deductions",
     "items": [
@@ -91,7 +159,6 @@
       }
     ]
   },
-
   "examples": {
     "title": "USA Salary Calculation Examples",
     "scenarios": [
@@ -123,7 +190,6 @@
       }
     ]
   },
-
   "tools": {
     "title": "USA Tax Calculators",
     "calculators": [
@@ -144,7 +210,6 @@
       }
     ]
   },
-
   "faq": {
     "title": "USA Tax FAQ",
     "questions": [
@@ -166,12 +231,10 @@
       }
     ]
   },
-
   "disclaimer": {
     "title": "Important Disclaimer",
     "content": "This calculator provides estimates based on current tax rates and general assumptions. Tax laws change frequently, and individual circumstances vary. Consult a tax professional for personalized advice."
   },
-
   "structuredData": {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
@@ -187,4 +250,3 @@
     }
   }
 }
-

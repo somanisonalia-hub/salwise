@@ -1,4 +1,17 @@
 {
+  "slug": "irelandContractorSalary",
+  "type": "page",
+  "h1": "Ireland Contractor Salary Calculator",
+  "metaTitle": "Ireland Contractor Salary Calculator",
+  "metaDescription": "Compare Ltd vs umbrella company options for Irish contractors",
+  "primaryKeyword": "Ireland Contractor Salary Calculator",
+  "longTailKeywords": [
+    "Ireland Contractor Salary Calculator"
+  ],
+  "related": [],
+  "canonical": "https://salarywise.io/en/irelandContractorSalary",
+  "robots": "index, follow",
+  "lastUpdated": "January 4, 2025",
   "id": "irelandContractorSalary",
   "name": "Ireland Contractor Salary Calculator",
   "description": "Compare Ltd vs umbrella company options for Irish contractors",
@@ -120,7 +133,11 @@
   "examples": [
     {
       "scenario": "€400/day, 20 days/month contractor",
-      "inputs": {"dailyRate": 400, "daysPerMonth": 20, "expenses": 0},
+      "inputs": {
+        "dailyRate": 400,
+        "daysPerMonth": 20,
+        "expenses": 0
+      },
       "expectedOutputs": {
         "grossMonthly": 8000,
         "ltdNetMonthly": 5920,
@@ -130,7 +147,11 @@
     },
     {
       "scenario": "€550/day, 15 days/month senior contractor",
-      "inputs": {"dailyRate": 550, "daysPerMonth": 15, "expenses": 200},
+      "inputs": {
+        "dailyRate": 550,
+        "daysPerMonth": 15,
+        "expenses": 200
+      },
       "expectedOutputs": {
         "grossMonthly": 8250,
         "ltdNetMonthly": 6088,

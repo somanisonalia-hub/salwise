@@ -7,4 +7,6 @@ export { RelatedCalculators } from './RelatedCalculators';
 export { CountrySelector } from './CountrySelector';
 export { IndustrySelector } from './IndustrySelector';
 export { CookieConsent } from './CookieConsent';
+export { PerformanceMonitor } from './PerformanceMonitor';
+export { StructuredData } from './StructuredData';
 export { default as DynamicPageClient } from './DynamicPageClient';

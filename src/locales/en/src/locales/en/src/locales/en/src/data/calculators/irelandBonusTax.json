@@ -1,4 +1,17 @@
 {
+  "slug": "irelandBonusTax",
+  "type": "page",
+  "h1": "Ireland Bonus Tax Calculator",
+  "metaTitle": "Ireland Bonus Tax Calculator",
+  "metaDescription": "Calculate bonus tax in Ireland with PAYE, PRSI, and USC deductions",
+  "primaryKeyword": "Ireland Bonus Tax Calculator",
+  "longTailKeywords": [
+    "Ireland Bonus Tax Calculator"
+  ],
+  "related": [],
+  "canonical": "https://salarywise.io/en/irelandBonusTax",
+  "robots": "index, follow",
+  "lastUpdated": "January 4, 2025",
   "id": "irelandBonusTax",
   "name": "Ireland Bonus Tax Calculator",
   "description": "Calculate bonus tax in Ireland with PAYE, PRSI, and USC deductions",
@@ -84,7 +97,11 @@
   "examples": [
     {
       "scenario": "€50,000 base salary with 5% bonus",
-      "inputs": {"baseSalary": 50000, "bonusPercentage": 5, "bonusAmount": 0},
+      "inputs": {
+        "baseSalary": 50000,
+        "bonusPercentage": 5,
+        "bonusAmount": 0
+      },
       "expectedOutputs": {
         "calculatedBonusAmount": 2500,
         "totalIncome": 52500,
@@ -95,7 +112,11 @@
     },
     {
       "scenario": "€70,000 base salary with 10% bonus",
-      "inputs": {"baseSalary": 70000, "bonusPercentage": 10, "bonusAmount": 0},
+      "inputs": {
+        "baseSalary": 70000,
+        "bonusPercentage": 10,
+        "bonusAmount": 0
+      },
       "expectedOutputs": {
         "calculatedBonusAmount": 7000,
         "totalIncome": 77000,

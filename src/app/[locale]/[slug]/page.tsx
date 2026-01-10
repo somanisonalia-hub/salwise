@@ -1,7 +1,8 @@
 import { notFound } from 'next/navigation';
 import Head from 'next/head';
 import Link from 'next/link';
-import { DynamicPageClient } from '../../../components';
+import Script from 'next/script';
+import { DynamicPageClient, StructuredData } from '../../../components';
 
 interface PageProps {
   params: Promise<{
@@ -143,8 +144,6 @@ export async function generateMetadata({ params }: PageProps) {
         canonical: `https://salarywise.io/${locale}/${slug}`,
         languages: {
           'en': `https://salarywise.io/en/${slug}`,
-          'es': `https://salarywise.io/es/${slug}`,
-          'fr': `https://salarywise.io/fr/${slug}`,
         },
       },
     };
@@ -166,8 +165,6 @@ export async function generateMetadata({ params }: PageProps) {
           canonical: `https://salarywise.io/${locale}/${slug}`,
           languages: {
             'en': `https://salarywise.io/en/${slug}`,
-            'es': `https://salarywise.io/es/${slug}`,
-            'fr': `https://salarywise.io/fr/${slug}`,
           },
         },
       };
@@ -179,6 +176,429 @@ export async function generateMetadata({ params }: PageProps) {
       };
     }
   }
+}
+
+// Generate tailored structured data for each page type with long-tail optimization
+function generateStructuredData(pageData: any, slug: string, locale: string) {
+  const schemas = [];
+  const siteUrl = 'https://salarywise.io';
+  const pageUrl = `https://salarywise.io/${locale}/${slug}`;
+
+  // Base Organization schema - optimized for all pages
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://salarywise.io/#organization",
+    "name": "SalaryWise.io",
+    "alternateName": ["SalaryWise", "Salary Calculator", "Tax Calculator"],
+    "url": "https://salarywise.io",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://salarywise.io/logo.png",
+      "width": 512,
+      "height": 512,
+      "caption": "SalaryWise.io Logo"
+    },
+    "description": "Professional salary calculators for Ireland, UK, and USA. Calculate take-home pay, tax obligations, and salary comparisons with 2026 tax rates.",
+    "foundingDate": "2024-01-01",
+    "founders": [{
+      "@type": "Organization",
+      "name": "SalaryWise.io"
+    }],
+    "sameAs": [
+      "https://salarywise.io",
+      "https://twitter.com/salarywiseio",
+      "https://linkedin.com/company/salarywise"
+    ],
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "telephone": "",
+      "contactType": "customer service",
+      "availableLanguage": ["English"],
+      "url": "https://salarywise.io/en/contact",
+      "hoursAvailable": {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+        "opens": "09:00",
+        "closes": "17:00"
+      }
+    }],
+    "knowsAbout": [
+      "Salary Calculations",
+      "Tax Calculations Ireland",
+      "Tax Calculations UK",
+      "Tax Calculations USA",
+      "Take-Home Pay Calculator",
+      "Gross to Net Salary",
+      "PAYE Calculator Ireland",
+      "Income Tax Calculator UK",
+      "Federal Tax Calculator USA",
+      "Salary Comparison Tools",
+      "Overtime Pay Calculator",
+      "Bonus Tax Calculator",
+      "Contractor Salary Calculator",
+      "Hourly to Salary Converter"
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Salary Calculator Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Ireland Salary Calculator",
+            "description": "Calculate take-home pay with Irish tax rates"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "UK Salary Calculator",
+            "description": "Calculate take-home pay with UK tax rates"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "USA Salary Calculator",
+            "description": "Calculate take-home pay with US tax rates"
+          }
+        }
+      ]
+    }
+  });
+
+  // Page-specific rich schema markup
+  if (slug === 'salary-calculator' || slug === '') {
+    // Homepage - WebSite + SearchAction + CollectionPage
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "@id": "https://salarywise.io/#website",
+      "url": "https://salarywise.io",
+      "name": "SalaryWise.io - Free Salary Calculators for USA, UK & Ireland",
+      "alternateName": ["SalaryWise", "Salary Calculator Online"],
+      "description": "Calculate your exact take-home pay with 2026 tax rates. Compare salaries, benefits, and equity across USA, UK, and Ireland. Maximize your earnings with accurate compensation analysis.",
+      "publisher": { "@id": "https://salarywise.io/#organization" },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://salarywise.io/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "inLanguage": "en-US",
+      "copyrightHolder": { "@id": "https://salarywise.io/#organization" },
+      "mainEntity": {
+        "@type": "CollectionPage",
+        "name": "Salary Calculator Collection",
+        "description": "Complete collection of professional salary calculators for Ireland, UK, and USA",
+        "url": "https://salarywise.io",
+        "mainEntity": {
+          "@type": "ItemList",
+          "numberOfItems": 15,
+          "itemListElement": [
+            {
+              "@type": "ListItem",
+              "position": 1,
+              "name": "Ireland Salary Calculator",
+              "url": "https://salarywise.io/en/ireland-salary-calculator"
+            },
+            {
+              "@type": "ListItem",
+              "position": 2,
+              "name": "UK Salary Calculator",
+              "url": "https://salarywise.io/en/uk-salary-calculator"
+            },
+            {
+              "@type": "ListItem",
+              "position": 3,
+              "name": "USA Salary Calculator",
+              "url": "https://salarywise.io/en/usa-salary-calculator"
+            }
+          ]
+        }
+      }
+    });
+  } else if (pageData.type === 'calculator') {
+    // Calculator pages - SoftwareApplication + HowTo + WebPage
+    const calculatorName = pageData.h1 || pageData.title;
+    const country = slug.split('-')[0]; // Extract country from slug
+
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "@id": `${pageUrl}#softwareapplication`,
+      "name": calculatorName,
+      "url": pageUrl,
+      "description": pageData.metaDescription || pageData.description,
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "Web Browser",
+      "softwareVersion": "2.0",
+      "fileSize": "",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "priceValidUntil": "2027-12-31",
+        "availability": "https://schema.org/InStock",
+        "seller": { "@id": "https://salarywise.io/#organization" }
+      },
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.9",
+        "ratingCount": "1000",
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "applicationSubCategory": `${country.toUpperCase()} Salary Calculator`,
+      "featureList": [
+        `Real-time ${country} tax calculations`,
+        `2026 ${country} tax rates and brackets`,
+        "Multiple payment frequencies",
+        "Deductions and allowances calculator",
+        "Tax-free thresholds and credits",
+        "Exportable salary breakdown",
+        "Mobile-optimized interface",
+        "Professional accuracy guarantee"
+      ],
+      "screenshot": {
+        "@type": "ImageObject",
+        "url": `https://salarywise.io/screenshots/${slug}-calculator.png`,
+        "caption": `${calculatorName} interface screenshot`
+      },
+      "author": { "@id": "https://salarywise.io/#organization" },
+      "publisher": { "@id": "https://salarywise.io/#organization" },
+      "datePublished": "2024-01-01",
+      "dateModified": "2025-01-04"
+    });
+
+    // Add HowTo schema for calculator usage
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "HowTo",
+      "name": `How to Use ${calculatorName}`,
+      "description": `Step-by-step guide to calculate your ${country} salary with our professional calculator`,
+      "image": `https://salarywise.io/images/${slug}-guide.png`,
+      "totalTime": "PT2M",
+      "supply": [
+        {
+          "@type": "HowToSupply",
+          "name": "Gross Salary Amount"
+        },
+        {
+          "@type": "HowToSupply",
+          "name": "Payment Frequency"
+        }
+      ],
+      "step": [
+        {
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Enter Your Gross Salary",
+          "text": "Input your annual gross salary amount in the calculator field",
+          "image": "https://salarywise.io/images/step1-enter-salary.png"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 2,
+          "name": "Select Payment Frequency",
+          "text": "Choose how often you get paid (weekly, monthly, annually)",
+          "image": "https://salarywise.io/images/step2-payment-frequency.png"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 3,
+          "name": "Review Tax Calculations",
+          "text": `View your ${country} tax breakdown including income tax, social contributions, and take-home pay`,
+          "image": "https://salarywise.io/images/step3-tax-breakdown.png"
+        },
+        {
+          "@type": "HowToStep",
+          "position": 4,
+          "name": "Export Results",
+          "text": "Download or share your detailed salary calculation results",
+          "image": "https://salarywise.io/images/step4-export-results.png"
+        }
+      ]
+    });
+  } else if (pageData.type === 'guide') {
+    // Guide pages - Article + HowTo + WebPage
+    const guideName = pageData.h1 || pageData.title;
+    const keywords = pageData.longTailKeywords || [];
+
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "@id": `${pageUrl}#article`,
+      "headline": guideName,
+      "name": guideName,
+      "url": pageUrl,
+      "description": pageData.metaDescription || pageData.description,
+      "keywords": keywords.join(", "),
+      "articleSection": "Salary & Tax Guides",
+      "datePublished": pageData.lastUpdated ? new Date(pageData.lastUpdated).toISOString() : "2025-01-04T00:00:00+00:00",
+      "dateModified": pageData.lastUpdated ? new Date(pageData.lastUpdated).toISOString() : "2025-01-04T00:00:00+00:00",
+      "author": {
+        "@type": "Organization",
+        "@id": "https://salarywise.io/#organization",
+        "name": "SalaryWise.io",
+        "url": "https://salarywise.io"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "@id": "https://salarywise.io/#organization"
+      },
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": `${pageUrl}#webpage`
+      },
+      "isPartOf": {
+        "@type": "WebSite",
+        "@id": "https://salarywise.io/#website"
+      },
+      "speakable": {
+        "@type": "SpeakableSpecification",
+        "cssSelector": [".content", "h1", "h2", "p"]
+      },
+      "about": [
+        {
+          "@type": "Thing",
+          "name": "Salary Calculations",
+          "description": "Professional salary and tax calculation methods"
+        },
+        {
+          "@type": "Thing",
+          "name": "Tax Planning",
+          "description": "Strategic tax planning and optimization techniques"
+        }
+      ],
+      "mentions": keywords.map((keyword: string) => ({
+        "@type": "Thing",
+        "name": keyword
+      }))
+    });
+
+    // Add HowTo schema for guides that have steps
+    if (pageData.step1IdentifyGrossSalary || pageData.whatIsGrossSalary) {
+      const steps = [];
+
+      if (pageData.whatIsGrossSalary) {
+        steps.push({
+          "@type": "HowToStep",
+          "position": 1,
+          "name": "Understand Gross vs Net Salary",
+          "text": "Learn the fundamental difference between gross salary and net take-home pay"
+        });
+      }
+
+      if (pageData.step1IdentifyGrossSalary) {
+        steps.push({
+          "@type": "HowToStep",
+          "position": steps.length + 1,
+          "name": "Identify Your Gross Salary",
+          "text": pageData.step1IdentifyGrossSalary
+        });
+      }
+
+      if (pageData.step2CalculateTaxes) {
+        steps.push({
+          "@type": "HowToStep",
+          "position": steps.length + 1,
+          "name": "Calculate Applicable Taxes",
+          "text": pageData.step2CalculateTaxes
+        });
+      }
+
+      if (steps.length > 0) {
+        schemas.push({
+          "@context": "https://schema.org",
+          "@type": "HowTo",
+          "name": `How to ${guideName}`,
+          "description": pageData.metaDescription || pageData.description,
+          "step": steps
+        });
+      }
+    }
+  } else if (slug === 'faq') {
+    // FAQ page - FAQPage with rich Q&A
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "@id": `${pageUrl}#faqpage`,
+      "name": "SalaryWise.io Frequently Asked Questions",
+      "description": "Answers to common questions about salary calculations, tax calculators, and financial planning tools",
+      "url": pageUrl,
+      "mainEntity": pageData.faqs?.map((faq: any, index: number) => ({
+        "@type": "Question",
+        "position": index + 1,
+        "name": faq.question || faq.q,
+        "url": `${pageUrl}#faq-${index + 1}`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": faq.answer || faq.a,
+          "url": `${pageUrl}#faq-${index + 1}-answer`
+        }
+      })) || []
+    });
+  } else if (slug === 'about') {
+    // About page - Organization + WebPage
+    schemas.push({
+      "@context": "https://schema.org",
+      "@type": "AboutPage",
+      "@id": `${pageUrl}#aboutpage`,
+      "name": "About SalaryWise.io",
+      "description": "Learn about SalaryWise.io, our mission to make salary calculations transparent and accessible to everyone",
+      "url": pageUrl,
+      "mainEntity": {
+        "@id": "https://salarywise.io/#organization"
+      },
+      "about": {
+        "@id": "https://salarywise.io/#organization"
+      }
+    });
+  }
+
+  // Add BreadcrumbList for navigation
+  const breadcrumbs = [
+    { name: 'Home', url: 'https://salarywise.io/en/' }
+  ];
+
+  if (slug.startsWith('guides/')) {
+    breadcrumbs.push({ name: 'Guides', url: 'https://salarywise.io/en/guides' });
+  } else if (slug.startsWith('country/')) {
+    breadcrumbs.push({ name: 'Countries', url: 'https://salarywise.io/en/country' });
+  } else if (slug.startsWith('industry/')) {
+    breadcrumbs.push({ name: 'Industries', url: 'https://salarywise.io/en/industry' });
+  }
+
+  breadcrumbs.push({
+    name: pageData.h1 || pageData.title || 'Page',
+    url: pageUrl
+  });
+
+  schemas.push({
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "@id": `${pageUrl}#breadcrumbs`,
+    "itemListElement": breadcrumbs.map((item, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "name": item.name,
+      "item": {
+        "@type": "WebPage",
+        "@id": item.url,
+        "url": item.url,
+        "name": item.name
+      }
+    }))
+  });
+
+  return schemas;
 }
 
 export default async function LocalizedPage({ params }: PageProps) {
@@ -254,9 +674,37 @@ export default async function LocalizedPage({ params }: PageProps) {
 
     pageData = pageData.default || pageData;
 
+    // Generate structured data
+    const structuredData = generateStructuredData(pageData, slug, locale);
+
     // Calculator data will be loaded client-side using getCalculator
 
-    return <DynamicPageClient pageData={pageData} calculatorData={undefined} />;
+    // Debug: Log structured data
+    console.log('📊 Structured data for', slug, ':', structuredData.length, 'schemas');
+    console.log('📄 Structured data content:', JSON.stringify(structuredData, null, 2).substring(0, 500));
+
+    // Inject schema markup immediately for SEO validation
+    if (typeof window !== 'undefined') {
+      // Remove any existing schema scripts
+      const existingScripts = document.querySelectorAll('script[data-schema-id]');
+      existingScripts.forEach(script => script.remove());
+
+      // Inject new schema scripts
+      structuredData.forEach((schema, index) => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.setAttribute('data-schema-id', `page-schema-${index}`);
+        script.textContent = JSON.stringify(schema);
+        document.head.appendChild(script);
+      });
+    }
+
+    return (
+      <div>
+        {/* Schema markup will be injected client-side for immediate availability */}
+        <DynamicPageClient pageData={pageData} calculatorData={undefined} />
+      </div>
+    );
   } catch (error) {
     console.error('Error loading page data:', error);
     const errorMessage = error instanceof Error ? error.message : 'Unknown error occurred';

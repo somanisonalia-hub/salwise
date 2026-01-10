@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Inter, JetBrains_Mono } from "next/font/google";
-import { Layout } from "../components";
+import { Layout, PerformanceMonitor } from "../components";
 import Script from "next/script";
 import "./globals.css";
 
@@ -79,23 +79,45 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        {/* Critical performance optimizations */}
+        {/* Critical performance optimizations for SEO and Core Web Vitals */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         <link rel="preconnect" href="https://www.google-analytics.com" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://pagead2.googlesyndication.com" />
+        <link rel="preconnect" href="https://www.google.com" />
+        <link rel="preconnect" href="https://www.gstatic.com" />
+        <link rel="dns-prefetch" href="//fonts.gstatic.com" />
+        <link rel="dns-prefetch" href="//www.google-analytics.com" />
+        <link rel="dns-prefetch" href="//www.googletagmanager.com" />
         <link rel="dns-prefetch" href="//pagead2.googlesyndication.com" />
+        <link rel="dns-prefetch" href="//fundingchoicesmessages.google.com" />
 
-        {/* Optimize rendering */}
+        {/* Optimize rendering and user experience */}
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="format-detection" content="telephone=no" />
         <meta name="theme-color" content="#3B82F6" />
         <meta name="color-scheme" content="light dark" />
+
+        {/* Performance and SEO hints */}
+        <meta name="referrer" content="strict-origin-when-cross-origin" />
+        <meta httpEquiv="x-dns-prefetch-control" content="on" />
+        <link rel="manifest" href="/manifest.json" />
+
+        {/* Preload critical resources */}
+        <link rel="preload" href="/favicon.ico" as="image" />
+        <link rel="preload" href="/apple-touch-icon.png" as="image" />
+
+        {/* Resource hints for better performance */}
+        <link rel="prefetch" href="/en/salary-calculator" />
+        <link rel="prefetch" href="/en/gross-to-net-salary" />
+        <link rel="prefetch" href="/en/take-home-pay-calculator" />
       </head>
       <body
         className={`${poppins.variable} ${inter.variable} font-sans antialiased`}
       >
         <Layout>{children}</Layout>
+        <PerformanceMonitor />
 
         {/* Google Consent Mode v2 - Must load before ads for AdSense approval */}
         <Script
@@ -164,7 +186,7 @@ export default function RootLayout({
         {/* Google AdSense */}
         <Script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5200046884352893"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-5588852356160244"
           crossOrigin="anonymous"
           strategy="afterInteractive"
         />

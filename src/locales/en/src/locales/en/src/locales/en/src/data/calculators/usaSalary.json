@@ -1,4 +1,17 @@
 {
+  "slug": "usaSalary",
+  "type": "page",
+  "h1": "USA Salary Calculator",
+  "metaTitle": "USA Salary Calculator",
+  "metaDescription": "Calculate take-home pay in the United States",
+  "primaryKeyword": "USA Salary Calculator",
+  "longTailKeywords": [
+    "USA Salary Calculator"
+  ],
+  "related": [],
+  "canonical": "https://salarywise.io/en/usaSalary",
+  "robots": "index, follow",
+  "lastUpdated": "January 4, 2025",
   "id": "usaSalary",
   "name": "USA Salary Calculator",
   "description": "Calculate take-home pay in the United States",

@@ -9,7 +9,8 @@
     "lint": "eslint",
     "analyze": "ANALYZE=true next build",
     "analyze:server": "ANALYZE=true next build && npx serve .next/static/analyze",
-    "perf": "next build --profile && next start"
+    "perf": "next build --profile && next start",
+    "schema-validator": "node scripts/schema-validator-server.js"
   },
   "dependencies": {
     "critters": "^0.0.23",
@@ -23,9 +24,13 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "axios": "^1.13.2",
+    "cheerio": "^1.1.2",
     "compression-webpack-plugin": "^11.1.0",
     "eslint": "^9",
     "eslint-config-next": "16.1.1",
+    "express": "^5.2.1",
+    "puppeteer": "^24.34.0",
     "tailwindcss": "^4",
     "terser-webpack-plugin": "^5.3.16",
     "typescript": "^5",

@@ -1,19 +1,28 @@
 {
+  "slug": "index",
+  "type": "page",
+  "h1": "Country Salary Calculators | International Tax Calculators | SalaryWise.io",
+  "metaTitle": "Country Salary Calculators | International Tax Calculators | SalaryWise.io",
+  "metaDescription": "Calculate take-home pay for USA, UK, and Ireland with localized tax rules. Compare salaries across these major economies with accurate tax calculations.",
+  "primaryKeyword": "Country Salary Calculators | International Tax Calculators | SalaryWise.io",
+  "longTailKeywords": [
+    "Country Salary Calculators | International Tax Calculators | SalaryWise.io"
+  ],
+  "related": [],
+  "canonical": "https://salarywise.io/en/country",
+  "robots": "index, follow",
+  "lastUpdated": "January 4, 2025",
   "title": "Country Salary Calculators | International Tax Calculators | SalaryWise.io",
   "description": "Calculate take-home pay for USA, UK, and Ireland with localized tax rules. Compare salaries across these major economies with accurate tax calculations.",
   "keywords": "country salary calculator, international tax calculator, global salary comparison, localized tax rules",
-  "canonical": "https://salarywise.io/en/country",
-
   "header": {
     "title": "Country Salary Calculators",
     "subtitle": "Calculate take-home pay with local tax rules"
   },
-
   "intro": {
     "paragraph1": "Understanding your take-home pay varies significantly by country due to different tax systems, social contributions, and local regulations. Our country-specific calculators help you understand your net income anywhere in the world.",
     "paragraph2": "Select your country below to get accurate salary calculations based on local tax laws and regulations."
   },
-
   "countries": [
     {
       "name": "United States",
@@ -40,7 +49,6 @@
       "taxRate": "Income tax: 0-40%, USC: 0.5-8%"
     }
   ],
-
   "features": {
     "title": "Why Use Country-Specific Calculators?",
     "items": [
@@ -66,7 +74,6 @@
       }
     ]
   },
-
   "cta": {
     "title": "Don't See Your Country?",
     "description": "We're constantly adding new countries. Contact us to request your country's calculator.",
@@ -75,7 +82,6 @@
       "href": "/en"
     }
   },
-
   "structuredData": {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
@@ -83,4 +89,3 @@
     "description": "Calculate take-home pay for different countries with localized tax rules"
   }
 }
-

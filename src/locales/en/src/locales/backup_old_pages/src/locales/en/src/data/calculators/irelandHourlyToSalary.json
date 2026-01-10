@@ -1,4 +1,17 @@
 {
+  "slug": "irelandHourlyToSalary",
+  "type": "page",
+  "h1": "Ireland Hourly to Salary Calculator",
+  "metaTitle": "Ireland Hourly to Salary Calculator",
+  "metaDescription": "Convert hourly pay to annual salary in Ireland with tax calculations",
+  "primaryKeyword": "Ireland Hourly to Salary Calculator",
+  "longTailKeywords": [
+    "Ireland Hourly to Salary Calculator"
+  ],
+  "related": [],
+  "canonical": "https://salarywise.io/en/irelandHourlyToSalary",
+  "robots": "index, follow",
+  "lastUpdated": "January 4, 2025",
   "id": "irelandHourlyToSalary",
   "name": "Ireland Hourly to Salary Calculator",
   "description": "Convert hourly pay to annual salary in Ireland with tax calculations",
@@ -97,7 +110,10 @@
   "examples": [
     {
       "scenario": "€20/hour full-time retail worker",
-      "inputs": {"hourlyRate": 20, "hoursPerWeek": 40},
+      "inputs": {
+        "hourlyRate": 20,
+        "hoursPerWeek": 40
+      },
       "expectedOutputs": {
         "grossAnnual": 41600,
         "payeTax": 4232,
@@ -109,7 +125,10 @@
     },
     {
       "scenario": "€30/hour professional, 35 hours/week",
-      "inputs": {"hourlyRate": 30, "hoursPerWeek": 35},
+      "inputs": {
+        "hourlyRate": 30,
+        "hoursPerWeek": 35
+      },
       "expectedOutputs": {
         "grossAnnual": 54600,
         "payeTax": 8282,

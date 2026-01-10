@@ -1,4 +1,17 @@
 {
+  "slug": "irelandOvertimePay",
+  "type": "page",
+  "h1": "Ireland Overtime Pay Calculator",
+  "metaTitle": "Ireland Overtime Pay Calculator",
+  "metaDescription": "Calculate overtime pay in Ireland with tax deductions",
+  "primaryKeyword": "Ireland Overtime Pay Calculator",
+  "longTailKeywords": [
+    "Ireland Overtime Pay Calculator"
+  ],
+  "related": [],
+  "canonical": "https://salarywise.io/en/irelandOvertimePay",
+  "robots": "index, follow",
+  "lastUpdated": "January 4, 2025",
   "id": "irelandOvertimePay",
   "name": "Ireland Overtime Pay Calculator",
   "description": "Calculate overtime pay in Ireland with tax deductions",
@@ -85,7 +98,11 @@
   "examples": [
     {
       "scenario": "€25/hour base, 5 hours OT/week at time-and-a-half",
-      "inputs": {"baseHourlyRate": 25, "overtimeHoursPerWeek": 5, "overtimeMultiplier": 1.5},
+      "inputs": {
+        "baseHourlyRate": 25,
+        "overtimeHoursPerWeek": 5,
+        "overtimeMultiplier": 1.5
+      },
       "expectedOutputs": {
         "overtimeHourlyRate": 37.5,
         "grossOvertimeWeekly": 187.5,
@@ -97,7 +114,11 @@
     },
     {
       "scenario": "€30/hour base, 10 hours OT/week at double time",
-      "inputs": {"baseHourlyRate": 30, "overtimeHoursPerWeek": 10, "overtimeMultiplier": 2.0},
+      "inputs": {
+        "baseHourlyRate": 30,
+        "overtimeHoursPerWeek": 10,
+        "overtimeMultiplier": 2
+      },
       "expectedOutputs": {
         "overtimeHourlyRate": 60,
         "grossOvertimeWeekly": 600,

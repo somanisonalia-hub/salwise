@@ -1,4 +1,17 @@
 {
+  "slug": "irelandSalaryCalculator",
+  "type": "page",
+  "h1": "Ireland Salary Calculator",
+  "metaTitle": "Ireland Salary Calculator",
+  "metaDescription": "Calculate take-home pay in Ireland including PAYE, USC, PRSI, and deductions",
+  "primaryKeyword": "Ireland Salary Calculator",
+  "longTailKeywords": [
+    "Ireland Salary Calculator"
+  ],
+  "related": [],
+  "canonical": "https://salarywise.io/en/irelandSalaryCalculator",
+  "robots": "index, follow",
+  "lastUpdated": "January 4, 2025",
   "id": "irelandSalaryCalculator",
   "name": "Ireland Salary Calculator",
   "description": "Calculate take-home pay in Ireland including PAYE, USC, PRSI, and deductions",
@@ -18,7 +31,12 @@
       "id": "payFrequency",
       "label": "Pay Frequency",
       "type": "select",
-      "options": ["Annual", "Monthly", "Weekly", "Hourly"],
+      "options": [
+        "Annual",
+        "Monthly",
+        "Weekly",
+        "Hourly"
+      ],
       "default": "Annual",
       "required": true,
       "description": "How often you get paid"
@@ -32,7 +50,11 @@
       "optional": true,
       "min": 1,
       "max": 80,
-      "dependsOn": {"payFrequency": ["Hourly"]},
+      "dependsOn": {
+        "payFrequency": [
+          "Hourly"
+        ]
+      },
       "description": "Only required if paid hourly"
     },
     {
@@ -44,7 +66,11 @@
       "optional": true,
       "min": 48,
       "max": 52,
-      "dependsOn": {"payFrequency": ["Hourly"]},
+      "dependsOn": {
+        "payFrequency": [
+          "Hourly"
+        ]
+      },
       "description": "Number of weeks worked per year"
     },
     {
@@ -173,7 +199,15 @@
   "examples": [
     {
       "scenario": "Entry-level professional €35,000",
-      "inputs": {"grossSalary": 35000, "payFrequency": "Annual", "bonus": 0, "pensionPercent": 0, "otherDeductions": 0, "applyUSC": true, "applyPRSI": true},
+      "inputs": {
+        "grossSalary": 35000,
+        "payFrequency": "Annual",
+        "bonus": 0,
+        "pensionPercent": 0,
+        "otherDeductions": 0,
+        "applyUSC": true,
+        "applyPRSI": true
+      },
       "expectedOutputs": {
         "payeTax": 4667,
         "usc": 1050,
@@ -184,7 +218,15 @@
     },
     {
       "scenario": "Mid-level manager €45,000 with 5% pension",
-      "inputs": {"grossSalary": 45000, "payFrequency": "Annual", "bonus": 0, "pensionPercent": 5, "otherDeductions": 0, "applyUSC": true, "applyPRSI": true},
+      "inputs": {
+        "grossSalary": 45000,
+        "payFrequency": "Annual",
+        "bonus": 0,
+        "pensionPercent": 5,
+        "otherDeductions": 0,
+        "applyUSC": true,
+        "applyPRSI": true
+      },
       "expectedOutputs": {
         "payeTax": 7467,
         "usc": 1725,

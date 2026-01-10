@@ -1,7 +1,8 @@
 'use client';
 
-import { useState, useEffect, memo, useCallback } from 'react';
+import React, { useState, useEffect, memo, useCallback } from 'react';
 import Link from 'next/link';
+import Script from 'next/script';
 import { SEOHead } from './SEOHead';
 import {
   loadPageData,
@@ -28,6 +29,7 @@ interface PageData {
   intro?: string | { paragraph1: string; paragraph2: string };
   differentiationNotice?: { title: string; message: string; links?: any[] };
   howItWorks?: string;
+  lastUpdated?: string;
   whatIsGrossVsNet?: string;
   howGrossConvertsToNet?: string;
   whatIsTakeHomePay?: string;
@@ -214,8 +216,10 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
 
   // Determine page type for schema markup
   const getPageType = () => {
+    if (pageData.slug === 'faq' || pageData.type === 'faq') return 'faq';
     if (pageData.type === 'guide') return 'guide';
     if (pageData.type === 'country' || pageData.type === 'industry') return 'collection';
+    if (pageData.type === 'calculator') return 'calculator';
     return 'webpage';
   };
 
@@ -238,18 +242,108 @@ export default function DynamicPageClient({ pageData, calculatorData: initialCal
     return breadcrumbs;
   };
 
+  // Extract FAQs for schema markup
+  const getPageFAQs = () => {
+    if (!pageData.faqs || !Array.isArray(pageData.faqs)) return [];
+
+    return pageData.faqs.map(faq => ({
+      question: faq.question || faq.q,
+      answer: faq.answer || faq.a
+    })).filter(faq => faq.question && faq.answer);
+  };
+
+  // Extract HowTo steps for guides
+  const getPageHowToSteps = () => {
+    const steps = [];
+
+    // Check for step-by-step content in guides
+    if (pageData.step1IdentifyGrossSalary) {
+      steps.push({ name: "Identify Gross Salary", text: pageData.step1IdentifyGrossSalary });
+    }
+    if (pageData.step2CalculateTaxes) {
+      steps.push({ name: "Calculate Taxes", text: pageData.step2CalculateTaxes });
+    }
+    if (pageData.step3DeductOtherExpenses) {
+      steps.push({ name: "Deduct Other Expenses", text: pageData.step3DeductOtherExpenses });
+    }
+    if (pageData.step4CalculateNetSalary) {
+      steps.push({ name: "Calculate Net Salary", text: pageData.step4CalculateNetSalary });
+    }
+
+    return steps;
+  };
+
+  // Inject schema markup using useEffect for App Router compatibility
+  useEffect(() => {
+    if (typeof window !== 'undefined') {
+      // Remove any existing schema scripts
+      const existingScript = document.querySelector('script[data-schema-id="page-schema"]');
+      if (existingScript) {
+        existingScript.remove();
+      }
+
+      // Create schema based on page type
+      let schema;
+      if (pageData.type === 'calculator') {
+        schema = {
+          "@context": "https://schema.org",
+          "@type": "SoftwareApplication",
+          "name": pageData.metaTitle || pageData.h1 || "Salary Calculator",
+          "url": window.location.href,
+          "description": pageData.metaDescription || "Calculate your take-home pay",
+          "applicationCategory": "FinanceApplication",
+          "operatingSystem": "Web Browser",
+          "offers": {
+            "@type": "Offer",
+            "price": "0",
+            "priceCurrency": "USD"
+          }
+        };
+      } else if (pageData.type === 'guide') {
+        schema = {
+          "@context": "https://schema.org",
+          "@type": "Article",
+          "headline": pageData.metaTitle || pageData.h1 || "Salary Guide",
+          "url": window.location.href,
+          "description": pageData.metaDescription || "Learn about salary calculations",
+          "author": {
+            "@type": "Organization",
+            "name": "SalaryWise.io"
+          },
+          "publisher": {
+            "@type": "Organization",
+            "name": "SalaryWise.io"
+          }
+        };
+      } else {
+        schema = {
+          "@context": "https://schema.org",
+          "@type": "WebPage",
+          "name": pageData.metaTitle || pageData.h1 || "Salary Calculator",
+          "url": window.location.href,
+          "description": pageData.metaDescription || "Calculate your salary"
+        };
+      }
+
+      // Inject the script
+      const script = document.createElement('script');
+      script.type = 'application/ld+json';
+      script.setAttribute('data-schema-id', 'page-schema');
+      script.textContent = JSON.stringify(schema);
+      document.head.appendChild(script);
+
+      // Cleanup on unmount
+      return () => {
+        const scriptToRemove = document.querySelector('script[data-schema-id="page-schema"]');
+        if (scriptToRemove) {
+          scriptToRemove.remove();
+        }
+      };
+    }
+  }, [pageData]);
+
   return (
     <div className="min-h-screen bg-gray-50">
-      <SEOHead
-        title={pageData.metaTitle}
-        description={pageData.metaDescription}
-        canonicalUrl={pageData.canonical || (typeof window !== 'undefined' ? window.location.href : '')}
-        pageType={getPageType()}
-        keywords={pageData.longTailKeywords || []}
-        breadcrumb={generateBreadcrumb()}
-        robots={pageData.robots}
-      />
-
       {/* Main Layout with Sidebar */}
       <div className="max-w-7xl mx-auto px-4 py-8">
         <div className="max-w-4xl mx-auto">

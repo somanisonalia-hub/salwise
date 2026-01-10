@@ -71,18 +71,6 @@ export const Layout: React.FC<LayoutProps> = ({ children }) => {
               <Link href={`/${locale}/about`} className="text-gray-700 hover:text-blue-600 px-3 py-2 text-sm font-medium transition-colors">
                 About
               </Link>
-
-              {/* Trust Indicators */}
-              <div className="flex items-center space-x-4 text-xs text-gray-500">
-                <span className="flex items-center space-x-1">
-                  <span className="w-2 h-2 bg-green-500 rounded-full"></span>
-                  <span>Free</span>
-                </span>
-                <span className="flex items-center space-x-1">
-                  <span className="w-2 h-2 bg-blue-500 rounded-full"></span>
-                  <span>2026 Data</span>
-                </span>
-              </div>
             </nav>
 
             {/* Mobile menu button */}

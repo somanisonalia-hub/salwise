@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import Head from 'next/head';
+import Script from 'next/script';
 import { useState, useMemo } from 'react';
 import content from '../locales/en/page.json';
 
@@ -75,11 +76,15 @@ function HomePageContent() {
         <meta name="description" content={content.metaDescription} />
         <meta name="keywords" content={content.keywords} />
         <link rel="canonical" href={content.canonical} />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
-        />
       </Head>
+
+      <Script
+        id="homepage-structured-data"
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify(structuredData)
+        }}
+      />
 
       <div className="min-h-screen bg-gray-50">
         {/* Compact SEO-Optimized Hero */}

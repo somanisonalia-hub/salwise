@@ -1,6 +1,19 @@
 {
+  "slug": "ukSalary",
+  "type": "page",
+  "h1": "UK Salary Calculator",
+  "metaTitle": "UK Salary Calculator",
+  "metaDescription": "Calculate take-home pay in the United Kingdom",
+  "primaryKeyword": "UK Salary Calculator",
+  "longTailKeywords": [
+    "UK Salary Calculator"
+  ],
+  "related": [],
+  "canonical": "https://salarywise.io/en/ukSalary",
+  "robots": "index, follow",
+  "lastUpdated": "January 4, 2025",
   "id": "ukSalary",
-  "name": "UK Salary Calculator", 
+  "name": "UK Salary Calculator",
   "description": "Calculate take-home pay in the United Kingdom",
   "inputs": [
     {
